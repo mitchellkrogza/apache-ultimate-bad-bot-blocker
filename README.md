@@ -117,6 +117,6 @@ passion of mine. I love Apache but have recently fallen head over heels with Ngi
 I write rules like these for my own servers and make them available to you all for free.
 
 ##### Some other free projects
-https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
-https://github.com/mariusv/nginx-badbot-blocker
-https://github.com/mitchellkrogza/fail2ban-useful-scripts
+- https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
+- https://github.com/mariusv/nginx-badbot-blocker
+- https://github.com/mitchellkrogza/fail2ban-useful-scripts
