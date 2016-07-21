@@ -34,14 +34,17 @@ not case-sensitive so will catch any combination like "Bot" "bOt" and "bOT".
 
 So for those of you who SUCK with Regex this may just be your saviour !!!
 
+### IT'S CENTRALISED:
 The beauty of this is that it is one central file used by all your web sites.
 This means there is only place to make amendments ie. adding new bots that you
 discover in your log files. Any changes are applied immediately to all sites after
 a simple "sudo service apache2 reload". 
 
+### NO COMPLICATED REWRITE RULES:
 This also does not use ReWrite Rules and Conditions which also put overhead onto
 Apache, this sends a simple 403 Forbidden Response and DONE !!!
 
+### APACHE WILL LOVE YOUR FOR IT !!!!
 This approach also makes this very lightweight on Apache versus the usual .htaccess
 approach that many choose. The .htaccess approach is a little clumsy because every site
 has to have its own one and every time someone requests your web site the .htaccess gets
