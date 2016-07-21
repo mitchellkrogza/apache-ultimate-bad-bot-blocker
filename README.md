@@ -5,6 +5,22 @@
 
 ### Recommend to saved as: /etc/apache2/custom.d/globalblacklist.conf
 
+### WHY BLOCK BAD BOTS ?
+#####Bad bots are defined as:
+
+-    E-mail harvesters
+-    Content scrapers
+-    Spam bots
+-    Vulnerability scanners
+-    Aggressive bots that provide little value
+-    Bots linked to viruses or malware
+-    Government surveillance bots
+
+In short ... Bots try to make themselves look like other software by disguising their useragent. 
+Their useragents may look harmless, perfectly legitimate even. 
+For example, "^Java" but according to Project Honeypot, it's actually one of the most dangerous.
+
+### THE METHOD IN MY MADNESS
 This bot blocker list is designed to be an Apache include file and uses the apache
 BrowserMatchNoCase directive. This way the .conf file can be loaded 
 once into memory by Apache and be available to all web sites that you operate.
