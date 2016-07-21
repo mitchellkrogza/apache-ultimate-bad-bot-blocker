@@ -17,14 +17,20 @@ from my tests is more accurate that SetEnvIfNoCase.
 My method also results in a cleaner file to maintain that requires no complex regex
 other than the Name of the Bot. BrowserMatchNoCase will do the rest. You can use Regex
 if you like but it's NOT needed and I proved it by testing with the Chrome extension
-User-Agent Switcher for Chrome. The user agent "Aboundex" is found without using
-"^Aboundex" ... much simpler for anyone to maintain than other lists using Regex.
-Likewise it is unnecessary to have "Download\ Demon" instead you now just have
-"Download Demon". Additionally if we have a rule, like below "Image Stripper" and a bot
+User-Agent Switcher for Chrome. 
+
+- The user agent "Aboundex" is found without using "^Aboundex" ... much simpler for anyone 
+to maintain than other lists using Regex.
+
+- Likewise it is unnecessary to have "Download\ Demon" instead you now just have
+"Download Demon". 
+
+- Additionally if we have a rule, like below "Image Stripper" and a bot
 decides to change its User-Agent string to "NOT Image Stripper I Promise" he is picked
-up regardless and blocked immediately. I only capitalise bot names in my list for ease
-of reading and maintenance, remember its not case-sensitive so will catch any
-combination like "Bot" "bOt" and "bOT".
+up regardless and blocked immediately. 
+
+I only capitalise bot names in my list for ease of reading and maintenance, remember its 
+not case-sensitive so will catch any combination like "Bot" "bOt" and "bOT".
 
 So for those of you who SUCK with Regex this may just be your saviour !!!
 
