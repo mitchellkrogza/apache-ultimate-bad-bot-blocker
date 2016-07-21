@@ -111,3 +111,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 - You use this entirely at your own Risk.
 - Fork your own copy from this repo and feel free to contribute to it.
 
+##### Why not visit me?
+https://mitchellkrog.com is what I do full time, playing with servers is another
+passion of mine. I love Apache but have recently fallen head over heels with Nginx
+I write rules like these for my own servers and make them available to you all for free.
