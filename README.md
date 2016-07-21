@@ -1,5 +1,5 @@
 # The Apache Ultimate Bot Blocker
-The Ultimate Bad Bot Blocker for Apache Web Servers
+##The Ultimate Bad Bot Blocker for Apache Web Servers
 
 ### Created by: https://github.com/mitchellkrogza
 
@@ -44,7 +44,7 @@ a simple "sudo service apache2 reload".
 This also does not use ReWrite Rules and Conditions which also put overhead onto
 Apache, this sends a simple 403 Forbidden Response and DONE !!!
 
-### APACHE WILL LOVE YOUR FOR IT !!!!
+### APACHE WILL LOVE YOU FOR IT !!!!
 This approach also makes this very lightweight on Apache versus the usual .htaccess
 approach that many choose. The .htaccess approach is a little clumsy because every site
 has to have its own one and every time someone requests your web site the .htaccess gets
