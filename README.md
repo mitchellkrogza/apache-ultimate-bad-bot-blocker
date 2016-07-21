@@ -115,3 +115,8 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 https://mitchellkrog.com is what I do full time, playing with servers is another
 passion of mine. I love Apache but have recently fallen head over heels with Nginx
 I write rules like these for my own servers and make them available to you all for free.
+
+##### Some other free projects
+https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
+https://github.com/mariusv/nginx-badbot-blocker
+https://github.com/mitchellkrogza/fail2ban-useful-scripts
