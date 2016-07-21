@@ -81,8 +81,8 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 <IfModule mod_rewrite.c>
 ```
 
- This is free to use and modify as you wish. 
- No warranties are express or implied.
- You use this entirely at your own Risk.
- Fork your own copy from this repo and feel free to contribute to it.
+- This is free to use and modify as you wish. 
+- No warranties are express or implied.
+- You use this entirely at your own Risk.
+- Fork your own copy from this repo and feel free to contribute to it.
 
