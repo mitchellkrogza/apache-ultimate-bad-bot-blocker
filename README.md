@@ -67,7 +67,7 @@ Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf
  Include this in the beginning of a directory block just after your opening
  Options statements and before the rest of your host config example below
 
-
+```
  <VirtualHost *:443>
  .....
  .....
@@ -79,7 +79,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
  ......
  BEGIN WordPress
 <IfModule mod_rewrite.c>
-
+```
 
  This is free to use and modify as you wish. 
  No warranties are express or implied.
