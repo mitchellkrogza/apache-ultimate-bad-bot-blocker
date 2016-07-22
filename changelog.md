@@ -7,6 +7,8 @@
 
 ##### 2016-07-22
 - Added Referer Checking for blocking out spam referer domains and domain hijackers.
+- Added new spam referer domains found in recent logs.
+- Added Semalt Referers to Referer Checking (comments added in conf file)
 
 ##### 2016-07-21
 - First commit of this project. Extensively tested now on 2 heavy traffic web sites and
