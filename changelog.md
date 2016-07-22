@@ -7,3 +7,7 @@
 
 ##### 2016-07-22
 - Added Referer Checking for blocking out spam referer domains and domain hijackers.
+
+##### 2016-07-21
+- First commit of this project. Extensively tested now on 2 heavy traffic web sites and
+not one false positive or valid browser or crawler has been blocked out only the baddies.
