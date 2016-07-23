@@ -87,6 +87,9 @@ Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf
  MAKE SURE to monitor your web site logs after implementing this. I suggest you first
  load this into one site and monitor it for any possible false positives before putting
  this into production on all your web sites.
+ 
+ Also monitor your logs daily for new bad referers and user-agent strings that you
+ want to block. Your best source of adding to this list is your own server logs, not mine.
 
 ## CONFIGURATION EXAMPLE:
  Include this in the beginning of a directory block just after your opening

@@ -5,6 +5,10 @@
 
 #### CHANGELOG
 
+##### 2016-07-23
+- Added more image hotlinking web sites to referers - gallerily.com, curatorimages.com
+and decorationspcs.com
+
 ##### 2016-07-22
 - Added Referer Checking for blocking out spam referer domains and domain hijackers.
 - Added new spam referer domains found in recent logs.
