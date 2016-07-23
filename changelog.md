@@ -8,7 +8,11 @@
 ##### 2016-07-23
 - Added more image hotlinking web sites to referers - gallerily.com, curatorimages.com
 and decorationspcs.com
-
+- Modified checking of Referer URL's to check for http or https or the lack thereof.
+- Added whitelist for official Google Java Client Github Project and changed checking of
+  Java string to User Agents beginning with Java ie. ^Java
+  see - https://github.com/google/google-http-java-client
+  
 ##### 2016-07-22
 - Added Referer Checking for blocking out spam referer domains and domain hijackers.
 - Added new spam referer domains found in recent logs.
