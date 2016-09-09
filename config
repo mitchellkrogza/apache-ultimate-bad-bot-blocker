@@ -2,3 +2,5 @@
 	repositoryformatversion = 0
 	filemode = true
 	bare = true
+	user.name=Mitchell Krog
+	user.email=mitchellkrog@gmail.com
