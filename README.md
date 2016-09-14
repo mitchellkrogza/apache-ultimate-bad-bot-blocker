@@ -1,5 +1,5 @@
-# The Apache Ultimate Bad Bot and Referer Blocker
-##The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
+# Apache Bad Bot and Referer Blocker
+## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
 ### Created by: https://github.com/mitchellkrogza
 
@@ -56,7 +56,7 @@ up regardless and blocked immediately.
 I only capitalise bot names in my list for ease of reading and maintenance, remember its 
 not case-sensitive so will catch any combination like "Bot" "bOt" and "bOT".
 
-So for those of you who SUCK with Regex this may just be your saviour !!!
+So for those of you who SUCK with Regex my Apache Bad Bot Blocker is your saviour !!!
 
 ### IT'S CENTRALISED:
 
@@ -95,7 +95,7 @@ Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf
 
 ## WARNING:
 
- Please understand why you are using this before you even use this.
+ Please understand why you are using the Apache Bad Bot Blocker before you even use this.
  Please do not simply copy and paste without understanding what this is doing.
  Do not become a copy and paste Linux "Guru", learn things properly before you use them
  and always test everything you do one step at a time.
@@ -131,7 +131,7 @@ can add that functionality if you like copying the awk statement !~ from the fir
 `00 08 * * * tail -50000 /var/log/apache/mydomain-access.log | awk '{print $12}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail -s "Top 1000 Agents for Mydomain.com" me@mydomain.com`
 
 
-## CONFIGURATION EXAMPLE:
+## CONFIGURATION EXAMPLE OF APACHE BAD BOT BLOCKER:
 
  Include this in the beginning of a directory block just after your opening
  Options statements and before the rest of your host config example below
@@ -154,16 +154,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 - No warranties are express or implied.
 - You use this entirely at your own Risk.
 - Fork your own copy from this repo and feel free to change it to your needs or contribute to it.
-
-##### Why not visit me?
-
-https://mitchellkrog.com is what I do full time, playing with servers and security is another
-passion of mine. I love Apache but have recently fallen head over heels with Nginx
-I write rules like these for my own servers and make them available to you all for free.
-After 9 years of running Apache servers I have moved everything to Nginx which is the most solid
-stable and reliable web server I have ever used. I will however keep this Apache Bad Bot Blocker
-regularly updated (almost daily) as it is based on the samebad bots and bad referers that are 
-extracted from my Nginx logs.
+- If you break it yourself, you fix it yourself.
 
 ##### Some other free projects
 
