@@ -17,6 +17,8 @@
 -    Aggressive bots that scrape content
 -    Bots or Servers linked to viruses or malware
 -    Government surveillance bots
+-    Botnet Attack Networks (Mirai)
+-    Wordpress Theme Detectors
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
