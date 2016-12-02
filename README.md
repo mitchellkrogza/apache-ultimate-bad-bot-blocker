@@ -1,4 +1,4 @@
-# Apache Bad Bot and Referer Blocker
+# Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
 ### Created by: https://github.com/mitchellkrogza
@@ -18,7 +18,7 @@
 -    Bots or Servers linked to viruses or malware
 -    Government surveillance bots
 -    Botnet Attack Networks (Mirai)
--    Wordpress Theme Detectors
+-    Known Wordpress Theme Detectors (Updated Regularly)
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
