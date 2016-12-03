@@ -181,13 +181,7 @@ where you want this filter to be in effect.
 - Fork your own copy from this repo and feel free to change it to your needs or contribute to it.
 - If you break it yourself, you fix it yourself.
 
-### If this helped you why not buy me a beer?
-<form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-<input type="hidden" name="cmd" value="_s-xclick">
-<input type="hidden" name="hosted_button_id" value="XP2AZ4S5HNAWQ">
-<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donate_SM.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!">
-<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1">
-</form>
+### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XP2AZ4S5HNAWQ):beer:
 
 
 ##### Some other free projects
