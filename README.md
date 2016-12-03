@@ -19,6 +19,9 @@
 -    Government surveillance bots
 -    Botnet Attack Networks (Mirai)
 -    Known Wordpress Theme Detectors (Updated Regularly)
+-    SEO companies that your competitors use to try improve their SEO
+-    Link Research and Backlink Testing Tools
+-    Stopping Google Analytics Ghost Spam
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
@@ -151,6 +154,26 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
  BEGIN WordPress
 <IfModule mod_rewrite.c>
 ```
+
+##Finally - Stopping Google Analytics 'ghost' spam
+Simply using the Apache blocker does not stop Google Analytics ghost referral spam 
+because they are hitting Analytics directly and not always necessarily touching your website. 
+You should use regex filters in Analytics to prevent ghost referral spam.
+For this a simple google-exclude.txt file has been created for you and it is updated at the same time
+when the Nginx Blocker is updated.
+
+###To stop Ghost Spam on On Analytics
+Navigate to your Google Analytics Admin panel and add a Segment. This will need to be done on each and every site
+where you want this filter to be in effect.
+
+| Filter          | Session       | Include                                  |
+| :-------------: |:-------------:|:----------------------------------------:|
+| Hostname        | matches regex | your-website\.com|www\.your-website\.com |
+
+| Filter          | Session       | Exclude                                                       |
+| :-------------: |:-------------:|:-------------------------------------------------------------:|
+| Hostname        | matches regex | Copy the entire contents from [google-exclude.txt](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/google-exclude.txt) to this field |
+
 
 - This is free to use and modify as you wish. 
 - No warranties are express or implied.
