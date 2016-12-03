@@ -181,7 +181,7 @@ where you want this filter to be in effect.
 - Fork your own copy from this repo and feel free to change it to your needs or contribute to it.
 - If you break it yourself, you fix it yourself.
 
-### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&amp;hosted_button_id=XP2AZ4S5HNAWQ):beer:
+### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer:
 
 
 ##### Some other free projects
