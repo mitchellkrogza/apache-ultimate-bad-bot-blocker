@@ -92,6 +92,7 @@ Nginx but will continue to keep this file updated as it is solid and it works.
 ## FEATURES:
 
 - Extensive Lists of Bad and Known Bad Bots and Scrapers (updated almost daily)
+- Blocking of SEO data collection companies like Semalt.com, Builtwith.com, WooRank.com and many others (updated regularly)
 - Alphabetically ordered for easier maintenance
 - Commented sections of certain important bots to be sure of before blocking
 - Includes the IP range of Cyveillance who are known to ignore robots.txt rules
