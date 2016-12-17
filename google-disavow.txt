@@ -710,8 +710,8 @@ domain:gobongo.info
 domain:gogps.me
 domain:golden-catalog.pro
 domain:gonextmedia.com
-domain:goodprotein.ru
 domain:goo.ne.jp
+domain:goodprotein.ru
 domain:googglet.com
 domain:googlemare.com
 domain:googlsucks.com
