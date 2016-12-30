@@ -3,7 +3,7 @@
 
 ### Created by: https://github.com/mitchellkrogza
 
-### Recommend to saved as: /etc/apache2/custom.d/globalblacklist.conf
+### Recommend to be saved as: /etc/apache2/custom.d/globalblacklist.conf
 
 #### Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 #### Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
@@ -11,7 +11,7 @@
 ### WHY BLOCK BAD BOTS ?
 #####Bad bots are:
 
--    Bad Referers
+-    Bad Referers (1977 bad referers and counting)
 -    Spam Referers
 -    Spam bots
 -    Vulnerability scanners
