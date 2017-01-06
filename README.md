@@ -77,6 +77,13 @@ This means there is only place to make amendments ie. adding new bots that you
 discover in your log files. Any changes are applied immediately to all sites after
 a simple "sudo service apache2 reload". 
 
+### IT IS TINY AND LIGHTWEIGHT
+
+The file is tiny in size. At the time of this writing and the first public commit of this
+the file size including all the commenting "which nginx ignores" is a mere 212 kb in size.
+It is so lightweight that Nginx does not even know it's there. It already contains thousands
+of entries.
+
 ### NO COMPLICATED REWRITE RULES:
 
 This also does not use ReWrite Rules and Conditions which also put overhead onto
