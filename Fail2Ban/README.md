@@ -1,13 +1,13 @@
 # Fail2Ban Blacklist for Repeat Offenders of Apache (action.d)
 
 ### Author: Mitchell Krog <mitchellkrog@gmail.com>
-### Version: 1.0
+### Version: 1.1
 
 # Add on for Apache Ultimate Bad Bot and Spam Referer Blocker
 GitHub: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 
-##### Tested On: Fail2Ban 0.91
+##### Tested On: Fail2Ban 0.9.3
 ##### Server: Ubuntu 16.04
 ##### Firewall: IPTables
 
