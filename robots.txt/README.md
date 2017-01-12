@@ -5,6 +5,10 @@ The robots.txt file residing in this directory can be used to ADD onto your exis
 
 ## Do NOT make this file the only contents of your robots.txt file !!!
 
+##### Click on the robots.txt file in this directory
+##### Then click on the button that says RAW, this will give you clear unformatted code
+##### Then copy those contents to paste into your robots.txt file
+
 If your existing robots.txt file looks like this:
 
     User-agent: *
