@@ -357,6 +357,7 @@ domain:balitouroffice.com
 domain:balkanfarma.ru
 domain:balois.worldbreak.com
 domain:bambi.ck.ua
+domain:bamo.xsl.pt
 domain:banan.tv
 domain:bandbpro.com
 domain:bangla-chat-uk-paralud.ga
@@ -409,9 +410,9 @@ domain:bezcmexa.ru
 domain:bezlimitko.xyz
 domain:bezsporno.ru
 domain:beztuberkuleza.ru
+domain:bidbuy.co.kr
 domain:bidr.trellian.com
 domain:bif-ru.info
-domain:bidbuy.co.kr
 domain:bigcities.org
 domain:biglistofwebsites.com
 domain:biketank.ga
@@ -1156,6 +1157,7 @@ domain:financeloan.us
 domain:find1friend.com
 domain:findacheaplawyers.com
 domain:findclan.org
+domain:findpik.com
 domain:findthe.pet
 domain:finstroy.net
 domain:finteks.ru
@@ -1939,6 +1941,7 @@ domain:manipulyator-peterburg.ru
 domain:mantramusic.ru
 domain:manualterap.roleforum.ru
 domain:manuscript.su
+domain:mapquestz.us
 domain:marblestyle.ru
 domain:marcogrup.com
 domain:maridan.com.au
@@ -2165,8 +2168,8 @@ domain:netpics.org
 domain:nevansk.ru
 domain:new-apps.ru
 domain:new-post.tk
-domain:newsperuse.com
 domain:newqhi.ru
+domain:newsperuse.com
 domain:newstraveller.ru
 domain:newstudio.tv
 domain:newtechspb.ru
@@ -2512,6 +2515,7 @@ domain:qitt.ru
 domain:quality-traffic.com
 domain:qualitymarketzone.com
 domain:queen.sim-com.ru
+domain:quick-offer.com
 domain:quick-seeker.com
 domain:quit-smoking.ga
 domain:qwarckoine.com
@@ -2535,6 +2539,7 @@ domain:ranksonic.org
 domain:rapevideosmovies.com
 domain:rapidgator-porn.com
 domain:rapidgator-porn.ga
+domain:rapidokbrain.com
 domain:rasteniya-vs-zombi.ru
 domain:rattan.co.ua
 domain:razamicroelectronics.com
@@ -2745,11 +2750,11 @@ domain:sex-dating.co
 domain:sex.hotblog.top
 domain:sexblog.pw
 domain:sexkrasivo.net
+domain:sexobzor.info
 domain:sexphoto.site
 domain:sexsaoy.com
 domain:sexsearch.com
 domain:sexvideo-sex.com
-domain:sexobzor.info
 domain:sexvporno.ru
 domain:sexyali.com
 domain:sexyteens.hol.es
@@ -2763,6 +2768,7 @@ domain:sharebutton.to
 domain:sharemyfile.ru
 domain:shariki-zuma-lines.ru
 domain:shell-pmr.ru
+domain:shemale-sex.net
 domain:shemalegalls.blogporn.in
 domain:shemy-vishivki.com
 domain:shiksabd.com
@@ -3176,6 +3182,7 @@ domain:traffic2cash.org
 domain:traffic2cash.xyz
 domain:traffic2money.com
 domain:trafficgenius.xyz
+domain:trafficmania.com
 domain:trafficmonetize.org
 domain:trafficmonetizer.org
 domain:trafficnetzwerk.de
@@ -3446,12 +3453,12 @@ domain:wholinkstome.com
 domain:whos.amung.us
 domain:whosonmyserver.com
 domain:wicivow.007h.ml
-domain:wingsoffury2.com
 domain:wikes.20fr.com
 domain:wildworld.site
 domain:williamrobsonproperty.com
 domain:windowssearch-exp.com
 domain:wineitudes.wordpress.com
+domain:wingsoffury2.com
 domain:winner7777.net
 domain:winterclassichockeyjerseys.com
 domain:winx-play.ru
@@ -3528,6 +3535,7 @@ domain:xn--80aaagvmjabrs1aoc9luc.xn--p1ai
 domain:xn--80aaajbdbddwj2alwjieei2afr3v.xn--p1ai
 domain:xn--80aaaks3bbhabgbigamdr2h.xn--p1ai
 domain:xn--80aafb2a.xn--p1ai
+domain:xn--80aagddcgkbcqbad7amllnejg6dya.xn--p1ai
 domain:xn--80aanaardaperhcem4a6i.com
 domain:xn--80aaomkdl5amcy.xn--p1ai
 domain:xn--80ab4aa2g.xn--p1ai
@@ -3536,6 +3544,7 @@ domain:xn--80adgcaax6acohn6r.xn--p1ai
 domain:xn--80aeahghtf8ac5i.xn--p1ai
 domain:xn--80aebbcbcdemfkhba4byaehoejh8dza3v.xn--p1ai
 domain:xn--80ahvj9e.xn--p1ai
+domain:xn--80aikhbrhr.net
 domain:xn--80ajbshivpvn2i.xn--p1ai
 domain:xn--80ajjbdhgmudixfjc8c5a9df8b.xn--p1ai
 domain:xn--90acenikpebbdd4f6d.xn--p1ai
