@@ -217,12 +217,6 @@ Analytics sites for you in 2 easy clicks and it is FREE.
 I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster
 Tools to block all these domains out as spammy or bad links. Use with caution.
 
-- This is free to use and modify as you wish. 
-- No warranties are express or implied.
-- You use this entirely at your own Risk.
-- Fork your own copy from this repo and feel free to change it to your needs or contribute to it.
-- If you break it yourself, you fix it yourself.
-
 ## Blocking Agressive Bots at Firewall Level Using Fail2Ban
 
 I have added a custom Fail2Ban filter and action that I have written which monitors your Apache logs for bots that generate
@@ -232,6 +226,28 @@ See the Fail2Ban folder for instructions on configuring this great add on for th
 
 ### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer:
 
+#MIT License
+
+##Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
+##https://github.com/mitchellkrogza
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
 
 ##### Some other free projects
 
