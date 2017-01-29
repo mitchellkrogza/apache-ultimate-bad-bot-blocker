@@ -1,7 +1,10 @@
 # Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
+### Version 2.2017.01
+
 ### Created by: https://github.com/mitchellkrogza
+### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
 ### Recommend to be saved as: /etc/apache2/custom.d/globalblacklist.conf
 
