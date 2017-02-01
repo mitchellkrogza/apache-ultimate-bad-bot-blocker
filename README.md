@@ -1,4 +1,7 @@
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
+
 ![Apache Block Bad Bots, Vulnerability Scanners, Malware and Adware, Malicious Sites, Referer (Referrers) Spam Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/apache-ultimate-bad-bot-referrer-blocker-script.png "Apache Ultimate Bad Bot and Referrer Blocker - Apache Block Bad Bots, Vulnerability Scanners, Malware and Adware, Malicious Sites, Referer (Referrers) Spam Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders")
+
 # Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
