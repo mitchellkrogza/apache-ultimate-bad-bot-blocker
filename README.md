@@ -47,7 +47,7 @@ All additions will be checked for accuracy before being merged.
 Log any issues regarding incorrect listings on the issues system and they will be investigated
 and removed if necessary.
 
-### If this helps you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer:
+### If this helps you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
@@ -228,7 +228,7 @@ a large number of 403 errors. This custom jail for Fail2Ban will scan logs over 
 It helps a great deal in keeping out some repeat offenders and preventing them from filling up your log files with 403 errors.
 See the Fail2Ban folder for instructions on configuring this great add on for the Apache Bad Bot Blocker.
 
-### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer:
+### If this helped you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 
 #MIT License
 
