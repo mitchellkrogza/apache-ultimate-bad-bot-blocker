@@ -10,9 +10,13 @@ Once you have modified your httpd.conf file as below on CPanel you will of cours
 Then you must test running the following from the command line of another unix machine.
 
 `curl -I https://yourdomain.com -e http://100dollars-seo.com`
+
 `curl -I https://yourdomain.com -e http://xxxrus.org`
+
 `curl -I https://yourdomain.com -e https://100dollars-seo.com`
+
 `curl -I https://yourdomain.com -e https://sexobzor.info`
+
 `curl -I https://yourdomain.com -e ftp://sexobzor.info`
 
 You will get a 403 forbidden response meaning the Apache Bad Bot Blocker is working. You will also notice if a bad referer comes from http://, https:// or even ftp:// it is blocked due to the special regex in this blocker which ignores whether it comes from http://, https:// or even ftp:// it is detected and BLOCKED !!!
@@ -22,8 +26,11 @@ You will get a 403 forbidden response meaning the Apache Bad Bot Blocker is work
 Then try the following commands against your http site
 
 `curl -I http://yourdomain.com -e http://100dollars-seo.com`
+
 `curl -I http://yourdomain.com -e http://xxxrus.org`
+
 `curl -I http://yourdomain.com -e https://100dollars-seo.com`
+
 `curl -I http://yourdomain.com -e https://sexobzor.info`
 
 You should see the response give you a 301 redirect:
@@ -44,10 +51,15 @@ To test further, install User-Agent Switcher for Chrome, set up a few bad bots l
 Or again using for those who love the command line. On another unix machine try some of these.
 
 `curl -A "80Legs" https://yourdomain.com`
+
 `curl -A "websucker" https://yourdomain.com`
+
 `curl -A "masscan" https://yourdomain.com`
+
 `curl -A "WeBsuCkEr" https://yourdomain.com`
+
 `curl -A "WeB suCkEr" https://yourdomain.com`
+
 `curl -A "Exabot" https://yourdomain.com`
 
 You will get 403 forbidden responses on all of them meaning the Apache Bad Bot Blocker is working 100%. You will also notice if a bot like websucker changes it's name to WeBsuCkEr it is detected regardless due to the wonderful case insensitive matching regex of this blocker. Test against any bot or referrer string in the bot blocker and you will always get a 403 forbidden. 
@@ -57,6 +69,7 @@ You will get 403 forbidden responses on all of them meaning the Apache Bad Bot B
 Try some of these from the command line of another unix machine and you will see that good bots specified in the Bad Bot blocker are granted access.
 
 `curl -A "GoogleBot" https://yourdomain.com`
+
 `curl -A "BingBot" https://yourdomain.com`
 
 Now you can rest knowing your site is protected against over 4000 and growing bad bots and spam referrers and allowing all the good one's through. 
