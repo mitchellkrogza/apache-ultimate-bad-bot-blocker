@@ -11,6 +11,7 @@
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
 ### Recommend to be saved as: /etc/apache2/custom.d/globalblacklist.conf
+#### CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
 
 #### Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 #### Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
