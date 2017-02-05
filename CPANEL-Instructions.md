@@ -7,21 +7,68 @@ The configuration below is for an SSL site and includes the very important http 
 
 Once you have modified your httpd.conf file as below on CPanel you will of course do a restart of apache.
 
-Then you must test by doing the following from the command line of another unix machine.
+Then you must test running the following from the command line of another unix machine.
 
 `curl -I https://yourdomain.com -e http://100dollars-seo.com`
+`curl -I https://yourdomain.com -e http://xxxrus.org`
+`curl -I https://yourdomain.com -e https://100dollars-seo.com`
+`curl -I https://yourdomain.com -e https://sexobzor.info`
+`curl -I https://yourdomain.com -e ftp://sexobzor.info`
 
-You will get a 403 forbidden response meaning the Apache Bad Bot Blocker is working.
+You will get a 403 forbidden response meaning the Apache Bad Bot Blocker is working. You will also notice if a bad referer comes from http://, https:// or even ftp:// it is blocked due to the special regex in this blocker which ignores whether it comes from http://, https:// or even ftp:// it is detected and BLOCKED !!!
 
-Then try
+## To Test Bad Referers
+
+Then try the following commands against your http site
 
 `curl -I http://yourdomain.com -e http://100dollars-seo.com`
+`curl -I http://yourdomain.com -e http://xxxrus.org`
+`curl -I http://yourdomain.com -e https://100dollars-seo.com`
+`curl -I http://yourdomain.com -e https://sexobzor.info`
 
-You should see the response first give you a 301 redirect to https://yourdomain.com and then a 403 forbidden response from the https version of your site meaning its redirecting to https and also the bad bot blocker is working.
+You should see the response give you a 301 redirect:
+
+```
+HTTP/1.1 301 Moved Permanently
+Location: https://yourdomain.com/
+```
+
+This means it is redirecting all http traffic (port 80) to https (port 443). At this point most bad bots and bad referrers give up and will not even bother to follow the redirect. If they do however they will get blocked. 
+
+You can change this behavior however by also adding the `Include /etc/apache2/custom.d/globalblacklist.conf` into the `<VirtualHost 1.2.3.4:80>` section of your config below before the ReWrite conditions take effect. Which means bots and bad referers hitting your http site will get blocked and will not even be shown the redirect to your https site. (see in config example below)
+
+## To Test Bad User Agents
 
 To test further, install User-Agent Switcher for Chrome, set up a few bad bots like 80legs, masscan, AhrefsBot and switch to them while viewing your site in Chrome and you will see 403 Forbidden errors meaning the Bad Bot Blocker is working.
 
-##EXAMPLE Virtualhost configuration on CPanel (excerpt)
+Or again using for those who love the command line. On another unix machine try some of these.
+
+`curl -A "80Legs" https://yourdomain.com`
+`curl -A "websucker" https://yourdomain.com`
+`curl -A "masscan" https://yourdomain.com`
+`curl -A "WeBsuCkEr" https://yourdomain.com`
+`curl -A "WeB suCkEr" https://yourdomain.com`
+`curl -A "Exabot" https://yourdomain.com`
+
+You will get 403 forbidden responses on all of them meaning the Apache Bad Bot Blocker is working 100%. You will also notice if a bot like websucker changes it's name to WeBsuCkEr it is detected regardless due to the wonderful case insensitive matching regex of this blocker. Test against any bot or referrer string in the bot blocker and you will always get a 403 forbidden. 
+
+## To Test Good User Agents
+
+Try some of these from the command line of another unix machine and you will see that good bots specified in the Bad Bot blocker are granted access.
+
+`curl -A "GoogleBot" https://yourdomain.com`
+`curl -A "BingBot" https://yourdomain.com`
+
+Now you can rest knowing your site is protected against over 4000 and growing bad bots and spam referrers and allowing all the good one's through. 
+
+Enjoy it and what this will do for your web site.
+ 
+## Make sure to keep your globalblacklist.conf file up to date 
+New referrers and bots are added every other day. Each time you update **MAKE SURE** to copy your whitelist section of IP addresses into the new file. A set of generator scripts are coming soon which will ease this burden for you allowing you to pull from the GIT repo and compile the scripts on your server automatically including your whitelisted IP's each time. These generator scripts are coming soon so please be patient as they have to be thoroughly tested for public use before I release them. 
+
+(See at very bottom of this page for all the Cloudflare IP ranges you should be whitelisting if you are on Cloudflare)
+
+#EXAMPLE Virtualhost configuration on CPanel (excerpt)
 
 ```
 ##################################################
@@ -118,11 +165,49 @@ To test further, install User-Agent Switcher for Chrome, set up a few bad bots l
 <VirtualHost 1.2.3.4:80>
   ServerName yourdomain.com
   ServerAlias www.yourdomain.com
+
+      ### INCLUDE THE APACHE ULTIMATE BAD BOT BLOCKER HERE AGAIN
+      ### This will block bots before your server even issues the redirect to port 443
+      ### UnComment the include line below if you want this functionality.
+	    ###Include /etc/apache2/custom.d/globalblacklist.conf
+
         RewriteEngine On
         RewriteCond %{HTTPS} off
         RewriteCond %{HTTP_HOST} ^(?:www\.)?(.*)$ [NC]
         RewriteRule (.*) https://yourdomain.com%{REQUEST_URI} [END,QSA,R=permanent]
 </VirtualHost>
+```
+
+### If this helped you why not send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
+
+## CLOUDFLARE CPanel Users
+If you are running a CPanel system that is running through Cloudflare (quite likely) you should whitelist all the following ranges including of course your own IP(s). Considering adding this as a permament whitelist in the bot blocker by default.
+
+```
+127.0.0.1/32;
+YOUR.OWN.IP.ADDR;
+103.21.244.0/22;
+103.22.200.0/22;
+103.31.4.0/22;
+104.16.0.0/12;
+108.162.192.0/18;
+131.0.72.0/22;
+141.101.64.0/18;
+162.158.0.0/15;
+172.64.0.0/13;
+173.245.48.0/20;
+188.114.96.0/20;
+190.93.240.0/20;
+197.234.240.0/22;
+198.41.128.0/17;
+199.27.128.0/21;
+2400:cb00::/32;
+2606:4700::/32;
+2803:f800::/32;
+2405:b500::/32;
+2405:8100::/32;
+2c0f:f248::/32
+2a06:98c0::/29
 ```
 
 ### If this helped you why not send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
