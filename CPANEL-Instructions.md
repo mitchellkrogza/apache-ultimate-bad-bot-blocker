@@ -7,6 +7,8 @@ The configuration below is for an SSL site and includes the very important http 
 
 Once you have modified your httpd.conf file as below on CPanel you will of course do a restart of apache.
 
+## To Test Bad Referers
+
 Then you must test running the following from the command line of another unix machine.
 
 `curl -I https://yourdomain.com -e http://100dollars-seo.com`
@@ -20,8 +22,6 @@ Then you must test running the following from the command line of another unix m
 `curl -I https://yourdomain.com -e ftp://sexobzor.info`
 
 You will get a 403 forbidden response meaning the Apache Bad Bot Blocker is working. You will also notice if a bad referer comes from http://, https:// or even ftp:// it is blocked due to the special regex in this blocker which ignores whether it comes from http://, https:// or even ftp:// it is detected and BLOCKED !!!
-
-## To Test Bad Referers
 
 Then try the following commands against your http site
 
