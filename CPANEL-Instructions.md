@@ -1,3 +1,4 @@
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 #CPANEL user instructions for the Apache Ultimate Bad Bot Blocker
 
 For people wanting to run this bad bot blocker on Cpanel systems, here is a sample configuration excerpt for a single vhost. This came from a user who I helped to get the Apache Bad Bot Blocker working on CPanel.
@@ -123,3 +124,5 @@ To test further, install User-Agent Switcher for Chrome, set up a few bad bots l
         RewriteRule (.*) https://yourdomain.com%{REQUEST_URI} [END,QSA,R=permanent]
 </VirtualHost>
 ```
+
+### If this helped you why not send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
