@@ -5,7 +5,7 @@
 # Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
-### Version 2.2017.01
+### Version 2.2017.02
 
 ### Created by: https://github.com/mitchellkrogza
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>
@@ -128,6 +128,7 @@ Nginx but will continue to keep this file updated as it is solid and it works.
 - Commented sections of certain important bots to be sure of before blocking
 - Includes the IP range of Cyveillance who are known to ignore robots.txt rules
   and snoop around all over the Internet.
+- Whitelisting of Google, Bing and CloudFlare IP Ranges
 - Your own IP Ranges that you want to block can be easily added.
 
 Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf 
