@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-07 13:30:15 (SAST)
+# Updated 2017-02-07 14:08:51 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -343,6 +343,7 @@ SetEnvIfNoCase Referer aviav\.eu spambot=yes
 SetEnvIfNoCase Referer aviav\.org spambot=yes
 SetEnvIfNoCase Referer aviav\.ru spambot=yes
 SetEnvIfNoCase Referer aviav\.ru\.com spambot=yes
+SetEnvIfNoCase Referer avirasecureserver\.com spambot=yes
 SetEnvIfNoCase Referer avitocars\.ru spambot=yes
 SetEnvIfNoCase Referer aviva\-limoux\.com spambot=yes
 SetEnvIfNoCase Referer avkzarabotok\.com spambot=yes
@@ -1019,6 +1020,7 @@ SetEnvIfNoCase Referer ekobata\.ru spambot=yes
 SetEnvIfNoCase Referer ekspertmed\.com spambot=yes
 SetEnvIfNoCase Referer ekto\.ee spambot=yes
 SetEnvIfNoCase Referer el\-nation\.com spambot=yes
+SetEnvIfNoCase Referer eldiariodeguadalajara\.com spambot=yes
 SetEnvIfNoCase Referer electricwheelchairsarea\.com spambot=yes
 SetEnvIfNoCase Referer electro\-prom\.com spambot=yes
 SetEnvIfNoCase Referer electronicadirect\.com spambot=yes
@@ -2268,6 +2270,7 @@ SetEnvIfNoCase Referer nastydollars\.com spambot=yes
 SetEnvIfNoCase Referer nate\.com spambot=yes
 SetEnvIfNoCase Referer naval\.jislaaik\.com spambot=yes
 SetEnvIfNoCase Referer nbsproject\.ru spambot=yes
+SetEnvIfNoCase Referer negociosdasha\.com spambot=yes
 SetEnvIfNoCase Referer negral\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer net\-profits\.xyz spambot=yes
 SetEnvIfNoCase Referer netallergy\.ru spambot=yes
@@ -2431,6 +2434,7 @@ SetEnvIfNoCase Referer pensplan4u\.com spambot=yes
 SetEnvIfNoCase Referer percin\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer perfection\-pleasure\.ru spambot=yes
 SetEnvIfNoCase Referer perfectpracticeweb\.com spambot=yes
+SetEnvIfNoCase Referer periziavela\.com spambot=yes
 SetEnvIfNoCase Referer perm\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer permethrin\-cream\.bid spambot=yes
 SetEnvIfNoCase Referer perosan\.com spambot=yes
@@ -2489,6 +2493,7 @@ SetEnvIfNoCase Referer plohaya\-kreditnaya\-istoriya\.ru spambot=yes
 SetEnvIfNoCase Referer plusnetwork\.com spambot=yes
 SetEnvIfNoCase Referer pmk\-samara\.ru spambot=yes
 SetEnvIfNoCase Referer pochemychka\.net spambot=yes
+SetEnvIfNoCase Referer poffet\.net spambot=yes
 SetEnvIfNoCase Referer pogodnyyeavarii\.gq spambot=yes
 SetEnvIfNoCase Referer pogosh\.com spambot=yes
 SetEnvIfNoCase Referer pogruztehnik\.ru spambot=yes
@@ -2614,6 +2619,7 @@ SetEnvIfNoCase Referer psoriasis\-file\.trade spambot=yes
 SetEnvIfNoCase Referer pst2017\.onlinewebshop\.net spambot=yes
 SetEnvIfNoCase Referer psvita\.ru spambot=yes
 SetEnvIfNoCase Referer psychocryonics\.net spambot=yes
+SetEnvIfNoCase Referer publiccasinoil\.com spambot=yes
 SetEnvIfNoCase Referer pufip\.com spambot=yes
 SetEnvIfNoCase Referer pulse33\.ru spambot=yes
 SetEnvIfNoCase Referer purchasepillsnorx\.com spambot=yes
@@ -2699,6 +2705,7 @@ SetEnvIfNoCase Referer remont\-komputerov\-notebook\.ru spambot=yes
 SetEnvIfNoCase Referer remont\-mobile\-phones\.ru spambot=yes
 SetEnvIfNoCase Referer remont\-ustanovka\-tehniki\.ru spambot=yes
 SetEnvIfNoCase Referer remontgruzovik\.ru spambot=yes
+SetEnvIfNoCase Referer remorcicomerciale\.ro spambot=yes
 SetEnvIfNoCase Referer remote\-dba\.de spambot=yes
 SetEnvIfNoCase Referer remotecomputingservices\.net spambot=yes
 SetEnvIfNoCase Referer rentalmaty\.kz spambot=yes
@@ -2983,6 +2990,7 @@ SetEnvIfNoCase Referer skylta\.com spambot=yes
 SetEnvIfNoCase Referer skytraf\.xyz spambot=yes
 SetEnvIfNoCase Referer slavic\-magic\.ru spambot=yes
 SetEnvIfNoCase Referer slavkokacunko\.de spambot=yes
+SetEnvIfNoCase Referer slayerlife\.com spambot=yes
 SetEnvIfNoCase Referer sledstvie\-veli\.net spambot=yes
 SetEnvIfNoCase Referer slftsdybbg\.ru spambot=yes
 SetEnvIfNoCase Referer slkrm\.ru spambot=yes
