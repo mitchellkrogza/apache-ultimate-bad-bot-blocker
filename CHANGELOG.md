@@ -1,5 +1,8 @@
 #CHANGELOG - Apache Bad Bot Blocker
 
+###2017-02-07
+- V2.2017.03 - Introduced .htaccess versions of the spam referrer blocker for users without root access to their Apache Server or unable to run the full bot blocker for some or other reason
+
 ###2017-02-06
 - V2.2017.02 - Added WhiteListing of CloudFlare IP Ranges
 
