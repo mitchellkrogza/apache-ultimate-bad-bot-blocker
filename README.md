@@ -5,16 +5,20 @@
 # Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
 
-### Version 2.2017.02
+### Version 2.2017.03
 
 ### Created by: https://github.com/mitchellkrogza
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
 ### Recommend to be saved as: /etc/apache2/custom.d/globalblacklist.conf
+
 #### CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
+
+#### Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
 
 #### Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 #### Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
+#### Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
 
 ### WHY BLOCK BAD BOTS ?
 #####Bad bots are:
@@ -47,6 +51,9 @@ All additions will be checked for accuracy before being merged.
 ### Issues:
 Log any issues regarding incorrect listings on the issues system and they will be investigated
 and removed if necessary.
+
+### No root access to your Apache server and Unable to run this blocker?
+Version 2.2017.03 introduced .htaccess versions of the spam referrer for those unable to run the full Apache Bad Bot Blocker look inside the .htaccess folder in this repo for instructions.
 
 ### If this helps you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 
@@ -130,6 +137,7 @@ Nginx but will continue to keep this file updated as it is solid and it works.
   and snoop around all over the Internet.
 - Whitelisting of Google, Bing and CloudFlare IP Ranges
 - Your own IP Ranges that you want to block can be easily added.
+- .htaccess and robots.txt files version for users unable to run the full bot blocker
 
 Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf 
        - us an Include as per the example below to load the file into any host
