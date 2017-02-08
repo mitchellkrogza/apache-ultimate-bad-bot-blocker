@@ -1272,8 +1272,8 @@ domain:foxtechfpv.com
 domain:foxydeal.com
 domain:fqvjhqciw.net.ru
 domain:fqzqxok.com
-domain:fr7ty.com
 domain:fr.netlog.com
+domain:fr7ty.com
 domain:freakycheats.com
 domain:free-floating-buttons.com
 domain:free-share-buttons-aaa.xyz
@@ -2273,9 +2273,9 @@ domain:netallergy.ru
 domain:netfacet.net
 domain:netpics.org
 domain:nevansk.ru
-domain:new7ob.com
 domain:new-apps.ru
 domain:new-post.tk
+domain:new7ob.com
 domain:newqhi.ru
 domain:newsperuse.com
 domain:newstraveller.ru
@@ -3819,8 +3819,8 @@ domain:zaimhelp.ru
 domain:zajm-pod-zalog-nedvizhimosti.ru
 domain:zakazfutbolki.com
 domain:zakazvzloma.com
-domain:zakonobosago.ru
 domain:zakon-ob-obrazovanii.ru
+domain:zakonobosago.ru
 domain:zaloadi.ru
 domain:zaloro.com
 domain:zarabotat-na-sajte.ru
