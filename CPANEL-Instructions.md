@@ -1,8 +1,8 @@
 ### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 
-#CPANEL user instructions for the Apache Ultimate Bad Bot Blocker
+#CPANEL user instructions for the Apache Ultimate Bad Bot, User-Agent and Spam Referrer  Blocker
 
-For people wanting to run this bad bot blocker on Cpanel systems, here is a sample configuration excerpt for a single vhost. This came from a user who I helped to get the Apache Bad Bot Blocker working on CPanel.
+For people wanting to run this bad bot and spam referrer blocker on Cpanel systems, here is a sample configuration excerpt for a single vhost. This came from a user who I helped to get the Apache Bad Bot Blocker working on CPanel.
 
 The configuration below is for an SSL site and includes the very important http (port 80) redirect to https (Port 443) which a lot of people tend to forget about.
 

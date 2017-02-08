@@ -1,8 +1,8 @@
 ### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
-![Apache Block Bad Bots, Vulnerability Scanners, Malware and Adware, Malicious Sites, Referer (Referrers) Spam Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/apache-ultimate-bad-bot-referrer-blocker-script.png "Apache Ultimate Bad Bot and Referrer Blocker - Apache Block Bad Bots, Vulnerability Scanners, Malware and Adware, Malicious Sites, Referer (Referrers) Spam Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders")
+![Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware,  Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/apache-ultimate-bad-bot-referrer-blocker-script.png "Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders")
 
-# Apache Bad Bot Blocker, Referer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
-## The Ultimate Bad Bot and Referer Blocker for Apache Web Servers
+# Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
+## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers
 
 ### Version 2.2017.03
 
@@ -22,10 +22,13 @@
 ### WHY BLOCK BAD BOTS ?
 #####Bad bots are:
 
--    Bad Referers 
--    Spam Referers
--    Spam bots
+-    Bad Referrers 
+-    Bad User-Agent Strings
+-    Spam Referrers
+-    Spam Bots and Bad Bots
+-    Sites Linked to Lucrative Malware, Adware and Ransomware Clickjacking Campaigns
 -    Vulnerability scanners
+-    Gambling and Porn Web Sites
 -    E-mail harvesters
 -    Content scrapers
 -    Aggressive bots that scrape content
@@ -39,7 +42,7 @@
 -    Stopping Google Analytics Ghost Spam
 -    Browser Adware and Malware (Yontoo etc)
 
-(4520 bad referers, bots, seo companies and counting)
+(4520 bad referrers, bots, seo companies and counting)
 
 ###To contribute your own bad referers 
 please add them into the
