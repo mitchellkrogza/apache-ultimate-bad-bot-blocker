@@ -1,5 +1,6 @@
-# Robots.txt Directives ONLY for People unable to use this Bot Blocker
-## DO NOT use this on any of your sites if you are running the Bad Bot Blocker
+# Robots.txt Directives ONLY for People unable to use the Apache Bot and Spam Referrer Blocker
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
+## DO NOT use this on any of your sites if you are running the Bad Bot and Spam Referrer Blocker (not needed)
 
 The robots.txt file residing in this directory can be used to ADD onto your existing robots.txt file by placing this after anything you already have in your robots.txt file.
 
@@ -30,4 +31,6 @@ Then your new file will look like this:
 
 This will only help stop some bad bots from gaining access to your site
 this certainly does not provide nearly as much protection as the full
-Apache Bad Bot Blocker
+Apache Bad Bot and Spam Referrer Blocker
+
+### If this helped you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)

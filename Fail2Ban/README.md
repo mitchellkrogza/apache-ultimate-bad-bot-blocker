@@ -1,9 +1,9 @@
 # Fail2Ban Blacklist for Repeat Offenders of Apache (action.d)
-
+[![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
 ### Author: Mitchell Krog <mitchellkrog@gmail.com>
 ### Version: 1.1
 
-# Add on for Apache Ultimate Bad Bot and Spam Referer Blocker
+# Add on for Apache Ultimate Bad Bot and Spam Referrer Blocker
 GitHub: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 
@@ -33,7 +33,7 @@ and ban them for 1 day. This works like a charm as an add-on for my Apache Bad
 Bot Blocker which takes care of generating the 403 errors based on the extensive
 list of Bad Referers, Bots, Scrapers and IP addresses that it covers. This provides short
 block periods of one day which is enough to keep agressive bots from filling up your log files.
-See - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker for more info on the Apache Bad Bot Blocker
+See - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker for more info on the Apache Bad Bot and Spam Referrer Blocker
 
 This custom action requires a custom jail in your jail.local file for Fail2Ban
 
@@ -50,4 +50,4 @@ findtime = 604800   ; 1 week
 maxretry = 20
 ```
 
-### If this helps you why not [buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XP2AZ4S5HNAWQ):beer:
+### If this helped you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer: or send some cheese for my mouse [![gitcheese.com](https://api.gitcheese.com/v1/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/badges)](https://www.gitcheese.com/app/#/projects/bc50574f-b6dc-4f08-80d4-f6ba5baf0d43/pledges/create)
