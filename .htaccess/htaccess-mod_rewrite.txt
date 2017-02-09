@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-08 15:53:13 (SAST)
+# Updated 2017-02-09 09:09:19 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -613,6 +613,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*call\-of\-duty\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*callejondelpozo\.es.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*calstaterealty\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*calvet\.altervista\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cand\.jp.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*candiceloves\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*candy\-glam\-hp\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*candycrushshop\.com.*$ [NC,OR]
@@ -1015,6 +1016,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*edelstahlschornstein\-123\.de.*
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*editmedios\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*edshopping\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*education\-cz\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ef059b13f84c85630114c45a8f263c16\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*egovaleo\.it.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*egvar\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ehows\.us.*$ [NC,OR]
@@ -2948,6 +2950,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shoppytoolmac\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shopvilleroyboch\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shopwme\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shtaketniki\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*shtora66\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sibdevice\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sibecoprom\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sibtest\.ru.*$ [NC,OR]

@@ -605,6 +605,7 @@ domain:callejondelpozo.es
 domain:calstaterealty.us
 domain:calvet.altervista.org
 domain:candiceloves.us
+domain:cand.jp
 domain:candy-glam-hp.com
 domain:candycrushshop.com
 domain:candypeople.se
@@ -1005,6 +1006,7 @@ domain:edakgfvwql.ru
 domain:edelstahlschornstein-123.de
 domain:editmedios.com
 domain:edshopping.net
+domain:ef059b13f84c85630114c45a8f263c16.com
 domain:education-cz.ru
 domain:egovaleo.it
 domain:egvar.net
@@ -2939,6 +2941,7 @@ domain:shoppytoolmac.com
 domain:shopvilleroyboch.com.ua
 domain:shopwme.ru
 domain:shtaketniki.ru
+domain:shtora66.ru
 domain:sibdevice.ru
 domain:sibecoprom.ru
 domain:sibtest.ru

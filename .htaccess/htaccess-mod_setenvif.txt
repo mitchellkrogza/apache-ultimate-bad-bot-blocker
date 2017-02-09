@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-08 15:53:13 (SAST)
+# Updated 2017-02-09 09:09:19 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -612,6 +612,7 @@ SetEnvIfNoCase Referer call\-of\-duty\.info spambot=yes
 SetEnvIfNoCase Referer callejondelpozo\.es spambot=yes
 SetEnvIfNoCase Referer calstaterealty\.us spambot=yes
 SetEnvIfNoCase Referer calvet\.altervista\.org spambot=yes
+SetEnvIfNoCase Referer cand\.jp spambot=yes
 SetEnvIfNoCase Referer candiceloves\.us spambot=yes
 SetEnvIfNoCase Referer candy\-glam\-hp\.com spambot=yes
 SetEnvIfNoCase Referer candycrushshop\.com spambot=yes
@@ -1014,6 +1015,7 @@ SetEnvIfNoCase Referer edelstahlschornstein\-123\.de spambot=yes
 SetEnvIfNoCase Referer editmedios\.com spambot=yes
 SetEnvIfNoCase Referer edshopping\.net spambot=yes
 SetEnvIfNoCase Referer education\-cz\.ru spambot=yes
+SetEnvIfNoCase Referer ef059b13f84c85630114c45a8f263c16\.com spambot=yes
 SetEnvIfNoCase Referer egovaleo\.it spambot=yes
 SetEnvIfNoCase Referer egvar\.net spambot=yes
 SetEnvIfNoCase Referer ehows\.us spambot=yes
@@ -2947,6 +2949,7 @@ SetEnvIfNoCase Referer shoppytoolmac\.com spambot=yes
 SetEnvIfNoCase Referer shopvilleroyboch\.com\.ua spambot=yes
 SetEnvIfNoCase Referer shopwme\.ru spambot=yes
 SetEnvIfNoCase Referer shtaketniki\.ru spambot=yes
+SetEnvIfNoCase Referer shtora66\.ru spambot=yes
 SetEnvIfNoCase Referer sibdevice\.ru spambot=yes
 SetEnvIfNoCase Referer sibecoprom\.ru spambot=yes
 SetEnvIfNoCase Referer sibtest\.ru spambot=yes
