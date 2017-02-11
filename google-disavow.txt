@@ -52,8 +52,8 @@ domain:2kata.ru
 domain:2nt.ru
 domain:2your.site
 domain:3-letter-domains.net
-domain:34.gs
 domain:300richmond.co.nz
+domain:34.gs
 domain:3dracergames.com
 domain:3rbseyes.com
 domain:3weekdiet.com
@@ -928,6 +928,7 @@ domain:djekxa.ru
 domain:djonwatch.ru
 domain:djstools.com
 domain:dktr.ru
+domain:dkvorota.ru
 domain:dlya-android.org
 domain:dms-sw.ru
 domain:dnepr-avtospar.com.ua
@@ -1318,6 +1319,7 @@ domain:free-traffic.xyz
 domain:free-video-tool.com
 domain:freeasecret.com
 domain:freelotto.com
+domain:freemags.cc
 domain:freenode.info
 domain:freenom.link
 domain:freeseedsonline.com
@@ -2278,6 +2280,7 @@ domain:naval.jislaaik.com
 domain:nbsproject.ru
 domain:negociosdasha.com
 domain:negral.pluto.ro
+domain:nerudlogistik.ru
 domain:net-profits.xyz
 domain:netallergy.ru
 domain:netfacet.net
@@ -2900,6 +2903,7 @@ domain:seopub.net
 domain:seorankinglinks.com
 domain:seorankinglinks.us
 domain:serialsway.ucoz.ru
+domain:serptehnika.ru
 domain:servisural.ru
 domain:seryeznie-znakomstva.ru
 domain:sethrollins.net
@@ -3724,6 +3728,7 @@ domain:xn-----7kcabaipgeakzcss7bjdqdwpfnhv.xn--p1ai
 domain:xn-----7kceclhb4abre1b4a0ccl2fxch1a.xn--p1ai
 domain:xn-----8kcatubaocd1bneepefojs1h2e.xn--p1ai
 domain:xn----7sbaaabaei0cc8aj5bj0bncejx.xn--p1ai
+domain:xn----7sbbahaq9bb5afgiqfliv4m.xn--p1ai
 domain:xn----7sbahjd3btneuw1joc.xn--p1ai
 domain:xn----7sbaphztdjeboffeiof6c.xn--p1ai
 domain:xn----7sbbagbq7bd5aheftfllo4m.xn--p1ai

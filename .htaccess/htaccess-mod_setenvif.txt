@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-10 09:59:47 (SAST)
+# Updated 2017-02-11 09:38:14 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -936,6 +936,7 @@ SetEnvIfNoCase Referer djekxa\.ru spambot=yes
 SetEnvIfNoCase Referer djonwatch\.ru spambot=yes
 SetEnvIfNoCase Referer djstools\.com spambot=yes
 SetEnvIfNoCase Referer dktr\.ru spambot=yes
+SetEnvIfNoCase Referer dkvorota\.ru spambot=yes
 SetEnvIfNoCase Referer dlya\-android\.org spambot=yes
 SetEnvIfNoCase Referer dms\-sw\.ru spambot=yes
 SetEnvIfNoCase Referer dnepr\-avtospar\.com\.ua spambot=yes
@@ -1326,6 +1327,7 @@ SetEnvIfNoCase Referer free\-traffic\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-video\-tool\.com spambot=yes
 SetEnvIfNoCase Referer freeasecret\.com spambot=yes
 SetEnvIfNoCase Referer freelotto\.com spambot=yes
+SetEnvIfNoCase Referer freemags\.cc spambot=yes
 SetEnvIfNoCase Referer freenode\.info spambot=yes
 SetEnvIfNoCase Referer freenom\.link spambot=yes
 SetEnvIfNoCase Referer freeseedsonline\.com spambot=yes
@@ -2286,6 +2288,7 @@ SetEnvIfNoCase Referer naval\.jislaaik\.com spambot=yes
 SetEnvIfNoCase Referer nbsproject\.ru spambot=yes
 SetEnvIfNoCase Referer negociosdasha\.com spambot=yes
 SetEnvIfNoCase Referer negral\.pluto\.ro spambot=yes
+SetEnvIfNoCase Referer nerudlogistik\.ru spambot=yes
 SetEnvIfNoCase Referer net\-profits\.xyz spambot=yes
 SetEnvIfNoCase Referer netallergy\.ru spambot=yes
 SetEnvIfNoCase Referer netfacet\.net spambot=yes
@@ -2908,6 +2911,7 @@ SetEnvIfNoCase Referer seopub\.net spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.com spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.us spambot=yes
 SetEnvIfNoCase Referer serialsway\.ucoz\.ru spambot=yes
+SetEnvIfNoCase Referer serptehnika\.ru spambot=yes
 SetEnvIfNoCase Referer servisural\.ru spambot=yes
 SetEnvIfNoCase Referer seryeznie\-znakomstva\.ru spambot=yes
 SetEnvIfNoCase Referer sethrollins\.net spambot=yes
@@ -3735,6 +3739,7 @@ SetEnvIfNoCase Referer xn\-\-\-\-7sbaaabaei0cc8aj5bj0bncejx\.xn\-\-p1ai spambot=
 SetEnvIfNoCase Referer xn\-\-\-\-7sbahjd3btneuw1joc\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbaphztdjeboffeiof6c\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbbagbq7bd5aheftfllo4m\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-7sbbahaq9bb5afgiqfliv4m\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbho2agebbhlivy\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-7sbifcamovvfggw9d\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-8sbdbjgb1ap7a9c4czbh\.xn\-\-p1acf spambot=yes
