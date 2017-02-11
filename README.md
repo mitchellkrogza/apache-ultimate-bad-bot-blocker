@@ -7,8 +7,6 @@
   </tr>
 </table>
 
-![Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware,  Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker, Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/apache-ultimate-bad-bot-referrer-blocker-script.png "Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders")
-
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers
 
