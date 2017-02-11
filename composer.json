@@ -1,0 +1,15 @@
+{
+	"name": "mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations",
+	"description": "Template for Travis CI for Installing Apache2, PHP7 and Testing of Apache Configuration Files",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Mitchell Krog",
+			"email": "mitchellkrog@gmail.com"
+		}
+	],
+	"require": {
+		"php": ">=5.4.0",
+		"lib-curl": "*"
+	}
+}
