@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-14 08:53:00 (SAST)
+# Updated 2017-02-16 08:52:07 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -88,6 +88,7 @@ SetEnvIfNoCase Referer 76brighton\.co\.uk spambot=yes
 SetEnvIfNoCase Referer 76brighton\.com spambot=yes
 SetEnvIfNoCase Referer 7fon\.ru spambot=yes
 SetEnvIfNoCase Referer 7makemoneyonline\.com spambot=yes
+SetEnvIfNoCase Referer 7wind\.ru spambot=yes
 SetEnvIfNoCase Referer 7yue\.org spambot=yes
 SetEnvIfNoCase Referer 7zap\.com spambot=yes
 SetEnvIfNoCase Referer 883zy\.com spambot=yes
@@ -1704,6 +1705,7 @@ SetEnvIfNoCase Referer imagescargo\.com spambot=yes
 SetEnvIfNoCase Referer imagesproduct\.com spambot=yes
 SetEnvIfNoCase Referer imediadesk\.com spambot=yes
 SetEnvIfNoCase Referer imgata\.com spambot=yes
+SetEnvIfNoCase Referer imgfun\.org spambot=yes
 SetEnvIfNoCase Referer imgresult\.com spambot=yes
 SetEnvIfNoCase Referer iminent\.com spambot=yes
 SetEnvIfNoCase Referer imitex\-plus\.ru spambot=yes
@@ -3305,6 +3307,7 @@ SetEnvIfNoCase Referer thiegs\.reco\.ws spambot=yes
 SetEnvIfNoCase Referer thin\.me\.pn spambot=yes
 SetEnvIfNoCase Referer tiandeural\.ru spambot=yes
 SetEnvIfNoCase Referer tiens2010\.ru spambot=yes
+SetEnvIfNoCase Referer time\-japan\.ru spambot=yes
 SetEnvIfNoCase Referer timeallnews\.ru spambot=yes
 SetEnvIfNoCase Referer timer4web\.com spambot=yes
 SetEnvIfNoCase Referer timetorelax\.biz spambot=yes
