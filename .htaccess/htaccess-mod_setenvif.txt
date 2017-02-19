@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-17 09:01:01 (SAST)
+# Updated 2017-02-19 13:55:53 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -2363,6 +2363,7 @@ SetEnvIfNoCase Referer novosibirsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosti\-hi\-tech\.ru spambot=yes
 SetEnvIfNoCase Referer npoet\.ru spambot=yes
 SetEnvIfNoCase Referer nqsimy\.ru spambot=yes
+SetEnvIfNoCase Referer nsatc\.net spambot=yes
 SetEnvIfNoCase Referer nucia\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer nudepatch\.net spambot=yes
 SetEnvIfNoCase Referer nudo\.ca spambot=yes
@@ -2608,8 +2609,10 @@ SetEnvIfNoCase Referer pozdrawleniya\.com spambot=yes
 SetEnvIfNoCase Referer pozdrawleniya\.ru spambot=yes
 SetEnvIfNoCase Referer pozvonim\.com spambot=yes
 SetEnvIfNoCase Referer pp\-budpostach\.com\.ua spambot=yes
+SetEnvIfNoCase Referer pr\-ten\.de spambot=yes
 SetEnvIfNoCase Referer pr0fit\-b0x\.com spambot=yes
 SetEnvIfNoCase Referer pravoholding\.ru spambot=yes
+SetEnvIfNoCase Referer prchecker\.info spambot=yes
 SetEnvIfNoCase Referer prcikkek\.info spambot=yes
 SetEnvIfNoCase Referer priceg\.com spambot=yes
 SetEnvIfNoCase Referer pricheskaonline\.ru spambot=yes
@@ -2697,6 +2700,7 @@ SetEnvIfNoCase Referer qitt\.ru spambot=yes
 SetEnvIfNoCase Referer qld10000\.net spambot=yes
 SetEnvIfNoCase Referer quality\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone\.com spambot=yes
+SetEnvIfNoCase Referer quebec\-bin\.com spambot=yes
 SetEnvIfNoCase Referer queen\.sim\-com\.ru spambot=yes
 SetEnvIfNoCase Referer queryhost\.xyz spambot=yes
 SetEnvIfNoCase Referer quick\-offer\.com spambot=yes
@@ -2965,6 +2969,7 @@ SetEnvIfNoCase Referer sexobzor\.info spambot=yes
 SetEnvIfNoCase Referer sexphoto\.site spambot=yes
 SetEnvIfNoCase Referer sexsaoy\.com spambot=yes
 SetEnvIfNoCase Referer sexsearch\.com spambot=yes
+SetEnvIfNoCase Referer sexstream\.pl spambot=yes
 SetEnvIfNoCase Referer sextracker\.com spambot=yes
 SetEnvIfNoCase Referer sextracker\.de spambot=yes
 SetEnvIfNoCase Referer sexvideo\-sex\.com spambot=yes
@@ -3872,6 +3877,7 @@ SetEnvIfNoCase Referer youporn\-forum\.ga spambot=yes
 SetEnvIfNoCase Referer youporn\-forum\.uni\.me spambot=yes
 SetEnvIfNoCase Referer youporn\-ru\.com spambot=yes
 SetEnvIfNoCase Referer youradulthosting\.com spambot=yes
+SetEnvIfNoCase Referer youraticles\.pl spambot=yes
 SetEnvIfNoCase Referer yourdesires\.ru spambot=yes
 SetEnvIfNoCase Referer youresponsive\.com spambot=yes
 SetEnvIfNoCase Referer yourothersite\.com spambot=yes
@@ -3897,6 +3903,7 @@ SetEnvIfNoCase Referer zakon\-ob\-obrazovanii\.ru spambot=yes
 SetEnvIfNoCase Referer zakonobosago\.ru spambot=yes
 SetEnvIfNoCase Referer zaloadi\.ru spambot=yes
 SetEnvIfNoCase Referer zaloro\.com spambot=yes
+SetEnvIfNoCase Referer zapiszto\.pl spambot=yes
 SetEnvIfNoCase Referer zarabotat\-na\-sajte\.ru spambot=yes
 SetEnvIfNoCase Referer zarenica\.net spambot=yes
 SetEnvIfNoCase Referer zastenchivosti\.net spambot=yes
