@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-20 10:02:10 (SAST)
+# Updated 2017-02-21 09:54:18 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -958,6 +958,7 @@ SetEnvIfNoCase Referer djstools\.com spambot=yes
 SetEnvIfNoCase Referer dktr\.ru spambot=yes
 SetEnvIfNoCase Referer dkvorota\.ru spambot=yes
 SetEnvIfNoCase Referer dlya\-android\.org spambot=yes
+SetEnvIfNoCase Referer dmmjav\.com spambot=yes
 SetEnvIfNoCase Referer dms\-sw\.ru spambot=yes
 SetEnvIfNoCase Referer dnepr\-avtospar\.com\.ua spambot=yes
 SetEnvIfNoCase Referer dnepropetrovsk\.mistr\-x\.org spambot=yes
@@ -1242,6 +1243,7 @@ SetEnvIfNoCase Referer fetishinside\.com spambot=yes
 SetEnvIfNoCase Referer fidelityfunding\.com spambot=yes
 SetEnvIfNoCase Referer fifa\-coins\.online spambot=yes
 SetEnvIfNoCase Referer fil\.ru spambot=yes
+SetEnvIfNoCase Referer filesmonster\.porn spambot=yes
 SetEnvIfNoCase Referer filesvine\.com spambot=yes
 SetEnvIfNoCase Referer film\-one\.ru spambot=yes
 SetEnvIfNoCase Referer filmbokep69\.com spambot=yes
@@ -1414,6 +1416,7 @@ SetEnvIfNoCase Referer gamewrath\.com spambot=yes
 SetEnvIfNoCase Referer gaming\-journal\.com spambot=yes
 SetEnvIfNoCase Referer gap\-search\.com spambot=yes
 SetEnvIfNoCase Referer gardene\.ru spambot=yes
+SetEnvIfNoCase Referer gay\-file\.com spambot=yes
 SetEnvIfNoCase Referer gay\.adultgalls\.com spambot=yes
 SetEnvIfNoCase Referer gaygalls\.net spambot=yes
 SetEnvIfNoCase Referer gaytube\.com spambot=yes
@@ -1806,6 +1809,7 @@ SetEnvIfNoCase Referer japfm\.com spambot=yes
 SetEnvIfNoCase Referer jasonpartington\.com spambot=yes
 SetEnvIfNoCase Referer javatex\.co\.id spambot=yes
 SetEnvIfNoCase Referer javitas\.info spambot=yes
+SetEnvIfNoCase Referer javrip\.net spambot=yes
 SetEnvIfNoCase Referer jaxcube\.info spambot=yes
 SetEnvIfNoCase Referer jazzstyle4us\.com spambot=yes
 SetEnvIfNoCase Referer jennyfire\.ru spambot=yes
