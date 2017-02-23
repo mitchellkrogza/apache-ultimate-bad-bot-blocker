@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-23 10:04:28 (SAST)
+# Updated 2017-02-23 11:47:56 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -507,7 +507,6 @@ SetEnvIfNoCase Referer bkns\.vn spambot=yes
 SetEnvIfNoCase Referer black\-friday\.ga spambot=yes
 SetEnvIfNoCase Referer blackhatworth\.com spambot=yes
 SetEnvIfNoCase Referer blackle\.com spambot=yes
-SetEnvIfNoCase Referer blackplanet\.com spambot=yes
 SetEnvIfNoCase Referer blackwitchcraft\.ru spambot=yes
 SetEnvIfNoCase Referer blagovest\-med\.ru spambot=yes
 SetEnvIfNoCase Referer blavia\.00author\.com spambot=yes
@@ -1149,7 +1148,6 @@ SetEnvIfNoCase Referer evehemming\.blogspot\.com\.au spambot=yes
 SetEnvIfNoCase Referer event\-tracking\.com spambot=yes
 SetEnvIfNoCase Referer everflora\.ru spambot=yes
 SetEnvIfNoCase Referer evidencecleanergold\.com spambot=yes
-SetEnvIfNoCase Referer example\.com spambot=yes
 SetEnvIfNoCase Referer excaliburfilms\.com spambot=yes
 SetEnvIfNoCase Referer exchangeit\.gq spambot=yes
 SetEnvIfNoCase Referer exchanges\-bet\.com spambot=yes
@@ -2325,7 +2323,6 @@ SetEnvIfNoCase Referer nacap\.ru spambot=yes
 SetEnvIfNoCase Referer nagdak\.ru spambot=yes
 SetEnvIfNoCase Referer nailsimg\.com spambot=yes
 SetEnvIfNoCase Referer nalogovyy\-kodeks\.ru spambot=yes
-SetEnvIfNoCase Referer namecheap\.com spambot=yes
 SetEnvIfNoCase Referer naphukete\.ru spambot=yes
 SetEnvIfNoCase Referer nardulan\.com spambot=yes
 SetEnvIfNoCase Referer narkologiya\-belgorod\.ru spambot=yes
@@ -3346,7 +3343,6 @@ SetEnvIfNoCase Referer theheroes\.ru spambot=yes
 SetEnvIfNoCase Referer thehoverboard\.be spambot=yes
 SetEnvIfNoCase Referer thejournal\.ru spambot=yes
 SetEnvIfNoCase Referer thenetinfo\.com spambot=yes
-SetEnvIfNoCase Referer thenextweb\.com spambot=yes
 SetEnvIfNoCase Referer thepokertimer\.com spambot=yes
 SetEnvIfNoCase Referer thetattoohut\.com spambot=yes
 SetEnvIfNoCase Referer thetoiletpaper\.com spambot=yes
