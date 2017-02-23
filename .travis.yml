@@ -36,5 +36,5 @@ script:
   - STATUSCODE=$(curl -A "80legs" http://local.dev:80/apache.php &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
   - STATUSCODE=$(curl -A "masscan" http://local.dev:80/apache.php &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
   - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://100dollars-seo.com &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://zyzzcentral.ru &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
+  - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://zx6.ru &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
   - cat /tmp/error.log
