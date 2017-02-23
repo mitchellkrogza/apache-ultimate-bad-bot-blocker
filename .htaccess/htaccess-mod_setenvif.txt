@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-22 17:52:41 (SAST)
+# Updated 2017-02-23 09:14:43 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1292,6 +1292,7 @@ SetEnvIfNoCase Referer flytourisme\.org spambot=yes
 SetEnvIfNoCase Referer flzhiguan\.com spambot=yes
 SetEnvIfNoCase Referer fm\-upgrade\.ru spambot=yes
 SetEnvIfNoCase Referer fmgrupe\.it spambot=yes
+SetEnvIfNoCase Referer folowsite\.com spambot=yes
 SetEnvIfNoCase Referer footbalive\.org spambot=yes
 SetEnvIfNoCase Referer for\-your\.website spambot=yes
 SetEnvIfNoCase Referer forensicpsychiatry\.ru spambot=yes
@@ -1905,7 +1906,6 @@ SetEnvIfNoCase Referer koptims\.tiu\.ru spambot=yes
 SetEnvIfNoCase Referer koronirealestate\.gr spambot=yes
 SetEnvIfNoCase Referer kosova\.de spambot=yes
 SetEnvIfNoCase Referer kosynka\-games\.ru spambot=yes
-SetEnvIfNoCase Referer kotaku\.com spambot=yes
 SetEnvIfNoCase Referer kovesszucs\.atw\.hu spambot=yes
 SetEnvIfNoCase Referer krafte\.ru spambot=yes
 SetEnvIfNoCase Referer kraljeva\-sutjeska\.com spambot=yes
@@ -2415,6 +2415,7 @@ SetEnvIfNoCase Referer offers\.bycontext\.com spambot=yes
 SetEnvIfNoCase Referer office\-windows\.ru spambot=yes
 SetEnvIfNoCase Referer offre\-meditel\-telecom\.tk spambot=yes
 SetEnvIfNoCase Referer offtime\.ru spambot=yes
+SetEnvIfNoCase Referer oil\-td\.ru spambot=yes
 SetEnvIfNoCase Referer ok\.ru spambot=yes
 SetEnvIfNoCase Referer oklogistic\.ru spambot=yes
 SetEnvIfNoCase Referer okmusic\.jp spambot=yes
@@ -2998,6 +2999,7 @@ SetEnvIfNoCase Referer sexblog\.pw spambot=yes
 SetEnvIfNoCase Referer sexkrasivo\.net spambot=yes
 SetEnvIfNoCase Referer sexobzor\.info spambot=yes
 SetEnvIfNoCase Referer sexphoto\.site spambot=yes
+SetEnvIfNoCase Referer sexreliz\.com spambot=yes
 SetEnvIfNoCase Referer sexsaoy\.com spambot=yes
 SetEnvIfNoCase Referer sexsearch\.com spambot=yes
 SetEnvIfNoCase Referer sexstream\.pl spambot=yes
