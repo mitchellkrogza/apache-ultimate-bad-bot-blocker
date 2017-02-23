@@ -153,7 +153,7 @@ Nginx but will continue to keep this file updated as it is solid and it works.
 - Ability to add other IP ranges and IP blocks that you want to block out.
 - If its out there and it's bad it's already in here and BLOCKED !!
 
-### UNDERSTANDS PUNNYCODE / IDN DOMAIN NAMES
+### UNDERSTANDS PUNYCODE / IDN DOMAIN NAMES
 A lot of lists out there put funny domains into their hosts file. Your hosts file and DNS will not understand this. This list uses converted domains which are in the correct DNS format to be understood by any operating system. **Avoid using lists** that do not put the correctly formatted domain structure into their lists.
 
 For instance
