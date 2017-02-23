@@ -135,20 +135,57 @@ a pain when it comes to maintenance and updating your ruleset.
 .htaccess just sucks full stop. One reason after 9 years I have moved everything to
 Nginx but will continue to keep this file updated as it is solid and it works.
 
-## FEATURES:
+## FEATURES OF THE APACHE ULTIMATE BAD BOT BLOCKER:
 
 - Extensive Lists of Bad and Known Bad Bots and Scrapers (updated almost daily)
+- Blocking of Spam Referrer Domains and Web Sites
 - Blocking of SEO data collection companies like Semalt.com, Builtwith.com, WooRank.com and many others (updated regularly)
-- Alphabetically ordered for easier maintenance
+- Blocking of clickjacking Sites linked to Adware, Malware and Ransomware
+- Blocking of Porn and Gambling Web Sites who use Lucrative Ways to Earn Money through Serving Ads by hopping off your domain names and web sites.
+- Blocking of Bad Domains and IP's that you cannot even see in your Nginx Logs. Thanks to the Content Security Policy (CSP) on all my SSL sites I can see things trying to pull resources off my sites before they even get to Nginx and get blocked by the CSP.
+- Anti DDOS Filter and Rate Limiting of Agressive Bots
+- Alphabetically ordered for easier maintenance (Pull Requests Welcomed)
 - Commented sections of certain important bots to be sure of before blocking
 - Includes the IP range of Cyveillance who are known to ignore robots.txt rules
   and snoop around all over the Internet.
-- Whitelisting of Google, Bing and CloudFlare IP Ranges
-- Your own IP Ranges that you want to block can be easily added.
-- .htaccess and robots.txt files version for users unable to run the full bot blocker
+- Whitelisting of Google, Bing and Cloudflare IP Ranges
+- Whitelisting of your own IP Ranges that you want to avoid blocking by mistake.
+- Ability to add other IP ranges and IP blocks that you want to block out.
+- If its out there and it's bad it's already in here and BLOCKED !!
 
-Usage: recommended to be saved as /etc/apache2/custom.d/globalblacklist.conf 
-       - us an Include as per the example below to load the file into any host
+### UNDERSTANDS PUNNYCODE / IDN DOMAIN NAMES
+A lot of lists out there put funny domains into their hosts file. Your hosts file and DNS will not understand this. This list uses converted domains which are in the correct DNS format to be understood by any operating system. **Avoid using lists** that do not put the correctly formatted domain structure into their lists.
+
+For instance
+The domain:
+
+`lifehacĸer.com` (note the K)
+
+actually translates to:
+
+`xn--lifehacer-1rb.com`
+
+You can do an nslookup on any operating system and it will resolve correctly.
+
+`nslookup xn--lifehacer-1rb.com`
+
+```xn--lifehacer-1rb.com
+	origin = dns1.yandex.net
+	mail addr = iskalko.yandex.ru
+	serial = 2016120703
+	refresh = 14400
+	retry = 900
+	expire = 1209600
+	minimum = 14400
+xn--lifehacer-1rb.com	mail exchanger = 10 mx.yandex.net.
+Name:	xn--lifehacer-1rb.com
+Address: 78.110.60.230
+xn--lifehacer-1rb.com	nameserver = dns2.yandex.net.
+xn--lifehacer-1rb.com	text = "v=spf1 redirect=_spf.yandex.net"
+xn--lifehacer-1rb.com	nameserver = dns1.yandex.net.
+```
+
+- Look at: https://www.charset.org/punycode for more info on this.
 
 ## WARNING:
 
