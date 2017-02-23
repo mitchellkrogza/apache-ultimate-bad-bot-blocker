@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-23 11:47:56 (SAST)
+# Updated 2017-02-23 11:51:15 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -2016,7 +2016,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lider\-zhaluzi\.kiev\.ua.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*life\-instyle\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*life\.biz\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lifebyleese\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lifehacĸer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*light\.ifmo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*likesdesign\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*likesuccess\.com.*$ [NC,OR]
