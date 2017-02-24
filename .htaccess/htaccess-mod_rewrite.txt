@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-23 17:19:21 (SAST)
+# Updated 2017-02-24 12:02:06 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -1210,7 +1210,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*genericviagrasildenafiled\.net.
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*generousdeal\-a\.akamaihd\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gentamicineyedrops\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*germes\-trans\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gesangsunterricht\-hh\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*get\-free\-traffic\-now\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*get\-seo\-domain\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*get\-your\-social\-buttons\.info.*$ [NC,OR]
@@ -1751,7 +1750,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*magicdiet\.gq.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*magicplayer\-s\.acestream\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*maglid\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mail\.allnews24\.in.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mail\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mainlinehobby\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*majestic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*make\-money\-online\.com.*$ [NC,OR]
@@ -2794,7 +2792,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*studiofaca\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stuff\-about\-money\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*styro\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*success\-seo\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*suche\.t\-online\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sugarkun\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*suggest\-keywords\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sugvant\.ru.*$ [NC,OR]
