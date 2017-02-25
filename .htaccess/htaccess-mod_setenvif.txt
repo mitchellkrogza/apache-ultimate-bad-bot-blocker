@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-24 12:02:06 (SAST)
+# Updated 2017-02-25 08:58:11 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -133,6 +133,7 @@ SetEnvIfNoCase Referer adminshop\.com spambot=yes
 SetEnvIfNoCase Referer adnotbad\.com spambot=yes
 SetEnvIfNoCase Referer ads\-cool\.pro spambot=yes
 SetEnvIfNoCase Referer ads\-seo\.men spambot=yes
+SetEnvIfNoCase Referer ads\.gold spambot=yes
 SetEnvIfNoCase Referer adsfresh\.men spambot=yes
 SetEnvIfNoCase Referer adsland\.men spambot=yes
 SetEnvIfNoCase Referer adtiger\.tk spambot=yes
@@ -754,6 +755,7 @@ SetEnvIfNoCase Referer ddpills\.com spambot=yes
 SetEnvIfNoCase Referer de\.zapmeta\.com spambot=yes
 SetEnvIfNoCase Referer deadlinkchecker\.com spambot=yes
 SetEnvIfNoCase Referer dealighted\.com spambot=yes
+SetEnvIfNoCase Referer dealitright\.click spambot=yes
 SetEnvIfNoCase Referer dealwifi\.com spambot=yes
 SetEnvIfNoCase Referer dear\-diary\.ru spambot=yes
 SetEnvIfNoCase Referer decenttools\.com spambot=yes
@@ -1735,6 +1737,7 @@ SetEnvIfNoCase Referer luxup\.ru spambot=yes
 SetEnvIfNoCase Referer m1media\.net spambot=yes
 SetEnvIfNoCase Referer m4ever\.net spambot=yes
 SetEnvIfNoCase Referer mabdoola\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer macdamaged\.space spambot=yes
 SetEnvIfNoCase Referer mackeeper\-center\.club spambot=yes
 SetEnvIfNoCase Referer macnewtech\.com spambot=yes
 SetEnvIfNoCase Referer macresource\.co\.uk spambot=yes
@@ -2162,6 +2165,7 @@ SetEnvIfNoCase Referer picturesify\.com spambot=yes
 SetEnvIfNoCase Referer pijoto\.net spambot=yes
 SetEnvIfNoCase Referer pila\.pl spambot=yes
 SetEnvIfNoCase Referer pinkduck\.ga spambot=yes
+SetEnvIfNoCase Referer pinstake\.com spambot=yes
 SetEnvIfNoCase Referer pintattoos\.com spambot=yes
 SetEnvIfNoCase Referer pinwallpaper\.xyz spambot=yes
 SetEnvIfNoCase Referer piratecams\.com spambot=yes
@@ -2171,6 +2175,7 @@ SetEnvIfNoCase Referer piuminiita\.com spambot=yes
 SetEnvIfNoCase Referer pix\-hd\.com spambot=yes
 SetEnvIfNoCase Referer pix24x7\.com spambot=yes
 SetEnvIfNoCase Referer pixelrz\.com spambot=yes
+SetEnvIfNoCase Referer pixgood\.com spambot=yes
 SetEnvIfNoCase Referer pixhdawesom\.com spambot=yes
 SetEnvIfNoCase Referer pixsad\.com spambot=yes
 SetEnvIfNoCase Referer pizda\.lol spambot=yes
