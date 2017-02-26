@@ -116,4 +116,10 @@ Updating to the latest version is now as simple as:
 
 And you will be up to date with all your whitelisted domains included automatically for you now. 
 
+# AUTO UPDATING:
+
+See my latest auto updater bash script at:
+
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/updateapacheblocker.sh
+
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!

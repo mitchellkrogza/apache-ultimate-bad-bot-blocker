@@ -338,14 +338,21 @@ Updating to the latest version is now as simple as:
 
 And you will be up to date with all your whitelisted domains included automatically for you now. 
 
+# AUTO UPDATING:
+
+See my latest auto updater bash script at:
+
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/updateapacheblocker.sh
+
+
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
 ##Finally - Stopping Google Analytics 'ghost' spam
 Simply using the Apache blocker does not stop Google Analytics ghost referral spam 
 because they are hitting Analytics directly and not always necessarily touching your website. 
+
 You should use regex filters in Analytics to prevent ghost referral spam.
-For this a simple google-exclude.txt file has been created for you and it is updated at the same time
-when the Nginx Blocker is updated.
+For this a simple google-exclude.txt file has been created for you and it is updated at the same time when the Nginx Blocker is updated.
 
 ##To stop Ghost Spam on On Analytics
 Navigate to your Google Analytics Admin panel and add a Segment. (New Segment > Advanced > Conditions)

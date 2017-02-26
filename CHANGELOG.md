@@ -1,5 +1,8 @@
 #CHANGELOG - Apache Bad Bot Blocker
 
+###2017-02-26
+- Added bash script for those wanting hassle free auto updating of the blocker.
+
 ###2017-02-16
 - V2.2017.04 - Introduce new Whitelisting of Domain names and IP addresses using an Include file. This means you no longer have to remember to insert your whitelisted IP's and domains with each update. Now you can simply pull the updated globalblacklist.conf to your server, reload Apache and it will automatically include your whitelisted IP ranges and domains. **[Please read updated configuration instructions](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md)**
 
