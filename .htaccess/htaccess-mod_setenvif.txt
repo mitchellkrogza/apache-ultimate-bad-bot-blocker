@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-26 12:55:13 (SAST)
+# Updated 2017-02-27 10:45:47 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -40,6 +40,7 @@ SetEnvIfNoCase Referer 1adult\.com spambot=yes
 SetEnvIfNoCase Referer 1bet\.com spambot=yes
 SetEnvIfNoCase Referer 1hwy\.com spambot=yes
 SetEnvIfNoCase Referer 1kinobig\.ru spambot=yes
+SetEnvIfNoCase Referer 1millionusd\.xyz spambot=yes
 SetEnvIfNoCase Referer 1pamm\.ru spambot=yes
 SetEnvIfNoCase Referer 1stat\.ru spambot=yes
 SetEnvIfNoCase Referer 2015god\.org spambot=yes
@@ -1491,6 +1492,7 @@ SetEnvIfNoCase Referer interior\-stickers\.ru spambot=yes
 SetEnvIfNoCase Referer intermesh\.net spambot=yes
 SetEnvIfNoCase Referer internet\-apteka\.ru spambot=yes
 SetEnvIfNoCase Referer intervsem\.ru spambot=yes
+SetEnvIfNoCase Referer intimshop\-fantasy\.ru spambot=yes
 SetEnvIfNoCase Referer invest\-pamm\.ru spambot=yes
 SetEnvIfNoCase Referer investingclub\.ru spambot=yes
 SetEnvIfNoCase Referer investpamm\.ru spambot=yes
@@ -2208,6 +2210,7 @@ SetEnvIfNoCase Referer poffet\.net spambot=yes
 SetEnvIfNoCase Referer pogodnyyeavarii\.gq spambot=yes
 SetEnvIfNoCase Referer pogruztehnik\.ru spambot=yes
 SetEnvIfNoCase Referer poisk\-zakona\.ru spambot=yes
+SetEnvIfNoCase Referer pokemon\-go\-play\.online spambot=yes
 SetEnvIfNoCase Referer pokemongooo\.ml spambot=yes
 SetEnvIfNoCase Referer pokerniydom\.ru spambot=yes
 SetEnvIfNoCase Referer polcin\.de spambot=yes
