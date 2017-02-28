@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-02-27 10:45:47 (SAST)
+# Updated 2017-02-28 13:17:19 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1272,6 +1272,7 @@ SetEnvIfNoCase Referer goo\.ne\.jp spambot=yes
 SetEnvIfNoCase Referer goodnightjournal\.com spambot=yes
 SetEnvIfNoCase Referer goodprotein\.ru spambot=yes
 SetEnvIfNoCase Referer googglet\.com spambot=yes
+SetEnvIfNoCase Referer google\-liar\.ru spambot=yes
 SetEnvIfNoCase Referer googlefeud\.com spambot=yes
 SetEnvIfNoCase Referer googlemare\.com spambot=yes
 SetEnvIfNoCase Referer gopixdatabase\.com spambot=yes
@@ -1446,6 +1447,7 @@ SetEnvIfNoCase Referer ifmo\.ru spambot=yes
 SetEnvIfNoCase Referer igadgetsworld\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
+SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer iklysha\.ml spambot=yes
 SetEnvIfNoCase Referer ilikevitaly\.com spambot=yes
 SetEnvIfNoCase Referer ilmen\.net spambot=yes
@@ -1549,6 +1551,7 @@ SetEnvIfNoCase Referer jpcycles\.com spambot=yes
 SetEnvIfNoCase Referer juliadiets\.com spambot=yes
 SetEnvIfNoCase Referer juliaworld\.net spambot=yes
 SetEnvIfNoCase Referer jumptap\.com spambot=yes
+SetEnvIfNoCase Referer jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer kaac\.ru spambot=yes
 SetEnvIfNoCase Referer kabbalah\-red\-bracelets\.com spambot=yes
 SetEnvIfNoCase Referer kalb\.ru spambot=yes
@@ -2615,6 +2618,7 @@ SetEnvIfNoCase Referer sexyteens\.hol\.es spambot=yes
 SetEnvIfNoCase Referer sexytrend\.ru spambot=yes
 SetEnvIfNoCase Referer sfd\-chess\.ru spambot=yes
 SetEnvIfNoCase Referer shakhtar\-doneck\.ru spambot=yes
+SetEnvIfNoCase Referer sharebutton\.io spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
 SetEnvIfNoCase Referer sharebutton\.org spambot=yes
 SetEnvIfNoCase Referer sharebutton\.to spambot=yes
@@ -3454,6 +3458,7 @@ SetEnvIfNoCase Referer zojirushi\-products\.ru spambot=yes
 SetEnvIfNoCase Referer zolotoy\-lis\.ru spambot=yes
 SetEnvIfNoCase Referer zoominfo\.com spambot=yes
 SetEnvIfNoCase Referer zophim\.me spambot=yes
+SetEnvIfNoCase Referer zrizvtrnpale\.tk spambot=yes
 SetEnvIfNoCase Referer zryydi\.com spambot=yes
 SetEnvIfNoCase Referer zs2vm\.top spambot=yes
 SetEnvIfNoCase Referer zscaler\.net spambot=yes
