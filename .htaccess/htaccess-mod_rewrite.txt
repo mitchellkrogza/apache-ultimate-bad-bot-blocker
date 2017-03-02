@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-02 16:15:13 (SAST)
+# Updated 2017-03-02 16:28:03 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
