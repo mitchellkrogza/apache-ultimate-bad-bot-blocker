@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-02 10:24:00 (SAST)
+# Updated 2017-03-02 16:15:13 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -459,6 +459,7 @@ SetEnvIfNoCase Referer birzha\-truda\.eu spambot=yes
 SetEnvIfNoCase Referer bitcoinpile\.com spambot=yes
 SetEnvIfNoCase Referer bitcoins\-live\.ru spambot=yes
 SetEnvIfNoCase Referer bitporno\.sx spambot=yes
+SetEnvIfNoCase Referer bizcheapjerseyswholesalechina\.com spambot=yes
 SetEnvIfNoCase Referer biznesluxe\.ru spambot=yes
 SetEnvIfNoCase Referer biznesrealnost\.ru spambot=yes
 SetEnvIfNoCase Referer biznesschat\.net spambot=yes
@@ -627,6 +628,12 @@ SetEnvIfNoCase Referer chat\.ru spambot=yes
 SetEnvIfNoCase Referer chatseo\.com spambot=yes
 SetEnvIfNoCase Referer chcu\.net spambot=yes
 SetEnvIfNoCase Referer cheap\-pills\-norx\.com spambot=yes
+SetEnvIfNoCase Referer cheapestjerseys\-wholesale\.com spambot=yes
+SetEnvIfNoCase Referer cheapjerseysa\.com spambot=yes
+SetEnvIfNoCase Referer cheapjerseysap\.com spambot=yes
+SetEnvIfNoCase Referer cheapjerseysbizwholesale\.us spambot=yes
+SetEnvIfNoCase Referer cheapjerseysfootballshop\.com spambot=yes
+SetEnvIfNoCase Referer cheapjerseyssa\.com spambot=yes
 SetEnvIfNoCase Referer cheatcode\-lita12\.rhcloud\.com spambot=yes
 SetEnvIfNoCase Referer checkpagerank\.net spambot=yes
 SetEnvIfNoCase Referer checktext\.org spambot=yes
@@ -638,6 +645,9 @@ SetEnvIfNoCase Referer cherrypointplace\.ca spambot=yes
 SetEnvIfNoCase Referer cherubinimobili\.it spambot=yes
 SetEnvIfNoCase Referer chiblackhawks\-jerseys\.com spambot=yes
 SetEnvIfNoCase Referer chimiver\.info spambot=yes
+SetEnvIfNoCase Referer chinacheapelitejerseys\.com spambot=yes
+SetEnvIfNoCase Referer chinaelitecheapjerseys\.com spambot=yes
+SetEnvIfNoCase Referer chinajerseyswholesalecoupons\.com spambot=yes
 SetEnvIfNoCase Referer chinese\-amezon\.com spambot=yes
 SetEnvIfNoCase Referer chiptuninger\.com spambot=yes
 SetEnvIfNoCase Referer chlooe\.com spambot=yes
@@ -1310,6 +1320,7 @@ SetEnvIfNoCase Referer groupmoney\.ru spambot=yes
 SetEnvIfNoCase Referer growmyfunds\.ca spambot=yes
 SetEnvIfNoCase Referer growshop\.es spambot=yes
 SetEnvIfNoCase Referer grupografico\-pilar\.com\.ar spambot=yes
+SetEnvIfNoCase Referer gsasearchengineranker\.top spambot=yes
 SetEnvIfNoCase Referer gsbs\.com\.ua spambot=yes
 SetEnvIfNoCase Referer gsmlab\.pl spambot=yes
 SetEnvIfNoCase Referer gsmtlf\.ru spambot=yes
@@ -1552,6 +1563,14 @@ SetEnvIfNoCase Referer javitas\.info spambot=yes
 SetEnvIfNoCase Referer javrip\.net spambot=yes
 SetEnvIfNoCase Referer jaxcube\.info spambot=yes
 SetEnvIfNoCase Referer jennyfire\.ru spambot=yes
+SetEnvIfNoCase Referer jerseychinabizwholesale\.com spambot=yes
+SetEnvIfNoCase Referer jerseychinabizwholesale\.us spambot=yes
+SetEnvIfNoCase Referer jerseysbizwholesalecheap\.com spambot=yes
+SetEnvIfNoCase Referer jerseyschinabizwholesale\.us spambot=yes
+SetEnvIfNoCase Referer jerseyswholesalechinalimited\.com spambot=yes
+SetEnvIfNoCase Referer jerseywholesalebizchina\.com spambot=yes
+SetEnvIfNoCase Referer jerseywholesalechinabiz\.com spambot=yes
+SetEnvIfNoCase Referer jerseywholesaleelitestore\.com spambot=yes
 SetEnvIfNoCase Referer jjbabskoe\.ru spambot=yes
 SetEnvIfNoCase Referer joingames\.org spambot=yes
 SetEnvIfNoCase Referer jongose\.ninja spambot=yes
@@ -2017,6 +2036,9 @@ SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
 SetEnvIfNoCase Referer newstudio\.tv spambot=yes
 SetEnvIfNoCase Referer newtechspb\.ru spambot=yes
 SetEnvIfNoCase Referer nextconseil\.com spambot=yes
+SetEnvIfNoCase Referer nfljerseyscheapbiz\.us spambot=yes
+SetEnvIfNoCase Referer nfljerseyscheapchinabiz\.com spambot=yes
+SetEnvIfNoCase Referer nfljerseysforsalewholesaler\.com spambot=yes
 SetEnvIfNoCase Referer ngps1\.ru spambot=yes
 SetEnvIfNoCase Referer nhl17coins\.exblog\.jp spambot=yes
 SetEnvIfNoCase Referer nhl17coinsforps3\.gratisblog\.biz spambot=yes
@@ -3262,6 +3284,11 @@ SetEnvIfNoCase Referer whatzmyip\.net spambot=yes
 SetEnvIfNoCase Referer whereiskentoday\.com spambot=yes
 SetEnvIfNoCase Referer whipme\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer whiteproduct\.com spambot=yes
+SetEnvIfNoCase Referer wholesalecheapjerseysfree\.com spambot=yes
+SetEnvIfNoCase Referer wholesalejerseychinaoutlet\.com spambot=yes
+SetEnvIfNoCase Referer wholesalejerseychinashop\.com spambot=yes
+SetEnvIfNoCase Referer wholesalejerseys\-cheapest\.com spambot=yes
+SetEnvIfNoCase Referer wholesalejerseysgaa\.com spambot=yes
 SetEnvIfNoCase Referer wholinkstome\.com spambot=yes
 SetEnvIfNoCase Referer whos\.amung\.us spambot=yes
 SetEnvIfNoCase Referer whosonmyserver\.com spambot=yes
