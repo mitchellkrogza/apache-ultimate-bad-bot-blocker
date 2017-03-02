@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-01 12:47:19 (SAST)
+# Updated 2017-03-02 10:24:00 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -45,6 +45,7 @@ SetEnvIfNoCase Referer 1pamm\.ru spambot=yes
 SetEnvIfNoCase Referer 1stat\.ru spambot=yes
 SetEnvIfNoCase Referer 2015god\.org spambot=yes
 SetEnvIfNoCase Referer 202ch\.com spambot=yes
+SetEnvIfNoCase Referer 20pascals\.nl spambot=yes
 SetEnvIfNoCase Referer 214jaluwobapef\.cf spambot=yes
 SetEnvIfNoCase Referer 24videos\.tv spambot=yes
 SetEnvIfNoCase Referer 24x7\-server\-support\.site spambot=yes
@@ -491,6 +492,7 @@ SetEnvIfNoCase Referer bodybuilding\-shop\.biz spambot=yes
 SetEnvIfNoCase Referer boleznikogi\.com spambot=yes
 SetEnvIfNoCase Referer bolezniorganov\.ru spambot=yes
 SetEnvIfNoCase Referer bombla\.org spambot=yes
+SetEnvIfNoCase Referer bongiornos\.info spambot=yes
 SetEnvIfNoCase Referer bonux\.nextview\.ru spambot=yes
 SetEnvIfNoCase Referer boobsimge\.com spambot=yes
 SetEnvIfNoCase Referer bookmaker\-bet\.com spambot=yes
@@ -1164,6 +1166,7 @@ SetEnvIfNoCase Referer ftns\.ru spambot=yes
 SetEnvIfNoCase Referer fuel\-gas\.com spambot=yes
 SetEnvIfNoCase Referer fugarif\.ga spambot=yes
 SetEnvIfNoCase Referer fullfileaccess\.com spambot=yes
+SetEnvIfNoCase Referer fun2cell\.net spambot=yes
 SetEnvIfNoCase Referer fungamelands\.com spambot=yes
 SetEnvIfNoCase Referer fungirlsgames\.net spambot=yes
 SetEnvIfNoCase Referer funnypica\.com spambot=yes
@@ -2215,6 +2218,7 @@ SetEnvIfNoCase Referer platesauto\.com spambot=yes
 SetEnvIfNoCase Referer platinumdeals\.gr spambot=yes
 SetEnvIfNoCase Referer play\-mp3\.com spambot=yes
 SetEnvIfNoCase Referer playlott\.com spambot=yes
+SetEnvIfNoCase Referer pliks\.pl spambot=yes
 SetEnvIfNoCase Referer plohaya\-kreditnaya\-istoriya\.ru spambot=yes
 SetEnvIfNoCase Referer plusnetwork\.com spambot=yes
 SetEnvIfNoCase Referer pmk\-samara\.ru spambot=yes
@@ -3306,6 +3310,7 @@ SetEnvIfNoCase Referer xaijo\.com spambot=yes
 SetEnvIfNoCase Referer xbaboon\.com spambot=yes
 SetEnvIfNoCase Referer xblog\.in spambot=yes
 SetEnvIfNoCase Referer xboxster\.ru spambot=yes
+SetEnvIfNoCase Referer xcc24\.pl spambot=yes
 SetEnvIfNoCase Referer xclicks\.net spambot=yes
 SetEnvIfNoCase Referer xcombear\.ru spambot=yes
 SetEnvIfNoCase Referer xdoza\.com spambot=yes
