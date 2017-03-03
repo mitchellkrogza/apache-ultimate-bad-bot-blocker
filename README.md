@@ -357,7 +357,7 @@ For this a simple google-exclude.txt file has been created for you and it is upd
 ##To stop Ghost Spam on On Analytics
 Navigate to your Google Analytics Admin panel and add a Segment. (New Segment > Advanced > Conditions)
 This will need to be done on each and every site where you want this filter to be in effect. 
-Google has a stupid limit on the length of the regex so you need to break it up into multiple exclude filters 
+Google has a limit on the length of the regex so it is now broken up for you into multiple google-exclude-*.txt files. 
 
 
 | Filter          | Session       | Include                                  |
@@ -366,11 +366,14 @@ Google has a stupid limit on the length of the regex so you need to break it up 
 
 | Filter          | Session       | Exclude                                                       |
 | :-------------: |:-------------:|:-------------------------------------------------------------:|
-| Hostname        | matches regex | Copy the contents from [google-exclude.txt](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/google-exclude.txt) to this field |
+| Hostname        | matches regex | Copy the contents from [google-exclude-01.txt](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/google-exclude-01.txt) to this field |
+
+Do the same thing now for google-exclude-02.txt and google-exclude-03.txt.
+As the list grows there will be more google-exclude files each limited to Google's restriction limit.
 
 #Or Even Better Check Out RefererSpamBlocker
 
-Rather check out the awesome [Referer Spam Blocker](https://referrerspamblocker.com)
+Also check out the awesome [Referer Spam Blocker](https://referrerspamblocker.com)
 for Google Analytics which uses a collaborated source of spam domains and automatically adds all the filters to your
 Analytics sites for you in 2 easy clicks and it is FREE.
 
