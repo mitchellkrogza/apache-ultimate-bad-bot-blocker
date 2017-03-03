@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-02 16:28:03 (SAST)
+# Updated 2017-03-03 08:46:13 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -73,6 +73,7 @@ SetEnvIfNoCase Referer 4rent\.ru spambot=yes
 SetEnvIfNoCase Referer 4replicawatch\.net spambot=yes
 SetEnvIfNoCase Referer 4ureyesonly\.com spambot=yes
 SetEnvIfNoCase Referer 4webmasters\.com spambot=yes
+SetEnvIfNoCase Referer 5000\-cotydzien\.com spambot=yes
 SetEnvIfNoCase Referer 51\.la spambot=yes
 SetEnvIfNoCase Referer 5elementov\.ru spambot=yes
 SetEnvIfNoCase Referer 5forex\.ru spambot=yes
@@ -146,6 +147,7 @@ SetEnvIfNoCase Referer adultactioncam\.com spambot=yes
 SetEnvIfNoCase Referer adultfriendfinder\.com spambot=yes
 SetEnvIfNoCase Referer adultfullhd\.com spambot=yes
 SetEnvIfNoCase Referer adultgalls\.com spambot=yes
+SetEnvIfNoCase Referer adultmeetonline\.info spambot=yes
 SetEnvIfNoCase Referer adultnet\.in spambot=yes
 SetEnvIfNoCase Referer adultwebhosting\.info spambot=yes
 SetEnvIfNoCase Referer advancedcleaner\.com spambot=yes
@@ -1094,6 +1096,7 @@ SetEnvIfNoCase Referer finstroy\.net spambot=yes
 SetEnvIfNoCase Referer finteks\.ru spambot=yes
 SetEnvIfNoCase Referer finuse\.com spambot=yes
 SetEnvIfNoCase Referer fireads\.men spambot=yes
+SetEnvIfNoCase Referer firesub\.pl spambot=yes
 SetEnvIfNoCase Referer firma\-legion\.ru spambot=yes
 SetEnvIfNoCase Referer fishingwholesale\.us spambot=yes
 SetEnvIfNoCase Referer fitness\-video\.net spambot=yes
@@ -2395,6 +2398,7 @@ SetEnvIfNoCase Referer quick\-seeker\.com spambot=yes
 SetEnvIfNoCase Referer quickbuck\.com spambot=yes
 SetEnvIfNoCase Referer quickloanbank\.com spambot=yes
 SetEnvIfNoCase Referer quit\-smoking\.ga spambot=yes
+SetEnvIfNoCase Referer quizzitch\.net spambot=yes
 SetEnvIfNoCase Referer qwarckoine\.com spambot=yes
 SetEnvIfNoCase Referer qwesa\.ru spambot=yes
 SetEnvIfNoCase Referer r\-control\.ru spambot=yes
@@ -3413,6 +3417,7 @@ SetEnvIfNoCase Referer xvideosbay\.com spambot=yes
 SetEnvIfNoCase Referer xwatt\.ru spambot=yes
 SetEnvIfNoCase Referer xxart\.ru spambot=yes
 SetEnvIfNoCase Referer xxx\-treker\.ru spambot=yes
+SetEnvIfNoCase Referer xxxdatinglocal\.us spambot=yes
 SetEnvIfNoCase Referer xxxguitars\.com spambot=yes
 SetEnvIfNoCase Referer xxxrus\.org spambot=yes
 SetEnvIfNoCase Referer xxxtube69\.com spambot=yes
