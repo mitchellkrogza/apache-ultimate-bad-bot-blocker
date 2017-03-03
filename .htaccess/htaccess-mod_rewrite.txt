@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-03 08:46:13 (SAST)
+# Updated 2017-03-03 11:26:10 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -1324,6 +1324,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*groupmoney\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*growmyfunds\.ca.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*growshop\.es.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*grupografico\-pilar\.com\.ar.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gsasearchengineranker\.space.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gsasearchengineranker\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gsbs\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*gsmlab\.pl.*$ [NC,OR]
