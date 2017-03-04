@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-03 17:11:55 (SAST)
+# Updated 2017-03-04 12:17:48 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -17,7 +17,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*0ca29773681c7e82\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*0n\-line\.tv.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1\-99seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1\-free\-share\-buttons\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*1\.bp\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*100dollars\-seo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*101billion\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*101flag\.ru.*$ [NC,OR]
