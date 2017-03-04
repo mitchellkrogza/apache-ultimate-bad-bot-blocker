@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-04 12:17:48 (SAST)
+# Updated 2017-03-04 15:17:50 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -729,6 +729,7 @@ SetEnvIfNoCase Referer crests\.com spambot=yes
 SetEnvIfNoCase Referer crests\.org spambot=yes
 SetEnvIfNoCase Referer crirussian\.ru spambot=yes
 SetEnvIfNoCase Referer crystalslot\.com spambot=yes
+SetEnvIfNoCase Referer cscwtalkto\.site spambot=yes
 SetEnvIfNoCase Referer cubook\.supernew\.org spambot=yes
 SetEnvIfNoCase Referer cubs\-jerseys\.us spambot=yes
 SetEnvIfNoCase Referer curatorimages\.com spambot=yes
@@ -1288,6 +1289,7 @@ SetEnvIfNoCase Referer goldenggames\.com spambot=yes
 SetEnvIfNoCase Referer golmau\.host\.sk spambot=yes
 SetEnvIfNoCase Referer gonextmedia\.com spambot=yes
 SetEnvIfNoCase Referer goo\.ne\.jp spambot=yes
+SetEnvIfNoCase Referer good\-mummy\.ru spambot=yes
 SetEnvIfNoCase Referer goodnightjournal\.com spambot=yes
 SetEnvIfNoCase Referer goodprotein\.ru spambot=yes
 SetEnvIfNoCase Referer googglet\.com spambot=yes
@@ -1322,8 +1324,10 @@ SetEnvIfNoCase Referer groupmoney\.ru spambot=yes
 SetEnvIfNoCase Referer growmyfunds\.ca spambot=yes
 SetEnvIfNoCase Referer growshop\.es spambot=yes
 SetEnvIfNoCase Referer grupografico\-pilar\.com\.ar spambot=yes
+SetEnvIfNoCase Referer gsasearchengineranker\.pw spambot=yes
 SetEnvIfNoCase Referer gsasearchengineranker\.space spambot=yes
 SetEnvIfNoCase Referer gsasearchengineranker\.top spambot=yes
+SetEnvIfNoCase Referer gsasearchengineranker\.xyz spambot=yes
 SetEnvIfNoCase Referer gsbs\.com\.ua spambot=yes
 SetEnvIfNoCase Referer gsmlab\.pl spambot=yes
 SetEnvIfNoCase Referer gsmtlf\.ru spambot=yes
