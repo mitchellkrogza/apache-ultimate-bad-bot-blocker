@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-05 10:42:45 (SAST)
+# Updated 2017-03-05 18:34:11 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1938,6 +1938,7 @@ SetEnvIfNoCase Referer monitorwebsitespeed\.com spambot=yes
 SetEnvIfNoCase Referer monthlywinners\.com spambot=yes
 SetEnvIfNoCase Referer moomi\-daeri\.com spambot=yes
 SetEnvIfNoCase Referer more\-letom\.ru spambot=yes
+SetEnvIfNoCase Referer morepoweronmac\.trade spambot=yes
 SetEnvIfNoCase Referer morf\.snn\.gr spambot=yes
 SetEnvIfNoCase Referer morlat\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer moroccosurfadventures\.com spambot=yes
@@ -2782,6 +2783,7 @@ SetEnvIfNoCase Referer socialbuttons\.xyz spambot=yes
 SetEnvIfNoCase Referer socialmadesimple\.com spambot=yes
 SetEnvIfNoCase Referer socialseet\.ru spambot=yes
 SetEnvIfNoCase Referer socialtrade\.biz spambot=yes
+SetEnvIfNoCase Referer soda\.media spambot=yes
 SetEnvIfNoCase Referer sodexo\.com spambot=yes
 SetEnvIfNoCase Referer sofit\-dmd\.ru spambot=yes
 SetEnvIfNoCase Referer soft\-program\.com spambot=yes
@@ -3103,6 +3105,7 @@ SetEnvIfNoCase Referer uchil\.net spambot=yes
 SetEnvIfNoCase Referer ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer ucsol\.ru spambot=yes
 SetEnvIfNoCase Referer ufa\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer uhdtv\.website spambot=yes
 SetEnvIfNoCase Referer uhod\-za\-sobakoj\.ru spambot=yes
 SetEnvIfNoCase Referer uhodzalijami\.ru spambot=yes
 SetEnvIfNoCase Referer ukrup\.com spambot=yes
@@ -3247,6 +3250,7 @@ SetEnvIfNoCase Referer warningzscaler\.heraeus\.com spambot=yes
 SetEnvIfNoCase Referer watch\-movies\.ru spambot=yes
 SetEnvIfNoCase Referer watchdogs\-2\.ru spambot=yes
 SetEnvIfNoCase Referer watchmygf\.net spambot=yes
+SetEnvIfNoCase Referer waterpurifier\.club spambot=yes
 SetEnvIfNoCase Referer wdfdocando\.com spambot=yes
 SetEnvIfNoCase Referer wdrake\.com spambot=yes
 SetEnvIfNoCase Referer we\-are\-gamers\.com spambot=yes
