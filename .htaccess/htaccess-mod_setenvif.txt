@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-05 18:34:11 (SAST)
+# Updated 2017-03-06 09:50:45 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -318,6 +318,7 @@ SetEnvIfNoCase Referer auto\-zapchasti\.org spambot=yes
 SetEnvIfNoCase Referer auto\.rusvile\.lt spambot=yes
 SetEnvIfNoCase Referer auto4style\.ru spambot=yes
 SetEnvIfNoCase Referer autobudpostach\.club spambot=yes
+SetEnvIfNoCase Referer autogrep\.ru spambot=yes
 SetEnvIfNoCase Referer autoloans\.com spambot=yes
 SetEnvIfNoCase Referer autolombard\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer autonew\.biz spambot=yes
@@ -355,6 +356,7 @@ SetEnvIfNoCase Referer ayerbo\.xhost\.ro spambot=yes
 SetEnvIfNoCase Referer azadnegar\.com spambot=yes
 SetEnvIfNoCase Referer azartmix\.com spambot=yes
 SetEnvIfNoCase Referer azartniy\-bonus\.com spambot=yes
+SetEnvIfNoCase Referer azazaporn\.com spambot=yes
 SetEnvIfNoCase Referer azazu\.ru spambot=yes
 SetEnvIfNoCase Referer azbaseimages\.net spambot=yes
 SetEnvIfNoCase Referer azbuka\-mo\.ru spambot=yes
@@ -749,6 +751,7 @@ SetEnvIfNoCase Referer cyclobenzaprinevstizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer cymbaltaandtizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer cyprusbuyproperties\.com spambot=yes
 SetEnvIfNoCase Referer cyse\.tk spambot=yes
+SetEnvIfNoCase Referer czat\.wp\.pl spambot=yes
 SetEnvIfNoCase Referer dailyrank\.net spambot=yes
 SetEnvIfNoCase Referer dailystrength\.org spambot=yes
 SetEnvIfNoCase Referer dalavia\.ru spambot=yes
@@ -1380,6 +1383,7 @@ SetEnvIfNoCase Referer helpmymacfaster\.trade spambot=yes
 SetEnvIfNoCase Referer helvetia\.com\.ua spambot=yes
 SetEnvIfNoCase Referer hem\.passagen\.se spambot=yes
 SetEnvIfNoCase Referer herehloadibs\.cf spambot=yes
+SetEnvIfNoCase Referer hermesbirkinhandbagoutlets\.com spambot=yes
 SetEnvIfNoCase Referer hetmanship\.xyz spambot=yes
 SetEnvIfNoCase Referer hidefiles\.org spambot=yes
 SetEnvIfNoCase Referer hidemyass\.com spambot=yes
@@ -1417,6 +1421,7 @@ SetEnvIfNoCase Referer hotblog\.top spambot=yes
 SetEnvIfNoCase Referer hotdl\.in spambot=yes
 SetEnvIfNoCase Referer hotenergy\.ru spambot=yes
 SetEnvIfNoCase Referer hothor\.se spambot=yes
+SetEnvIfNoCase Referer hotloans\.ru spambot=yes
 SetEnvIfNoCase Referer hotshoppymac\.com spambot=yes
 SetEnvIfNoCase Referer houdom\.net spambot=yes
 SetEnvIfNoCase Referer housediz\.com spambot=yes
@@ -2462,6 +2467,7 @@ SetEnvIfNoCase Referer remont\-fridge\-tv\.ru spambot=yes
 SetEnvIfNoCase Referer remont\-komputerov\-notebook\.ru spambot=yes
 SetEnvIfNoCase Referer remont\-mobile\-phones\.ru spambot=yes
 SetEnvIfNoCase Referer remont\-ustanovka\-tehniki\.ru spambot=yes
+SetEnvIfNoCase Referer remontbiz\.ru spambot=yes
 SetEnvIfNoCase Referer remontgruzovik\.ru spambot=yes
 SetEnvIfNoCase Referer remorcicomerciale\.ro spambot=yes
 SetEnvIfNoCase Referer remote\-dba\.de spambot=yes
