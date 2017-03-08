@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-06 10:08:47 (SAST)
+# Updated 2017-03-08 09:52:00 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -106,6 +106,7 @@ SetEnvIfNoCase Referer aad1f4acb0a373420d9b0c4202d38d94fa\.com spambot=yes
 SetEnvIfNoCase Referer aadroid\.net spambot=yes
 SetEnvIfNoCase Referer aarbur\.com spambot=yes
 SetEnvIfNoCase Referer abbanreddy\.com spambot=yes
+SetEnvIfNoCase Referer abbp1\.website spambot=yes
 SetEnvIfNoCase Referer abc\.xyz spambot=yes
 SetEnvIfNoCase Referer abclauncher\.com spambot=yes
 SetEnvIfNoCase Referer abctoppictures\.net spambot=yes
@@ -424,6 +425,7 @@ SetEnvIfNoCase Referer bestmarriages\.com spambot=yes
 SetEnvIfNoCase Referer bestmobilityscooterstoday\.com spambot=yes
 SetEnvIfNoCase Referer bestofferswalkmydogouteveryday\.gq spambot=yes
 SetEnvIfNoCase Referer bestofpicture\.com spambot=yes
+SetEnvIfNoCase Referer bestofupload\.info spambot=yes
 SetEnvIfNoCase Referer bestplacetobuyeriacta\.jw\.lt spambot=yes
 SetEnvIfNoCase Referer bestpriceninja\.com spambot=yes
 SetEnvIfNoCase Referer bestwebsiteawards\.com spambot=yes
@@ -1233,6 +1235,7 @@ SetEnvIfNoCase Referer genericlowlatencyasiodriverhq\.aircus\.com spambot=yes
 SetEnvIfNoCase Referer genericviagrasildenafiled\.net spambot=yes
 SetEnvIfNoCase Referer generousdeal\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer gentamicineyedrops\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer geoads\.com spambot=yes
 SetEnvIfNoCase Referer germes\-trans\.com spambot=yes
 SetEnvIfNoCase Referer get\-free\-traffic\-now\.com spambot=yes
 SetEnvIfNoCase Referer get\-seo\-domain\.com spambot=yes
@@ -2026,6 +2029,7 @@ SetEnvIfNoCase Referer nbsproject\.ru spambot=yes
 SetEnvIfNoCase Referer negociosdasha\.com spambot=yes
 SetEnvIfNoCase Referer negral\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer neobux\-bg\.info spambot=yes
+SetEnvIfNoCase Referer neodownload\.webcam spambot=yes
 SetEnvIfNoCase Referer nerudlogistik\.ru spambot=yes
 SetEnvIfNoCase Referer netallergy\.ru spambot=yes
 SetEnvIfNoCase Referer netfacet\.net spambot=yes
@@ -2597,6 +2601,7 @@ SetEnvIfNoCase Referer sdelatmebel\.ru spambot=yes
 SetEnvIfNoCase Referer sdi\-pme\.com spambot=yes
 SetEnvIfNoCase Referer sdrescher\.net spambot=yes
 SetEnvIfNoCase Referer search\-error\.com spambot=yes
+SetEnvIfNoCase Referer searchinquire\.com spambot=yes
 SetEnvIfNoCase Referer searchinterneat\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer searchkut\.com spambot=yes
 SetEnvIfNoCase Referer searchlock\.com spambot=yes
@@ -2701,6 +2706,7 @@ SetEnvIfNoCase Referer sim\-service\.net spambot=yes
 SetEnvIfNoCase Referer similardeals\.net spambot=yes
 SetEnvIfNoCase Referer simple\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer simplepooltips\.com spambot=yes
+SetEnvIfNoCase Referer simply\.net spambot=yes
 SetEnvIfNoCase Referer sims\-sims\.ru spambot=yes
 SetEnvIfNoCase Referer sindragosa\.comxa\.com spambot=yes
 SetEnvIfNoCase Referer sinel\.info spambot=yes
@@ -3004,6 +3010,7 @@ SetEnvIfNoCase Referer tizanidinezanaflex\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer tkanorganizma\.ru spambot=yes
 SetEnvIfNoCase Referer tksn\.ru spambot=yes
 SetEnvIfNoCase Referer tmm\-kurs\.ru spambot=yes
+SetEnvIfNoCase Referer tnctrx\.com spambot=yes
 SetEnvIfNoCase Referer todohr\.com spambot=yes
 SetEnvIfNoCase Referer toloka\.hurtom\.com spambot=yes
 SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
@@ -3239,6 +3246,7 @@ SetEnvIfNoCase Referer warningwar\.ru spambot=yes
 SetEnvIfNoCase Referer warningzscaler\.heraeus\.com spambot=yes
 SetEnvIfNoCase Referer watch\-movies\.ru spambot=yes
 SetEnvIfNoCase Referer watchdogs\-2\.ru spambot=yes
+SetEnvIfNoCase Referer watchmyfb\.pl spambot=yes
 SetEnvIfNoCase Referer watchmygf\.net spambot=yes
 SetEnvIfNoCase Referer waterpurifier\.club spambot=yes
 SetEnvIfNoCase Referer wdfdocando\.com spambot=yes
@@ -3517,6 +3525,7 @@ SetEnvIfNoCase Referer zscalerone\.net spambot=yes
 SetEnvIfNoCase Referer zverokruh\-shop\.cz spambot=yes
 SetEnvIfNoCase Referer zvetki\.ru spambot=yes
 SetEnvIfNoCase Referer zx6\.ru spambot=yes
+SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 </IfModule>
 
 
