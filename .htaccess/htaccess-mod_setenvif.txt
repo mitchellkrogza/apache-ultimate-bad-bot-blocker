@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-08 09:52:00 (SAST)
+# Updated 2017-03-09 12:48:55 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -88,6 +88,7 @@ SetEnvIfNoCase Referer 883zy\.com spambot=yes
 SetEnvIfNoCase Referer 8gold\.com spambot=yes
 SetEnvIfNoCase Referer 8si\.ru spambot=yes
 SetEnvIfNoCase Referer 98oi\.ru spambot=yes
+SetEnvIfNoCase Referer 999webdesign\.com spambot=yes
 SetEnvIfNoCase Referer 9med\.net spambot=yes
 SetEnvIfNoCase Referer a342ae9750004b14b55f7310eff0ab65\.com spambot=yes
 SetEnvIfNoCase Referer aa08daf7e13b6345e09e92f771507fa5f4\.com spambot=yes
@@ -1105,6 +1106,7 @@ SetEnvIfNoCase Referer fix\-website\-errors\.com spambot=yes
 SetEnvIfNoCase Referer flash4fun\.com spambot=yes
 SetEnvIfNoCase Referer flavors\.me spambot=yes
 SetEnvIfNoCase Referer flex4launch\.ru spambot=yes
+SetEnvIfNoCase Referer flipper\.top spambot=yes
 SetEnvIfNoCase Referer floating\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer flooringinstallation\-edmonton\.com spambot=yes
 SetEnvIfNoCase Referer floridahuntingfishingadventures\.com spambot=yes
@@ -2542,6 +2544,7 @@ SetEnvIfNoCase Referer sanyuprojects\.com spambot=yes
 SetEnvIfNoCase Referer sarafangel\.ru spambot=yes
 SetEnvIfNoCase Referer saratov\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer sarf3omlat\.com spambot=yes
+SetEnvIfNoCase Referer sarm\.tk spambot=yes
 SetEnvIfNoCase Referer sashagreyblog\.ga spambot=yes
 SetEnvIfNoCase Referer savefrom\.com spambot=yes
 SetEnvIfNoCase Referer savememoney\.co\.za spambot=yes
