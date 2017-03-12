@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-12 09:12:52 (SAST)
+# Updated 2017-03-12 10:03:19 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -618,6 +618,7 @@ SetEnvIfNoCase Referer catalogs\-parts\.com spambot=yes
 SetEnvIfNoCase Referer cayado\.snn\.gr spambot=yes
 SetEnvIfNoCase Referer cbcseward\.com spambot=yes
 SetEnvIfNoCase Referer cbox\.ws spambot=yes
+SetEnvIfNoCase Referer cbys\.tk spambot=yes
 SetEnvIfNoCase Referer cdncash\.com spambot=yes
 SetEnvIfNoCase Referer cdncash\.net spambot=yes
 SetEnvIfNoCase Referer cdncash\.org spambot=yes
@@ -892,6 +893,7 @@ SetEnvIfNoCase Referer dyshagi\.ru spambot=yes
 SetEnvIfNoCase Referer e\-avon\.ru spambot=yes
 SetEnvIfNoCase Referer e\-buyeasy\.com spambot=yes
 SetEnvIfNoCase Referer e\-collantes\.com spambot=yes
+SetEnvIfNoCase Referer e\-commerce\-seo\.com spambot=yes
 SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e\-poker\-2005\.com spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
@@ -906,6 +908,7 @@ SetEnvIfNoCase Referer ecomp3\.ru spambot=yes
 SetEnvIfNoCase Referer econom\.co spambot=yes
 SetEnvIfNoCase Referer ecookna\.com\.ua spambot=yes
 SetEnvIfNoCase Referer ecxtracking\.com spambot=yes
+SetEnvIfNoCase Referer ed\-shop01\.ru spambot=yes
 SetEnvIfNoCase Referer edelstahlschornstein\-123\.de spambot=yes
 SetEnvIfNoCase Referer editmedios\.com spambot=yes
 SetEnvIfNoCase Referer edshopping\.net spambot=yes
@@ -1497,6 +1500,7 @@ SetEnvIfNoCase Referer imagecoolpub\.com spambot=yes
 SetEnvIfNoCase Referer imagerydatabase\.com spambot=yes
 SetEnvIfNoCase Referer images\-graphics\-pics\.com spambot=yes
 SetEnvIfNoCase Referer imediadesk\.com spambot=yes
+SetEnvIfNoCase Referer imgarcade\.com spambot=yes
 SetEnvIfNoCase Referer imgata\.com spambot=yes
 SetEnvIfNoCase Referer imgresult\.com spambot=yes
 SetEnvIfNoCase Referer iminent\.com spambot=yes
@@ -2193,6 +2197,7 @@ SetEnvIfNoCase Referer paperics\.com spambot=yes
 SetEnvIfNoCase Referer paperwritingservice17\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer paradontozanet\.ru spambot=yes
 SetEnvIfNoCase Referer parlament\.biz spambot=yes
+SetEnvIfNoCase Referer partybunny\.ru spambot=yes
 SetEnvIfNoCase Referer pathwhelp\.org spambot=yes
 SetEnvIfNoCase Referer pattersonsweb\.com spambot=yes
 SetEnvIfNoCase Referer paydayonlinecom\.com spambot=yes
@@ -2880,6 +2885,7 @@ SetEnvIfNoCase Referer stromerrealty\.com spambot=yes
 SetEnvIfNoCase Referer strongholdsb\.ru spambot=yes
 SetEnvIfNoCase Referer strongsignal\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer stroydetali\.ru spambot=yes
+SetEnvIfNoCase Referer stroyhelp\-dv\.ru spambot=yes
 SetEnvIfNoCase Referer stroymonolit\.su spambot=yes
 SetEnvIfNoCase Referer studiofaca\.com spambot=yes
 SetEnvIfNoCase Referer stuff\-about\-money\.com spambot=yes
@@ -3418,6 +3424,7 @@ SetEnvIfNoCase Referer xn\-\-80ahvj9e\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80aikhbrhr\.net spambot=yes
 SetEnvIfNoCase Referer xn\-\-80ajbshivpvn2i\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80ajjbdhgmudixfjc8c5a9df8b\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-80aodinpgi\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-90acenikpebbdd4f6d\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-b1adccaf1bzj\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-b1ag5cfn\.xn\-\-p1ai spambot=yes
@@ -3449,6 +3456,7 @@ SetEnvIfNoCase Referer xxart\.ru spambot=yes
 SetEnvIfNoCase Referer xxx\-treker\.ru spambot=yes
 SetEnvIfNoCase Referer xxxdatinglocal\.us spambot=yes
 SetEnvIfNoCase Referer xxxguitars\.com spambot=yes
+SetEnvIfNoCase Referer xxxnatelefon\.ru spambot=yes
 SetEnvIfNoCase Referer xxxrus\.org spambot=yes
 SetEnvIfNoCase Referer xxxtube69\.com spambot=yes
 SetEnvIfNoCase Referer xz618\.com spambot=yes
