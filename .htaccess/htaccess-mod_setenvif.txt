@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-12 10:03:19 (SAST)
+# Updated 2017-03-14 09:32:49 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -743,6 +743,7 @@ SetEnvIfNoCase Referer cscwtalkto\.site spambot=yes
 SetEnvIfNoCase Referer cubook\.supernew\.org spambot=yes
 SetEnvIfNoCase Referer cubs\-jerseys\.us spambot=yes
 SetEnvIfNoCase Referer curatorimages\.com spambot=yes
+SetEnvIfNoCase Referer custodieva\.ru spambot=yes
 SetEnvIfNoCase Referer custom\-electric\-guitar\.com spambot=yes
 SetEnvIfNoCase Referer custom\-product\-labels\.com spambot=yes
 SetEnvIfNoCase Referer customboxes4less\.com spambot=yes
@@ -1215,6 +1216,7 @@ SetEnvIfNoCase Referer galeon\.com spambot=yes
 SetEnvIfNoCase Referer gallerily\.com spambot=yes
 SetEnvIfNoCase Referer gallerylisting\.com spambot=yes
 SetEnvIfNoCase Referer gallictures\.com spambot=yes
+SetEnvIfNoCase Referer gamblingnerd\.com spambot=yes
 SetEnvIfNoCase Referer game\-mmorpg\.net spambot=yes
 SetEnvIfNoCase Referer game\-top\.su spambot=yes
 SetEnvIfNoCase Referer gameonasia\.com spambot=yes
@@ -2782,6 +2784,7 @@ SetEnvIfNoCase Referer snip\.tw spambot=yes
 SetEnvIfNoCase Referer snjack\.info spambot=yes
 SetEnvIfNoCase Referer snjatie\-geroinovoy\-lomki\.ru spambot=yes
 SetEnvIfNoCase Referer snomer1\.ru spambot=yes
+SetEnvIfNoCase Referer snow\.nvr163\.com spambot=yes
 SetEnvIfNoCase Referer snowplanes\.com spambot=yes
 SetEnvIfNoCase Referer snts\.shell\-pmr\.ru spambot=yes
 SetEnvIfNoCase Referer snworks\.com spambot=yes
