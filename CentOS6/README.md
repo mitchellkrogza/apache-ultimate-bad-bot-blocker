@@ -2,7 +2,7 @@
 
 <table style="width:100%;margin:0;">
   <tr>
-    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/apache-ultimate-bad-bot-referrer-blocker-script.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/></td>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CentOS6/apache-bad-bot-referrer-spam-blocker-centos-6-apache-2.jpg" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS 6.8 and Apache 2.2.15 - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/></td>
     <td align="right"><a href="https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker" target="_blank"><img src="https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master"/></a></td>
   </tr>
 </table>
