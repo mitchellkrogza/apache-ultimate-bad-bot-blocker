@@ -223,7 +223,8 @@ can add that functionality if you like copying the awk statement !~ from the fir
 `00 08 * * * tail -50000 /var/log/apache/mydomain-access.log | awk '{print $12}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail -s "Top 1000 Agents for Mydomain.com" me@mydomain.com`
 
 
-# CONFIGURATION OF THE APACHE BAD BOT BLOCKER FOR CENTOS 6.8 and APACHE 2.2.15:
+# CONFIGURATION OF THE APACHE BAD BOT BLOCKER 
+## FOR CENTOS 6.8 and APACHE 2.2.15
 
 ##Step 1:
 
