@@ -22,11 +22,11 @@ script:
   # Check Apache Version
   - sudo apache2 -v
   # Check PHP Version
-  - sudo php -v
+  #- sudo php -v
   # Check if the site responds OK
   - curl -vsf 'http://local.dev:80/apache.php' &> /dev/stdout
   # Test if PHP is working
-  - curl -vsf 'http://local.dev:80/info.php' &> /dev/stdout
+  #- curl -vsf 'http://local.dev:80/info.php' &> /dev/stdout
   # Test a Good User-Agent String against our site
   - curl -A "googlebot" http://local.dev:80/apache.php &> /dev/stdout
   # Test Some Bad Bots and Referrers
