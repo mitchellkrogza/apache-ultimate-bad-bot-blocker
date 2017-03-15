@@ -225,7 +225,7 @@ can add that functionality if you like copying the awk statement !~ from the fir
 
 # CONFIGURATION OF THE APACHE BAD BOT BLOCKER:
 
-## FOR CENTOS 6.8 and APACHE 2.2.15s
+## FOR CENTOS 6.8 and APACHE 2.2.15 ONLY
 
 ##Step 1:
 
