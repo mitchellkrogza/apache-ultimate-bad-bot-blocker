@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-14 09:32:49 (SAST)
+# Updated 2017-03-15 11:11:00 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -438,6 +438,7 @@ SetEnvIfNoCase Referer bestwebsiteawards\.com spambot=yes
 SetEnvIfNoCase Referer bestwebsitesawards\.com spambot=yes
 SetEnvIfNoCase Referer bet\-prognoz\.com spambot=yes
 SetEnvIfNoCase Referer betonka\.pro spambot=yes
+SetEnvIfNoCase Referer betterscooter\.com spambot=yes
 SetEnvIfNoCase Referer betune\.onlinewebshop\.net spambot=yes
 SetEnvIfNoCase Referer betwinservice\.com spambot=yes
 SetEnvIfNoCase Referer beyan\.host\.sk spambot=yes
@@ -1877,6 +1878,7 @@ SetEnvIfNoCase Referer meds\-online24\.com spambot=yes
 SetEnvIfNoCase Referer medtherapy\.ru spambot=yes
 SetEnvIfNoCase Referer meduza\-consult\.ru spambot=yes
 SetEnvIfNoCase Referer meendo\-free\-traffic\.ga spambot=yes
+SetEnvIfNoCase Referer mega\-polis\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer megaapteka\.ru spambot=yes
 SetEnvIfNoCase Referer megaindex\.ru spambot=yes
 SetEnvIfNoCase Referer megakino\.net spambot=yes
@@ -2147,6 +2149,7 @@ SetEnvIfNoCase Referer online7777\.com spambot=yes
 SetEnvIfNoCase Referer onlinebay\.ru spambot=yes
 SetEnvIfNoCase Referer onlinedomains\.ru spambot=yes
 SetEnvIfNoCase Referer onlinefilmz\.net spambot=yes
+SetEnvIfNoCase Referer onlineku\.com spambot=yes
 SetEnvIfNoCase Referer onlinemegax\.com spambot=yes
 SetEnvIfNoCase Referer onlineserialy\.ru spambot=yes
 SetEnvIfNoCase Referer onlinetvseries\.me spambot=yes
@@ -2897,6 +2900,7 @@ SetEnvIfNoCase Referer success\-seo\.com spambot=yes
 SetEnvIfNoCase Referer sugarkun\.com spambot=yes
 SetEnvIfNoCase Referer suggest\-keywords\.com spambot=yes
 SetEnvIfNoCase Referer sugvant\.ru spambot=yes
+SetEnvIfNoCase Referer sukarame\.net spambot=yes
 SetEnvIfNoCase Referer sukirgenk\.dvrlists\.com spambot=yes
 SetEnvIfNoCase Referer superkanpo\.com spambot=yes
 SetEnvIfNoCase Referer supermesta\.ru spambot=yes

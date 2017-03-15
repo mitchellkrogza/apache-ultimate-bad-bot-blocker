@@ -4,10 +4,7 @@ env:
 sudo: required
 dist: trusty
 php:
-    - 5.4
-    - 5.5
     - 5.6
-    - 7.0
 addons:
   hosts:
     - local.dev
