@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-15 11:11:00 (SAST)
+# Updated 2017-03-16 09:11:26 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -73,6 +73,7 @@ SetEnvIfNoCase Referer 4ureyesonly\.com spambot=yes
 SetEnvIfNoCase Referer 4webmasters\.com spambot=yes
 SetEnvIfNoCase Referer 5000\-cotydzien\.com spambot=yes
 SetEnvIfNoCase Referer 51\.la spambot=yes
+SetEnvIfNoCase Referer 57883\.net spambot=yes
 SetEnvIfNoCase Referer 5elementov\.ru spambot=yes
 SetEnvIfNoCase Referer 5forex\.ru spambot=yes
 SetEnvIfNoCase Referer 5i2\.net spambot=yes
@@ -1416,6 +1417,7 @@ SetEnvIfNoCase Referer hmywwogw\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer hobild\.net spambot=yes
 SetEnvIfNoCase Referer hol\.es spambot=yes
 SetEnvIfNoCase Referer holidaypics\.org spambot=yes
+SetEnvIfNoCase Referer hollywoodactress\.info spambot=yes
 SetEnvIfNoCase Referer home\.myplaycity\.com spambot=yes
 SetEnvIfNoCase Referer homeandhealth\.ru spambot=yes
 SetEnvIfNoCase Referer homedecorpicture\.us spambot=yes
@@ -1980,6 +1982,7 @@ SetEnvIfNoCase Referer moyakuhnia\.ru spambot=yes
 SetEnvIfNoCase Referer moyaterapiya\.ru spambot=yes
 SetEnvIfNoCase Referer moz\.com spambot=yes
 SetEnvIfNoCase Referer mp3films\.ru spambot=yes
+SetEnvIfNoCase Referer mp3ringtone\.info spambot=yes
 SetEnvIfNoCase Referer mrcsa\.com\.au spambot=yes
 SetEnvIfNoCase Referer mrinsidesales\.com spambot=yes
 SetEnvIfNoCase Referer mriyadh\.com spambot=yes
@@ -2015,6 +2018,7 @@ SetEnvIfNoCase Referer mydirtystuff\.com spambot=yes
 SetEnvIfNoCase Referer mydownloadengine\.com spambot=yes
 SetEnvIfNoCase Referer mydownlodablefiles\.com spambot=yes
 SetEnvIfNoCase Referer myfreemp3\.eu spambot=yes
+SetEnvIfNoCase Referer myfreetutorials\.com spambot=yes
 SetEnvIfNoCase Referer myftpupload\.com spambot=yes
 SetEnvIfNoCase Referer myhealthcare\.com spambot=yes
 SetEnvIfNoCase Referer myhitmp3\.club spambot=yes
@@ -3152,6 +3156,7 @@ SetEnvIfNoCase Referer underthesite\.com spambot=yes
 SetEnvIfNoCase Referer uni\.me spambot=yes
 SetEnvIfNoCase Referer unimodemhalfduplefw\.pen\.io spambot=yes
 SetEnvIfNoCase Referer unitygame3d\.com spambot=yes
+SetEnvIfNoCase Referer universals\.com\.ua spambot=yes
 SetEnvIfNoCase Referer unmaroll\.ya\.ru spambot=yes
 SetEnvIfNoCase Referer unpredictable\.ga spambot=yes
 SetEnvIfNoCase Referer uogonline\.com spambot=yes
@@ -3174,6 +3179,7 @@ SetEnvIfNoCase Referer userequip\.com spambot=yes
 SetEnvIfNoCase Referer ussearche\.cf spambot=yes
 SetEnvIfNoCase Referer ustion\.ru spambot=yes
 SetEnvIfNoCase Referer utrolive\.ru spambot=yes
+SetEnvIfNoCase Referer uvozdeckych\.info spambot=yes
 SetEnvIfNoCase Referer uytmaster\.ru spambot=yes
 SetEnvIfNoCase Referer uzungil\.com spambot=yes
 SetEnvIfNoCase Referer v24s\.net spambot=yes
