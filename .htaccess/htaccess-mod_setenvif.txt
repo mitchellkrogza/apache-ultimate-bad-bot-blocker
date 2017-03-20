@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-19 12:33:36 (SAST)
+# Updated 2017-03-20 15:31:59 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -701,6 +701,7 @@ SetEnvIfNoCase Referer codysbbq\.com spambot=yes
 SetEnvIfNoCase Referer cognitiveseo\.com spambot=yes
 SetEnvIfNoCase Referer coldfilm\.ru spambot=yes
 SetEnvIfNoCase Referer collegeessay19\.blogspot\.ru spambot=yes
+SetEnvIfNoCase Referer com\-onlinesupport\.site spambot=yes
 SetEnvIfNoCase Referer com\-supportcenter\.website spambot=yes
 SetEnvIfNoCase Referer cometorussia\.net spambot=yes
 SetEnvIfNoCase Referer comissionka\.net spambot=yes
@@ -1334,6 +1335,7 @@ SetEnvIfNoCase Referer gox\.com\.ua spambot=yes
 SetEnvIfNoCase Referer gpirate\.com spambot=yes
 SetEnvIfNoCase Referer gq\-catalog\.gq spambot=yes
 SetEnvIfNoCase Referer grand\-chlen\.ru spambot=yes
+SetEnvIfNoCase Referer graphicwe\.org spambot=yes
 SetEnvIfNoCase Referer graphid\.com spambot=yes
 SetEnvIfNoCase Referer gratuitbaise\.com spambot=yes
 SetEnvIfNoCase Referer greatfind\-a\.akamaihd\.net spambot=yes
@@ -2361,6 +2363,7 @@ SetEnvIfNoCase Referer pozdrawleniya\.com spambot=yes
 SetEnvIfNoCase Referer pozdrawleniya\.ru spambot=yes
 SetEnvIfNoCase Referer pozvonim\.com spambot=yes
 SetEnvIfNoCase Referer pp\-budpostach\.com\.ua spambot=yes
+SetEnvIfNoCase Referer pr\-ten\.de spambot=yes
 SetEnvIfNoCase Referer pr0fit\-b0x\.com spambot=yes
 SetEnvIfNoCase Referer pravoholding\.ru spambot=yes
 SetEnvIfNoCase Referer prchecker\.info spambot=yes
