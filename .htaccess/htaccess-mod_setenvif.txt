@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-21 09:16:12 (SAST)
+# Updated 2017-03-22 08:34:10 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -86,6 +86,7 @@ SetEnvIfNoCase Referer 7makemoneyonline\.com spambot=yes
 SetEnvIfNoCase Referer 7wind\.ru spambot=yes
 SetEnvIfNoCase Referer 7yue\.org spambot=yes
 SetEnvIfNoCase Referer 7zap\.com spambot=yes
+SetEnvIfNoCase Referer 8558l\.jobs\.net spambot=yes
 SetEnvIfNoCase Referer 883zy\.com spambot=yes
 SetEnvIfNoCase Referer 8gold\.com spambot=yes
 SetEnvIfNoCase Referer 8si\.ru spambot=yes
@@ -2327,7 +2328,6 @@ SetEnvIfNoCase Referer porngalleries\.top spambot=yes
 SetEnvIfNoCase Referer pornhub\-forum\.ga spambot=yes
 SetEnvIfNoCase Referer pornhub\-forum\.uni\.me spambot=yes
 SetEnvIfNoCase Referer pornhub\-ru\.com spambot=yes
-SetEnvIfNoCase Referer pornhub\.com spambot=yes
 SetEnvIfNoCase Referer pornhubforum\.tk spambot=yes
 SetEnvIfNoCase Referer pornmania\.pl spambot=yes
 SetEnvIfNoCase Referer porno\-dojki\.net spambot=yes
@@ -3514,6 +3514,7 @@ SetEnvIfNoCase Referer yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer yebocasino\.co\.za spambot=yes
 SetEnvIfNoCase Referer yebocasino\.com spambot=yes
 SetEnvIfNoCase Referer ynymnwbm\.bloger\.index\.hr spambot=yes
+SetEnvIfNoCase Referer yogamatsexpert\.com spambot=yes
 SetEnvIfNoCase Referer yorkshire\.com spambot=yes
 SetEnvIfNoCase Referer yorkshireccc\.com spambot=yes
 SetEnvIfNoCase Referer youandcredit\.ru spambot=yes
