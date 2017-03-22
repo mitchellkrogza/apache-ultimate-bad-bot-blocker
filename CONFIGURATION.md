@@ -94,7 +94,7 @@ Should respond with 403 Forbidden
 
 `curl -I http://yourdomain.com -e http://100dollars-seo.com`
 
-`curl -I http://yourdomain.com -e http://zyzzcentral.ru`
+`curl -I http://yourdomain.com -e http://zx6.ru`
 
 Should respond with 403 Forbidden
 
