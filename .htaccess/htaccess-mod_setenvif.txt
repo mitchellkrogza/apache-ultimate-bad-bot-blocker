@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-22 08:34:10 (SAST)
+# Updated 2017-03-23 09:28:08 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -749,6 +749,7 @@ SetEnvIfNoCase Referer crystalslot\.com spambot=yes
 SetEnvIfNoCase Referer cscwtalkto\.site spambot=yes
 SetEnvIfNoCase Referer cubook\.supernew\.org spambot=yes
 SetEnvIfNoCase Referer cubs\-jerseys\.us spambot=yes
+SetEnvIfNoCase Referer culturevie\.info spambot=yes
 SetEnvIfNoCase Referer curatorimages\.com spambot=yes
 SetEnvIfNoCase Referer custodieva\.ru spambot=yes
 SetEnvIfNoCase Referer custom\-electric\-guitar\.com spambot=yes
@@ -1452,6 +1453,7 @@ SetEnvIfNoCase Referer hothor\.se spambot=yes
 SetEnvIfNoCase Referer hotloans\.ru spambot=yes
 SetEnvIfNoCase Referer hotshoppymac\.com spambot=yes
 SetEnvIfNoCase Referer houdom\.net spambot=yes
+SetEnvIfNoCase Referer house\.sieraddns\.com spambot=yes
 SetEnvIfNoCase Referer housediz\.com spambot=yes
 SetEnvIfNoCase Referer housekuba\.org spambot=yes
 SetEnvIfNoCase Referer housemilan\.ru spambot=yes
@@ -1561,6 +1563,7 @@ SetEnvIfNoCase Referer investzalog\.ru spambot=yes
 SetEnvIfNoCase Referer invivo\.hu spambot=yes
 SetEnvIfNoCase Referer inzn\.ru spambot=yes
 SetEnvIfNoCase Referer io9\.com spambot=yes
+SetEnvIfNoCase Referer iopeninghours\.co\.uk spambot=yes
 SetEnvIfNoCase Referer iplogger\.org spambot=yes
 SetEnvIfNoCase Referer iplusbit\.blogspot\.co\.za spambot=yes
 SetEnvIfNoCase Referer ipostroika\.ru spambot=yes
@@ -2024,6 +2027,7 @@ SetEnvIfNoCase Referer musicvidz\.ru spambot=yes
 SetEnvIfNoCase Referer mustat\.com spambot=yes
 SetEnvIfNoCase Referer muz\-baza\.net spambot=yes
 SetEnvIfNoCase Referer muz\-shoes\.ru spambot=yes
+SetEnvIfNoCase Referer muzaporn\.com spambot=yes
 SetEnvIfNoCase Referer muznachas\-service\.ru spambot=yes
 SetEnvIfNoCase Referer muztops\.ru spambot=yes
 SetEnvIfNoCase Referer my\-bc\.ru spambot=yes
@@ -2205,6 +2209,7 @@ SetEnvIfNoCase Referer ossmalta\.com spambot=yes
 SetEnvIfNoCase Referer ostrovtaxi\.ru spambot=yes
 SetEnvIfNoCase Referer otbelivanie\-zubov\.com spambot=yes
 SetEnvIfNoCase Referer ourtherapy\.ru spambot=yes
+SetEnvIfNoCase Referer ourville\.info spambot=yes
 SetEnvIfNoCase Referer outfitpicz\.com spambot=yes
 SetEnvIfNoCase Referer outpersonals\.com spambot=yes
 SetEnvIfNoCase Referer outrageousdeal\-a\.akamaihd\.net spambot=yes
@@ -2240,6 +2245,7 @@ SetEnvIfNoCase Referer pelfind\.me spambot=yes
 SetEnvIfNoCase Referer penisvergrotendepillennl\.ovh spambot=yes
 SetEnvIfNoCase Referer pensplan\.com spambot=yes
 SetEnvIfNoCase Referer pensplan4u\.com spambot=yes
+SetEnvIfNoCase Referer pepperstyle\.ru spambot=yes
 SetEnvIfNoCase Referer percin\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer perfection\-pleasure\.ru spambot=yes
 SetEnvIfNoCase Referer perfectpracticeweb\.com spambot=yes
@@ -2720,6 +2726,7 @@ SetEnvIfNoCase Referer sexyteens\.hol\.es spambot=yes
 SetEnvIfNoCase Referer sexytrend\.ru spambot=yes
 SetEnvIfNoCase Referer sfd\-chess\.ru spambot=yes
 SetEnvIfNoCase Referer shakhtar\-doneck\.ru spambot=yes
+SetEnvIfNoCase Referer share\-buttons\-for\-free\.com spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
 SetEnvIfNoCase Referer sharebutton\.org spambot=yes
 SetEnvIfNoCase Referer sharebutton\.to spambot=yes
@@ -3594,6 +3601,7 @@ SetEnvIfNoCase Referer znakomstvaonlain\.ru spambot=yes
 SetEnvIfNoCase Referer znaniyapolza\.ru spambot=yes
 SetEnvIfNoCase Referer zojirushi\-products\.ru spambot=yes
 SetEnvIfNoCase Referer zolotoy\-lis\.ru spambot=yes
+SetEnvIfNoCase Referer zona\-aqua\.ru spambot=yes
 SetEnvIfNoCase Referer zoominfo\.com spambot=yes
 SetEnvIfNoCase Referer zophim\.me spambot=yes
 SetEnvIfNoCase Referer zrizvtrnpale\.tk spambot=yes
