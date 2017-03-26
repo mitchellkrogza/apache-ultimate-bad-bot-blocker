@@ -5,7 +5,7 @@
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 ### Version 2.2017.04
 
-##Step 1:
+## Step 1:
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
 
@@ -16,7 +16,7 @@ Copy the contents of **globalblacklist.conf** into your /etc/apache2/custom.d fo
 
 `sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf`
 
-##Step 2:
+## Step 2:
 
 **WHITELIST ALL YOUR OWN DOMAIN NAMES AND IP ADDRESSES**
 
@@ -37,7 +37,7 @@ Use nano, vim or any other text editor to edit both whitelist-ips.conf and white
 
 When pulling any future updates now you can simply pull the latest globalblacklist.conf file and it will automatically include your whitelisted domains and IP addresses. No more remembering having to do this yourself.
 
-##Step 3:
+## Step 3:
 
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
@@ -57,7 +57,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 <IfModule mod_rewrite.c>
 ```
 
-##Step 4:
+## Step 4:
 
 **TEST YOUR APACHE CONFIGURATION**
 
@@ -75,7 +75,7 @@ or
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-##Step 5:
+## Step 5:
 
 *TESTING**
 
@@ -100,7 +100,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-##Step 6:
+## Step 6:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 
