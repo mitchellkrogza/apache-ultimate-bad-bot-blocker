@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-25 10:55:21 (SAST)
+# Updated 2017-03-26 11:57:30 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -389,6 +389,7 @@ SetEnvIfNoCase Referer baksman\.com spambot=yes
 SetEnvIfNoCase Referer bala\.getenjoyment\.net spambot=yes
 SetEnvIfNoCase Referer baladur\.ru spambot=yes
 SetEnvIfNoCase Referer balitouroffice\.com spambot=yes
+SetEnvIfNoCase Referer balkanfarma\.org spambot=yes
 SetEnvIfNoCase Referer balkanfarma\.ru spambot=yes
 SetEnvIfNoCase Referer balois\.worldbreak\.com spambot=yes
 SetEnvIfNoCase Referer bambi\.ck\.ua spambot=yes
@@ -1932,6 +1933,7 @@ SetEnvIfNoCase Referer mhtr\.be spambot=yes
 SetEnvIfNoCase Referer micasainvest\.com spambot=yes
 SetEnvIfNoCase Referer microsearch\.ru spambot=yes
 SetEnvIfNoCase Referer microsoftportal\.net spambot=yes
+SetEnvIfNoCase Referer microstatic\.pl spambot=yes
 SetEnvIfNoCase Referer migente\.com spambot=yes
 SetEnvIfNoCase Referer mikrobiologies\.ru spambot=yes
 SetEnvIfNoCase Referer millionare\.com spambot=yes
@@ -2486,6 +2488,7 @@ SetEnvIfNoCase Referer raisedseo\.com spambot=yes
 SetEnvIfNoCase Referer rank\-checker\.online spambot=yes
 SetEnvIfNoCase Referer rankchecker\.online spambot=yes
 SetEnvIfNoCase Referer ranking2017\.ga spambot=yes
+SetEnvIfNoCase Referer rankingchart\.de spambot=yes
 SetEnvIfNoCase Referer rankings\-analytics\.com spambot=yes
 SetEnvIfNoCase Referer ranksays\.com spambot=yes
 SetEnvIfNoCase Referer rankscanner\.com spambot=yes
@@ -2954,6 +2957,7 @@ SetEnvIfNoCase Referer suggest\-keywords\.com spambot=yes
 SetEnvIfNoCase Referer sugvant\.ru spambot=yes
 SetEnvIfNoCase Referer sukarame\.net spambot=yes
 SetEnvIfNoCase Referer sukirgenk\.dvrlists\.com spambot=yes
+SetEnvIfNoCase Referer sumo\.com spambot=yes
 SetEnvIfNoCase Referer superkanpo\.com spambot=yes
 SetEnvIfNoCase Referer supermesta\.ru spambot=yes
 SetEnvIfNoCase Referer supernew\.org spambot=yes
@@ -3326,6 +3330,7 @@ SetEnvIfNoCase Referer vsesubwaysurfers\.com spambot=yes
 SetEnvIfNoCase Referer vseuznaem\.com spambot=yes
 SetEnvIfNoCase Referer vtc\.pw spambot=yes
 SetEnvIfNoCase Referer vucms\.com spambot=yes
+SetEnvIfNoCase Referer vvon\.co\.uk spambot=yes
 SetEnvIfNoCase Referer vykup\-avto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vykupavto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vzlom\-na\-zakaz\.com spambot=yes
@@ -3348,6 +3353,7 @@ SetEnvIfNoCase Referer wdrake\.com spambot=yes
 SetEnvIfNoCase Referer we\-are\-gamers\.com spambot=yes
 SetEnvIfNoCase Referer web\-betting\.ru spambot=yes
 SetEnvIfNoCase Referer web\.cvut\.cz spambot=yes
+SetEnvIfNoCase Referer webads\.co\.nz spambot=yes
 SetEnvIfNoCase Referer webinstantservice\.com spambot=yes
 SetEnvIfNoCase Referer webix\.me spambot=yes
 SetEnvIfNoCase Referer webjam\.com spambot=yes
@@ -3389,6 +3395,7 @@ SetEnvIfNoCase Referer whatistizanidinehclusedfor\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer whatsappdownload10\.com spambot=yes
 SetEnvIfNoCase Referer whatsupinfoley\.com spambot=yes
 SetEnvIfNoCase Referer whatzmyip\.net spambot=yes
+SetEnvIfNoCase Referer wheelchairliftsarea\.com spambot=yes
 SetEnvIfNoCase Referer whereiskentoday\.com spambot=yes
 SetEnvIfNoCase Referer whipme\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer whiteproduct\.com spambot=yes
