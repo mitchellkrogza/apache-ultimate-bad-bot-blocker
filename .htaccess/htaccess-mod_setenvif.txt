@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-26 11:57:30 (SAST)
+# Updated 2017-03-27 11:00:02 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -358,6 +358,7 @@ SetEnvIfNoCase Referer avtoarenda\.by spambot=yes
 SetEnvIfNoCase Referer avtocredit\-legko\.ru spambot=yes
 SetEnvIfNoCase Referer avtointeres\.ru spambot=yes
 SetEnvIfNoCase Referer avtolombard\-krasnodar\.com spambot=yes
+SetEnvIfNoCase Referer avtolombard\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer avtovolop\.ru spambot=yes
 SetEnvIfNoCase Referer awency\.com spambot=yes
 SetEnvIfNoCase Referer axbocz\.net spambot=yes
@@ -492,6 +493,7 @@ SetEnvIfNoCase Referer blog\.f00kclan\.de spambot=yes
 SetEnvIfNoCase Referer blog\.koorg\.ru spambot=yes
 SetEnvIfNoCase Referer blog\.remote\-computer\.de spambot=yes
 SetEnvIfNoCase Referer blog\.yam\.com spambot=yes
+SetEnvIfNoCase Referer bloggedporn\.com spambot=yes
 SetEnvIfNoCase Referer bloggen\.be spambot=yes
 SetEnvIfNoCase Referer bloggers\.nl spambot=yes
 SetEnvIfNoCase Referer blogig\.org spambot=yes
@@ -1713,6 +1715,7 @@ SetEnvIfNoCase Referer kraljeva\-sutjeska\.com spambot=yes
 SetEnvIfNoCase Referer krasivoe\-hd\.com spambot=yes
 SetEnvIfNoCase Referer krasivoe\-hd\.net spambot=yes
 SetEnvIfNoCase Referer krasivye\-devushki\.net spambot=yes
+SetEnvIfNoCase Referer krasnodar\-avtolombards\.ru spambot=yes
 SetEnvIfNoCase Referer krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer krasnodar\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer kredit\-pod\-zalog\-krasnodar\.ru spambot=yes
@@ -2007,6 +2010,7 @@ SetEnvIfNoCase Referer mountainstream\.ms spambot=yes
 SetEnvIfNoCase Referer movaimg\.com spambot=yes
 SetEnvIfNoCase Referer moviemail\-online\.co\.uk spambot=yes
 SetEnvIfNoCase Referer movies\-in\-theaters\.net spambot=yes
+SetEnvIfNoCase Referer moviezbonkerssk\.cf spambot=yes
 SetEnvIfNoCase Referer mowser\.com spambot=yes
 SetEnvIfNoCase Referer moxo\.com spambot=yes
 SetEnvIfNoCase Referer moyakuhnia\.ru spambot=yes
@@ -2072,6 +2076,7 @@ SetEnvIfNoCase Referer nacap\.ru spambot=yes
 SetEnvIfNoCase Referer nagdak\.ru spambot=yes
 SetEnvIfNoCase Referer nailsimg\.com spambot=yes
 SetEnvIfNoCase Referer nalogovyy\-kodeks\.ru spambot=yes
+SetEnvIfNoCase Referer naperehresti\.info spambot=yes
 SetEnvIfNoCase Referer naphukete\.ru spambot=yes
 SetEnvIfNoCase Referer nardulan\.com spambot=yes
 SetEnvIfNoCase Referer narkologiya\-belgorod\.ru spambot=yes
@@ -2596,6 +2601,7 @@ SetEnvIfNoCase Referer russkie\-gorki\.ru spambot=yes
 SetEnvIfNoCase Referer russkoe\-zdorovie\.ru spambot=yes
 SetEnvIfNoCase Referer rvtv\.ru spambot=yes
 SetEnvIfNoCase Referer rvzr\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer rybalka\-opt\.ru spambot=yes
 SetEnvIfNoCase Referer sabaapress\.com spambot=yes
 SetEnvIfNoCase Referer sack\.net spambot=yes
 SetEnvIfNoCase Referer sad\-torg\.com\.ua spambot=yes
@@ -2624,6 +2630,7 @@ SetEnvIfNoCase Referer savememoney\.co\.za spambot=yes
 SetEnvIfNoCase Referer savetubevideo\.com spambot=yes
 SetEnvIfNoCase Referer savingsslider\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer savne\.org spambot=yes
+SetEnvIfNoCase Referer sawin\.beth\.webd\.pl spambot=yes
 SetEnvIfNoCase Referer sax\-sex\.com spambot=yes
 SetEnvIfNoCase Referer sayyoethe\.blogspot\.co\.za spambot=yes
 SetEnvIfNoCase Referer sbdl\.no spambot=yes
@@ -3443,6 +3450,7 @@ SetEnvIfNoCase Referer wsgames\.ru spambot=yes
 SetEnvIfNoCase Referer wstroika\.ru spambot=yes
 SetEnvIfNoCase Referer wurr\.voila\.net spambot=yes
 SetEnvIfNoCase Referer ww1943\.ru spambot=yes
+SetEnvIfNoCase Referer www\.arenda\-yeisk\.ru spambot=yes
 SetEnvIfNoCase Referer wygraj\-skiny\.win spambot=yes
 SetEnvIfNoCase Referer wygraj\-teraz\.com spambot=yes
 SetEnvIfNoCase Referer wzgyyq\.com spambot=yes
@@ -3580,6 +3588,7 @@ SetEnvIfNoCase Referer zaidia\.xhost\.ro spambot=yes
 SetEnvIfNoCase Referer zaim\-pod\-zalog\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer zaimhelp\.ru spambot=yes
 SetEnvIfNoCase Referer zajm\-pod\-zalog\-nedvizhimosti\.ru spambot=yes
+SetEnvIfNoCase Referer zajm\-zalog\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer zakazfutbolki\.com spambot=yes
 SetEnvIfNoCase Referer zakazvzloma\.com spambot=yes
 SetEnvIfNoCase Referer zakon\-ob\-obrazovanii\.ru spambot=yes
