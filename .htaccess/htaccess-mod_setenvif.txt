@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-28 10:00:36 (SAST)
+# Updated 2017-03-29 16:22:31 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -353,6 +353,7 @@ SetEnvIfNoCase Referer avitocars\.ru spambot=yes
 SetEnvIfNoCase Referer avkzarabotok\.com spambot=yes
 SetEnvIfNoCase Referer avkzarabotok\.info spambot=yes
 SetEnvIfNoCase Referer avon\-severozapad\.ru spambot=yes
+SetEnvIfNoCase Referer avon\-ukraine\.com spambot=yes
 SetEnvIfNoCase Referer avramstroy\.ru spambot=yes
 SetEnvIfNoCase Referer avtoarenda\.by spambot=yes
 SetEnvIfNoCase Referer avtocredit\-legko\.ru spambot=yes
@@ -383,6 +384,7 @@ SetEnvIfNoCase Referer backgroundpictures\.net spambot=yes
 SetEnvIfNoCase Referer backlink4u\.net spambot=yes
 SetEnvIfNoCase Referer backlinkwatch\.com spambot=yes
 SetEnvIfNoCase Referer backuperwebcam\.weebly\.com spambot=yes
+SetEnvIfNoCase Referer baersaratov\.ru spambot=yes
 SetEnvIfNoCase Referer bag77\.ru spambot=yes
 SetEnvIfNoCase Referer bagcionderlab\.com spambot=yes
 SetEnvIfNoCase Referer baixar\-musicas\-gratis\.com spambot=yes
@@ -1232,6 +1234,7 @@ SetEnvIfNoCase Referer galaxy\-family\.ru spambot=yes
 SetEnvIfNoCase Referer galaxyflowers\.ru spambot=yes
 SetEnvIfNoCase Referer galeon\.com spambot=yes
 SetEnvIfNoCase Referer gallerily\.com spambot=yes
+SetEnvIfNoCase Referer galleryawesome\.com spambot=yes
 SetEnvIfNoCase Referer gallerylisting\.com spambot=yes
 SetEnvIfNoCase Referer gallictures\.com spambot=yes
 SetEnvIfNoCase Referer gamblingnerd\.com spambot=yes
@@ -1296,6 +1299,7 @@ SetEnvIfNoCase Referer girlgamerdaily\.com spambot=yes
 SetEnvIfNoCase Referer girlporn\.ru spambot=yes
 SetEnvIfNoCase Referer girlsatgames\.ru spambot=yes
 SetEnvIfNoCase Referer girlspicsa\.com spambot=yes
+SetEnvIfNoCase Referer given2\.com spambot=yes
 SetEnvIfNoCase Referer gk\-atlant\.info spambot=yes
 SetEnvIfNoCase Referer gkvector\.ru spambot=yes
 SetEnvIfNoCase Referer glall\.ru spambot=yes
@@ -2040,6 +2044,7 @@ SetEnvIfNoCase Referer musicspire\.online spambot=yes
 SetEnvIfNoCase Referer musicstock\.me spambot=yes
 SetEnvIfNoCase Referer musicvidz\.ru spambot=yes
 SetEnvIfNoCase Referer mustat\.com spambot=yes
+SetEnvIfNoCase Referer mustwineblog\.com spambot=yes
 SetEnvIfNoCase Referer muz\-baza\.net spambot=yes
 SetEnvIfNoCase Referer muz\-shoes\.ru spambot=yes
 SetEnvIfNoCase Referer muzaporn\.com spambot=yes
@@ -2615,6 +2620,7 @@ SetEnvIfNoCase Referer sale\-japan\.com spambot=yes
 SetEnvIfNoCase Referer saletool\.ru spambot=yes
 SetEnvIfNoCase Referer salutmontreal\.com spambot=yes
 SetEnvIfNoCase Referer samo\-soznanie\.ru spambot=yes
+SetEnvIfNoCase Referer samoiedo\.it spambot=yes
 SetEnvIfNoCase Referer samolet\.fr spambot=yes
 SetEnvIfNoCase Referer sampleletters\.net spambot=yes
 SetEnvIfNoCase Referer sanatorrii\.ru spambot=yes
@@ -2987,6 +2993,7 @@ SetEnvIfNoCase Referer swagbucks\.com spambot=yes
 SetEnvIfNoCase Referer swinginwithme\.ru spambot=yes
 SetEnvIfNoCase Referer swiped\.su spambot=yes
 SetEnvIfNoCase Referer sygraem\.com spambot=yes
+SetEnvIfNoCase Referer syla\.tk spambot=yes
 SetEnvIfNoCase Referer t3chtonic\.com spambot=yes
 SetEnvIfNoCase Referer tablepicz\.com spambot=yes
 SetEnvIfNoCase Referer tabletkinaodchudzanie\.com\.pl spambot=yes
@@ -3413,6 +3420,7 @@ SetEnvIfNoCase Referer wholesalejerseychinaoutlet\.com spambot=yes
 SetEnvIfNoCase Referer wholesalejerseychinashop\.com spambot=yes
 SetEnvIfNoCase Referer wholesalejerseys\-cheapest\.com spambot=yes
 SetEnvIfNoCase Referer wholesalejerseysgaa\.com spambot=yes
+SetEnvIfNoCase Referer wholesalenfljerseys\.us\.com spambot=yes
 SetEnvIfNoCase Referer wholinkstome\.com spambot=yes
 SetEnvIfNoCase Referer whos\.amung\.us spambot=yes
 SetEnvIfNoCase Referer whosonmyserver\.com spambot=yes
