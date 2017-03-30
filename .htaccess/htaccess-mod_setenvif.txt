@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-29 16:22:31 (SAST)
+# Updated 2017-03-30 09:59:37 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -231,6 +231,7 @@ SetEnvIfNoCase Referer am\-se\.com spambot=yes
 SetEnvIfNoCase Referer am15\.net spambot=yes
 SetEnvIfNoCase Referer amanda\-porn\.ga spambot=yes
 SetEnvIfNoCase Referer amateurgalls\.com spambot=yes
+SetEnvIfNoCase Referer amazon\-seo\-service\.com spambot=yes
 SetEnvIfNoCase Referer amehdaily\.com spambot=yes
 SetEnvIfNoCase Referer amoi\.tn spambot=yes
 SetEnvIfNoCase Referer amospalla\.es spambot=yes
@@ -2109,6 +2110,7 @@ SetEnvIfNoCase Referer nevansk\.ru spambot=yes
 SetEnvIfNoCase Referer new\-apps\.ru spambot=yes
 SetEnvIfNoCase Referer new\-post\.tk spambot=yes
 SetEnvIfNoCase Referer new7ob\.com spambot=yes
+SetEnvIfNoCase Referer newhairstylesformen2014\.com spambot=yes
 SetEnvIfNoCase Referer newsperuse\.com spambot=yes
 SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
 SetEnvIfNoCase Referer newstudio\.tv spambot=yes
@@ -2726,6 +2728,7 @@ SetEnvIfNoCase Referer seoexperimenty\.ru spambot=yes
 SetEnvIfNoCase Referer seofied\.com spambot=yes
 SetEnvIfNoCase Referer seoheap\.com spambot=yes
 SetEnvIfNoCase Referer seokicks\.de spambot=yes
+SetEnvIfNoCase Referer seorank\.info spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.com spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.us spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.xyz spambot=yes
@@ -3008,6 +3011,7 @@ SetEnvIfNoCase Referer tattogirlspix\.com spambot=yes
 SetEnvIfNoCase Referer tattoo33\.ru spambot=yes
 SetEnvIfNoCase Referer tattooha\.com spambot=yes
 SetEnvIfNoCase Referer tattooreligion\.ru spambot=yes
+SetEnvIfNoCase Referer tatz\.tk spambot=yes
 SetEnvIfNoCase Referer taxi\-v\-eisk\.ru spambot=yes
 SetEnvIfNoCase Referer taxidermy4cash\.com spambot=yes
 SetEnvIfNoCase Referer taximytishi\.ru spambot=yes
