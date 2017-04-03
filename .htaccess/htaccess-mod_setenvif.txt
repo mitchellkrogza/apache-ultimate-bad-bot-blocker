@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-03-31 17:09:12 (SAST)
+# Updated 2017-04-03 11:10:45 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -380,6 +380,7 @@ SetEnvIfNoCase Referer azbukadiets\.ru spambot=yes
 SetEnvIfNoCase Referer azbukafree\.com spambot=yes
 SetEnvIfNoCase Referer azlex\.uz spambot=yes
 SetEnvIfNoCase Referer azte\.ch spambot=yes
+SetEnvIfNoCase Referer b\-styles\.xyz spambot=yes
 SetEnvIfNoCase Referer babespcs\.com spambot=yes
 SetEnvIfNoCase Referer babieca\.com spambot=yes
 SetEnvIfNoCase Referer bablonow\.ru spambot=yes
@@ -2183,6 +2184,7 @@ SetEnvIfNoCase Referer odesproperty\.com spambot=yes
 SetEnvIfNoCase Referer odywpjtw\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer offer\.camp spambot=yes
 SetEnvIfNoCase Referer offers\.bycontext\.com spambot=yes
+SetEnvIfNoCase Referer offf\.info spambot=yes
 SetEnvIfNoCase Referer office\-windows\.ru spambot=yes
 SetEnvIfNoCase Referer offside2\.5v\.pl spambot=yes
 SetEnvIfNoCase Referer offtime\.ru spambot=yes
@@ -3016,6 +3018,7 @@ SetEnvIfNoCase Referer syla\.tk spambot=yes
 SetEnvIfNoCase Referer t3chtonic\.com spambot=yes
 SetEnvIfNoCase Referer tablepicz\.com spambot=yes
 SetEnvIfNoCase Referer tabletkinaodchudzanie\.com\.pl spambot=yes
+SetEnvIfNoCase Referer tacbelarus\.ru spambot=yes
 SetEnvIfNoCase Referer taihouse\.ru spambot=yes
 SetEnvIfNoCase Referer takethatad\.com spambot=yes
 SetEnvIfNoCase Referer tako3\.com spambot=yes
@@ -3280,6 +3283,7 @@ SetEnvIfNoCase Referer valkiria\-tk\.ru spambot=yes
 SetEnvIfNoCase Referer valoresito\.com spambot=yes
 SetEnvIfNoCase Referer vapmedia\.org spambot=yes
 SetEnvIfNoCase Referer vapsy\.com spambot=yes
+SetEnvIfNoCase Referer varikoz24\.com spambot=yes
 SetEnvIfNoCase Referer vashsvet\.com spambot=yes
 SetEnvIfNoCase Referer vavilone\.com spambot=yes
 SetEnvIfNoCase Referer vbabule\.net spambot=yes
@@ -3373,6 +3377,7 @@ SetEnvIfNoCase Referer vykup\-avto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vykupavto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vzlom\-na\-zakaz\.com spambot=yes
 SetEnvIfNoCase Referer w\-journal\.ru spambot=yes
+SetEnvIfNoCase Referer w3data\.co spambot=yes
 SetEnvIfNoCase Referer w3javascript\.com spambot=yes
 SetEnvIfNoCase Referer w7s\.ru spambot=yes
 SetEnvIfNoCase Referer walkme\.com spambot=yes
