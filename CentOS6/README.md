@@ -237,7 +237,7 @@ Open Terminal
 
 `su`
 
-`mkdir /etc/httpd/conf/conf.d`
+`mkdir /etc/httpd/conf.d`
 
 ##Step 2:
 
@@ -245,7 +245,7 @@ Open Terminal
 
 Copy the contents of **globalblacklist.conf** into your /etc/httpd/conf/conf.d folder. 
 
-`cd /etc/httpd/conf/conf.d`
+`cd /etc/httpd/conf.d`
 
 `wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/conf.d/globalblacklist.conf -O globalblacklist.conf`
 
@@ -255,7 +255,7 @@ Copy the contents of **globalblacklist.conf** into your /etc/httpd/conf/conf.d f
 
 Whitelist all your own domain names and IP addresses. **Please note important changes**, this is now done using include files so that you do not have to keep reinserting your whitelisted domains and IP addresses every time you update.
 
-`cd /etc/httpd/conf/conf.d`
+`cd /etc/httpd/conf.d`
 
 - copy the whitelist-ips.conf file into that folder
 
@@ -338,7 +338,7 @@ The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
 Updating to the latest version is now as simple as:
 
-`cd /etc/httpd/conf/conf.d`
+`cd /etc/httpd/conf.d`
 
 `su`
 
