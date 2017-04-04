@@ -21,7 +21,7 @@
 # Add this line
 # yourusername ALL=(ALL)  ALL
  
-cd /etc/httpd/conf/conf.d
+cd /etc/httpd/conf.d
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/conf.d/globalblacklist.conf -O globalblacklist.conf
 sudo service httpd reload | mail -s "Apache Bad Bot Blocker Updated" me@myemail.com
 exit 0
