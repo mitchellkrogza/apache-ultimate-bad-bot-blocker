@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-03 11:49:03 (SAST)
+# Updated 2017-04-04 11:54:41 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -744,6 +744,7 @@ SetEnvIfNoCase Referer copyrightclaims\.org spambot=yes
 SetEnvIfNoCase Referer cosmetic\.donna7753191\.ru spambot=yes
 SetEnvIfNoCase Referer countbertwistdisp26\.soup\.io spambot=yes
 SetEnvIfNoCase Referer counter\.yadro\.ru spambot=yes
+SetEnvIfNoCase Referer country\-chic\.ru spambot=yes
 SetEnvIfNoCase Referer covadhosting\.biz spambot=yes
 SetEnvIfNoCase Referer covetnica\.com spambot=yes
 SetEnvIfNoCase Referer cowblog\.fr spambot=yes
@@ -1337,6 +1338,7 @@ SetEnvIfNoCase Referer goldandcard\.ru spambot=yes
 SetEnvIfNoCase Referer golden\-catalog\.pro spambot=yes
 SetEnvIfNoCase Referer golden\-praga\.ru spambot=yes
 SetEnvIfNoCase Referer goldenggames\.com spambot=yes
+SetEnvIfNoCase Referer goldpanningtools\.com spambot=yes
 SetEnvIfNoCase Referer golmau\.host\.sk spambot=yes
 SetEnvIfNoCase Referer gonextmedia\.com spambot=yes
 SetEnvIfNoCase Referer goo\.ne\.jp spambot=yes
@@ -1583,6 +1585,7 @@ SetEnvIfNoCase Referer invest\-pamm\.ru spambot=yes
 SetEnvIfNoCase Referer investingclub\.ru spambot=yes
 SetEnvIfNoCase Referer investpamm\.ru spambot=yes
 SetEnvIfNoCase Referer investsuccess\.org spambot=yes
+SetEnvIfNoCase Referer investyb\.com spambot=yes
 SetEnvIfNoCase Referer investzalog\.ru spambot=yes
 SetEnvIfNoCase Referer invivo\.hu spambot=yes
 SetEnvIfNoCase Referer inzn\.ru spambot=yes
@@ -2055,6 +2058,7 @@ SetEnvIfNoCase Referer muscle\-factory\.com\.ua spambot=yes
 SetEnvIfNoCase Referer musezone\.ru spambot=yes
 SetEnvIfNoCase Referer musezone\.su spambot=yes
 SetEnvIfNoCase Referer music\.utrolive\.ru spambot=yes
+SetEnvIfNoCase Referer musicdaddy\.net spambot=yes
 SetEnvIfNoCase Referer musicspire\.online spambot=yes
 SetEnvIfNoCase Referer musicstock\.me spambot=yes
 SetEnvIfNoCase Referer musicvidz\.ru spambot=yes
@@ -2265,6 +2269,7 @@ SetEnvIfNoCase Referer ozas\.net spambot=yes
 SetEnvIfNoCase Referer ozoz\.it spambot=yes
 SetEnvIfNoCase Referer p\-business\.ru spambot=yes
 SetEnvIfNoCase Referer paceform\.com spambot=yes
+SetEnvIfNoCase Referer paleohub\.info spambot=yes
 SetEnvIfNoCase Referer palvira\.com\.ua spambot=yes
 SetEnvIfNoCase Referer pammik\.ru spambot=yes
 SetEnvIfNoCase Referer paparazzistudios\.com\.au spambot=yes
@@ -3147,6 +3152,7 @@ SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
 SetEnvIfNoCase Referer tomck\.com spambot=yes
 SetEnvIfNoCase Referer toolsky\.com spambot=yes
 SetEnvIfNoCase Referer tootoo\.to spambot=yes
+SetEnvIfNoCase Referer top\-karkas\.ru spambot=yes
 SetEnvIfNoCase Referer top1\-seo\-service\.com spambot=yes
 SetEnvIfNoCase Referer top10\-way\.com spambot=yes
 SetEnvIfNoCase Referer top250movies\.ru spambot=yes
