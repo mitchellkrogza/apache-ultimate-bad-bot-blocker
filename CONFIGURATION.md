@@ -123,3 +123,5 @@ See my latest auto updater bash script at:
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/updateapacheblocker.sh
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
+
+### Writing code like this makes me very thirsty [Why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:

@@ -135,3 +135,5 @@ See my latest auto updater bash script at:
 https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/updateapacheblocker.sh
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
+
+### Coding makes me very thirsty [Why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
