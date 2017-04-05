@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-04 11:54:41 (SAST)
+# Updated 2017-04-05 13:01:35 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -603,6 +603,8 @@ SetEnvIfNoCase Referer callejondelpozo\.es spambot=yes
 SetEnvIfNoCase Referer calstaterealty\.us spambot=yes
 SetEnvIfNoCase Referer calvet\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer cand\.jp spambot=yes
+SetEnvIfNoCase Referer candcstuccoandstone\.com spambot=yes
+SetEnvIfNoCase Referer candelluxsklep\.pl spambot=yes
 SetEnvIfNoCase Referer candiceloves\.us spambot=yes
 SetEnvIfNoCase Referer candy\-glam\-hp\.com spambot=yes
 SetEnvIfNoCase Referer candycrushshop\.com spambot=yes
@@ -944,6 +946,7 @@ SetEnvIfNoCase Referer edelstahlschornstein\-123\.de spambot=yes
 SetEnvIfNoCase Referer editmedios\.com spambot=yes
 SetEnvIfNoCase Referer edshopping\.net spambot=yes
 SetEnvIfNoCase Referer education\-cz\.ru spambot=yes
+SetEnvIfNoCase Referer efkt\.jp spambot=yes
 SetEnvIfNoCase Referer egovaleo\.it spambot=yes
 SetEnvIfNoCase Referer egvar\.net spambot=yes
 SetEnvIfNoCase Referer ekaterinburg\.xrus\.org spambot=yes
@@ -1122,6 +1125,7 @@ SetEnvIfNoCase Referer fifa\-coins\.online spambot=yes
 SetEnvIfNoCase Referer fil\.ru spambot=yes
 SetEnvIfNoCase Referer filesmonster\.porn spambot=yes
 SetEnvIfNoCase Referer filesvine\.com spambot=yes
+SetEnvIfNoCase Referer filkhbr\.com spambot=yes
 SetEnvIfNoCase Referer film\-one\.ru spambot=yes
 SetEnvIfNoCase Referer filmbokep69\.com spambot=yes
 SetEnvIfNoCase Referer filmetricsasia\.com spambot=yes
@@ -2459,6 +2463,7 @@ SetEnvIfNoCase Referer prom23\.ru spambot=yes
 SetEnvIfNoCase Referer prombudpostach\.com\.ua spambot=yes
 SetEnvIfNoCase Referer promodj\.com spambot=yes
 SetEnvIfNoCase Referer promoforum\.ru spambot=yes
+SetEnvIfNoCase Referer promoheads\.com spambot=yes
 SetEnvIfNoCase Referer pron\.pro spambot=yes
 SetEnvIfNoCase Referer pronekut\.com spambot=yes
 SetEnvIfNoCase Referer proposal\-engine\.com spambot=yes
@@ -3433,6 +3438,7 @@ SetEnvIfNoCase Referer weightatraining\.com spambot=yes
 SetEnvIfNoCase Referer wejdz\-tu\.pl spambot=yes
 SetEnvIfNoCase Referer welck\.octopis\.com spambot=yes
 SetEnvIfNoCase Referer welcomeauto\.ru spambot=yes
+SetEnvIfNoCase Referer wellcome2slovenia\.ru spambot=yes
 SetEnvIfNoCase Referer wenimage\.com spambot=yes
 SetEnvIfNoCase Referer weprik\.ru spambot=yes
 SetEnvIfNoCase Referer wesharepics\.com spambot=yes
