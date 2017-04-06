@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-05 13:01:35 (SAST)
+# Updated 2017-04-06 11:17:36 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -90,6 +90,7 @@ SetEnvIfNoCase Referer 8558l\.jobs\.net spambot=yes
 SetEnvIfNoCase Referer 883zy\.com spambot=yes
 SetEnvIfNoCase Referer 8gold\.com spambot=yes
 SetEnvIfNoCase Referer 8si\.ru spambot=yes
+SetEnvIfNoCase Referer 8xv8\.com spambot=yes
 SetEnvIfNoCase Referer 98oi\.ru spambot=yes
 SetEnvIfNoCase Referer 999webdesign\.com spambot=yes
 SetEnvIfNoCase Referer 9med\.net spambot=yes
@@ -146,6 +147,7 @@ SetEnvIfNoCase Referer adloads\.net spambot=yes
 SetEnvIfNoCase Referer admanaerofoil\.com spambot=yes
 SetEnvIfNoCase Referer admatic\.com\.tr spambot=yes
 SetEnvIfNoCase Referer adminshop\.com spambot=yes
+SetEnvIfNoCase Referer admitad\.com spambot=yes
 SetEnvIfNoCase Referer adnotbad\.com spambot=yes
 SetEnvIfNoCase Referer adpremium\.org spambot=yes
 SetEnvIfNoCase Referer ads\-cool\.pro spambot=yes
@@ -331,6 +333,7 @@ SetEnvIfNoCase Referer auto\-moto\-elektronika\.cz spambot=yes
 SetEnvIfNoCase Referer auto\-zapchasti\.org spambot=yes
 SetEnvIfNoCase Referer auto\.rusvile\.lt spambot=yes
 SetEnvIfNoCase Referer auto4style\.ru spambot=yes
+SetEnvIfNoCase Referer autoblogger24\.info spambot=yes
 SetEnvIfNoCase Referer autobudpostach\.club spambot=yes
 SetEnvIfNoCase Referer autogrep\.ru spambot=yes
 SetEnvIfNoCase Referer autoloans\.com spambot=yes
@@ -438,6 +441,7 @@ SetEnvIfNoCase Referer best\-seo\-solution\.com spambot=yes
 SetEnvIfNoCase Referer bestbuy\.ca spambot=yes
 SetEnvIfNoCase Referer bestchoice\.cf spambot=yes
 SetEnvIfNoCase Referer bestcurs\.org spambot=yes
+SetEnvIfNoCase Referer bestdooz\.com spambot=yes
 SetEnvIfNoCase Referer bestempresas\.es spambot=yes
 SetEnvIfNoCase Referer bestimagecoollibrary\.com spambot=yes
 SetEnvIfNoCase Referer bestkfiledxd\.cf spambot=yes
@@ -1807,6 +1811,7 @@ SetEnvIfNoCase Referer life\-instyle\.com spambot=yes
 SetEnvIfNoCase Referer life\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer lifebyleese\.com spambot=yes
 SetEnvIfNoCase Referer light\.ifmo\.ru spambot=yes
+SetEnvIfNoCase Referer lightinghomes\.net spambot=yes
 SetEnvIfNoCase Referer likesdesign\.com spambot=yes
 SetEnvIfNoCase Referer likesuccess\.com spambot=yes
 SetEnvIfNoCase Referer liky\.co\.ua spambot=yes
@@ -1994,6 +1999,7 @@ SetEnvIfNoCase Referer mixtapetorrent\.com spambot=yes
 SetEnvIfNoCase Referer mmog\-play\.ru spambot=yes
 SetEnvIfNoCase Referer mmoguider\.ru spambot=yes
 SetEnvIfNoCase Referer mncrftpcs\.com spambot=yes
+SetEnvIfNoCase Referer mnogabukaff\.net spambot=yes
 SetEnvIfNoCase Referer mnprs\.com spambot=yes
 SetEnvIfNoCase Referer mobilemedia\.md spambot=yes
 SetEnvIfNoCase Referer mobot\.site spambot=yes
@@ -2512,6 +2518,7 @@ SetEnvIfNoCase Referer quality\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone\.com spambot=yes
 SetEnvIfNoCase Referer quebec\-bin\.com spambot=yes
 SetEnvIfNoCase Referer queen\.sim\-com\.ru spambot=yes
+SetEnvIfNoCase Referer quelle\.ru spambot=yes
 SetEnvIfNoCase Referer quick\-offer\.com spambot=yes
 SetEnvIfNoCase Referer quick\-seeker\.com spambot=yes
 SetEnvIfNoCase Referer quickbuck\.com spambot=yes
@@ -2757,6 +2764,7 @@ SetEnvIfNoCase Referer seoexperimenty\.ru spambot=yes
 SetEnvIfNoCase Referer seofied\.com spambot=yes
 SetEnvIfNoCase Referer seoheap\.com spambot=yes
 SetEnvIfNoCase Referer seokicks\.de spambot=yes
+SetEnvIfNoCase Referer seomarketings\.online spambot=yes
 SetEnvIfNoCase Referer seorank\.info spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.com spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.us spambot=yes
@@ -2862,6 +2870,7 @@ SetEnvIfNoCase Referer skladvaz\.ru spambot=yes
 SetEnvIfNoCase Referer sky\-mine\.ru spambot=yes
 SetEnvIfNoCase Referer skylta\.com spambot=yes
 SetEnvIfNoCase Referer skytraf\.xyz spambot=yes
+SetEnvIfNoCase Referer skyway24\.ru spambot=yes
 SetEnvIfNoCase Referer slavic\-magic\.ru spambot=yes
 SetEnvIfNoCase Referer slavkokacunko\.de spambot=yes
 SetEnvIfNoCase Referer slayerlife\.com spambot=yes
