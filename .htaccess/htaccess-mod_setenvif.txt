@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-07 14:05:58 (SAST)
+# Updated 2017-04-09 10:13:08 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -928,6 +928,7 @@ SetEnvIfNoCase Referer druzhininevgeniy63\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer dstroy\.su spambot=yes
 SetEnvIfNoCase Referer dustyorate\.com spambot=yes
 SetEnvIfNoCase Referer dvd\-famille\.com spambot=yes
+SetEnvIfNoCase Referer dvervmoskvu\.ru spambot=yes
 SetEnvIfNoCase Referer dvr\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer dvrlists\.com spambot=yes
 SetEnvIfNoCase Referer dyshagi\.ru spambot=yes
@@ -1049,6 +1050,7 @@ SetEnvIfNoCase Referer evehemming\.blogspot\.com\.au spambot=yes
 SetEnvIfNoCase Referer event\-tracking\.com spambot=yes
 SetEnvIfNoCase Referer everflora\.ru spambot=yes
 SetEnvIfNoCase Referer evidencecleanergold\.com spambot=yes
+SetEnvIfNoCase Referer evrotekhservis\.ru spambot=yes
 SetEnvIfNoCase Referer excaliburfilms\.com spambot=yes
 SetEnvIfNoCase Referer exchangeit\.gq spambot=yes
 SetEnvIfNoCase Referer exchanges\-bet\.com spambot=yes
@@ -1636,6 +1638,7 @@ SetEnvIfNoCase Referer itrevolution\.cf spambot=yes
 SetEnvIfNoCase Referer itronics\.ca spambot=yes
 SetEnvIfNoCase Referer itsdp3\.com spambot=yes
 SetEnvIfNoCase Referer itservicesthatworkforyou\.com spambot=yes
+SetEnvIfNoCase Referer ix20\.ru spambot=yes
 SetEnvIfNoCase Referer izhevsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer izismile\.com spambot=yes
 SetEnvIfNoCase Referer izoll\.ru spambot=yes
@@ -1712,6 +1715,7 @@ SetEnvIfNoCase Referer kinogonew\.ru spambot=yes
 SetEnvIfNoCase Referer kinohall\.ru spambot=yes
 SetEnvIfNoCase Referer kinohit1\.ru spambot=yes
 SetEnvIfNoCase Referer kinomaniatv\.pl spambot=yes
+SetEnvIfNoCase Referer kinoplen\.ru spambot=yes
 SetEnvIfNoCase Referer kinopolet\.net spambot=yes
 SetEnvIfNoCase Referer kinostorm\.net spambot=yes
 SetEnvIfNoCase Referer kinotorka\.ru spambot=yes
@@ -1965,6 +1969,7 @@ SetEnvIfNoCase Referer merryhouse\.co\.uk spambot=yes
 SetEnvIfNoCase Referer message\-warning\.net spambot=yes
 SetEnvIfNoCase Referer mesto\-x\.com spambot=yes
 SetEnvIfNoCase Referer metabar\.ru spambot=yes
+SetEnvIfNoCase Referer metalonly\.info spambot=yes
 SetEnvIfNoCase Referer metarip\.ru spambot=yes
 SetEnvIfNoCase Referer metaxalonevstizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer methodsmarketing\.com spambot=yes
@@ -3363,6 +3368,7 @@ SetEnvIfNoCase Referer vip\-file\.com spambot=yes
 SetEnvIfNoCase Referer vip\-parfumeria\.ru spambot=yes
 SetEnvIfNoCase Referer vip\.51\.la spambot=yes
 SetEnvIfNoCase Referer vip2ch\.com spambot=yes
+SetEnvIfNoCase Referer vipms\.ru spambot=yes
 SetEnvIfNoCase Referer vipsiterip\.org spambot=yes
 SetEnvIfNoCase Referer visa\-china\.ru spambot=yes
 SetEnvIfNoCase Referer visa\-pasport\.ru spambot=yes
@@ -3475,6 +3481,7 @@ SetEnvIfNoCase Referer whatzmyip\.net spambot=yes
 SetEnvIfNoCase Referer wheelchairliftsarea\.com spambot=yes
 SetEnvIfNoCase Referer whereiskentoday\.com spambot=yes
 SetEnvIfNoCase Referer whipme\.yopoint\.in spambot=yes
+SetEnvIfNoCase Referer whiteelephantwellington\.com spambot=yes
 SetEnvIfNoCase Referer whiteproduct\.com spambot=yes
 SetEnvIfNoCase Referer wholesalecheapjerseysfree\.com spambot=yes
 SetEnvIfNoCase Referer wholesalejerseychinaoutlet\.com spambot=yes
