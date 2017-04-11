@@ -5,6 +5,11 @@
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 ### Version 2.2017.04
 
+## Update Notification System
+Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
+or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
+**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+
 ## Step 1:
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
@@ -125,3 +130,8 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/upd
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
 ### Writing code like this makes me very thirsty [Why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+
+## Update Notification System
+Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
+or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
+**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
