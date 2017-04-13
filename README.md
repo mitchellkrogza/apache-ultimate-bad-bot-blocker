@@ -241,7 +241,7 @@ Copy the contents of **globalblacklist.conf** into your /etc/apache2/custom.d fo
 
 `sudo mkdir /etc/apache2/custom.d`
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -O globalblacklist.conf`
 
 ## Step 2:
 
@@ -253,12 +253,12 @@ Whitelist all your own domain names and IP addresses. **Please note important ch
 
 - copy the whitelist-ips.conf file into that folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-ips.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-ips.conf -O whitelist-ips.conf`
 
 
 - copy the whitelist-domains.conf file into the same folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-domains.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-domains.conf -O whitelist-domains.conf`
 
 Use nano, vim or any other text editor to edit both whitelist-ips.conf and whitelist-domains.conf to include all your own domain names and IP addresses that you want to specifically whitelist from the blocker script. 
 
@@ -335,7 +335,7 @@ Updating to the latest version is now as simple as:
 
 `cd /etc/apache2/custom.d`
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -O globalblacklist.conf`
 
 `sudo apache2ctl configtest`
 
