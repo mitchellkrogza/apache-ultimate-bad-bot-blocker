@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-15 12:55:08 (SAST)
+# Updated 2017-04-16 10:50:03 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -747,6 +747,7 @@ SetEnvIfNoCase Referer coldfilm\.ru spambot=yes
 SetEnvIfNoCase Referer collegeessay19\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.host spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.site spambot=yes
+SetEnvIfNoCase Referer com\-secure\.download spambot=yes
 SetEnvIfNoCase Referer com\-supportcenter\.website spambot=yes
 SetEnvIfNoCase Referer cometorussia\.net spambot=yes
 SetEnvIfNoCase Referer comissionka\.net spambot=yes
@@ -1444,6 +1445,7 @@ SetEnvIfNoCase Referer guruofcasino\.com spambot=yes
 SetEnvIfNoCase Referer gwebtools\.com spambot=yes
 SetEnvIfNoCase Referer gwebtools\.com\.br spambot=yes
 SetEnvIfNoCase Referer gwhwpxbw\.bloger\.index\.hr spambot=yes
+SetEnvIfNoCase Referer gyffu\.com spambot=yes
 SetEnvIfNoCase Referer h2monline\.com spambot=yes
 SetEnvIfNoCase Referer hacktougroup\.ru spambot=yes
 SetEnvIfNoCase Referer hahashka\.ru spambot=yes
@@ -1455,6 +1457,7 @@ SetEnvIfNoCase Referer handmadepics\.net spambot=yes
 SetEnvIfNoCase Referer handsandlegs\.ru spambot=yes
 SetEnvIfNoCase Referer hanink\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
+SetEnvIfNoCase Referer hauleddes\.com spambot=yes
 SetEnvIfNoCase Referer havepussy\.com spambot=yes
 SetEnvIfNoCase Referer hayate\.biz spambot=yes
 SetEnvIfNoCase Referer hazardky\.net spambot=yes
@@ -1522,6 +1525,7 @@ SetEnvIfNoCase Referer hostcritique\.com spambot=yes
 SetEnvIfNoCase Referer hoste\.octopis\.com spambot=yes
 SetEnvIfNoCase Referer hosting\-tracker\.com spambot=yes
 SetEnvIfNoCase Referer hostingclub\.lk spambot=yes
+SetEnvIfNoCase Referer hostnow\.men spambot=yes
 SetEnvIfNoCase Referer hostsshop\.ru spambot=yes
 SetEnvIfNoCase Referer hotblog\.top spambot=yes
 SetEnvIfNoCase Referer hotchatdate\.com spambot=yes
@@ -2227,6 +2231,7 @@ SetEnvIfNoCase Referer notebook\-pro\.ru spambot=yes
 SetEnvIfNoCase Referer notfastfood\.ru spambot=yes
 SetEnvIfNoCase Referer nottyu\.xyz spambot=yes
 SetEnvIfNoCase Referer noumeda\.com spambot=yes
+SetEnvIfNoCase Referer november\-lax\.com spambot=yes
 SetEnvIfNoCase Referer novgorod\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosibirsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer novosti\-hi\-tech\.ru spambot=yes
@@ -3348,6 +3353,7 @@ SetEnvIfNoCase Referer uhod\-za\-sobakoj\.ru spambot=yes
 SetEnvIfNoCase Referer uhodzalijami\.ru spambot=yes
 SetEnvIfNoCase Referer ukrup\.com spambot=yes
 SetEnvIfNoCase Referer ultimateclassicrock\.com spambot=yes
+SetEnvIfNoCase Referer ultimatesetnewfreeallsoftupgradesystems\.pw spambot=yes
 SetEnvIfNoCase Referer ultramart\.biz spambot=yes
 SetEnvIfNoCase Referer um\-razum\.ru spambot=yes
 SetEnvIfNoCase Referer umg\-stroy\.ru spambot=yes
