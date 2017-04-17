@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-17 10:02:17 (SAST)
+# Updated 2017-04-17 11:11:25 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -972,6 +972,8 @@ SetEnvIfNoCase Referer easync\.io spambot=yes
 SetEnvIfNoCase Referer easyshoppermac\.com spambot=yes
 SetEnvIfNoCase Referer easytuningshop\.ru spambot=yes
 SetEnvIfNoCase Referer eat\.besplatno\-skachat\-washington\.bid spambot=yes
+SetEnvIfNoCase Referer ecommerce\-seo\.com spambot=yes
+SetEnvIfNoCase Referer ecommerce\-seo\.org spambot=yes
 SetEnvIfNoCase Referer ecomp3\.ru spambot=yes
 SetEnvIfNoCase Referer econom\.co spambot=yes
 SetEnvIfNoCase Referer ecookna\.com\.ua spambot=yes
@@ -1239,6 +1241,7 @@ SetEnvIfNoCase Referer foxtechfpv\.com spambot=yes
 SetEnvIfNoCase Referer foxydeal\.com spambot=yes
 SetEnvIfNoCase Referer fr\.netlog\.com spambot=yes
 SetEnvIfNoCase Referer freakycheats\.com spambot=yes
+SetEnvIfNoCase Referer free\-fb\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer free\-floating\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer free\-share\-buttons\.com spambot=yes
@@ -1634,6 +1637,7 @@ SetEnvIfNoCase Referer insomniagamingfestival\.com spambot=yes
 SetEnvIfNoCase Referer insta\-add\.pro spambot=yes
 SetEnvIfNoCase Referer intelhdgraphicsgtdrive6w\.metroblog\.com spambot=yes
 SetEnvIfNoCase Referer interesnie\-faktu\.ru spambot=yes
+SetEnvIfNoCase Referer interferencer\.ru spambot=yes
 SetEnvIfNoCase Referer interfucks\.net spambot=yes
 SetEnvIfNoCase Referer interior\-stickers\.ru spambot=yes
 SetEnvIfNoCase Referer intermesh\.net spambot=yes
@@ -3285,6 +3289,7 @@ SetEnvIfNoCase Referer toxicwap\.com spambot=yes
 SetEnvIfNoCase Referer toys\.erolove\.in spambot=yes
 SetEnvIfNoCase Referer tozup\.com spambot=yes
 SetEnvIfNoCase Referer tpu\.ru spambot=yes
+SetEnvIfNoCase Referer track\-rankings\.online spambot=yes
 SetEnvIfNoCase Referer tracksz\.co spambot=yes
 SetEnvIfNoCase Referer tradedeals\.biz spambot=yes
 SetEnvIfNoCase Referer trafaret74\.ru spambot=yes
