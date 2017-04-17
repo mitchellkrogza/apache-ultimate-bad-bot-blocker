@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-16 10:50:03 (SAST)
+# Updated 2017-04-17 10:02:17 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -74,6 +74,7 @@ SetEnvIfNoCase Referer 4ureyesonly\.com spambot=yes
 SetEnvIfNoCase Referer 4webmasters\.com spambot=yes
 SetEnvIfNoCase Referer 5000\-cotydzien\.com spambot=yes
 SetEnvIfNoCase Referer 51\.la spambot=yes
+SetEnvIfNoCase Referer 51unlim\.ru spambot=yes
 SetEnvIfNoCase Referer 57883\.net spambot=yes
 SetEnvIfNoCase Referer 5elementov\.ru spambot=yes
 SetEnvIfNoCase Referer 5forex\.ru spambot=yes
@@ -196,6 +197,7 @@ SetEnvIfNoCase Referer akusherok\.ru spambot=yes
 SetEnvIfNoCase Referer akvamaster\.dp\.ua spambot=yes
 SetEnvIfNoCase Referer alarmobninsk\.ru spambot=yes
 SetEnvIfNoCase Referer albamargroup\.com spambot=yes
+SetEnvIfNoCase Referer alekseevec\.ru spambot=yes
 SetEnvIfNoCase Referer alert\-fdm\.xyz spambot=yes
 SetEnvIfNoCase Referer alert\-fjg\.xyz spambot=yes
 SetEnvIfNoCase Referer alert\-hgd\.xyz spambot=yes
@@ -1217,6 +1219,7 @@ SetEnvIfNoCase Referer forexgb\.ru spambot=yes
 SetEnvIfNoCase Referer forexunion\.net spambot=yes
 SetEnvIfNoCase Referer forminecrafters\.ru spambot=yes
 SetEnvIfNoCase Referer forms\-mtm\.ru spambot=yes
+SetEnvIfNoCase Referer formseo\.com spambot=yes
 SetEnvIfNoCase Referer forpostlock\.ru spambot=yes
 SetEnvIfNoCase Referer forsex\.info spambot=yes
 SetEnvIfNoCase Referer fortawesome\.github\.io spambot=yes
@@ -1969,6 +1972,7 @@ SetEnvIfNoCase Referer masturbate\.co\.uk spambot=yes
 SetEnvIfNoCase Referer matb3aa\.com spambot=yes
 SetEnvIfNoCase Referer matchpal\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer matematikus\.info spambot=yes
+SetEnvIfNoCase Referer max\-eclat\.men spambot=yes
 SetEnvIfNoCase Referer maximilitary\.ru spambot=yes
 SetEnvIfNoCase Referer maxthon\.com spambot=yes
 SetEnvIfNoCase Referer mazda\-roadsters\.com spambot=yes
@@ -2268,7 +2272,6 @@ SetEnvIfNoCase Referer office\-windows\.ru spambot=yes
 SetEnvIfNoCase Referer offside2\.5v\.pl spambot=yes
 SetEnvIfNoCase Referer offtime\.ru spambot=yes
 SetEnvIfNoCase Referer oil\-td\.ru spambot=yes
-SetEnvIfNoCase Referer ok\.ru spambot=yes
 SetEnvIfNoCase Referer okel\.co spambot=yes
 SetEnvIfNoCase Referer oklogistic\.ru spambot=yes
 SetEnvIfNoCase Referer okmusic\.jp spambot=yes
@@ -2356,9 +2359,11 @@ SetEnvIfNoCase Referer paramountmarble\.co\.uk spambot=yes
 SetEnvIfNoCase Referer parlament\.biz spambot=yes
 SetEnvIfNoCase Referer partner\-cdn\.men spambot=yes
 SetEnvIfNoCase Referer partner\-print\.men spambot=yes
+SetEnvIfNoCase Referer partners\-ship\.pro spambot=yes
 SetEnvIfNoCase Referer partybunny\.ru spambot=yes
 SetEnvIfNoCase Referer pathwhelp\.org spambot=yes
 SetEnvIfNoCase Referer pattersonsweb\.com spambot=yes
+SetEnvIfNoCase Referer paydayloanslocal\.com spambot=yes
 SetEnvIfNoCase Referer paydayonlinecom\.com spambot=yes
 SetEnvIfNoCase Referer pc\-services\.ru spambot=yes
 SetEnvIfNoCase Referer pc\-test\.net spambot=yes
@@ -2486,6 +2491,7 @@ SetEnvIfNoCase Referer pornotubexxx\.name spambot=yes
 SetEnvIfNoCase Referer pornpost\.in spambot=yes
 SetEnvIfNoCase Referer pornstartits\.xblog\.in spambot=yes
 SetEnvIfNoCase Referer porodasobak\.net spambot=yes
+SetEnvIfNoCase Referer portadd\.men spambot=yes
 SetEnvIfNoCase Referer portal\-eu\.ru spambot=yes
 SetEnvIfNoCase Referer portnoff\.od\.ua spambot=yes
 SetEnvIfNoCase Referer poshiv\-chehol\.ru spambot=yes
@@ -2538,6 +2544,7 @@ SetEnvIfNoCase Referer projectforte\.ru spambot=yes
 SetEnvIfNoCase Referer projefrio\.com\.br spambot=yes
 SetEnvIfNoCase Referer prokotov\.com spambot=yes
 SetEnvIfNoCase Referer prom23\.ru spambot=yes
+SetEnvIfNoCase Referer promalp\-universal\.ru spambot=yes
 SetEnvIfNoCase Referer prombudpostach\.com\.ua spambot=yes
 SetEnvIfNoCase Referer promodj\.com spambot=yes
 SetEnvIfNoCase Referer promoforum\.ru spambot=yes
@@ -3009,6 +3016,7 @@ SetEnvIfNoCase Referer softomix\.net spambot=yes
 SetEnvIfNoCase Referer softonicads\.com spambot=yes
 SetEnvIfNoCase Referer softtor\.com spambot=yes
 SetEnvIfNoCase Referer softxaker\.ru spambot=yes
+SetEnvIfNoCase Referer soheavyblog\.com spambot=yes
 SetEnvIfNoCase Referer sohoindia\.net spambot=yes
 SetEnvIfNoCase Referer solitaire\-game\.ru spambot=yes
 SetEnvIfNoCase Referer solnplast\.ru spambot=yes
