@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-17 11:11:25 (SAST)
+# Updated 2017-04-18 11:43:32 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -75,6 +75,7 @@ SetEnvIfNoCase Referer 4webmasters\.com spambot=yes
 SetEnvIfNoCase Referer 5000\-cotydzien\.com spambot=yes
 SetEnvIfNoCase Referer 51\.la spambot=yes
 SetEnvIfNoCase Referer 51unlim\.ru spambot=yes
+SetEnvIfNoCase Referer 55wmz\.ru spambot=yes
 SetEnvIfNoCase Referer 57883\.net spambot=yes
 SetEnvIfNoCase Referer 5elementov\.ru spambot=yes
 SetEnvIfNoCase Referer 5forex\.ru spambot=yes
@@ -1463,6 +1464,7 @@ SetEnvIfNoCase Referer handmadepics\.net spambot=yes
 SetEnvIfNoCase Referer handsandlegs\.ru spambot=yes
 SetEnvIfNoCase Referer hanink\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
+SetEnvIfNoCase Referer hatdc\.org spambot=yes
 SetEnvIfNoCase Referer hauleddes\.com spambot=yes
 SetEnvIfNoCase Referer havepussy\.com spambot=yes
 SetEnvIfNoCase Referer hayate\.biz spambot=yes
@@ -2160,6 +2162,7 @@ SetEnvIfNoCase Referer mydownlodablefiles\.com spambot=yes
 SetEnvIfNoCase Referer myfreemp3\.eu spambot=yes
 SetEnvIfNoCase Referer myfreetutorials\.com spambot=yes
 SetEnvIfNoCase Referer myftpupload\.com spambot=yes
+SetEnvIfNoCase Referer mygameplus\.com spambot=yes
 SetEnvIfNoCase Referer myhealthcare\.com spambot=yes
 SetEnvIfNoCase Referer myhitmp3\.club spambot=yes
 SetEnvIfNoCase Referer myindospace\.com spambot=yes
@@ -2516,6 +2519,7 @@ SetEnvIfNoCase Referer pravoholding\.ru spambot=yes
 SetEnvIfNoCase Referer prchecker\.info spambot=yes
 SetEnvIfNoCase Referer preparevideosafesystem4unow\.site spambot=yes
 SetEnvIfNoCase Referer preparevideosafesystem4unow\.space spambot=yes
+SetEnvIfNoCase Referer pretty\-mart\.com spambot=yes
 SetEnvIfNoCase Referer pricheski\-video\.com spambot=yes
 SetEnvIfNoCase Referer printdirectforless\.com spambot=yes
 SetEnvIfNoCase Referer printingpeach\.com spambot=yes
@@ -2860,6 +2864,7 @@ SetEnvIfNoCase Referer seorankinglinks\.us spambot=yes
 SetEnvIfNoCase Referer seorankinglinks\.xyz spambot=yes
 SetEnvIfNoCase Referer serialsway\.ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer serptehnika\.ru spambot=yes
+SetEnvIfNoCase Referer service\-core\.ru spambot=yes
 SetEnvIfNoCase Referer servisural\.ru spambot=yes
 SetEnvIfNoCase Referer seryeznie\-znakomstva\.ru spambot=yes
 SetEnvIfNoCase Referer sethrollins\.net spambot=yes
