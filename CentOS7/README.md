@@ -313,6 +313,18 @@ When pulling any future updates now your custom bad referrer words list will not
 
 ## Step 6:
 
+**DOWNLOAD CUSTOM BLACKLIST USER-AGENTS INCLUDE FILE FOR CUSTOMIZED BLOCKING OF USER AGENTS**
+
+Allows you to add your own custom list of user agents with this new include file.
+
+`cd /etc/apache2/custom.d`
+
+- copy the blacklist-user-agents.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS7/custom.d/blacklist-user-agents.conf -O blacklist-user-agents.conf`
+
+## Step 7:
+
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
  Include the globalblacklist.conf file within a `<Directory>` block just after your opening Options statements and before the rest of your host config example below. 
@@ -338,7 +350,7 @@ When pulling any future updates now your custom bad referrer words list will not
 </VirtualHost>
 ```
 
-## Step 7:
+## Step 8:
 
 **RELOAD YOUR APACHE CONFIGURATION**
 
@@ -348,7 +360,7 @@ If you get no errors you followed my instructions properly.
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-## Step 8:
+## Step 9:
 
 *TESTING**
 
@@ -373,7 +385,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-## Step 9:
+## Step 10:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 

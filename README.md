@@ -302,6 +302,17 @@ When pulling any future updates now your custom bad referrer words list will not
 
 ## Step 5:
 
+**DOWNLOAD CUSTOM BLACKLIST USER-AGENTS INCLUDE FILE FOR CUSTOMIZED BLOCKING OF USER AGENTS**
+
+Allows you to add your own custom list of user agents with this new include file.
+
+`cd /etc/apache2/custom.d`
+
+- copy the blacklist-user-agents.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/blacklist-user-agents.conf -O blacklist-user-agents.conf`
+## Step 6:
+
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
  Include the globalblacklist.conf file in the beginning of a directory block just after your opening Options statements and before the rest of your host config example below. **Remove the "<<<<<< This needs to be added" part**
@@ -320,7 +331,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 <IfModule mod_rewrite.c>
 ```
 
-## Step 6:
+## Step 7:
 
 **TEST YOUR APACHE CONFIGURATION**
 
@@ -338,7 +349,7 @@ or
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-## Step 7:
+## Step 8:
 
 *TESTING**
 
@@ -363,7 +374,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-## Step 8:
+## Step 9:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 
@@ -383,7 +394,7 @@ And you will be up to date with all your whitelisted domains included automatica
 
 See my latest auto updater bash script at:
 
-https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/updateapacheblocker.sh
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/update-apacheblocker.sh
 
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!

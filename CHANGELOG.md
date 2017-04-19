@@ -1,11 +1,12 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
 ### 2017-04-19 (MAJOR VERSION UPDATE) - V2.2017.05
-- New include files introduced - blacklist-ips.conf and bad-referrer-words.conf
+- New include files introduced - blacklist-ips.conf, bad-referrer-words.conf and blacklist-user-agents.conf
 - New include file bad-referrer-words.conf allows total control and customization of scanning for bad referrer words
 - New include file blacklist-ips.conf allows total control and customization over which IP addresses and IP Ranges you want to block
+- New include file blacklist-user-agents.conf allows adding own custom user-agents you wish to block.
 - Cyveillance and Berkeley Scanner Blocks have been moved into blacklist-ips.conf
-- VERY IMPORTANT - Without the existence of blacklist-ips.conf and bad-referrer-words.conf include files Apache will FAIL RELOAD
+- VERY IMPORTANT - Without the existence of blacklist-ips.conf, bad-referrer-words.conf and blacklist-user-agents.conf include files Apache will FAIL RELOAD
 - PLEASE READ UPDATED CONFIGURATION INSTRUCTIONS
 - AUTO UPDATE SCRIPT WILL FAIL APACHE RELOAD WITHOUT THE NEW INCLUDE FILES !!!!
 - Introduced better Regex patterns for escaping dots in domain names of bad referrers to prevent false positives as per ISSUE: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/issues/22
@@ -16,12 +17,12 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes like this take place.
 - Also follow me on twitter @ubuntu101za for update notifications
 
-
 ### 2017-04-11
 - Introduced Repo Email Notification Mailing List
 - Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+- Also follow me on twitter @ubuntu101za for update notifications
 
 ### 2017-02-26
 - Added bash script for those wanting hassle free auto updating of the blocker.

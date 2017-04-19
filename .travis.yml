@@ -52,6 +52,7 @@ deploy:
   - "custom.d/whitelist-ips.conf"
   - "custom.d/bad-referrer-words.conf"
   - "custom.d/blacklist-ips.conf"
+  - "custom.d/blacklist-user-agents.conf"
   skip_cleanup: true
   on:
     repo: mitchellkrogza/apache-ultimate-bad-bot-blocker
