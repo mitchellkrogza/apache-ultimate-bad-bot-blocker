@@ -4,7 +4,6 @@
 - Introduced better Regex patterns for escaping dots in domain names of bad referrers to prevent false positives as per ISSUE: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/issues/22
 - Regex Change on Bots Sections to Exact Matching
 - Fixed some Duplicated Bots Issues
-- Added Help and Examples for People using EnginTron/CPanel/WHM systems.
 
 ### 2017-04-11
 - Introduced Repo Email Notification Mailing List
