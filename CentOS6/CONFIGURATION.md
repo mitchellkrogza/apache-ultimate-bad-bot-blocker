@@ -3,7 +3,7 @@
 
 ##### Created by: https://github.com/mitchellkrogza
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
-### Version 2.2017.04
+### Version 2.2017.05
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
@@ -12,7 +12,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 # CONFIGURATION OF THE APACHE BAD BOT BLOCKER FOR CENTOS 6.8 and APACHE 2.2.15:
 
-##Step 1:
+## Step 1:
 
 **CREATE THE conf.d folder needed for Apache on CENTOS 6.8**
 
@@ -24,7 +24,7 @@ Open Terminal
 
 `mkdir /etc/httpd/conf.d`
 
-##Step 2:
+## Step 2:
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
 
@@ -34,7 +34,7 @@ Copy the contents of **globalblacklist.conf** into your /etc/httpd/conf/conf.d f
 
 `wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/conf.d/globalblacklist.conf -O globalblacklist.conf`
 
-##Step 3:
+## Step 3:
 
 **WHITELIST ALL YOUR OWN DOMAIN NAMES AND IP ADDRESSES**
 
@@ -55,7 +55,41 @@ Use nano, vim or any other text editor to edit both whitelist-ips.conf and white
 
 When pulling any future updates now you can simply pull the latest globalblacklist.conf file and it will automatically include your whitelisted domains and IP addresses. No more remembering having to do this yourself.
 
-##Step 4:
+## Step 4:
+
+**DOWNLOAD CUSTOM BLACKLIST INCLUDE FILE FOR IP ADDRESS AND IP RANGE BLOCKING**
+
+Blacklist any IP addresses or Ranges you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/httpd/conf.d`
+
+- copy the blacklist-ips.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/conf.d/blacklist-ips.conf -O blacklist-ips.conf`
+
+
+Use nano, vim or any other text editor to edit the blacklist-ips.conf file as you like. 
+
+When pulling any future updates now your custom IP blacklist will not be overwritten.
+
+## Step 5:
+
+**DOWNLOAD CUSTOM BAD REFERRER WORDS INCLUDE FILE FOR CUSTOMIZED SCANNING OF BAD WORDS**
+
+Scan for any bad referrer words you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/httpd/conf.d`
+
+- copy the bad-referrer-words.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS6/conf.d/bad-referrer-words.conf -O bad-referrer-words.conf`
+
+
+Use nano, vim or any other text editor to edit the bad-referrer-words.conf file as you like. 
+
+When pulling any future updates now your custom bad referrer words list will not be overwritten.
+
+## Step 6:
 
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
@@ -82,7 +116,7 @@ When pulling any future updates now you can simply pull the latest globalblackli
 </VirtualHost>
 ```
 
-##Step 5:
+## Step 7:
 
 **RELOAD YOUR APACHE CONFIGURATION**
 
@@ -92,7 +126,7 @@ If you get no errors you followed my instructions properly.
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-##Step 6:
+## Step 8:
 
 *TESTING**
 
@@ -117,7 +151,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-##Step 7:
+## Step 9:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 

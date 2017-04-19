@@ -3,7 +3,7 @@
 
 ##### Created by: https://github.com/mitchellkrogza
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
-### Version 2.2017.04
+### Version 2.2017.05
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
@@ -44,6 +44,40 @@ When pulling any future updates now you can simply pull the latest globalblackli
 
 ## Step 3:
 
+**DOWNLOAD CUSTOM BLACKLIST INCLUDE FILE FOR IP ADDRESS AND IP RANGE BLOCKING**
+
+Blacklist any IP addresses or Ranges you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/apache2/custom.d`
+
+- copy the blacklist-ips.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/blacklist-ips.conf -O blacklist-ips.conf`
+
+
+Use nano, vim or any other text editor to edit the blacklist-ips.conf file as you like. 
+
+When pulling any future updates now your custom IP blacklist will not be overwritten.
+
+## Step 4:
+
+**DOWNLOAD CUSTOM BAD REFERRER WORDS INCLUDE FILE FOR CUSTOMIZED SCANNING OF BAD WORDS**
+
+Scan for any bad referrer words you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/apache2/custom.d`
+
+- copy the bad-referrer-words.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/bad-referrer-words.conf -O bad-referrer-words.conf`
+
+
+Use nano, vim or any other text editor to edit the bad-referrer-words.conf file as you like. 
+
+When pulling any future updates now your custom bad referrer words list will not be overwritten.
+
+## Step 5:
+
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
  Include the globalblacklist.conf file in the beginning of a directory block just after your opening Options statements and before the rest of your host config example below. **Remove the "<<<<<< This needs to be added" part**
@@ -62,7 +96,7 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
 <IfModule mod_rewrite.c>
 ```
 
-## Step 4:
+## Step 6:
 
 **TEST YOUR APACHE CONFIGURATION**
 
@@ -80,7 +114,7 @@ or
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-## Step 5:
+## Step 7:
 
 *TESTING**
 
@@ -105,7 +139,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-## Step 6:
+## Step 8:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 

@@ -1,9 +1,19 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
-### 2017-04-19
+### 2017-04-19 (MAJOR VERSION UPDATE) - V2.2017.05
+- New include files introduced - blacklist-ips.conf and bad-referrer-words.conf
+- New include file bad-referrer-words.conf allows total control and customization of scanning for bad referrer words
+- New include file blacklist-ips.conf allows total control and customization over which IP addresses and IP Ranges you want to block
+- Cyveillance and Berkeley Scanner Blocks have been moved into blacklist-ips.conf
+- VERY IMPORTANT - Without the existence of blacklist-ips.conf and bad-referrer-words.conf include files Apache will FAIL RELOAD
+- PLEASE READ UPDATED CONFIGURATION INSTRUCTIONS
+- AUTO UPDATE SCRIPT WILL FAIL APACHE RELOAD WITHOUT THE NEW INCLUDE FILES !!!!
 - Introduced better Regex patterns for escaping dots in domain names of bad referrers to prevent false positives as per ISSUE: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/issues/22
 - Regex Change on Bots Sections to Exact Matching
 - Fixed some Duplicated Bots Issues
+- Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
+or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
+**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes like this take place.
 
 ### 2017-04-11
 - Introduced Repo Email Notification Mailing List
@@ -14,13 +24,13 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 ### 2017-02-26
 - Added bash script for those wanting hassle free auto updating of the blocker.
 
-### 2017-02-16
+### 2017-02-16 (MAJOR VERSION UPDATE) - V2.2017.04
 - V2.2017.04 - Introduce new Whitelisting of Domain names and IP addresses using an Include file. This means you no longer have to remember to insert your whitelisted IP's and domains with each update. Now you can simply pull the updated globalblacklist.conf to your server, reload Apache and it will automatically include your whitelisted IP ranges and domains. **[Please read updated configuration instructions](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md)**
 
-### 2017-02-07
+### 2017-02-07 (MAJOR VERSION UPDATE) - V2.2017.03
 - V2.2017.03 - Introduced .htaccess versions of the spam referrer blocker for users without root access to their Apache Server or unable to run the full bot blocker for some or other reason
 
-### 2017-02-06
+### 2017-02-06 (MAJOR VERSION UPDATE) - V2.2017.02
 - V2.2017.02 - Added WhiteListing of CloudFlare IP Ranges
 
 ### 2017-01-29

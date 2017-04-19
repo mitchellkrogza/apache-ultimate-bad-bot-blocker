@@ -10,7 +10,7 @@
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS and Apache Web Servers
 
-### Version 2.2017.04 for CentOS 7 and Apache 2.4.6 ONLY !!!
+### Version 2.2017.05 for CentOS 7 and Apache 2.4.6 ONLY !!!
 
 ### Created by: https://github.com/mitchellkrogza
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>
@@ -29,7 +29,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 #### Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
 
 ### WHY BLOCK BAD BOTS ?
-#####Bad bots are:
+##### Bad bots are:
 
 -    Bad Referrers 
 -    Bad User-Agent Strings
@@ -53,7 +53,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 (Over 4000 bad referrers, bots, seo companies and counting)
 
-###To contribute your own bad referers 
+### To contribute your own bad referers 
 please add them into the
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Pull%20Requests%20Here%20Please/badreferers.list
 file and then send a Pull Request (PR). 
@@ -232,7 +232,7 @@ can add that functionality if you like copying the awk statement !~ from the fir
 
 ## FOR CENTOS 7 and APACHE 2.4.6 ONLY
 
-##Step 1:
+## Step 1:
 
 **CREATE THE custom.d folder needed for Apache on CENTOS 7**
 
@@ -244,7 +244,7 @@ Open Terminal
 
 `mkdir /etc/httpd/custom.d`
 
-##Step 2:
+## Step 2:
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
 
@@ -254,7 +254,7 @@ Copy the contents of **globalblacklist.conf** into your /etc/httpd/custom.d fold
 
 `wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS7/custom.d/globalblacklist.conf -O globalblacklist.conf`
 
-##Step 3:
+## Step 3:
 
 **WHITELIST ALL YOUR OWN DOMAIN NAMES AND IP ADDRESSES**
 
@@ -275,7 +275,41 @@ Use nano, vim or any other text editor to edit both whitelist-ips.conf and white
 
 When pulling any future updates now you can simply pull the latest globalblacklist.conf file and it will automatically include your whitelisted domains and IP addresses. No more remembering having to do this yourself.
 
-##Step 4:
+## Step 4:
+
+**DOWNLOAD CUSTOM BLACKLIST INCLUDE FILE FOR IP ADDRESS AND IP RANGE BLOCKING**
+
+Blacklist any IP addresses or Ranges you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/apache2/custom.d`
+
+- copy the blacklist-ips.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS7/custom.d/blacklist-ips.conf -O blacklist-ips.conf`
+
+
+Use nano, vim or any other text editor to edit the blacklist-ips.conf file as you like. 
+
+When pulling any future updates now your custom IP blacklist will not be overwritten.
+
+## Step 5:
+
+**DOWNLOAD CUSTOM BAD REFERRER WORDS INCLUDE FILE FOR CUSTOMIZED SCANNING OF BAD WORDS**
+
+Scan for any bad referrer words you wish to keep out of your servers. **Please note important changes**, this is now done using include files so that you have full control over what IP addresses and IP Ranges and blocked from your Apache Server.
+
+`cd /etc/apache2/custom.d`
+
+- copy the bad-referrer-words.conf file into that folder
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/CentOS7/custom.d/bad-referrer-words.conf -O bad-referrer-words.conf`
+
+
+Use nano, vim or any other text editor to edit the bad-referrer-words.conf file as you like. 
+
+When pulling any future updates now your custom bad referrer words list will not be overwritten.
+
+## Step 6:
 
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
 
@@ -302,7 +336,7 @@ When pulling any future updates now you can simply pull the latest globalblackli
 </VirtualHost>
 ```
 
-##Step 5:
+## Step 7:
 
 **RELOAD YOUR APACHE CONFIGURATION**
 
@@ -312,7 +346,7 @@ If you get no errors you followed my instructions properly.
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-##Step 6:
+## Step 8:
 
 *TESTING**
 
@@ -337,7 +371,7 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-##Step 7:
+## Step 9:
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 
@@ -362,14 +396,14 @@ https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
-##Finally - Stopping Google Analytics 'ghost' spam
+## Finally - Stopping Google Analytics 'ghost' spam
 Simply using the Apache blocker does not stop Google Analytics ghost referral spam 
 because they are hitting Analytics directly and not always necessarily touching your website. 
 
 You should use regex filters in Analytics to prevent ghost referral spam.
 For this a simple google-exclude.txt file has been created for you and it is updated at the same time when the Nginx Blocker is updated.
 
-##To stop Ghost Spam on On Analytics
+## To stop Ghost Spam on On Analytics
 Navigate to your Google Analytics Admin panel and add a Segment. (New Segment > Advanced > Conditions)
 This will need to be done on each and every site where you want this filter to be in effect. 
 Google has a limit on the length of the regex so it is now broken up for you into multiple google-exclude-*.txt files. 
@@ -386,13 +420,13 @@ Google has a limit on the length of the regex so it is now broken up for you int
 Do the same thing now for google-exclude-02.txt and google-exclude-03.txt.
 As the list grows there will be more google-exclude files each limited to Google's restriction limit.
 
-#Or Even Better Check Out RefererSpamBlocker
+# Or Even Better Check Out RefererSpamBlocker
 
 Also check out the awesome [Referer Spam Blocker](https://referrerspamblocker.com)
 for Google Analytics which uses a collaborated source of spam domains and automatically adds all the filters to your
 Analytics sites for you in 2 easy clicks and it is FREE.
 
-##Blocking Spam Domains Using Google Webmaster Tools
+## Blocking Spam Domains Using Google Webmaster Tools
 
 I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster
 Tools to block all these domains out as spammy or bad links. Use with caution.
@@ -406,10 +440,10 @@ See the Fail2Ban folder for instructions on configuring this great add on for th
 
 ### If this helped you [Why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
-#MIT License
+# MIT License
 
-##Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
-##https://github.com/mitchellkrogza
+## Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
+## https://github.com/mitchellkrogza
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
@@ -440,10 +474,10 @@ SOFTWARE.
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
 - https://github.com/mariusv/nginx-badbot-blocker
 
-#####Into Photography?
+##### Into Photography?
 Come drop by and visit me at https://mitchellkrog.com
 
-###Acknowledgements:
+### Acknowledgements:
 
 Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
 
