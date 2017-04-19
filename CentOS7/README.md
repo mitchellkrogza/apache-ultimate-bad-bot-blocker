@@ -22,6 +22,8 @@ Please subscribe your email address to the mailing list at **https://groups.goog
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
+## Also follow me on twitter @ubuntu101za for update notifications
+
 #### Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
 
 #### Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
@@ -501,3 +503,5 @@ If you believe your name should be here, drop me a line.
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+
+## Also follow me on twitter @ubuntu101za for update notifications
