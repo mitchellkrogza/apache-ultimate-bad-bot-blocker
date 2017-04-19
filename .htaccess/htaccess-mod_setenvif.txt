@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-19 16:02:18 (SAST)
+# Updated 2017-04-19 16:33:26 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -695,6 +695,7 @@ SetEnvIfNoCase Referer cheapjerseysa\.com spambot=yes
 SetEnvIfNoCase Referer cheapjerseysap\.com spambot=yes
 SetEnvIfNoCase Referer cheapjerseysbizwholesale\.us spambot=yes
 SetEnvIfNoCase Referer cheapjerseysfootballshop\.com spambot=yes
+SetEnvIfNoCase Referer cheapmarmot\.online spambot=yes
 SetEnvIfNoCase Referer cheatcode\-lita12\.rhcloud\.com spambot=yes
 SetEnvIfNoCase Referer checkm8\.com spambot=yes
 SetEnvIfNoCase Referer checkpagerank\.net spambot=yes
@@ -3626,6 +3627,7 @@ SetEnvIfNoCase Referer womens\-journal\.net spambot=yes
 SetEnvIfNoCase Referer womensplay\.net spambot=yes
 SetEnvIfNoCase Referer womensterritory\.ru spambot=yes
 SetEnvIfNoCase Referer wonderfulflowers\.biz spambot=yes
+SetEnvIfNoCase Referer word\-vorlagen\.net spambot=yes
 SetEnvIfNoCase Referer wordpress\-crew\.net spambot=yes
 SetEnvIfNoCase Referer wordpresscore\.com spambot=yes
 SetEnvIfNoCase Referer works\.if\.ua spambot=yes

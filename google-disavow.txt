@@ -687,6 +687,7 @@ domain:cheapjerseysa.com
 domain:cheapjerseysap.com
 domain:cheapjerseysbizwholesale.us
 domain:cheapjerseysfootballshop.com
+domain:cheapmarmot.online
 domain:cheatcode-lita12.rhcloud.com
 domain:checkm8.com
 domain:checkpagerank.net
@@ -3618,6 +3619,7 @@ domain:womens-journal.net
 domain:womensplay.net
 domain:womensterritory.ru
 domain:wonderfulflowers.biz
+domain:word-vorlagen.net
 domain:wordpress-crew.net
 domain:wordpresscore.com
 domain:works.if.ua
