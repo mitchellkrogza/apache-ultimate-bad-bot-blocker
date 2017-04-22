@@ -311,6 +311,9 @@ Allows you to add your own custom list of user agents with this new include file
 - copy the blacklist-user-agents.conf file into that folder
 
 `sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/blacklist-user-agents.conf -O blacklist-user-agents.conf`
+
+**NOTE:** On the Apache Blocker if you want to over-ride any of the whitelisted bots you can add them to this include file and the previously whitelisted bots in the blocker will be over-ridden by this include file. So let's say for some "obscure" reason you really do not want any search engines like Googlebot or Bingbot to ever access or index your site, you add them to your blacklist-user-agents.conf and they will be over-ridden from the earlier whitelisting in the blocker. This now gives users total control over the blocker without every having to try and modify the globalblacklist.conf file. So now you can customize all your include files and you can still pull the daily updates of globalblacklist.conf and it will not touch any of your custom include files.
+
 ## Step 6:
 
 **INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**

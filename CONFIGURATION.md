@@ -78,6 +78,7 @@ Use nano, vim or any other text editor to edit the bad-referrer-words.conf file 
 
 When pulling any future updates now your custom bad referrer words list will not be overwritten.
 
+
 ## Step 5:
 
 **DOWNLOAD CUSTOM BLACKLIST USER-AGENTS INCLUDE FILE FOR CUSTOMIZED BLOCKING OF USER AGENTS**
@@ -94,6 +95,8 @@ Allows you to add your own custom list of user agents with this new include file
 Use nano, vim or any other text editor to edit the blacklist-user-agents.conf file as you like. 
 
 When pulling any future updates now your custom bad referrer words list will not be overwritten.
+
+**NOTE:** On the Apache Blocker if you want to over-ride any of the whitelisted bots you can add them to this include file and the previously whitelisted bots in the blocker will be over-ridden by this include file. So let's say for some "obscure" reason you really do not want any search engines like Googlebot or Bingbot to ever access or index your site, you add them to your blacklist-user-agents.conf and they will be over-ridden from the earlier whitelisting in the blocker. This now gives users total control over the blocker without every having to try and modify the globalblacklist.conf file. So now you can customize all your include files and you can still pull the daily updates of globalblacklist.conf and it will not touch any of your custom include files.
 
 ## Step 6:
 
