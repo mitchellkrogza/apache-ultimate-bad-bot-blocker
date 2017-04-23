@@ -642,6 +642,7 @@ domain:cand.jp
 domain:candcstuccoandstone.com
 domain:candelluxsklep.pl
 domain:candiceloves.us
+domain:candlehandmade.com
 domain:candy-glam-hp.com
 domain:candycrushshop.com
 domain:candypeople.se
@@ -1921,6 +1922,7 @@ domain:liveshoppersmac.com
 domain:livetsomudvekslingstudent.bloggersdelight.dk
 domain:livingcanarias.com
 domain:livingroomdecor.info
+domain:lkbennettoutlet.online
 domain:lkbennettstore.online
 domain:llastbuy.ru
 domain:lmrauction.com
@@ -2062,6 +2064,7 @@ domain:mexicotravelnet.com
 domain:mhi-systems.ru
 domain:mhtr.be
 domain:micasainvest.com
+domain:michaelkorsoutlet.store
 domain:microsearch.ru
 domain:microsoftportal.net
 domain:microstatic.pl
@@ -2716,6 +2719,7 @@ domain:remontgruzovik.ru
 domain:remorcicomerciale.ro
 domain:remote-dba.de
 domain:renecaovilla.online
+domain:renewablewealth.com
 domain:rentalmaty.kz
 domain:rentehno.ru
 domain:repeatlogo.co.uk
@@ -2956,6 +2960,7 @@ domain:shop-electron.ru
 domain:shop.acim.org
 domain:shop.xz618.com
 domain:shopcheermakeup.info
+domain:shoplvlv.us
 domain:shoppingmiracles.co.uk
 domain:shoppytoolmac.com
 domain:shopvilleroyboch.com.ua
@@ -3308,6 +3313,7 @@ domain:tizanidinezanaflex.blogspot.com
 domain:tjkckpytpnje.com
 domain:tkanorganizma.ru
 domain:tksn.ru
+domain:tmearegion26.com
 domain:tmm-kurs.ru
 domain:tnctrx.com
 domain:todohr.com
