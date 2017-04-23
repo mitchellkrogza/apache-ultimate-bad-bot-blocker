@@ -1916,7 +1916,6 @@ domain:littleberry.ru
 domain:liupis.com
 domain:live-sexchat.ru
 domain:livefixer.com
-domain:liveinternet.ru
 domain:liverpool.gsofootball.com
 domain:liveshoppersmac.com
 domain:livetsomudvekslingstudent.bloggersdelight.dk
@@ -2399,6 +2398,7 @@ domain:paparazzistudios.com.au
 domain:paperics.com
 domain:paperwritingservice17.blogspot.ru
 domain:paradontozanet.ru
+domain:parajumpersstore.online
 domain:paramountmarble.co.uk
 domain:parlament.biz
 domain:partner-cdn.men
@@ -3480,6 +3480,7 @@ domain:vekzdorov.ru
 domain:velobikestock.com
 domain:venta-prom.ru
 domain:ventelnos.com
+domain:vereo.eu
 domain:vesnatehno.com
 domain:vesnatehno.ru
 domain:vezuviy.su

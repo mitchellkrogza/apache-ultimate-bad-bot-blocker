@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-22 09:32:56 (SAST)
+# Updated 2017-04-23 10:23:38 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1924,7 +1924,6 @@ SetEnvIfNoCase Referer littleberry\.ru spambot=yes
 SetEnvIfNoCase Referer liupis\.com spambot=yes
 SetEnvIfNoCase Referer live\-sexchat\.ru spambot=yes
 SetEnvIfNoCase Referer livefixer\.com spambot=yes
-SetEnvIfNoCase Referer liveinternet\.ru spambot=yes
 SetEnvIfNoCase Referer liverpool\.gsofootball\.com spambot=yes
 SetEnvIfNoCase Referer liveshoppersmac\.com spambot=yes
 SetEnvIfNoCase Referer livetsomudvekslingstudent\.bloggersdelight\.dk spambot=yes
@@ -2407,6 +2406,7 @@ SetEnvIfNoCase Referer paparazzistudios\.com\.au spambot=yes
 SetEnvIfNoCase Referer paperics\.com spambot=yes
 SetEnvIfNoCase Referer paperwritingservice17\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer paradontozanet\.ru spambot=yes
+SetEnvIfNoCase Referer parajumpersstore\.online spambot=yes
 SetEnvIfNoCase Referer paramountmarble\.co\.uk spambot=yes
 SetEnvIfNoCase Referer parlament\.biz spambot=yes
 SetEnvIfNoCase Referer partner\-cdn\.men spambot=yes
@@ -3488,6 +3488,7 @@ SetEnvIfNoCase Referer vekzdorov\.ru spambot=yes
 SetEnvIfNoCase Referer velobikestock\.com spambot=yes
 SetEnvIfNoCase Referer venta\-prom\.ru spambot=yes
 SetEnvIfNoCase Referer ventelnos\.com spambot=yes
+SetEnvIfNoCase Referer vereo\.eu spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.com spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.ru spambot=yes
 SetEnvIfNoCase Referer vezuviy\.su spambot=yes
