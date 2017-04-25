@@ -261,6 +261,7 @@ domain:android-systems.ru
 domain:android-vsem.org
 domain:android4fun.org
 domain:androids-store.com
+domain:angigreene.com
 domain:animali.deagostinipassion.it
 domain:anime.dougasouko.com
 domain:animebox.com.ua
@@ -413,6 +414,7 @@ domain:bad-stars.net
 domain:baersaratov.ru
 domain:bag77.ru
 domain:bagcionderlab.com
+domain:bagsonsale.online
 domain:baixar-musicas-gratis.com
 domain:baksman.com
 domain:bala.getenjoyment.net
@@ -432,6 +434,7 @@ domain:bannerbank.ru
 domain:bannerspace.com
 domain:bannerswap.com
 domain:bannertesting.com
+domain:barbourjackets.online
 domain:bard-real.com.ua
 domain:barnfurnituremart.com
 domain:basedecor.ru
@@ -450,6 +453,7 @@ domain:beauty-bracelet.com
 domain:beauty-clinic.ru
 domain:beauty-things.com
 domain:becuo.com
+domain:bedandbreakfast.com
 domain:bedcapdealers.com
 domain:belinvestdom.by
 domain:benchmarkcommunications.co.uk
@@ -518,6 +522,7 @@ domain:biznesluxe.ru
 domain:biznesrealnost.ru
 domain:biznesschat.net
 domain:bizru.info
+domain:bjanshee.ru
 domain:bkns.vn
 domain:blackhatworth.com
 domain:blackle.com
@@ -700,6 +705,7 @@ domain:chat.ru
 domain:chatseo.com
 domain:chcu.net
 domain:cheap-pills-norx.com
+domain:cheapbelstaff.online
 domain:cheapestjerseys-wholesale.com
 domain:cheapjerseysa.com
 domain:cheapjerseysap.com
@@ -793,6 +799,7 @@ domain:coop-gamers.ru
 domain:copblock.org
 domain:copyrightclaims.org
 domain:cosmetic.donna7753191.ru
+domain:cougfan.info
 domain:countbertwistdisp26.soup.io
 domain:counter.yadro.ru
 domain:country-chic.ru
@@ -912,6 +919,7 @@ domain:directrev.com
 domain:discountliv.com
 domain:discovertreasure-a.akamaihd.net
 domain:discovertreasurenow.com
+domain:disruptingdinnerparties.com
 domain:distver.ru
 domain:diy-handmade-ideas.com
 domain:djekxa.ru
@@ -1501,6 +1509,7 @@ domain:hdpixion.com
 domain:hdseriale.pl
 domain:hdwalls.xyz
 domain:hdxnxxtube.mobi
+domain:headpress.ru
 domain:healbio.ru
 domain:healgastro.com
 domain:healing-dysplasia.ru
@@ -1627,6 +1636,7 @@ domain:imagecoolpub.com
 domain:imagerydatabase.com
 domain:images-graphics-pics.com
 domain:imediadesk.com
+domain:imfamous.info
 domain:imgarcade.com
 domain:imgata.com
 domain:imgresult.com
@@ -1994,6 +2004,7 @@ domain:marcowebonyodziezowe.pl
 domain:maridan.com.ua
 domain:marketingtechniques.info
 domain:marketland.ml
+domain:markjaybeefractal.com
 domain:marktforschung-stuttgart.com
 domain:marmitaco.cat
 domain:martlinker.com
@@ -2010,6 +2021,7 @@ domain:maximilitary.ru
 domain:maxthon.com
 domain:mazda-roadsters.com
 domain:mbiologi.ru
+domain:mcadamssupplyco.com
 domain:mcar.in.ua
 domain:me-ke.com
 domain:mebel-alait.ru
@@ -2331,6 +2343,7 @@ domain:onclkads.com
 domain:one-gear.com
 domain:oneclickfiles.com
 domain:onefilms.net
+domain:oneminutesite.it
 domain:oneshotdate.com
 domain:onetravelguides.com
 domain:onlainbesplatno.ru
@@ -2396,6 +2409,7 @@ domain:paceform.com
 domain:paleohub.info
 domain:palvira.com.ua
 domain:pammik.ru
+domain:panamaforbeginners.com
 domain:panchro.co.uk
 domain:paparazzistudios.com.au
 domain:paperics.com
@@ -2408,6 +2422,7 @@ domain:partner-cdn.men
 domain:partner-print.men
 domain:partners-ship.pro
 domain:partybunny.ru
+domain:patagoniastore.online
 domain:pathwhelp.org
 domain:pattersonsweb.com
 domain:paydayloanslocal.com
@@ -2664,6 +2679,7 @@ domain:radiogambling.com
 domain:ragecash.com
 domain:rainbowice.ru
 domain:raisedseo.com
+domain:randalljhoward.com
 domain:randki-sex.com
 domain:rank-checker.online
 domain:rankchecker.online
@@ -2824,6 +2840,7 @@ domain:sbornik-zakonov.ru
 domain:sbprabooks.com
 domain:sbricur.com
 domain:sbt-aqua.ru
+domain:sbtdesign.co.uk
 domain:sbwealthsolutions.ca
 domain:sc-specialhost.com
 domain:scalerite.co.za
@@ -3070,6 +3087,7 @@ domain:sofit-dmd.ru
 domain:soft-program.com
 domain:soft-terminal.ru
 domain:soft1.ru
+domain:softlinesolutions.me
 domain:softomix.com
 domain:softomix.net
 domain:softonicads.com
@@ -3652,6 +3670,7 @@ domain:wikes.20fr.com
 domain:wildworld.site
 domain:windowssearch-exp.com
 domain:wineitudes.wordpress.com
+domain:wineration.com
 domain:wingsoffury2.com
 domain:winner7777.net
 domain:winterclassichockeyjerseys.com
@@ -3876,6 +3895,7 @@ domain:znakomstva-moskva77.ru
 domain:znakomstva-piter78.ru
 domain:znakomstvaonlain.ru
 domain:znaniyapolza.ru
+domain:znaturaloriginal.com
 domain:zog.link
 domain:zojirushi-products.ru
 domain:zolotoy-lis.ru
