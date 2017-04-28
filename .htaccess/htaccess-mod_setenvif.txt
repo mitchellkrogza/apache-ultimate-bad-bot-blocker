@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-27 10:46:18 (SAST)
+# Updated 2017-04-28 09:46:55 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -59,6 +59,7 @@ SetEnvIfNoCase Referer 2drittel\.de spambot=yes
 SetEnvIfNoCase Referer 2itech\.ru spambot=yes
 SetEnvIfNoCase Referer 2kata\.ru spambot=yes
 SetEnvIfNoCase Referer 2nt\.ru spambot=yes
+SetEnvIfNoCase Referer 2rich4bitches\.com spambot=yes
 SetEnvIfNoCase Referer 3\-letter\-domains\.net spambot=yes
 SetEnvIfNoCase Referer 300richmond\.co\.nz spambot=yes
 SetEnvIfNoCase Referer 34\.gs spambot=yes
@@ -335,6 +336,7 @@ SetEnvIfNoCase Referer arkartex\.ru spambot=yes
 SetEnvIfNoCase Referer arraty\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer artdeko\.info spambot=yes
 SetEnvIfNoCase Referer artefakct\.com spambot=yes
+SetEnvIfNoCase Referer articlesdirectoryme\.info spambot=yes
 SetEnvIfNoCase Referer artpicso\.com spambot=yes
 SetEnvIfNoCase Referer aruplighting\.com spambot=yes
 SetEnvIfNoCase Referer as5000\.com spambot=yes
@@ -393,6 +395,7 @@ SetEnvIfNoCase Referer avon\-severozapad\.ru spambot=yes
 SetEnvIfNoCase Referer avon\-ukraine\.com spambot=yes
 SetEnvIfNoCase Referer avramstroy\.ru spambot=yes
 SetEnvIfNoCase Referer avtoarenda\.by spambot=yes
+SetEnvIfNoCase Referer avtochehli\.by spambot=yes
 SetEnvIfNoCase Referer avtocredit\-legko\.ru spambot=yes
 SetEnvIfNoCase Referer avtointeres\.ru spambot=yes
 SetEnvIfNoCase Referer avtolombard\-krasnodar\.com spambot=yes
@@ -1492,6 +1495,7 @@ SetEnvIfNoCase Referer gta\-club\.ru spambot=yes
 SetEnvIfNoCase Referer gta\-top\.ru spambot=yes
 SetEnvIfNoCase Referer gtopstats\.com spambot=yes
 SetEnvIfNoCase Referer guardlink\.org spambot=yes
+SetEnvIfNoCase Referer guildebzh\.info spambot=yes
 SetEnvIfNoCase Referer guitar\-master\.org spambot=yes
 SetEnvIfNoCase Referer gungamesz\.com spambot=yes
 SetEnvIfNoCase Referer guod\.me spambot=yes
@@ -1788,6 +1792,7 @@ SetEnvIfNoCase Referer kamorel\.com spambot=yes
 SetEnvIfNoCase Referer kanimage\.com spambot=yes
 SetEnvIfNoCase Referer karachev\-city\.ru spambot=yes
 SetEnvIfNoCase Referer karadene\.com spambot=yes
+SetEnvIfNoCase Referer karpun\-iris\.ru spambot=yes
 SetEnvIfNoCase Referer karusel\-market\.ru spambot=yes
 SetEnvIfNoCase Referer kashubadesign\.ru spambot=yes
 SetEnvIfNoCase Referer katjimej\.blog\.fc2\.com spambot=yes
