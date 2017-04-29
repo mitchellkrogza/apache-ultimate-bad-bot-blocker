@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-28 09:46:55 (SAST)
+# Updated 2017-04-29 10:07:45 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -349,6 +349,8 @@ SetEnvIfNoCase Referer asrv\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer asrv\-a\.akamoihd\.net spambot=yes
 SetEnvIfNoCase Referer asrvrep\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer asrvvv\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer asscenihotosidea\.blogspot\.co\.za spambot=yes
+SetEnvIfNoCase Referer asscenihotosidea\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer asseenontv\.ru spambot=yes
 SetEnvIfNoCase Referer asseenontvonline\.ru spambot=yes
 SetEnvIfNoCase Referer astrochicks\.com spambot=yes
@@ -723,6 +725,7 @@ SetEnvIfNoCase Referer chat\.ru spambot=yes
 SetEnvIfNoCase Referer chatseo\.com spambot=yes
 SetEnvIfNoCase Referer chcu\.net spambot=yes
 SetEnvIfNoCase Referer cheap\-pills\-norx\.com spambot=yes
+SetEnvIfNoCase Referer cheapbarbour\.online spambot=yes
 SetEnvIfNoCase Referer cheapbelstaff\.online spambot=yes
 SetEnvIfNoCase Referer cheapestjerseys\-wholesale\.com spambot=yes
 SetEnvIfNoCase Referer cheapjerseysa\.com spambot=yes
@@ -1751,6 +1754,7 @@ SetEnvIfNoCase Referer izhevsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer izismile\.com spambot=yes
 SetEnvIfNoCase Referer izoll\.ru spambot=yes
 SetEnvIfNoCase Referer j\-times\.ru spambot=yes
+SetEnvIfNoCase Referer j33x\.com spambot=yes
 SetEnvIfNoCase Referer jackwolfskinoutlet\.online spambot=yes
 SetEnvIfNoCase Referer jamiembrown\.com spambot=yes
 SetEnvIfNoCase Referer janettabridal\.com spambot=yes
@@ -1770,6 +1774,7 @@ SetEnvIfNoCase Referer jerseywholesalebizchina\.com spambot=yes
 SetEnvIfNoCase Referer jerseywholesalechinabiz\.com spambot=yes
 SetEnvIfNoCase Referer jerseywholesaleelitestore\.com spambot=yes
 SetEnvIfNoCase Referer jjbabskoe\.ru spambot=yes
+SetEnvIfNoCase Referer job\.icivil\.ir spambot=yes
 SetEnvIfNoCase Referer joessmogtestonly\.com spambot=yes
 SetEnvIfNoCase Referer joingames\.org spambot=yes
 SetEnvIfNoCase Referer jongose\.ninja spambot=yes
@@ -2026,6 +2031,7 @@ SetEnvIfNoCase Referer manipulyator\-peterburg\.ru spambot=yes
 SetEnvIfNoCase Referer mantramusic\.ru spambot=yes
 SetEnvIfNoCase Referer manualterap\.roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer manuscript\.su spambot=yes
+SetEnvIfNoCase Referer manve\.info spambot=yes
 SetEnvIfNoCase Referer mapquestz\.us spambot=yes
 SetEnvIfNoCase Referer mararoom\.ru spambot=yes
 SetEnvIfNoCase Referer marblestyle\.ru spambot=yes
@@ -2457,6 +2463,7 @@ SetEnvIfNoCase Referer partner\-cdn\.men spambot=yes
 SetEnvIfNoCase Referer partner\-print\.men spambot=yes
 SetEnvIfNoCase Referer partners\-ship\.pro spambot=yes
 SetEnvIfNoCase Referer partybunny\.ru spambot=yes
+SetEnvIfNoCase Referer patagoniaoutlet\.online spambot=yes
 SetEnvIfNoCase Referer patagoniastore\.online spambot=yes
 SetEnvIfNoCase Referer pathwhelp\.org spambot=yes
 SetEnvIfNoCase Referer pattersonsweb\.com spambot=yes
@@ -3482,6 +3489,7 @@ SetEnvIfNoCase Referer uggsale\.online spambot=yes
 SetEnvIfNoCase Referer uhdtv\.website spambot=yes
 SetEnvIfNoCase Referer uhod\-za\-sobakoj\.ru spambot=yes
 SetEnvIfNoCase Referer uhodzalijami\.ru spambot=yes
+SetEnvIfNoCase Referer ukrobstep\.com spambot=yes
 SetEnvIfNoCase Referer ukrup\.com spambot=yes
 SetEnvIfNoCase Referer ultimateclassicrock\.com spambot=yes
 SetEnvIfNoCase Referer ultimatesetnewfreeallsoftupgradesystems\.pw spambot=yes
@@ -3585,6 +3593,7 @@ SetEnvIfNoCase Referer vipsiterip\.org spambot=yes
 SetEnvIfNoCase Referer visa\-china\.ru spambot=yes
 SetEnvIfNoCase Referer visa\-pasport\.ru spambot=yes
 SetEnvIfNoCase Referer visionwell\.com\.cn spambot=yes
+SetEnvIfNoCase Referer visitcambridge\.org spambot=yes
 SetEnvIfNoCase Referer vita\.com\.hr spambot=yes
 SetEnvIfNoCase Referer vitalads\.net spambot=yes
 SetEnvIfNoCase Referer vitanail\.ru spambot=yes
