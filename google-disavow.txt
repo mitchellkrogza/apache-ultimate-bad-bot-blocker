@@ -541,7 +541,6 @@ domain:blackle.com
 domain:blackwitchcraft.ru
 domain:blagovest-med.ru
 domain:blavia.00author.com
-domain:bleacherreport.com
 domain:blockworld.ru
 domain:blog.f00kclan.de
 domain:blog.koorg.ru
@@ -630,6 +629,7 @@ domain:buyhoverboard.com
 domain:buyk.host.sk
 domain:buynorxx.com
 domain:buypanicdisorderpill.com
+domain:buyparajumpers.online
 domain:buypillsorderonline.com
 domain:buypuppies.ca
 domain:buyscabiescream.com
@@ -785,6 +785,7 @@ domain:codq.info
 domain:codysbbq.com
 domain:cognitiveseo.com
 domain:coldfilm.ru
+domain:colehaanoutlet.store
 domain:collegeessay19.blogspot.ru
 domain:com-onlinesupport.host
 domain:com-onlinesupport.site

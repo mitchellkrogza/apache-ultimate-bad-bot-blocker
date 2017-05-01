@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-04-30 10:22:50 (SAST)
+# Updated 2017-05-01 10:08:19 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -549,7 +549,6 @@ SetEnvIfNoCase Referer blackle\.com spambot=yes
 SetEnvIfNoCase Referer blackwitchcraft\.ru spambot=yes
 SetEnvIfNoCase Referer blagovest\-med\.ru spambot=yes
 SetEnvIfNoCase Referer blavia\.00author\.com spambot=yes
-SetEnvIfNoCase Referer bleacherreport\.com spambot=yes
 SetEnvIfNoCase Referer blockworld\.ru spambot=yes
 SetEnvIfNoCase Referer blog\.f00kclan\.de spambot=yes
 SetEnvIfNoCase Referer blog\.koorg\.ru spambot=yes
@@ -638,6 +637,7 @@ SetEnvIfNoCase Referer buyhoverboard\.com spambot=yes
 SetEnvIfNoCase Referer buyk\.host\.sk spambot=yes
 SetEnvIfNoCase Referer buynorxx\.com spambot=yes
 SetEnvIfNoCase Referer buypanicdisorderpill\.com spambot=yes
+SetEnvIfNoCase Referer buyparajumpers\.online spambot=yes
 SetEnvIfNoCase Referer buypillsorderonline\.com spambot=yes
 SetEnvIfNoCase Referer buypuppies\.ca spambot=yes
 SetEnvIfNoCase Referer buyscabiescream\.com spambot=yes
@@ -793,6 +793,7 @@ SetEnvIfNoCase Referer codq\.info spambot=yes
 SetEnvIfNoCase Referer codysbbq\.com spambot=yes
 SetEnvIfNoCase Referer cognitiveseo\.com spambot=yes
 SetEnvIfNoCase Referer coldfilm\.ru spambot=yes
+SetEnvIfNoCase Referer colehaanoutlet\.store spambot=yes
 SetEnvIfNoCase Referer collegeessay19\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.host spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.site spambot=yes
