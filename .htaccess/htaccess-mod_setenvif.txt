@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-01 10:08:19 (SAST)
+# Updated 2017-05-02 15:52:10 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -138,6 +138,7 @@ SetEnvIfNoCase Referer abwa\.tk spambot=yes
 SetEnvIfNoCase Referer academia\-nsk\.org spambot=yes
 SetEnvIfNoCase Referer acads\.net spambot=yes
 SetEnvIfNoCase Referer acc\.eu\.org spambot=yes
+SetEnvIfNoCase Referer acgs\.tk spambot=yes
 SetEnvIfNoCase Referer acheterviagrafr24\.com spambot=yes
 SetEnvIfNoCase Referer actionnooz\.com spambot=yes
 SetEnvIfNoCase Referer actremage\.com spambot=yes
@@ -203,6 +204,7 @@ SetEnvIfNoCase Referer ahrefs\.com spambot=yes
 SetEnvIfNoCase Referer air\-edem\.ru spambot=yes
 SetEnvIfNoCase Referer airmaxshoes\-2016\.com spambot=yes
 SetEnvIfNoCase Referer akama\.com spambot=yes
+SetEnvIfNoCase Referer akita\.kz spambot=yes
 SetEnvIfNoCase Referer aktivator\-windows10\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer akuhni\.by spambot=yes
 SetEnvIfNoCase Referer akusherok\.ru spambot=yes
@@ -516,6 +518,7 @@ SetEnvIfNoCase Referer beztuberkuleza\.ru spambot=yes
 SetEnvIfNoCase Referer bidbuy\.co\.kr spambot=yes
 SetEnvIfNoCase Referer bidr\.trellian\.com spambot=yes
 SetEnvIfNoCase Referer bif\-ru\.info spambot=yes
+SetEnvIfNoCase Referer big\-boards\.info spambot=yes
 SetEnvIfNoCase Referer bigames\.online spambot=yes
 SetEnvIfNoCase Referer bigcities\.org spambot=yes
 SetEnvIfNoCase Referer biglistofwebsites\.com spambot=yes
@@ -538,6 +541,7 @@ SetEnvIfNoCase Referer bitcoinpile\.com spambot=yes
 SetEnvIfNoCase Referer bitcoins\-live\.ru spambot=yes
 SetEnvIfNoCase Referer bitporno\.sx spambot=yes
 SetEnvIfNoCase Referer bizcheapjerseyswholesalechina\.com spambot=yes
+SetEnvIfNoCase Referer bizfly\.info spambot=yes
 SetEnvIfNoCase Referer biznesluxe\.ru spambot=yes
 SetEnvIfNoCase Referer biznesrealnost\.ru spambot=yes
 SetEnvIfNoCase Referer biznesschat\.net spambot=yes
@@ -824,6 +828,7 @@ SetEnvIfNoCase Referer copblock\.org spambot=yes
 SetEnvIfNoCase Referer copyrightclaims\.org spambot=yes
 SetEnvIfNoCase Referer cosmetic\.donna7753191\.ru spambot=yes
 SetEnvIfNoCase Referer cougfan\.info spambot=yes
+SetEnvIfNoCase Referer counciltally\.com spambot=yes
 SetEnvIfNoCase Referer countbertwistdisp26\.soup\.io spambot=yes
 SetEnvIfNoCase Referer counter\.yadro\.ru spambot=yes
 SetEnvIfNoCase Referer country\-chic\.ru spambot=yes
@@ -1915,6 +1920,7 @@ SetEnvIfNoCase Referer larchik\.net spambot=yes
 SetEnvIfNoCase Referer larutti\.ru spambot=yes
 SetEnvIfNoCase Referer lasvegaslockandsafe\.com spambot=yes
 SetEnvIfNoCase Referer laudit\.ru spambot=yes
+SetEnvIfNoCase Referer laulini\.soclog\.se spambot=yes
 SetEnvIfNoCase Referer law\-check\-eight\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-check\-nine\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-check\-seven\.xyz spambot=yes
@@ -2047,6 +2053,7 @@ SetEnvIfNoCase Referer marketland\.ml spambot=yes
 SetEnvIfNoCase Referer markjaybeefractal\.com spambot=yes
 SetEnvIfNoCase Referer marktforschung\-stuttgart\.com spambot=yes
 SetEnvIfNoCase Referer marmitaco\.cat spambot=yes
+SetEnvIfNoCase Referer marmotstore\.online spambot=yes
 SetEnvIfNoCase Referer martlinker\.com spambot=yes
 SetEnvIfNoCase Referer marwer\.info spambot=yes
 SetEnvIfNoCase Referer massage\-info\.nl spambot=yes
@@ -2305,11 +2312,13 @@ SetEnvIfNoCase Referer newsperuse\.com spambot=yes
 SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
 SetEnvIfNoCase Referer newstudio\.tv spambot=yes
 SetEnvIfNoCase Referer newtechspb\.ru spambot=yes
+SetEnvIfNoCase Referer newyorkhotelsmotels\.info spambot=yes
 SetEnvIfNoCase Referer nextconseil\.com spambot=yes
 SetEnvIfNoCase Referer nfljerseyscheapbiz\.us spambot=yes
 SetEnvIfNoCase Referer nfljerseyscheapchinabiz\.com spambot=yes
 SetEnvIfNoCase Referer nfljerseysforsalewholesaler\.com spambot=yes
 SetEnvIfNoCase Referer ngps1\.ru spambot=yes
+SetEnvIfNoCase Referer nhl09\.ru spambot=yes
 SetEnvIfNoCase Referer nhl17coins\.exblog\.jp spambot=yes
 SetEnvIfNoCase Referer nhl17coinsforps3\.gratisblog\.biz spambot=yes
 SetEnvIfNoCase Referer nibbler\.silktide\.com spambot=yes
