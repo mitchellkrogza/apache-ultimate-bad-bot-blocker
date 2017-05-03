@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-02 15:52:10 (SAST)
+# Updated 2017-05-03 11:57:10 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -141,6 +141,7 @@ SetEnvIfNoCase Referer acc\.eu\.org spambot=yes
 SetEnvIfNoCase Referer acgs\.tk spambot=yes
 SetEnvIfNoCase Referer acheterviagrafr24\.com spambot=yes
 SetEnvIfNoCase Referer actionnooz\.com spambot=yes
+SetEnvIfNoCase Referer activepr\.ru spambot=yes
 SetEnvIfNoCase Referer actremage\.com spambot=yes
 SetEnvIfNoCase Referer actulite\.com spambot=yes
 SetEnvIfNoCase Referer adamoads\.com spambot=yes
@@ -741,6 +742,7 @@ SetEnvIfNoCase Referer cheapjerseysfootballshop\.com spambot=yes
 SetEnvIfNoCase Referer cheapmarmot\.online spambot=yes
 SetEnvIfNoCase Referer cheappatagonia\.online spambot=yes
 SetEnvIfNoCase Referer cheatcode\-lita12\.rhcloud\.com spambot=yes
+SetEnvIfNoCase Referer checkhit\.com spambot=yes
 SetEnvIfNoCase Referer checkm8\.com spambot=yes
 SetEnvIfNoCase Referer checkpagerank\.net spambot=yes
 SetEnvIfNoCase Referer checktext\.org spambot=yes
@@ -2008,6 +2010,7 @@ SetEnvIfNoCase Referer lumb\.co spambot=yes
 SetEnvIfNoCase Referer lutherstable\.org spambot=yes
 SetEnvIfNoCase Referer luxmagazine\.cf spambot=yes
 SetEnvIfNoCase Referer luxup\.ru spambot=yes
+SetEnvIfNoCase Referer lyrster\.com spambot=yes
 SetEnvIfNoCase Referer m1media\.net spambot=yes
 SetEnvIfNoCase Referer m4ever\.net spambot=yes
 SetEnvIfNoCase Referer mabdoola\.blogspot\.com spambot=yes
@@ -2328,6 +2331,7 @@ SetEnvIfNoCase Referer nightvision746\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer niki\-mlt\.ru spambot=yes
 SetEnvIfNoCase Referer nikitsyringedrivelg\.pen\.io spambot=yes
 SetEnvIfNoCase Referer nikkiewart\.ru spambot=yes
+SetEnvIfNoCase Referer nippon\-bearings\.ru spambot=yes
 SetEnvIfNoCase Referer niroo\.info spambot=yes
 SetEnvIfNoCase Referer nl\.netlog\.com spambot=yes
 SetEnvIfNoCase Referer noclegonline\.info spambot=yes
@@ -2523,6 +2527,7 @@ SetEnvIfNoCase Referer picture\-group\.com spambot=yes
 SetEnvIfNoCase Referer picturesfrom\.com spambot=yes
 SetEnvIfNoCase Referer picturesify\.com spambot=yes
 SetEnvIfNoCase Referer picturesmania\.com spambot=yes
+SetEnvIfNoCase Referer pierrehardysale\.online spambot=yes
 SetEnvIfNoCase Referer pigrafix\.at spambot=yes
 SetEnvIfNoCase Referer pijoto\.net spambot=yes
 SetEnvIfNoCase Referer pila\.pl spambot=yes
@@ -2818,6 +2823,7 @@ SetEnvIfNoCase Referer ritlweb\.com spambot=yes
 SetEnvIfNoCase Referer rn\-to\-bsn\.com spambot=yes
 SetEnvIfNoCase Referer robot\-forex\.biz spambot=yes
 SetEnvIfNoCase Referer rockingclicks\.com spambot=yes
+SetEnvIfNoCase Referer rogervivierforsale\.com spambot=yes
 SetEnvIfNoCase Referer roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer roma\-kukareku\.livejournal\.com spambot=yes
 SetEnvIfNoCase Referer roofers\.org\.uk spambot=yes
