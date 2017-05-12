@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-12 15:03:29 (SAST)
+# Updated 2017-05-12 15:09:30 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -801,6 +801,7 @@ SetEnvIfNoCase Referer chlooe\.com spambot=yes
 SetEnvIfNoCase Referer chocolateslim\-original\.com spambot=yes
 SetEnvIfNoCase Referer chocoslim\.pro spambot=yes
 SetEnvIfNoCase Referer choosecuisine\.com spambot=yes
+SetEnvIfNoCase Referer christianlouboutinsaleonline\.us spambot=yes
 SetEnvIfNoCase Referer ci\.ua spambot=yes
 SetEnvIfNoCase Referer cialisovercounteratwalmartusa\.com spambot=yes
 SetEnvIfNoCase Referer cialiswithoutadoctor\.net spambot=yes
@@ -2231,6 +2232,7 @@ SetEnvIfNoCase Referer mhi\-systems\.ru spambot=yes
 SetEnvIfNoCase Referer mhtr\.be spambot=yes
 SetEnvIfNoCase Referer micasainvest\.com spambot=yes
 SetEnvIfNoCase Referer michaelkorsoutlet\.store spambot=yes
+SetEnvIfNoCase Referer michaelkorsoutletstore\.net spambot=yes
 SetEnvIfNoCase Referer microsearch\.ru spambot=yes
 SetEnvIfNoCase Referer microsoftportal\.net spambot=yes
 SetEnvIfNoCase Referer microstatic\.pl spambot=yes
@@ -2469,6 +2471,7 @@ SetEnvIfNoCase Referer nucia\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer nudepatch\.net spambot=yes
 SetEnvIfNoCase Referer nudo\.ca spambot=yes
 SetEnvIfNoCase Referer nufaq\.com spambot=yes
+SetEnvIfNoCase Referer nuit\-artisanale\.com spambot=yes
 SetEnvIfNoCase Referer nullrefer\.com spambot=yes
 SetEnvIfNoCase Referer nuup\.info spambot=yes
 SetEnvIfNoCase Referer nvformula\.ru spambot=yes
@@ -3190,6 +3193,7 @@ SetEnvIfNoCase Referer shop\.acim\.org spambot=yes
 SetEnvIfNoCase Referer shop\.xz618\.com spambot=yes
 SetEnvIfNoCase Referer shopcheermakeup\.info spambot=yes
 SetEnvIfNoCase Referer shoplvlv\.us spambot=yes
+SetEnvIfNoCase Referer shoppingjequiti\.com\.br spambot=yes
 SetEnvIfNoCase Referer shoppingmiracles\.co\.uk spambot=yes
 SetEnvIfNoCase Referer shoppytoolmac\.com spambot=yes
 SetEnvIfNoCase Referer shopvilleroyboch\.com\.ua spambot=yes
