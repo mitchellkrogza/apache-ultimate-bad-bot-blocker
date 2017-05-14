@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-13 10:31:00 (SAST)
+# Updated 2017-05-14 10:54:09 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -349,6 +349,7 @@ SetEnvIfNoCase Referer arclk\.net spambot=yes
 SetEnvIfNoCase Referer arcteryxsale\.online spambot=yes
 SetEnvIfNoCase Referer arcteryxstore\.online spambot=yes
 SetEnvIfNoCase Referer arenanews\.com\.ua spambot=yes
+SetEnvIfNoCase Referer arenda\-avtoprokat\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer arenda\-yeisk\.ru spambot=yes
 SetEnvIfNoCase Referer arendakvartir\.kz spambot=yes
 SetEnvIfNoCase Referer arendas\.net spambot=yes
@@ -644,6 +645,7 @@ SetEnvIfNoCase Referer browsepulse\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer browserprotecter\.com spambot=yes
 SetEnvIfNoCase Referer brus\-vsem\.ru spambot=yes
 SetEnvIfNoCase Referer brus\.city spambot=yes
+SetEnvIfNoCase Referer bryansk\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer bscodecs\.com spambot=yes
 SetEnvIfNoCase Referer btc4u\.ru spambot=yes
 SetEnvIfNoCase Referer btvn\.ru spambot=yes
@@ -965,6 +967,7 @@ SetEnvIfNoCase Referer dekoration\.us spambot=yes
 SetEnvIfNoCase Referer dekorkeramik\.ru spambot=yes
 SetEnvIfNoCase Referer delayreferat\.ru spambot=yes
 SetEnvIfNoCase Referer delfin\-aqua\.com\.ua spambot=yes
+SetEnvIfNoCase Referer dellalimov\.com spambot=yes
 SetEnvIfNoCase Referer demenageur\.com spambot=yes
 SetEnvIfNoCase Referer den\-noch24\.ru spambot=yes
 SetEnvIfNoCase Referer dengi\-pod\-zalog\-nedvizhimosti\.ru spambot=yes
@@ -1206,6 +1209,7 @@ SetEnvIfNoCase Referer excaliburfilms\.com spambot=yes
 SetEnvIfNoCase Referer exchangeit\.gq spambot=yes
 SetEnvIfNoCase Referer exchanges\-bet\.com spambot=yes
 SetEnvIfNoCase Referer executehosting\.com spambot=yes
+SetEnvIfNoCase Referer exhibitionplus\.eu spambot=yes
 SetEnvIfNoCase Referer exmasters\.com spambot=yes
 SetEnvIfNoCase Referer exonline\.info spambot=yes
 SetEnvIfNoCase Referer expdom\.com spambot=yes
@@ -1218,6 +1222,7 @@ SetEnvIfNoCase Referer extener\.org spambot=yes
 SetEnvIfNoCase Referer extrabot\.com spambot=yes
 SetEnvIfNoCase Referer extractorandburner\.com spambot=yes
 SetEnvIfNoCase Referer extremal\-blog\.com spambot=yes
+SetEnvIfNoCase Referer extremepornos\.net spambot=yes
 SetEnvIfNoCase Referer extremez\.net spambot=yes
 SetEnvIfNoCase Referer extstat\.com spambot=yes
 SetEnvIfNoCase Referer eyelike\.com\.ua spambot=yes
@@ -2709,6 +2714,7 @@ SetEnvIfNoCase Referer poffet\.net spambot=yes
 SetEnvIfNoCase Referer pogodnyyeavarii\.gq spambot=yes
 SetEnvIfNoCase Referer pogruztehnik\.ru spambot=yes
 SetEnvIfNoCase Referer poisk\-zakona\.ru spambot=yes
+SetEnvIfNoCase Referer pojdelo\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer pokemon\-go\-play\.online spambot=yes
 SetEnvIfNoCase Referer pokemongooo\.ml spambot=yes
 SetEnvIfNoCase Referer pokerniydom\.ru spambot=yes
@@ -3392,6 +3398,7 @@ SetEnvIfNoCase Referer stop\-gepatit\.te\.ua spambot=yes
 SetEnvIfNoCase Referer store\-rx\.com spambot=yes
 SetEnvIfNoCase Referer storehouse\.ua spambot=yes
 SetEnvIfNoCase Referer stpolice\.com spambot=yes
+SetEnvIfNoCase Referer strag\-invest\.ru spambot=yes
 SetEnvIfNoCase Referer strana\-krasoty\.ru spambot=yes
 SetEnvIfNoCase Referer strana\-solnca\.ru spambot=yes
 SetEnvIfNoCase Referer streetfire\.net spambot=yes
