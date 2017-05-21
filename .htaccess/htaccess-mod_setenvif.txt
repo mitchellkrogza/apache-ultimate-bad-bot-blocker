@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-15 12:38:47 (SAST)
+# Updated 2017-05-21 13:08:28 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1921,6 +1921,7 @@ SetEnvIfNoCase Referer kazan\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer kazinogames\.lv spambot=yes
 SetEnvIfNoCase Referer kazrent\.com spambot=yes
 SetEnvIfNoCase Referer keenoutlet\.online spambot=yes
+SetEnvIfNoCase Referer kerwinandcariza\.com spambot=yes
 SetEnvIfNoCase Referer ketoanhanoi\.info spambot=yes
 SetEnvIfNoCase Referer ketrzyn\.pl spambot=yes
 SetEnvIfNoCase Referer keyword\-suggestions\.com spambot=yes
@@ -2562,7 +2563,6 @@ SetEnvIfNoCase Referer ooo\-gotovie\.ru spambot=yes
 SetEnvIfNoCase Referer ooo\-olni\.ru spambot=yes
 SetEnvIfNoCase Referer openfrost\.com spambot=yes
 SetEnvIfNoCase Referer openfrost\.net spambot=yes
-SetEnvIfNoCase Referer openlibrary\.org spambot=yes
 SetEnvIfNoCase Referer openmediasoft\.com spambot=yes
 SetEnvIfNoCase Referer openmultipleurl\.com spambot=yes
 SetEnvIfNoCase Referer openstat\.com spambot=yes
@@ -3715,6 +3715,7 @@ SetEnvIfNoCase Referer ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer ucsol\.ru spambot=yes
 SetEnvIfNoCase Referer udsgame\.online spambot=yes
 SetEnvIfNoCase Referer ufa\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer uggbootsoutletsale\.us spambot=yes
 SetEnvIfNoCase Referer uggsale\.online spambot=yes
 SetEnvIfNoCase Referer ugguk\.online spambot=yes
 SetEnvIfNoCase Referer uhdtv\.website spambot=yes
