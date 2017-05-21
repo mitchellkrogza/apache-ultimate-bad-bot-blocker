@@ -171,6 +171,7 @@ domain:adminshop.com
 domain:admitad.com
 domain:adnotbad.com
 domain:adpremium.org
+domain:adrenalin-stk.ru
 domain:ads-cool.pro
 domain:ads-seo.men
 domain:ads.gold
@@ -211,6 +212,7 @@ domain:agreda.pluto.ro
 domain:agroeconom.kz
 domain:ahrefs.com
 domain:air-edem.ru
+domain:airlandsea.info
 domain:airmaxshoes-2016.com
 domain:akama.com
 domain:akita.kz
@@ -272,6 +274,7 @@ domain:amateurlivechat.org
 domain:amateurmatch.com
 domain:amazon-seo-service.com
 domain:amehdaily.com
+domain:amigobulls.com
 domain:amoi.tn
 domain:amospalla.es
 domain:ample-awards-today.us
@@ -407,6 +410,7 @@ domain:autovideobroadcast.com
 domain:autowebmarket.com.ua
 domain:availit.weebly.com
 domain:avek.ru
+domain:aversis.net
 domain:aviapanda.ru
 domain:aviav.co
 domain:aviav.eu
@@ -562,6 +566,7 @@ domain:bingo8888.com
 domain:binomo.kz
 domain:bio-japan.net
 domain:bio-market.kz
+domain:bio-optomarket.ru
 domain:bio.trade-jp.net
 domain:bioca.org
 domain:bioscorp.ru
@@ -854,6 +859,7 @@ domain:com-secure.download
 domain:com-supportcenter.website
 domain:cometorussia.net
 domain:comissionka.net
+domain:communisave.co.za
 domain:community.allhiphop.com
 domain:compliance-checker.info
 domain:compucelunlock.net
@@ -892,6 +898,7 @@ domain:cowblog.fr
 domain:cpabegins.ru
 domain:craftburg.ru
 domain:crafthubs.com
+domain:craftinsta.ru
 domain:cranly.net
 domain:crazyboost.pro
 domain:crd.clan.su
@@ -941,6 +948,7 @@ domain:daptravel.com
 domain:darkbooks.org
 domain:darmebel.com.ua
 domain:darodar.com
+domain:data-mining.tk
 domain:data.vtc.pw
 domain:dataloading.net
 domain:dating-time-now.com
@@ -1172,6 +1180,7 @@ domain:enternet.ee
 domain:envaseslotusama.com
 domain:enviromusic.net
 domain:eonpal.com
+domain:eorogo.top
 domain:epngo.bz
 domain:eralph.tk
 domain:erank.eu
@@ -1386,6 +1395,7 @@ domain:fr.netlog.com
 domain:freakycheats.com
 domain:free-fb-traffic.com
 domain:free-floating-buttons.com
+domain:free-gluten.ru
 domain:free-laptop-reward.com
 domain:free-share-buttons.blogspot.com
 domain:free-share-buttons.com
@@ -1485,6 +1495,7 @@ domain:generousdeal-a.akamaihd.net
 domain:gentamicineyedrops.blogspot.com
 domain:geoads.com
 domain:germes-trans.com
+domain:germetiki.com.ua
 domain:get-free-traffic-now.com
 domain:get-seo-domain.com
 domain:get-your-social-buttons.info
@@ -1672,6 +1683,7 @@ domain:hledejvshopech.cz
 domain:hmmm.cz
 domain:hmywwogw.bloger.index.hr
 domain:hobbyhuren-datenbank.com
+domain:hobbyhuren24.net
 domain:hobild.net
 domain:hol.es
 domain:holidaypics.org
@@ -1993,6 +2005,7 @@ domain:kostenlos-sexvideos.com
 domain:kostenloser-sex.com
 domain:kosynka-games.ru
 domain:kovesszucs.atw.hu
+domain:kozhniebolezni.com
 domain:krafte.ru
 domain:kraljeva-sutjeska.com
 domain:krasivoe-hd.com
@@ -2081,6 +2094,7 @@ domain:limads.men
 domain:limtu.ifmo.ru
 domain:lincolntheatre.com
 domain:linerdrilling.com
+domain:link.ac
 domain:linkarena.com
 domain:linkbolic.com
 domain:linkbuddies.com
@@ -2188,6 +2202,7 @@ domain:marmotstore.online
 domain:marsgatan.com
 domain:martlinker.com
 domain:marwer.info
+domain:maslenka.kz
 domain:massage-info.nl
 domain:masserect.com
 domain:master-muznachas.ru
@@ -2310,6 +2325,7 @@ domain:modabutik.ru
 domain:modenamebel.ru
 domain:moesonce.com
 domain:moi-glazki.ru
+domain:moivestiy.biz
 domain:mojowhois.com
 domain:mokrayakiska.com
 domain:mole.pluto.ro
@@ -2604,6 +2620,7 @@ domain:ovirus.ru
 domain:ownshop.cf
 domain:owohho.com
 domain:oxford-book.com.ua
+domain:oynat.info
 domain:oz-offers.com
 domain:ozas.net
 domain:ozoz.it
@@ -2634,6 +2651,7 @@ domain:pathwhelp.org
 domain:pattersonsweb.com
 domain:paydayloanslocal.com
 domain:paydayonlinecom.com
+domain:pb-dv.ru
 domain:pc-services.ru
 domain:pc-test.net
 domain:pc-virus-d0l92j2.pw
@@ -3170,6 +3188,7 @@ domain:seorank.info
 domain:seorankinglinks.com
 domain:seorankinglinks.us
 domain:seorankinglinks.xyz
+domain:serdcenebolit.com
 domain:sergiorossistore.online
 domain:serialsway.ucoz.ru
 domain:serptehnika.ru
@@ -3612,6 +3631,7 @@ domain:tizanidinewithdrawal.blogspot.com
 domain:tizanidinewithdrawalsymptoms.blogspot.com
 domain:tizanidinezanaflex.blogspot.com
 domain:tjkckpytpnje.com
+domain:tk-assortiment.ru
 domain:tkanorganizma.ru
 domain:tksn.ru
 domain:tmearegion26.com
@@ -3735,6 +3755,7 @@ domain:ufa.xrus.org
 domain:uggbootsoutletsale.us
 domain:uggsale.online
 domain:ugguk.online
+domain:ugogo.info
 domain:uhdtv.website
 domain:uhod-za-sobakoj.ru
 domain:uhodzalijami.ru
@@ -3763,6 +3784,7 @@ domain:ural-buldozer.ru
 domain:urccvfmc.bloger.index.hr
 domain:urdoot.win
 domain:url2image.com
+domain:urlcut.ru
 domain:urlopener.blogspot.com.au
 domain:urlopener.com
 domain:uroffer.link
@@ -3957,6 +3979,7 @@ domain:westsextube.com
 domain:westum.se
 domain:westvilletowingservices.co.za
 domain:wetgames.ru
+domain:wewehd7e6333xx.com
 domain:whatistizanidine2mg.blogspot.com
 domain:whatistizanidinehclusedfor.blogspot.com
 domain:whatsappdownload10.com
@@ -4172,6 +4195,7 @@ domain:zakon-ob-obrazovanii.ru
 domain:zakonobosago.ru
 domain:zaloadi.ru
 domain:zaloro.com
+domain:zaobao.com.sg
 domain:zapiszto.pl
 domain:zarabotat-na-sajte.ru
 domain:zarenica.net
@@ -4218,6 +4242,7 @@ domain:zojirushi-products.ru
 domain:zolotoy-lis.ru
 domain:zona-aqua.ru
 domain:zone-kev717.info
+domain:zonjwag.com
 domain:zoominfo.com
 domain:zophim.me
 domain:zrizvtrnpale.tk
