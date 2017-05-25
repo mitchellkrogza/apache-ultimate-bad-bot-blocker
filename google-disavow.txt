@@ -1059,6 +1059,7 @@ domain:dokumentalkino.net
 domain:domain-submit.info
 domain:domain-tracker.com
 domain:domain2008.com
+domain:domaincrawler.com
 domain:domainsatcost.com
 domain:domcran.net
 domain:domik-derevne.ru
@@ -3179,6 +3180,7 @@ domain:scenicmissouri.us
 domain:school-diplomat.ru
 domain:scoopquest.com
 domain:score-ads.men
+domain:scrapy.org
 domain:screentoolkit.com
 domain:scripted.com
 domain:sdelai-prosto.ru
