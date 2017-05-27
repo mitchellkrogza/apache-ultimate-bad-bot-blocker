@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-27 11:51:32 (SAST)
+# Updated 2017-05-27 12:37:41 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -4015,7 +4015,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vitanail\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*viven\.host\.sk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vizag\.kharkov\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vk\-mus\.ru.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vk\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vkak\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vkontaktemusic\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vkontarkte\.com.*$ [NC,OR]
@@ -4387,6 +4386,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zolotoy\-lis\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zona\-aqua\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zone\-kev717\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zonjwag\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zoolubimets\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zoominfo\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zophim\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zrizvtrnpale\.tk.*$ [NC,OR]
