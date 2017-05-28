@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-27 12:37:41 (SAST)
+# Updated 2017-05-28 17:32:24 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -630,6 +630,7 @@ SetEnvIfNoCase Referer bluerobot\.info spambot=yes
 SetEnvIfNoCase Referer board\.f00d\.de spambot=yes
 SetEnvIfNoCase Referer bobba\.dzaba\.com spambot=yes
 SetEnvIfNoCase Referer bobinoz\.com spambot=yes
+SetEnvIfNoCase Referer bocoarchives\.org spambot=yes
 SetEnvIfNoCase Referer bodybuilding\-shop\.biz spambot=yes
 SetEnvIfNoCase Referer boleznikogi\.com spambot=yes
 SetEnvIfNoCase Referer bolezniorganov\.ru spambot=yes
@@ -2414,7 +2415,10 @@ SetEnvIfNoCase Referer mokrayakiska\.com spambot=yes
 SetEnvIfNoCase Referer mole\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer monarchfind\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer monarhs\.info spambot=yes
+SetEnvIfNoCase Referer moncleronline\.xyz spambot=yes
 SetEnvIfNoCase Referer moncleroutletonline\.pw spambot=yes
+SetEnvIfNoCase Referer moncleroutletonline\.xyz spambot=yes
+SetEnvIfNoCase Referer monclervests\.xyz spambot=yes
 SetEnvIfNoCase Referer monetizationking\.net spambot=yes
 SetEnvIfNoCase Referer monetizer\.com\-01\.site spambot=yes
 SetEnvIfNoCase Referer money\-every\-day\.com spambot=yes
@@ -3191,6 +3195,7 @@ SetEnvIfNoCase Referer sarm\.tk spambot=yes
 SetEnvIfNoCase Referer sashagreyblog\.ga spambot=yes
 SetEnvIfNoCase Referer saugatuck\.com spambot=yes
 SetEnvIfNoCase Referer savefrom\.com spambot=yes
+SetEnvIfNoCase Referer saveindex\.xyz spambot=yes
 SetEnvIfNoCase Referer savememoney\.co\.za spambot=yes
 SetEnvIfNoCase Referer savetubevideo\.com spambot=yes
 SetEnvIfNoCase Referer savingsslider\-a\.akamaihd\.net spambot=yes
@@ -3320,6 +3325,7 @@ SetEnvIfNoCase Referer sex\-watch\.com spambot=yes
 SetEnvIfNoCase Referer sex\.hotblog\.top spambot=yes
 SetEnvIfNoCase Referer sexad\.net spambot=yes
 SetEnvIfNoCase Referer sexblog\.pw spambot=yes
+SetEnvIfNoCase Referer sexkontakte\-seite\.com spambot=yes
 SetEnvIfNoCase Referer sexkontakteao\.info spambot=yes
 SetEnvIfNoCase Referer sexkrasivo\.net spambot=yes
 SetEnvIfNoCase Referer sexobzor\.info spambot=yes
@@ -3613,6 +3619,7 @@ SetEnvIfNoCase Referer svtrd\.com spambot=yes
 SetEnvIfNoCase Referer swagbucks\.com spambot=yes
 SetEnvIfNoCase Referer swinginwithme\.ru spambot=yes
 SetEnvIfNoCase Referer swiped\.su spambot=yes
+SetEnvIfNoCase Referer swsociety\.se spambot=yes
 SetEnvIfNoCase Referer sygraem\.com spambot=yes
 SetEnvIfNoCase Referer syla\.tk spambot=yes
 SetEnvIfNoCase Referer syvertsen\-da\.no spambot=yes
@@ -3892,6 +3899,7 @@ SetEnvIfNoCase Referer ugogo\.info spambot=yes
 SetEnvIfNoCase Referer uhdtv\.website spambot=yes
 SetEnvIfNoCase Referer uhod\-za\-sobakoj\.ru spambot=yes
 SetEnvIfNoCase Referer uhodzalijami\.ru spambot=yes
+SetEnvIfNoCase Referer ukkelberg\.no spambot=yes
 SetEnvIfNoCase Referer ukrobstep\.com spambot=yes
 SetEnvIfNoCase Referer ukrup\.com spambot=yes
 SetEnvIfNoCase Referer ultimateclassicrock\.com spambot=yes
