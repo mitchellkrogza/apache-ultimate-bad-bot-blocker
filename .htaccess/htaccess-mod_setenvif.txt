@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-29 11:47:10 (SAST)
+# Updated 2017-05-29 17:39:49 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -772,8 +772,11 @@ SetEnvIfNoCase Referer cartierbracelet\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierbraceletsreplica\.pw spambot=yes
 SetEnvIfNoCase Referer cartierlove\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierlove2u\.com spambot=yes
+SetEnvIfNoCase Referer cartierlove2u\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierlovebracelet\.xyz spambot=yes
+SetEnvIfNoCase Referer cartierlovebraceletreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierloveringreplica\.xyz spambot=yes
+SetEnvIfNoCase Referer cartierring\.xyz spambot=yes
 SetEnvIfNoCase Referer cartiertrinity\.xyz spambot=yes
 SetEnvIfNoCase Referer casablancamanor\.co\.za spambot=yes
 SetEnvIfNoCase Referer cashkitten\-a\.akamaihd\.net spambot=yes
@@ -3361,6 +3364,7 @@ SetEnvIfNoCase Referer sexvporno\.ru spambot=yes
 SetEnvIfNoCase Referer sexy\-pings\.com spambot=yes
 SetEnvIfNoCase Referer sexy\-screen\-savers\.com spambot=yes
 SetEnvIfNoCase Referer sexyali\.com spambot=yes
+SetEnvIfNoCase Referer sexystrippe\.info spambot=yes
 SetEnvIfNoCase Referer sexyteens\.hol\.es spambot=yes
 SetEnvIfNoCase Referer sexytrend\.ru spambot=yes
 SetEnvIfNoCase Referer sfd\-chess\.ru spambot=yes

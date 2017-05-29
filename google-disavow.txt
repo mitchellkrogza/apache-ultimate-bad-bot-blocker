@@ -764,8 +764,11 @@ domain:cartierbracelet.xyz
 domain:cartierbraceletsreplica.pw
 domain:cartierlove.xyz
 domain:cartierlove2u.com
+domain:cartierlove2u.xyz
 domain:cartierlovebracelet.xyz
+domain:cartierlovebraceletreplica.xyz
 domain:cartierloveringreplica.xyz
+domain:cartierring.xyz
 domain:cartiertrinity.xyz
 domain:casablancamanor.co.za
 domain:cashkitten-a.akamaihd.net
@@ -3353,6 +3356,7 @@ domain:sexvporno.ru
 domain:sexy-pings.com
 domain:sexy-screen-savers.com
 domain:sexyali.com
+domain:sexystrippe.info
 domain:sexyteens.hol.es
 domain:sexytrend.ru
 domain:sfd-chess.ru
