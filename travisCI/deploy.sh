@@ -1,6 +1,7 @@
 #!/bin/bash
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
+cd $TRAVIS_BUILD_DIR
 git remote rm origin
 git config --global user.email "${GIT_EMAIL}"
 git config --global user.name "${GIT_NAME}"
