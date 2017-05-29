@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-29 10:07:58 (SAST)
+# Updated 2017-05-29 11:47:10 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -313,6 +313,7 @@ SetEnvIfNoCase Referer anlimebel\.kiev\.ua spambot=yes
 SetEnvIfNoCase Referer anonymizeme\.pro spambot=yes
 SetEnvIfNoCase Referer anti\-virus\-removal\.info spambot=yes
 SetEnvIfNoCase Referer anticrawler\.org spambot=yes
+SetEnvIfNoCase Referer aosexkontakte\.net spambot=yes
 SetEnvIfNoCase Referer aosheng\-tech\.com spambot=yes
 SetEnvIfNoCase Referer apartment\.ru spambot=yes
 SetEnvIfNoCase Referer apartmentbay\.ru spambot=yes
@@ -802,6 +803,7 @@ SetEnvIfNoCase Referer ceotrk\.com spambot=yes
 SetEnvIfNoCase Referer cercacamion\.it spambot=yes
 SetEnvIfNoCase Referer cete\.ru spambot=yes
 SetEnvIfNoCase Referer cezartabac\.ro spambot=yes
+SetEnvIfNoCase Referer cfacarrosserie74\.com spambot=yes
 SetEnvIfNoCase Referer cfcl\.co\.uk spambot=yes
 SetEnvIfNoCase Referer cfjump\.com spambot=yes
 SetEnvIfNoCase Referer cfsrating\.sonicwall\.com spambot=yes
@@ -861,6 +863,7 @@ SetEnvIfNoCase Referer citizenclsdriveri7\.pen\.io spambot=yes
 SetEnvIfNoCase Referer cityadspix\.com spambot=yes
 SetEnvIfNoCase Referer citysecurity\.nu spambot=yes
 SetEnvIfNoCase Referer civilwartheater\.com spambot=yes
+SetEnvIfNoCase Referer cl\.s7\.exct\.net spambot=yes
 SetEnvIfNoCase Referer clarithromycin500mg\.com spambot=yes
 SetEnvIfNoCase Referer clash\-clans\.ru spambot=yes
 SetEnvIfNoCase Referer classicakuhni\.ru spambot=yes
@@ -1251,6 +1254,7 @@ SetEnvIfNoCase Referer escortslet\.net spambot=yes
 SetEnvIfNoCase Referer eshop\.md spambot=yes
 SetEnvIfNoCase Referer eshop4u\.jp spambot=yes
 SetEnvIfNoCase Referer esnm\.ru spambot=yes
+SetEnvIfNoCase Referer espaceinventoristes\.com spambot=yes
 SetEnvIfNoCase Referer este\-line\.com\.ua spambot=yes
 SetEnvIfNoCase Referer estibot\.com spambot=yes
 SetEnvIfNoCase Referer etr\-interac\.com spambot=yes
@@ -1267,6 +1271,7 @@ SetEnvIfNoCase Referer eurosamodelki\.ru spambot=yes
 SetEnvIfNoCase Referer euroskat\.ru spambot=yes
 SetEnvIfNoCase Referer evaashop\.ru spambot=yes
 SetEnvIfNoCase Referer evehemming\.blogspot\.com\.au spambot=yes
+SetEnvIfNoCase Referer evening\-dating\-club\.info spambot=yes
 SetEnvIfNoCase Referer event\-tracking\.com spambot=yes
 SetEnvIfNoCase Referer everflora\.ru spambot=yes
 SetEnvIfNoCase Referer evidencecleanergold\.com spambot=yes
@@ -1274,6 +1279,7 @@ SetEnvIfNoCase Referer evrotekhservis\.ru spambot=yes
 SetEnvIfNoCase Referer excaliburfilms\.com spambot=yes
 SetEnvIfNoCase Referer exchangeit\.gq spambot=yes
 SetEnvIfNoCase Referer exchanges\-bet\.com spambot=yes
+SetEnvIfNoCase Referer exct\.net spambot=yes
 SetEnvIfNoCase Referer executehosting\.com spambot=yes
 SetEnvIfNoCase Referer exhibitionplus\.eu spambot=yes
 SetEnvIfNoCase Referer exmasters\.com spambot=yes
@@ -2675,6 +2681,7 @@ SetEnvIfNoCase Referer onlinebay\.ru spambot=yes
 SetEnvIfNoCase Referer onlinedomains\.ru spambot=yes
 SetEnvIfNoCase Referer onlinefilmz\.net spambot=yes
 SetEnvIfNoCase Referer onlineku\.com spambot=yes
+SetEnvIfNoCase Referer onlinemeetingnow\.com spambot=yes
 SetEnvIfNoCase Referer onlinemegax\.com spambot=yes
 SetEnvIfNoCase Referer onlineserialy\.ru spambot=yes
 SetEnvIfNoCase Referer onlineslotmaschine\.com spambot=yes
@@ -2703,6 +2710,7 @@ SetEnvIfNoCase Referer orel\-reshka\.net spambot=yes
 SetEnvIfNoCase Referer oren\-cats\.ru spambot=yes
 SetEnvIfNoCase Referer orenburg\-gsm\.ru spambot=yes
 SetEnvIfNoCase Referer orgasmus\-virtual\.com spambot=yes
+SetEnvIfNoCase Referer orhonit\.com spambot=yes
 SetEnvIfNoCase Referer origin\-my\.ru spambot=yes
 SetEnvIfNoCase Referer ororodnik\.goodbb\.ru spambot=yes
 SetEnvIfNoCase Referer orsonet\.ru spambot=yes
@@ -3414,6 +3422,7 @@ SetEnvIfNoCase Referer sinel\.info spambot=yes
 SetEnvIfNoCase Referer sinestesia\.host\.sk spambot=yes
 SetEnvIfNoCase Referer sisiynas\.ru spambot=yes
 SetEnvIfNoCase Referer sispe\.com\.br spambot=yes
+SetEnvIfNoCase Referer site\-analyzer\.com spambot=yes
 SetEnvIfNoCase Referer site\-auditor\.online spambot=yes
 SetEnvIfNoCase Referer site\-speed\-check\.site spambot=yes
 SetEnvIfNoCase Referer site\-speed\-checker\.site spambot=yes
