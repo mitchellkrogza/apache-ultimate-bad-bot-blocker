@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-05-31 15:18:30 (SAST)
+# Updated 2017-05-31 16:41:41 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -1380,6 +1380,7 @@ SetEnvIfNoCase Referer fetroshok\.ru spambot=yes
 SetEnvIfNoCase Referer fickblock18\.com spambot=yes
 SetEnvIfNoCase Referer fickenprivat\.info spambot=yes
 SetEnvIfNoCase Referer fickkontakte\.org spambot=yes
+SetEnvIfNoCase Referer fickkontaktehobbyhuren\.com spambot=yes
 SetEnvIfNoCase Referer fickluder69\.com spambot=yes
 SetEnvIfNoCase Referer fidelityfunding\.com spambot=yes
 SetEnvIfNoCase Referer fifa\-coins\.online spambot=yes

@@ -1369,6 +1369,7 @@ SetEnvIfNoCase Referer ~*fetishinside\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fetroshok\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*fickblock18\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fickenprivat\.info spam_ref=1
+SetEnvIfNoCase Referer ~*fickkontaktehobbyhuren\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fickkontakte\.org spam_ref=1
 SetEnvIfNoCase Referer ~*fickluder69\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fidelityfunding\.com spam_ref=1
