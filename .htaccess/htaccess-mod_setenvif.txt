@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-01 12:30:01 (SAST)
+# Updated 2017-06-01 17:18:48 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -635,6 +635,7 @@ SetEnvIfNoCase Referer blogtotal\.de spambot=yes
 SetEnvIfNoCase Referer bloke\.com spambot=yes
 SetEnvIfNoCase Referer bluejays\-jerseys\.us spambot=yes
 SetEnvIfNoCase Referer bluerobot\.info spambot=yes
+SetEnvIfNoCase Referer bluesman\.nu spambot=yes
 SetEnvIfNoCase Referer board\.f00d\.de spambot=yes
 SetEnvIfNoCase Referer bobba\.dzaba\.com spambot=yes
 SetEnvIfNoCase Referer bobinoz\.com spambot=yes

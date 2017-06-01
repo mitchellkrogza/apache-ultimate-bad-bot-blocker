@@ -626,6 +626,7 @@ SetEnvIfNoCase Referer ~*blog\.yam\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bloke\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bluejays\-jerseys\.us spam_ref=1
 SetEnvIfNoCase Referer ~*bluerobot\.info spam_ref=1
+SetEnvIfNoCase Referer ~*bluesman\.nu spam_ref=1
 SetEnvIfNoCase Referer ~*board\.f00d\.de spam_ref=1
 SetEnvIfNoCase Referer ~*bobba\.dzaba\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bobinoz\.com spam_ref=1
