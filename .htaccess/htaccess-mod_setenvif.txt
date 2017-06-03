@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-02 12:58:34 (SAST)
+# Updated 2017-06-03 11:42:01 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -1223,6 +1223,7 @@ SetEnvIfNoCase Referer callmd5map\.com spambot=yes
 SetEnvIfNoCase Referer calstaterealty\.us spambot=yes
 SetEnvIfNoCase Referer calvet\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer cam\-kontakte\.org spambot=yes
+SetEnvIfNoCase Referer camdenmemorials\.com spambot=yes
 SetEnvIfNoCase Referer camdolls\.com spambot=yes
 SetEnvIfNoCase Referer cand\.jp spambot=yes
 SetEnvIfNoCase Referer candcstuccoandstone\.com spambot=yes
@@ -1262,6 +1263,7 @@ SetEnvIfNoCase Referer cartierlovebraceletreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierloveringreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierlovestore\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.pw spambot=yes
+SetEnvIfNoCase Referer cartierreplica\.top spambot=yes
 SetEnvIfNoCase Referer cartierring\.xyz spambot=yes
 SetEnvIfNoCase Referer cartiertrinity\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierwatch\.xyz spambot=yes
@@ -1441,6 +1443,7 @@ SetEnvIfNoCase Referer cranly\.net spambot=yes
 SetEnvIfNoCase Referer crazyboost\.pro spambot=yes
 SetEnvIfNoCase Referer crd\.clan\.su spambot=yes
 SetEnvIfNoCase Referer creams\.makeforum\.eu spambot=yes
+SetEnvIfNoCase Referer creativehutindia\.com spambot=yes
 SetEnvIfNoCase Referer creditmoney\.com\.ua spambot=yes
 SetEnvIfNoCase Referer crest\-poloski\.ru spambot=yes
 SetEnvIfNoCase Referer crest3d\.ru spambot=yes
@@ -1729,6 +1732,7 @@ SetEnvIfNoCase Referer enginebay\.ru spambot=yes
 SetEnvIfNoCase Referer englate\.com spambot=yes
 SetEnvIfNoCase Referer englishdictionaryfree\.com spambot=yes
 SetEnvIfNoCase Referer englishgamer\.com spambot=yes
+SetEnvIfNoCase Referer enhand\.se spambot=yes
 SetEnvIfNoCase Referer enskedesquashclub\.se spambot=yes
 SetEnvIfNoCase Referer enternet\.ee spambot=yes
 SetEnvIfNoCase Referer envaseslotusama\.com spambot=yes
@@ -2251,6 +2255,7 @@ SetEnvIfNoCase Referer herehloadibs\.cf spambot=yes
 SetEnvIfNoCase Referer hermesbirkinhandbagoutlets\.com spambot=yes
 SetEnvIfNoCase Referer hermesbracelets\.xyz spambot=yes
 SetEnvIfNoCase Referer hermesreplica\.pw spambot=yes
+SetEnvIfNoCase Referer hermesreplica\.win spambot=yes
 SetEnvIfNoCase Referer herokuapp\.com spambot=yes
 SetEnvIfNoCase Referer hetmanship\.xyz spambot=yes
 SetEnvIfNoCase Referer hidefiles\.org spambot=yes
@@ -3195,6 +3200,7 @@ SetEnvIfNoCase Referer okmusic\.jp spambot=yes
 SetEnvIfNoCase Referer okout\.ru spambot=yes
 SetEnvIfNoCase Referer okroshki\.ru spambot=yes
 SetEnvIfNoCase Referer oktube\.ru spambot=yes
+SetEnvIfNoCase Referer old\-rock\.com spambot=yes
 SetEnvIfNoCase Referer olvanto\.ru spambot=yes
 SetEnvIfNoCase Referer olympescort\.com spambot=yes
 SetEnvIfNoCase Referer omsk\.xrus\.org spambot=yes
