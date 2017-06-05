@@ -123,13 +123,13 @@ domain:aadroid.net
 domain:aarbur.com
 domain:abbanreddy.com
 domain:abbp1.website
-domain:abc.xyz
 domain:abclauncher.com
 domain:abctoppictures.net
 domain:abiente.ru
 domain:abovetherivernc.com
 domain:absolute-s.ru
 domain:absolutelyanalog.com
+domain:absugars.com
 domain:abtasty.com
 domain:abusora.com
 domain:abwa.tk
@@ -241,6 +241,7 @@ domain:alfa-img.com
 domain:alfa-medosmotr.ru
 domain:alfa9.com
 domain:alfapro.ru
+domain:algerianembassy.co.in
 domain:alibestsale.com
 domain:alienwheel.es
 domain:alienwheels.de
@@ -631,6 +632,7 @@ domain:bluesman.nu
 domain:board.f00d.de
 domain:bobba.dzaba.com
 domain:bobinoz.com
+domain:bochemit.com.ua
 domain:bocoarchives.org
 domain:bodybuilding-shop.biz
 domain:boleznikogi.com
@@ -858,6 +860,8 @@ domain:chlooe.com
 domain:chocolateslim-original.com
 domain:chocoslim.pro
 domain:choosecuisine.com
+domain:christianlouboutinoutlet.win
+domain:christianlouboutinreplica.pw
 domain:christianlouboutinsaleonline.us
 domain:christianlouboutinsaleoutletonline.us
 domain:christianlouboutinshoes.xyz
@@ -1350,6 +1354,7 @@ domain:f0815.de
 domain:f5mtrack.com
 domain:fable.in.ua
 domain:failingmarriege.blogspot.com
+domain:fakehandbags.xyz
 domain:falcoware.com
 domain:family1st.ca
 domain:familyholiday.ml
@@ -2110,6 +2115,7 @@ domain:kmgamex.cf
 domain:kndxbkdx.bloger.index.hr
 domain:knigonosha.net
 domain:knogg.net
+domain:knowyournextmove.com
 domain:kochanelli.com
 domain:kol-energo.ru
 domain:koleso24.com.ua
@@ -2144,6 +2150,7 @@ domain:krasnodar.ru
 domain:krasnodar.xrus.org
 domain:krasnodar.zrus.org
 domain:kredit-pod-zalog-krasnodar.ru
+domain:kriokomora.info
 domain:krynica.info
 domain:ks1234.com
 domain:ktotut.net
@@ -2474,6 +2481,7 @@ domain:mobstarr.com
 domain:mockupui.com
 domain:modabutik.ru
 domain:modenamebel.ru
+domain:moesen-ficken.com
 domain:moesonce.com
 domain:moi-glazki.ru
 domain:moivestiy.biz
@@ -2827,6 +2835,7 @@ domain:pc-services.ru
 domain:pc-test.net
 domain:pc-virus-d0l92j2.pw
 domain:pcads.ru
+domain:pcgroup.com.uy
 domain:pdamods.ru
 domain:pdns.cz
 domain:pdns.download
@@ -3155,6 +3164,7 @@ domain:recinziireale.com
 domain:recipedays.com
 domain:recipedays.ru
 domain:recordpage-a.akamaihd.net
+domain:redbottomheels.xyz
 domain:rednise.com
 domain:reelheroes.net
 domain:referencemoi.com
@@ -3439,6 +3449,7 @@ domain:sharebutton.net
 domain:sharebutton.org
 domain:sharebutton.to
 domain:shariki-zuma-lines.ru
+domain:sharpchallenge.com
 domain:shell-pmr.ru
 domain:shemale-sex.net
 domain:shemalegalls.blogporn.in
@@ -3667,6 +3678,7 @@ domain:streetfire.net
 domain:streetfooduncovered.com
 domain:streha-metalko.si
 domain:stretchingabuckblog.com
+domain:stretchmate.net
 domain:strfls.com
 domain:strigkaomsk.ru
 domain:stroicol.net
@@ -3714,6 +3726,7 @@ domain:svetodiodoff.ru
 domain:svtrd.com
 domain:swagbucks.com
 domain:swinger-mobil.net
+domain:swingerseiten.com
 domain:swinginwithme.ru
 domain:swiped.su
 domain:swsociety.se
@@ -3730,6 +3743,7 @@ domain:tagil.zrus.org
 domain:taihouse.ru
 domain:takethatad.com
 domain:tako3.com
+domain:talant-factory.ru
 domain:tampabaywatch.org
 domain:taqywu51.soup.io
 domain:tarad.com
@@ -3896,6 +3910,7 @@ domain:torrents-tracker.com
 domain:torrents.cd
 domain:torrnada.ru
 domain:torture.ml
+domain:totu.info
 domain:touchmods.fr
 domain:tour-line.net
 domain:tourismvictoria.com
@@ -4246,6 +4261,7 @@ domain:wholesalenfljerseys.us.com
 domain:wholinkstome.com
 domain:whos.amung.us
 domain:whosonmyserver.com
+domain:wieseversa.no
 domain:wikes.20fr.com
 domain:wildcattube.com
 domain:wildworld.site
@@ -4458,6 +4474,7 @@ domain:zapiszto.pl
 domain:zarabiaj-dzis.pl
 domain:zarabotat-na-sajte.ru
 domain:zarenica.net
+domain:zarepta.com
 domain:zastenchivosti.net
 domain:zastroyka.org
 domain:zazagames.org
