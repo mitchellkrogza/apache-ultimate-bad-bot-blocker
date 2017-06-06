@@ -368,6 +368,7 @@ domain:arendovalka.xyz
 domain:arewater.com
 domain:arkartex.ru
 domain:arraty.altervista.org
+domain:artavenuegardenstudios.com
 domain:artdeko.info
 domain:artefakct.com
 domain:articlesdirectoryme.info
@@ -1767,6 +1768,7 @@ domain:healing-dysplasia.ru
 domain:healmytrauma.info
 domain:heartofbeijing.blogspot.com
 domain:heatpower.ru
+domain:hebozqzu.net.ua
 domain:hebr.myddns-flir.com
 domain:helicalpile.us
 domain:hellokittyimg.com
@@ -1794,6 +1796,7 @@ domain:historichometeam.com
 domain:hitsbox.info
 domain:hiwibyh.bugs3.com
 domain:hjaoopoa.top
+domain:hjb.net.ru
 domain:hkdiiohi.skyrock.com
 domain:hledejvshopech.cz
 domain:hmmm.cz
@@ -2010,6 +2013,7 @@ domain:j-times.ru
 domain:j33x.com
 domain:jackwolfskinoutlet.online
 domain:jamiembrown.com
+domain:janavibekken.no
 domain:janerikholst.se
 domain:janettabridal.com
 domain:japan-bearings.ru
@@ -2024,11 +2028,13 @@ domain:jerseychinabizwholesale.com
 domain:jerseychinabizwholesale.us
 domain:jerseysbizwholesalecheap.com
 domain:jerseyschinabizwholesale.us
+domain:jerseyssportsshop.com
 domain:jerseyswholesalechinalimited.com
 domain:jerseywholesalebizchina.com
 domain:jerseywholesalechinabiz.com
 domain:jerseywholesaleelitestore.com
 domain:jetsli.de
+domain:jillepille.com
 domain:jimmychoosale.online
 domain:jjbabskoe.ru
 domain:job.icivil.ir
@@ -2180,6 +2186,7 @@ domain:lanadelreyfans.us
 domain:lanasshop.ru
 domain:lancheck.net
 domain:landreferat.ru
+domain:landscaping.center
 domain:languagecode.com
 domain:lankarns.com
 domain:laparfumotec.com
@@ -2491,6 +2498,7 @@ domain:mole.pluto.ro
 domain:monarchfind-a.akamaihd.net
 domain:monarhs.info
 domain:monclerboots.xyz
+domain:monclercheap.xyz
 domain:monclerjacketsoutlet.pw
 domain:moncleronline.xyz
 domain:moncleroutletonline.pw
@@ -2711,6 +2719,7 @@ domain:oconto.ru
 domain:odesproperty.com
 domain:odywpjtw.bloger.index.hr
 domain:offer.camp
+domain:offergroup.info
 domain:offers.bycontext.com
 domain:offf.info
 domain:office-windows.ru
@@ -2835,6 +2844,7 @@ domain:pc-services.ru
 domain:pc-test.net
 domain:pc-virus-d0l92j2.pw
 domain:pcads.ru
+domain:pcboa.se
 domain:pcgroup.com.uy
 domain:pdamods.ru
 domain:pdns.cz
@@ -3413,6 +3423,7 @@ domain:servisural.ru
 domain:seryeznie-znakomstva.ru
 domain:sethrollins.net
 domain:sex-dating.co
+domain:sex-pr.net
 domain:sex-sex-sex5.com
 domain:sex-tracker.com
 domain:sex-tracker.de
@@ -3767,6 +3778,7 @@ domain:tedy.su
 domain:teenbbw.yopoint.in
 domain:teesdaleflyballclub.co.uk
 domain:tehngr.ru
+domain:telefonsex-ohne0900.net
 domain:telefonsexi.com
 domain:telefonsexkostenlos.tk
 domain:telefonsexsofort.tk
@@ -4026,6 +4038,7 @@ domain:umityangin.net
 domain:underthesite.com
 domain:uni.me
 domain:unimodemhalfduplefw.pen.io
+domain:unionmarkt.de
 domain:unitexindia.com
 domain:unitygame3d.com
 domain:universals.com.ua
@@ -4288,6 +4301,7 @@ domain:womensterritory.ru
 domain:wonderfulflowers.biz
 domain:woodyguthrie.se
 domain:word-vorlagen.net
+domain:word-vorlagen.xyz
 domain:wordpress-crew.net
 domain:wordpresscore.com
 domain:works.if.ua
