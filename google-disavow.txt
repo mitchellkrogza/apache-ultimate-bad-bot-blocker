@@ -469,6 +469,7 @@ domain:babespcs.com
 domain:babieca.com
 domain:bablonow.ru
 domain:babyguns.ru
+domain:back.dog
 domain:backgroundpictures.net
 domain:backlink4u.net
 domain:backlinkwatch.com
@@ -1179,6 +1180,7 @@ domain:e-commerce-seo1.com
 domain:e-kwiaciarz.pl
 domain:e-poker-2005.com
 domain:e705.net
+domain:eachdayisagift.review
 domain:eandsgallery.com
 domain:eaplay.ru
 domain:earl-brown.info
@@ -2104,6 +2106,7 @@ domain:kidd.reunionwatch.com
 domain:kiev.ua
 domain:kihi.gdn
 domain:kiinomaniak.pl
+domain:kimcurlrvsms.com
 domain:kino-filmi.com
 domain:kino-fun.ru
 domain:kino-key.info
@@ -2315,6 +2318,7 @@ domain:love-baby.cz
 domain:low-format.ru
 domain:lowephotos.info
 domain:lsex.xyz
+domain:ltvperf.com
 domain:lubetube.com
 domain:luckyshop.net.ua
 domain:lumb.co
@@ -2496,6 +2500,7 @@ domain:mncrftpcs.com
 domain:mnogabukaff.net
 domain:mnprs.com
 domain:mobilemedia.md
+domain:mobioffertrck.com
 domain:mobot.site
 domain:mobplayer.net
 domain:mobplayer.ru
@@ -3955,6 +3960,7 @@ domain:toys.erolove.in
 domain:tozup.com
 domain:tpu.ru
 domain:track-rankings.online
+domain:trackmedia101.com
 domain:tracksurf.daooda.com
 domain:tracksz.co
 domain:tradedeals.biz
@@ -4267,6 +4273,7 @@ domain:wejdz-tu.pl
 domain:welck.octopis.com
 domain:welcomeauto.ru
 domain:wellcome2slovenia.ru
+domain:wemarketing.se
 domain:wenimage.com
 domain:weprik.ru
 domain:wesharepics.com
@@ -4488,6 +4495,7 @@ domain:yourmovies.pl
 domain:yourothersite.com
 domain:yoursearch.me
 domain:yoursite.com
+domain:yourtemplatefinder.com
 domain:youtoner.it
 domain:youtubedownload.org
 domain:yuantuo.co.jp
@@ -4499,6 +4507,7 @@ domain:yunque.pluto.ro
 domain:yur-p.ru
 domain:yurgorod.ru
 domain:za-fun-offer.com
+domain:za-music.mymobiplanet.com
 domain:zahvat.ru
 domain:zaidia.xhost.ro
 domain:zaim-pod-zalog-krasnodar.ru

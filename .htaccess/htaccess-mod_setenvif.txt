@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-07 10:15:53 (SAST)
+# Updated 2017-06-07 12:53:28 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -952,6 +952,7 @@ SetEnvIfNoCase Referer babespcs\.com spambot=yes
 SetEnvIfNoCase Referer babieca\.com spambot=yes
 SetEnvIfNoCase Referer bablonow\.ru spambot=yes
 SetEnvIfNoCase Referer babyguns\.ru spambot=yes
+SetEnvIfNoCase Referer back\.dog spambot=yes
 SetEnvIfNoCase Referer backgroundpictures\.net spambot=yes
 SetEnvIfNoCase Referer backlink4u\.net spambot=yes
 SetEnvIfNoCase Referer backlinkwatch\.com spambot=yes
@@ -1662,6 +1663,7 @@ SetEnvIfNoCase Referer e\-commerce\-seo1\.com spambot=yes
 SetEnvIfNoCase Referer e\-kwiaciarz\.pl spambot=yes
 SetEnvIfNoCase Referer e\-poker\-2005\.com spambot=yes
 SetEnvIfNoCase Referer e705\.net spambot=yes
+SetEnvIfNoCase Referer eachdayisagift\.review spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
 SetEnvIfNoCase Referer eaplay\.ru spambot=yes
 SetEnvIfNoCase Referer earl\-brown\.info spambot=yes
@@ -2587,6 +2589,7 @@ SetEnvIfNoCase Referer kidd\.reunionwatch\.com spambot=yes
 SetEnvIfNoCase Referer kiev\.ua spambot=yes
 SetEnvIfNoCase Referer kihi\.gdn spambot=yes
 SetEnvIfNoCase Referer kiinomaniak\.pl spambot=yes
+SetEnvIfNoCase Referer kimcurlrvsms\.com spambot=yes
 SetEnvIfNoCase Referer kino\-filmi\.com spambot=yes
 SetEnvIfNoCase Referer kino\-fun\.ru spambot=yes
 SetEnvIfNoCase Referer kino\-key\.info spambot=yes
@@ -2798,6 +2801,7 @@ SetEnvIfNoCase Referer love\-baby\.cz spambot=yes
 SetEnvIfNoCase Referer low\-format\.ru spambot=yes
 SetEnvIfNoCase Referer lowephotos\.info spambot=yes
 SetEnvIfNoCase Referer lsex\.xyz spambot=yes
+SetEnvIfNoCase Referer ltvperf\.com spambot=yes
 SetEnvIfNoCase Referer lubetube\.com spambot=yes
 SetEnvIfNoCase Referer luckyshop\.net\.ua spambot=yes
 SetEnvIfNoCase Referer lumb\.co spambot=yes
@@ -2979,6 +2983,7 @@ SetEnvIfNoCase Referer mncrftpcs\.com spambot=yes
 SetEnvIfNoCase Referer mnogabukaff\.net spambot=yes
 SetEnvIfNoCase Referer mnprs\.com spambot=yes
 SetEnvIfNoCase Referer mobilemedia\.md spambot=yes
+SetEnvIfNoCase Referer mobioffertrck\.com spambot=yes
 SetEnvIfNoCase Referer mobot\.site spambot=yes
 SetEnvIfNoCase Referer mobplayer\.net spambot=yes
 SetEnvIfNoCase Referer mobplayer\.ru spambot=yes
@@ -4438,6 +4443,7 @@ SetEnvIfNoCase Referer toys\.erolove\.in spambot=yes
 SetEnvIfNoCase Referer tozup\.com spambot=yes
 SetEnvIfNoCase Referer tpu\.ru spambot=yes
 SetEnvIfNoCase Referer track\-rankings\.online spambot=yes
+SetEnvIfNoCase Referer trackmedia101\.com spambot=yes
 SetEnvIfNoCase Referer tracksurf\.daooda\.com spambot=yes
 SetEnvIfNoCase Referer tracksz\.co spambot=yes
 SetEnvIfNoCase Referer tradedeals\.biz spambot=yes
@@ -4750,6 +4756,7 @@ SetEnvIfNoCase Referer wejdz\-tu\.pl spambot=yes
 SetEnvIfNoCase Referer welck\.octopis\.com spambot=yes
 SetEnvIfNoCase Referer welcomeauto\.ru spambot=yes
 SetEnvIfNoCase Referer wellcome2slovenia\.ru spambot=yes
+SetEnvIfNoCase Referer wemarketing\.se spambot=yes
 SetEnvIfNoCase Referer wenimage\.com spambot=yes
 SetEnvIfNoCase Referer weprik\.ru spambot=yes
 SetEnvIfNoCase Referer wesharepics\.com spambot=yes
@@ -4971,6 +4978,7 @@ SetEnvIfNoCase Referer yourmovies\.pl spambot=yes
 SetEnvIfNoCase Referer yourothersite\.com spambot=yes
 SetEnvIfNoCase Referer yoursearch\.me spambot=yes
 SetEnvIfNoCase Referer yoursite\.com spambot=yes
+SetEnvIfNoCase Referer yourtemplatefinder\.com spambot=yes
 SetEnvIfNoCase Referer youtoner\.it spambot=yes
 SetEnvIfNoCase Referer youtubedownload\.org spambot=yes
 SetEnvIfNoCase Referer yuantuo\.co\.jp spambot=yes
@@ -4982,6 +4990,7 @@ SetEnvIfNoCase Referer yunque\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer yur\-p\.ru spambot=yes
 SetEnvIfNoCase Referer yurgorod\.ru spambot=yes
 SetEnvIfNoCase Referer za\-fun\-offer\.com spambot=yes
+SetEnvIfNoCase Referer za\-music\.mymobiplanet\.com spambot=yes
 SetEnvIfNoCase Referer zahvat\.ru spambot=yes
 SetEnvIfNoCase Referer zaidia\.xhost\.ro spambot=yes
 SetEnvIfNoCase Referer zaim\-pod\-zalog\-krasnodar\.ru spambot=yes
