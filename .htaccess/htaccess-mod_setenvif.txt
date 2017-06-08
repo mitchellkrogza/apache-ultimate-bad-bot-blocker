@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-07 12:53:28 (SAST)
+# Updated 2017-06-08 09:50:57 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -1271,6 +1271,7 @@ SetEnvIfNoCase Referer cartierloveringreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierlovestore\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.pw spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.top spambot=yes
+SetEnvIfNoCase Referer cartierreplica\.win spambot=yes
 SetEnvIfNoCase Referer cartierring\.xyz spambot=yes
 SetEnvIfNoCase Referer cartiertrinity\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierwatch\.xyz spambot=yes
@@ -1890,7 +1891,9 @@ SetEnvIfNoCase Referer ferretsoft\.com spambot=yes
 SetEnvIfNoCase Referer fertilitetsradgivningen\.se spambot=yes
 SetEnvIfNoCase Referer fetishinside\.com spambot=yes
 SetEnvIfNoCase Referer fetroshok\.ru spambot=yes
+SetEnvIfNoCase Referer fettefrauen\.net spambot=yes
 SetEnvIfNoCase Referer fickblock18\.com spambot=yes
+SetEnvIfNoCase Referer fickenbumsen\.net spambot=yes
 SetEnvIfNoCase Referer fickenprivat\.info spambot=yes
 SetEnvIfNoCase Referer fickkontakte\.org spambot=yes
 SetEnvIfNoCase Referer fickkontaktehobbyhuren\.com spambot=yes
@@ -2550,6 +2553,7 @@ SetEnvIfNoCase Referer jumptap\.com spambot=yes
 SetEnvIfNoCase Referer jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer justbcause\.com spambot=yes
 SetEnvIfNoCase Referer justdating\.online spambot=yes
+SetEnvIfNoCase Referer justkillingti\.me spambot=yes
 SetEnvIfNoCase Referer kaac\.ru spambot=yes
 SetEnvIfNoCase Referer kabbalah\-red\-bracelets\.com spambot=yes
 SetEnvIfNoCase Referer kadashihotel\.com spambot=yes
@@ -3217,6 +3221,7 @@ SetEnvIfNoCase Referer o\-o\-8\-o\-o\.com spambot=yes
 SetEnvIfNoCase Referer o\-o\-8\-o\-o\.ru spambot=yes
 SetEnvIfNoCase Referer o00\.in spambot=yes
 SetEnvIfNoCase Referer oakleyglassesonline\.us spambot=yes
+SetEnvIfNoCase Referer oakridgemo\.com spambot=yes
 SetEnvIfNoCase Referer oballergiya\.ru spambot=yes
 SetEnvIfNoCase Referer obnal\.org spambot=yes
 SetEnvIfNoCase Referer obuv\-kupit\.ru spambot=yes
@@ -3963,6 +3968,7 @@ SetEnvIfNoCase Referer sexystrippe\.info spambot=yes
 SetEnvIfNoCase Referer sexyteens\.hol\.es spambot=yes
 SetEnvIfNoCase Referer sexytrend\.ru spambot=yes
 SetEnvIfNoCase Referer sfd\-chess\.ru spambot=yes
+SetEnvIfNoCase Referer sfj\-ror\.no spambot=yes
 SetEnvIfNoCase Referer shakhtar\-doneck\.ru spambot=yes
 SetEnvIfNoCase Referer share\-buttons\-for\-free\.com spambot=yes
 SetEnvIfNoCase Referer sharebutton\.net spambot=yes
@@ -4593,6 +4599,7 @@ SetEnvIfNoCase Referer validdomain\.xyz spambot=yes
 SetEnvIfNoCase Referer valkiria\-tk\.ru spambot=yes
 SetEnvIfNoCase Referer valoresito\.com spambot=yes
 SetEnvIfNoCase Referer valueclick\.com spambot=yes
+SetEnvIfNoCase Referer vancleefreplica\.pw spambot=yes
 SetEnvIfNoCase Referer vandrie\-ict\.nl spambot=yes
 SetEnvIfNoCase Referer vapmedia\.org spambot=yes
 SetEnvIfNoCase Referer vapsy\.com spambot=yes
@@ -5039,6 +5046,7 @@ SetEnvIfNoCase Referer zigarettenonlinekaufen1\.blox\.pl spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen2\.bloog\.pl spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen2\.drupalgardens\.com spambot=yes
 SetEnvIfNoCase Referer zigzog\.ru spambot=yes
+SetEnvIfNoCase Referer zjnylubiv\.ru spambot=yes
 SetEnvIfNoCase Referer zkjovpdgxivg\.ga spambot=yes
 SetEnvIfNoCase Referer zlatnajesen\.com spambot=yes
 SetEnvIfNoCase Referer zmoda\.hostreo\.com spambot=yes
