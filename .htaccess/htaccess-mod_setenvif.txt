@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-08 09:50:57 (SAST)
+# Updated 2017-06-09 10:21:22 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -1125,6 +1125,7 @@ SetEnvIfNoCase Referer boleznikogi\.com spambot=yes
 SetEnvIfNoCase Referer bolezniorganov\.ru spambot=yes
 SetEnvIfNoCase Referer bolitgorlo\.net spambot=yes
 SetEnvIfNoCase Referer bombla\.org spambot=yes
+SetEnvIfNoCase Referer bonanza\-fortune\.men spambot=yes
 SetEnvIfNoCase Referer bongacams\.com spambot=yes
 SetEnvIfNoCase Referer bongiornos\.info spambot=yes
 SetEnvIfNoCase Referer bonux\.nextview\.ru spambot=yes
@@ -1272,6 +1273,7 @@ SetEnvIfNoCase Referer cartierlovestore\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.pw spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.top spambot=yes
 SetEnvIfNoCase Referer cartierreplica\.win spambot=yes
+SetEnvIfNoCase Referer cartierreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierring\.xyz spambot=yes
 SetEnvIfNoCase Referer cartiertrinity\.xyz spambot=yes
 SetEnvIfNoCase Referer cartierwatch\.xyz spambot=yes
@@ -2046,6 +2048,7 @@ SetEnvIfNoCase Referer fx\-brokers\-review\.com spambot=yes
 SetEnvIfNoCase Referer fxgallery\.com spambot=yes
 SetEnvIfNoCase Referer fxtips\.ru spambot=yes
 SetEnvIfNoCase Referer fyh\.net\.ru spambot=yes
+SetEnvIfNoCase Referer fyl\.com\.ru spambot=yes
 SetEnvIfNoCase Referer fym\.com\.ru spambot=yes
 SetEnvIfNoCase Referer g\.starmoe\.xyz spambot=yes
 SetEnvIfNoCase Referer g33\.org spambot=yes
@@ -2359,6 +2362,7 @@ SetEnvIfNoCase Referer howmuchdoestizanidinecost\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer howopen\.ru spambot=yes
 SetEnvIfNoCase Referer hplaserjetpdriver8y\.pen\.io spambot=yes
 SetEnvIfNoCase Referer hptwaakw\.blog\.fc2\.com spambot=yes
+SetEnvIfNoCase Referer hreade\.com spambot=yes
 SetEnvIfNoCase Referer href\.li spambot=yes
 SetEnvIfNoCase Referer hscsscotland\.com spambot=yes
 SetEnvIfNoCase Referer hspline\.com spambot=yes
@@ -3211,6 +3215,7 @@ SetEnvIfNoCase Referer nuit\-artisanale\.com spambot=yes
 SetEnvIfNoCase Referer nullrefer\.com spambot=yes
 SetEnvIfNoCase Referer nuup\.info spambot=yes
 SetEnvIfNoCase Referer nvformula\.ru spambot=yes
+SetEnvIfNoCase Referer nvssf\.com spambot=yes
 SetEnvIfNoCase Referer nyfinance\.ml spambot=yes
 SetEnvIfNoCase Referer nzfilecloud\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer o\-dachnik\.ru spambot=yes
@@ -3467,6 +3472,7 @@ SetEnvIfNoCase Referer pokerniydom\.ru spambot=yes
 SetEnvIfNoCase Referer polcin\.de spambot=yes
 SetEnvIfNoCase Referer polybuild\.ru spambot=yes
 SetEnvIfNoCase Referer pomoc\-drogowa\.cba\.pl spambot=yes
+SetEnvIfNoCase Referer pons\-presse\.com spambot=yes
 SetEnvIfNoCase Referer pontiacsolstice\.info spambot=yes
 SetEnvIfNoCase Referer pony\-business\.com spambot=yes
 SetEnvIfNoCase Referer popads\.net spambot=yes
