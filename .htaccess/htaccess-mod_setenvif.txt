@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-13 10:29:44 (SAST)
+# Updated 2017-06-14 16:55:28 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -1002,6 +1002,7 @@ SetEnvIfNoCase Referer battlecarnival\.su spambot=yes
 SetEnvIfNoCase Referer bausparen\.bz\.it spambot=yes
 SetEnvIfNoCase Referer bazaronline24\.ru spambot=yes
 SetEnvIfNoCase Referer bbtec\.net spambot=yes
+SetEnvIfNoCase Referer bcmp\.org spambot=yes
 SetEnvIfNoCase Referer bdsmgalls\.net spambot=yes
 SetEnvIfNoCase Referer beachpics\.com spambot=yes
 SetEnvIfNoCase Referer beamfall\.info spambot=yes
@@ -1094,6 +1095,7 @@ SetEnvIfNoCase Referer biznesschat\.net spambot=yes
 SetEnvIfNoCase Referer bizru\.info spambot=yes
 SetEnvIfNoCase Referer bjanshee\.ru spambot=yes
 SetEnvIfNoCase Referer bjetjt\.com spambot=yes
+SetEnvIfNoCase Referer bjorkbacken\.nu spambot=yes
 SetEnvIfNoCase Referer bkns\.vn spambot=yes
 SetEnvIfNoCase Referer blackcurranthumidifiers\.site spambot=yes
 SetEnvIfNoCase Referer blackhatworth\.com spambot=yes
@@ -1230,6 +1232,7 @@ SetEnvIfNoCase Referer cablecar\.us spambot=yes
 SetEnvIfNoCase Referer cacheimages\.com spambot=yes
 SetEnvIfNoCase Referer cactussoft\.biz spambot=yes
 SetEnvIfNoCase Referer cakemediahq\.com\.au spambot=yes
+SetEnvIfNoCase Referer cakesplus\.com\.au spambot=yes
 SetEnvIfNoCase Referer cakics\.com spambot=yes
 SetEnvIfNoCase Referer calc\-for\-credit\.ru spambot=yes
 SetEnvIfNoCase Referer calcularpagerank\.com spambot=yes
@@ -2305,6 +2308,7 @@ SetEnvIfNoCase Referer helpmymacfaster\.trade spambot=yes
 SetEnvIfNoCase Referer helvetia\.com\.ua spambot=yes
 SetEnvIfNoCase Referer hem\.passagen\.se spambot=yes
 SetEnvIfNoCase Referer herehloadibs\.cf spambot=yes
+SetEnvIfNoCase Referer hermesbelts\.xyz spambot=yes
 SetEnvIfNoCase Referer hermesbirkinhandbagoutlets\.com spambot=yes
 SetEnvIfNoCase Referer hermesbracelets\.xyz spambot=yes
 SetEnvIfNoCase Referer hermesreplica\.pw spambot=yes
@@ -3023,6 +3027,7 @@ SetEnvIfNoCase Referer mncrftpcs\.com spambot=yes
 SetEnvIfNoCase Referer mnogabukaff\.net spambot=yes
 SetEnvIfNoCase Referer mnprs\.com spambot=yes
 SetEnvIfNoCase Referer mobilemedia\.md spambot=yes
+SetEnvIfNoCase Referer mobilierland\.com spambot=yes
 SetEnvIfNoCase Referer mobioffertrck\.com spambot=yes
 SetEnvIfNoCase Referer mobot\.site spambot=yes
 SetEnvIfNoCase Referer mobplayer\.net spambot=yes
@@ -3047,6 +3052,7 @@ SetEnvIfNoCase Referer monclerjacketsoutlet\.pw spambot=yes
 SetEnvIfNoCase Referer monclerjacketsoutlet\.win spambot=yes
 SetEnvIfNoCase Referer moncleronline\.xyz spambot=yes
 SetEnvIfNoCase Referer moncleroutletonline\.pw spambot=yes
+SetEnvIfNoCase Referer moncleroutletonline\.win spambot=yes
 SetEnvIfNoCase Referer moncleroutletonline\.xyz spambot=yes
 SetEnvIfNoCase Referer monclervests\.xyz spambot=yes
 SetEnvIfNoCase Referer monetizationking\.net spambot=yes
@@ -4313,6 +4319,7 @@ SetEnvIfNoCase Referer sygraem\.com spambot=yes
 SetEnvIfNoCase Referer syla\.tk spambot=yes
 SetEnvIfNoCase Referer syvertsen\-da\.no spambot=yes
 SetEnvIfNoCase Referer szamponrevita\.pl spambot=yes
+SetEnvIfNoCase Referer t\-bygg\.com spambot=yes
 SetEnvIfNoCase Referer t3chtonic\.com spambot=yes
 SetEnvIfNoCase Referer tablepicz\.com spambot=yes
 SetEnvIfNoCase Referer tabletkinaodchudzanie\.com\.pl spambot=yes
@@ -4894,6 +4901,7 @@ SetEnvIfNoCase Referer worldlovers\.ru spambot=yes
 SetEnvIfNoCase Referer worldmusicfests\.com spambot=yes
 SetEnvIfNoCase Referer worldoffiles\.ru spambot=yes
 SetEnvIfNoCase Referer wormix\-cheats\.ru spambot=yes
+SetEnvIfNoCase Referer wosik\-dach\.service\-for\-web\.de spambot=yes
 SetEnvIfNoCase Referer wowas31\.ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer woweb\.com\.ua spambot=yes
 SetEnvIfNoCase Referer writingservices17\.blogspot\.ru spambot=yes
@@ -5136,6 +5144,7 @@ SetEnvIfNoCase Referer zverokruh\-shop\.cz spambot=yes
 SetEnvIfNoCase Referer zvetki\.ru spambot=yes
 SetEnvIfNoCase Referer zx6\.ru spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
+SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 </IfModule>
 
 
