@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-14 16:55:28 (SAST)
+# Updated 2017-06-14 17:06:11 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -2332,6 +2332,7 @@ SetEnvIfNoCase Referer hiwibyh\.bugs3\.com spambot=yes
 SetEnvIfNoCase Referer hjaoopoa\.top spambot=yes
 SetEnvIfNoCase Referer hjb\.net\.ru spambot=yes
 SetEnvIfNoCase Referer hkdiiohi\.skyrock\.com spambot=yes
+SetEnvIfNoCase Referer hkladys\.com spambot=yes
 SetEnvIfNoCase Referer hledejvshopech\.cz spambot=yes
 SetEnvIfNoCase Referer hmmm\.cz spambot=yes
 SetEnvIfNoCase Referer hmywwogw\.bloger\.index\.hr spambot=yes
@@ -3160,6 +3161,7 @@ SetEnvIfNoCase Referer myseoconsultant\.com spambot=yes
 SetEnvIfNoCase Referer myshopmatemac\.com spambot=yes
 SetEnvIfNoCase Referer mystats\.xyz spambot=yes
 SetEnvIfNoCase Referer mywallpaper\.top spambot=yes
+SetEnvIfNoCase Referer myyour\.eu spambot=yes
 SetEnvIfNoCase Referer na\-telefon\.biz spambot=yes
 SetEnvIfNoCase Referer na15\.ru spambot=yes
 SetEnvIfNoCase Referer nac\-bearings\.ru spambot=yes
@@ -3999,6 +4001,7 @@ SetEnvIfNoCase Referer sex\-watch\.com spambot=yes
 SetEnvIfNoCase Referer sex\.hotblog\.top spambot=yes
 SetEnvIfNoCase Referer sexad\.net spambot=yes
 SetEnvIfNoCase Referer sexblog\.pw spambot=yes
+SetEnvIfNoCase Referer sexcamamateurchat\.com spambot=yes
 SetEnvIfNoCase Referer sexflirtbook\.com spambot=yes
 SetEnvIfNoCase Referer sexkontakte\-seite\.com spambot=yes
 SetEnvIfNoCase Referer sexkontakteao\.info spambot=yes
@@ -4367,6 +4370,7 @@ SetEnvIfNoCase Referer tennis\-img\.org spambot=yes
 SetEnvIfNoCase Referer terraclicks\.com spambot=yes
 SetEnvIfNoCase Referer terrafootwear\.us spambot=yes
 SetEnvIfNoCase Referer teslathemes\.com spambot=yes
+SetEnvIfNoCase Referer tetracsaudi\.com spambot=yes
 SetEnvIfNoCase Referer teur\.tk spambot=yes
 SetEnvIfNoCase Referer texbaza\.by spambot=yes
 SetEnvIfNoCase Referer textads\.men spambot=yes
