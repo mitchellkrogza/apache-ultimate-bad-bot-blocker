@@ -315,6 +315,7 @@ domain:anti-virus-removal.info
 domain:anticrawler.org
 domain:aosexkontakte.net
 domain:aosheng-tech.com
+domain:apartamentwroclaw.eu
 domain:apartment.ru
 domain:apartmentbay.ru
 domain:apartmentratings.com
@@ -1090,6 +1091,7 @@ domain:detective01.ru
 domain:detki-opt.ru
 domain:detskie-konstruktory.ru
 domain:detskie-zabavi.ru
+domain:deutschehobbyhuren.net
 domain:devochki.top
 domain:dfiles.me
 domain:dfwu1013.info
@@ -1318,6 +1320,7 @@ domain:eshop.md
 domain:eshop4u.jp
 domain:esnm.ru
 domain:espaceinventoristes.com
+domain:essayservicewriting.org
 domain:este-line.com.ua
 domain:estibot.com
 domain:etr-interac.com
@@ -3154,6 +3157,7 @@ domain:promgirldresses.xyz
 domain:promodj.com
 domain:promoforum.ru
 domain:promoheads.com
+domain:promover.org
 domain:pron.pro
 domain:pronekut.com
 domain:proposal-engine.com
@@ -3207,6 +3211,7 @@ domain:qitt.ru
 domain:qld10000.net
 domain:quality-traffic.com
 domain:qualitymarketzone.com
+domain:quangcaons.com
 domain:quebec-bin.com
 domain:queen.sim-com.ru
 domain:quelle.ru
@@ -3864,6 +3869,7 @@ domain:taxi-v-eisk.ru
 domain:taxidermy4cash.com
 domain:taximytishi.ru
 domain:td-33.ru
+domain:tdsing.ru
 domain:teastory.co
 domain:techart24.com
 domain:technopellet.gr
@@ -4022,6 +4028,7 @@ domain:torture.ml
 domain:totu.info
 domain:touchmods.fr
 domain:tour-line.net
+domain:tourcroatia.co.uk
 domain:tourismvictoria.com
 domain:toursmaps.com
 domain:tovaroboom.vast.ru
@@ -4079,6 +4086,7 @@ domain:tubeline.biz
 domain:tuberkulezanet.ru
 domain:tuberkuleznik.ru
 domain:tuckermktg.com
+domain:tuckpointingmasonrysystems.com
 domain:tula.howotorg.ru
 domain:tula.mdverey.ru
 domain:tupper-posuda.ru
@@ -4168,6 +4176,7 @@ domain:usacasino.com
 domain:usadacha.net
 domain:usdx.us
 domain:userequip.com
+domain:usiad.net
 domain:ussearche.cf
 domain:usswrite.com
 domain:ustion.ru
@@ -4303,6 +4312,7 @@ domain:w-journal.ru
 domain:w3data.co
 domain:w3javascript.com
 domain:w7s.ru
+domain:wahicbefa31.soup.io
 domain:walkme.com
 domain:wallpapers-best.com
 domain:wapsite.me
@@ -4429,6 +4439,7 @@ domain:writingservices17.blogspot.ru
 domain:wrona.it
 domain:wsgames.ru
 domain:wstroika.ru
+domain:wtsindia.in
 domain:wttavern.com
 domain:wurr.voila.net
 domain:ww1943.ru
@@ -4627,6 +4638,7 @@ domain:zeroredirect7.com
 domain:zeroredirect8.com
 domain:zeroredirect9.com
 domain:zetgie.com.pl
+domain:zetmaster.ru
 domain:zhongwenlink.com
 domain:zhorapankratov7.blogspot.com
 domain:zigarettenonl.canalblog.com
