@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-21 14:52:32 (SAST)
+# Updated 2017-06-21 16:47:42 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -4086,6 +4086,7 @@ SetEnvIfNoCase Referer sergiorossistore\.online spambot=yes
 SetEnvIfNoCase Referer serialsway\.ucoz\.ru spambot=yes
 SetEnvIfNoCase Referer serptehnika\.ru spambot=yes
 SetEnvIfNoCase Referer server\.popads\.net spambot=yes
+SetEnvIfNoCase Referer servethis\.com spambot=yes
 SetEnvIfNoCase Referer service\-core\.ru spambot=yes
 SetEnvIfNoCase Referer service\.adtech\.de spambot=yes
 SetEnvIfNoCase Referer service\.adtech\.fr spambot=yes
@@ -5165,6 +5166,7 @@ SetEnvIfNoCase Referer yatrk\.xyz spambot=yes
 SetEnvIfNoCase Referer yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer yebocasino\.co\.za spambot=yes
 SetEnvIfNoCase Referer yebocasino\.com spambot=yes
+SetEnvIfNoCase Referer yhit\.press spambot=yes
 SetEnvIfNoCase Referer ynymnwbm\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer yogamatsexpert\.com spambot=yes
 SetEnvIfNoCase Referer yoopsie\.com spambot=yes
