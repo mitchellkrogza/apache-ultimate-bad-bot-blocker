@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-22 11:57:32 (SAST)
+# Updated 2017-06-22 17:08:53 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -992,6 +992,7 @@ SetEnvIfNoCase Referer balkanfarma\.org spambot=yes
 SetEnvIfNoCase Referer balkanfarma\.ru spambot=yes
 SetEnvIfNoCase Referer balla\-boo\.se spambot=yes
 SetEnvIfNoCase Referer balois\.worldbreak\.com spambot=yes
+SetEnvIfNoCase Referer baltgem\.com spambot=yes
 SetEnvIfNoCase Referer bambi\.ck\.ua spambot=yes
 SetEnvIfNoCase Referer bamo\.xsl\.pt spambot=yes
 SetEnvIfNoCase Referer banan\.tv spambot=yes
@@ -1283,6 +1284,7 @@ SetEnvIfNoCase Referer canphotograph\.com spambot=yes
 SetEnvIfNoCase Referer canrole\.com spambot=yes
 SetEnvIfNoCase Referer canyougethighofftizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer canzoni\.ru spambot=yes
+SetEnvIfNoCase Referer capacitacionyaprendizaje\.com spambot=yes
 SetEnvIfNoCase Referer capture\-room\.com spambot=yes
 SetEnvIfNoCase Referer carabela\.com\.do spambot=yes
 SetEnvIfNoCase Referer carapics\.com spambot=yes
@@ -2219,6 +2221,7 @@ SetEnvIfNoCase Referer gktt\.ru spambot=yes
 SetEnvIfNoCase Referer gkvector\.ru spambot=yes
 SetEnvIfNoCase Referer glall\.ru spambot=yes
 SetEnvIfNoCase Referer glass\-msk\.ru spambot=yes
+SetEnvIfNoCase Referer glastecfilms\.com\.my spambot=yes
 SetEnvIfNoCase Referer glavprofit\.ru spambot=yes
 SetEnvIfNoCase Referer glcomputers\.ru spambot=yes
 SetEnvIfNoCase Referer glicol\.kz spambot=yes
@@ -2486,6 +2489,7 @@ SetEnvIfNoCase Referer ictizanidinehcl4mg\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer idc\.com\.ua spambot=yes
 SetEnvIfNoCase Referer idealtits\.net spambot=yes
 SetEnvIfNoCase Referer ideaspicz\.com spambot=yes
+SetEnvIfNoCase Referer ideawheel\.com spambot=yes
 SetEnvIfNoCase Referer idegenvezeto\.eu spambot=yes
 SetEnvIfNoCase Referer ideibiznesa2015\.ru spambot=yes
 SetEnvIfNoCase Referer ideoworld\.org spambot=yes
@@ -5203,6 +5207,7 @@ SetEnvIfNoCase Referer yottos\.com spambot=yes
 SetEnvIfNoCase Referer you\-shall\-not\-pass\.is74\.ru spambot=yes
 SetEnvIfNoCase Referer youandcredit\.ru spambot=yes
 SetEnvIfNoCase Referer youbloodyripper\.com spambot=yes
+SetEnvIfNoCase Referer youbrainboost\.asia spambot=yes
 SetEnvIfNoCase Referer youdao\.com spambot=yes
 SetEnvIfNoCase Referer youdesigner\.kz spambot=yes
 SetEnvIfNoCase Referer yougetsignal\.com spambot=yes
