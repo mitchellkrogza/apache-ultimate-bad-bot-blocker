@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-22 11:16:33 (SAST)
+# Updated 2017-06-22 11:41:49 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -1351,6 +1351,7 @@ SetEnvIfNoCase Referer cgi2\.nintendo\.co\.jp spambot=yes
 SetEnvIfNoCase Referer charmstroy\.info spambot=yes
 SetEnvIfNoCase Referer chastnoeporno\.com spambot=yes
 SetEnvIfNoCase Referer chat\.ru spambot=yes
+SetEnvIfNoCase Referer chatroulette\.online spambot=yes
 SetEnvIfNoCase Referer chatroulette\.si spambot=yes
 SetEnvIfNoCase Referer chatseo\.com spambot=yes
 SetEnvIfNoCase Referer chcu\.net spambot=yes
@@ -3089,6 +3090,7 @@ SetEnvIfNoCase Referer mirobuvi\.com\.ua spambot=yes
 SetEnvIfNoCase Referer mirtorrent\.net spambot=yes
 SetEnvIfNoCase Referer mirzonru\.net spambot=yes
 SetEnvIfNoCase Referer misandesign\.se spambot=yes
+SetEnvIfNoCase Referer missclub\.info spambot=yes
 SetEnvIfNoCase Referer missvietnam\.org spambot=yes
 SetEnvIfNoCase Referer misswell\.net spambot=yes
 SetEnvIfNoCase Referer misswootwoot\.com spambot=yes
@@ -3521,6 +3523,7 @@ SetEnvIfNoCase Referer pepperstyle\.ru spambot=yes
 SetEnvIfNoCase Referer percin\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer perfection\-pleasure\.ru spambot=yes
 SetEnvIfNoCase Referer perfectpracticeweb\.com spambot=yes
+SetEnvIfNoCase Referer perm\-profnastil\.ru spambot=yes
 SetEnvIfNoCase Referer perm\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer perosan\.com spambot=yes
 SetEnvIfNoCase Referer perso\.wanadoo\.es spambot=yes
@@ -3606,6 +3609,8 @@ SetEnvIfNoCase Referer plusnetwork\.com spambot=yes
 SetEnvIfNoCase Referer pmk\-samara\.ru spambot=yes
 SetEnvIfNoCase Referer pobeiranie\.pl spambot=yes
 SetEnvIfNoCase Referer pochemychka\.net spambot=yes
+SetEnvIfNoCase Referer podshipniki\-nsk\.ru spambot=yes
+SetEnvIfNoCase Referer podshipniki\-ntn\.ru spambot=yes
 SetEnvIfNoCase Referer poffet\.net spambot=yes
 SetEnvIfNoCase Referer pogodnyyeavarii\.gq spambot=yes
 SetEnvIfNoCase Referer pogruztehnik\.ru spambot=yes
@@ -4368,6 +4373,7 @@ SetEnvIfNoCase Referer startufa\.ru spambot=yes
 SetEnvIfNoCase Referer startwp\.org spambot=yes
 SetEnvIfNoCase Referer starwarspcs\.com spambot=yes
 SetEnvIfNoCase Referer statistici\.ro spambot=yes
+SetEnvIfNoCase Referer statoutlook\.info spambot=yes
 SetEnvIfNoCase Referer stats\-public\.grammarly\.io spambot=yes
 SetEnvIfNoCase Referer statustroll\.com spambot=yes
 SetEnvIfNoCase Referer stauga\.altervista\.org spambot=yes
@@ -4914,6 +4920,7 @@ SetEnvIfNoCase Referer vostoktrade\.info spambot=yes
 SetEnvIfNoCase Referer vote\-up\.ru spambot=yes
 SetEnvIfNoCase Referer vozbujdenie\.com spambot=yes
 SetEnvIfNoCase Referer vpnhowto\.info spambot=yes
+SetEnvIfNoCase Referer vpnmouse\.com spambot=yes
 SetEnvIfNoCase Referer vremya\.eu spambot=yes
 SetEnvIfNoCase Referer vriel\.batcave\.net spambot=yes
 SetEnvIfNoCase Referer vrnelectro\.ru spambot=yes
@@ -5272,6 +5279,7 @@ SetEnvIfNoCase Referer zetgie\.com\.pl spambot=yes
 SetEnvIfNoCase Referer zetmaster\.ru spambot=yes
 SetEnvIfNoCase Referer zhongwenlink\.com spambot=yes
 SetEnvIfNoCase Referer zhorapankratov7\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer zhuravlev\.info spambot=yes
 SetEnvIfNoCase Referer zigarettenonl\.canalblog\.com spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen\.tumblr\.com spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen1\.bloog\.pl spambot=yes
@@ -5279,6 +5287,7 @@ SetEnvIfNoCase Referer zigarettenonlinekaufen1\.blox\.pl spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen2\.bloog\.pl spambot=yes
 SetEnvIfNoCase Referer zigarettenonlinekaufen2\.drupalgardens\.com spambot=yes
 SetEnvIfNoCase Referer zigzog\.ru spambot=yes
+SetEnvIfNoCase Referer zionstar\.net spambot=yes
 SetEnvIfNoCase Referer zjnylubiv\.ru spambot=yes
 SetEnvIfNoCase Referer zkjovpdgxivg\.ga spambot=yes
 SetEnvIfNoCase Referer zlatnajesen\.com spambot=yes
