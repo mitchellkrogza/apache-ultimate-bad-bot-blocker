@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-22 10:44:56 (SAST)
+# Updated 2017-06-22 11:16:33 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -833,6 +833,7 @@ SetEnvIfNoCase Referer apiwoodensealcom\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer app\-ready\.xyz spambot=yes
 SetEnvIfNoCase Referer apparel\-offer\.com spambot=yes
 SetEnvIfNoCase Referer apper\.de spambot=yes
+SetEnvIfNoCase Referer appfastplay\.com spambot=yes
 SetEnvIfNoCase Referer appfixing\.space spambot=yes
 SetEnvIfNoCase Referer appiq\.mobi spambot=yes
 SetEnvIfNoCase Referer appleid\-verification\.com spambot=yes
@@ -2252,6 +2253,7 @@ SetEnvIfNoCase Referer googlefeud\.com spambot=yes
 SetEnvIfNoCase Referer googlemare\.com spambot=yes
 SetEnvIfNoCase Referer googlepositions\.com spambot=yes
 SetEnvIfNoCase Referer googst2\.ru spambot=yes
+SetEnvIfNoCase Referer goosefishpost\.bid spambot=yes
 SetEnvIfNoCase Referer gopixdatabase\.com spambot=yes
 SetEnvIfNoCase Referer gopro\-online\.info spambot=yes
 SetEnvIfNoCase Referer gorabagrata\.ru spambot=yes
@@ -3028,6 +3030,7 @@ SetEnvIfNoCase Referer meds\-online24\.com spambot=yes
 SetEnvIfNoCase Referer medtherapy\.ru spambot=yes
 SetEnvIfNoCase Referer meduza\-consult\.ru spambot=yes
 SetEnvIfNoCase Referer meendo\-free\-traffic\.ga spambot=yes
+SetEnvIfNoCase Referer meetingrainstorm\.bid spambot=yes
 SetEnvIfNoCase Referer meetlocalchicks\.com spambot=yes
 SetEnvIfNoCase Referer mega\-bony\-2017\.pl spambot=yes
 SetEnvIfNoCase Referer mega\-bony2017\.pl spambot=yes
@@ -4177,6 +4180,7 @@ SetEnvIfNoCase Referer sibtest\.ru spambot=yes
 SetEnvIfNoCase Referer sibvitr\.ru spambot=yes
 SetEnvIfNoCase Referer sicfor\.bcu\.cc spambot=yes
 SetEnvIfNoCase Referer sideeffectsoftizanidine\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer sierraapps\.com spambot=yes
 SetEnvIfNoCase Referer sigmund\-freud\.co\.uk spambot=yes
 SetEnvIfNoCase Referer signal03\.ru spambot=yes
 SetEnvIfNoCase Referer signoredom\.com spambot=yes

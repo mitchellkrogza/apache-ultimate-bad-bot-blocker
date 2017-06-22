@@ -350,6 +350,7 @@ domain:apiwoodensealcom-a.akamaihd.net
 domain:app-ready.xyz
 domain:apparel-offer.com
 domain:apper.de
+domain:appfastplay.com
 domain:appfixing.space
 domain:appiq.mobi
 domain:appleid-verification.com
@@ -1769,6 +1770,7 @@ domain:googlefeud.com
 domain:googlemare.com
 domain:googlepositions.com
 domain:googst2.ru
+domain:goosefishpost.bid
 domain:gopixdatabase.com
 domain:gopro-online.info
 domain:gorabagrata.ru
@@ -2545,6 +2547,7 @@ domain:meds-online24.com
 domain:medtherapy.ru
 domain:meduza-consult.ru
 domain:meendo-free-traffic.ga
+domain:meetingrainstorm.bid
 domain:meetlocalchicks.com
 domain:mega-bony-2017.pl
 domain:mega-bony2017.pl
@@ -3694,6 +3697,7 @@ domain:sibtest.ru
 domain:sibvitr.ru
 domain:sicfor.bcu.cc
 domain:sideeffectsoftizanidine.blogspot.com
+domain:sierraapps.com
 domain:sigmund-freud.co.uk
 domain:signal03.ru
 domain:signoredom.com
