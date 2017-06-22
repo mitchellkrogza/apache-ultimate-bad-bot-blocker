@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-22 11:41:49 (SAST)
+# Updated 2017-06-22 11:57:32 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -38,6 +38,7 @@ RewriteCond %{HTTP_USER_AGENT} ^BDFetch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BetaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bigfoot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bitacle.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Blackboard.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Black\\ Hole.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BlackWidow.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BLEXBot.* [NC,OR]
@@ -78,6 +79,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Crescent.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^CSHttp.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Curious.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Custo.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DatabaseDriverMysqli.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DBLBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Demon.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Deusu.* [NC,OR]
@@ -148,6 +150,7 @@ RewriteCond %{HTTP_USER_AGENT} ^GuzzleHttp.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HaosouSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Harvest.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Havij.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HEADMasterSEO.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Heritrix.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Hloader.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HMView.* [NC,OR]
@@ -396,6 +399,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Turnitin\\ Robot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^TwengaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Twice.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Typhoeus.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^UnisterBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^URLy\.Warning.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^URLy\\ Warning.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Vacuum.* [NC,OR]

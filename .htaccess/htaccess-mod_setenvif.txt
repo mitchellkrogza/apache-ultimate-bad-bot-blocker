@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-22 11:41:49 (SAST)
+# Updated 2017-06-22 11:57:32 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -37,6 +37,7 @@ SetEnvIfNoCase User-Agent ^BDFetch.* spambot=yes
 SetEnvIfNoCase User-Agent ^BetaBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Bigfoot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Bitacle.* spambot=yes
+SetEnvIfNoCase User-Agent ^Blackboard.* spambot=yes
 SetEnvIfNoCase User-Agent ^Black\\ Hole.* spambot=yes
 SetEnvIfNoCase User-Agent ^BlackWidow.* spambot=yes
 SetEnvIfNoCase User-Agent ^BLEXBot.* spambot=yes
@@ -77,6 +78,7 @@ SetEnvIfNoCase User-Agent ^Crescent.* spambot=yes
 SetEnvIfNoCase User-Agent ^CSHttp.* spambot=yes
 SetEnvIfNoCase User-Agent ^Curious.* spambot=yes
 SetEnvIfNoCase User-Agent ^Custo.* spambot=yes
+SetEnvIfNoCase User-Agent ^DatabaseDriverMysqli.* spambot=yes
 SetEnvIfNoCase User-Agent ^DBLBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Demon.* spambot=yes
 SetEnvIfNoCase User-Agent ^Deusu.* spambot=yes
@@ -147,6 +149,7 @@ SetEnvIfNoCase User-Agent ^GuzzleHttp.* spambot=yes
 SetEnvIfNoCase User-Agent ^HaosouSpider.* spambot=yes
 SetEnvIfNoCase User-Agent ^Harvest.* spambot=yes
 SetEnvIfNoCase User-Agent ^Havij.* spambot=yes
+SetEnvIfNoCase User-Agent ^HEADMasterSEO.* spambot=yes
 SetEnvIfNoCase User-Agent ^Heritrix.* spambot=yes
 SetEnvIfNoCase User-Agent ^Hloader.* spambot=yes
 SetEnvIfNoCase User-Agent ^HMView.* spambot=yes
@@ -395,6 +398,7 @@ SetEnvIfNoCase User-Agent ^Turnitin\\ Robot.* spambot=yes
 SetEnvIfNoCase User-Agent ^TwengaBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Twice.* spambot=yes
 SetEnvIfNoCase User-Agent ^Typhoeus.* spambot=yes
+SetEnvIfNoCase User-Agent ^UnisterBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^URLy\.Warning.* spambot=yes
 SetEnvIfNoCase User-Agent ^URLy\\ Warning.* spambot=yes
 SetEnvIfNoCase User-Agent ^Vacuum.* spambot=yes

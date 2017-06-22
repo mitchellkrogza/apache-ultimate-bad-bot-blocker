@@ -64,6 +64,8 @@ User-agent: BlackWidow
  Disallow:/ 
 User-agent: Black Hole
  Disallow:/ 
+User-agent: Blackboard
+ Disallow:/ 
 User-agent: Blow
  Disallow:/ 
 User-agent: BlowFish
@@ -143,6 +145,8 @@ User-agent: DBLBot
 User-agent: DIIbot
  Disallow:/ 
 User-agent: DTS Agent
+ Disallow:/ 
+User-agent: DatabaseDriverMysqli
  Disallow:/ 
 User-agent: Demon
  Disallow:/ 
@@ -269,6 +273,8 @@ User-agent: GrapeshotCrawler
 User-agent: GridBot
  Disallow:/ 
 User-agent: GuzzleHttp
+ Disallow:/ 
+User-agent: HEADMasterSEO
  Disallow:/ 
 User-agent: HMView
  Disallow:/ 
@@ -759,6 +765,8 @@ User-agent: Typhoeus
 User-agent: URLy.Warning
  Disallow:/ 
 User-agent: URLy Warning
+ Disallow:/ 
+User-agent: UnisterBot
  Disallow:/ 
 User-agent: VB Project
  Disallow:/ 
