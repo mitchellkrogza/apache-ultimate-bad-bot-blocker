@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-23 10:18:51 (SAST)
+# Updated 2017-06-23 10:40:56 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -2036,6 +2036,7 @@ SetEnvIfNoCase Referer flytourisme\.org spambot=yes
 SetEnvIfNoCase Referer flzhiguan\.com spambot=yes
 SetEnvIfNoCase Referer fm\-upgrade\.ru spambot=yes
 SetEnvIfNoCase Referer focalink\.com spambot=yes
+SetEnvIfNoCase Referer fodelsedagspresenter\.nu spambot=yes
 SetEnvIfNoCase Referer fok\.nl spambot=yes
 SetEnvIfNoCase Referer folowsite\.com spambot=yes
 SetEnvIfNoCase Referer footbalive\.org spambot=yes
@@ -2472,6 +2473,7 @@ SetEnvIfNoCase Referer hspline\.com spambot=yes
 SetEnvIfNoCase Referer htmlcorner\.com spambot=yes
 SetEnvIfNoCase Referer hubbble\.com spambot=yes
 SetEnvIfNoCase Referer huhn\.altervista\.org spambot=yes
+SetEnvIfNoCase Referer huimin764128\.com spambot=yes
 SetEnvIfNoCase Referer hully\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer humanorightswatch\.org spambot=yes
 SetEnvIfNoCase Referer hundejo\.com spambot=yes
@@ -2684,6 +2686,7 @@ SetEnvIfNoCase Referer kanimage\.com spambot=yes
 SetEnvIfNoCase Referer karachev\-city\.ru spambot=yes
 SetEnvIfNoCase Referer karadene\.com spambot=yes
 SetEnvIfNoCase Referer karpun\-iris\.ru spambot=yes
+SetEnvIfNoCase Referer karting196\.ru spambot=yes
 SetEnvIfNoCase Referer kartiniresto\.com spambot=yes
 SetEnvIfNoCase Referer karusel\-market\.ru spambot=yes
 SetEnvIfNoCase Referer kashubadesign\.ru spambot=yes
@@ -2806,6 +2809,7 @@ SetEnvIfNoCase Referer lacave\.ntic\.fr spambot=yes
 SetEnvIfNoCase Referer lacloop\.info spambot=yes
 SetEnvIfNoCase Referer ladov\.ru spambot=yes
 SetEnvIfNoCase Referer lafourmiliaire\.com spambot=yes
+SetEnvIfNoCase Referer lafriore\.ru spambot=yes
 SetEnvIfNoCase Referer lakesimg\.com spambot=yes
 SetEnvIfNoCase Referer lampokrat\.ws spambot=yes
 SetEnvIfNoCase Referer lanadelreyfans\.us spambot=yes
@@ -3617,6 +3621,7 @@ SetEnvIfNoCase Referer pkmnpcs\.com spambot=yes
 SetEnvIfNoCase Referer pkr1hand\.com spambot=yes
 SetEnvIfNoCase Referer pladform\.ru spambot=yes
 SetEnvIfNoCase Referer plaff\-go\.ru spambot=yes
+SetEnvIfNoCase Referer plastgranar\.nu spambot=yes
 SetEnvIfNoCase Referer plastweb\.ru spambot=yes
 SetEnvIfNoCase Referer platesauto\.com spambot=yes
 SetEnvIfNoCase Referer platinumdeals\.gr spambot=yes
@@ -4225,6 +4230,7 @@ SetEnvIfNoCase Referer simple\-image\.com\.ua spambot=yes
 SetEnvIfNoCase Referer simple\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer simplepooltips\.com spambot=yes
 SetEnvIfNoCase Referer simply\.net spambot=yes
+SetEnvIfNoCase Referer simpoed\.ufop\.br spambot=yes
 SetEnvIfNoCase Referer sims\-sims\.ru spambot=yes
 SetEnvIfNoCase Referer sindragosa\.comxa\.com spambot=yes
 SetEnvIfNoCase Referer sinel\.info spambot=yes
