@@ -149,6 +149,7 @@ domain:actremage.com
 domain:actulite.com
 domain:ad-words.ru
 domain:adamoads.com
+domain:adanih.com
 domain:adcash.com
 domain:adclickservice.com
 domain:adclickthru.net
@@ -599,6 +600,7 @@ domain:bidr.trellian.com
 domain:bif-ru.info
 domain:big-boards.info
 domain:bigames.online
+domain:bigcareer.info
 domain:bigcities.org
 domain:biglistofwebsites.com
 domain:bigpenisguide.com
@@ -872,6 +874,7 @@ domain:chastnoeporno.com
 domain:chat.ru
 domain:chatroulette.online
 domain:chatroulette.si
+domain:chatroulette.world
 domain:chatseo.com
 domain:chcu.net
 domain:cheap-pills-norx.com
@@ -996,6 +999,7 @@ domain:coolbar.pro
 domain:coolgramgoods.com
 domain:coolingoods.com
 domain:coolinstagoods.com
+domain:coolwallpapers-hd.com
 domain:coop-gamers.ru
 domain:copblock.org
 domain:copypaste.traderzplanet.in
@@ -1261,6 +1265,7 @@ domain:edelstahlschornstein-123.de
 domain:editmedios.com
 domain:edshopping.net
 domain:education-cz.ru
+domain:ee77ee.com
 domain:efkt.jp
 domain:egovaleo.it
 domain:egvar.net
@@ -1867,6 +1872,7 @@ domain:hdmoviecams.com
 domain:hdpixent.com
 domain:hdpixion.com
 domain:hdseriale.pl
+domain:hdwallpapers-free.com
 domain:hdwalls.xyz
 domain:hdxnxxtube.mobi
 domain:headpress.ru
@@ -2037,6 +2043,8 @@ domain:imitex-plus.ru
 domain:immobiliaremassaro.com
 domain:imperia31.ru
 domain:imperiafilm.ru
+domain:impisr.edunsk.ru
+domain:impisr.ru
 domain:import-sales.com
 domain:impresagaia.it
 domain:inbabes.sexushost.com
@@ -2306,6 +2314,7 @@ domain:la-fa.ru
 domain:labelwater.se
 domain:labplus.ru
 domain:labvis.host.sk
+domain:lacasamorett.com
 domain:lacave.ntic.fr
 domain:lacloop.info
 domain:ladov.ru
@@ -2349,6 +2358,7 @@ domain:lesbian.xyz
 domain:lescinq.com
 domain:letmacwork.world
 domain:letolove.ru
+domain:letsart.ru
 domain:letslowbefast.today
 domain:letto.by
 domain:levaquin750mg.blogspot.com
@@ -2425,6 +2435,7 @@ domain:lonely-mature.com
 domain:long-beach-air-conditioning.com
 domain:longadventure.com
 domain:longgreen.info
+domain:losangeles-ads.com
 domain:lost-alpha.ru
 domain:lostfilm-online.ru
 domain:lotto6888.com
@@ -2456,6 +2467,7 @@ domain:m4ever.net
 domain:m5home.ru
 domain:mabdoola.blogspot.com
 domain:mac-helper.site
+domain:mac-shield.com
 domain:macdamaged.space
 domain:macdamaged.tech
 domain:mackeeper-center.club
@@ -2558,6 +2570,7 @@ domain:mega-bony-2017.pl
 domain:mega-bony2017.pl
 domain:mega-polis.biz.ua
 domain:megaapteka.ru
+domain:megahdporno.net
 domain:megaindex.ru
 domain:megakino.net
 domain:megavolt.net.ua
@@ -2860,6 +2873,7 @@ domain:november-lax.com
 domain:novgorod.xrus.org
 domain:novosibirsk.xrus.org
 domain:novosti-hi-tech.ru
+domain:nowtorrents.com
 domain:npoet.ru
 domain:nrv.co.za
 domain:nsatc.net
@@ -4261,6 +4275,7 @@ domain:tyumen.xrus.org
 domain:u-cheats.ru
 domain:u17795.netangels.ru
 domain:ua-company.ru
+domain:ua.tc
 domain:uac.net.au
 domain:uamtrk.com
 domain:uasb.ru
@@ -4375,6 +4390,7 @@ domain:video-chat.cn
 domain:video-chat.in
 domain:video-hollywood.ru
 domain:video-woman.com
+domain:videochat.cafe
 domain:videochat.mx
 domain:videochat.tv.br
 domain:videochat.world
