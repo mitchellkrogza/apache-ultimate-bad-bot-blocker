@@ -3,14 +3,11 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+
 ### Version Information #
-###################################################
-### Version: V2.2017.06.351
-### Updated: Sat Jun 24 15:19:22 SAST 2017
-### Bad Referrer Count: 4877
-### Bad Bot Count: 479
-###################################################
-### Version Information ##<IfModule mod_rewrite.c>
+### Version Information ##
+
+<IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} ^360Spider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^80legs.* [NC,OR]
