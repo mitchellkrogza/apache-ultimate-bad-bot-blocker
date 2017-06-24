@@ -6,6 +6,12 @@
 # Updated 2017-06-24 11:08:45 (SAST)
 
 ### Version Information #
+###################################################
+### Version: V2.2017.06.349
+### Updated: Sat Jun 24 14:48:22 SAST 2017
+### Bad Referrer Count: 4877
+### Bad Bot Count: 479
+###################################################
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
