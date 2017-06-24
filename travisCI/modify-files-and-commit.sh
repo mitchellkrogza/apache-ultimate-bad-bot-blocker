@@ -24,9 +24,6 @@ git checkout master
 sudo $TRAVIS_BUILD_DIR/travisCI/modify-globalblacklist.sh
 sudo $TRAVIS_BUILD_DIR/travisCI/modify-readme.sh
 
-# Touch a file before committing
-sudo touch $TRAVIS_BUILD_DIR/google-disavow.txt
-
 # Add the modified files and commit
 git add -A
 git commit -am "V2.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER [ci skip]"
