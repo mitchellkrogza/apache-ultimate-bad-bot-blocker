@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-24 11:04:21 (SAST)
+# Updated 2017-06-24 11:08:45 (SAST)
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
@@ -411,6 +411,7 @@ RewriteCond %{HTTP_USER_AGENT} ^VidibleScraper.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^VoidEYE.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Voil.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Voltron.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wallpapers/3\.0.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WallpapersHD.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WASALive\-Bot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WBSearchBot.* [NC,OR]

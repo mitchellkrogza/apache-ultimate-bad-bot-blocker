@@ -3,7 +3,7 @@
 ## Rename this file to .htaccess
 ##################################################################
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
-# Updated 2017-06-24 11:04:21 (SAST)
+# Updated 2017-06-24 11:08:45 (SAST)
 
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
@@ -410,6 +410,7 @@ SetEnvIfNoCase User-Agent ^VidibleScraper.* spambot=yes
 SetEnvIfNoCase User-Agent ^VoidEYE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Voil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Voltron.* spambot=yes
+SetEnvIfNoCase User-Agent ^Wallpapers/3\.0.* spambot=yes
 SetEnvIfNoCase User-Agent ^WallpapersHD.* spambot=yes
 SetEnvIfNoCase User-Agent ^WASALive\-Bot.* spambot=yes
 SetEnvIfNoCase User-Agent ^WBSearchBot.* spambot=yes
