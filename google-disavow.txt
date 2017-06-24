@@ -54,6 +54,7 @@ domain:2itech.ru
 domain:2kata.ru
 domain:2nt.ru
 domain:2rich4bitches.com
+domain:2x2fan.ru
 domain:3-letter-domains.net
 domain:300richmond.co.nz
 domain:34.gs
@@ -360,6 +361,7 @@ domain:approved.su
 domain:apps-analytics.net
 domain:appsaurus.com
 domain:apptester.tk
+domain:aproposde.com
 domain:apxeo.info
 domain:aquarium-pro.ru
 domain:arabgirls.adultgalls.com
@@ -532,6 +534,7 @@ domain:basisches-wasser.net
 domain:batanga.net
 domain:battlecarnival.su
 domain:bausparen.bz.it
+domain:bayareaaeroclub.org
 domain:bazaronline24.ru
 domain:bbtec.net
 domain:bcmp.org
@@ -1590,6 +1593,7 @@ domain:fr.netlog.com
 domain:freakycheats.com
 domain:free-deals.faith
 domain:free-fb-traffic.com
+domain:free-fbook-traffic.com
 domain:free-floating-buttons.com
 domain:free-gluten.ru
 domain:free-laptop-reward.com
@@ -1633,6 +1637,7 @@ domain:fuckmill.com
 domain:fuel-gas.com
 domain:fugarif.ga
 domain:fullfileaccess.com
+domain:fullgirl.ru
 domain:fun2cell.net
 domain:funcrushgames.com
 domain:fungamelands.com
@@ -2065,6 +2070,7 @@ domain:infazavr.ru
 domain:infobabki.ru
 domain:infokonkurs.ru
 domain:informatiecentro.be
+domain:infospot.pt
 domain:infostatsvc.com
 domain:infowarcraft.ru
 domain:inmate-locator.us
@@ -2536,6 +2542,7 @@ domain:mawemik.com
 domain:max-eclat.men
 domain:maximilitary.ru
 domain:maxthon.com
+domain:maxxtor.eu
 domain:mazda-roadsters.com
 domain:mbiologi.ru
 domain:mcadamssupplyco.com
@@ -2641,6 +2648,7 @@ domain:mixed-wrestling.ru
 domain:mixtapetorrent.com
 domain:mjchamonix.org
 domain:mlvc4zzw.space
+domain:mmgq.ru
 domain:mmofreegames.online
 domain:mmog-play.ru
 domain:mmoguider.ru
@@ -2997,6 +3005,7 @@ domain:outpersonals.com
 domain:outrageousdeal-a.akamaihd.net
 domain:outshop.ru
 domain:ovirus.ru
+domain:owathemes.com
 domain:ownshop.cf
 domain:owohho.com
 domain:oxford-book.com.ua
@@ -3350,6 +3359,7 @@ domain:quizzitch.net
 domain:qwarckoine.com
 domain:qwesa.ru
 domain:r-control.ru
+domain:raavidesigns.com
 domain:rabot.host.sk
 domain:rabotaetvse.ru
 domain:rada.ru
@@ -3593,6 +3603,7 @@ domain:sdsjweb.com
 domain:seadragonherbery.com
 domain:seansonline24.pl
 domain:search-error.com
+domain:searchimage.co
 domain:searchinquire.com
 domain:searchinterneat-a.akamaihd.net
 domain:searchkut.com
@@ -4053,6 +4064,7 @@ domain:tetracsaudi.com
 domain:teur.tk
 domain:texbaza.by
 domain:textads.men
+domain:thaisamkok.com
 domain:the-torrent-tracker.blogspot.com
 domain:the-trader.net
 domain:the-usa-games.blogspot.com
@@ -4641,6 +4653,7 @@ domain:xep.info
 domain:xev.ru
 domain:xfire.com
 domain:xgftnlrt.bloger.index.hr
+domain:xingzi-vision.com
 domain:xjlottery.com
 domain:xjrul.com
 domain:xkaz.org
