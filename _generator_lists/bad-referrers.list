@@ -3467,6 +3467,7 @@ SetEnvIfNoCase Referer ~*ritlweb\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rn\-to\-bsn\.com spam_ref=1
 SetEnvIfNoCase Referer ~*robot\-forex\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*rockingclicks\.com spam_ref=1
+SetEnvIfNoCase Referer ~*rofel\.me spam_ref=1
 SetEnvIfNoCase Referer ~*rogervivierforsale\.com spam_ref=1
 SetEnvIfNoCase Referer ~*roleforum\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*roma\-kukareku\.livejournal\.com spam_ref=1
