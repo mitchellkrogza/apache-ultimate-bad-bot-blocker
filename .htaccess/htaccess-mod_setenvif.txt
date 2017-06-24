@@ -5,6 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 # Updated 2017-06-24 11:08:45 (SAST)
 
+### Version Information #
+### Version Information ##
+
 <IfModule mod_setenvif.c>
 SetEnvIfNoCase User-Agent ^360Spider.* spambot=yes
 SetEnvIfNoCase User-Agent ^80legs.* spambot=yes

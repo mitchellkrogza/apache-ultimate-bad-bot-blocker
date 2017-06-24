@@ -5,6 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 # Updated 2017-06-24 11:08:45 (SAST)
 
+### Version Information #
+### Version Information ##
+
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} ^360Spider.* [NC,OR]

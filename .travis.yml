@@ -3,22 +3,30 @@ env:
   global:
     - secure: j4hwh5XrHRSAjjVYIxS7l3Rj+lnvIRHSBgqVc2nQvKrYIDU91bsqhE3SfFrYVTga447KSHYqrPgUWk18my2myjoKZntb/zWfveEvD62fOQeAzxwLSsSV5W1hekYmntBcFG+mkEeENpaVLJ/YoPuRIQeLPQDNaEaB8lLlR3NU6MNmUvJxoPpES8K9brL7nBcw349raspuJzEjObUJFU1IWWsv1PNCueksBWHtS5mGrMfqpzvu+C22djKi/ooAhG1LkCcV88czLhs3dGYB3+q6ZCr54cP/gB6vrSv8WnNEEI3NneMeiH1fFm3sLI2v+ECA/SVTPJfbG7n5ww+Whcsyp88ECRCisgdOR7RoBbdFO4WDNsXvl+865iQkXrEaaskQ7CJuXHy89gHYA6JmshKqerW5CY3wgvM2dDqyYQCVuwFmvOkG9p0+FVg/lvjVm1XiltQA/G2OTwfhJZ+FtA/NlR0inQRMc3X1Uh/0lGvPfQ0lbaf7T537mmL1bcOZuw15jW/FoDzXFhmloOYzJoZWFG8m1KYcLbZ9X4zprcxDlKR5IBa0vwgtjVasQ8grgDoxqvUFJdeiFQPmZuiy87un9Ao/+o1W7UpTgqyCGhMM+K0TB3myAQSGFV3NKE4jmNaZ79nLVPhPSooBdM+193aaI7KSCsZI9OTnkrRpnvCVMeo=
     - GIT_NAME: Travis CI
-    - GIT_EMAIL: builds@travis-ci.org
+    - GIT_EMAIL: mitchellkrog@gmail.com
     - TRAVIS_REPO_SLUG: mitchellkrogza/apache-ultimate-bad-bot-blocker
     - GIT_BRANCH: master
-matrix:
-  fast_finish: true
 sudo: required
 dist: trusty
-php:
-    - 5.6
+matrix:
+  include:
+    - php: 7.0
+  allow_failures:
+    - php: 7.0
+    - php: hhvm
+  fast_finish: true
 addons:
   hosts:
     - local.dev
 cache:
   - apt
+
+before_install:
+  - export TZ=Africa/Johannesburg
+
 install:
   - travisCI/install-apache.sh
+
 script:
   # Do an nslookup on local.dev hostname set above 
   - nslookup local.dev
@@ -30,8 +38,6 @@ script:
   #- sudo php -v
   # Check if the site responds OK
   - curl -vsf 'http://local.dev:80/apache.php' &> /dev/stdout
-  # Test if PHP is working
-  #- curl -vsf 'http://local.dev:80/info.php' &> /dev/stdout
   # Test a Good User-Agent String against our site
   - curl -A "googlebot" http://local.dev:80/apache.php &> /dev/stdout
   # Test Some Bad Bots and Referrers
@@ -39,24 +45,28 @@ script:
   - STATUSCODE=$(curl -A "masscan" http://local.dev:80/apache.php &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
   - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://100dollars-seo.com &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
   - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://zx6.ru &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  - cat /tmp/error.log
+  # Modify Files with Version Information and Commit
+  - travisCI/modify-files-and-commit.sh
+
 before_deploy:
-  - travisCI/deploy.sh
+  - travisCI/deploy-package.sh
+
 deploy:
   provider: releases
   api_key:
     secure: ${GH_TOKEN}
   file:
   - "custom.d/globalblacklist.conf"
-  - "custom.d/whitelist-domains.conf"
-  - "custom.d/whitelist-ips.conf"
-  - "custom.d/bad-referrer-words.conf"
-  - "custom.d/blacklist-ips.conf"
-  - "custom.d/blacklist-user-agents.conf"
   skip_cleanup: true
   on:
     repo: mitchellkrogza/apache-ultimate-bad-bot-blocker
     tags: false
-    all_branches: true
+    branches:
+      except:
+        - "/^v[0-9]/"
+        - "/^V.*$/"
+    branches:
+       only:
+         - "master"
 notifications:
-    email: false
+  email: false
