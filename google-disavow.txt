@@ -103,6 +103,7 @@ domain:8gold.com
 domain:8kisses.eu
 domain:8si.ru
 domain:8xv8.com
+domain:91abcw.com
 domain:98oi.ru
 domain:999webdesign.com
 domain:9icmzvn6.website
@@ -793,6 +794,7 @@ domain:candcstuccoandstone.com
 domain:candelluxsklep.pl
 domain:candiceloves.us
 domain:candlehandmade.com
+domain:candlewooddentalcentre.com.au
 domain:candy-glam-hp.com
 domain:candycrushshop.com
 domain:candypeople.se
@@ -937,6 +939,7 @@ domain:citizenclsdriveri7.pen.io
 domain:cityadspix.com
 domain:citysecurity.nu
 domain:civilwartheater.com
+domain:cjs.com.ru
 domain:cl.s7.exct.net
 domain:clarithromycin500mg.com
 domain:clash-clans.ru
@@ -1021,6 +1024,7 @@ domain:counter.yadro.ru
 domain:counterbot.com
 domain:countercrazy.com
 domain:country-chic.ru
+domain:courtshipgift.com
 domain:covadhosting.biz
 domain:covetnica.com
 domain:cowblog.fr
@@ -2216,6 +2220,7 @@ domain:kazan.xrus.org
 domain:kazan.zrus.org
 domain:kazinogames.lv
 domain:kazrent.com
+domain:kchaxton.com
 domain:keenoutlet.online
 domain:kerwinandcariza.com
 domain:ketoanhanoi.info
@@ -2407,6 +2412,7 @@ domain:liquimondo.com
 domain:lirunet.ru
 domain:lisque.batcave.net
 domain:littleberry.ru
+domain:littlesunraiser.com
 domain:liupis.com
 domain:live-sexcam.tk
 domain:live-sexchat.ru
@@ -2456,6 +2462,7 @@ domain:louboutinreplica.xyz
 domain:louboutinshoes.xyz
 domain:louisvuittonoutletstore.net
 domain:love-baby.cz
+domain:lovelycraftyhome.com
 domain:low-format.ru
 domain:lowephotos.info
 domain:lqtigi.net.ru
@@ -3096,6 +3103,7 @@ domain:photochki.com
 domain:photokitchendesign.com
 domain:photorepair.ru
 domain:photostudiolightings.com
+domain:phuketscreen.com
 domain:physfunc.ru
 domain:pic2fly.com
 domain:piccdata.com
@@ -3144,6 +3152,7 @@ domain:pkr1hand.com
 domain:pladform.ru
 domain:plaff-go.ru
 domain:plastgranar.nu
+domain:plastjulgranar.se
 domain:plastweb.ru
 domain:platesauto.com
 domain:platinumdeals.gr
@@ -3160,6 +3169,7 @@ domain:pobeiranie.pl
 domain:pochemychka.net
 domain:podshipniki-nsk.ru
 domain:podshipniki-ntn.ru
+domain:poems.com.ua
 domain:poffet.net
 domain:pogodnyyeavarii.gq
 domain:pogruztehnik.ru
@@ -3467,7 +3477,6 @@ domain:ritlweb.com
 domain:rn-to-bsn.com
 domain:robot-forex.biz
 domain:rockingclicks.com
-domain:rofel.me
 domain:rogervivierforsale.com
 domain:roleforum.ru
 domain:roma-kukareku.livejournal.com
@@ -3601,6 +3610,7 @@ domain:sdelatmebel.ru
 domain:sdi-pme.com
 domain:sdrescher.net
 domain:sdsjweb.com
+domain:se-welding.ru
 domain:seadragonherbery.com
 domain:seansonline24.pl
 domain:search-error.com
@@ -4038,6 +4048,7 @@ domain:taximytishi.ru
 domain:td-33.ru
 domain:tdsing.ru
 domain:teastory.co
+domain:tech4master.com
 domain:techart24.com
 domain:technopellet.gr
 domain:tecspb.ru
@@ -4096,6 +4107,7 @@ domain:thiegs.reco.ws
 domain:thin.me.pn
 domain:thruport.com
 domain:tiandeural.ru
+domain:ticketsys.inetwd.com
 domain:tiens2010.ru
 domain:tilido.com
 domain:timdreby.com
@@ -4187,9 +4199,11 @@ domain:topads.men
 domain:topappspro.com
 domain:topbestgames.com
 domain:topclickguru.com
+domain:topdownloads.ru
 domain:topmira.com
 domain:topquality.cf
 domain:topshef.ru
+domain:topsy.com
 domain:topvidos.ru
 domain:torontoplumbinggroup.com
 domain:torrent-newgames.com
@@ -4407,6 +4421,7 @@ domain:viberdownload10.com
 domain:video--production.com
 domain:video-chat.cn
 domain:video-chat.in
+domain:video-chat.love
 domain:video-hollywood.ru
 domain:video-woman.com
 domain:videochat.cafe
@@ -4542,6 +4557,7 @@ domain:weddingdresses.xyz
 domain:weekes.biz.tc
 domain:weightatraining.com
 domain:wejdz-tu.pl
+domain:wejhdw73273666zx1.com
 domain:welck.octopis.com
 domain:welcomeauto.ru
 domain:wellcome2slovenia.ru
