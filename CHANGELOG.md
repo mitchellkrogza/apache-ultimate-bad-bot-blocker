@@ -1,5 +1,9 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
+### 2017-06-26
+- Better Regex Pattern Matching for BrowserMatchNoCase statements - Exact matching of User-Agent names inside strings using word boundaries without creating false positives. Reported in Issue https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/issues/30
+- Old regex `BrowserMatchNoCase "^Spbot" bad_bot` now becomes `BrowserMatchNoCase "^(.*?)(\bSpbot\b)(.*)$" bad_bot`
+
 ### 2017-04-19 (MAJOR VERSION UPDATE) - V2.2017.05
 - New include files introduced - blacklist-ips.conf, bad-referrer-words.conf and blacklist-user-agents.conf
 - New include file bad-referrer-words.conf allows total control and customization of scanning for bad referrer words
