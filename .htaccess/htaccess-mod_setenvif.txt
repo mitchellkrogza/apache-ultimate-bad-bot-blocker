@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.06.369
-### Updated: Tue Jun 27 15:41:33 SAST 2017
-### Bad Referrer Count: 5067
-### Bad Bot Count: 479
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -1482,6 +1476,7 @@ SetEnvIfNoCase Referer clevernt\.com spambot=yes
 SetEnvIfNoCase Referer clgrmgds\.com spambot=yes
 SetEnvIfNoCase Referer clickaider\.com spambot=yes
 SetEnvIfNoCase Referer clickhype\.com spambot=yes
+SetEnvIfNoCase Referer clickintext\.net spambot=yes
 SetEnvIfNoCase Referer clickpapa\.com spambot=yes
 SetEnvIfNoCase Referer clickso\.com spambot=yes
 SetEnvIfNoCase Referer clicksor\.com spambot=yes
@@ -1826,6 +1821,7 @@ SetEnvIfNoCase Referer easycommerce\.cf spambot=yes
 SetEnvIfNoCase Referer easync\.io spambot=yes
 SetEnvIfNoCase Referer easyshoppermac\.com spambot=yes
 SetEnvIfNoCase Referer easytuningshop\.ru spambot=yes
+SetEnvIfNoCase Referer easyukraine\.com spambot=yes
 SetEnvIfNoCase Referer eat\.besplatno\-skachat\-washington\.bid spambot=yes
 SetEnvIfNoCase Referer ec\-file\.info spambot=yes
 SetEnvIfNoCase Referer ecommerce\-seo\.com spambot=yes
@@ -3983,6 +3979,7 @@ SetEnvIfNoCase Referer quangcaons\.com spambot=yes
 SetEnvIfNoCase Referer quebec\-bin\.com spambot=yes
 SetEnvIfNoCase Referer queen\.sim\-com\.ru spambot=yes
 SetEnvIfNoCase Referer quelle\.ru spambot=yes
+SetEnvIfNoCase Referer questionmarque\.ch spambot=yes
 SetEnvIfNoCase Referer quick\-offer\.com spambot=yes
 SetEnvIfNoCase Referer quick\-seeker\.com spambot=yes
 SetEnvIfNoCase Referer quickbuck\.com spambot=yes
@@ -5271,6 +5268,7 @@ SetEnvIfNoCase Referer winwotgold\.pl spambot=yes
 SetEnvIfNoCase Referer winx\-play\.ru spambot=yes
 SetEnvIfNoCase Referer wiosenny\-bon\-1500\.pl spambot=yes
 SetEnvIfNoCase Referer witherrom55\.eklablog\.fr spambot=yes
+SetEnvIfNoCase Referer withstandingheartwarming\.com spambot=yes
 SetEnvIfNoCase Referer wma\-x\.com spambot=yes
 SetEnvIfNoCase Referer wnoz\.de spambot=yes
 SetEnvIfNoCase Referer womama\.ru spambot=yes
