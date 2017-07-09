@@ -62,13 +62,13 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CentOS6/conf.d/globalblacklist.conf
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CentOS6/conf.d/globalblacklist.conf
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
 q
 IN
 rm $_inputdbA
@@ -89,13 +89,13 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CentOS7/custom.d/globalblacklist.conf
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custom.d/globalblacklist.conf
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CentOS7/custom.d/globalblacklist.conf
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custom.d/globalblacklist.conf
 q
 IN
 rm $_inputdbA
