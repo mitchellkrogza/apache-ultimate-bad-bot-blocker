@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.377
-### Updated: Sun Jul  9 17:07:07 SAST 2017
-### Bad Referrer Count: 5195
-### Bad Bot Count: 478
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -3977,6 +3971,7 @@ SetEnvIfNoCase Referer printdirectforless\.com spambot=yes
 SetEnvIfNoCase Referer printie\.com spambot=yes
 SetEnvIfNoCase Referer printingpeach\.com spambot=yes
 SetEnvIfNoCase Referer priora\-2\.com spambot=yes
+SetEnvIfNoCase Referer priscilarodrigues\.com\.br spambot=yes
 SetEnvIfNoCase Referer privacyassistant\.net spambot=yes
 SetEnvIfNoCase Referer privat\-girl\.net spambot=yes
 SetEnvIfNoCase Referer privatamateure\.com spambot=yes

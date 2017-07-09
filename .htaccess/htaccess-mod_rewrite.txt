@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.377
-### Updated: Sun Jul  9 17:07:07 SAST 2017
-### Bad Referrer Count: 5195
-### Bad Bot Count: 478
-###################################################
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -3978,6 +3972,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*printdirectforless\.com.*$ [NC,
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*printie\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*printingpeach\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*priora\-2\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*priscilarodrigues\.com\.br.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privacyassistant\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privat\-girl\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privatamateure\.com.*$ [NC,OR]
