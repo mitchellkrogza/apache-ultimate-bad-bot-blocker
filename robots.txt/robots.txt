@@ -272,8 +272,6 @@ User-agent: GrapeshotCrawler
  Disallow:/ 
 User-agent: GridBot
  Disallow:/ 
-User-agent: GuzzleHttp
- Disallow:/ 
 User-agent: HEADMasterSEO
  Disallow:/ 
 User-agent: HMView
