@@ -404,41 +404,45 @@ can add that functionality if you like copying the awk statement !~ from the fir
 `00 08 * * * tail -50000 /var/log/apache/mydomain-access.log | awk '{print $12}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail -s "Top 1000 Agents for Mydomain.com" me@mydomain.com`
 
 
-## Finally - Stopping Google Analytics 'ghost' spam
-Simply using the Apache blocker does not stop Google Analytics ghost referral spam 
-because they are hitting Analytics directly and not always necessarily touching your website. 
+# EASY CONFIGURATION INSTRUCTIONS FOR STOPPING GOOGLE ANALYTICS "GHOST" SPAM
+
+Simply using the Apache blocker does not stop Google Analytics ghost referral spam because they are hitting Analytics directly and not always necessarily touching your website. 
 
 You should use regex filters in Analytics to prevent ghost referral spam.
-For this a simple google-exclude.txt file has been created for you and it is updated at the same time when the Nginx Blocker is updated.
+
+For this there are several google-exclude-0*.txt files which have been created for you and they are updated at the same time when the Nginx Blocker is updated. As the list grows there will be more exclude files created.
 
 ## To stop Ghost Spam on On Analytics
-Navigate to your Google Analytics Admin panel and add a Segment. (New Segment > Advanced > Conditions)
-This will need to be done on each and every site where you want this filter to be in effect. 
-Google has a limit on the length of the regex so it is now broken up for you into multiple google-exclude-*.txt files. 
 
+Follow the step by step visual instructions below to add these google-exclude files as segments to your web site.
 
-| Filter          | Session       | Include                                  |
-| :-------------: |:-------------:|:----------------------------------------:|
-| Hostname        | matches regex | ```yourwebsite\.com|www\.yourwebsite\.com``` |
+<table style="width:100%;margin:0;">
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-01.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-02.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-03.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-04.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-05.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-06.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_assets/google-analytics-ghost-spam-07.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+</table>
 
-| Filter          | Session       | Exclude                                                       |
-| :-------------: |:-------------:|:-------------------------------------------------------------:|
-| Hostname        | matches regex | Copy the contents from [google-exclude-01.txt](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/google-exclude-01.txt) to this field |
+## Blocking Spam Referrer Domains Using Google Webmaster Tools (How to use google-disavow.txt file)
 
-Do the same thing now for google-exclude-02.txt and google-exclude-03.txt.
-As the list grows there will be more google-exclude files each limited to Google's restriction limit.
-
-# Or Even Better Check Out RefererSpamBlocker
-
-Also check out the awesome [Referer Spam Blocker](https://referrerspamblocker.com)
-for Google Analytics which uses a collaborated source of spam domains and automatically adds all the filters to your
-Analytics sites for you in 2 easy clicks and it is FREE.
-
-## Blocking Spam Domains Using Google Webmaster Tools
-
-I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster
-Tools to block all these domains out as spammy or bad links. Use with caution.
-
+I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster Tools to block all these domains out as spammy or bad links. Use with caution.
 ## Blocking Agressive Bots at Firewall Level Using Fail2Ban
 
 I have added a custom Fail2Ban filter and action that I have written which monitors your Apache logs for bots that generate
