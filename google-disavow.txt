@@ -214,6 +214,7 @@ domain:advancedcleaner.com
 domain:advancedsoftwaresupport.com
 domain:adventureparkcostarica.com
 domain:adverster.com
+domain:advertex.info
 domain:advertisingtag.net
 domain:adviceforum.info
 domain:advocatemsk.ru
@@ -742,6 +743,7 @@ domain:bosefux.esy.es
 domain:bosman.pluto.ro
 domain:bouda.kvalitne.cz
 domain:bpro1.top
+domain:brainboosting.club
 domain:brainboostingsupplements.org
 domain:brains2.biz
 domain:brainsandeggs.blogspot.com
@@ -1234,6 +1236,7 @@ domain:delfin-aqua.com.ua
 domain:dellalimov.com
 domain:deluxedumps.com
 domain:demenageur.com
+domain:demian.kz
 domain:den-noch24.ru
 domain:dengi-pod-zalog-nedvizhimosti.ru
 domain:deniven.1bb.ru
@@ -1360,6 +1363,7 @@ domain:drupa.com
 domain:druzhbany.ru
 domain:druzhininevgeniy63.blogspot.com
 domain:dstroy.su
+domain:duplicashapp.com
 domain:dustyorate.com
 domain:dvd-famille.com
 domain:dvervmoskvu.ru
@@ -1756,6 +1760,7 @@ domain:free-stock-illustration.com
 domain:free-traffic.xyz
 domain:free-video-tool.com
 domain:freecamdollars.com
+domain:freegamesplay.online
 domain:freejabs.com
 domain:freelifetimefuckbook.com
 domain:freelotto.com
@@ -2173,6 +2178,7 @@ domain:hydropump.su
 domain:hyiphunter.org
 domain:hyipmanager.in
 domain:hystersister.com
+domain:i-hobot.ru
 domain:i-midias.net.br
 domain:i-service.kz
 domain:i4track.net
@@ -3159,6 +3165,7 @@ domain:old-rock.com
 domain:olgacvetmet.com
 domain:olvanto.ru
 domain:olympescort.com
+domain:omoikiri-japan.ru
 domain:omsk.xrus.org
 domain:onclickpredictiv.com
 domain:onclkads.com
@@ -3508,6 +3515,7 @@ domain:proekt-gaz.ru
 domain:proekt-mos.ru
 domain:professionaldieselcare.com
 domain:professionalwritingservices15.blogspot.ru
+domain:profit-opportunity.com
 domain:profitfx.online
 domain:profitsport.club
 domain:profolan.pl
@@ -3775,6 +3783,7 @@ domain:santechnik.jimdo.com
 domain:sanyuprojects.com
 domain:sarafangel.ru
 domain:saratov.xrus.org
+domain:sardinie.us
 domain:sarf3omlat.com
 domain:sarm.tk
 domain:sashagreyblog.ga
@@ -5061,6 +5070,7 @@ domain:yeartwit.com
 domain:yebocasino.co.za
 domain:yebocasino.com
 domain:yellocloud.be
+domain:yellowstonesafaritours.com
 domain:yhit.press
 domain:ynymnwbm.bloger.index.hr
 domain:yogamatsexpert.com
