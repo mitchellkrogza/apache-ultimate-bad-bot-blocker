@@ -5,6 +5,12 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
+###################################################
+### Version: V2.2017.07.382
+### Updated: Mon Jul 10 11:06:42 SAST 2017
+### Bad Referrer Count: 5206
+### Bad Bot Count: 478
+###################################################
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
