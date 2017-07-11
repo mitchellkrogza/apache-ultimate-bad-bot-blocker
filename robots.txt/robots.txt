@@ -146,6 +146,8 @@ User-agent: DIIbot
  Disallow:/ 
 User-agent: DTS Agent
  Disallow:/ 
+User-agent: DataCha0s
+ Disallow:/ 
 User-agent: DatabaseDriverMysqli
  Disallow:/ 
 User-agent: Demon
@@ -344,6 +346,8 @@ User-agent: JikeSpider
  Disallow:/ 
 User-agent: Joomla
  Disallow:/ 
+User-agent: Jorgee
+ Disallow:/ 
 User-agent: JustView
  Disallow:/ 
 User-agent: Jyxobot
@@ -449,6 +453,8 @@ User-agent: Microsoft URL Control
 User-agent: Mister PiX
  Disallow:/ 
 User-agent: Mojeek
+ Disallow:/ 
+User-agent: Morfeus Fucking Scanner
  Disallow:/ 
 User-agent: Msrabot
  Disallow:/ 
