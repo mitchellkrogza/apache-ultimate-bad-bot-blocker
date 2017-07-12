@@ -1,3 +1,10 @@
-  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
-                                 Dload  Upload   Total   Spent    Left  Speed
-  0     0    0     0    0     0      0      0 --:--:-- --:--:-- --:--:--     0100   286  100   286    0     0  49515      0 --:--:-- --:--:-- --:--:-- 57200
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access /apache.php
+on this server.</p>
+<hr>
+<address>Apache/2.4.7 (Ubuntu) Server at local.dev Port 80</address>
+</body></html>
