@@ -115,13 +115,13 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.htaccess/htaccess-mod_rewrite.txt
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.htaccess/htaccess-mod_rewrite.txt
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
 q
 IN
 rm $_inputdbA
@@ -141,13 +141,13 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.htaccess/htaccess-mod_setenvif.txt
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.htaccess/htaccess-mod_setenvif.txt
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
 q
 IN
 rm $_inputdbA
