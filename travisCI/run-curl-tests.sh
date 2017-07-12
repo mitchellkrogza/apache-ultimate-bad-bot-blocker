@@ -23,7 +23,7 @@ _curltest6=$TRAVIS_BUILD_DIR/travisCI/_curl_tests/curltest6.txt
 run_curltest1 () {
 truncate -s 0 $_curltest1
 curl -A "80legs" http://local.dev:80/apache.php 2> $_curltest1
-if grep -i '(52)' $_curltest1; then
+if grep -i 'Forbidden' $_curltest1; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -38,7 +38,7 @@ fi
 run_curltest2 () {
 truncate -s 0 $_curltest2
 curl -A "masscan" http://local.dev:80/apache.php 2> $_curltest2
-if grep -i '(52)' $_curltest2; then
+if grep -i 'Forbidden' $_curltest2; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -53,7 +53,7 @@ fi
 run_curltest3 () {
 truncate -s 0 $_curltest3
 curl -I http://local.dev:80/apache.php -e http://100dollars-seo.com 2> $_curltest3
-if grep -i '(52)' $_curltest3; then
+if grep -i 'Forbidden' $_curltest3; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'
@@ -68,7 +68,7 @@ fi
 run_curltest4 () {
 truncate -s 0 $_curltest4
 curl -I http://local.dev:80/apache.php -e http://zx6.ru 2> $_curltest4
-if grep -i '(52)' $_curltest4; then
+if grep -i 'Forbidden' $_curltest4; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'

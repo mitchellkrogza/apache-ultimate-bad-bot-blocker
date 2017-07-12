@@ -29,7 +29,7 @@ install:
 
 script:
   - sudo apache2ctl configtest
-  - bash travisCI/run_curl_tests.sh
+  - bash travisCI/run-curl-tests.sh
   - bash travisCI/modify-files-and-commit.sh
 
 before_deploy:
