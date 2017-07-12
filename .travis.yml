@@ -28,25 +28,9 @@ install:
   - travisCI/install-apache.sh
 
 script:
-  # Do an nslookup on local.dev hostname set above 
-  - nslookup local.dev
-  # Do an Apache Config Test
   - sudo apache2ctl configtest
-  # Check Apache Version
-  - sudo apache2 -v
-  # Check PHP Version
-  #- sudo php -v
-  # Check if the site responds OK
-  - curl -vsf 'http://local.dev:80/apache.php' &> /dev/stdout
-  # Test a Good User-Agent String against our site
-  - curl -A "googlebot" http://local.dev:80/apache.php &> /dev/stdout
-  # Test Some Bad Bots and Referrers
-  - STATUSCODE=$(curl -A "80legs" http://local.dev:80/apache.php &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  - STATUSCODE=$(curl -A "masscan" http://local.dev:80/apache.php &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://100dollars-seo.com &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  - STATUSCODE=$(curl -I http://local.dev:80/apache.php -e http://zx6.ru &> /dev/stderr --write-out "%{http_code}") | if test $STATUSCODE 403; then exit 0; fi
-  # Modify Files with Version Information and Commit
-  - travisCI/modify-files-and-commit.sh
+  - bash travisCI/run_curl_tests.sh
+  - bash travisCI/modify-files-and-commit.sh
 
 before_deploy:
   - travisCI/deploy-package.sh
