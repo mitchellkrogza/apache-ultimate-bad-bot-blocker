@@ -942,6 +942,8 @@ User-agent: autoemailspider
  Disallow:/ 
 User-agent: eCatch
  Disallow:/ 
+User-agent: fq
+ Disallow:/ 
 User-agent: internetVista monitor
  Disallow:/ 
 User-agent: lwp-request
