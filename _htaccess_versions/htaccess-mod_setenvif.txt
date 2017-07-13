@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.401
-### Updated: Wed Jul 12 16:54:43 SAST 2017
-### Bad Referrer Count: 5262
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -2026,6 +2020,7 @@ SetEnvIfNoCase Referer esfchat\.tk spambot=yes
 SetEnvIfNoCase Referer eshop\.md spambot=yes
 SetEnvIfNoCase Referer eshop4u\.jp spambot=yes
 SetEnvIfNoCase Referer esnm\.ru spambot=yes
+SetEnvIfNoCase Referer esopini\.com spambot=yes
 SetEnvIfNoCase Referer espaceinventoristes\.com spambot=yes
 SetEnvIfNoCase Referer essaypro\.com spambot=yes
 SetEnvIfNoCase Referer essayservicewriting\.org spambot=yes
@@ -2677,6 +2672,7 @@ SetEnvIfNoCase Referer hoverboardforsaledirect\.com spambot=yes
 SetEnvIfNoCase Referer howlongdoestizanidinestayinyoursystem\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer howmuchdoestizanidinecost\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer howopen\.ru spambot=yes
+SetEnvIfNoCase Referer howtowhitenteethfast\.xyz spambot=yes
 SetEnvIfNoCase Referer hplaserjetpdriver8y\.pen\.io spambot=yes
 SetEnvIfNoCase Referer hptwaakw\.blog\.fc2\.com spambot=yes
 SetEnvIfNoCase Referer hreade\.com spambot=yes
@@ -3435,6 +3431,7 @@ SetEnvIfNoCase Referer monclervests\.xyz spambot=yes
 SetEnvIfNoCase Referer monetizationking\.net spambot=yes
 SetEnvIfNoCase Referer monetizer\.com\-01\.site spambot=yes
 SetEnvIfNoCase Referer money\-every\-day\.com spambot=yes
+SetEnvIfNoCase Referer money\-for\-placing\-articles\.com spambot=yes
 SetEnvIfNoCase Referer moneymaster\.ru spambot=yes
 SetEnvIfNoCase Referer moneytop\.ru spambot=yes
 SetEnvIfNoCase Referer moneyviking\-a\.akamaihd\.net spambot=yes
@@ -4156,6 +4153,7 @@ SetEnvIfNoCase Referer raisedseo\.com spambot=yes
 SetEnvIfNoCase Referer randalljhoward\.com spambot=yes
 SetEnvIfNoCase Referer randki\-sex\.com spambot=yes
 SetEnvIfNoCase Referer rank\-checker\.online spambot=yes
+SetEnvIfNoCase Referer rankexperience\.com spambot=yes
 SetEnvIfNoCase Referer ranking2017\.ga spambot=yes
 SetEnvIfNoCase Referer rankingchart\.de spambot=yes
 SetEnvIfNoCase Referer rankings\-analytics\.com spambot=yes
@@ -4781,6 +4779,7 @@ SetEnvIfNoCase Referer strongsignal\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer stroydetali\.ru spambot=yes
 SetEnvIfNoCase Referer stroyhelp\-dv\.ru spambot=yes
 SetEnvIfNoCase Referer stroymonolit\.su spambot=yes
+SetEnvIfNoCase Referer stroyplus\.ru spambot=yes
 SetEnvIfNoCase Referer strv\.se spambot=yes
 SetEnvIfNoCase Referer studiofaca\.com spambot=yes
 SetEnvIfNoCase Referer stuff\-about\-money\.com spambot=yes
@@ -5756,6 +5755,7 @@ SetEnvIfNoCase Referer zscalerone\.net spambot=yes
 SetEnvIfNoCase Referer zscalertwo\.net spambot=yes
 SetEnvIfNoCase Referer zverokruh\-shop\.cz spambot=yes
 SetEnvIfNoCase Referer zvetki\.ru spambot=yes
+SetEnvIfNoCase Referer zvezdagedon\.ru spambot=yes
 SetEnvIfNoCase Referer zx6\.ru spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
