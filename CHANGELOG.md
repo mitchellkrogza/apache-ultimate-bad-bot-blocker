@@ -1,5 +1,10 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
+### 2017-07-13
+- Configuration Instructions Updated.
+- Moved google-exclude and google-disavow files into appropriate folders.
+- Added visual instructions for how to use google-exclude files in Google Analytics.
+
 ### 2017-06-26
 - Better Regex Pattern Matching for BrowserMatchNoCase statements - Exact matching of User-Agent names inside strings using word boundaries without creating false positives. Reported in Issue https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/issues/30
 - Old regex `BrowserMatchNoCase "^Spbot" bad_bot` now becomes `BrowserMatchNoCase "^(.*?)(\bSpbot\b)(.*)$" bad_bot`
@@ -20,6 +25,7 @@
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes like this take place.
 - Also follow me on twitter @ubuntu101za for update notifications
+- All Users please update your custom include files to fall into line with the new regex patterns.
 
 ### 2017-04-11
 - Introduced Repo Email Notification Mailing List
