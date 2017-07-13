@@ -16,8 +16,7 @@
 # Here our script runs, pulls the latest update, reloads apache and emails you a notification
 # Place your own valid email address where it says "me@myemail.com"
  
-cd /etc/apache2/custom.d
-sudo wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/custom.d/globalblacklist.conf -O globalblacklist.conf
+sudo wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/custom.d/globalblacklist.conf -O /etc/custom.d/globalblacklist.conf
 sudo service apache2 reload | mail -s "Apache Bad Bot Blocker Updated" me@myemail.com
 exit 0
 
