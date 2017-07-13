@@ -19,7 +19,7 @@
 ### Created by: https://github.com/mitchellkrogza
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
-### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
@@ -469,7 +469,14 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-##### Some other free projects
+### Also Checkout The Big List of Hacked Malware Web Sites
+
+This repository contains a list of all web sites I come across that are hacked with malware. 
+Most site owners are unaware their sites have been hacked and are being used to plant malware.
+
+Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+
+### Some other free projects
 
 - https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
 - https://github.com/mitchellkrogza/Badd-Boyz-Hosts
@@ -480,7 +487,7 @@ SOFTWARE.
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
 - https://github.com/mariusv/nginx-badbot-blocker
 
-##### Into Photography?
+### Into Photography?
 Come drop by and visit me at https://mitchellkrog.com
 
 ### Acknowledgements:
