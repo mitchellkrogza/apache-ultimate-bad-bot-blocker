@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.405
-### Updated: Thu Jul 13 13:05:01 SAST 2017
-### Bad Referrer Count: 5268
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -4285,6 +4279,7 @@ SetEnvIfNoCase Referer rp9\.ru spambot=yes
 SetEnvIfNoCase Referer ru\-dety\.ru spambot=yes
 SetEnvIfNoCase Referer rucrypt\.com spambot=yes
 SetEnvIfNoCase Referer ruex\.org\.ua spambot=yes
+SetEnvIfNoCase Referer ruf777\.com spambot=yes
 SetEnvIfNoCase Referer rukino\.org spambot=yes
 SetEnvIfNoCase Referer rumamba\.com spambot=yes
 SetEnvIfNoCase Referer running\-line\.ru spambot=yes
@@ -5609,6 +5604,7 @@ SetEnvIfNoCase Referer xvideosporn\.biz spambot=yes
 SetEnvIfNoCase Referer xwatt\.ru spambot=yes
 SetEnvIfNoCase Referer xxart\.ru spambot=yes
 SetEnvIfNoCase Referer xxlargepop\.com spambot=yes
+SetEnvIfNoCase Referer xxx\-cam\.webcam spambot=yes
 SetEnvIfNoCase Referer xxx\-treker\.ru spambot=yes
 SetEnvIfNoCase Referer xxxdatinglocal\.us spambot=yes
 SetEnvIfNoCase Referer xxxguitars\.com spambot=yes
