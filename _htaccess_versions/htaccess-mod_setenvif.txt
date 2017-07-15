@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.407
-### Updated: Sat Jul 15 11:42:09 SAST 2017
-### Bad Referrer Count: 5275
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -702,6 +696,7 @@ SetEnvIfNoCase Referer adserver\-e7\.com spambot=yes
 SetEnvIfNoCase Referer adservme\.com spambot=yes
 SetEnvIfNoCase Referer adsfresh\.men spambot=yes
 SetEnvIfNoCase Referer adsland\.men spambot=yes
+SetEnvIfNoCase Referer adsref\.men spambot=yes
 SetEnvIfNoCase Referer adssafeprotected\.com spambot=yes
 SetEnvIfNoCase Referer adtech\.de spambot=yes
 SetEnvIfNoCase Referer adtech\.fr spambot=yes
@@ -866,6 +861,7 @@ SetEnvIfNoCase Referer apartmentbay\.ru spambot=yes
 SetEnvIfNoCase Referer apartmentratings\.com spambot=yes
 SetEnvIfNoCase Referer apccargo\.com spambot=yes
 SetEnvIfNoCase Referer apelsinnik\.website spambot=yes
+SetEnvIfNoCase Referer api\.stathat\.com spambot=yes
 SetEnvIfNoCase Referer apiadanaknet\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiallgeniusinfo\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiappenableinfo\-a\.akamaihd\.net spambot=yes
@@ -2082,6 +2078,7 @@ SetEnvIfNoCase Referer eyes\-on\-you\.ga spambot=yes
 SetEnvIfNoCase Referer eyessurgery\.ru spambot=yes
 SetEnvIfNoCase Referer eywords\-monitoring\-your\-success\.com spambot=yes
 SetEnvIfNoCase Referer ez8motelseaworldsandiego\.com spambot=yes
+SetEnvIfNoCase Referer ezb\.elvenmachine\.com spambot=yes
 SetEnvIfNoCase Referer ezigarettekaufen\.myblog\.de spambot=yes
 SetEnvIfNoCase Referer ezigarettekaufen1\.hpage\.com spambot=yes
 SetEnvIfNoCase Referer ezigarettekaufen2\.blox\.pl spambot=yes
@@ -2625,6 +2622,7 @@ SetEnvIfNoCase Referer hmywwogw\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer hobbyhuren\-datenbank\.com spambot=yes
 SetEnvIfNoCase Referer hobbyhuren24\.net spambot=yes
 SetEnvIfNoCase Referer hobild\.net spambot=yes
+SetEnvIfNoCase Referer hoholikik\.club spambot=yes
 SetEnvIfNoCase Referer hol\.es spambot=yes
 SetEnvIfNoCase Referer holidaypics\.org spambot=yes
 SetEnvIfNoCase Referer hollywoodactress\.info spambot=yes
@@ -3809,11 +3807,14 @@ SetEnvIfNoCase Referer paramountmarble\.co\.uk spambot=yes
 SetEnvIfNoCase Referer parlament\.biz spambot=yes
 SetEnvIfNoCase Referer partner\-cdn\.men spambot=yes
 SetEnvIfNoCase Referer partner\-high\.men spambot=yes
+SetEnvIfNoCase Referer partner\-pop\.men spambot=yes
 SetEnvIfNoCase Referer partner\-print\.men spambot=yes
 SetEnvIfNoCase Referer partner\-stop\.men spambot=yes
 SetEnvIfNoCase Referer partner\-trustworthy\.men spambot=yes
+SetEnvIfNoCase Referer partnerline\.men spambot=yes
 SetEnvIfNoCase Referer partners\-ship\.pro spambot=yes
 SetEnvIfNoCase Referer partnersafe\.men spambot=yes
+SetEnvIfNoCase Referer partnerworkroom\.men spambot=yes
 SetEnvIfNoCase Referer partybunny\.ru spambot=yes
 SetEnvIfNoCase Referer pateaswing\.com spambot=yes
 SetEnvIfNoCase Referer pathwhelp\.org spambot=yes
