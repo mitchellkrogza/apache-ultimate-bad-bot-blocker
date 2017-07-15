@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.408
-### Updated: Sat Jul 15 13:33:00 SAST 2017
-### Bad Referrer Count: 5282
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -898,6 +892,7 @@ SetEnvIfNoCase Referer appfastplay\.com spambot=yes
 SetEnvIfNoCase Referer appfixing\.space spambot=yes
 SetEnvIfNoCase Referer appiq\.mobi spambot=yes
 SetEnvIfNoCase Referer apple\.com\-webbrowsing\-security\.review spambot=yes
+SetEnvIfNoCase Referer apple\.com\-webbrowsing\-security\.science spambot=yes
 SetEnvIfNoCase Referer appleid\-verification\.com spambot=yes
 SetEnvIfNoCase Referer applicationg29\.com spambot=yes
 SetEnvIfNoCase Referer approved\.su spambot=yes
@@ -3628,6 +3623,7 @@ SetEnvIfNoCase Referer nl\.netlog\.com spambot=yes
 SetEnvIfNoCase Referer nmrk\.ru spambot=yes
 SetEnvIfNoCase Referer noclegonline\.info spambot=yes
 SetEnvIfNoCase Referer nodup\.ru spambot=yes
+SetEnvIfNoCase Referer nofreezingmac\.click spambot=yes
 SetEnvIfNoCase Referer nofreezingmac\.work spambot=yes
 SetEnvIfNoCase Referer nonews\.co spambot=yes
 SetEnvIfNoCase Referer nootrino\.com spambot=yes
