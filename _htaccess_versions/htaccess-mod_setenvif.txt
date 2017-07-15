@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.406
-### Updated: Fri Jul 14 15:11:28 SAST 2017
-### Bad Referrer Count: 5270
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -3088,6 +3082,7 @@ SetEnvIfNoCase Referer ldrtrack\.com spambot=yes
 SetEnvIfNoCase Referer leadn\.pl spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
 SetEnvIfNoCase Referer leboard\.ru spambot=yes
+SetEnvIfNoCase Referer lechenie\-gemorroya\.com spambot=yes
 SetEnvIfNoCase Referer ledis\.top spambot=yes
 SetEnvIfNoCase Referer ledpolice\.ru spambot=yes
 SetEnvIfNoCase Referer legalrc\.biz spambot=yes
@@ -5023,6 +5018,7 @@ SetEnvIfNoCase Referer topappspro\.com spambot=yes
 SetEnvIfNoCase Referer topbestgames\.com spambot=yes
 SetEnvIfNoCase Referer topclickguru\.com spambot=yes
 SetEnvIfNoCase Referer topdownloads\.ru spambot=yes
+SetEnvIfNoCase Referer topkarkas\.com spambot=yes
 SetEnvIfNoCase Referer topmira\.com spambot=yes
 SetEnvIfNoCase Referer topquality\.cf spambot=yes
 SetEnvIfNoCase Referer topshef\.ru spambot=yes
@@ -5223,6 +5219,7 @@ SetEnvIfNoCase Referer valuado\.com spambot=yes
 SetEnvIfNoCase Referer valueclick\.com spambot=yes
 SetEnvIfNoCase Referer vancleefreplica\.pw spambot=yes
 SetEnvIfNoCase Referer vandrie\-ict\.nl spambot=yes
+SetEnvIfNoCase Referer vapeface\.club spambot=yes
 SetEnvIfNoCase Referer vapsy\.com spambot=yes
 SetEnvIfNoCase Referer varbergsvind\.se spambot=yes
 SetEnvIfNoCase Referer varikoz24\.com spambot=yes
@@ -5240,6 +5237,7 @@ SetEnvIfNoCase Referer vektorpress\.ru spambot=yes
 SetEnvIfNoCase Referer vekzdorov\.ru spambot=yes
 SetEnvIfNoCase Referer vellings\.info spambot=yes
 SetEnvIfNoCase Referer velobikestock\.com spambot=yes
+SetEnvIfNoCase Referer venerologiya\.com spambot=yes
 SetEnvIfNoCase Referer venta\-prom\.ru spambot=yes
 SetEnvIfNoCase Referer ventelnos\.com spambot=yes
 SetEnvIfNoCase Referer vereo\.eu spambot=yes
@@ -5248,6 +5246,7 @@ SetEnvIfNoCase Referer vesnatehno\.com spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.ru spambot=yes
 SetEnvIfNoCase Referer vezuviy\.su spambot=yes
 SetEnvIfNoCase Referer vgoloveboli\.net spambot=yes
+SetEnvIfNoCase Referer via\-energy\-acquistare\.com spambot=yes
 SetEnvIfNoCase Referer via\-energy\-cumpara\.com spambot=yes
 SetEnvIfNoCase Referer via\-gra\.webstarts\.com spambot=yes
 SetEnvIfNoCase Referer viagra\.pp\.ua spambot=yes
