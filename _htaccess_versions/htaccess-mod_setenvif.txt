@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.411
-### Updated: Sun Jul 16 12:27:31 SAST 2017
-### Bad Referrer Count: 5295
-### Bad Bot Count: 483
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -1811,6 +1805,7 @@ SetEnvIfNoCase Referer distver\.ru spambot=yes
 SetEnvIfNoCase Referer div\.as spambot=yes
 SetEnvIfNoCase Referer divatraffic\.com spambot=yes
 SetEnvIfNoCase Referer dividendo\.ru spambot=yes
+SetEnvIfNoCase Referer divku\.ru spambot=yes
 SetEnvIfNoCase Referer diy\-handmade\-ideas\.com spambot=yes
 SetEnvIfNoCase Referer djekxa\.ru spambot=yes
 SetEnvIfNoCase Referer djonwatch\.ru spambot=yes
@@ -1937,6 +1932,7 @@ SetEnvIfNoCase Referer ekn\-art\.se spambot=yes
 SetEnvIfNoCase Referer ekobata\.ru spambot=yes
 SetEnvIfNoCase Referer ekosmetyki\.net\.pl spambot=yes
 SetEnvIfNoCase Referer ekspertmed\.com spambot=yes
+SetEnvIfNoCase Referer ekspresihati\.info spambot=yes
 SetEnvIfNoCase Referer ekto\.ee spambot=yes
 SetEnvIfNoCase Referer el\-nation\.com spambot=yes
 SetEnvIfNoCase Referer eladkarako\.com spambot=yes
@@ -1983,6 +1979,7 @@ SetEnvIfNoCase Referer eloxal\.ru spambot=yes
 SetEnvIfNoCase Referer elstal\.com\.pl spambot=yes
 SetEnvIfNoCase Referer elvel\.com\.ua spambot=yes
 SetEnvIfNoCase Referer elvenar\.com spambot=yes
+SetEnvIfNoCase Referer emailaccountlogin\.co spambot=yes
 SetEnvIfNoCase Referer embedle\.com spambot=yes
 SetEnvIfNoCase Referer emediate\.eu spambot=yes
 SetEnvIfNoCase Referer empathica\.com spambot=yes
@@ -3110,6 +3107,7 @@ SetEnvIfNoCase Referer letolove\.ru spambot=yes
 SetEnvIfNoCase Referer letsart\.ru spambot=yes
 SetEnvIfNoCase Referer letslowbefast\.site spambot=yes
 SetEnvIfNoCase Referer letslowbefast\.today spambot=yes
+SetEnvIfNoCase Referer letsrepair\.in spambot=yes
 SetEnvIfNoCase Referer letto\.by spambot=yes
 SetEnvIfNoCase Referer levaquin750mg\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer lexaprogeneric\.link spambot=yes
@@ -3506,6 +3504,7 @@ SetEnvIfNoCase Referer musezone\.su spambot=yes
 SetEnvIfNoCase Referer music\.utrolive\.ru spambot=yes
 SetEnvIfNoCase Referer musicas\.baixar\-musicas\-gratis\.com spambot=yes
 SetEnvIfNoCase Referer musicdaddy\.net spambot=yes
+SetEnvIfNoCase Referer musicktab\.com spambot=yes
 SetEnvIfNoCase Referer musicspire\.online spambot=yes
 SetEnvIfNoCase Referer musicstock\.me spambot=yes
 SetEnvIfNoCase Referer musicvidz\.ru spambot=yes
@@ -4604,6 +4603,7 @@ SetEnvIfNoCase Referer site3\.free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer site5\.com spambot=yes
 SetEnvIfNoCase Referer sitebeam\.net spambot=yes
 SetEnvIfNoCase Referer siteexpress\.co\.il spambot=yes
+SetEnvIfNoCase Referer siteheart\.net spambot=yes
 SetEnvIfNoCase Referer siteonomy\.com spambot=yes
 SetEnvIfNoCase Referer siteripz\.net spambot=yes
 SetEnvIfNoCase Referer sitevaluation\.com spambot=yes

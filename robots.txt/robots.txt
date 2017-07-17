@@ -120,6 +120,8 @@ User-agent: Cliqzbot
  Disallow:/ 
 User-agent: Cogentbot
  Disallow:/ 
+User-agent: cognitiveseo
+ Disallow:/ 
 User-agent: Collector
  Disallow:/ 
 User-agent: Copier
@@ -606,6 +608,8 @@ User-agent: RankActiveLinkBot
  Disallow:/ 
 User-agent: Rankivabot
  Disallow:/ 
+User-agent: RankurBot
+ Disallow:/ 
 User-agent: RealDownload
  Disallow:/ 
 User-agent: Reaper
@@ -657,6 +661,8 @@ User-agent: SEOlyticsCrawler
 User-agent: Seomoz
  Disallow:/ 
 User-agent: SEOprofiler
+ Disallow:/ 
+User-agent: seoscanners
  Disallow:/ 
 User-agent: SEOstats
  Disallow:/ 
