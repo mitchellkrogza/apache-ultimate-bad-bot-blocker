@@ -486,6 +486,7 @@ Come drop by and visit me at https://mitchellkrog.com or <a href='https://twitte
 - https://github.com/mitchellkrogza/Travis-CI-Nginx-for-Testing-Nginx-Configuration
 - https://github.com/mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
+- https://github.com/funilrys/funceble
 - https://github.com/mariusv/nginx-badbot-blocker
 
 ### Acknowledgements:
@@ -493,6 +494,7 @@ Come drop by and visit me at https://mitchellkrog.com or <a href='https://twitte
 Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
 
 - Stevie-Ray Hartog https://github.com/Stevie-Ray
+- Nissar Chababy - https://github.com/funilrys/funceble (Excellent script for checking ACTIVE, INACTIVE and EXPIRED Domain Names)
 - Marius Voila https://github.com/mariusv
 - Cătălin Mariș https://github.com/alrra
 - deformhead https://github.com/deformhead
@@ -509,6 +511,7 @@ If you believe your name should be here, drop me a line.
 ### And remember [Coding make me thirsty so why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 ## Update Notification System
+
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
