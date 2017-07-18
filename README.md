@@ -391,7 +391,7 @@ can add that functionality if you like copying the awk statement !~ from the fir
 
 ##### Cron for Monitoring Daily Referers on Apache
 
-`00 08 * * * tail -10000 /var/log/apache/mydomain-access.log | awk '$11 !~ /google|bing|yahoo|yandex|mywebsite.com/' | awk '{print $11}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail - s "Top 1000 Referers for Mydomain.com" me@mydomain.com`
+`00 08 * * * tail -10000 /var/log/apache/mydomain-access.log | awk '$11 !~ /google|bing|yahoo|yandex|mywebsite.com/' | awk '{print $11}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail -s "Top 1000 Referers for Mydomain.com" me@mydomain.com`
 
 ##### Cron for Monitoring Daily User Agents on Apache
 
