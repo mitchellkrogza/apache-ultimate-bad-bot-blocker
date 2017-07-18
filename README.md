@@ -23,7 +23,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
 #### Also follow me on twitter @ubuntu101za for update notifications
-https://twitter.com/ubuntu101za
+
+<a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
 - CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
 - Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
@@ -472,6 +473,10 @@ Most site owners are unaware their sites have been hacked and are being used to 
 
 Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
 
+### Into Photography?
+
+Come drop by and visit me at https://mitchellkrog.com or <a href='https://twitter.com/MitchellKrog'><img src='https://img.shields.io/twitter/follow/MitchellKrog.svg?style=social&label=Follow' alt='Follow @MitchellKrog'></a>
+
 ### Some other free projects
 
 - https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
@@ -482,9 +487,6 @@ Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malwar
 - https://github.com/mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
 - https://github.com/mariusv/nginx-badbot-blocker
-
-### Into Photography?
-Come drop by and visit me at https://mitchellkrog.com
 
 ### Acknowledgements:
 
