@@ -21,8 +21,8 @@ git config --global push.default simple
 git checkout master
 
 # Modify our files with build and version information
-sudo $TRAVIS_BUILD_DIR/travisCI/modify-globalblacklist.sh
-sudo $TRAVIS_BUILD_DIR/travisCI/modify-readme.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-globalblacklist.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 
 # Add the modified files and commit
 git add -A

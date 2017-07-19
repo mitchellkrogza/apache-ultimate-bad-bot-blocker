@@ -1,5 +1,10 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
+### 2017-07-19
+- Renamed some folder names.
+- Update Travis build scripts to new folder naming.
+- Update readme and configuration files to new folder naming.
+
 ### 2017-07-13
 - Configuration Instructions Updated.
 - Moved google-exclude and google-disavow files into appropriate folders.
