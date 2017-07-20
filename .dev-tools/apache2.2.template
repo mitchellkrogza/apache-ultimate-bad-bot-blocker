@@ -4,10 +4,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V2.2017.07
-### Updated: Sun Jul  9 17:13:14 SAST 2017
-### Bad Referrer Count: 5197
-### Bad Bot Count: 479
+### Version: V3.2017.07.450
+### Updated: Thu Jul 20 16:13:42 SAST 2017
+### Bad Referrer Count: 5430
+### Bad Bot Count: 493tmpapache
 ###################################################
 ### Version Information ##
 
@@ -65,35 +65,35 @@
 # ***********************************************
 
 # START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
-BrowserMatchNoCase "^(.*?)(\badidxbot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bAdsBot-Google\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\baolbuild\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bbingbot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bbingpreview\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bDoCoMo\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bduckduckgo\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bfacebookexternalhit\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bFeedfetcher-Google\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot-Image\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot-Mobile\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot-News\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot/Test\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGooglebot-Video\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bGoogle-HTTP-Java-Client\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bgsa-crawler\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bJakarta\ Commons\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bKraken/0.1\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bLinkedInBot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bMediapartners-Google\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bmsnbot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bmsnbot-media\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bSAMSUNG\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bslurp\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bteoma\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bTwitterBot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bWordpress\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\byahoo\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\badidxbot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bAdsBot-Google\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\baolbuild\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bbingbot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bbingpreview\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bDoCoMo\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bduckduckgo\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bfacebookexternalhit\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bFeedfetcher-Google\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot-Image\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot-Mobile\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot-News\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot/Test\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGooglebot-Video\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bGoogle-HTTP-Java-Client\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bgsa-crawler\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bJakarta\ Commons\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bKraken/0.1\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkedInBot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bMediapartners-Google\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bmsnbot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bmsnbot-media\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bSAMSUNG\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bslurp\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bteoma\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bTwitterBot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bWordpress\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\byahoo\b)(.*)$" good_bot=1
 # END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
 
 # **********************************
@@ -103,11 +103,11 @@ BrowserMatchNoCase "^(.*?)(\byahoo\b)(.*)$" good_bot
 # I allow libwww-perl as I use it for monitoring systems with Munin but it is rate limited
 
 # START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###
-BrowserMatchNoCase "^(.*?)(\bjetmon\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\blibwww-perl\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bLynx\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bmunin\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bWget/1.15\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\bjetmon\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\blibwww-perl\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bLynx\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bmunin\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bWget/1.15\b)(.*)$" good_bot=1
 # END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###
 
 # **************************************************************
@@ -119,24 +119,24 @@ BrowserMatchNoCase "^(.*?)(\bWget/1.15\b)(.*)$" good_bot
 # If you want to see this included.
 
 # START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###
-BrowserMatchNoCase "^(.*?)(\bAlexa\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\barchive.org\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bBaidu\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bBUbiNG\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bFlipboardProxy\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bia_archiver\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bMozilla/4.0\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bMSIE\ 7.0\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bPresto\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bR6_CommentReader\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bR6_FeedFetcher\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bRPT-HTTPClient\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bSeznamBot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bsfFeedReader/0.9\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bSpaidu\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bUptimeRobot/2.0\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bYandexBot\b)(.*)$" good_bot
-BrowserMatchNoCase "^(.*?)(\bYandexImages\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\bAlexa\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\barchive.org\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bBaidu\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bBUbiNG\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bFlipboardProxy\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bia_archiver\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bMozilla/4.0\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bMSIE\ 7.0\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bPresto\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bR6_CommentReader\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bR6_FeedFetcher\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bRPT-HTTPClient\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bSeznamBot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bsfFeedReader/0.9\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpaidu\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bUptimeRobot/2.0\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bYandexBot\b)(.*)$" good_bot=1
+BrowserMatchNoCase "^(.*?)(\bYandexImages\b)(.*)$" good_bot=1
 # END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###
 
 # *********************************************
@@ -146,485 +146,499 @@ BrowserMatchNoCase "^(.*?)(\bYandexImages\b)(.*)$" good_bot
 # Known Vulnerability Scanners (now merged into one section)
 
 # START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
-BrowserMatchNoCase "^(.*?)(\b360Spider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\b80legs\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAbonti\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAboundex\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAcunetix\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bADmantX\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAhrefsBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAIBOT\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAiHitBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAipbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAlexibot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAlligator\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAllSubmitter\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAnarchie\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bApexoo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bASPSeek\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAsterias\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bAttach\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bautoemailspider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBackDoorBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBackStreet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBackWeb\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBadass\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBandit\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBatchFTP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBattleztar\ Bazinga\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBBBike\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBDFetch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBetaBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBigfoot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBitacle\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlackboard\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlack\ Hole\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlackWidow\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBLEXBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlow\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlowFish\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBoardreader\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBolt\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBotALot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBrandprotect\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBrandwatch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBubing\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBuddy\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBuiltBotTough\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBuiltWith\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBullseye\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBunnySlippers\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBuzzSumo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCalculon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCATExplorador\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCazoodleBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCCBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCegbfeieh\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCheeseBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCherryPicker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bChinaClaw\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bChlooe\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bClaritybot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCliqzbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCogentbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCollector\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCopier\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCopyRightCheck\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCopyscape\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCosmos\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCraftbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCrazyWebCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCrescent\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCSHttp\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCurious\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCusto\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDatabaseDriverMysqli\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDBLBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDemon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDeusu\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDevil\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDIIbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDirbuster\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDisco\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDiscobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDiscoverybot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDittoSpyder\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDomainAppender\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDomainCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDomainSigmaCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDotbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDownload\ Demon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDownload\ Devil\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDownload\ Wonder\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDragonfly\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDrip\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDTS\ Agent\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEasyDL\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEbingbong\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\beCatch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bECCP/1.0\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEcxi\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEirGrabber\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEMail\ Collector\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEMail\ Extractor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEMail\ Siphon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEMail\ Wolf\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEroCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEvil\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bExabot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bExpress\ WebPictures\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bExtractor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bExtractorPro\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEyeNetIE\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bEzooms\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFHscan\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFimap\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFindxbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFirefox/7.0\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFlashGet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFlunky\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFoobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFreeuploader\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFrontPage\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bFyrebot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGalaxyBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGenieo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGetintent\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGetRight\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGetWeb\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGigablast\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGigabot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGo-Ahead-Got-It\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGotit\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGoZilla\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGo!Zilla\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrabber\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrabNet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrafula\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrapeFX\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrapeshotCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGridBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGT::WWW\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHaosouSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHarvest\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHavij\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHEADMasterSEO\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHeritrix\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHloader\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHMView\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHTMLparser\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHTTP::Lite\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHTTrack\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHumanlinks\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bHybridBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIblog\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIDBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bId-search\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIlseBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bImage\ Fetch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bImage\ Stripper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bImage\ Sucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIndy\ Library\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bInfoNaviRobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bInfoTekies\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIntelliseek\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bInterGET\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bInternet\ Ninja\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bInternetSeer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\binternetVista\ monitor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIria\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIRLbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bIskanie\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJamesBOT\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJbrofuzz\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJennyBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJetCar\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJikeSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJOC\ Web\ Spider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJoomla\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJustView\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bJyxobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bKenjin\ Spider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bKeyword\ Density\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLanshanbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLarbin\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLeechFTP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLeechGet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLexiBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLftp\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLibWeb\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLibwhisker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLightspeedsystems\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLikse\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinkdexbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinkextractorPro\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinkpadBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinkScan\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinksManager\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinkWalker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinqiaMetadataDownloaderBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinqiaRSSBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLinqiaScrapeBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLipperhey\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLitemage_walker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLmspider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLNSpiderguy\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLtx71\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\blwp-request\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bLWP::Simple\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\blwp-trivial\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMagnet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMag-Net\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bmagpie-crawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMail.ru\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMajestic12\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMarkMonitor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMarkWatch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMasscan\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMass\ Downloader\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMata\ Hari\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMeanpathbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMegaIndex.ru\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMetauri\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMFC_Tear_Sample\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMicrosoft\ Data\ Access\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMicrosoft\ URL\ Control\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMIDown\ tool\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMIIxpc\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMister\ PiX\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMJ12bot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMojeek\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMSFrontPage\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMSIE\ 6.0\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMSIECrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMsrabot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMS\ Web\ Services\ Client\ Protocol\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bMusobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bName\ Intelligence\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNameprotect\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNavroad\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNearSite\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNeedle\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNessus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetAnts\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetcraft\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bnetEstate\ NE\ Crawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetLyzer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetMechanic\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNettrack\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNet\ Vampire\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetZIP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNextGenSearchBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNibbler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNICErsPRO\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNiki-bot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNikto\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNimbleCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNinja\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNmap\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNPbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNutch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOctopus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOffline\ Explorer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOffline\ Navigator\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOpenfind\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOpenLinkProfiler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOpenvas\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOrangeBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOrangeSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOutfoxBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPageAnalyzer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPage\ Analyzer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPageGrabber\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPage\ Grabber\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bpage\ scorer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPageScorer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPanscient\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPapa\ Foto\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPavuk\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bpcBrowser\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPECL::HTTP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPeoplePal\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPHPCrawl\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPicscout\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPicsearch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPimonster\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPi-Monster\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPixray\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPleaseCrawl\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPockey\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPOE-Component-Client-HTTP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bProbethenet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bProPowerBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bProWebWalker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bProximic\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPsbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPump\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bQueryN\ Metasearch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bQwantify\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRankActiveLinkBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRankivabot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRealDownload\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bReaper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRecorder\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRedesScrapy\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bReGet\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRepoMonkey\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRipper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRocketCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRogerbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSalesIntelligent\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSBIder\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScanAlert\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScanbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScrapy\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScreaming\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScreaming\ Frog\ SEO\ Spider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bScreenerBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSearchestate\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSearchmetricsBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSemrush\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSemrushBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOkicks\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOkicks-Robot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOlyticsCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSeomoz\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOprofiler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOstats\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiphon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSISTRIX\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSISTRIX\ Crawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSitebeam\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiteExplorer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiteimprove\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiteLockSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiteSnagger\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSiteSucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSite\ Sucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSitevigil\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSlackbot-LinkExpanding\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSlySearch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSmartDownload\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSnake\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSnapbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSnoopy\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSocialRankIOBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSogou\ web\ spider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSosospider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpaceBison\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpammen\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpankBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpanner\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSpinn3r\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSputnikBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSqlmap\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSqlworm\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSqworm\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSteeler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bStripper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSucuri\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSuperBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSuperHTTP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSurfbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSurveyBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSuzuran\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSwiftbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSzukacz\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bT0PHackTeam\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bT8Abot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\btAkeOut\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTeleport\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTeleportPro\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTelesoft\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTelesphoreo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTelesphorep\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bThe\ Intraformant\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTheNomad\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTightTwatBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTitan\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bToata\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bToweyabot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTrendictionbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTrue_Robot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTuringos\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTurnitinBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTurnitin\ Bot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTurnitin\ Robot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTwengaBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTwice\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTyphoeus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bUnisterBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bURLy.Warning\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bURLy\ Warning\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVacuum\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVagabondo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVB\ Project\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVCI\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVeriCiteCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVidibleScraper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVoidEYE\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVoil\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bVoltron\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWallpapers/3.0\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWallpapersHD\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWASALive-Bot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWBSearchBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebalta\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebAuto\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Auto\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebBandit\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Bandit\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebCollage\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Collage\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebCopier\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Copier\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWEBDAV\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWEBDAV\ Client\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebEnhancer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Enhancer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebFetch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Fetch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebFuck\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Fuck\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebGo\ IS\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebImageCollector\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Image\ Collector\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebLeacher\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebmasterWorldForumBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bwebmeup-crawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebPix\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Pix\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebReaper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Reaper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebSauger\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Sauger\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebshag\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebsiteExtractor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebsite\ Extractor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebsiteQuester\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebsite\ Quester\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebster\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebStripper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Stripper\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebSucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Sucker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebWhacker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeb\ Whacker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWebZIP\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWeSEE\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWhack\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWhacker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWhatweb\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWidow\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWinHTTrack\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWiseGuys\ Robot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWISENutbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWonderbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWoobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWotbox\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWprecon\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWPScan\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWWW-Collector-E\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWWW-Mechanize\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWWW::Mechanize\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWWWOFFLE\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bx22Mozilla\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bXaldon_WebSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bXaldon\ WebSpider\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bXenu\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bYoudaoBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZade\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZermelo\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZeus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZgrab\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZitebot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZmEu\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZumBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bZyBorg\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b360Spider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\b80legs\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAbonti\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAboundex\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAcunetix\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bADmantX\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAhrefsBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAIBOT\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAiHitBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAipbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAlexibot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAlligator\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAllSubmitter\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAnarchie\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bApexoo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bASPSeek\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAsterias\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bAttach\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bautoemailspider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBackDoorBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBacklink-Ceck\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bbacklink-check\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBacklinkCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBackStreet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBackWeb\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBadass\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBandit\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBatchFTP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBattleztar\ Bazinga\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBBBike\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBDFetch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBetaBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBigfoot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBitacle\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBlackboard\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBlack\ Hole\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBlackWidow\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBLEXBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBlow\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBlowFish\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBoardreader\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBolt\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBotALot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBrandprotect\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBrandProtect\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBrandwatch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBubing\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBuddy\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBuiltBotTough\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBuiltWith\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBullseye\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBunnySlippers\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bBuzzSumo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCalculon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCATExplorador\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCazoodleBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCCBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCegbfeieh\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCheeseBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCherryPicker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bChinaClaw\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bChlooe\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bClaritybot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCliqzbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCogentbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bcognitiveseo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCollector\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCopier\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCopyRightCheck\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCopyscape\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCosmos\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCraftbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCrazyWebCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCrescent\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCSHttp\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCurious\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bCusto\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDatabaseDriverMysqli\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDataCha0s\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDBLBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDemon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDeusu\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDevil\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDIIbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDirbuster\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDisco\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDiscobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDiscoverybot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDittoSpyder\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDomainAppender\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDomainCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDomainSigmaCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDotbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDownload\ Demon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDownload\ Devil\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDownload\ Wonder\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDragonfly\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDrip\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bDTS\ Agent\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEasyDL\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEbingbong\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\beCatch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bECCP/1.0\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEcxi\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEirGrabber\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEMail\ Collector\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEMail\ Extractor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEMail\ Siphon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEMail\ Wolf\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEroCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEvil\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bExabot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bExpress\ WebPictures\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bExtractor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bExtractorPro\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEyeNetIE\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bEzooms\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFHscan\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFimap\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFindxbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFirefox/7.0\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFlashGet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFlunky\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFoobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bfq\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFreeuploader\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFrontPage\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bFyrebot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGalaxyBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGenieo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGetintent\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGetRight\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGetWeb\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGigablast\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGigabot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGo-Ahead-Got-It\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGotit\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGoZilla\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGo!Zilla\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGrabber\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGrabNet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGrafula\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGrapeFX\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGrapeshotCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGridBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bGT::WWW\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHaosouSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHarvest\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHavij\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHEADMasterSEO\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHeritrix\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHloader\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHMView\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHTMLparser\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHTTP::Lite\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHTTrack\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHumanlinks\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bHybridBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIblog\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIDBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bId-search\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIlseBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bImage\ Fetch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bImage\ Stripper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bImage\ Sucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIndy\ Library\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bInfoNaviRobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bInfoTekies\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIntelliseek\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bInterGET\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bInternet\ Ninja\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bInternetSeer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\binternetVista\ monitor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIria\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIRLbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bIskanie\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJamesBOT\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJbrofuzz\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJennyBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJetCar\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJikeSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJOC\ Web\ Spider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJoomla\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJorgee\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJustView\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bJyxobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bKenjin\ Spider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bKeyword\ Density\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLanshanbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLarbin\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLeechFTP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLeechGet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLexiBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLftp\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLibWeb\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLibwhisker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLightspeedsystems\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLikse\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkdexbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkextractorPro\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkpadBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkScan\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinksManager\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinkWalker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinqiaMetadataDownloaderBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinqiaRSSBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLinqiaScrapeBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLipperhey\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLitemage_walker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLmspider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLNSpiderguy\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLtx71\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\blwp-request\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bLWP::Simple\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\blwp-trivial\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMagnet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMag-Net\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bmagpie-crawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMail.ru\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMajestic12\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMarkMonitor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMarkWatch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMasscan\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMass\ Downloader\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMata\ Hari\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMeanpathbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMegaIndex.ru\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMetauri\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMFC_Tear_Sample\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMicrosoft\ Data\ Access\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMicrosoft\ URL\ Control\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMIDown\ tool\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMIIxpc\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMister\ PiX\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMJ12bot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMojeek\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMorfeus\ Fucking\ Scanner\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMSFrontPage\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMSIE\ 6.0\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMSIECrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMsrabot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMS\ Web\ Services\ Client\ Protocol\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bMusobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bName\ Intelligence\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNameprotect\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNavroad\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNearSite\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNeedle\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNessus\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetAnts\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetcraft\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bnetEstate\ NE\ Crawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetLyzer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetMechanic\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNettrack\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNet\ Vampire\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNetZIP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNextGenSearchBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNibbler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNICErsPRO\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNiki-bot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNikto\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNimbleCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNinja\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNmap\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNPbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bNutch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOctopus\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOffline\ Explorer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOffline\ Navigator\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOpenfind\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOpenLinkProfiler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOpenvas\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOrangeBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOrangeSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bOutfoxBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPageAnalyzer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPage\ Analyzer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPageGrabber\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPage\ Grabber\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bpage\ scorer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPageScorer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPanscient\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPapa\ Foto\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPavuk\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bpcBrowser\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPECL::HTTP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPeoplePal\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPHPCrawl\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPicscout\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPicsearch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPimonster\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPi-Monster\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPixray\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPleaseCrawl\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPockey\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPOE-Component-Client-HTTP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bProbethenet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bProPowerBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bProWebWalker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bProximic\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPsbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPump\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bQueryN\ Metasearch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bQwantify\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRankActive\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRankActiveLinkBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRankFlex\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRankivabot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRankurBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRealDownload\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bReaper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRebelMouse\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRecorder\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRedesScrapy\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bReGet\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRepoMonkey\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRipper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRocketCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bRogerbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSalesIntelligent\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSBIder\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScanAlert\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScanbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScrapy\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScreaming\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScreaming\ Frog\ SEO\ Spider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bScreenerBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSearchestate\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSearchmetricsBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSemrush\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSemrushBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSEOkicks\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSEOkicks-Robot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSEOlyticsCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSeomoz\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSEOprofiler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bseoscanners\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSEOstats\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiphon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSISTRIX\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSISTRIX\ Crawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSitebeam\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiteExplorer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiteimprove\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiteLockSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiteSnagger\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSiteSucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSite\ Sucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSitevigil\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSlackbot-LinkExpanding\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSlySearch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSmartDownload\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSnake\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSnapbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSnoopy\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSocialRankIOBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSogou\ web\ spider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSosospider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpaceBison\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpammen\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpankBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpanner\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSpinn3r\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSputnikBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSqlmap\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSqlworm\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSqworm\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSteeler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bStripper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSucuri\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSuperBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSuperHTTP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSurfbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSurveyBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSuzuran\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSwiftbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bSzukacz\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bT0PHackTeam\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bT8Abot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\btAkeOut\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTeleport\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTeleportPro\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTelesoft\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTelesphoreo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTelesphorep\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bThe\ Intraformant\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTheNomad\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTightTwatBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTitan\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bToata\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bToweyabot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTrendictionbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTrue_Robot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTuringos\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTurnitinBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTurnitin\ Bot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTurnitin\ Robot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTwengaBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTwice\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bTyphoeus\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bUnisterBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bURLy.Warning\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bURLy\ Warning\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVacuum\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVagabondo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVB\ Project\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVCI\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVeriCiteCrawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVidibleScraper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVoidEYE\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVoil\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bVoltron\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWallpapers/3.0\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWallpapersHD\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWASALive-Bot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWBSearchBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebalta\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebAuto\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Auto\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebBandit\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Bandit\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebCollage\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Collage\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebCopier\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Copier\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWEBDAV\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWEBDAV\ Client\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebEnhancer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Enhancer\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebFetch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Fetch\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebFuck\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Fuck\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebGo\ IS\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebImageCollector\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Image\ Collector\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebLeacher\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebmasterWorldForumBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bwebmeup-crawler\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebPix\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Pix\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebReaper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Reaper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebSauger\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Sauger\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebshag\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebsiteExtractor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebsite\ Extractor\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebsiteQuester\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebsite\ Quester\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebster\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebStripper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Stripper\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebSucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Sucker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebWhacker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeb\ Whacker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWebZIP\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWeSEE\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWhack\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWhacker\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWhatweb\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWidow\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWinHTTrack\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWiseGuys\ Robot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWISENutbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWonderbot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWoobot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWotbox\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWprecon\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWPScan\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWWW-Collector-E\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWWW-Mechanize\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWWW::Mechanize\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bWWWOFFLE\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bx22Mozilla\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bXaldon_WebSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bXaldon\ WebSpider\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bXenu\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bYoudaoBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZade\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZermelo\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZeus\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZgrab\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZitebot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZmEu\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZumBot\b)(.*)$" bad_bot=1
+BrowserMatchNoCase "^(.*?)(\bZyBorg\b)(.*)$" bad_bot=1
 # END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
 
 # ***********************************************
@@ -801,6 +815,7 @@ SetEnvIfNoCase Referer ~*1j7740kd\.website spam_ref=1
 SetEnvIfNoCase Referer ~*1kinobig\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*1millionusd\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*1pamm\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*1qingdao\.com spam_ref=1
 SetEnvIfNoCase Referer ~*1stat\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*1webmaster\.ml spam_ref=1
 SetEnvIfNoCase Referer ~*2000k\.ru spam_ref=1
@@ -855,15 +870,19 @@ SetEnvIfNoCase Referer ~*5i2\.net spam_ref=1
 SetEnvIfNoCase Referer ~*5kstore\.com spam_ref=1
 SetEnvIfNoCase Referer ~*5tey7463\.weebly\.com spam_ref=1
 SetEnvIfNoCase Referer ~*5u\.com spam_ref=1
+SetEnvIfNoCase Referer ~*6128786\.com spam_ref=1
 SetEnvIfNoCase Referer ~*66cpwgln\.space spam_ref=1
 SetEnvIfNoCase Referer ~*6hopping\.com spam_ref=1
 SetEnvIfNoCase Referer ~*72\-news\.com spam_ref=1
 SetEnvIfNoCase Referer ~*76brighton\.co\.uk spam_ref=1
 SetEnvIfNoCase Referer ~*777\-club\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*7a2rnuey1tw9ar\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*7fon\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*7makemoneyonline\.com spam_ref=1
+SetEnvIfNoCase Referer ~*7minuteworkout\.com spam_ref=1
 SetEnvIfNoCase Referer ~*7search\.com spam_ref=1
 SetEnvIfNoCase Referer ~*7wind\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*7xc4n\.com spam_ref=1
 SetEnvIfNoCase Referer ~*7yue\.org spam_ref=1
 SetEnvIfNoCase Referer ~*7zap\.com spam_ref=1
 SetEnvIfNoCase Referer ~*83net\.jp spam_ref=1
@@ -903,6 +922,7 @@ SetEnvIfNoCase Referer ~*abcdeg\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*abclauncher\.com spam_ref=1
 SetEnvIfNoCase Referer ~*abctoppictures\.net spam_ref=1
 SetEnvIfNoCase Referer ~*abiente\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*above\.com spam_ref=1
 SetEnvIfNoCase Referer ~*abovetherivernc\.com spam_ref=1
 SetEnvIfNoCase Referer ~*absolutelyanalog\.com spam_ref=1
 SetEnvIfNoCase Referer ~*absolute\-s\.ru spam_ref=1
@@ -918,6 +938,7 @@ SetEnvIfNoCase Referer ~*acc\.eu\.org spam_ref=1
 SetEnvIfNoCase Referer ~*acgs\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*acheterviagrafr24\.com spam_ref=1
 SetEnvIfNoCase Referer ~*acortarurl\.es spam_ref=1
+SetEnvIfNoCase Referer ~*actices\.com spam_ref=1
 SetEnvIfNoCase Referer ~*actionnooz\.com spam_ref=1
 SetEnvIfNoCase Referer ~*activecampaign\.dreamhosters\.com spam_ref=1
 SetEnvIfNoCase Referer ~*activepr\.ru spam_ref=1
@@ -928,6 +949,7 @@ SetEnvIfNoCase Referer ~*adanih\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adcash\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adclickservice\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adclickthru\.net spam_ref=1
+SetEnvIfNoCase Referer ~*adconscious\.com spam_ref=1
 SetEnvIfNoCase Referer ~*add\-add\.men spam_ref=1
 SetEnvIfNoCase Referer ~*addbin\.men spam_ref=1
 SetEnvIfNoCase Referer ~*addblueoff\.com\.ua spam_ref=1
@@ -947,10 +969,12 @@ SetEnvIfNoCase Referer ~*admanaerofoil\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adman\.gr spam_ref=1
 SetEnvIfNoCase Referer ~*adman\.se spam_ref=1
 SetEnvIfNoCase Referer ~*admatic\.com\.tr spam_ref=1
+SetEnvIfNoCase Referer ~*admeasures\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adminshop\.com spam_ref=1
 SetEnvIfNoCase Referer ~*admitad\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adnotbad\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adpremium\.org spam_ref=1
+SetEnvIfNoCase Referer ~*adprotect\.net spam_ref=1
 SetEnvIfNoCase Referer ~*adrenalin\-stk\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*ads\-cool\.pro spam_ref=1
 SetEnvIfNoCase Referer ~*adserver\-e7\.com spam_ref=1
@@ -958,6 +982,7 @@ SetEnvIfNoCase Referer ~*adservme\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adsfresh\.men spam_ref=1
 SetEnvIfNoCase Referer ~*ads\.gold spam_ref=1
 SetEnvIfNoCase Referer ~*adsland\.men spam_ref=1
+SetEnvIfNoCase Referer ~*adsref\.men spam_ref=1
 SetEnvIfNoCase Referer ~*adssafeprotected\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ads\-seo\.men spam_ref=1
 SetEnvIfNoCase Referer ~*ads\.tremorhub\.com spam_ref=1
@@ -965,6 +990,7 @@ SetEnvIfNoCase Referer ~*adtech\.de spam_ref=1
 SetEnvIfNoCase Referer ~*adtech\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*adtech\.us spam_ref=1
 SetEnvIfNoCase Referer ~*adtiger\.tk spam_ref=1
+SetEnvIfNoCase Referer ~*adtology\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adult3dgames\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adultactioncam\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adultfriendfinder\.com spam_ref=1
@@ -977,6 +1003,7 @@ SetEnvIfNoCase Referer ~*advancedcleaner\.com spam_ref=1
 SetEnvIfNoCase Referer ~*advancedsoftwaresupport\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adventureparkcostarica\.com spam_ref=1
 SetEnvIfNoCase Referer ~*adverster\.com spam_ref=1
+SetEnvIfNoCase Referer ~*advertex\.info spam_ref=1
 SetEnvIfNoCase Referer ~*advertisingtag\.net spam_ref=1
 SetEnvIfNoCase Referer ~*adviceforum\.info spam_ref=1
 SetEnvIfNoCase Referer ~*advocatemsk\.ru spam_ref=1
@@ -1087,6 +1114,7 @@ SetEnvIfNoCase Referer ~*ample\-awards\-today\.us spam_ref=1
 SetEnvIfNoCase Referer ~*ampower\.me spam_ref=1
 SetEnvIfNoCase Referer ~*am\-se\.com spam_ref=1
 SetEnvIfNoCase Referer ~*amt\-k\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*amung\.us spam_ref=1
 SetEnvIfNoCase Referer ~*amyfoxfitness\.com spam_ref=1
 SetEnvIfNoCase Referer ~*anaksma\.info spam_ref=1
 SetEnvIfNoCase Referer ~*anal\-acrobats\.com spam_ref=1
@@ -1102,7 +1130,12 @@ SetEnvIfNoCase Referer ~*android\-systems\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*android\-vsem\.org spam_ref=1
 SetEnvIfNoCase Referer ~*angigreene\.com spam_ref=1
 SetEnvIfNoCase Referer ~*angkortours\.vn spam_ref=1
+SetEnvIfNoCase Referer ~*animal36\.com spam_ref=1
+SetEnvIfNoCase Referer ~*animal\-drawings\.com spam_ref=1
+SetEnvIfNoCase Referer ~*animalia\-life\.club spam_ref=1
 SetEnvIfNoCase Referer ~*animali\.deagostinipassion\.it spam_ref=1
+SetEnvIfNoCase Referer ~*animalrank\.com spam_ref=1
+SetEnvIfNoCase Referer ~*animaltoplist\.com spam_ref=1
 SetEnvIfNoCase Referer ~*animebox\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*anime\.dougasouko\.com spam_ref=1
 SetEnvIfNoCase Referer ~*anjalika\.co\.in spam_ref=1
@@ -1120,6 +1153,7 @@ SetEnvIfNoCase Referer ~*apartmentbay\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*apartmentratings\.com spam_ref=1
 SetEnvIfNoCase Referer ~*apartment\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*apccargo\.com spam_ref=1
+SetEnvIfNoCase Referer ~*apelsinnik\.website spam_ref=1
 SetEnvIfNoCase Referer ~*apiadanaknet\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiallgeniusinfo\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiappenableinfo\-a\.akamaihd\.net spam_ref=1
@@ -1127,6 +1161,7 @@ SetEnvIfNoCase Referer ~*apibatbrowsecom\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apibetweenlinesn\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apibrowsesmartne\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apidiamondatanet\-a\.akamaihd\.net spam_ref=1
+SetEnvIfNoCase Referer ~*apidigidocketnet\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apifasterlightin\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiholdingmypage\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiitsthirteende\-a\.akamaihd\.net spam_ref=1
@@ -1139,6 +1174,7 @@ SetEnvIfNoCase Referer ~*apioutoboxnet\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiportalmorecom\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apishops\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*apispringsmartne\-a\.akamaihd\.net spam_ref=1
+SetEnvIfNoCase Referer ~*api\.stathat\.com spam_ref=1
 SetEnvIfNoCase Referer ~*apiwebwebgetcom\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apiwoodensealcom\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*apparel\-offer\.com spam_ref=1
@@ -1147,8 +1183,11 @@ SetEnvIfNoCase Referer ~*apper\.de spam_ref=1
 SetEnvIfNoCase Referer ~*appfastplay\.com spam_ref=1
 SetEnvIfNoCase Referer ~*appfixing\.space spam_ref=1
 SetEnvIfNoCase Referer ~*appiq\.mobi spam_ref=1
+SetEnvIfNoCase Referer ~*apple\.com\-webbrowsing\-security\.review spam_ref=1
+SetEnvIfNoCase Referer ~*apple\.com\-webbrowsing\-security\.science spam_ref=1
 SetEnvIfNoCase Referer ~*appleid\-verification\.com spam_ref=1
 SetEnvIfNoCase Referer ~*applicationg29\.com spam_ref=1
+SetEnvIfNoCase Referer ~*applyneedy\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*app\-ready\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*approved\.su spam_ref=1
 SetEnvIfNoCase Referer ~*apps\-analytics\.net spam_ref=1
@@ -1215,6 +1254,8 @@ SetEnvIfNoCase Referer ~*atlasvkusov\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*atleticpharm\.org spam_ref=1
 SetEnvIfNoCase Referer ~*atley\.eu\.pn spam_ref=1
 SetEnvIfNoCase Referer ~*atmagroup\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*atmovs\.com spam_ref=1
+SetEnvIfNoCase Referer ~*atofilms\.com spam_ref=1
 SetEnvIfNoCase Referer ~*atout\-energie\-69\.com spam_ref=1
 SetEnvIfNoCase Referer ~*atovh\.local\-finders\.com spam_ref=1
 SetEnvIfNoCase Referer ~*audiobangout\.com spam_ref=1
@@ -1270,6 +1311,7 @@ SetEnvIfNoCase Referer ~*avtointeres\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.com spam_ref=1
 SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*avtovolop\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*awaybird\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*awency\.com spam_ref=1
 SetEnvIfNoCase Referer ~*axbocz\.net spam_ref=1
 SetEnvIfNoCase Referer ~*ayakino\.net spam_ref=1
@@ -1311,6 +1353,7 @@ SetEnvIfNoCase Referer ~*balkanfarma\.org spam_ref=1
 SetEnvIfNoCase Referer ~*balkanfarma\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*balla\-boo\.se spam_ref=1
 SetEnvIfNoCase Referer ~*balois\.worldbreak\.com spam_ref=1
+SetEnvIfNoCase Referer ~*balook\.com spam_ref=1
 SetEnvIfNoCase Referer ~*baltgem\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bambi\.ck\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*bamo\.xsl\.pt spam_ref=1
@@ -1336,6 +1379,7 @@ SetEnvIfNoCase Referer ~*bashtime\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*basisches\-wasser\.net spam_ref=1
 SetEnvIfNoCase Referer ~*batanga\.net spam_ref=1
 SetEnvIfNoCase Referer ~*battlecarnival\.su spam_ref=1
+SetEnvIfNoCase Referer ~*battleforupdating\.site spam_ref=1
 SetEnvIfNoCase Referer ~*bausparen\.bz\.it spam_ref=1
 SetEnvIfNoCase Referer ~*bayareaaeroclub\.org spam_ref=1
 SetEnvIfNoCase Referer ~*bazaronline24\.ru spam_ref=1
@@ -1383,6 +1427,7 @@ SetEnvIfNoCase Referer ~*bestprofits\-there\.com spam_ref=1
 SetEnvIfNoCase Referer ~*best\-seo\-offer\.com spam_ref=1
 SetEnvIfNoCase Referer ~*best\-seo\-software\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*best\-seo\-solution\.com spam_ref=1
+SetEnvIfNoCase Referer ~*bestserials\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bestssaker\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bestwaystogetpaid\.us spam_ref=1
 SetEnvIfNoCase Referer ~*bestwebsiteawards\.com spam_ref=1
@@ -1444,6 +1489,7 @@ SetEnvIfNoCase Referer ~*bizru\.info spam_ref=1
 SetEnvIfNoCase Referer ~*bjanshee\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*bjetjt\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bjorkbacken\.nu spam_ref=1
+SetEnvIfNoCase Referer ~*bkgr\.se spam_ref=1
 SetEnvIfNoCase Referer ~*bkns\.vn spam_ref=1
 SetEnvIfNoCase Referer ~*blackcurranthumidifiers\.site spam_ref=1
 SetEnvIfNoCase Referer ~*blackhatworth\.com spam_ref=1
@@ -1453,6 +1499,7 @@ SetEnvIfNoCase Referer ~*blacktwhite\.com spam_ref=1
 SetEnvIfNoCase Referer ~*blackwitchcraft\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*blagovest\-med\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*blavia\.00author\.com spam_ref=1
+SetEnvIfNoCase Referer ~*blobar\.org spam_ref=1
 SetEnvIfNoCase Referer ~*blockworld\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*blog\.axant\.it spam_ref=1
 SetEnvIfNoCase Referer ~*blog\.f00kclan\.de spam_ref=1
@@ -1460,11 +1507,13 @@ SetEnvIfNoCase Referer ~*bloggedporn\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bloggen\.be spam_ref=1
 SetEnvIfNoCase Referer ~*bloggerads\.net spam_ref=1
 SetEnvIfNoCase Referer ~*bloggers\.nl spam_ref=1
+SetEnvIfNoCase Referer ~*blog\-hits\.com spam_ref=1
 SetEnvIfNoCase Referer ~*blogig\.org spam_ref=1
 SetEnvIfNoCase Referer ~*blog\.koorg\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*blogos\.kz spam_ref=1
 SetEnvIfNoCase Referer ~*blogporn\.in spam_ref=1
 SetEnvIfNoCase Referer ~*blogqpot\.com spam_ref=1
+SetEnvIfNoCase Referer ~*blogrankers\.com spam_ref=1
 SetEnvIfNoCase Referer ~*blog\.remote\-computer\.de spam_ref=1
 SetEnvIfNoCase Referer ~*blogs\.rediff\.com spam_ref=1
 SetEnvIfNoCase Referer ~*blogster\.com spam_ref=1
@@ -1477,7 +1526,9 @@ SetEnvIfNoCase Referer ~*bluerobot\.info spam_ref=1
 SetEnvIfNoCase Referer ~*bluesman\.nu spam_ref=1
 SetEnvIfNoCase Referer ~*blue\-square\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*bmw\.afora\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*bmw\-ark\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*bmwhighperformers\.com spam_ref=1
+SetEnvIfNoCase Referer ~*bnt\-team\.com spam_ref=1
 SetEnvIfNoCase Referer ~*board\.f00d\.de spam_ref=1
 SetEnvIfNoCase Referer ~*boazpower\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bobba\.dzaba\.com spam_ref=1
@@ -1495,6 +1546,9 @@ SetEnvIfNoCase Referer ~*bongacams\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bongiornos\.info spam_ref=1
 SetEnvIfNoCase Referer ~*bonux\.nextview\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*bonvillan\.com spam_ref=1
+SetEnvIfNoCase Referer ~*bonzbuddy\.com spam_ref=1
+SetEnvIfNoCase Referer ~*bonzibuddi\.com spam_ref=1
+SetEnvIfNoCase Referer ~*bonzybuddy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*boobsimge\.com spam_ref=1
 SetEnvIfNoCase Referer ~*bookhome\.info spam_ref=1
 SetEnvIfNoCase Referer ~*bookmaker\-bet\.com spam_ref=1
@@ -1506,12 +1560,14 @@ SetEnvIfNoCase Referer ~*bosefux\.esy\.es spam_ref=1
 SetEnvIfNoCase Referer ~*bosman\.pluto\.ro spam_ref=1
 SetEnvIfNoCase Referer ~*bouda\.kvalitne\.cz spam_ref=1
 SetEnvIfNoCase Referer ~*bpro1\.top spam_ref=1
+SetEnvIfNoCase Referer ~*brainboosting\.club spam_ref=1
 SetEnvIfNoCase Referer ~*brainboostingsupplements\.org spam_ref=1
 SetEnvIfNoCase Referer ~*brains2\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*brainsandeggs\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*brainxs\.us spam_ref=1
 SetEnvIfNoCase Referer ~*braip\.com\.br spam_ref=1
 SetEnvIfNoCase Referer ~*brakehawk\.com spam_ref=1
+SetEnvIfNoCase Referer ~*brandedleadgeneration\.com spam_ref=1
 SetEnvIfNoCase Referer ~*brandehk\.dk spam_ref=1
 SetEnvIfNoCase Referer ~*brandov\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*brateg\.xyz spam_ref=1
@@ -1537,6 +1593,7 @@ SetEnvIfNoCase Referer ~*bryansk\.zrus\.org spam_ref=1
 SetEnvIfNoCase Referer ~*bscodecs\.com spam_ref=1
 SetEnvIfNoCase Referer ~*b\-styles\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*btc4u\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*btnativenav\.com spam_ref=1
 SetEnvIfNoCase Referer ~*btvn\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*buchananshardware\.com spam_ref=1
 SetEnvIfNoCase Referer ~*budilneg\.xyz spam_ref=1
@@ -1753,6 +1810,7 @@ SetEnvIfNoCase Referer ~*christianlouboutinshoes\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*chuckguilford\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cialisovercounteratwalmartusa\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cialiswithoutadoctor\.net spam_ref=1
+SetEnvIfNoCase Referer ~*cibpenonptib\.flu\.cc spam_ref=1
 SetEnvIfNoCase Referer ~*ciekawinki\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*cienum\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*cigarpass\.com spam_ref=1
@@ -1771,16 +1829,27 @@ SetEnvIfNoCase Referer ~*classicakuhni\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*classiquebijoux\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*claytransformations\.info spam_ref=1
 SetEnvIfNoCase Referer ~*clayvasedesigns\.tk spam_ref=1
+SetEnvIfNoCase Referer ~*cleanallspyware\.com spam_ref=1
+SetEnvIfNoCase Referer ~*cleanallvirus\.com spam_ref=1
+SetEnvIfNoCase Referer ~*cleanersoft\.com spam_ref=1
+SetEnvIfNoCase Referer ~*cleanmypc\.com spam_ref=1
+SetEnvIfNoCase Referer ~*cleanpcnow\.com spam_ref=1
+SetEnvIfNoCase Referer ~*cleansearch\.net spam_ref=1
+SetEnvIfNoCase Referer ~*clean\-start\.net spam_ref=1
 SetEnvIfNoCase Referer ~*clean\-virus\-mac\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clevernt\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clickaider\.com spam_ref=1
+SetEnvIfNoCase Referer ~*clickbanksites\.info spam_ref=1
+SetEnvIfNoCase Referer ~*clickcash\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clickhype\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clickintext\.net spam_ref=1
 SetEnvIfNoCase Referer ~*clickpapa\.com spam_ref=1
+SetEnvIfNoCase Referer ~*clickprotects\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clickso\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clicksor\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clicksor\.net spam_ref=1
 SetEnvIfNoCase Referer ~*clicksotrk\.com spam_ref=1
+SetEnvIfNoCase Referer ~*clickzzs\.nl spam_ref=1
 SetEnvIfNoCase Referer ~*clipartnew\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clippingphotoindia\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clips\.ua\.ac\.be spam_ref=1
@@ -1789,6 +1858,7 @@ SetEnvIfNoCase Referer ~*clmforexeu\.com spam_ref=1
 SetEnvIfNoCase Referer ~*clodo\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*clothesforcash\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cl\.s7\.exct\.net spam_ref=1
+SetEnvIfNoCase Referer ~*clubfashionista\.com spam_ref=1
 SetEnvIfNoCase Referer ~*club\-musics\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*club\-samodelkin\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*cmd\.kz spam_ref=1
@@ -1891,6 +1961,7 @@ SetEnvIfNoCase Referer ~*cordstrap\.cc spam_ref=1
 SetEnvIfNoCase Referer ~*cornerstone\-countertops\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cornomase\.win spam_ref=1
 SetEnvIfNoCase Referer ~*corta\.co spam_ref=1
+SetEnvIfNoCase Referer ~*coslab\.club spam_ref=1
 SetEnvIfNoCase Referer ~*cosmetic\.donna7753191\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*cottageofgrace\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cougfan\.info spam_ref=1
@@ -1907,11 +1978,16 @@ SetEnvIfNoCase Referer ~*covetnica\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cowblog\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*cowlmash\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cpabegins\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*cpajunkies\.com spam_ref=1
+SetEnvIfNoCase Referer ~*crackguru\.tk spam_ref=1
+SetEnvIfNoCase Referer ~*cracksplanet\.com spam_ref=1
+SetEnvIfNoCase Referer ~*crackzplanet\.com spam_ref=1
 SetEnvIfNoCase Referer ~*craftburg\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*crafthubs\.com spam_ref=1
 SetEnvIfNoCase Referer ~*craftinsta\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*cranly\.net spam_ref=1
 SetEnvIfNoCase Referer ~*crazyboost\.pro spam_ref=1
+SetEnvIfNoCase Referer ~*crazyprotocol\.com spam_ref=1
 SetEnvIfNoCase Referer ~*crd\.clan\.su spam_ref=1
 SetEnvIfNoCase Referer ~*creams\.makeforum\.eu spam_ref=1
 SetEnvIfNoCase Referer ~*creativehutindia\.com spam_ref=1
@@ -1948,6 +2024,7 @@ SetEnvIfNoCase Referer ~*cypernhuset\.se spam_ref=1
 SetEnvIfNoCase Referer ~*cyprusbuyproperties\.com spam_ref=1
 SetEnvIfNoCase Referer ~*cyse\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*czat\.wp\.pl spam_ref=1
+SetEnvIfNoCase Referer ~*dailyfinancefix\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dailyrank\.net spam_ref=1
 SetEnvIfNoCase Referer ~*dailystrength\.org spam_ref=1
 SetEnvIfNoCase Referer ~*dairyindia\.in spam_ref=1
@@ -1990,6 +2067,7 @@ SetEnvIfNoCase Referer ~*decenttools\.com spam_ref=1
 SetEnvIfNoCase Referer ~*decorationspcs\.com spam_ref=1
 SetEnvIfNoCase Referer ~*decorazilla\.com spam_ref=1
 SetEnvIfNoCase Referer ~*deda\-moroza\-zakaz\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*defenderxtactical\.com spam_ref=1
 SetEnvIfNoCase Referer ~*degerlund\.net spam_ref=1
 SetEnvIfNoCase Referer ~*dekoration\.us spam_ref=1
 SetEnvIfNoCase Referer ~*dekorkeramik\.ru spam_ref=1
@@ -1998,6 +2076,7 @@ SetEnvIfNoCase Referer ~*delfin\-aqua\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*dellalimov\.com spam_ref=1
 SetEnvIfNoCase Referer ~*deluxedumps\.com spam_ref=1
 SetEnvIfNoCase Referer ~*demenageur\.com spam_ref=1
+SetEnvIfNoCase Referer ~*demian\.kz spam_ref=1
 SetEnvIfNoCase Referer ~*dengi\-pod\-zalog\-nedvizhimosti\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*deniven\.1bb\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*den\-noch24\.ru spam_ref=1
@@ -2024,6 +2103,7 @@ SetEnvIfNoCase Referer ~*dfiles\.me spam_ref=1
 SetEnvIfNoCase Referer ~*dfwu1013\.info spam_ref=1
 SetEnvIfNoCase Referer ~*dfwu1019\.info spam_ref=1
 SetEnvIfNoCase Referer ~*diarioaconcagua\.com spam_ref=1
+SetEnvIfNoCase Referer ~*dichvuvesinhhanoi\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dickssportinggoods\.com spam_ref=1
 SetEnvIfNoCase Referer ~*diegolopezcastan\.com spam_ref=1
 SetEnvIfNoCase Referer ~*diesel\-parts28\.ru spam_ref=1
@@ -2054,6 +2134,8 @@ SetEnvIfNoCase Referer ~*distver\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*div\.as spam_ref=1
 SetEnvIfNoCase Referer ~*divatraffic\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dividendo\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*divisioncore\.com spam_ref=1
+SetEnvIfNoCase Referer ~*divku\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*diy\-handmade\-ideas\.com spam_ref=1
 SetEnvIfNoCase Referer ~*djekxa\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*djonwatch\.ru spam_ref=1
@@ -2080,6 +2162,7 @@ SetEnvIfNoCase Referer ~*dokfilms\.net spam_ref=1
 SetEnvIfNoCase Referer ~*doktoronline\.no spam_ref=1
 SetEnvIfNoCase Referer ~*dokumentalkino\.net spam_ref=1
 SetEnvIfNoCase Referer ~*domain2008\.com spam_ref=1
+SetEnvIfNoCase Referer ~*domaincdn\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*domaincrawler\.com spam_ref=1
 SetEnvIfNoCase Referer ~*domaineaneblanc\.com spam_ref=1
 SetEnvIfNoCase Referer ~*domainsatcost\.com spam_ref=1
@@ -2110,21 +2193,27 @@ SetEnvIfNoCase Referer ~*downloader12\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*downloadkakaotalk\.com spam_ref=1
 SetEnvIfNoCase Referer ~*downloadmefiranaratb1972\.xpg\.com\.br spam_ref=1
 SetEnvIfNoCase Referer ~*download\-of\-the\-warez\.blogspot\.com spam_ref=1
+SetEnvIfNoCase Referer ~*downloads\-whatsapp\.com spam_ref=1
 SetEnvIfNoCase Referer ~*download\-wallpaper\.net spam_ref=1
 SetEnvIfNoCase Referer ~*downtuptv\.gq spam_ref=1
 SetEnvIfNoCase Referer ~*doxyporno\.com spam_ref=1
 SetEnvIfNoCase Referer ~*doyouknowtheword\-flummox\.ml spam_ref=1
 SetEnvIfNoCase Referer ~*dpihatinh\.gov\.vn spam_ref=1
+SetEnvIfNoCase Referer ~*dprtb\.com spam_ref=1
 SetEnvIfNoCase Referer ~*drillsaw\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*driving\.kiev\.ua spam_ref=1
+SetEnvIfNoCase Referer ~*drivotracker\.com spam_ref=1
 SetEnvIfNoCase Referer ~*droidlook\.net spam_ref=1
 SetEnvIfNoCase Referer ~*drugspowerstore\.com spam_ref=1
 SetEnvIfNoCase Referer ~*drugstoreforyou\.com spam_ref=1
+SetEnvIfNoCase Referer ~*drunkenstepfather\.com spam_ref=1
 SetEnvIfNoCase Referer ~*drunkmoms\.net spam_ref=1
 SetEnvIfNoCase Referer ~*drupa\.com spam_ref=1
 SetEnvIfNoCase Referer ~*druzhbany\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*druzhininevgeniy63\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dstroy\.su spam_ref=1
+SetEnvIfNoCase Referer ~*dtnlyss\.com spam_ref=1
+SetEnvIfNoCase Referer ~*duplicashapp\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dustyorate\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dvd\-famille\.com spam_ref=1
 SetEnvIfNoCase Referer ~*dvervmoskvu\.ru spam_ref=1
@@ -2164,6 +2253,7 @@ SetEnvIfNoCase Referer ~*editors\.choice6912650\.hulfingtonpost\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ed\-shop01\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*educatemetv\.com spam_ref=1
 SetEnvIfNoCase Referer ~*education\-cz\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*edwinkonijn\.com\.au spam_ref=1
 SetEnvIfNoCase Referer ~*ee77ee\.com spam_ref=1
 SetEnvIfNoCase Referer ~*efkt\.jp spam_ref=1
 SetEnvIfNoCase Referer ~*efnor\-ac\.com spam_ref=1
@@ -2174,6 +2264,7 @@ SetEnvIfNoCase Referer ~*ekn\-art\.se spam_ref=1
 SetEnvIfNoCase Referer ~*ekobata\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*ekosmetyki\.net\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*ekspertmed\.com spam_ref=1
+SetEnvIfNoCase Referer ~*ekspresihati\.info spam_ref=1
 SetEnvIfNoCase Referer ~*ekto\.ee spam_ref=1
 SetEnvIfNoCase Referer ~*e\-kwiaciarz\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*eladkarako\.com spam_ref=1
@@ -2221,6 +2312,7 @@ SetEnvIfNoCase Referer ~*eloxal\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*elstal\.com\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*elvel\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*elvenar\.com spam_ref=1
+SetEnvIfNoCase Referer ~*emailaccountlogin\.co spam_ref=1
 SetEnvIfNoCase Referer ~*embedle\.com spam_ref=1
 SetEnvIfNoCase Referer ~*emediate\.eu spam_ref=1
 SetEnvIfNoCase Referer ~*empathica\.com spam_ref=1
@@ -2270,6 +2362,7 @@ SetEnvIfNoCase Referer ~*esfchat\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*eshop4u\.jp spam_ref=1
 SetEnvIfNoCase Referer ~*eshop\.md spam_ref=1
 SetEnvIfNoCase Referer ~*esnm\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*esopini\.com spam_ref=1
 SetEnvIfNoCase Referer ~*espaceinventoristes\.com spam_ref=1
 SetEnvIfNoCase Referer ~*essaypro\.com spam_ref=1
 SetEnvIfNoCase Referer ~*essayservicewriting\.org spam_ref=1
@@ -2325,6 +2418,7 @@ SetEnvIfNoCase Referer ~*eyes\-on\-you\.ga spam_ref=1
 SetEnvIfNoCase Referer ~*eyessurgery\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*eywords\-monitoring\-your\-success\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ez8motelseaworldsandiego\.com spam_ref=1
+SetEnvIfNoCase Referer ~*ezb\.elvenmachine\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ezigarettekaufen1\.hpage\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ezigarettekaufen2\.blox\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*ezigarettekaufen2\.mpbloggar\.se spam_ref=1
@@ -2348,6 +2442,7 @@ SetEnvIfNoCase Referer ~*f0815\.de spam_ref=1
 SetEnvIfNoCase Referer ~*f5mtrack\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fable\.in\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*facebook\-mobile\.xyz spam_ref=1
+SetEnvIfNoCase Referer ~*facecup\.top spam_ref=1
 SetEnvIfNoCase Referer ~*face\.hostingx\.eu spam_ref=1
 SetEnvIfNoCase Referer ~*factorynightclub\.com spam_ref=1
 SetEnvIfNoCase Referer ~*failingmarriege\.blogspot\.com spam_ref=1
@@ -2399,6 +2494,7 @@ SetEnvIfNoCase Referer ~*fertilitetsradgivningen\.se spam_ref=1
 SetEnvIfNoCase Referer ~*fetishinside\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fetroshok\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*fettefrauen\.net spam_ref=1
+SetEnvIfNoCase Referer ~*ff30236ddef1465f88547e760973d70a\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fickblock18\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fickenbumsen\.net spam_ref=1
 SetEnvIfNoCase Referer ~*fickenprivat\.info spam_ref=1
@@ -2408,6 +2504,7 @@ SetEnvIfNoCase Referer ~*fickluder69\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fidelityfunding\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fifa\-coins\.online spam_ref=1
 SetEnvIfNoCase Referer ~*figuringmoneyout\.com spam_ref=1
+SetEnvIfNoCase Referer ~*filefilter\.weebly\.com spam_ref=1
 SetEnvIfNoCase Referer ~*filerockstar298\.weebly\.com spam_ref=1
 SetEnvIfNoCase Referer ~*filesmonster\.porn spam_ref=1
 SetEnvIfNoCase Referer ~*filesvine\.com spam_ref=1
@@ -2484,6 +2581,7 @@ SetEnvIfNoCase Referer ~*forodvd\.com spam_ref=1
 SetEnvIfNoCase Referer ~*forpackningsutveckling\.se spam_ref=1
 SetEnvIfNoCase Referer ~*forpostlock\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*forsex\.info spam_ref=1
+SetEnvIfNoCase Referer ~*fortunejack\.com spam_ref=1
 SetEnvIfNoCase Referer ~*forum20\.smailik\.org spam_ref=1
 SetEnvIfNoCase Referer ~*forum69\.info spam_ref=1
 SetEnvIfNoCase Referer ~*forum\.doctissimo\.fr spam_ref=1
@@ -2510,6 +2608,7 @@ SetEnvIfNoCase Referer ~*free\-deals\.faith spam_ref=1
 SetEnvIfNoCase Referer ~*free\-fbook\-traffic\.com spam_ref=1
 SetEnvIfNoCase Referer ~*free\-fb\-traffic\.com spam_ref=1
 SetEnvIfNoCase Referer ~*free\-floating\-buttons\.com spam_ref=1
+SetEnvIfNoCase Referer ~*freegamesplay\.online spam_ref=1
 SetEnvIfNoCase Referer ~*free\-gluten\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*freejabs\.com spam_ref=1
 SetEnvIfNoCase Referer ~*free\-laptop\-reward\.com spam_ref=1
@@ -2550,6 +2649,7 @@ SetEnvIfNoCase Referer ~*frvo\.alptandem\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*fsakhalin\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*fsalas\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ftns\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*fuckingawesome\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fuckmill\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fuck\-paid\-share\-buttons\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*fuel\-gas\.com spam_ref=1
@@ -2560,6 +2660,7 @@ SetEnvIfNoCase Referer ~*fun2cell\.net spam_ref=1
 SetEnvIfNoCase Referer ~*funcrushgames\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fungamelands\.com spam_ref=1
 SetEnvIfNoCase Referer ~*fungirlsgames\.net spam_ref=1
+SetEnvIfNoCase Referer ~*fun\-mobi\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*funnypica\.com spam_ref=1
 SetEnvIfNoCase Referer ~*funponsel\.com spam_ref=1
 SetEnvIfNoCase Referer ~*funtoonez\.com spam_ref=1
@@ -2580,6 +2681,7 @@ SetEnvIfNoCase Referer ~*galeon\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gallerily\.com spam_ref=1
 SetEnvIfNoCase Referer ~*galleryawesome\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gallerylisting\.com spam_ref=1
+SetEnvIfNoCase Referer ~*gallery\.rennlist\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gallictures\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gamblingnerd\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gamedayhouse\.com spam_ref=1
@@ -2600,6 +2702,7 @@ SetEnvIfNoCase Referer ~*gay\.adultgalls\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gay\-file\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gaygalls\.net spam_ref=1
 SetEnvIfNoCase Referer ~*gaytube\.com spam_ref=1
+SetEnvIfNoCase Referer ~*gayxperience\.com spam_ref=1
 SetEnvIfNoCase Referer ~*gazobeton\-p\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*gazoblok\.net\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*gazporno\.com spam_ref=1
@@ -2642,6 +2745,7 @@ SetEnvIfNoCase Referer ~*getprismatic\.com spam_ref=1
 SetEnvIfNoCase Referer ~*getresponse\.com spam_ref=1
 SetEnvIfNoCase Referer ~*getridofstretchmarks\.org spam_ref=1
 SetEnvIfNoCase Referer ~*get\-seo\-domain\.com spam_ref=1
+SetEnvIfNoCase Referer ~*gettpromos\.com spam_ref=1
 SetEnvIfNoCase Referer ~*get\-your\-social\-buttons\.info spam_ref=1
 SetEnvIfNoCase Referer ~*gfaq\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*gg\-arena\.ru spam_ref=1
@@ -2680,6 +2784,7 @@ SetEnvIfNoCase Referer ~*globetrotting\-culture\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*glogow\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*glopages\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*gne8\.com spam_ref=1
+SetEnvIfNoCase Referer ~*gnuetella\.com spam_ref=1
 SetEnvIfNoCase Referer ~*go2album\.com spam_ref=1
 SetEnvIfNoCase Referer ~*go2jump\.org spam_ref=1
 SetEnvIfNoCase Referer ~*go2mike\.ru spam_ref=1
@@ -2783,6 +2888,7 @@ SetEnvIfNoCase Referer ~*habermetre\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hacktougroup\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*hahashka\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*haikuware\.com spam_ref=1
+SetEnvIfNoCase Referer ~*hamacapty\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hamilton\.ca spam_ref=1
 SetEnvIfNoCase Referer ~*hamptonoaks\.ca spam_ref=1
 SetEnvIfNoCase Referer ~*handicapbathtubarea\.com spam_ref=1
@@ -2790,6 +2896,7 @@ SetEnvIfNoCase Referer ~*handicapvansarea\.com spam_ref=1
 SetEnvIfNoCase Referer ~*handicapvantoday\.com spam_ref=1
 SetEnvIfNoCase Referer ~*handsandlegs\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*hanink\.biz\.ly spam_ref=1
+SetEnvIfNoCase Referer ~*hannasolution\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*happy\.new\.yeartwit\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hasfun\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hatdc\.org spam_ref=1
@@ -2859,6 +2966,7 @@ SetEnvIfNoCase Referer ~*hmywwogw\.bloger\.index\.hr spam_ref=1
 SetEnvIfNoCase Referer ~*hobbyhuren24\.net spam_ref=1
 SetEnvIfNoCase Referer ~*hobbyhuren\-datenbank\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hobild\.net spam_ref=1
+SetEnvIfNoCase Referer ~*hoholikik\.club spam_ref=1
 SetEnvIfNoCase Referer ~*hol\.es spam_ref=1
 SetEnvIfNoCase Referer ~*holidaypics\.org spam_ref=1
 SetEnvIfNoCase Referer ~*hollywoodactress\.info spam_ref=1
@@ -2875,6 +2983,7 @@ SetEnvIfNoCase Referer ~*home\.myplaycity\.com spam_ref=1
 SetEnvIfNoCase Referer ~*honyaku\.yahoofs\.jp spam_ref=1
 SetEnvIfNoCase Referer ~*hopeonthestreet\.co\.uk spam_ref=1
 SetEnvIfNoCase Referer ~*hoporno\.com spam_ref=1
+SetEnvIfNoCase Referer ~*hornymatches\.com spam_ref=1
 SetEnvIfNoCase Referer ~*horoshieokna\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hostcritique\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hoste\.octopis\.com spam_ref=1
@@ -2912,10 +3021,10 @@ SetEnvIfNoCase Referer ~*hoverboardforsaledirect\.com spam_ref=1
 SetEnvIfNoCase Referer ~*howlongdoestizanidinestayinyoursystem\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*howmuchdoestizanidinecost\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*howopen\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*howtowhitenteethfast\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*hplaserjetpdriver8y\.pen\.io spam_ref=1
 SetEnvIfNoCase Referer ~*hptwaakw\.blog\.fc2\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hreade\.com spam_ref=1
-SetEnvIfNoCase Referer ~*href\.li spam_ref=1
 SetEnvIfNoCase Referer ~*hscsscotland\.com spam_ref=1
 SetEnvIfNoCase Referer ~*hspline\.com spam_ref=1
 SetEnvIfNoCase Referer ~*htmlcorner\.com spam_ref=1
@@ -2959,8 +3068,10 @@ SetEnvIfNoCase Referer ~*ifmo\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*igadgetsworld\.com spam_ref=1
 SetEnvIfNoCase Referer ~*igrovyeavtomaty777\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*igru\-xbox\.net spam_ref=1
+SetEnvIfNoCase Referer ~*i\-hobot\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*iinstalll\-fii1leis\.jus0wil\.pp\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*iklysha\.ml spam_ref=1
+SetEnvIfNoCase Referer ~*ilbe\.club spam_ref=1
 SetEnvIfNoCase Referer ~*ilikevitaly\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ilmen\.net spam_ref=1
 SetEnvIfNoCase Referer ~*iloveitaly\.ru spam_ref=1
@@ -3091,6 +3202,7 @@ SetEnvIfNoCase Referer ~*izhevsk\.zrus\.org spam_ref=1
 SetEnvIfNoCase Referer ~*izismile\.com spam_ref=1
 SetEnvIfNoCase Referer ~*izoll\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*j33x\.com spam_ref=1
+SetEnvIfNoCase Referer ~*jacago\.com spam_ref=1
 SetEnvIfNoCase Referer ~*jackwolfskinoutlet\.online spam_ref=1
 SetEnvIfNoCase Referer ~*jamiembrown\.com spam_ref=1
 SetEnvIfNoCase Referer ~*janavibekken\.no spam_ref=1
@@ -3215,6 +3327,7 @@ SetEnvIfNoCase Referer ~*kiwi237au\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*kladrus\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*kleine\-titten\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*kletkimehan\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*klikbonus\.com spam_ref=1
 SetEnvIfNoCase Referer ~*kliksaya\.com spam_ref=1
 SetEnvIfNoCase Referer ~*klosetkitten\.com spam_ref=1
 SetEnvIfNoCase Referer ~*kmd\-pto\.ru spam_ref=1
@@ -3286,6 +3399,7 @@ SetEnvIfNoCase Referer ~*lacasamorett\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lacave\.ntic\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*lacloop\.info spam_ref=1
 SetEnvIfNoCase Referer ~*ladov\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*laexotic\.com spam_ref=1
 SetEnvIfNoCase Referer ~*la\-fa\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*lafourmiliaire\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lafriore\.ru spam_ref=1
@@ -3320,6 +3434,7 @@ SetEnvIfNoCase Referer ~*ldrtrack\.com spam_ref=1
 SetEnvIfNoCase Referer ~*leadn\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*leadwayau\.com spam_ref=1
 SetEnvIfNoCase Referer ~*leboard\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*lechenie\-gemorroya\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ledis\.top spam_ref=1
 SetEnvIfNoCase Referer ~*ledpolice\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*legalrc\.biz spam_ref=1
@@ -3331,7 +3446,9 @@ SetEnvIfNoCase Referer ~*lescinq\.com spam_ref=1
 SetEnvIfNoCase Referer ~*letmacwork\.world spam_ref=1
 SetEnvIfNoCase Referer ~*letolove\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*letsart\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*letslowbefast\.site spam_ref=1
 SetEnvIfNoCase Referer ~*letslowbefast\.today spam_ref=1
+SetEnvIfNoCase Referer ~*letsrepair\.in spam_ref=1
 SetEnvIfNoCase Referer ~*letto\.by spam_ref=1
 SetEnvIfNoCase Referer ~*levaquin750mg\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lexaprogeneric\.link spam_ref=1
@@ -3395,6 +3512,7 @@ SetEnvIfNoCase Referer ~*loadopia\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lob\.com\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*localflirtbuddies\.com spam_ref=1
 SetEnvIfNoCase Referer ~*localmatchbook\.com spam_ref=1
+SetEnvIfNoCase Referer ~*locatellicorretor\.com\.br spam_ref=1
 SetEnvIfNoCase Referer ~*locationdesaison\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lockerz\.com spam_ref=1
 SetEnvIfNoCase Referer ~*locksmith\.jp spam_ref=1
@@ -3430,6 +3548,7 @@ SetEnvIfNoCase Referer ~*lsex\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*lsp\-awak\-perikanan\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ltvperf\.com spam_ref=1
 SetEnvIfNoCase Referer ~*lubetube\.com spam_ref=1
+SetEnvIfNoCase Referer ~*luckyday\.world spam_ref=1
 SetEnvIfNoCase Referer ~*luckyshop\.net\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*lumb\.co spam_ref=1
 SetEnvIfNoCase Referer ~*lutherstable\.org spam_ref=1
@@ -3445,6 +3564,7 @@ SetEnvIfNoCase Referer ~*m5home\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*mabdoola\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*macdamaged\.space spam_ref=1
 SetEnvIfNoCase Referer ~*macdamaged\.tech spam_ref=1
+SetEnvIfNoCase Referer ~*macfix\.life spam_ref=1
 SetEnvIfNoCase Referer ~*mackeeper\-center\.club spam_ref=1
 SetEnvIfNoCase Referer ~*mackeeper\-land\-672695126\.us\-east\-1\.elb\.amazonaws\.com spam_ref=1
 SetEnvIfNoCase Referer ~*macnewtech\.com spam_ref=1
@@ -3461,6 +3581,7 @@ SetEnvIfNoCase Referer ~*magicalfind\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*magicdiet\.gq spam_ref=1
 SetEnvIfNoCase Referer ~*magicplayer\-s\.acestream\.net spam_ref=1
 SetEnvIfNoCase Referer ~*maglid\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*magnetpress\.sk spam_ref=1
 SetEnvIfNoCase Referer ~*mail\.allnews24\.in spam_ref=1
 SetEnvIfNoCase Referer ~*mainlinehobby\.net spam_ref=1
 SetEnvIfNoCase Referer ~*makedo\.ru spam_ref=1
@@ -3514,6 +3635,7 @@ SetEnvIfNoCase Referer ~*maximpartnerspr\.com spam_ref=1
 SetEnvIfNoCase Referer ~*maxthon\.com spam_ref=1
 SetEnvIfNoCase Referer ~*maxxtor\.eu spam_ref=1
 SetEnvIfNoCase Referer ~*mazda\-roadsters\.com spam_ref=1
+SetEnvIfNoCase Referer ~*mb140\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*mbiologi\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*mcadamssupplyco\.com spam_ref=1
 SetEnvIfNoCase Referer ~*mcar\.in\.ua spam_ref=1
@@ -3527,6 +3649,7 @@ SetEnvIfNoCase Referer ~*meble\-bogart\.info spam_ref=1
 SetEnvIfNoCase Referer ~*mecash\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*medanestesia\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*meddesk\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*mediaoffers\.click spam_ref=1
 SetEnvIfNoCase Referer ~*mediawhirl\.net spam_ref=1
 SetEnvIfNoCase Referer ~*medicinacom\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*medicine\-4u\.org spam_ref=1
@@ -3663,6 +3786,7 @@ SetEnvIfNoCase Referer ~*monclervests\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*monetizationking\.net spam_ref=1
 SetEnvIfNoCase Referer ~*monetizer\.com\-01\.site spam_ref=1
 SetEnvIfNoCase Referer ~*money\-every\-day\.com spam_ref=1
+SetEnvIfNoCase Referer ~*money\-for\-placing\-articles\.com spam_ref=1
 SetEnvIfNoCase Referer ~*moneymaster\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*moneytop\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*moneyviking\-a\.akamaihd\.net spam_ref=1
@@ -3696,6 +3820,7 @@ SetEnvIfNoCase Referer ~*moxo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*moyakuhnia\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*moyaterapiya\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*moz\.com spam_ref=1
+SetEnvIfNoCase Referer ~*mp3downloadhq\.com spam_ref=1
 SetEnvIfNoCase Referer ~*mp3films\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*mp3ringtone\.info spam_ref=1
 SetEnvIfNoCase Referer ~*mrbitsandbytes\.com spam_ref=1
@@ -3720,6 +3845,7 @@ SetEnvIfNoCase Referer ~*musezone\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*musezone\.su spam_ref=1
 SetEnvIfNoCase Referer ~*musicas\.baixar\-musicas\-gratis\.com spam_ref=1
 SetEnvIfNoCase Referer ~*musicdaddy\.net spam_ref=1
+SetEnvIfNoCase Referer ~*musicktab\.com spam_ref=1
 SetEnvIfNoCase Referer ~*musicspire\.online spam_ref=1
 SetEnvIfNoCase Referer ~*musicstock\.me spam_ref=1
 SetEnvIfNoCase Referer ~*music\.utrolive\.ru spam_ref=1
@@ -3760,6 +3886,7 @@ SetEnvIfNoCase Referer ~*mykings\.pw spam_ref=1
 SetEnvIfNoCase Referer ~*mylesosibirsk\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*mylida\.org spam_ref=1
 SetEnvIfNoCase Referer ~*myliveblog\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*mymobilemoneypages\.com spam_ref=1
 SetEnvIfNoCase Referer ~*myonigroup\.com spam_ref=1
 SetEnvIfNoCase Referer ~*myonlinepayday\.co spam_ref=1
 SetEnvIfNoCase Referer ~*my\.opera\.com spam_ref=1
@@ -3797,6 +3924,7 @@ SetEnvIfNoCase Referer ~*nate\.com spam_ref=1
 SetEnvIfNoCase Referer ~*na\-telefon\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*nationalbreakdown\.com spam_ref=1
 SetEnvIfNoCase Referer ~*naturalbreakthroughsresearch\.com spam_ref=1
+SetEnvIfNoCase Referer ~*naughtyconnect\.com spam_ref=1
 SetEnvIfNoCase Referer ~*naval\.jislaaik\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nbsproject\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*negociosdasha\.com spam_ref=1
@@ -3804,6 +3932,7 @@ SetEnvIfNoCase Referer ~*negral\.pluto\.ro spam_ref=1
 SetEnvIfNoCase Referer ~*nelc\.edu\.eg spam_ref=1
 SetEnvIfNoCase Referer ~*neobux\-bg\.info spam_ref=1
 SetEnvIfNoCase Referer ~*neodownload\.webcam spam_ref=1
+SetEnvIfNoCase Referer ~*nero\-us\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nerudlogistik\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*netallergy\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*netfacet\.net spam_ref=1
@@ -3837,16 +3966,20 @@ SetEnvIfNoCase Referer ~*nibbler\.silktide\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nicefloor\.co\.uk spam_ref=1
 SetEnvIfNoCase Referer ~*nicovideo\.jp spam_ref=1
 SetEnvIfNoCase Referer ~*nightvision746\.weebly\.com spam_ref=1
+SetEnvIfNoCase Referer ~*nikhilbahl\.com spam_ref=1
 SetEnvIfNoCase Referer ~*niki\-mlt\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*nikitabuch\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nikitsyringedrivelg\.pen\.io spam_ref=1
 SetEnvIfNoCase Referer ~*nikkiewart\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*ningessaybe\.me spam_ref=1
 SetEnvIfNoCase Referer ~*nippon\-bearings\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*niroo\.info spam_ref=1
+SetEnvIfNoCase Referer ~*njkmznnb\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*nl\.netlog\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nmrk\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*noclegonline\.info spam_ref=1
 SetEnvIfNoCase Referer ~*nodup\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*nofreezingmac\.click spam_ref=1
 SetEnvIfNoCase Referer ~*nofreezingmac\.work spam_ref=1
 SetEnvIfNoCase Referer ~*nonews\.co spam_ref=1
 SetEnvIfNoCase Referer ~*nootrino\.com spam_ref=1
@@ -3877,6 +4010,7 @@ SetEnvIfNoCase Referer ~*nudepatch\.net spam_ref=1
 SetEnvIfNoCase Referer ~*nudo\.ca spam_ref=1
 SetEnvIfNoCase Referer ~*nufaq\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nuit\-artisanale\.com spam_ref=1
+SetEnvIfNoCase Referer ~*nuker\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nullrefer\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nuup\.info spam_ref=1
 SetEnvIfNoCase Referer ~*nvformula\.ru spam_ref=1
@@ -3884,6 +4018,7 @@ SetEnvIfNoCase Referer ~*nvssf\.com spam_ref=1
 SetEnvIfNoCase Referer ~*nyfinance\.ml spam_ref=1
 SetEnvIfNoCase Referer ~*nzfilecloud\.weebly\.com spam_ref=1
 SetEnvIfNoCase Referer ~*o00\.in spam_ref=1
+SetEnvIfNoCase Referer ~*o333o\.com spam_ref=1
 SetEnvIfNoCase Referer ~*oakleyglassesonline\.us spam_ref=1
 SetEnvIfNoCase Referer ~*oakridgemo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*oballergiya\.ru spam_ref=1
@@ -3919,6 +4054,7 @@ SetEnvIfNoCase Referer ~*old\-rock\.com spam_ref=1
 SetEnvIfNoCase Referer ~*olgacvetmet\.com spam_ref=1
 SetEnvIfNoCase Referer ~*olvanto\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*olympescort\.com spam_ref=1
+SetEnvIfNoCase Referer ~*omoikiri\-japan\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*omsk\.xrus\.org spam_ref=1
 SetEnvIfNoCase Referer ~*onclickpredictiv\.com spam_ref=1
 SetEnvIfNoCase Referer ~*onclkads\.com spam_ref=1
@@ -3937,6 +4073,7 @@ SetEnvIfNoCase Referer ~*online7777\.com spam_ref=1
 SetEnvIfNoCase Referer ~*onlinebay\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*onlinedomains\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*onlinefilmz\.net spam_ref=1
+SetEnvIfNoCase Referer ~*online\-hd\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*online\-hit\.info spam_ref=1
 SetEnvIfNoCase Referer ~*online\.ktc45\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*onlineku\.com spam_ref=1
@@ -3981,6 +4118,7 @@ SetEnvIfNoCase Referer ~*oren\-cats\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*orgasmus\-virtual\.com spam_ref=1
 SetEnvIfNoCase Referer ~*orhonit\.com spam_ref=1
 SetEnvIfNoCase Referer ~*origin\-my\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*orion\-code\-access\.net spam_ref=1
 SetEnvIfNoCase Referer ~*orion\-v\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ororodnik\.goodbb\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*orsonet\.ru spam_ref=1
@@ -4005,6 +4143,7 @@ SetEnvIfNoCase Referer ~*ozas\.net spam_ref=1
 SetEnvIfNoCase Referer ~*oz\-offers\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ozoz\.it spam_ref=1
 SetEnvIfNoCase Referer ~*paceform\.com spam_ref=1
+SetEnvIfNoCase Referer ~*pacificair\.com spam_ref=1
 SetEnvIfNoCase Referer ~*paclitor\.com spam_ref=1
 SetEnvIfNoCase Referer ~*page2rss\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pagesense\.com spam_ref=1
@@ -4025,18 +4164,23 @@ SetEnvIfNoCase Referer ~*paradontozanet\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*parajumpersoutlet\.online spam_ref=1
 SetEnvIfNoCase Referer ~*parajumpersstore\.online spam_ref=1
 SetEnvIfNoCase Referer ~*paramountmarble\.co\.uk spam_ref=1
+SetEnvIfNoCase Referer ~*park\.above\.com spam_ref=1
 SetEnvIfNoCase Referer ~*parlament\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*partner\-cdn\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partner\-high\.men spam_ref=1
+SetEnvIfNoCase Referer ~*partnerline\.men spam_ref=1
+SetEnvIfNoCase Referer ~*partner\-pop\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partner\-print\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partnersafe\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partners\-ship\.pro spam_ref=1
 SetEnvIfNoCase Referer ~*partner\-stop\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partner\-trustworthy\.men spam_ref=1
+SetEnvIfNoCase Referer ~*partnerworkroom\.men spam_ref=1
 SetEnvIfNoCase Referer ~*partybunny\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pateaswing\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pathwhelp\.org spam_ref=1
 SetEnvIfNoCase Referer ~*patol01\.pw spam_ref=1
+SetEnvIfNoCase Referer ~*patterntrader\-en\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pattersonsweb\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pay2me\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*paydayloanslocal\.com spam_ref=1
@@ -4051,6 +4195,7 @@ SetEnvIfNoCase Referer ~*pc\-services\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pc\-test\.net spam_ref=1
 SetEnvIfNoCase Referer ~*pc\-virus\-d0l92j2\.pw spam_ref=1
 SetEnvIfNoCase Referer ~*pdamods\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*pdn\-4\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pdns\.cz spam_ref=1
 SetEnvIfNoCase Referer ~*pdns\.download spam_ref=1
 SetEnvIfNoCase Referer ~*pearlisland\.ru spam_ref=1
@@ -4133,6 +4278,7 @@ SetEnvIfNoCase Referer ~*pk\-services\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pladform\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*plaff\-go\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*plastgranar\.nu spam_ref=1
+SetEnvIfNoCase Referer ~*plastgran\.com spam_ref=1
 SetEnvIfNoCase Referer ~*plastjulgranar\.se spam_ref=1
 SetEnvIfNoCase Referer ~*plastweb\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*platesauto\.com spam_ref=1
@@ -4147,6 +4293,7 @@ SetEnvIfNoCase Referer ~*pliks\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*ploenjitmedia\.azurewebsites\.net spam_ref=1
 SetEnvIfNoCase Referer ~*plohaya\-kreditnaya\-istoriya\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*plusnetwork\.com spam_ref=1
+SetEnvIfNoCase Referer ~*pl\-vouchers\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pobeiranie\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*pochemychka\.net spam_ref=1
 SetEnvIfNoCase Referer ~*podshipniki\-nsk\.ru spam_ref=1
@@ -4175,6 +4322,8 @@ SetEnvIfNoCase Referer ~*popmarker\.com spam_ref=1
 SetEnvIfNoCase Referer ~*poppen\-nw\.net spam_ref=1
 SetEnvIfNoCase Referer ~*popserve\.adscpm\.net spam_ref=1
 SetEnvIfNoCase Referer ~*poptool\.net spam_ref=1
+SetEnvIfNoCase Referer ~*popunder\.net spam_ref=1
+SetEnvIfNoCase Referer ~*popunder\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*popup\-fdm\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*popup\-hgd\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*popup\-jdh\.xyz spam_ref=1
@@ -4232,15 +4381,19 @@ SetEnvIfNoCase Referer ~*pozdrawleniya\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pozvonim\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pp\-budpostach\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*pr0fit\-b0x\.com spam_ref=1
+SetEnvIfNoCase Referer ~*praisong\.net spam_ref=1
 SetEnvIfNoCase Referer ~*pravoholding\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*prchecker\.info spam_ref=1
+SetEnvIfNoCase Referer ~*prefersurvey\.net spam_ref=1
 SetEnvIfNoCase Referer ~*pregnant\.guru spam_ref=1
 SetEnvIfNoCase Referer ~*preparevideosafesystem4unow\.site spam_ref=1
 SetEnvIfNoCase Referer ~*preparevideosafesystem4unow\.space spam_ref=1
+SetEnvIfNoCase Referer ~*presleycollectibles\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pretty\-mart\.com spam_ref=1
 SetEnvIfNoCase Referer ~*priceg\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pricheskaonline\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pricheski\-video\.com spam_ref=1
+SetEnvIfNoCase Referer ~*primedice\.com spam_ref=1
 SetEnvIfNoCase Referer ~*princeadvantagesales\.com spam_ref=1
 SetEnvIfNoCase Referer ~*printdirectforless\.com spam_ref=1
 SetEnvIfNoCase Referer ~*printie\.com spam_ref=1
@@ -4272,6 +4425,7 @@ SetEnvIfNoCase Referer ~*proekt\-mos\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*professionaldieselcare\.com spam_ref=1
 SetEnvIfNoCase Referer ~*professionalwritingservices15\.blogspot\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*profitfx\.online spam_ref=1
+SetEnvIfNoCase Referer ~*profit\-opportunity\.com spam_ref=1
 SetEnvIfNoCase Referer ~*profitsport\.club spam_ref=1
 SetEnvIfNoCase Referer ~*profolan\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*proftests\.net spam_ref=1
@@ -4290,11 +4444,13 @@ SetEnvIfNoCase Referer ~*promoforum\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*promoheads\.com spam_ref=1
 SetEnvIfNoCase Referer ~*promover\.org spam_ref=1
 SetEnvIfNoCase Referer ~*pronekut\.com spam_ref=1
+SetEnvIfNoCase Referer ~*pronorm\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*pron\.pro spam_ref=1
 SetEnvIfNoCase Referer ~*pro\-okis\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*proposal\-engine\.com spam_ref=1
 SetEnvIfNoCase Referer ~*propranolol40mg\.blogspot\.com spam_ref=1
 SetEnvIfNoCase Referer ~*prosmibank\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*prospekt\-st\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*prosperent\.com spam_ref=1
 SetEnvIfNoCase Referer ~*prostitutki\-almata\.org spam_ref=1
 SetEnvIfNoCase Referer ~*prostitutki\-astana\.org spam_ref=1
@@ -4323,6 +4479,7 @@ SetEnvIfNoCase Referer ~*pulse33\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*pulseonclick\.com spam_ref=1
 SetEnvIfNoCase Referer ~*purchasepillsnorx\.com spam_ref=1
 SetEnvIfNoCase Referer ~*purplesphere\.in spam_ref=1
+SetEnvIfNoCase Referer ~*purplestats\.com spam_ref=1
 SetEnvIfNoCase Referer ~*push\-ad\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pushdata\.sendpulse\.com spam_ref=1
 SetEnvIfNoCase Referer ~*pussyfleet\.com spam_ref=1
@@ -4342,6 +4499,7 @@ SetEnvIfNoCase Referer ~*qexyfu\.bugs3\.com spam_ref=1
 SetEnvIfNoCase Referer ~*qitt\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*qld10000\.net spam_ref=1
 SetEnvIfNoCase Referer ~*q\-moto\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*qor360\.com spam_ref=1
 SetEnvIfNoCase Referer ~*qpypcx\.com spam_ref=1
 SetEnvIfNoCase Referer ~*qualitymarketzone\.com spam_ref=1
 SetEnvIfNoCase Referer ~*quality\-traffic\.com spam_ref=1
@@ -4369,6 +4527,7 @@ SetEnvIfNoCase Referer ~*raisedseo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*randalljhoward\.com spam_ref=1
 SetEnvIfNoCase Referer ~*randki\-sex\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rank\-checker\.online spam_ref=1
+SetEnvIfNoCase Referer ~*rankexperience\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ranking2017\.ga spam_ref=1
 SetEnvIfNoCase Referer ~*rankingchart\.de spam_ref=1
 SetEnvIfNoCase Referer ~*rankings\-analytics\.com spam_ref=1
@@ -4382,6 +4541,7 @@ SetEnvIfNoCase Referer ~*rapevideosmovies\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rapidgator\-porn\.ga spam_ref=1
 SetEnvIfNoCase Referer ~*rapidokbrain\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rasteniya\-vs\-zombi\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*ratemodels\.net spam_ref=1
 SetEnvIfNoCase Referer ~*razamicroelectronics\.com spam_ref=1
 SetEnvIfNoCase Referer ~*razorweb\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*razyboard\.com spam_ref=1
@@ -4401,6 +4561,10 @@ SetEnvIfNoCase Referer ~*recipedays\.com spam_ref=1
 SetEnvIfNoCase Referer ~*recipedays\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*recordpage\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*redbottomheels\.xyz spam_ref=1
+SetEnvIfNoCase Referer ~*redhotfreebies\.co\.uk spam_ref=1
+SetEnvIfNoCase Referer ~*redirectingat\.com spam_ref=1
+SetEnvIfNoCase Referer ~*redirectme\.net spam_ref=1
+SetEnvIfNoCase Referer ~*redirlock\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rednise\.com spam_ref=1
 SetEnvIfNoCase Referer ~*reelheroes\.net spam_ref=1
 SetEnvIfNoCase Referer ~*reeyanaturopathy\.com spam_ref=1
@@ -4409,8 +4573,12 @@ SetEnvIfNoCase Referer ~*referencemoi\.com spam_ref=1
 SetEnvIfNoCase Referer ~*r\-e\-f\-e\-r\-e\-r\.com spam_ref=1
 SetEnvIfNoCase Referer ~*refererx\.com spam_ref=1
 SetEnvIfNoCase Referer ~*refudiatethissarah\.info spam_ref=1
+SetEnvIfNoCase Referer ~*regdefense\.com spam_ref=1
 SetEnvIfNoCase Referer ~*regionshop\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*registratciya\-v\-moskve\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*registry\-cleaner\.net spam_ref=1
+SetEnvIfNoCase Referer ~*registry\-clean\-up\.net spam_ref=1
+SetEnvIfNoCase Referer ~*registrysweeper\.com spam_ref=1
 SetEnvIfNoCase Referer ~*reimageplus\.com spam_ref=1
 SetEnvIfNoCase Referer ~*reklama1\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*reklama\-i\-rabota\.ru spam_ref=1
@@ -4432,6 +4600,7 @@ SetEnvIfNoCase Referer ~*remybutler\.fr spam_ref=1
 SetEnvIfNoCase Referer ~*renecaovilla\.online spam_ref=1
 SetEnvIfNoCase Referer ~*renecaovillasale\.online spam_ref=1
 SetEnvIfNoCase Referer ~*renewablewealth\.com spam_ref=1
+SetEnvIfNoCase Referer ~*rennlist\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rentehno\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*repeatlogo\.co\.uk spam_ref=1
 SetEnvIfNoCase Referer ~*replicaclub\.ru spam_ref=1
@@ -4462,6 +4631,7 @@ SetEnvIfNoCase Referer ~*ric\.info spam_ref=1
 SetEnvIfNoCase Referer ~*ricorsogiustizia\.org spam_ref=1
 SetEnvIfNoCase Referer ~*riders\.ro spam_ref=1
 SetEnvIfNoCase Referer ~*rightenergysolutions\.com\.au spam_ref=1
+SetEnvIfNoCase Referer ~*rimedia\.org spam_ref=1
 SetEnvIfNoCase Referer ~*ring4rhino\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ringporno\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ringtonepartner\.com spam_ref=1
@@ -4474,6 +4644,7 @@ SetEnvIfNoCase Referer ~*robot\-forex\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*rockingclicks\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rogervivierforsale\.com spam_ref=1
 SetEnvIfNoCase Referer ~*roleforum\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*roll123\.com spam_ref=1
 SetEnvIfNoCase Referer ~*roma\-kukareku\.livejournal\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rome2rio\.com spam_ref=1
 SetEnvIfNoCase Referer ~*roofers\.org\.uk spam_ref=1
@@ -4483,6 +4654,7 @@ SetEnvIfNoCase Referer ~*rospromtest\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*rossanasaavedra\.net spam_ref=1
 SetEnvIfNoCase Referer ~*rossmark\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*rostov\.xrus\.org spam_ref=1
+SetEnvIfNoCase Referer ~*royalads\.net spam_ref=1
 SetEnvIfNoCase Referer ~*royal\-betting\.net spam_ref=1
 SetEnvIfNoCase Referer ~*royalcar\-ufa\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*royal\-investments\.net spam_ref=1
@@ -4490,9 +4662,12 @@ SetEnvIfNoCase Referer ~*royalvegascasino\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rozalli\.com spam_ref=1
 SetEnvIfNoCase Referer ~*roznica\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*rp9\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*rubanners\.com spam_ref=1
+SetEnvIfNoCase Referer ~*ruclicks\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rucrypt\.com spam_ref=1
 SetEnvIfNoCase Referer ~*ru\-dety\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*ruex\.org\.ua spam_ref=1
+SetEnvIfNoCase Referer ~*ruf777\.com spam_ref=1
 SetEnvIfNoCase Referer ~*rukino\.org spam_ref=1
 SetEnvIfNoCase Referer ~*rumamba\.com spam_ref=1
 SetEnvIfNoCase Referer ~*running\-line\.ru spam_ref=1
@@ -4532,6 +4707,7 @@ SetEnvIfNoCase Referer ~*samo\-soznanie\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*sampleletters\.net spam_ref=1
 SetEnvIfNoCase Referer ~*sanatorrii\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*sandhillsonline\.com spam_ref=1
+SetEnvIfNoCase Referer ~*saneitconsulting\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sanjosestartups\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sankt\-peterburg\.nodup\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*santasgift\.ml spam_ref=1
@@ -4539,6 +4715,7 @@ SetEnvIfNoCase Referer ~*santechnik\.jimdo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sanyuprojects\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sarafangel\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*saratov\.xrus\.org spam_ref=1
+SetEnvIfNoCase Referer ~*sardinie\.us spam_ref=1
 SetEnvIfNoCase Referer ~*sarf3omlat\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sarm\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*sashagreyblog\.ga spam_ref=1
@@ -4594,6 +4771,7 @@ SetEnvIfNoCase Referer ~*scanner\-walter\.top spam_ref=1
 SetEnvIfNoCase Referer ~*scanner\-walt\.top spam_ref=1
 SetEnvIfNoCase Referer ~*scanner\-willy\.top spam_ref=1
 SetEnvIfNoCase Referer ~*scansafe\.net spam_ref=1
+SetEnvIfNoCase Referer ~*scanspyware\.net spam_ref=1
 SetEnvIfNoCase Referer ~*scenarii\-1\-sentyabrya\.uroki\.org\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*scenicmissouri\.us spam_ref=1
 SetEnvIfNoCase Referer ~*schlampen\-treffen\.com spam_ref=1
@@ -4632,6 +4810,7 @@ SetEnvIfNoCase Referer ~*se\.bnt\-team\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seccioncontrabajo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*secretscook\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*secret\.xn\-\-oogle\-wmc\.com spam_ref=1
+SetEnvIfNoCase Referer ~*security60\-e\.com spam_ref=1
 SetEnvIfNoCase Referer ~*securityallianceservices\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seeingmeerkat\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seemoreresultshu\-a\.akamaihd\.net spam_ref=1
@@ -4654,8 +4833,10 @@ SetEnvIfNoCase Referer ~*seofied\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seofirmreviewsus\.info spam_ref=1
 SetEnvIfNoCase Referer ~*seogadget\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*seoheap\.com spam_ref=1
+SetEnvIfNoCase Referer ~*seoholding\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seokicks\.de spam_ref=1
 SetEnvIfNoCase Referer ~*seomarketings\.online spam_ref=1
+SetEnvIfNoCase Referer ~*seonetwizard\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seo\-platform\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seoprofiler\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seorank\.info spam_ref=1
@@ -4678,6 +4859,7 @@ SetEnvIfNoCase Referer ~*servisural\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*serw\.clicksor\.com spam_ref=1
 SetEnvIfNoCase Referer ~*seryeznie\-znakomstva\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*sethrollins\.net spam_ref=1
+SetEnvIfNoCase Referer ~*sevenstars7\.com spam_ref=1
 SetEnvIfNoCase Referer ~*se\-welding\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*sexad\.net spam_ref=1
 SetEnvIfNoCase Referer ~*sexblog\.pw spam_ref=1
@@ -4764,6 +4946,7 @@ SetEnvIfNoCase Referer ~*siha\.de spam_ref=1
 SetEnvIfNoCase Referer ~*sildenafilcitratemed\.com spam_ref=1
 SetEnvIfNoCase Referer ~*silktide\.com spam_ref=1
 SetEnvIfNoCase Referer ~*silverage\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*silvercash\.com spam_ref=1
 SetEnvIfNoCase Referer ~*silvermature\.net spam_ref=1
 SetEnvIfNoCase Referer ~*similardeals\.net spam_ref=1
 SetEnvIfNoCase Referer ~*simon3\.ru spam_ref=1
@@ -4774,6 +4957,7 @@ SetEnvIfNoCase Referer ~*simply\.net spam_ref=1
 SetEnvIfNoCase Referer ~*simpoed\.ufop\.br spam_ref=1
 SetEnvIfNoCase Referer ~*sim\-service\.net spam_ref=1
 SetEnvIfNoCase Referer ~*sims\-sims\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*simul\.co spam_ref=1
 SetEnvIfNoCase Referer ~*sindragosa\.comxa\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sinel\.info spam_ref=1
 SetEnvIfNoCase Referer ~*sinestesia\.host\.sk spam_ref=1
@@ -4785,6 +4969,7 @@ SetEnvIfNoCase Referer ~*site\-analyzer\.com spam_ref=1
 SetEnvIfNoCase Referer ~*site\-auditor\.online spam_ref=1
 SetEnvIfNoCase Referer ~*sitebeam\.net spam_ref=1
 SetEnvIfNoCase Referer ~*siteexpress\.co\.il spam_ref=1
+SetEnvIfNoCase Referer ~*siteheart\.net spam_ref=1
 SetEnvIfNoCase Referer ~*siteonomy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*siteripz\.net spam_ref=1
 SetEnvIfNoCase Referer ~*site\-speed\-checker\.site spam_ref=1
@@ -4823,6 +5008,7 @@ SetEnvIfNoCase Referer ~*slowmacfaster\.trade spam_ref=1
 SetEnvIfNoCase Referer ~*slowmac\.tech spam_ref=1
 SetEnvIfNoCase Referer ~*sluganarodu\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*slujbauborki\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*slutloadlive\.com spam_ref=1
 SetEnvIfNoCase Referer ~*smailik\.org spam_ref=1
 SetEnvIfNoCase Referer ~*small\-game\.com spam_ref=1
 SetEnvIfNoCase Referer ~*small\-games\.biz spam_ref=1
@@ -4836,6 +5022,7 @@ SetEnvIfNoCase Referer ~*smichovbike\.cz spam_ref=1
 SetEnvIfNoCase Referer ~*smokewithrabbits\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sms2x2\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*smstraf\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*sneakyboy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*snip\.to spam_ref=1
 SetEnvIfNoCase Referer ~*snip\.tw spam_ref=1
 SetEnvIfNoCase Referer ~*snjack\.info spam_ref=1
@@ -4908,6 +5095,7 @@ SetEnvIfNoCase Referer ~*space4update\.pw spam_ref=1
 SetEnvIfNoCase Referer ~*space4updating\.win spam_ref=1
 SetEnvIfNoCase Referer ~*spaceshipad\.com spam_ref=1
 SetEnvIfNoCase Referer ~*spammen\.de spam_ref=1
+SetEnvIfNoCase Referer ~*spamnuker\.com spam_ref=1
 SetEnvIfNoCase Referer ~*spasswelt\.net spam_ref=1
 SetEnvIfNoCase Referer ~*spasswelt\.xyz spam_ref=1
 SetEnvIfNoCase Referer ~*spb\.afora\.ru spam_ref=1
@@ -4932,6 +5120,10 @@ SetEnvIfNoCase Referer ~*spyfu\.com spam_ref=1
 SetEnvIfNoCase Referer ~*spylog\.com spam_ref=1
 SetEnvIfNoCase Referer ~*spymac\.net spam_ref=1
 SetEnvIfNoCase Referer ~*spy\-sts\.com spam_ref=1
+SetEnvIfNoCase Referer ~*spywarebegone\.com spam_ref=1
+SetEnvIfNoCase Referer ~*spywareit\.com spam_ref=1
+SetEnvIfNoCase Referer ~*spywarenuker\.com spam_ref=1
+SetEnvIfNoCase Referer ~*spywarespy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*squidoo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*srdrvp\.com spam_ref=1
 SetEnvIfNoCase Referer ~*srecorder\.com spam_ref=1
@@ -4972,6 +5164,7 @@ SetEnvIfNoCase Referer ~*stpolice\.com spam_ref=1
 SetEnvIfNoCase Referer ~*strag\-invest\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*strana\-krasoty\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*strana\-solnca\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*strangeduckfilms\.com spam_ref=1
 SetEnvIfNoCase Referer ~*streetfire\.net spam_ref=1
 SetEnvIfNoCase Referer ~*streetfooduncovered\.com spam_ref=1
 SetEnvIfNoCase Referer ~*streha\-metalko\.si spam_ref=1
@@ -4990,6 +5183,7 @@ SetEnvIfNoCase Referer ~*strongsignal\-a\.akamaihd\.net spam_ref=1
 SetEnvIfNoCase Referer ~*stroydetali\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*stroyhelp\-dv\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*stroymonolit\.su spam_ref=1
+SetEnvIfNoCase Referer ~*stroyplus\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*strv\.se spam_ref=1
 SetEnvIfNoCase Referer ~*studiofaca\.com spam_ref=1
 SetEnvIfNoCase Referer ~*stuff\-about\-money\.com spam_ref=1
@@ -5000,6 +5194,7 @@ SetEnvIfNoCase Referer ~*suche\.t\-online\.de spam_ref=1
 SetEnvIfNoCase Referer ~*sugarkun\.com spam_ref=1
 SetEnvIfNoCase Referer ~*suggest\-keywords\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sugvant\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*suhanpacktech\.com spam_ref=1
 SetEnvIfNoCase Referer ~*sukarame\.net spam_ref=1
 SetEnvIfNoCase Referer ~*sukirgenk\.dvrlists\.com spam_ref=1
 SetEnvIfNoCase Referer ~*summerlinhomes411\.info spam_ref=1
@@ -5035,6 +5230,7 @@ SetEnvIfNoCase Referer ~*swimpool\.ca spam_ref=1
 SetEnvIfNoCase Referer ~*swinger\-mobil\.net spam_ref=1
 SetEnvIfNoCase Referer ~*swingerseiten\.com spam_ref=1
 SetEnvIfNoCase Referer ~*swinginwithme\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*swinon\.site spam_ref=1
 SetEnvIfNoCase Referer ~*swiped\.su spam_ref=1
 SetEnvIfNoCase Referer ~*swsociety\.se spam_ref=1
 SetEnvIfNoCase Referer ~*sygraem\.com spam_ref=1
@@ -5213,8 +5409,12 @@ SetEnvIfNoCase Referer ~*tomatis\.gospartner\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tomck\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tongkatmadura\.info spam_ref=1
 SetEnvIfNoCase Referer ~*toolsky\.com spam_ref=1
+SetEnvIfNoCase Referer ~*toondinsey\.com spam_ref=1
+SetEnvIfNoCase Referer ~*toon\-families\.com spam_ref=1
+SetEnvIfNoCase Referer ~*toonfamilies\.net spam_ref=1
 SetEnvIfNoCase Referer ~*tooplay\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tootoo\.to spam_ref=1
+SetEnvIfNoCase Referer ~*top10registrycleaners\.com spam_ref=1
 SetEnvIfNoCase Referer ~*top10\-way\.com spam_ref=1
 SetEnvIfNoCase Referer ~*top1\-seo\-service\.com spam_ref=1
 SetEnvIfNoCase Referer ~*top250movies\.ru spam_ref=1
@@ -5224,6 +5424,7 @@ SetEnvIfNoCase Referer ~*topbestgames\.com spam_ref=1
 SetEnvIfNoCase Referer ~*topclickguru\.com spam_ref=1
 SetEnvIfNoCase Referer ~*top\-deal\.com\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*topdownloads\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*topkarkas\.com spam_ref=1
 SetEnvIfNoCase Referer ~*top\-karkas\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*topmira\.com spam_ref=1
 SetEnvIfNoCase Referer ~*topquality\.cf spam_ref=1
@@ -5249,11 +5450,14 @@ SetEnvIfNoCase Referer ~*toyota\.7zap\.com spam_ref=1
 SetEnvIfNoCase Referer ~*toys\.erolove\.in spam_ref=1
 SetEnvIfNoCase Referer ~*tozup\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tpu\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*tracfone\.com spam_ref=1
 SetEnvIfNoCase Referer ~*track112\.site spam_ref=1
+SetEnvIfNoCase Referer ~*tracklead\.net spam_ref=1
 SetEnvIfNoCase Referer ~*trackmedia101\.com spam_ref=1
 SetEnvIfNoCase Referer ~*track\-rankings\.online spam_ref=1
 SetEnvIfNoCase Referer ~*tracksurf\.daooda\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tracksz\.co spam_ref=1
+SetEnvIfNoCase Referer ~*trackzapper\.com spam_ref=1
 SetEnvIfNoCase Referer ~*tradedeals\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*traderzplanet\.in spam_ref=1
 SetEnvIfNoCase Referer ~*tradgardspartner\.se spam_ref=1
@@ -5292,6 +5496,7 @@ SetEnvIfNoCase Referer ~*trucri\.me spam_ref=1
 SetEnvIfNoCase Referer ~*trudogolik\.net spam_ref=1
 SetEnvIfNoCase Referer ~*truemfilelj\.gq spam_ref=1
 SetEnvIfNoCase Referer ~*trumpetedextremes\.com spam_ref=1
+SetEnvIfNoCase Referer ~*trustaffs\.com spam_ref=1
 SetEnvIfNoCase Referer ~*trustedhealthtips\.com spam_ref=1
 SetEnvIfNoCase Referer ~*trustedmaccleaner\.com spam_ref=1
 SetEnvIfNoCase Referer ~*try\-rx\.com spam_ref=1
@@ -5368,6 +5573,7 @@ SetEnvIfNoCase Referer ~*umityangin\.net spam_ref=1
 SetEnvIfNoCase Referer ~*umnovocaminho\.com spam_ref=1
 SetEnvIfNoCase Referer ~*um\-razum\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*unacittaconte\.org spam_ref=1
+SetEnvIfNoCase Referer ~*unblocksit\.es spam_ref=1
 SetEnvIfNoCase Referer ~*underthesite\.com spam_ref=1
 SetEnvIfNoCase Referer ~*uni\.me spam_ref=1
 SetEnvIfNoCase Referer ~*unimodemhalfduplefw\.pen\.io spam_ref=1
@@ -5378,7 +5584,12 @@ SetEnvIfNoCase Referer ~*unitygame3d\.com spam_ref=1
 SetEnvIfNoCase Referer ~*universals\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*unmaroll\.ya\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*unpredictable\.ga spam_ref=1
+SetEnvIfNoCase Referer ~*unrealcommander\.biz spam_ref=1
+SetEnvIfNoCase Referer ~*unrealcommander\.com spam_ref=1
+SetEnvIfNoCase Referer ~*unrealcommander\.org spam_ref=1
 SetEnvIfNoCase Referer ~*uogonline\.com spam_ref=1
+SetEnvIfNoCase Referer ~*upproar\.com spam_ref=1
+SetEnvIfNoCase Referer ~*uprour\.com spam_ref=1
 SetEnvIfNoCase Referer ~*upstore\.me spam_ref=1
 SetEnvIfNoCase Referer ~*uptime\-alpha\.net spam_ref=1
 SetEnvIfNoCase Referer ~*uptimebot\.net spam_ref=1
@@ -5423,6 +5634,7 @@ SetEnvIfNoCase Referer ~*valuado\.com spam_ref=1
 SetEnvIfNoCase Referer ~*valueclick\.com spam_ref=1
 SetEnvIfNoCase Referer ~*vancleefreplica\.pw spam_ref=1
 SetEnvIfNoCase Referer ~*vandrie\-ict\.nl spam_ref=1
+SetEnvIfNoCase Referer ~*vapeface\.club spam_ref=1
 SetEnvIfNoCase Referer ~*vapsy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*varbergsvind\.se spam_ref=1
 SetEnvIfNoCase Referer ~*varikoz24\.com spam_ref=1
@@ -5431,6 +5643,7 @@ SetEnvIfNoCase Referer ~*vashsvet\.com spam_ref=1
 SetEnvIfNoCase Referer ~*vasileostrovsky\-rayon\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vavilone\.com spam_ref=1
 SetEnvIfNoCase Referer ~*vbabule\.net spam_ref=1
+SetEnvIfNoCase Referer ~*vclicks\.net spam_ref=1
 SetEnvIfNoCase Referer ~*vduplo\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vedomstvo\.net spam_ref=1
 SetEnvIfNoCase Referer ~*veerotech\.com spam_ref=1
@@ -5440,6 +5653,7 @@ SetEnvIfNoCase Referer ~*vektorpress\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vekzdorov\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vellings\.info spam_ref=1
 SetEnvIfNoCase Referer ~*velobikestock\.com spam_ref=1
+SetEnvIfNoCase Referer ~*venerologiya\.com spam_ref=1
 SetEnvIfNoCase Referer ~*venta\-prom\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*ventelnos\.com spam_ref=1
 SetEnvIfNoCase Referer ~*vereo\.eu spam_ref=1
@@ -5448,6 +5662,8 @@ SetEnvIfNoCase Referer ~*vesnatehno\.com spam_ref=1
 SetEnvIfNoCase Referer ~*vesnatehno\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vezuviy\.su spam_ref=1
 SetEnvIfNoCase Referer ~*vgoloveboli\.net spam_ref=1
+SetEnvIfNoCase Referer ~*via\-energy\-acquistare\.com spam_ref=1
+SetEnvIfNoCase Referer ~*via\-energy\-cumpara\.com spam_ref=1
 SetEnvIfNoCase Referer ~*viagra\.pp\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*via\-gra\.webstarts\.com spam_ref=1
 SetEnvIfNoCase Referer ~*viagroid\.ru spam_ref=1
@@ -5504,6 +5720,7 @@ SetEnvIfNoCase Referer ~*vitanail\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*viteonlusarezzo\.it spam_ref=1
 SetEnvIfNoCase Referer ~*viven\.host\.sk spam_ref=1
 SetEnvIfNoCase Referer ~*vizag\.kharkov\.ua spam_ref=1
+SetEnvIfNoCase Referer ~*vizitki\.net spam_ref=1
 SetEnvIfNoCase Referer ~*vkak\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vk\-mus\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vkontaktemusic\.ru spam_ref=1
@@ -5520,6 +5737,7 @@ SetEnvIfNoCase Referer ~*voditeltrezviy\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*vodkoved\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*volgograd\.xrus\.org spam_ref=1
 SetEnvIfNoCase Referer ~*voloomoney\.com spam_ref=1
+SetEnvIfNoCase Referer ~*voltrknc1\.com spam_ref=1
 SetEnvIfNoCase Referer ~*volume\-pills\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*voluumtracker1\.com spam_ref=1
 SetEnvIfNoCase Referer ~*voluumtrk\.com spam_ref=1
@@ -5550,11 +5768,14 @@ SetEnvIfNoCase Referer ~*w3data\.co spam_ref=1
 SetEnvIfNoCase Referer ~*w3javascript\.com spam_ref=1
 SetEnvIfNoCase Referer ~*w7s\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*wahicbefa31\.soup\.io spam_ref=1
+SetEnvIfNoCase Referer ~*wait3sec\.org spam_ref=1
 SetEnvIfNoCase Referer ~*walkme\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wallpapers\-best\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wallpapersdesk\.info spam_ref=1
 SetEnvIfNoCase Referer ~*wapsite\.me spam_ref=1
 SetEnvIfNoCase Referer ~*wareseeker\.com spam_ref=1
+SetEnvIfNoCase Referer ~*warezaccess\.com spam_ref=1
+SetEnvIfNoCase Referer ~*warezkeeper\.com spam_ref=1
 SetEnvIfNoCase Referer ~*warningwar\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*warningzscaler\.heraeus\.com spam_ref=1
 SetEnvIfNoCase Referer ~*watchdogs\-2\.ru spam_ref=1
@@ -5562,6 +5783,7 @@ SetEnvIfNoCase Referer ~*watch\-movies\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*watchmyfb\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*watchmygf\.net spam_ref=1
 SetEnvIfNoCase Referer ~*waterpurifier\.club spam_ref=1
+SetEnvIfNoCase Referer ~*waycash\.net spam_ref=1
 SetEnvIfNoCase Referer ~*wcb\.su spam_ref=1
 SetEnvIfNoCase Referer ~*wdfdocando\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wdrake\.com spam_ref=1
@@ -5627,6 +5849,7 @@ SetEnvIfNoCase Referer ~*whatsappdownload10\.com spam_ref=1
 SetEnvIfNoCase Referer ~*whatsupinfoley\.com spam_ref=1
 SetEnvIfNoCase Referer ~*whatzmyip\.net spam_ref=1
 SetEnvIfNoCase Referer ~*wheelchairliftsarea\.com spam_ref=1
+SetEnvIfNoCase Referer ~*whengirlsgowild\.com spam_ref=1
 SetEnvIfNoCase Referer ~*whereiskentoday\.com spam_ref=1
 SetEnvIfNoCase Referer ~*where\-toget\.com spam_ref=1
 SetEnvIfNoCase Referer ~*whipme\.yopoint\.in spam_ref=1
@@ -5645,6 +5868,7 @@ SetEnvIfNoCase Referer ~*whosonmyserver\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wieseversa\.no spam_ref=1
 SetEnvIfNoCase Referer ~*wikes\.20fr\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wildcattube\.com spam_ref=1
+SetEnvIfNoCase Referer ~*wildnatureimages\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wildworld\.site spam_ref=1
 SetEnvIfNoCase Referer ~*williamrobsonproperty\.com spam_ref=1
 SetEnvIfNoCase Referer ~*windowssearch\-exp\.com spam_ref=1
@@ -5653,6 +5877,7 @@ SetEnvIfNoCase Referer ~*wineration\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wingsoffury2\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wingsofrefuge\.net spam_ref=1
 SetEnvIfNoCase Referer ~*winner7777\.net spam_ref=1
+SetEnvIfNoCase Referer ~*win\-spy\.com spam_ref=1
 SetEnvIfNoCase Referer ~*winterclassichockeyjerseys\.com spam_ref=1
 SetEnvIfNoCase Referer ~*winwotgold\.pl spam_ref=1
 SetEnvIfNoCase Referer ~*winx\-play\.ru spam_ref=1
@@ -5690,6 +5915,7 @@ SetEnvIfNoCase Referer ~*wosik\-dach\.service\-for\-web\.de spam_ref=1
 SetEnvIfNoCase Referer ~*wowas31\.ucoz\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*woweb\.com\.ua spam_ref=1
 SetEnvIfNoCase Referer ~*wpthemedetector\.co\.uk spam_ref=1
+SetEnvIfNoCase Referer ~*writersgroup580\.web\.fc2\.com spam_ref=1
 SetEnvIfNoCase Referer ~*writingservices17\.blogspot\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*wrona\.it spam_ref=1
 SetEnvIfNoCase Referer ~*ws\.ampower\.me spam_ref=1
@@ -5700,6 +5926,7 @@ SetEnvIfNoCase Referer ~*wttavern\.com spam_ref=1
 SetEnvIfNoCase Referer ~*wurr\.voila\.net spam_ref=1
 SetEnvIfNoCase Referer ~*ww1943\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*www\.888\.com spam_ref=1
+SetEnvIfNoCase Referer ~*wwwadultcheck\.com spam_ref=1
 SetEnvIfNoCase Referer ~*www\.arenda\-yeisk\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*www\.event\-tracking\.com spam_ref=1
 SetEnvIfNoCase Referer ~*www\.get\-free\-traffic\-now\.com spam_ref=1
@@ -5714,14 +5941,20 @@ SetEnvIfNoCase Referer ~*xbaboon\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xblog\.in spam_ref=1
 SetEnvIfNoCase Referer ~*xboxster\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*xcc24\.pl spam_ref=1
+SetEnvIfNoCase Referer ~*xchangetrak\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xchat26\.myfreecams\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xclicks\.net spam_ref=1
 SetEnvIfNoCase Referer ~*xcombear\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*x\-diesel\.biz spam_ref=1
+SetEnvIfNoCase Referer ~*x\-diesel\.com spam_ref=1
+SetEnvIfNoCase Referer ~*x\-diesel\.info spam_ref=1
+SetEnvIfNoCase Referer ~*x\-diesel\.org spam_ref=1
 SetEnvIfNoCase Referer ~*xdoza\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xedserver\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xep\.info spam_ref=1
 SetEnvIfNoCase Referer ~*xev\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*xfire\.com spam_ref=1
+SetEnvIfNoCase Referer ~*xgames\-04\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xgftnlrt\.bloger\.index\.hr spam_ref=1
 SetEnvIfNoCase Referer ~*xingzi\-vision\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xjlottery\.com spam_ref=1
@@ -5805,6 +6038,7 @@ SetEnvIfNoCase Referer ~*xvideosporn\.biz spam_ref=1
 SetEnvIfNoCase Referer ~*xwatt\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*xxart\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*xxlargepop\.com spam_ref=1
+SetEnvIfNoCase Referer ~*xxx\-cam\.webcam spam_ref=1
 SetEnvIfNoCase Referer ~*xxxdatinglocal\.us spam_ref=1
 SetEnvIfNoCase Referer ~*xxxguitars\.com spam_ref=1
 SetEnvIfNoCase Referer ~*xxxnatelefon\.ru spam_ref=1
@@ -5826,6 +6060,8 @@ SetEnvIfNoCase Referer ~*yeartwit\.com spam_ref=1
 SetEnvIfNoCase Referer ~*yebocasino\.com spam_ref=1
 SetEnvIfNoCase Referer ~*yebocasino\.co\.za spam_ref=1
 SetEnvIfNoCase Referer ~*yellocloud\.be spam_ref=1
+SetEnvIfNoCase Referer ~*yellowads\.men spam_ref=1
+SetEnvIfNoCase Referer ~*yellowstonesafaritours\.com spam_ref=1
 SetEnvIfNoCase Referer ~*yhit\.press spam_ref=1
 SetEnvIfNoCase Referer ~*ynymnwbm\.bloger\.index\.hr spam_ref=1
 SetEnvIfNoCase Referer ~*yogamatsexpert\.com spam_ref=1
@@ -5863,6 +6099,7 @@ SetEnvIfNoCase Referer ~*you\-shall\-not\-pass\.is74\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*youtoner\.it spam_ref=1
 SetEnvIfNoCase Referer ~*youtube\-downloader\.savetubevideo\.com spam_ref=1
 SetEnvIfNoCase Referer ~*youtubedownload\.org spam_ref=1
+SetEnvIfNoCase Referer ~*youtuhe\.com spam_ref=1
 SetEnvIfNoCase Referer ~*yuarra\.pluto\.ro spam_ref=1
 SetEnvIfNoCase Referer ~*yubikk\.info spam_ref=1
 SetEnvIfNoCase Referer ~*yugk\.net spam_ref=1
@@ -5944,8 +6181,18 @@ SetEnvIfNoCase Referer ~*zojirushi\-products\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zolotoy\-lis\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zona\-aqua\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zone\-kev717\.info spam_ref=1
+SetEnvIfNoCase Referer ~*zoodrawings\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zoogdiesney\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zoogdinsney\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zoogdisany\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zooggames\.com spam_ref=1
 SetEnvIfNoCase Referer ~*zoolubimets\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zoominfo\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zoomovies\.org spam_ref=1
+SetEnvIfNoCase Referer ~*zoompegs\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zoosexart\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zootoplist\.com spam_ref=1
+SetEnvIfNoCase Referer ~*zootravel\.com spam_ref=1
 SetEnvIfNoCase Referer ~*zophim\.me spam_ref=1
 SetEnvIfNoCase Referer ~*zrizvtrnpale\.tk spam_ref=1
 SetEnvIfNoCase Referer ~*zrus\.org spam_ref=1
@@ -5956,6 +6203,7 @@ SetEnvIfNoCase Referer ~*zscalerone\.net spam_ref=1
 SetEnvIfNoCase Referer ~*zscalertwo\.net spam_ref=1
 SetEnvIfNoCase Referer ~*zverokruh\-shop\.cz spam_ref=1
 SetEnvIfNoCase Referer ~*zvetki\.ru spam_ref=1
+SetEnvIfNoCase Referer ~*zvezdagedon\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zx6\.ru spam_ref=1
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref=1
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref=1
