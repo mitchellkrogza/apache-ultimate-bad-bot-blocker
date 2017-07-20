@@ -5428,4 +5428,3 @@ domain:zvezdagedon.ru
 domain:zx6.ru
 domain:zytpirwai.net
 domain:zzbroya.com.ua
-domain:zzlgxh.com
