@@ -77,7 +77,7 @@ php ./.dev-tools/generate-htaccess.php
 php ./.dev-tools/generate-google-exclude.php
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
 #sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist24.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 

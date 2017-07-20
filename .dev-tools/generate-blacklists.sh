@@ -1,10 +1,31 @@
 #!/bin/bash
-# Bad bot generator for Apache 2.4
-# Created by: https://github.com/mitchellkrogza (mitchellkrog@gmail.com)
+# Generator Script for the Apache Ultimate Bad Bot Blocker
+# Created by: Mitchell Krog (mitchellkrog@gmail.com)
 # Copyright: Mitchell Krog - https://github.com/mitchellkrogza
+# Repo Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
-# Written in bash as it is universal to virtually every linux distribution
+# MIT License
 
+# Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
+# https://github.com/mitchellkrogza
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to deal
+# in the Software without restriction, including without limitation the rights
+# to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+# copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in all
+# copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+# OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+# SOFTWARE.
 
 # ******************
 # Set Some Variables
@@ -12,76 +33,55 @@
 
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
-MY_GIT_TAG=V2.$YEAR.$MONTH
+MY_GIT_TAG=V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
+BAD_REFERRERS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-referrers.list)
+BAD_BOTS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list)
 _now="$(date)"
 
-# *************************************
-# Update Repo with Travis Ci Last Build
-#**************************************
 
-cd /home/mitchellkrog/apache-blocker
-sudo git pull origin master
-cd /home/mitchellkrog/botlists
+_input1=$TRAVIS_BUILD_DIR/_generator_lists/good-user-agents.list
+_input2=$TRAVIS_BUILD_DIR/_generator_lists/allowed-user-agents.list
+_input3=$TRAVIS_BUILD_DIR/_generator_lists/limited-user-agents.list
+_input4=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
+_input5=$TRAVIS_BUILD_DIR/.dev-tools/referrers-regex-format.txt
+_input6=$TRAVIS_BUILD_DIR/_generator_lists/google-ip-ranges.list
+_input7=$TRAVIS_BUILD_DIR/_generator_lists/bing-ip-ranges.list
+_input8=$TRAVIS_BUILD_DIR/_generator_lists/wordpress-theme-detectors-apache.list
+_input9=$TRAVIS_BUILD_DIR/_generator_lists/nibbler-seo.list
+_input10=$TRAVIS_BUILD_DIR/_generator_lists/cloudflare-ip-ranges.list
+_input11=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
 
-# ****************************************************
-# Get Latest Updated List of Referrers from Nginx Repo
-# ****************************************************
+# *******************************************************
+# Declare temporary database files used during generation
+# *******************************************************
 
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list -O /home/mitchellkrog/botlists/lists/06-bad-referers.list
+_inputdbA=/tmp/version-information.db
+_inputdb1=/tmp/good-user-agents.db
+_inputdb2=/tmp/allowed-user-agents.db
+_inputdb3=/tmp/limited-user-agents.db
+_inputdb4=/tmp/bad-user-agents.db
+_inputdb5=/tmp/bad-referrers.db
+_inputdb6=/tmp/google-ip-ranges.db
+_inputdb7=/tmp/bing-ip-ranges.db
+_inputdb8=/tmp/wordpress-theme-detectors.db
+_inputdb9=/tmp/nibbler-seo.db
+_inputdb10=/tmp/cloudflare-ip-ranges.db
 
-# *******************************************************************
-# Generate our apache bad referrers with the correct Regex formatting
-# *******************************************************************
-
-php ./apache-referers-regex.php
-
-# *************************************************
-# Set some variables after downloading current list
-# *************************************************
-
-BAD_REFERRERS=$(wc -l < ./lists/06-bad-referers-apache.list)
-BAD_BOTS=$(wc -l < ./lists/04-bad-user-agents.list)
-
-# Setup input bots and referer lists
-_input1=./lists/01-good-user-agents.list
-_input2=./lists/02-allowed-user-agents.list
-_input3=./lists/03-limited-user-agents.list
-_input4=./lists/04-bad-user-agents.list
-_input5=./lists/06-bad-referers-apache.list
-_input6=./lists/09-google-ip-ranges.list
-_input7=./lists/10-bing-ip-ranges.list
-_input8=./lists/14b-wordpress-theme-detectors-apache.list
-_input9=./lists/15-nibbler-seo.list
-_input10=./lists/16-cloudflare-ip-ranges.list
-_input11=./lists/06-bad-referers.list
-
-# Temporary database files we create
-_inputdbA=./lastupdated.db
-_inputdb1=./lists/good-user-agents.db
-_inputdb2=./lists/allowed-user-agents.db
-_inputdb3=./lists/limited-user-agents.db
-_inputdb4=./lists/bad-user-agents.db
-_inputdb5=./lists/bad-referers.db
-_inputdb6=./lists/google-ip-ranges.db
-_inputdb7=./lists/bing-ip-ranges.db
-_inputdb8=./lists/wordpress-theme-detectors.db
-_inputdb9=./lists/nibbler-seo.db
-_inputdb10=./lists/cloudflare-ip-ranges.db
 
 # Declare Apache template and temp variables
-_apache=./apachetemplate-public
-_tmpapacheA=tmpapacheA
-_tmpapacheB=tmpapacheB
-_tmpapache1=tmpapache1
-_tmpapache2=tmpapache2
-_tmpapache3=tmpapache3
-_tmpapache4=tmpapache4
-_tmpapache5=tmpapache5
-_tmpapache6=tmpapache6
-_tmpapache7=tmpapache7
-_tmpapache8=tmpapache8
-_tmpapache9=tmpapache9
-_tmpapache10=tmpapache10
+_apache=$TRAVIS_BUILD_DIR/.dev-tools/apache2.2.template
+_tmpapacheA=_tmpapacheA
+_tmpapacheB=_tmpapacheB
+_tmpapache1=_tmpapache1
+_tmpapache2=_tmpapache2
+_tmpapache3=_tmpapache3
+_tmpapache4=_tmpapache4
+_tmpapache5=_tmpapache5
+_tmpapache6=_tmpapache6
+_tmpapache7=_tmpapache7
+_tmpapache8=_tmpapache8
+_tmpapache9=_tmpapache9
+_tmpapache10=_tmpapache10
 
 # Sort lists alphabetically and remove duplicates
 sort -u $_input1 -o $_input1
@@ -134,13 +134,13 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdbA
@@ -160,13 +160,13 @@ ed -s $_inputdb1<<\IN
 1,/# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
 #,p
 #,p used to print output replaced with w below to write
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb1
@@ -186,11 +186,11 @@ ed -s $_inputdb2<<\IN
 1,/# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb2
@@ -210,11 +210,11 @@ ed -s $_inputdb3<<\IN
 1,/# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb3
@@ -234,11 +234,11 @@ ed -s $_inputdb4<<\IN
 1,/# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb4
@@ -258,11 +258,11 @@ ed -s $_inputdb5<<\IN
 1,/# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb5
@@ -282,11 +282,11 @@ ed -s $_inputdb6<<\IN
 1,/# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb6
@@ -306,11 +306,11 @@ ed -s $_inputdb7<<\IN
 1,/# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb7
@@ -330,11 +330,11 @@ ed -s $_inputdb8<<\IN
 1,/# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb8
@@ -354,11 +354,11 @@ ed -s $_inputdb9<<\IN
 1,/# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb9
@@ -378,59 +378,25 @@ ed -s $_inputdb10<<\IN
 1,/# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r ./apachetemplate-public
+.r /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 /# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w ./apachetemplate-public
+w /home/travis/build/mitchellkrogza/nginx-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
 q
 IN
 rm $_inputdb10
 
-# Create Google Disavow File
-# ****************************************
-
-sudo truncate -s 0 ./google-disavow.txt
-for line in $(cat $_input11); do
-printf "domain:${line}\n" >> ./google-disavow.txt
-done
-
-# Generate Google Exclude File
-# ****************************
-php ./google-exclude.php
-
-# Generate .htaccess Files
-# ************************
-php ./htaccess.php
-
 # Copy files to git working directory and commit
 # **********************************************
-sudo ./generaterobots.sh
-sudo cp ./google-exclude-*.txt /home/mitchellkrog/apache-blocker/_google_analytics_ghost_spam/
-sudo cp ./google-disavow.txt /home/mitchellkrog/apache-blocker/_google_webmaster_disavow_links/google-disavow.txt
-sudo cp $_input1 /home/mitchellkrog/apache-blocker/_generator_lists/good-user-agents.list
-sudo cp $_input2 /home/mitchellkrog/apache-blocker/_generator_lists/allowed-user-agents.list
-sudo cp $_input3 /home/mitchellkrog/apache-blocker/_generator_lists/limited-user-agents.list
-sudo cp $_input4 /home/mitchellkrog/apache-blocker/_generator_lists/bad-user-agents.list
-sudo cp $_input11 /home/mitchellkrog/apache-blocker/_generator_lists/bad-referrers.list
-sudo cp $_input6 /home/mitchellkrog/apache-blocker/_generator_lists/google-ip-ranges.list
-sudo cp $_input7 /home/mitchellkrog/apache-blocker/_generator_lists/bing-ip-ranges.list
-sudo cp ./robots.txt /home/mitchellkrog/apache-blocker/robots.txt/robots.txt
-sudo cp ./htaccess-mod_rewrite.txt /home/mitchellkrog/apache-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
-sudo cp ./htaccess-mod_setenvif.txt /home/mitchellkrog/apache-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
-sudo cp $_apache /home/mitchellkrog/apache-blocker/custom.d/globalblacklist.conf
-sudo cp $_apache /home/mitchellkrog/apache-blocker/Apache_2.2/custom.d/globalblacklist.conf
-sudo ./apachecentos.sh
-sudo ./apachecentos7.sh
-cd /home/mitchellkrog/apache-blocker
-sudo git add .
-sudo git commit -am "Start Splitting between Apache 2.2 and 2.4 Versions - Different Access Control Structures"
-sudo git push origin master
-
-# Enable the section below to automatically move the generated
-# script into the /etc/apache2/custom.d folder for you and restart apache2
-
-#sudo cp $_apache /etc/apache2/custom.d/globalblacklist.conf
-#sudo service apache2 reload
-
+#sudo cp $_input1 /home/mitchellkrog/apache-blocker/_generator_lists/good-user-agents.list
+#sudo cp $_input2 /home/mitchellkrog/apache-blocker/_generator_lists/allowed-user-agents.list
+#sudo cp $_input3 /home/mitchellkrog/apache-blocker/_generator_lists/limited-user-agents.list
+#sudo cp $_input4 /home/mitchellkrog/apache-blocker/_generator_lists/bad-user-agents.list
+#sudo cp $_input11 /home/mitchellkrog/apache-blocker/_generator_lists/bad-referrers.list
+#sudo cp $_input6 /home/mitchellkrog/apache-blocker/_generator_lists/google-ip-ranges.list
+#sudo cp $_input7 /home/mitchellkrog/apache-blocker/_generator_lists/bing-ip-ranges.list
+#sudo cp $_apache /home/mitchellkrog/apache-blocker/Apache_2.2/custom.d/globalblacklist.conf
+#sudo ./apachecentos.sh
+#sudo ./apachecentos7.sh
 exit 0
