@@ -77,6 +77,12 @@ sudo service apache2 restart
 
 sudo apache2ctl configtest
 
+# ***************************************
+# Get a copy of apache2.conf for checking
+# ***************************************
+
+sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf
+
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
 # *****************************************************************************************
