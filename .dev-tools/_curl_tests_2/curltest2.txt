@@ -1,12 +1,5 @@
-Last Tested: Thu Jul 20 14:10:20 SAST 2017
+Last Tested: Thu Jul 20 14:27:39 SAST 2017
 
-<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
-<html><head>
-<title>403 Forbidden</title>
-</head><body>
-<h1>Forbidden</h1>
-<p>You don't have permission to access /index.php
-on this server.</p>
-<hr>
-<address>Apache/2.4.7 (Ubuntu) Server at local.dev Port 80</address>
-</body></html>
+<?php
+
+echo "Welcome to Apache\n";
