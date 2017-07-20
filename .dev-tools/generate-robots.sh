@@ -1,8 +1,10 @@
 #!/bin/bash
-# TravisCI Package Deploy Script for the Apache Ultimate Bad Bot Blocker
+# Generator Script for the Apache Ultimate Bad Bot Blocker
 # Created by: Mitchell Krog (mitchellkrog@gmail.com)
 # Copyright: Mitchell Krog - https://github.com/mitchellkrogza
 # Repo Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+
+# Generate a robots.txt file for those unable to use the full Apache Ultimate Bad Bot Blocker
 
 # MIT License
 
@@ -27,41 +29,44 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# ***************
+# Set Input Files
+# ***************
+
+_input1=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
+_tmprobots=/tmp/robots.txt
+
 # ******************
 # Set Some Variables
 # ******************
 
 YEAR=$(date +"%Y")
 MONTH=$(date +"%m")
-
-# ***************************************
-# Make Sure we are in the Build Directory
-# ***************************************
-
-cd $TRAVIS_BUILD_DIR
+MY_GIT_TAG=V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
+BAD_REFERRERS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-referrers.list)
+BAD_BOTS=$(wc -l < $TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list)
+_now="$(date)"
 
 # *************************
-# Create our Version Number
+# Set Start and End Markers
 # *************************
 
-export GIT_TAG=V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER
+_startmarker="### Version Information #"
+_endmarker="### Version Information ##"
 
 
-# ***************
-# Tag our release
-# ***************
+# **************************
+# Create the robots.txt file
+# **************************
 
-git tag $GIT_TAG -a -m "V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER"
-
-# *****************************************
-# Push our commit and tags back to the repo
-# *****************************************
-
-sudo git push origin master && git push origin master --tags
-
-# *************************************************************************
-# Now TravisCI moves into the deploy: section of TravisCI - see .travis.yml
-# *************************************************************************
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s\n\n%s\n%s\n%s\n' "$_startmarker" "###################################################" "### Version: " "$MY_GIT_TAG" "### Updated: " "$_now" "### Bad Bot Count: " "$BAD_BOTS" "###################################################" "$_endmarker" "User-agent: *" "Disallow: /wp-admin/" "Allow: /wp-admin/admin-ajax.php" >> "$_tmprobots"
+while IFS= read -r LINE
+do
+printf 'User-agent: %s\n%s\n' "${LINE}" "Disallow:/" >> "$_tmprobots"
+done < $_input1
+printf '\n' >> "$_tmprobots"
+sudo cp $_tmprobots $TRAVIS_BUILD_DIR/robots.txt/robots.txt
+exit 0
 
 # MIT License
 
