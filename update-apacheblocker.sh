@@ -3,6 +3,11 @@
 # Copyright - https://github.com/mitchellkrogza
 # Project Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
+# *************************************************
+# SOON TO DEPRECATED
+# PLEASE REFER TO Apache_2.2 and Apache_2.4 Folders
+# *************************************************
+
 # MAKE SURE you have your whitelist-ips.conf, whitelist-domains.conf, blacklist-ips.conf and bad-referrer-words.conf files in /etc/custom.d
 # A major change to using include files was introduced in
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/releases/tag/2017-04-19.Build-173

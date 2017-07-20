@@ -3,6 +3,11 @@
 # Copyright - https://github.com/mitchellkrogza
 # Project Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
+# *************************************************
+# SOON TO DEPRECATED
+# PLEASE REFER TO Apache_2.2 and Apache_2.4 Folders
+# *************************************************
+
 # PLEASE READ CONFIGURATION INSTRUCTIONS BEFORE USING THIS - THIS IS ONLY A PARTIAL INSTALLER
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md
 
