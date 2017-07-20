@@ -78,6 +78,7 @@ sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
 php ./.dev-tools/generate-google-exclude.php
+php ./.dev-tools/generate-htaccess.php
 
 
 # *************************************

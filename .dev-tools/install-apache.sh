@@ -77,6 +77,7 @@ sudo apache2ctl configtest
 
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/deploy-package.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist.sh
+sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-htaccess.php
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-exclude.php
