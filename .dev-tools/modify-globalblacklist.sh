@@ -152,5 +152,30 @@ q
 IN
 rm $_inputdbA
 
+# PRINT VERSION INFORMATION INTO GLOBALBLACKLIST APACHE 2.2
+# *********************************************************
+LASTUPDATE6IFS=$IFS
+IFS=$'\n'
+now="$(date)"
+end=$(date +%s.%N)    
+echo $_startmarker >> $_tmpnginxA
+printf "###################################################\n### Version: "$MY_GIT_TAG"\n### Updated: "$now"\n### Bad Referrer Count: "$BAD_REFERRERS"\n### Bad Bot Count: "$BAD_BOTS"\n###################################################\n" >> $_tmpnginxA
+echo $_endmarker  >> $_tmpnginxA
+IFS=$LASTUPDATE6IFS
+mv $_tmpnginxA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
+q
+IN
+rm $_inputdbA
 
 exit 0
