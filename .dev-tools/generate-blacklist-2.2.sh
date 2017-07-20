@@ -391,7 +391,7 @@ rm $_inputdb10
 # **********************************************
 sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
 sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
-sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custome.d/globalblacklist.conf
+sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custom.d/globalblacklist.conf
 #sudo ./apachecentos.sh
 #sudo ./apachecentos7.sh
 exit 0
