@@ -1,11 +1,6 @@
-### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CentOS7/apache-ultimate-bad-bot-referrer-blocker-centos7.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS 7 and Apache 2.4.6 - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/LICENSE.md)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![GitHub release](https://img.shields.io/github/release/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/releases/latest)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![Build Status](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master)](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/><a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
-<table style="width:100%;margin:0;">
-  <tr>
-    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CentOS7/apache-ultimate-bad-bot-referrer-blocker-centos7.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS 7 and Apache 2.4.6 - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/></td>
-    <td align="right"><a href="https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker" target="_blank"><img src="https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master"/></a></td>
-  </tr>
-</table>
+### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS and Apache Web Servers
@@ -23,6 +18,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
 ## Also follow me on twitter @ubuntu101za for update notifications
+
+<a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
 #### Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
 
@@ -410,40 +407,45 @@ https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
-## Finally - Stopping Google Analytics 'ghost' spam
-Simply using the Apache blocker does not stop Google Analytics ghost referral spam 
-because they are hitting Analytics directly and not always necessarily touching your website. 
+# EASY CONFIGURATION INSTRUCTIONS FOR STOPPING GOOGLE ANALYTICS "GHOST" SPAM
+
+Simply using the Apache blocker does not stop Google Analytics ghost referral spam because they are hitting Analytics directly and not always necessarily touching your website. 
 
 You should use regex filters in Analytics to prevent ghost referral spam.
-For this a simple google-exclude.txt file has been created for you and it is updated at the same time when the Nginx Blocker is updated.
+
+For this there are several google-exclude-0*.txt files which have been created for you and they are updated at the same time when the Nginx Blocker is updated. As the list grows there will be more exclude files created.
 
 ## To stop Ghost Spam on On Analytics
-Navigate to your Google Analytics Admin panel and add a Segment. (New Segment > Advanced > Conditions)
-This will need to be done on each and every site where you want this filter to be in effect. 
-Google has a limit on the length of the regex so it is now broken up for you into multiple google-exclude-*.txt files. 
 
+Follow the step by step visual instructions below to add these google-exclude files as segments to your web site.
 
-| Filter          | Session       | Include                                  |
-| :-------------: |:-------------:|:----------------------------------------:|
-| Hostname        | matches regex | ```yourwebsite\.com|www\.yourwebsite\.com``` |
+<table style="width:100%;margin:0;">
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-01.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-02.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-03.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-04.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-05.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-06.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+  <tr>
+    <td align="left"><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/google-analytics-ghost-spam-07.jpg" alt="Google Analytics - Adding Segments to Stop Ghost Spam"/></td>
+  </tr>
+</table>
 
-| Filter          | Session       | Exclude                                                       |
-| :-------------: |:-------------:|:-------------------------------------------------------------:|
-| Hostname        | matches regex | Copy the contents from [google-exclude-01.txt](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/google-exclude-01.txt) to this field |
+## Blocking Spam Referrer Domains Using Google Webmaster Tools (How to use google-disavow.txt file)
 
-Do the same thing now for google-exclude-02.txt and google-exclude-03.txt.
-As the list grows there will be more google-exclude files each limited to Google's restriction limit.
-
-# Or Even Better Check Out RefererSpamBlocker
-
-Also check out the awesome [Referer Spam Blocker](https://referrerspamblocker.com)
-for Google Analytics which uses a collaborated source of spam domains and automatically adds all the filters to your
-Analytics sites for you in 2 easy clicks and it is FREE.
-
-## Blocking Spam Domains Using Google Webmaster Tools
-
-I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster
-Tools to block all these domains out as spammy or bad links. Use with caution.
+I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster Tools to block all these domains out as spammy or bad links. Use with caution.
 
 ## Blocking Agressive Bots at Firewall Level Using Fail2Ban
 
@@ -477,7 +479,18 @@ LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
 
-##### Some other free projects
+### Also Checkout The Big List of Hacked Malware Web Sites
+
+This repository contains a list of all web sites I come across that are hacked with malware. 
+Most site owners are unaware their sites have been hacked and are being used to plant malware.
+
+Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+
+### Into Photography?
+
+Come drop by and visit me at https://mitchellkrog.com or <a href='https://twitter.com/MitchellKrog'><img src='https://img.shields.io/twitter/follow/MitchellKrog.svg?style=social&label=Follow' alt='Follow @MitchellKrog'></a>
+
+### Some other free projects
 
 - https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
 - https://github.com/mitchellkrogza/Badd-Boyz-Hosts
@@ -486,16 +499,15 @@ SOFTWARE.
 - https://github.com/mitchellkrogza/Travis-CI-Nginx-for-Testing-Nginx-Configuration
 - https://github.com/mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations
 - https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
+- https://github.com/funilrys/funceble
 - https://github.com/mariusv/nginx-badbot-blocker
-
-##### Into Photography?
-Come drop by and visit me at https://mitchellkrog.com
 
 ### Acknowledgements:
 
 Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
 
 - Stevie-Ray Hartog https://github.com/Stevie-Ray
+- Nissar Chababy - https://github.com/funilrys/funceble (Excellent script for checking ACTIVE, INACTIVE and EXPIRED Domain Names)
 - Marius Voila https://github.com/mariusv
 - Cătălin Mariș https://github.com/alrra
 - deformhead https://github.com/deformhead
@@ -509,7 +521,7 @@ Many parts of the generator scripts and code running behind this project have be
 
 If you believe your name should be here, drop me a line.
 
-### Coding makes me very thirsty [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+### And remember [Coding make me thirsty so why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
@@ -517,3 +529,5 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
 ## Also follow me on twitter @ubuntu101za for update notifications
+
+<a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>

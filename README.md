@@ -1,12 +1,11 @@
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/apache-ultimate-bad-bot-referrer-blocker-script.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/LICENSE.md)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![GitHub release](https://img.shields.io/github/release/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/releases/latest)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![Build Status](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master)](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/><a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
-
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers
 
 ##### Version Information #
 ********************************************
-#### Version: V3.2017.07.456
+#### Version: V3.2017.07.455
 #### Bad Referrer Count: 5430
 #### Bad Bot Count: 493
 ********************************************
@@ -434,6 +433,7 @@ Follow the step by step visual instructions below to add these google-exclude fi
 ## Blocking Spam Referrer Domains Using Google Webmaster Tools (How to use google-disavow.txt file)
 
 I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster Tools to block all these domains out as spammy or bad links. Use with caution.
+
 ## Blocking Agressive Bots at Firewall Level Using Fail2Ban
 
 I have added a custom Fail2Ban filter and action that I have written which monitors your Apache logs for bots that generate
