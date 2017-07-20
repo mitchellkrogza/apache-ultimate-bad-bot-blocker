@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.424
-### Updated: Wed Jul 19 15:52:28 SAST 2017
-### Bad Referrer Count: 5428
-### Bad Bot Count: 493
-###################################################
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -854,6 +848,7 @@ SetEnvIfNoCase Referer angkortours\.vn spambot=yes
 SetEnvIfNoCase Referer animal\-drawings\.com spambot=yes
 SetEnvIfNoCase Referer animal36\.com spambot=yes
 SetEnvIfNoCase Referer animali\.deagostinipassion\.it spambot=yes
+SetEnvIfNoCase Referer animalia\-life\.club spambot=yes
 SetEnvIfNoCase Referer animalrank\.com spambot=yes
 SetEnvIfNoCase Referer animaltoplist\.com spambot=yes
 SetEnvIfNoCase Referer anime\.dougasouko\.com spambot=yes
@@ -4218,6 +4213,7 @@ SetEnvIfNoCase Referer qcstrtvt\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer qexyfu\.bugs3\.com spambot=yes
 SetEnvIfNoCase Referer qitt\.ru spambot=yes
 SetEnvIfNoCase Referer qld10000\.net spambot=yes
+SetEnvIfNoCase Referer qor360\.com spambot=yes
 SetEnvIfNoCase Referer qpypcx\.com spambot=yes
 SetEnvIfNoCase Referer quality\-traffic\.com spambot=yes
 SetEnvIfNoCase Referer qualitymarketzone\.com spambot=yes

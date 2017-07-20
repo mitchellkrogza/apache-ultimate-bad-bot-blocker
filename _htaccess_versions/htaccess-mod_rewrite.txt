@@ -5,12 +5,6 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-###################################################
-### Version: V2.2017.07.424
-### Updated: Wed Jul 19 15:52:28 SAST 2017
-### Bad Referrer Count: 5428
-### Bad Bot Count: 493
-###################################################
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -855,6 +849,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*angkortours\.vn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animal\-drawings\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animal36\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animali\.deagostinipassion\.it.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animalia\-life\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animalrank\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*animaltoplist\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*anime\.dougasouko\.com.*$ [NC,OR]
@@ -4219,6 +4214,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qcstrtvt\.bloger\.index\.hr.*$ 
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qexyfu\.bugs3\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qitt\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qld10000\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qor360\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qpypcx\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*quality\-traffic\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*qualitymarketzone\.com.*$ [NC,OR]
