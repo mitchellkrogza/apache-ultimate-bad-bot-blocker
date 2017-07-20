@@ -1,5 +1,14 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
+### 2017-07-20
+- Please not existing version in conf.d folder in root of repo has been deprecated and will no longer be updated
+- Existing users please update your servers to pull updates from the Apache_2.2/conf.d folder which is the same original version.
+- A new Apache 2.4 version using the new Apache 2.4 Access control structures is still in Beta testing phase.
+- Travis CI generator scripts brought online so that Travis generates the blacklist files during it's building and testing.
+- Lots of other updates currently still in progress and should be finished by 2017-07-21 (tomorrow)
+- Please read the notes about the deprecated version and download the latest update-apacheblocker.sh from the Apache_2.2 folder.
+- If you fail to download the new updater you will simply be pulling the old version which is not longer updated anymore.
+
 ### 2017-07-19
 - Renamed some folder names.
 - Update Travis build scripts to new folder naming.
