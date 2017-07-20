@@ -40,14 +40,9 @@ deploy:
   provider: releases
   api_key:
     secure: ${GH_TOKEN}
-  #file:
-  #- "Apache_2.2/custom.d/globalblacklist.conf"
-  #- "Apache_2.4/custom.d/globalblacklist.conf"
-  #- "Apache_2.2/*"
-  #- "Apache_2.4/*"
-  include: 
-   - "Apache_2.2/*"
-   - "Apache_2.4/*"
+  file:
+  - Apache_2.2/custom.d/globalblacklist.conf
+  - Apache_2.4/custom.d/globalblacklist.conf
   skip_cleanup: true
   on:
     repo: mitchellkrogza/apache-ultimate-bad-bot-blocker
