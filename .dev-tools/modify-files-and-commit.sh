@@ -73,12 +73,12 @@ git checkout master
 # ***************************************************
 
 php ./.dev-tools/apache-referers-regex.php
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist.sh
-sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
+php ./.dev-tools/generate-htaccess.php
+php ./.dev-tools/generate-google-exclude.php
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-php ./.dev-tools/generate-google-exclude.php
-php ./.dev-tools/generate-htaccess.php
+#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 
 
 # *************************************
