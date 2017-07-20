@@ -29,6 +29,8 @@ install:
 
 script:
   - bash .dev-tools/run-curl-tests.sh
+  - bash .dev-tools/test-apache-2.4.sh
+  - bash .dev-tools/run-curl-tests.sh
   - bash .dev-tools/modify-files-and-commit.sh
 
 before_deploy:

@@ -1,5 +1,5 @@
 #!/bin/bash
-# Setup Apache for Testing the Apache Ultimate Bad Bot Blocker
+# Setup Apache for Testing the Apache Ultimate Bad Bot Blocker on apache 2.4 without mod_access_compat
 # Created by: Mitchell Krog (mitchellkrog@gmail.com)
 # Copyright: Mitchell Krog - https://github.com/mitchellkrogza
 # Repo Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
@@ -27,37 +27,23 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# Install Apache2
-sudo apt-get update
-sudo apt-get install -y --force-yes apache2
-
-# Copy our virtual host template to sites-enabled overwriting the default site conf
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/000-default.conf
-
-# Copy basic testing files into /var/www
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.php /var/www/index.php
-
-# Enable mod rewrite module
-sudo a2enmod rewrite
-
-# Enable Default Site
-sudo a2ensite 000-default.conf
-
-# Set ServerName Globally
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
-
 # *************************************
-# Get files from Repo Apache_2.2
+# Get files from Repo Apache_2.4
 # *************************************
 
-sudo mkdir /etc/apache2/custom.d
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
-sudo a2enconf servername
+cd /etc/apache2/custom.d
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+
+# *************************
+# Disable mod_access_compat
+# *************************
+
+sudo a2dismod access_compat
 
 # **************
 # Restart Apache
@@ -70,22 +56,6 @@ sudo service apache2 restart
 # **********************
 
 sudo apache2ctl configtest
-
-# ***********************************************************
-# Set all our other setup and deploy scripts to be executable
-# ***********************************************************
-
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/deploy-package.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist24.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-htaccess.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-exclude.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/apache-referers-regex.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-files-and-commit.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests.sh
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
