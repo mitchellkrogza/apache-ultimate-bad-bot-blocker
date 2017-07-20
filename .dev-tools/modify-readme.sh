@@ -135,6 +135,69 @@ q
 IN
 rm $_inputdbA
 
+# *******************************************************
+# PRINT VERSION INFORMATION INTO htaccess-mod_rewrite.txt
+# *******************************************************
+
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+mv $_tmpapacheA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
+q
+IN
+rm $_inputdbA
+
+# ********************************************************
+# PRINT VERSION INFORMATION INTO htaccess-mod_setenvif.txt
+# ********************************************************
+
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+mv $_tmpapacheA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
+q
+IN
+rm $_inputdbA
+
+# ********************************************************
+# PRINT VERSION INFORMATION INTO htaccess README.md
+# ********************************************************
+
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+mv $_tmpapacheA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
+q
+IN
+rm $_inputdbA
+
 
 exit 0
 
