@@ -27,6 +27,12 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# *******************************************************
+# First lets stop Apache before we make changes like this
+# *******************************************************
+
+sudo service apache2 stop
+
 # ********************
 # Disable Default Site
 # ********************
@@ -56,15 +62,12 @@ sudo a2dismod access_compat
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
 
-sudo service apache2 stop
-sudo rm /etc/apache2/apache2.conf
+sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
-sudo service apache2 start
 
-
-# *************************************
-# Get files from Repo Apache_2.4
-# *************************************
+# **************************************
+# Get new files from Repo Apache_2.4
+# **************************************
 
 sudo rm /etc/apache2/custom.d/*.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
@@ -75,11 +78,11 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
 
 
-# **************
-# Restart Apache
-# **************
+# **********************
+# Now Start Apache Again
+# **********************
 
-sudo service apache2 restart
+sudo service apache2 start
 
 # **********************
 # Test the Apache Config
@@ -87,11 +90,11 @@ sudo service apache2 restart
 
 sudo apache2ctl configtest
 
-# ***************************************
-# Get a copy of apache2.conf for checking
-# ***************************************
+# *****************************************
+# Get a copy of all conf files for checking
+# *****************************************
 
-#sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf
+sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files/
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
