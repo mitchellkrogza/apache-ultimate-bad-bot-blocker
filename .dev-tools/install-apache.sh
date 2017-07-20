@@ -76,7 +76,7 @@ sudo apache2ctl configtest
 # ***********************************************************
 
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/deploy-package.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
+sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist-2.2.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklist24.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-htaccess.php
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh

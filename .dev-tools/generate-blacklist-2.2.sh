@@ -342,7 +342,7 @@ rm $_inputdb8
 # *******************************
 # Nibbler SEO - Create and Insert
 # *******************************
-apache2.2.template
+
 printf '%s\n' "$_start9" >> "$_tmpapache9"
 while IFS= read -r LINE
 do
