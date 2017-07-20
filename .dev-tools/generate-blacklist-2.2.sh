@@ -389,14 +389,9 @@ rm $_inputdb10
 
 # Copy files to git working directory and commit
 # **********************************************
-#sudo cp $_input1 /home/mitchellkrog/apache-blocker/_generator_lists/good-user-agents.list
-#sudo cp $_input2 /home/mitchellkrog/apache-blocker/_generator_lists/allowed-user-agents.list
-#sudo cp $_input3 /home/mitchellkrog/apache-blocker/_generator_lists/limited-user-agents.list
-#sudo cp $_input4 /home/mitchellkrog/apache-blocker/_generator_lists/bad-user-agents.list
-#sudo cp $_input11 /home/mitchellkrog/apache-blocker/_generator_lists/bad-referrers.list
-#sudo cp $_input6 /home/mitchellkrog/apache-blocker/_generator_lists/google-ip-ranges.list
-#sudo cp $_input7 /home/mitchellkrog/apache-blocker/_generator_lists/bing-ip-ranges.list
 sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
+sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
+sudo cp $_apache /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custome.d/globalblacklist.conf
 #sudo ./apachecentos.sh
 #sudo ./apachecentos7.sh
 exit 0
