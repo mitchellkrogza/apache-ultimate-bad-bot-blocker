@@ -27,11 +27,36 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# ********************
+# Disable Default Site
+# ********************
+
+sudo a2dissite 000-default.conf
+
+# ********************************************************************************************
+# Copy our Apache 2.4 virtual host template to sites-enabled overwriting the default site conf
+# ********************************************************************************************
+
+sudo rm /etc/apache2/sites-available/000-default.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/000-default.conf
+
+# *******************
+# Enable Default Site
+# *******************
+
+sudo a2ensite 000-default.conf
+
+# *************************
+# Disable mod_access_compat
+# *************************
+
+sudo a2dismod access_compat
+
 # *************************************
 # Get files from Repo Apache_2.4
 # *************************************
 
-cd /etc/apache2/custom.d
+sudo rm /etc/apache2/custom.d/*.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
@@ -39,11 +64,6 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
 
-# *************************
-# Disable mod_access_compat
-# *************************
-
-sudo a2dismod access_compat
 
 # **************
 # Restart Apache
