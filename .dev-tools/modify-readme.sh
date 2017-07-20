@@ -198,6 +198,48 @@ q
 IN
 rm $_inputdbA
 
+# ********************************************************
+# PRINT VERSION INFORMATION INTO CentOS6 README.md
+# ********************************************************
+
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+mv $_tmpapacheA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
+q
+IN
+rm $_inputdbA
+
+# ********************************************************
+# PRINT VERSION INFORMATION INTO CentOS7 README.md
+# ********************************************************
+
+printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+mv $_tmpapacheA $_inputdbA
+ed -s $_inputdbA<<\IN
+1,/### Version Information #/d
+/### Version Information ##/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/other_distros/CentOS7/README.md
+/### Version Information #/x
+.t.
+.,/### Version Information ##/-d
+#,p
+#,p used to print output replaced with w below to write
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/other_distros/CentOS7/README.md
+q
+IN
+rm $_inputdbA
+
 
 exit 0
 
