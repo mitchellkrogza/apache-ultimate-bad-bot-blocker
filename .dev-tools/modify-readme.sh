@@ -65,8 +65,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/README.md
 q
 IN
@@ -86,8 +84,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/README.md
 q
 IN
@@ -107,8 +103,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
 q
 IN
@@ -128,8 +122,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CONFIGURATION.md
 q
 IN
@@ -149,8 +141,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
 q
 IN
@@ -170,8 +160,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
 q
 IN
@@ -191,8 +179,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
 q
 IN
@@ -212,8 +198,6 @@ ed -s $_inputdbA<<\IN
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
 q
 IN
@@ -229,13 +213,11 @@ ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/other_distros/CentOS7/README.md
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-#,p
-#,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/other_distros/CentOS7/README.md
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
 q
 IN
 rm $_inputdbA
