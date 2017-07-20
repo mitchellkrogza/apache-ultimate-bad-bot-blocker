@@ -90,6 +90,11 @@ sudo service apache2 start
 
 sudo apache2ctl configtest
 
+# List contents of Apache 2 sites-available
+ls -la /etc/apache2/sites-available/
+ls -la /etc/apache2/sites-enabled/
+
+
 # *****************************************
 # Get a copy of all conf files for checking
 # *****************************************
