@@ -52,6 +52,16 @@ sudo a2ensite 000-default.conf
 
 sudo a2dismod access_compat
 
+# ********************************************************************************************
+# Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
+# ********************************************************************************************
+
+sudo service apache2 stop
+sudo rm /etc/apache2/apache2.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
+sudo service apache2 start
+
+
 # *************************************
 # Get files from Repo Apache_2.4
 # *************************************
@@ -81,7 +91,7 @@ sudo apache2ctl configtest
 # Get a copy of apache2.conf for checking
 # ***************************************
 
-sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf
+#sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
