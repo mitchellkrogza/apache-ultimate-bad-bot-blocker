@@ -31,13 +31,14 @@
 # First lets stop Apache before we make changes like this
 # *******************************************************
 
-sudo service apache2 stop
+#sudo service apache2 stop
 
 # ********************
 # Disable Default Site
 # ********************
 
 sudo a2dissite default.conf
+sudo service apache2 reload
 
 # ********************************************************************************************
 # Copy our Apache 2.4 virtual host template to sites-enabled overwriting the default site conf
@@ -51,19 +52,23 @@ sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-avail
 # *******************
 
 sudo a2ensite default.conf
+sudo service apache2 reload
 
 # *************************
 # Disable mod_access_compat
 # *************************
 
-#sudo a2dismod access_compat
+sudo a2dismod access_compat
+sudo service apache2 restart
 
 # ********************************************************************************************
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
 
+sudo service apache2 stop
 sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
+sudo service apache2 restart
 
 # **************************************
 # Get new files from Repo Apache_2.4
@@ -77,16 +82,17 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
 
-
+# *************************
 # Set Ownership of /var/www
-sudo chown -R www-data:www-data /var/www/
+# *************************
 
+sudo chown -R www-data:www-data /var/www/
 
 # **********************
 # Now Start Apache Again
 # **********************
 
-sudo service apache2 start
+sudo service apache2 restart
 
 # **********************
 # Test the Apache Config
@@ -101,14 +107,6 @@ sudo apache2ctl -M
 sudo apache2ctl -t
 
 sudo apache2ctl -S
-
-# List contents of Apache 2 folders
-#ls -la /etc/apache2/sites-available/
-#ls -la /etc/apache2/sites-enabled/
-#ls -la /etc/apache2/conf-enabled/
-#ls -la /etc/apache2/mods-enabled/
-#ls -la /var/www/
-
 
 # *****************************************
 # Get a copy of all conf files for checking
