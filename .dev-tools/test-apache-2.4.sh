@@ -98,6 +98,9 @@ sudo apache2ctl -V
 
 sudo apache2ctl -M
 
+sudo apache2ctl -t
+
+sudo apache2ctl -S
 
 # List contents of Apache 2 folders
 #ls -la /etc/apache2/sites-available/
@@ -115,6 +118,8 @@ sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.
 sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/apache2.conf
 sudo cp /etc/apache2/sites-available/000-default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/000-default.conf
 
+# output contents of vhost including loaded includes
+cat /etc/apache2/sites-available/000-default.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
