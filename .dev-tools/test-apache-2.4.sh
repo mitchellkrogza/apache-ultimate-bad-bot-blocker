@@ -56,7 +56,7 @@ sudo a2ensite default.conf
 # Disable mod_access_compat
 # *************************
 
-sudo a2dismod access_compat
+#sudo a2dismod access_compat
 
 # ********************************************************************************************
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
