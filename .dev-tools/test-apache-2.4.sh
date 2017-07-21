@@ -38,7 +38,6 @@
 # ********************
 
 sudo a2dissite default.conf
-sudo service apache2 reload
 
 # ********************************************************************************************
 # Copy our Apache 2.4 virtual host template to sites-enabled overwriting the default site conf
@@ -52,14 +51,12 @@ sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-avail
 # *******************
 
 sudo a2ensite default.conf
-sudo service apache2 reload
 
 # *************************
 # Disable mod_access_compat
 # *************************
 
 sudo a2dismod access_compat
-sudo service apache2 restart
 
 # ********************************************************************************************
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
@@ -75,7 +72,7 @@ sudo service apache2 restart
 # **************************************
 
 sudo rm /etc/apache2/custom.d/*.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist2.conf -O /etc/apache2/custom.d/globalblacklist.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
