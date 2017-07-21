@@ -1,5 +1,12 @@
 # CHANGELOG - Apache Bad Bot Blocker
 
+### 2017-07-21
+- Finalized all Travis CI generator scripts, Travis now taking care of building of all modules.
+- Fix error in robots.txt files generator, was using a list of user-agents that included escaped spaces which is incorrect for a robots.txt file.
+- Deleted contents of various generated files forcing re-generation test of all generator scripts - PASSED
+- Documentation Updates between Apache 2.2 and Apache 2.4 versions in progress.
+- Travis CI testing of 2.4 version still in process, works and tested on two Ubuntu servers but Travis CI not playing along with this test yet.
+
 ### 2017-07-20
 - Please not existing version in conf.d folder in root of repo has been deprecated and will no longer be updated
 - Existing users please update your servers to pull updates from the Apache_2.2/conf.d folder which is the same original version.
