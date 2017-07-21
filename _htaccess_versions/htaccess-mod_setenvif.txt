@@ -6,9 +6,9 @@
 
 ### Version Information #
 ********************************************
-#### Version: V3.2017.07.483
-#### Bad Referrer Count: 5430
-#### Bad Bot Count: 493
+#### Version: V3.2017.07.484
+#### Bad Referrer Count: 5436
+#### Bad Bot Count: 498
 ********************************************
 ### Version Information ##
 
@@ -128,6 +128,7 @@ SetEnvIfNoCase User-Agent ^Exabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Express WebPictures.* spambot=yes
 SetEnvIfNoCase User-Agent ^Extractor.* spambot=yes
 SetEnvIfNoCase User-Agent ^ExtractorPro.* spambot=yes
+SetEnvIfNoCase User-Agent ^Extreme Picture Finder.* spambot=yes
 SetEnvIfNoCase User-Agent ^EyeNetIE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Ezooms.* spambot=yes
 SetEnvIfNoCase User-Agent ^FHscan.* spambot=yes
@@ -305,6 +306,7 @@ SetEnvIfNoCase User-Agent ^PeoplePal.* spambot=yes
 SetEnvIfNoCase User-Agent ^PHPCrawl.* spambot=yes
 SetEnvIfNoCase User-Agent ^Picscout.* spambot=yes
 SetEnvIfNoCase User-Agent ^Picsearch.* spambot=yes
+SetEnvIfNoCase User-Agent ^PictureFinder.* spambot=yes
 SetEnvIfNoCase User-Agent ^Pimonster.* spambot=yes
 SetEnvIfNoCase User-Agent ^Pi\-Monster.* spambot=yes
 SetEnvIfNoCase User-Agent ^Pixray.* spambot=yes
@@ -323,6 +325,8 @@ SetEnvIfNoCase User-Agent ^Qwantify.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActive.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActiveLinkBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankFlex.* spambot=yes
+SetEnvIfNoCase User-Agent ^RankingBot.* spambot=yes
+SetEnvIfNoCase User-Agent ^RankingBot2.* spambot=yes
 SetEnvIfNoCase User-Agent ^Rankivabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankurBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RealDownload.* spambot=yes
@@ -427,6 +431,7 @@ SetEnvIfNoCase User-Agent ^VB Project.* spambot=yes
 SetEnvIfNoCase User-Agent ^VCI.* spambot=yes
 SetEnvIfNoCase User-Agent ^VeriCiteCrawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^VidibleScraper.* spambot=yes
+SetEnvIfNoCase User-Agent ^Virusdie.* spambot=yes
 SetEnvIfNoCase User-Agent ^VoidEYE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Voil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Voltron.* spambot=yes
@@ -2045,6 +2050,7 @@ SetEnvIfNoCase Referer elvenar\.com spambot=yes
 SetEnvIfNoCase Referer emailaccountlogin\.co spambot=yes
 SetEnvIfNoCase Referer embedle\.com spambot=yes
 SetEnvIfNoCase Referer emediate\.eu spambot=yes
+SetEnvIfNoCase Referer emerson\-rus\.ru spambot=yes
 SetEnvIfNoCase Referer empathica\.com spambot=yes
 SetEnvIfNoCase Referer empirepoker\.com spambot=yes
 SetEnvIfNoCase Referer empis\.magix\.net spambot=yes
@@ -3322,6 +3328,7 @@ SetEnvIfNoCase Referer maladot\.com spambot=yes
 SetEnvIfNoCase Referer mall\.uk spambot=yes
 SetEnvIfNoCase Referer malls\.com spambot=yes
 SetEnvIfNoCase Referer malwareremovalcenter\.com spambot=yes
+SetEnvIfNoCase Referer managerpak204\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer manipulyator\-peterburg\.ru spambot=yes
 SetEnvIfNoCase Referer mantramusic\.ru spambot=yes
 SetEnvIfNoCase Referer manualterap\.roleforum\.ru spambot=yes
@@ -3498,6 +3505,7 @@ SetEnvIfNoCase Referer moesonce\.com spambot=yes
 SetEnvIfNoCase Referer moi\-glazki\.ru spambot=yes
 SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
 SetEnvIfNoCase Referer mojowhois\.com spambot=yes
+SetEnvIfNoCase Referer mojpregled\.com spambot=yes
 SetEnvIfNoCase Referer mokrayakiska\.com spambot=yes
 SetEnvIfNoCase Referer mole\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer monarchfind\-a\.akamaihd\.net spambot=yes
@@ -4137,6 +4145,7 @@ SetEnvIfNoCase Referer privatbank46\.ru spambot=yes
 SetEnvIfNoCase Referer privatefx\-in\.ru spambot=yes
 SetEnvIfNoCase Referer privatefx\.all4invest\.info spambot=yes
 SetEnvIfNoCase Referer privatov\-zapisi\.ru spambot=yes
+SetEnvIfNoCase Referer privetsochi\.ru spambot=yes
 SetEnvIfNoCase Referer privhosting\.com spambot=yes
 SetEnvIfNoCase Referer prize44\.com spambot=yes
 SetEnvIfNoCase Referer prizeestates\.cricket spambot=yes
@@ -4750,6 +4759,7 @@ SetEnvIfNoCase Referer smartshoppymac\.com spambot=yes
 SetEnvIfNoCase Referer smichovbike\.cz spambot=yes
 SetEnvIfNoCase Referer smokewithrabbits\.com spambot=yes
 SetEnvIfNoCase Referer sms2x2\.ru spambot=yes
+SetEnvIfNoCase Referer smsactivator\.ru spambot=yes
 SetEnvIfNoCase Referer smstraf\.ru spambot=yes
 SetEnvIfNoCase Referer sneakyboy\.com spambot=yes
 SetEnvIfNoCase Referer snip\.to spambot=yes
@@ -4931,6 +4941,7 @@ SetEnvIfNoCase Referer sumo\.com spambot=yes
 SetEnvIfNoCase Referer superiends\.org spambot=yes
 SetEnvIfNoCase Referer superinterstitial\.com spambot=yes
 SetEnvIfNoCase Referer superkanpo\.com spambot=yes
+SetEnvIfNoCase Referer superlist\.biz spambot=yes
 SetEnvIfNoCase Referer supermesta\.ru spambot=yes
 SetEnvIfNoCase Referer supernew\.org spambot=yes
 SetEnvIfNoCase Referer superpages\.com spambot=yes
