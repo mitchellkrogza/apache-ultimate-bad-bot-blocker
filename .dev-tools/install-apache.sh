@@ -55,6 +55,7 @@ sudo a2enmod headers
 sudo a2enmod mime
 # Try switching from mpm_event to mpm_prefork
 sudo a2dismod mpm_event
+sudo a2dismod mpm_worker
 sudo a2enmod mpm_prefork
 
 # Enable Default Site
@@ -91,6 +92,9 @@ sudo apache2ctl configtest
 sudo apache2ctl -V
 
 sudo apache2ctl -M
+
+# Re-Set Ownership of /var/www
+sudo chown -R www-data:www-data /var/www/
 
 
 # List contents of Apache 2 folders

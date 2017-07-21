@@ -78,6 +78,10 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
 
 
+# Set Ownership of /var/www
+sudo chown -R www-data:www-data /var/www/
+
+
 # **********************
 # Now Start Apache Again
 # **********************
