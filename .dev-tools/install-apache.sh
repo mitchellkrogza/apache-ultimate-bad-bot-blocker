@@ -98,11 +98,11 @@ sudo chown -R www-data:www-data /var/www/
 
 
 # List contents of Apache 2 folders
-ls -la /etc/apache2/sites-available/
-ls -la /etc/apache2/sites-enabled/
-ls -la /etc/apache2/conf-enabled/
-ls -la /etc/apache2/mods-enabled/
-ls -la /var/www/
+#ls -la /etc/apache2/sites-available/
+#ls -la /etc/apache2/sites-enabled/
+#ls -la /etc/apache2/conf-enabled/
+#ls -la /etc/apache2/mods-enabled/
+#ls -la /var/www/
 
 # *****************************************
 # Get a copy of all conf files for checking
@@ -110,6 +110,8 @@ ls -la /var/www/
 
 sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/
 sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/apache2.conf
+sudo cp /etc/apache2/sites-available/000-default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/000-default.conf
+
 
 # ***********************************************************
 # Set all our other setup and deploy scripts to be executable
