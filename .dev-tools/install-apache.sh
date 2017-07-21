@@ -39,12 +39,17 @@ sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/index.html
 
 # Enable mod rewrite module
 sudo a2enmod rewrite
+sudo a2enmod expires
+sudo a2enmod headers
+sudo a2enmod mime
+
 
 # Enable Default Site
 sudo a2ensite 000-default.conf
 
 # Set ServerName Globally
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
+sudo a2enconf servername
 
 # *************************************
 # Get files from Repo Apache_2.2
@@ -57,7 +62,6 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
-sudo a2enconf servername
 
 # **************
 # Restart Apache
