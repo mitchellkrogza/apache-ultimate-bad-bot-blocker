@@ -94,6 +94,8 @@ sudo apache2ctl configtest
 ls -la /etc/apache2/sites-available/
 ls -la /etc/apache2/sites-enabled/
 
+sudo systemctl status apache2
+
 
 # *****************************************
 # Get a copy of all conf files for checking
