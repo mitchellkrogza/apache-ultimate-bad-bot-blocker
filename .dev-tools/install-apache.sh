@@ -43,7 +43,10 @@ sudo apt-get install -y apache2 apache2-utils
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/000-default.conf
 
 # Copy basic testing files into /var/www
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/index.html
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/html/index.html
+
+# Set Ownership of /var/www
+sudo chown -R www-data:www-data /var/www/
 
 # Enable mod rewrite module
 sudo a2enmod rewrite
