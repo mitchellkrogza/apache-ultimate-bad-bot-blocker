@@ -84,7 +84,7 @@ class Generator
         $data = "";
     {
         foreach ($lines as $line) {
-            $data .= "SetEnvIfNoCase Referer ~*" . preg_quote($line) . " spam_ref=1\n";
+            $data .= "SetEnvIfNoCase Referer ~*" . preg_quote($line) . " spam_ref\n";
         }
         $this->writeToFile($file, $data);
     	}
