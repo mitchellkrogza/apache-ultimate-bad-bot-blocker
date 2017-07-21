@@ -75,6 +75,17 @@ sudo service apache2 restart
 
 sudo apache2ctl configtest
 
+sudo apache2ctl -V
+
+sudo apache2ctl -M
+
+
+# List contents of Apache 2 folders
+ls -la /etc/apache2/sites-available/
+ls -la /etc/apache2/sites-enabled/
+ls -la /etc/apache2/conf-enabled/
+ls -la /etc/apache2/mods-enabled/
+
 # ***********************************************************
 # Set all our other setup and deploy scripts to be executable
 # ***********************************************************
