@@ -35,6 +35,7 @@ sudo apt-get install -y apache2 apache2-utils
 sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update -y
 sudo apt-get upgrade -y
+sudo apt-get dist-upgrade -y
 
 # Copy our virtual host template to sites-enabled overwriting the default site conf
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/000-default.conf
