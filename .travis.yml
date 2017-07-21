@@ -25,7 +25,7 @@ before_install:
   - export TZ=Africa/Johannesburg
 
 install:
-  - bash -x .dev-tools/install-apache.sh
+  - bash .dev-tools/install-apache.sh
 
 script:
   - bash .dev-tools/run-curl-tests.sh
