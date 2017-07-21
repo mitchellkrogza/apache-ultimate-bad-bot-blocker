@@ -95,6 +95,7 @@ ls -la /etc/apache2/sites-available/
 ls -la /etc/apache2/sites-enabled/
 ls -la /etc/apache2/conf-enabled/
 ls -la /etc/apache2/mods-enabled/
+ls -la /var/www/
 
 # *****************************************
 # Get a copy of all conf files for checking
