@@ -36,11 +36,12 @@ sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update
 sudo apt-get install -y apache2 apache2-utils
 
-#sudo apt-get upgrade -y
-#sudo apt-get dist-upgrade -y
+# Delete any existing default site in Apache
+sudo rm /etc/apache2/sites-available/*
+sudo rm /etc/apache2/sites-enabled/*
 
 # Copy our virtual host template to sites-enabled overwriting the default site conf
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/000-default.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/default.conf
 
 # Copy basic testing files into /var/www
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/html/index.html
@@ -53,13 +54,16 @@ sudo a2enmod rewrite
 sudo a2enmod expires
 sudo a2enmod headers
 sudo a2enmod mime
-# Try switching from mpm_event to mpm_prefork
-sudo a2dismod mpm_event
-sudo a2dismod mpm_worker
-sudo a2enmod mpm_prefork
+
+# ********************************************************
+# If you ever want to switch from mpm_event to mpm_prefork
+# ********************************************************
+
+#sudo a2dismod mpm_event
+#sudo a2enmod mpm_prefork
 
 # Enable Default Site
-sudo a2ensite 000-default.conf
+sudo a2ensite default.conf
 
 # Set ServerName Globally
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
@@ -110,7 +114,7 @@ sudo chown -R www-data:www-data /var/www/
 
 sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/
 sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/apache2.conf
-sudo cp /etc/apache2/sites-available/000-default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/000-default.conf
+sudo cp /etc/apache2/sites-available/default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/default.conf
 
 
 # ***********************************************************

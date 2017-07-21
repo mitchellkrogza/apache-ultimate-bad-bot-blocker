@@ -37,20 +37,20 @@ sudo service apache2 stop
 # Disable Default Site
 # ********************
 
-sudo a2dissite 000-default.conf
+sudo a2dissite default.conf
 
 # ********************************************************************************************
 # Copy our Apache 2.4 virtual host template to sites-enabled overwriting the default site conf
 # ********************************************************************************************
 
-sudo rm /etc/apache2/sites-available/000-default.conf
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/000-default.conf
+sudo rm /etc/apache2/sites-available/default.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
 
 # *******************
 # Enable Default Site
 # *******************
 
-sudo a2ensite 000-default.conf
+sudo a2ensite default.conf
 
 # *************************
 # Disable mod_access_compat
@@ -116,10 +116,7 @@ sudo apache2ctl -S
 
 sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/
 sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/apache2.conf
-sudo cp /etc/apache2/sites-available/000-default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/000-default.conf
-
-# output contents of vhost including loaded includes
-cat /etc/apache2/sites-available/000-default.conf
+sudo cp /etc/apache2/sites-available/default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/default.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
