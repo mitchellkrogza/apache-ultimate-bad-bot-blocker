@@ -31,7 +31,7 @@
 #sudo apt-get update
 #sudo apt-get install -y apache2 apache2-utils
 
-# Try Upgrade to latest Apache
+# Try Upgrade to latest Apache from Repo: ppa:ondrej/apache2
 sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update
 sudo apt-get install -y apache2 apache2-utils
@@ -50,7 +50,9 @@ sudo a2enmod rewrite
 sudo a2enmod expires
 sudo a2enmod headers
 sudo a2enmod mime
-
+# Try switching from mpm_event to mpm_prefork
+sudo a2dismod mpm_event
+sudo a2enmod mpm_prefork
 
 # Enable Default Site
 sudo a2ensite 000-default.conf
