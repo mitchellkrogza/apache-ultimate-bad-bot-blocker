@@ -90,11 +90,19 @@ sudo service apache2 start
 
 sudo apache2ctl configtest
 
-# List contents of Apache 2 sites-available
+sudo apache2ctl -V
+
+sudo apache2ctl -M
+
+
+# List contents of Apache 2 folders
 ls -la /etc/apache2/sites-available/
 ls -la /etc/apache2/sites-enabled/
+ls -la /etc/apache2/conf-enabled/
+ls -la /etc/apache2/mods-enabled/
 
-sudo systemctl status apache2
+
+#sudo systemctl status apache2
 
 
 # *****************************************
