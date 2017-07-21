@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.07.484
-### Updated: Fri Jul 21 14:46:01 SAST 2017
+### Version: V3.2017.07.485
+### Updated: Fri Jul 21 14:51:40 SAST 2017
 ### Bad Bot Count: 498
 ###################################################
 ### Version Information ##
@@ -9,16 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: PictureFinder
-Disallow:/
-User-agent: Extreme\ Picture\ Finder
-Disallow:/
-User-agent: Virusdie
-Disallow:/
-User-agent: RankingBot
-Disallow:/
-User-agent: RankingBot2
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
@@ -248,6 +238,8 @@ Disallow:/
 User-agent: Extractor
 Disallow:/
 User-agent: ExtractorPro
+Disallow:/
+User-agent: Extreme\ Picture\ Finder
 Disallow:/
 User-agent: EyeNetIE
 Disallow:/
@@ -603,6 +595,8 @@ User-agent: Picscout
 Disallow:/
 User-agent: Picsearch
 Disallow:/
+User-agent: PictureFinder
+Disallow:/
 User-agent: Pimonster
 Disallow:/
 User-agent: Pi-Monster
@@ -638,6 +632,10 @@ Disallow:/
 User-agent: RankActiveLinkBot
 Disallow:/
 User-agent: RankFlex
+Disallow:/
+User-agent: RankingBot
+Disallow:/
+User-agent: RankingBot2
 Disallow:/
 User-agent: Rankivabot
 Disallow:/
@@ -846,6 +844,8 @@ Disallow:/
 User-agent: VeriCiteCrawler
 Disallow:/
 User-agent: VidibleScraper
+Disallow:/
+User-agent: Virusdie
 Disallow:/
 User-agent: VoidEYE
 Disallow:/
