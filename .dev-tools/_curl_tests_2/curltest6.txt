@@ -1,5 +1,13 @@
-Last Tested: Thu Jul 20 17:42:05 SAST 2017
+Last Tested: Fri Jul 21 10:37:45 SAST 2017
 
-<?php
-
-echo "Welcome to Apache\n";
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to the Apache Ultimate Bad Bot Blocker</title>
+</head>
+<body>
+<div align=center>
+<h1>Welcome to the Apache Ultimate Bad Bot Blocker</h1>
+<p>This is merely used for testing !!!</p>
+</body>
+</html>
