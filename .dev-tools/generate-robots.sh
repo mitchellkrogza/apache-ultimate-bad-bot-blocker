@@ -33,7 +33,7 @@
 # Set Input Files
 # ***************
 
-_input1=$TRAVIS_BUILD_DIR/_htaccess_generator_files/bad-user-agents.list
+_input1=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
 _tmprobots=/tmp/robots.txt
 
 # ******************
