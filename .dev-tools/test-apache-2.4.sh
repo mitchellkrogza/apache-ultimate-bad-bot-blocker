@@ -102,14 +102,13 @@ ls -la /etc/apache2/conf-enabled/
 ls -la /etc/apache2/mods-enabled/
 
 
-#sudo systemctl status apache2
-
 
 # *****************************************
 # Get a copy of all conf files for checking
 # *****************************************
 
-sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files/
+sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/
+sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/apache2.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
