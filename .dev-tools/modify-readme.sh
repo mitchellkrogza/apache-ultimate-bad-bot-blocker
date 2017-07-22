@@ -57,7 +57,7 @@ _endmarker2="____________________"
 # PRINT VERSION INFORMATION INTO README.md
 # ****************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker2" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker2" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker2" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker2" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
 1,/_______________/d
