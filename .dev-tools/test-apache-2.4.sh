@@ -106,11 +106,10 @@ sudo apache2ctl -t
 sudo apache2ctl -S
 
 curl -I http://local.dev
-curl -I http://127.0.0.1
-curl -I http://localhost
 curl -A "80legs" http://local.dev
-curl -A "360Spider" http://127.0.0.1
-curl -A "Acunetix" http://localhost
+curl -A "360Spider" http://local.dev
+curl -A "Acunetix" http://local.dev
+curl -A "GoogleBot" http://local.dev
 
 # *****************************************
 # Get a copy of all conf files for checking
