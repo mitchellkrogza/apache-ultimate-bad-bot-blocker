@@ -31,7 +31,7 @@
 # First lets stop Apache before we make changes like this
 # *******************************************************
 
-#sudo service apache2 stop
+sudo service apache2 stop
 
 # ********************
 # Disable Default Site
@@ -62,10 +62,10 @@ sudo a2dismod access_compat
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
 
-sudo service apache2 stop
+#sudo service apache2 stop
 sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
-sudo service apache2 restart
+#sudo service apache2 restart
 
 # **************************************
 # Get new files from Repo Apache_2.4
@@ -104,6 +104,10 @@ sudo apache2ctl -M
 sudo apache2ctl -t
 
 sudo apache2ctl -S
+
+curl -I http://local.dev
+curl -I http://127.0.0.1
+curl -I http://localhost
 
 # *****************************************
 # Get a copy of all conf files for checking
