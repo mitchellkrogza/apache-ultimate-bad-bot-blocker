@@ -18,14 +18,18 @@
 
 :exclamation:**There are now two distinctly different versions of this blocker.**:exclamation:
 
+****************************************************************
 > A Version for Apache 2.2 > 2.4 + which requires the module access_compat and uses the older `Order Allow,Deny` Access Control Methods. 
 > This is the ORIGINAL VERSION of the blocker and is now located in the folder **Apache_2.2** at
 > https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2
+****************************************************************
 
+****************************************************************
 > A new version for Apache 2.4+ only which uses new the Access Control Structures of `<RequireAll>` and `<RequireAny>`. 
 > Anyone using Apache 2.4 should be using this new version as it fully complies with the new Access Control Methods of Apache 
 > and does not require the access_compat module to be loaded. This new version is at 
 > https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4
+****************************************************************
 
 ## Update Notification System
 
