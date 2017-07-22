@@ -19,7 +19,7 @@
 
 :exclamation:**There are now two distinctly different versions of this blocker.**:exclamation:
 
-<a href="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2">Apache 2.2 > 2.4+ (access_compat)</a>
+**<a href="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2">Apache 2.2 > 2.4+ (access_compat)</a> [TESTED ON APACHE 2.2 > 2.4.27]**
 ****************************************************************
 ```
 A Version for Apache 2.2 > 2.4 + which requires the module access_compat and uses the older 
@@ -30,7 +30,7 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Ap
 ```
 ****************************************************************
 
-<a href="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4">Apache 2.4+ ONLY</a>
+**<a href="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4">Apache 2.4+ ONLY</a> [TESTED ON APACHE 2.4 > 2.4.27]**
 ****************************************************************
 ``` 
 A new version for Apache 2.4+ only which uses new the Access Control Structures of 
