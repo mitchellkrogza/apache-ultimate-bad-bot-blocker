@@ -1,7 +1,7 @@
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/apache-ultimate-bad-bot-referrer-blocker-script.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/><img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/LICENSE.md)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![GitHub release](https://img.shields.io/github/release/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/releases/latest)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/>[![Build Status](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master)](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker)<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/spacer.jpg"/><a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
-## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers
+## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers (2.2 > 2.4+)
 
 ##### Version Information #
 ********************************************
@@ -11,12 +11,19 @@
 ********************************************
 ##### Version Information ##
 
-### Created by: https://github.com/mitchellkrogza
-### Copyright Mitchell Krog <mitchellkrog@gmail.com>
+- Created by: https://github.com/mitchellkrogza
+- Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
-### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+## Two Versions of the Blocker ? PLEASE TAKE NOTE :exclamation:
+
+:exclamation:**There are now two distinctly different versions of this blocker.**:exclamation:
+
+- A Version for Apache 2.2 > 2.4 + which requires the module access_compat and user the older `Order Allow,Deny` Access Control Methods. This is the original version of the blocker and is now located in the folder **Apache_2.2** at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2
+
+- A new version for Apache 2.4+ only which uses new the Access Control Structures of `<RequireAll>` and `<RequireAny>`. Anyone using Apache 2.4 should be using this new version as it fully complies with the new Access Control Methods of Apache and does not require the access_compat module to be loaded. This new version is at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4
 
 ## Update Notification System
+
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
@@ -24,6 +31,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 #### Also follow me on twitter @ubuntu101za for update notifications
 
 <a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
+
+#### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 - CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
 - Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
