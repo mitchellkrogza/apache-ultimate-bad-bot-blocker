@@ -87,9 +87,15 @@ sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 cd $TRAVIS_BUILD_DIR/.latest_release/
 zip -r Apache_2.2.zip $TRAVIS_BUILD_DIR/Apache_2.2/
 zip -r Apache_2.4.zip $TRAVIS_BUILD_DIR/Apache_2.4/
+
 # Test creating compressed tar of release
 tar -C $TRAVIS_BUILD_DIR/Apache_2.2/ -cvf Apache_2.2.tar selecteddir
 tar -C $TRAVIS_BUILD_DIR/Apache_2.4/ -cvf Apache_2.4.tar selecteddir
+
+tar -cvf 2.2.tar.gz $TRAVIS_BUILD_DIR/Apache_2.2/
+tar -cvf 2.4.tar.gz $TRAVIS_BUILD_DIR/Apache_2.4/
+
+#tar -zcvf $BACKUP/$FILE $DIRS
 
 # *************************************
 # Add all the modified files and commit
