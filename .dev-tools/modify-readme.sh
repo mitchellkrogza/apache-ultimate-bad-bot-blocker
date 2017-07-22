@@ -50,8 +50,8 @@ _tmpapacheA=tmpapacheA
 
 _startmarker="### Version Information #"
 _endmarker="### Version Information ##"
-_startmarker2="=========="
-_endmarker2="==============="
+_startmarker2="_______________"
+_endmarker2="____________________"
 
 # ****************************************
 # PRINT VERSION INFORMATION INTO README.md
@@ -60,13 +60,13 @@ _endmarker2="==============="
 printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker2" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker2" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/README.md
 q
 IN
