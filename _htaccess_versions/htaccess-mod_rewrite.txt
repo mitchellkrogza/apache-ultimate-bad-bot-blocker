@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.545
-### Bad Referrer Count: 5436
+### Version: V3.2017.07.547
+### Bad Referrer Count: 5443
 ### Bad Bot Count: 498
 ### Version Information ##
 
@@ -1067,6 +1067,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*b2b\-lounge\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*babespcs\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*babieca\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bablonow\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*babyfactory\.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*babyguns\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*back\.dog.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*backgroundpictures\.net.*$ [NC,OR]
@@ -1267,6 +1268,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*board\.f00d\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*boazpower\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bobba\.dzaba\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bobinoz\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*boc\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bochemit\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bocoarchives\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bodybuilding\-shop\.biz.*$ [NC,OR]
@@ -2350,6 +2352,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-share\-buttons\.top.*$ [N
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-social\-buttons\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-stock\-illustration\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-today\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-traffic\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-video\-tool\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freecamdollars\.com.*$ [NC,OR]
@@ -2807,6 +2810,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*igrovyeavtomaty777\.ru.*$ [NC,O
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*igru\-xbox\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*iinstalll\-fii1leis\.jus0wil\.pp\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*iklysha\.ml.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ikritikimou\.gr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ilbe\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ilikevitaly\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ilmen\.net.*$ [NC,OR]
@@ -3645,6 +3649,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*naj\-filmy24\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*najaden\.no.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*nalogovyy\-kodeks\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*namenectar\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*napalm51\.nut\.cc.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*naperehresti\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*naphukete\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*nardulan\.com.*$ [NC,OR]
@@ -5403,6 +5408,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vezuviy\.su.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*vgoloveboli\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*via\-energy\-acquistare\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*via\-energy\-cumpara\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*via\-energy\-order\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*via\-gra\.webstarts\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*viagra\.pp\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*viagroid\.ru.*$ [NC,OR]
@@ -5801,6 +5807,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yebocasino\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yellocloud\.be.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yellowads\.men.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yellowstonesafaritours\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yellowstonevisitortours\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yhit\.press.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ynymnwbm\.bloger\.index\.hr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*yogamatsexpert\.com.*$ [NC,OR]
