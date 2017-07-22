@@ -108,6 +108,9 @@ sudo apache2ctl -S
 curl -I http://local.dev
 curl -I http://127.0.0.1
 curl -I http://localhost
+curl -A "80legs" http://local.dev
+curl -A "80legs" http://127.0.0.1
+curl -A "80legs" http://localhost
 
 # *****************************************
 # Get a copy of all conf files for checking
