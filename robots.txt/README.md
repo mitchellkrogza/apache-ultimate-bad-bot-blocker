@@ -2,6 +2,12 @@
 ### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 ## DO NOT use this on any of your sites if you are running the Bad Bot and Spam Referrer Blocker (not needed)
 
+_______________
+#### Version: V3.2017.07.543
+#### Bad Referrer Count: 5436
+#### Bad Bot Count: 498
+____________________
+
 The robots.txt file residing in this directory can be used to ADD onto your existing robots.txt file by placing this after anything you already have in your robots.txt file.
 
 ## Do NOT make this file the only contents of your robots.txt file !!!
