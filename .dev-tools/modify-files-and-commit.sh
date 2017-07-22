@@ -88,8 +88,6 @@ cd $TRAVIS_BUILD_DIR/.latest_release/
 tar -czf Apache_2.2.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.2/ .
 tar -czf Apache_2.4.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.4/ .
 
-#tar -zcvf $BACKUP/$FILE $DIRS
-
 # *************************************
 # Add all the modified files and commit
 # *************************************
