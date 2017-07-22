@@ -97,11 +97,11 @@ sudo service apache2 restart
 
 sudo apache2ctl configtest
 
-curl -I http://local.dev
-curl -A "80legs" http://local.dev
-curl -A "360Spider" http://local.dev
-curl -A "Acunetix" http://local.dev
-curl -A "GoogleBot" http://local.dev
+#curl -I http://local.dev
+#curl -A "80legs" http://local.dev
+#curl -A "360Spider" http://local.dev
+#curl -A "Acunetix" http://local.dev
+#curl -A "GoogleBot" http://local.dev
 
 # *****************************************
 # Get a copy of all conf files for checking
