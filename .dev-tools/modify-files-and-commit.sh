@@ -80,24 +80,13 @@ sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 
-# **************************************************************
-# Zip Our Latest Release So We can Include it the Travis Release
-# **************************************************************
+# ***************************************************************
+# Gzip Our Latest Release So We can Include it the Travis Release
+# ***************************************************************
 
 cd $TRAVIS_BUILD_DIR/.latest_release/
-zip -r Apache_2.2.zip $TRAVIS_BUILD_DIR/Apache_2.2/
-zip -r Apache_2.4.zip $TRAVIS_BUILD_DIR/Apache_2.4/
-
-# Test creating compressed tar of release
-tar -C $TRAVIS_BUILD_DIR/Apache_2.2/ -cvf Apache_2.2.tar selecteddir
-tar -C $TRAVIS_BUILD_DIR/Apache_2.4/ -cvf Apache_2.4.tar selecteddir
-
-#cd $TRAVIS_BUILD_DIR/Apache_2.2/
-#tar -cvf 2.2.tar.gz $TRAVIS_BUILD_DIR/Apache_2.2/
-#tar -cvf 2.4.tar.gz $TRAVIS_BUILD_DIR/Apache_2.4/
-
-tar -czf 2.2.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.2/ .
-tar -czf 2.4.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.4/ .
+tar -czf Apache_2.2.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.2/ .
+tar -czf Apache_2.4.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.4/ .
 
 #tar -zcvf $BACKUP/$FILE $DIRS
 

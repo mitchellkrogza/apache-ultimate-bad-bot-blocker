@@ -41,8 +41,8 @@ deploy:
   api_key:
     secure: ${GH_TOKEN}
   file:
-      - .latest_release/Apache_2.2.zip
-      - .latest_release/Apache_2.4.zip
+      - .latest_release/Apache_2.2.tar.gz
+      - .latest_release/Apache_2.4.tar.gz
   skip_cleanup: true
   on:
     repo: mitchellkrogza/apache-ultimate-bad-bot-blocker
