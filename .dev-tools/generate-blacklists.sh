@@ -567,7 +567,7 @@ rm $_inputdb5
 printf '%s\n' "$_start6" >> "$_tmpapache6"
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache6"
+printf '\t%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache6"
 done < $_input6
 printf '%s\n' "$_end6"  >> "$_tmpapache6"
 mv $_tmpapache6 $_inputdb6
@@ -591,7 +591,7 @@ rm $_inputdb6
 printf '%s\n' "$_start7" >> "$_tmpapache7"
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache7"
+printf '\t%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache7"
 done < $_input7
 printf '%s\n' "$_end7"  >> "$_tmpapache7"
 mv $_tmpapache7 $_inputdb7
@@ -615,7 +615,7 @@ rm $_inputdb7
 printf '%s\n' "$_start8" >> "$_tmpapache8"
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Require not ip " "${LINE}" >> "$_tmpapache8"
+printf '\t%s%s\n' "Require not ip " "${LINE}" >> "$_tmpapache8"
 done < $_input8
 printf '%s\n' "$_end8"  >> "$_tmpapache8"
 mv $_tmpapache8 $_inputdb8
@@ -639,7 +639,7 @@ rm $_inputdb8
 printf '%s\n' "$_start9" >> "$_tmpapache9"
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Require not ip " "${LINE}" >> "$_tmpapache9"
+printf '\t%s%s\n' "Require not ip " "${LINE}" >> "$_tmpapache9"
 done < $_input9
 printf '%s\n' "$_end9"  >> "$_tmpapache9"
 mv $_tmpapache9 $_inputdb9
@@ -663,7 +663,7 @@ rm $_inputdb9
 printf '%s\n' "$_start10" >> "$_tmpapache10"
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache10"
+printf '\t%s%s\n' "Require ip " "${LINE}" >> "$_tmpapache10"
 done < $_input10
 printf '%s\n' "$_end10"  >> "$_tmpapache10"
 mv $_tmpapache10 $_inputdb10

@@ -97,14 +97,6 @@ sudo service apache2 restart
 
 sudo apache2ctl configtest
 
-#sudo apache2ctl -V
-
-#sudo apache2ctl -M
-
-#sudo apache2ctl -t
-
-#sudo apache2ctl -S
-
 curl -I http://local.dev
 curl -A "80legs" http://local.dev
 curl -A "360Spider" http://local.dev
