@@ -44,7 +44,7 @@ sudo a2dissite default.conf
 # ********************************************************************************************
 
 sudo rm /etc/apache2/sites-available/default.conf
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24-2.conf /etc/apache2/sites-available/default.conf
 
 # *******************
 # Enable Default Site
@@ -109,8 +109,8 @@ curl -I http://local.dev
 curl -I http://127.0.0.1
 curl -I http://localhost
 curl -A "80legs" http://local.dev
-curl -A "80legs" http://127.0.0.1
-curl -A "80legs" http://localhost
+curl -A "360Spider" http://127.0.0.1
+curl -A "Acunetix" http://localhost
 
 # *****************************************
 # Get a copy of all conf files for checking
