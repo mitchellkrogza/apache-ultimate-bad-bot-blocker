@@ -50,8 +50,8 @@ _tmpapacheA=tmpapacheA
 
 _startmarker="### Version Information #"
 _endmarker="### Version Information ##"
-_startmarker2="__________"
-_endmarker2="____________"
+_startmarker2="=========="
+_endmarker2="==============="
 
 # ****************************************
 # PRINT VERSION INFORMATION INTO README.md
