@@ -18,9 +18,14 @@
 
 :exclamation:**There are now two distinctly different versions of this blocker.**:exclamation:
 
-- A Version for Apache 2.2 > 2.4 + which requires the module access_compat and user the older `Order Allow,Deny` Access Control Methods. This is the original version of the blocker and is now located in the folder **Apache_2.2** at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2
+> A Version for Apache 2.2 > 2.4 + which requires the module access_compat and uses the older `Order Allow,Deny` Access Control Methods. 
+> This is the ORIGINAL VERSION of the blocker and is now located in the folder **Apache_2.2** at
+> https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.2
 
-- A new version for Apache 2.4+ only which uses new the Access Control Structures of `<RequireAll>` and `<RequireAny>`. Anyone using Apache 2.4 should be using this new version as it fully complies with the new Access Control Methods of Apache and does not require the access_compat module to be loaded. This new version is at https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4
+> A new version for Apache 2.4+ only which uses new the Access Control Structures of `<RequireAll>` and `<RequireAny>`. 
+> Anyone using Apache 2.4 should be using this new version as it fully complies with the new Access Control Methods of Apache 
+> and does not require the access_compat module to be loaded. This new version is at 
+> https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Apache_2.4
 
 ## Update Notification System
 
@@ -34,13 +39,13 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 #### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
+# CONFIGURATION OF THE APACHE BAD BOT BLOCKER:
+
 - CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
 - Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
 - Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 - Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
 - Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
-
-# CONFIGURATION OF THE APACHE BAD BOT BLOCKER:
 
 ## Step 1:
 
