@@ -27,45 +27,70 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# Install Apache2
+# *****************************
+# Install older default Apache2
+# *****************************
 #sudo apt-get update
 #sudo apt-get install -y apache2 apache2-utils
 
-# Try Upgrade to latest Apache from Repo: ppa:ondrej/apache2
+# ***************************************************
+# Install latest Apache from Repo: ppa:ondrej/apache2
+# ***************************************************
+
 sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update
 sudo apt-get install -y apache2 apache2-utils
 
+# ****************************
+# Install zip for our releases
+# ****************************
+
+sudo apt-get install zip -y
+
+# ******************************************
 # Delete any existing default site in Apache
+# ******************************************
+
 sudo rm /etc/apache2/sites-available/*
 sudo rm /etc/apache2/sites-enabled/*
 
+# *********************************************************************************
 # Copy our virtual host template to sites-enabled overwriting the default site conf
+# *********************************************************************************
+
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/default.conf
 
-# Copy basic testing files into /var/www
+# *****************************************************
+# Copy basic testing index.html file into /var/www/html
+# *****************************************************
+
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/html/index.html
 
+# *************************
 # Set Ownership of /var/www
+# *************************
+
 sudo chown -R www-data:www-data /var/www/
 
-# Enable mod rewrite module
+# ******************************
+# Enable required Apache modules
+# ******************************
+
 sudo a2enmod rewrite
 sudo a2enmod expires
 sudo a2enmod headers
 sudo a2enmod mime
 
-# ********************************************************
-# If you ever want to switch from mpm_event to mpm_prefork
-# ********************************************************
+# ***********************
+# Enable the Default Site
+# ***********************
 
-#sudo a2dismod mpm_event
-#sudo a2enmod mpm_prefork
-
-# Enable Default Site
 sudo a2ensite default.conf
 
+# ***********************
 # Set ServerName Globally
+# ***********************
+
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
 sudo a2enconf servername
 
@@ -92,21 +117,6 @@ sudo service apache2 restart
 # **********************
 
 sudo apache2ctl configtest
-
-sudo apache2ctl -V
-
-sudo apache2ctl -M
-
-# Re-Set Ownership of /var/www
-sudo chown -R www-data:www-data /var/www/
-
-
-# List contents of Apache 2 folders
-#ls -la /etc/apache2/sites-available/
-#ls -la /etc/apache2/sites-enabled/
-#ls -la /etc/apache2/conf-enabled/
-#ls -la /etc/apache2/mods-enabled/
-#ls -la /var/www/
 
 # *****************************************
 # Get a copy of all conf files for checking

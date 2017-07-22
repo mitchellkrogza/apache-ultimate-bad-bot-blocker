@@ -67,7 +67,6 @@ git config --global push.default simple
 
 git checkout master
 
-
 # ***************************************************
 # Modify our files with build and version information
 # ***************************************************
@@ -81,6 +80,13 @@ sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
 sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 
+# **************************************************************
+# Zip Our Latest Release So We can Include it the Travis Release
+# **************************************************************
+
+cd $TRAVIS_BUILD_DIR/.latest_release/
+zip -r Apache_2.2.zip $TRAVIS_BUILD_DIR/Apache_2.2/
+zip -r Apache_2.4.zip $TRAVIS_BUILD_DIR/Apache_2.4/
 
 # *************************************
 # Add all the modified files and commit
