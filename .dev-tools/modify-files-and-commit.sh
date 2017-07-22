@@ -92,8 +92,12 @@ zip -r Apache_2.4.zip $TRAVIS_BUILD_DIR/Apache_2.4/
 tar -C $TRAVIS_BUILD_DIR/Apache_2.2/ -cvf Apache_2.2.tar selecteddir
 tar -C $TRAVIS_BUILD_DIR/Apache_2.4/ -cvf Apache_2.4.tar selecteddir
 
-tar -cvf 2.2.tar.gz $TRAVIS_BUILD_DIR/Apache_2.2/
-tar -cvf 2.4.tar.gz $TRAVIS_BUILD_DIR/Apache_2.4/
+#cd $TRAVIS_BUILD_DIR/Apache_2.2/
+#tar -cvf 2.2.tar.gz $TRAVIS_BUILD_DIR/Apache_2.2/
+#tar -cvf 2.4.tar.gz $TRAVIS_BUILD_DIR/Apache_2.4/
+
+tar -czf 2.2.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.2/ .
+tar -czf 2.4.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.4/ .
 
 #tar -zcvf $BACKUP/$FILE $DIRS
 
