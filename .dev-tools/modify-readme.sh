@@ -48,16 +48,16 @@ _tmpapacheA=tmpapacheA
 # Start and End Strings to Search for to do inserts into template
 # ***************************************************************
 
-_startmarker="### Version Information #"
-_endmarker="### Version Information ##"
-_startmarker2="_______________"
-_endmarker2="____________________"
+_startmarker="_______________"
+_endmarker="____________________"
+_startmarker2="### Version Information #"
+_endmarker2="### Version Information ##"
 
 # ****************************************
 # PRINT VERSION INFORMATION INTO README.md
 # ****************************************
 
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker2" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker2" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
 1,/_______________/d
@@ -76,16 +76,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO README.md Apache 2.2
 # ****************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/README.md
 q
 IN
@@ -95,16 +95,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO README.md Apache 2.4
 # ******************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
 q
 IN
@@ -114,16 +114,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO CONFIGURATION.md
 # ******************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CONFIGURATION.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CONFIGURATION.md
 q
 IN
@@ -133,7 +133,7 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO htaccess-mod_rewrite.txt
 # *******************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker2" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker2" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
@@ -152,7 +152,7 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO htaccess-mod_setenvif.txt
 # ********************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker2" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker2" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
 1,/### Version Information #/d
@@ -171,16 +171,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO htaccess README.md
 # ********************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
 q
 IN
@@ -190,16 +190,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO CentOS6 README.md
 # ********************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
 q
 IN
@@ -209,16 +209,16 @@ rm $_inputdbA
 # PRINT VERSION INFORMATION INTO CentOS7 README.md
 # ********************************************************
 
-printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s' "$_startmarker" "********************************************" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "********************************************" "$_endmarker" >> "$_tmpapacheA"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s' "$_startmarker" "#### Version: " "$MY_GIT_TAG" "#### Bad Referrer Count: " "$BAD_REFERRERS" "#### Bad Bot Count: " "$BAD_BOTS" "$_endmarker" >> "$_tmpapacheA"
 mv $_tmpapacheA $_inputdbA
 ed -s $_inputdbA<<\IN
-1,/### Version Information #/d
-/### Version Information ##/,$d
+1,/_______________/d
+/____________________/,$d
 ,d
 .r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
-/### Version Information #/x
+/_______________/x
 .t.
-.,/### Version Information ##/-d
+.,/____________________/-d
 w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
 q
 IN

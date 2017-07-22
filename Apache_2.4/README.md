@@ -4,13 +4,13 @@
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers
 
-##### Version Information #
+_______________
 ********************************************
 #### Version: V3.2017.07.542
 #### Bad Referrer Count: 5436
 #### Bad Bot Count: 498
 ********************************************
-##### Version Information ##
+____________________
 
 ### Created by: https://github.com/mitchellkrogza
 ### Copyright Mitchell Krog <mitchellkrog@gmail.com>

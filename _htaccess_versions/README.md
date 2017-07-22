@@ -3,13 +3,13 @@
 # Apache Spam Referrer Blocker .htaccess versions
 ## Copyright - https://github.com/mitchellkrogza
 
-### Version Information #
+_______________
 ********************************************
 #### Version: V3.2017.07.542
 #### Bad Referrer Count: 5436
 #### Bad Bot Count: 498
 ********************************************
-### Version Information ##
+____________________
 
 ### for mod_rewrite.c and mod_setenvif.c modules
 
