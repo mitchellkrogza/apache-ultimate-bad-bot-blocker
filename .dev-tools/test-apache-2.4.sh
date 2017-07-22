@@ -63,8 +63,8 @@ sudo a2dismod access_compat
 # ********************************************************************************************
 
 #sudo service apache2 stop
-sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
+#sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
+#sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
 #sudo service apache2 restart
 
 # **************************************
