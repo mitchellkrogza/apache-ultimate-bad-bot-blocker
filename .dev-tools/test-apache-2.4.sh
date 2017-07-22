@@ -44,7 +44,7 @@ sudo a2dissite default.conf
 # ********************************************************************************************
 
 sudo rm /etc/apache2/sites-available/default.conf
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24-2.conf /etc/apache2/sites-available/default.conf
+sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
 
 # *******************
 # Enable Default Site
