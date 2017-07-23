@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.548
-### Bad Referrer Count: 5443
-### Bad Bot Count: 498
+### Version: V3.2017.07.549
+### Bad Referrer Count: 5450
+### Bad Bot Count: 499
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -376,6 +376,7 @@ SetEnvIfNoCase User-Agent ^Snoopy.* spambot=yes
 SetEnvIfNoCase User-Agent ^SocialRankIOBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Sogou web spider.* spambot=yes
 SetEnvIfNoCase User-Agent ^Sosospider.* spambot=yes
+SetEnvIfNoCase User-Agent ^Sottopop.* spambot=yes
 SetEnvIfNoCase User-Agent ^SpaceBison.* spambot=yes
 SetEnvIfNoCase User-Agent ^Spammen.* spambot=yes
 SetEnvIfNoCase User-Agent ^SpankBot.* spambot=yes
@@ -1551,6 +1552,7 @@ SetEnvIfNoCase Referer cienum\.fr spambot=yes
 SetEnvIfNoCase Referer cigarpass\.com spambot=yes
 SetEnvIfNoCase Referer cineacademy\.ru spambot=yes
 SetEnvIfNoCase Referer cinemaenergy\-hd\.ru spambot=yes
+SetEnvIfNoCase Referer cinemaflix\.website spambot=yes
 SetEnvIfNoCase Referer ciproandtizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer citizenclsdriveri7\.pen\.io spambot=yes
 SetEnvIfNoCase Referer cityadspix\.com spambot=yes
@@ -2633,6 +2635,7 @@ SetEnvIfNoCase Referer handicapvantoday\.com spambot=yes
 SetEnvIfNoCase Referer handsandlegs\.ru spambot=yes
 SetEnvIfNoCase Referer hanink\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer hannasolution\.ru spambot=yes
+SetEnvIfNoCase Referer hao123\.com spambot=yes
 SetEnvIfNoCase Referer happy\.new\.yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
 SetEnvIfNoCase Referer hatdc\.org spambot=yes
@@ -3019,6 +3022,7 @@ SetEnvIfNoCase Referer kazinogames\.lv spambot=yes
 SetEnvIfNoCase Referer kazrent\.com spambot=yes
 SetEnvIfNoCase Referer kchaxton\.com spambot=yes
 SetEnvIfNoCase Referer keenoutlet\.online spambot=yes
+SetEnvIfNoCase Referer kerei\.ru spambot=yes
 SetEnvIfNoCase Referer kerwinandcariza\.com spambot=yes
 SetEnvIfNoCase Referer ketoanhanoi\.info spambot=yes
 SetEnvIfNoCase Referer ketrzyn\.pl spambot=yes
@@ -3214,6 +3218,7 @@ SetEnvIfNoCase Referer link\.ac spambot=yes
 SetEnvIfNoCase Referer linkarena\.com spambot=yes
 SetEnvIfNoCase Referer linkbolic\.com spambot=yes
 SetEnvIfNoCase Referer linkbuddies\.com spambot=yes
+SetEnvIfNoCase Referer linkbux\.ru spambot=yes
 SetEnvIfNoCase Referer linkdebrideur\.xyz spambot=yes
 SetEnvIfNoCase Referer linkpulse\.com spambot=yes
 SetEnvIfNoCase Referer linkredirect\.biz spambot=yes
@@ -3332,6 +3337,7 @@ SetEnvIfNoCase Referer malls\.com spambot=yes
 SetEnvIfNoCase Referer malwareremovalcenter\.com spambot=yes
 SetEnvIfNoCase Referer managerpak204\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer manipulyator\-peterburg\.ru spambot=yes
+SetEnvIfNoCase Referer mansparskats\.com spambot=yes
 SetEnvIfNoCase Referer mantramusic\.ru spambot=yes
 SetEnvIfNoCase Referer manualterap\.roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer manuscript\.su spambot=yes
@@ -3504,6 +3510,7 @@ SetEnvIfNoCase Referer modabutik\.ru spambot=yes
 SetEnvIfNoCase Referer modenamebel\.ru spambot=yes
 SetEnvIfNoCase Referer moesen\-ficken\.com spambot=yes
 SetEnvIfNoCase Referer moesonce\.com spambot=yes
+SetEnvIfNoCase Referer moetomnenie\.com spambot=yes
 SetEnvIfNoCase Referer moi\-glazki\.ru spambot=yes
 SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
 SetEnvIfNoCase Referer mojowhois\.com spambot=yes
@@ -5223,6 +5230,7 @@ SetEnvIfNoCase Referer traffmonster\.info spambot=yes
 SetEnvIfNoCase Referer traffpartners\.com spambot=yes
 SetEnvIfNoCase Referer trahic\.ru spambot=yes
 SetEnvIfNoCase Referer trahvid\.com spambot=yes
+SetEnvIfNoCase Referer trailer\.cinemaflix\.website spambot=yes
 SetEnvIfNoCase Referer tramadolandtizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer traxdom\.ru spambot=yes
 SetEnvIfNoCase Referer treasuretrack\-a\.akamaihd\.net spambot=yes
