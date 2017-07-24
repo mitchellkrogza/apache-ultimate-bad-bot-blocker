@@ -701,6 +701,7 @@ SetEnvIfNoCase Referer ~*birzha\-truda\.eu spam_ref
 SetEnvIfNoCase Referer ~*bitcoinpile\.com spam_ref
 SetEnvIfNoCase Referer ~*bitcoins\-live\.ru spam_ref
 SetEnvIfNoCase Referer ~*biteg\.xyz spam_ref
+SetEnvIfNoCase Referer ~*bitnote\.co spam_ref
 SetEnvIfNoCase Referer ~*bitporno\.sx spam_ref
 SetEnvIfNoCase Referer ~*bizcheapjerseyswholesalechina\.com spam_ref
 SetEnvIfNoCase Referer ~*bizfly\.info spam_ref
@@ -3127,6 +3128,7 @@ SetEnvIfNoCase Referer ~*my\.opera\.com spam_ref
 SetEnvIfNoCase Referer ~*myperiod\.club spam_ref
 SetEnvIfNoCase Referer ~*mypets\.by spam_ref
 SetEnvIfNoCase Referer ~*myplaycity\.com spam_ref
+SetEnvIfNoCase Referer ~*mypornfree\.ru spam_ref
 SetEnvIfNoCase Referer ~*myprintscreen\.com spam_ref
 SetEnvIfNoCase Referer ~*myseoconsultant\.com spam_ref
 SetEnvIfNoCase Referer ~*myshopmatemac\.com spam_ref
@@ -5194,6 +5196,7 @@ SetEnvIfNoCase Referer ~*xedserver\.com spam_ref
 SetEnvIfNoCase Referer ~*xep\.info spam_ref
 SetEnvIfNoCase Referer ~*xev\.ru spam_ref
 SetEnvIfNoCase Referer ~*xfire\.com spam_ref
+SetEnvIfNoCase Referer ~*xfluro\.com spam_ref
 SetEnvIfNoCase Referer ~*xgames\-04\.com spam_ref
 SetEnvIfNoCase Referer ~*xgftnlrt\.bloger\.index\.hr spam_ref
 SetEnvIfNoCase Referer ~*xingzi\-vision\.com spam_ref

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.549
-### Bad Referrer Count: 5450
+### Version: V3.2017.07.550
+### Bad Referrer Count: 5453
 ### Bad Bot Count: 499
 ### Version Information ##
 
@@ -1214,6 +1214,7 @@ SetEnvIfNoCase Referer birzha\-truda\.eu spambot=yes
 SetEnvIfNoCase Referer bitcoinpile\.com spambot=yes
 SetEnvIfNoCase Referer bitcoins\-live\.ru spambot=yes
 SetEnvIfNoCase Referer biteg\.xyz spambot=yes
+SetEnvIfNoCase Referer bitnote\.co spambot=yes
 SetEnvIfNoCase Referer bitporno\.sx spambot=yes
 SetEnvIfNoCase Referer bizcheapjerseyswholesalechina\.com spambot=yes
 SetEnvIfNoCase Referer bizfly\.info spambot=yes
@@ -3639,6 +3640,7 @@ SetEnvIfNoCase Referer myonlinepayday\.co spambot=yes
 SetEnvIfNoCase Referer myperiod\.club spambot=yes
 SetEnvIfNoCase Referer mypets\.by spambot=yes
 SetEnvIfNoCase Referer myplaycity\.com spambot=yes
+SetEnvIfNoCase Referer mypornfree\.ru spambot=yes
 SetEnvIfNoCase Referer myprintscreen\.com spambot=yes
 SetEnvIfNoCase Referer myseoconsultant\.com spambot=yes
 SetEnvIfNoCase Referer myshopmatemac\.com spambot=yes
@@ -5711,6 +5713,7 @@ SetEnvIfNoCase Referer xedserver\.com spambot=yes
 SetEnvIfNoCase Referer xep\.info spambot=yes
 SetEnvIfNoCase Referer xev\.ru spambot=yes
 SetEnvIfNoCase Referer xfire\.com spambot=yes
+SetEnvIfNoCase Referer xfluro\.com spambot=yes
 SetEnvIfNoCase Referer xgames\-04\.com spambot=yes
 SetEnvIfNoCase Referer xgftnlrt\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer xingzi\-vision\.com spambot=yes
