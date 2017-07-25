@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.552
-### Bad Referrer Count: 5444
+### Version: V3.2017.07.553
+### Bad Referrer Count: 5455
 ### Bad Bot Count: 499
 ### Version Information ##
 
@@ -517,6 +517,7 @@ SetEnvIfNoCase Referer 00go\.com spambot=yes
 SetEnvIfNoCase Referer 00it\.com spambot=yes
 SetEnvIfNoCase Referer 00webcams\.com spambot=yes
 SetEnvIfNoCase Referer 01apple\.com spambot=yes
+SetEnvIfNoCase Referer 03e\.info spambot=yes
 SetEnvIfNoCase Referer 0912701309f8ce\.com spambot=yes
 SetEnvIfNoCase Referer 0c47f8422d3f\.com spambot=yes
 SetEnvIfNoCase Referer 0daymusic\.org spambot=yes
@@ -829,6 +830,7 @@ SetEnvIfNoCase Referer alphahoverboards\.com spambot=yes
 SetEnvIfNoCase Referer alpharma\.net spambot=yes
 SetEnvIfNoCase Referer alphavisions\.net spambot=yes
 SetEnvIfNoCase Referer alpinism\.ru spambot=yes
+SetEnvIfNoCase Referer alt\-servis\.ru spambot=yes
 SetEnvIfNoCase Referer alta\-realestate\.com spambot=yes
 SetEnvIfNoCase Referer altamayoztourism\.com spambot=yes
 SetEnvIfNoCase Referer alveris\.ru spambot=yes
@@ -851,6 +853,7 @@ SetEnvIfNoCase Referer amt\-k\.ru spambot=yes
 SetEnvIfNoCase Referer amung\.us spambot=yes
 SetEnvIfNoCase Referer amyfoxfitness\.com spambot=yes
 SetEnvIfNoCase Referer an\-donut\.com spambot=yes
+SetEnvIfNoCase Referer anabolics\.shop spambot=yes
 SetEnvIfNoCase Referer anaksma\.info spambot=yes
 SetEnvIfNoCase Referer anal\-acrobats\.com spambot=yes
 SetEnvIfNoCase Referer anal\-acrobats\.hol\.es spambot=yes
@@ -1457,6 +1460,7 @@ SetEnvIfNoCase Referer casablancamanor\.co\.za spambot=yes
 SetEnvIfNoCase Referer cashkitten\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer cashonads\.com spambot=yes
 SetEnvIfNoCase Referer casinorewards\.info spambot=yes
+SetEnvIfNoCase Referer casinos4dummies\.co\.uk spambot=yes
 SetEnvIfNoCase Referer casite\-513049\.cloudaccess\.net spambot=yes
 SetEnvIfNoCase Referer castingbank\.ru spambot=yes
 SetEnvIfNoCase Referer catalogs\-parts\.com spambot=yes
@@ -1756,6 +1760,7 @@ SetEnvIfNoCase Referer cypernhuset\.se spambot=yes
 SetEnvIfNoCase Referer cyprusbuyproperties\.com spambot=yes
 SetEnvIfNoCase Referer cyse\.tk spambot=yes
 SetEnvIfNoCase Referer czat\.wp\.pl spambot=yes
+SetEnvIfNoCase Referer d0t\.ru spambot=yes
 SetEnvIfNoCase Referer dailyfinancefix\.com spambot=yes
 SetEnvIfNoCase Referer dailyrank\.net spambot=yes
 SetEnvIfNoCase Referer dailystrength\.org spambot=yes
@@ -2019,6 +2024,7 @@ SetEnvIfNoCase Referer elektrischezigarette2\.onsugar\.com spambot=yes
 SetEnvIfNoCase Referer elektrischezigarettekaufen2\.cowblog\.fr spambot=yes
 SetEnvIfNoCase Referer elektrischezigaretten1\.blogse\.nl spambot=yes
 SetEnvIfNoCase Referer elektrischezigaretten2\.beeplog\.com spambot=yes
+SetEnvIfNoCase Referer elektroniksigaraankara\.info spambot=yes
 SetEnvIfNoCase Referer elektronischezi\.livejournal\.com spambot=yes
 SetEnvIfNoCase Referer elektronischezigarette2\.mex\.tl spambot=yes
 SetEnvIfNoCase Referer elektronischezigarettekaufen1\.beeplog\.com spambot=yes
@@ -2820,6 +2826,7 @@ SetEnvIfNoCase Referer ilte\.info spambot=yes
 SetEnvIfNoCase Referer imabase\.com spambot=yes
 SetEnvIfNoCase Referer imadedinner\.net spambot=yes
 SetEnvIfNoCase Referer imagecoolpub\.com spambot=yes
+SetEnvIfNoCase Referer imagefinder\.site spambot=yes
 SetEnvIfNoCase Referer imagerydatabase\.com spambot=yes
 SetEnvIfNoCase Referer images\-graphics\-pics\.com spambot=yes
 SetEnvIfNoCase Referer images\.gyffu\.com spambot=yes
@@ -3509,6 +3516,7 @@ SetEnvIfNoCase Referer moesonce\.com spambot=yes
 SetEnvIfNoCase Referer moetomnenie\.com spambot=yes
 SetEnvIfNoCase Referer moi\-glazki\.ru spambot=yes
 SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
+SetEnvIfNoCase Referer mojaocena\.com spambot=yes
 SetEnvIfNoCase Referer mojowhois\.com spambot=yes
 SetEnvIfNoCase Referer mojpregled\.com spambot=yes
 SetEnvIfNoCase Referer mokrayakiska\.com spambot=yes
@@ -3766,6 +3774,7 @@ SetEnvIfNoCase Referer o\-o\-6\-o\-o\.com spambot=yes
 SetEnvIfNoCase Referer o\-o\-6\-o\-o\.ru spambot=yes
 SetEnvIfNoCase Referer o\-o\-8\-o\-o\.com spambot=yes
 SetEnvIfNoCase Referer o\-o\-8\-o\-o\.ru spambot=yes
+SetEnvIfNoCase Referer o\.light\.d0t\.ru spambot=yes
 SetEnvIfNoCase Referer o00\.in spambot=yes
 SetEnvIfNoCase Referer o333o\.com spambot=yes
 SetEnvIfNoCase Referer oakleyglassesonline\.us spambot=yes
@@ -4018,6 +4027,7 @@ SetEnvIfNoCase Referer pizza\-tycoon\.com spambot=yes
 SetEnvIfNoCase Referer pk\-pomosch\.ru spambot=yes
 SetEnvIfNoCase Referer pk\-services\.ru spambot=yes
 SetEnvIfNoCase Referer pkr1hand\.com spambot=yes
+SetEnvIfNoCase Referer pl\-top\.pl spambot=yes
 SetEnvIfNoCase Referer pl\-vouchers\.com spambot=yes
 SetEnvIfNoCase Referer pladform\.ru spambot=yes
 SetEnvIfNoCase Referer plaff\-go\.ru spambot=yes
@@ -4345,6 +4355,7 @@ SetEnvIfNoCase Referer renecaovilla\.online spambot=yes
 SetEnvIfNoCase Referer renecaovillasale\.online spambot=yes
 SetEnvIfNoCase Referer renewablewealth\.com spambot=yes
 SetEnvIfNoCase Referer rennlist\.com spambot=yes
+SetEnvIfNoCase Referer rentaremotecomputer\.com spambot=yes
 SetEnvIfNoCase Referer rentehno\.ru spambot=yes
 SetEnvIfNoCase Referer repeatlogo\.co\.uk spambot=yes
 SetEnvIfNoCase Referer replica\-watch\.ru spambot=yes
