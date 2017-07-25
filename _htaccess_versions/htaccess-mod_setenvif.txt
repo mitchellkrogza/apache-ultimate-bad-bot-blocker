@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.551
-### Bad Referrer Count: 5453
+### Version: V3.2017.07.552
+### Bad Referrer Count: 5444
 ### Bad Bot Count: 499
 ### Version Information ##
 
@@ -1253,8 +1253,6 @@ SetEnvIfNoCase Referer blogporn\.in spambot=yes
 SetEnvIfNoCase Referer blogqpot\.com spambot=yes
 SetEnvIfNoCase Referer blogrankers\.com spambot=yes
 SetEnvIfNoCase Referer blogs\.rediff\.com spambot=yes
-SetEnvIfNoCase Referer blogster\.com spambot=yes
-SetEnvIfNoCase Referer blogtotal\.de spambot=yes
 SetEnvIfNoCase Referer bloke\.com spambot=yes
 SetEnvIfNoCase Referer blpmovies\.com spambot=yes
 SetEnvIfNoCase Referer blue\-square\.biz spambot=yes
@@ -1494,7 +1492,6 @@ SetEnvIfNoCase Referer cfsrating\.sonicwall\.com spambot=yes
 SetEnvIfNoCase Referer cgi2\.nintendo\.co\.jp spambot=yes
 SetEnvIfNoCase Referer charmstroy\.info spambot=yes
 SetEnvIfNoCase Referer chastnoeporno\.com spambot=yes
-SetEnvIfNoCase Referer chat\.ru spambot=yes
 SetEnvIfNoCase Referer chatroulette\.online spambot=yes
 SetEnvIfNoCase Referer chatroulette\.si spambot=yes
 SetEnvIfNoCase Referer chatroulette\.video spambot=yes
@@ -1731,8 +1728,6 @@ SetEnvIfNoCase Referer creativehutindia\.com spambot=yes
 SetEnvIfNoCase Referer creditmoney\.com\.ua spambot=yes
 SetEnvIfNoCase Referer crest\-poloski\.ru spambot=yes
 SetEnvIfNoCase Referer crest3d\.ru spambot=yes
-SetEnvIfNoCase Referer crests\.com spambot=yes
-SetEnvIfNoCase Referer crests\.org spambot=yes
 SetEnvIfNoCase Referer crirussian\.ru spambot=yes
 SetEnvIfNoCase Referer crystalslot\.com spambot=yes
 SetEnvIfNoCase Referer cs\-passion\.pl spambot=yes
@@ -3610,7 +3605,6 @@ SetEnvIfNoCase Referer mwtpludn\.review spambot=yes
 SetEnvIfNoCase Referer my\-bc\.ru spambot=yes
 SetEnvIfNoCase Referer my\-big\-family\.com spambot=yes
 SetEnvIfNoCase Referer my\-cash\-bot\.co spambot=yes
-SetEnvIfNoCase Referer my\.opera\.com spambot=yes
 SetEnvIfNoCase Referer myanyone\.net spambot=yes
 SetEnvIfNoCase Referer mybinaryoptionsrobot\.com spambot=yes
 SetEnvIfNoCase Referer myblogregistercm\.tk spambot=yes
@@ -4835,7 +4829,6 @@ SetEnvIfNoCase Referer sosdepotdebilan\.com spambot=yes
 SetEnvIfNoCase Referer soserfis\.com spambot=yes
 SetEnvIfNoCase Referer sotkal\.lark\.ru spambot=yes
 SetEnvIfNoCase Referer soundfrost\.org spambot=yes
-SetEnvIfNoCase Referer soup\.io spambot=yes
 SetEnvIfNoCase Referer souvenir\.cc spambot=yes
 SetEnvIfNoCase Referer souvenirua\.com spambot=yes
 SetEnvIfNoCase Referer sovetogorod\.ru spambot=yes
@@ -4956,7 +4949,6 @@ SetEnvIfNoCase Referer superkanpo\.com spambot=yes
 SetEnvIfNoCase Referer superlist\.biz spambot=yes
 SetEnvIfNoCase Referer supermesta\.ru spambot=yes
 SetEnvIfNoCase Referer supernew\.org spambot=yes
-SetEnvIfNoCase Referer superpages\.com spambot=yes
 SetEnvIfNoCase Referer supers\.com\.ua spambot=yes
 SetEnvIfNoCase Referer superstats\.com spambot=yes
 SetEnvIfNoCase Referer supervesti\.ru spambot=yes
@@ -5013,7 +5005,6 @@ SetEnvIfNoCase Referer tattoo33\.ru spambot=yes
 SetEnvIfNoCase Referer tattooha\.com spambot=yes
 SetEnvIfNoCase Referer tattooreligion\.ru spambot=yes
 SetEnvIfNoCase Referer taxi\-v\-eisk\.ru spambot=yes
-SetEnvIfNoCase Referer taxidermy4cash\.com spambot=yes
 SetEnvIfNoCase Referer taximytishi\.ru spambot=yes
 SetEnvIfNoCase Referer td\-33\.ru spambot=yes
 SetEnvIfNoCase Referer tdsing\.ru spambot=yes

@@ -4,9 +4,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.07.551
-### Updated: Mon Jul 24 16:20:15 SAST 2017
-### Bad Referrer Count: 5453
+### Version: V3.2017.07.552
+### Updated: Tue Jul 25 11:48:25 SAST 2017
+### Bad Referrer Count: 5444
 ### Bad Bot Count: 499
 ###################################################
 ### Version Information ##
@@ -1529,8 +1529,6 @@ SetEnvIfNoCase Referer ~*blogqpot\.com spam_ref
 SetEnvIfNoCase Referer ~*blogrankers\.com spam_ref
 SetEnvIfNoCase Referer ~*blog\.remote\-computer\.de spam_ref
 SetEnvIfNoCase Referer ~*blogs\.rediff\.com spam_ref
-SetEnvIfNoCase Referer ~*blogster\.com spam_ref
-SetEnvIfNoCase Referer ~*blogtotal\.de spam_ref
 SetEnvIfNoCase Referer ~*blog\.yam\.com spam_ref
 SetEnvIfNoCase Referer ~*bloke\.com spam_ref
 SetEnvIfNoCase Referer ~*blpmovies\.com spam_ref
@@ -1776,7 +1774,6 @@ SetEnvIfNoCase Referer ~*chatroulette\.online spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.si spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.video spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.world spam_ref
-SetEnvIfNoCase Referer ~*chat\.ru spam_ref
 SetEnvIfNoCase Referer ~*chatseo\.com spam_ref
 SetEnvIfNoCase Referer ~*chcu\.net spam_ref
 SetEnvIfNoCase Referer ~*cheapbarbour\.online spam_ref
@@ -2009,8 +2006,6 @@ SetEnvIfNoCase Referer ~*creativehutindia\.com spam_ref
 SetEnvIfNoCase Referer ~*creditmoney\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*crest3d\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest\-poloski\.ru spam_ref
-SetEnvIfNoCase Referer ~*crests\.com spam_ref
-SetEnvIfNoCase Referer ~*crests\.org spam_ref
 SetEnvIfNoCase Referer ~*crirussian\.ru spam_ref
 SetEnvIfNoCase Referer ~*crystalslot\.com spam_ref
 SetEnvIfNoCase Referer ~*cscwtalkto\.site spam_ref
@@ -3914,7 +3909,6 @@ SetEnvIfNoCase Referer ~*myliveblog\.ru spam_ref
 SetEnvIfNoCase Referer ~*mymobilemoneypages\.com spam_ref
 SetEnvIfNoCase Referer ~*myonigroup\.com spam_ref
 SetEnvIfNoCase Referer ~*myonlinepayday\.co spam_ref
-SetEnvIfNoCase Referer ~*my\.opera\.com spam_ref
 SetEnvIfNoCase Referer ~*myperiod\.club spam_ref
 SetEnvIfNoCase Referer ~*mypets\.by spam_ref
 SetEnvIfNoCase Referer ~*myplaycity\.com spam_ref
@@ -5113,7 +5107,6 @@ SetEnvIfNoCase Referer ~*sosdepotdebilan\.com spam_ref
 SetEnvIfNoCase Referer ~*soserfis\.com spam_ref
 SetEnvIfNoCase Referer ~*sotkal\.lark\.ru spam_ref
 SetEnvIfNoCase Referer ~*soundfrost\.org spam_ref
-SetEnvIfNoCase Referer ~*soup\.io spam_ref
 SetEnvIfNoCase Referer ~*souvenir\.cc spam_ref
 SetEnvIfNoCase Referer ~*souvenirua\.com spam_ref
 SetEnvIfNoCase Referer ~*sovetogorod\.ru spam_ref
@@ -5234,7 +5227,6 @@ SetEnvIfNoCase Referer ~*superkanpo\.com spam_ref
 SetEnvIfNoCase Referer ~*superlist\.biz spam_ref
 SetEnvIfNoCase Referer ~*supermesta\.ru spam_ref
 SetEnvIfNoCase Referer ~*supernew\.org spam_ref
-SetEnvIfNoCase Referer ~*superpages\.com spam_ref
 SetEnvIfNoCase Referer ~*supers\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*superstats\.com spam_ref
 SetEnvIfNoCase Referer ~*supervesti\.ru spam_ref
@@ -5289,7 +5281,6 @@ SetEnvIfNoCase Referer ~*tattomedia\.com spam_ref
 SetEnvIfNoCase Referer ~*tattoo33\.ru spam_ref
 SetEnvIfNoCase Referer ~*tattooha\.com spam_ref
 SetEnvIfNoCase Referer ~*tattooreligion\.ru spam_ref
-SetEnvIfNoCase Referer ~*taxidermy4cash\.com spam_ref
 SetEnvIfNoCase Referer ~*taximytishi\.ru spam_ref
 SetEnvIfNoCase Referer ~*taxi\-v\-eisk\.ru spam_ref
 SetEnvIfNoCase Referer ~*t\-bygg\.com spam_ref
