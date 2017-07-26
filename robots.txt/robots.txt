@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.07.553
-### Updated: Tue Jul 25 16:50:25 SAST 2017
-### Bad Bot Count: 499
+### Version: V3.2017.07.554
+### Updated: Wed Jul 26 11:37:48 SAST 2017
+### Bad Bot Count: 501
 ###################################################
 ### Version Information ##
 
@@ -114,6 +114,8 @@ Disallow:/
 User-agent: CATExplorador
 Disallow:/
 User-agent: CCBot
+Disallow:/
+User-agent: CRAZYWEBCRAWLER
 Disallow:/
 User-agent: CSHttp
 Disallow:/
@@ -984,6 +986,8 @@ Disallow:/
 User-agent: eCatch
 Disallow:/
 User-agent: fq
+Disallow:/
+User-agent: instabid
 Disallow:/
 User-agent: internetVista monitor
 Disallow:/
