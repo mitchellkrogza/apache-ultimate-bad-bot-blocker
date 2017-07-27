@@ -119,9 +119,13 @@ sudo apache2ctl configtest
 
 printf '%s\n%s\n%s\n\n' "####################" "Run Some Curl Tests" "####################"
 curl -I http://local.dev
+printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "80legs" http://local.dev" "######################################################"
 curl -A "80legs" http://local.dev
+printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "360Spider" http://local.dev" "######################################################"
 curl -A "360Spider" http://local.dev
+printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "Acunetix" http://local.dev" "######################################################"
 curl -A "Acunetix" http://local.dev
+printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "GoogleBot" http://local.dev" "######################################################"
 curl -A "GoogleBot" http://local.dev
 
 # *****************************************
