@@ -1,7 +1,12 @@
-Last Tested: Wed Jul 26 11:37:47 SAST 2017
+Last Tested: Thu Jul 27 16:36:00 SAST 2017
 
-HTTP/1.1 403 Forbidden
-Date: Wed, 26 Jul 2017 09:37:47 GMT
+HTTP/1.1 200 OK
+Date: Thu, 27 Jul 2017 14:36:00 GMT
 Server: Apache/2.4.27 (Ubuntu)
-Content-Type: text/html; charset=iso-8859-1
+Last-Modified: Thu, 27 Jul 2017 14:35:54 GMT
+ETag: "f0-5554d7b5c5681"
+Accept-Ranges: bytes
+Content-Length: 240
+Vary: Accept-Encoding
+Content-Type: text/html
 
