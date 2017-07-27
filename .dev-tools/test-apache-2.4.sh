@@ -74,6 +74,27 @@ printf '%s\n\n\n' "$_2_4_VHOST"
 printf '%s\n%s\n%s\n\n' "############################" "Disable mod access_compat" "############################"
 sudo a2dismod access_compat
 
+# *************************
+# Enable include module
+# *************************
+
+printf '%s\n%s\n%s\n\n' "############################" "Enabled include module" "############################"
+sudo a2enmod include
+
+# **************************
+# Show Loaded apache Modules
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
+sudo apache2ctl -M
+
+# **************************
+# Show Apache Version
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
+sudo apache2ctl -V
+
 # ********************************************************************************************
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
@@ -117,15 +138,15 @@ sudo service apache2 restart
 printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.4 Config Test" "#################################"
 sudo apache2ctl configtest
 
-printf '%s\n%s\n%s\n\n' "####################" "Run Some Curl Tests" "####################"
+printf '\n%s\n%s\n%s\n\n' "####################" "Run Some Curl Tests" "####################"
 curl -I http://local.dev
-printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "80legs" http://local.dev" "######################################################"
+printf '\n%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "80legs" http://local.dev" "######################################################"
 curl -A "80legs" http://local.dev
-printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "360Spider" http://local.dev" "######################################################"
+printf '\n%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "360Spider" http://local.dev" "######################################################"
 curl -A "360Spider" http://local.dev
-printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "Acunetix" http://local.dev" "######################################################"
+printf '\n%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "Acunetix" http://local.dev" "######################################################"
 curl -A "Acunetix" http://local.dev
-printf '%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "GoogleBot" http://local.dev" "######################################################"
+printf '\n%s\n%s\n%s\n\n' "######################################################" "TEST - curl -A "GoogleBot" http://local.dev" "######################################################"
 curl -A "GoogleBot" http://local.dev
 
 # *****************************************
