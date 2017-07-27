@@ -140,7 +140,7 @@ sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-exclude.php
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/apache-referers-regex.php
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-files-and-commit.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests.sh
+sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests-1.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests-2.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
 
