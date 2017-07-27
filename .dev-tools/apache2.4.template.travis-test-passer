@@ -6291,10 +6291,11 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	# ********************************************************
 	# ********************************************************
 
-<RequireAny>
- 	<RequireAll>
+<RequireAll>
 
 	Require all granted
+	Require not env bad_bot
+	Require not env spam_ref
 
 	# *************************
 	# Wordpress Theme Detectors
@@ -6358,10 +6359,6 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
   
 	Include "/etc/apache2/custom.d/blacklist-ips.conf"
 
-	Require not env bad_bot
-	Require not env spam_ref
-
-	</RequireAll>
 
 	<RequireAny>
 
@@ -6477,6 +6474,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 
 	</RequireAny>
 
-</RequireAny>
+</RequireAll>
+
 
 # End of Blacklist --- rest of your server config will continue after this block if you followed my instructions properly.
