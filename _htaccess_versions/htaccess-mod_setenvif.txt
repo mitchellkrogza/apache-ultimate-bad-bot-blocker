@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.554
-### Bad Referrer Count: 5468
-### Bad Bot Count: 501
+### Version: V3.2017.07.555
+### Bad Referrer Count: 5476
+### Bad Bot Count: 502
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -130,6 +130,7 @@ SetEnvIfNoCase User-Agent ^ExtractorPro.* spambot=yes
 SetEnvIfNoCase User-Agent ^Extreme Picture Finder.* spambot=yes
 SetEnvIfNoCase User-Agent ^EyeNetIE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Ezooms.* spambot=yes
+SetEnvIfNoCase User-Agent ^FDM.* spambot=yes
 SetEnvIfNoCase User-Agent ^FHscan.* spambot=yes
 SetEnvIfNoCase User-Agent ^Fimap.* spambot=yes
 SetEnvIfNoCase User-Agent ^Findxbot.* spambot=yes
@@ -1413,6 +1414,7 @@ SetEnvIfNoCase Referer cam\-kontakte\.org spambot=yes
 SetEnvIfNoCase Referer camdenmemorials\.com spambot=yes
 SetEnvIfNoCase Referer camdolls\.com spambot=yes
 SetEnvIfNoCase Referer camel\-beach\.com spambot=yes
+SetEnvIfNoCase Referer camsex\.xxx\-cam\.webcam spambot=yes
 SetEnvIfNoCase Referer cand\.jp spambot=yes
 SetEnvIfNoCase Referer candcstuccoandstone\.com spambot=yes
 SetEnvIfNoCase Referer candelluxsklep\.pl spambot=yes
@@ -1438,6 +1440,7 @@ SetEnvIfNoCase Referer carfax\.com\.ua spambot=yes
 SetEnvIfNoCase Referer carina\-sy\.de spambot=yes
 SetEnvIfNoCase Referer carloans\.com spambot=yes
 SetEnvIfNoCase Referer carmuffler\.net spambot=yes
+SetEnvIfNoCase Referer cars\-modification\.net spambot=yes
 SetEnvIfNoCase Referer carsdined\.org spambot=yes
 SetEnvIfNoCase Referer carson\.getenjoyment\.net spambot=yes
 SetEnvIfNoCase Referer carsplate\.com spambot=yes
@@ -1706,6 +1709,7 @@ SetEnvIfNoCase Referer cornomase\.win spambot=yes
 SetEnvIfNoCase Referer corta\.co spambot=yes
 SetEnvIfNoCase Referer coslab\.club spambot=yes
 SetEnvIfNoCase Referer cosmetic\.donna7753191\.ru spambot=yes
+SetEnvIfNoCase Referer cosmeticswomens\-womensports\.rhcloud\.com spambot=yes
 SetEnvIfNoCase Referer cottageofgrace\.com spambot=yes
 SetEnvIfNoCase Referer cougfan\.info spambot=yes
 SetEnvIfNoCase Referer counciltally\.com spambot=yes
@@ -3406,6 +3410,7 @@ SetEnvIfNoCase Referer mebelcomplekt\.ru spambot=yes
 SetEnvIfNoCase Referer mebeldekor\.com\.ua spambot=yes
 SetEnvIfNoCase Referer meble\-bogart\.info spambot=yes
 SetEnvIfNoCase Referer mecash\.ru spambot=yes
+SetEnvIfNoCase Referer meccadumps\.net spambot=yes
 SetEnvIfNoCase Referer med\-zdorovie\.com\.ua spambot=yes
 SetEnvIfNoCase Referer medanestesia\.ru spambot=yes
 SetEnvIfNoCase Referer meddesk\.ru spambot=yes
@@ -3529,6 +3534,7 @@ SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
 SetEnvIfNoCase Referer mojaocena\.com spambot=yes
 SetEnvIfNoCase Referer mojowhois\.com spambot=yes
 SetEnvIfNoCase Referer mojpregled\.com spambot=yes
+SetEnvIfNoCase Referer mojpreskumanie\.com spambot=yes
 SetEnvIfNoCase Referer mokrayakiska\.com spambot=yes
 SetEnvIfNoCase Referer mole\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer monarchfind\-a\.akamaihd\.net spambot=yes
@@ -3871,6 +3877,7 @@ SetEnvIfNoCase Referer openstat\.com spambot=yes
 SetEnvIfNoCase Referer opinionreelle\.com spambot=yes
 SetEnvIfNoCase Referer ops\.picscout\.com spambot=yes
 SetEnvIfNoCase Referer optibuymac\.com spambot=yes
+SetEnvIfNoCase Referer optikremont\.ru spambot=yes
 SetEnvIfNoCase Referer optitrade24\.com spambot=yes
 SetEnvIfNoCase Referer oralsexfilme\.net spambot=yes
 SetEnvIfNoCase Referer oranga\.host\.sk spambot=yes
@@ -5426,6 +5433,7 @@ SetEnvIfNoCase Referer venerologiya\.com spambot=yes
 SetEnvIfNoCase Referer venta\-prom\.ru spambot=yes
 SetEnvIfNoCase Referer ventelnos\.com spambot=yes
 SetEnvIfNoCase Referer vereo\.eu spambot=yes
+SetEnvIfNoCase Referer versaut\.xxx\-cam\.webcam spambot=yes
 SetEnvIfNoCase Referer vertaform\.com spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.com spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.ru spambot=yes
@@ -5459,6 +5467,7 @@ SetEnvIfNoCase Referer videokrik\.net spambot=yes
 SetEnvIfNoCase Referer videooko\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer videos\-for\-your\-business\.com spambot=yes
 SetEnvIfNoCase Referer videosbox\.ru spambot=yes
+SetEnvIfNoCase Referer videositename\.com spambot=yes
 SetEnvIfNoCase Referer videotuber\.ru spambot=yes
 SetEnvIfNoCase Referer videtubs\.pl spambot=yes
 SetEnvIfNoCase Referer viel\.su spambot=yes
