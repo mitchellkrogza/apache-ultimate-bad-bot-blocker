@@ -31,31 +31,38 @@
 # First lets stop Apache before we make changes like this
 # *******************************************************
 
+printf '%s\n%s\n%s\n\n' "#################################################" "Stop Apache 2.4 before cleanup of 2.2 Test Files" "#################################################"
 sudo service apache2 stop
 
 # ********************
 # Disable Default Site
 # ********************
 
+printf '%s\n%s\n%s\n\n' "#########################" "Disable Apache 2.2 Vhost" "#########################"
 sudo a2dissite default.conf
 
 # ********************************************************************************************
 # Copy our Apache 2.4 virtual host template to sites-enabled overwriting the default site conf
 # ********************************************************************************************
 
+printf '%s\n%s\n%s\n\n' "#########################" "Remove Apache 2.2 Vhost" "#########################"
 sudo rm /etc/apache2/sites-available/default.conf
+
+printf '%s\n%s\n%s\n\n' "#########################" "Install Apache 2.4 Vhost" "#########################"
 sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
 
 # *******************
 # Enable Default Site
 # *******************
 
+printf '%s\n%s\n%s\n\n' "#########################" "Enable Apache 2.4 Vhost" "#########################"
 sudo a2ensite default.conf
 
 # *************************
 # Disable mod_access_compat
 # *************************
 
+printf '%s\n%s\n%s\n\n' "############################" "Disable mod access_compat" "############################"
 sudo a2dismod access_compat
 
 # ********************************************************************************************
@@ -71,6 +78,7 @@ sudo a2dismod access_compat
 # Get new files from Repo Apache_2.4
 # **************************************
 
+printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
 sudo rm /etc/apache2/custom.d/*.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
@@ -83,25 +91,29 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 # Set Ownership of /var/www
 # *************************
 
+printf '%s\n%s\n%s\n\n' "#################################" "Set Ownership of /var/www/" "#################################"
 sudo chown -R www-data:www-data /var/www/
 
 # **********************
 # Now Start Apache Again
 # **********************
 
+printf '%s\n%s\n%s\n\n' "#################################" "Force Restart of Apache 2.4" "#################################"
 sudo service apache2 restart
 
 # **********************
 # Test the Apache Config
 # **********************
 
+printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.4 Config Test" "#################################"
 sudo apache2ctl configtest
 
-#curl -I http://local.dev
-#curl -A "80legs" http://local.dev
-#curl -A "360Spider" http://local.dev
-#curl -A "Acunetix" http://local.dev
-#curl -A "GoogleBot" http://local.dev
+printf '%s\n%s\n%s\n\n' "####################" "Run Some Curl Tests" "####################"
+curl -I http://local.dev
+curl -A "80legs" http://local.dev
+curl -A "360Spider" http://local.dev
+curl -A "Acunetix" http://local.dev
+curl -A "GoogleBot" http://local.dev
 
 # *****************************************
 # Get a copy of all conf files for checking
