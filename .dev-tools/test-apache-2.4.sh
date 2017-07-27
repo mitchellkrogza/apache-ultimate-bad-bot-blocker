@@ -58,6 +58,15 @@ sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-avail
 printf '%s\n%s\n%s\n\n' "#########################" "Enable Apache 2.4 Vhost" "#########################"
 sudo a2ensite default.conf
 
+# ***********************************
+# Show contents of our 2.4 vhost file
+# ***********************************
+
+printf '%s\n%s\n%s\n\n' "#############################" "Show our Apache 2.4 Vhost File" "##############################"
+_2_4_VHOST=$(cat /etc/apache2/sites-available/default.conf)
+printf '%s\n\n\n' "$_2_4_VHOST"
+
+
 # *************************
 # Disable mod_access_compat
 # *************************
