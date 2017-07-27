@@ -4,9 +4,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.07.561
-### Updated: Thu Jul 27 17:19:02 SAST 2017
-### Bad Referrer Count: 5476
+### Version: V3.2017.07.562
+### Updated: Thu Jul 27 17:25:12 SAST 2017
+### Bad Referrer Count: 5477
 ### Bad Bot Count: 502
 ###################################################
 ### Version Information ##
@@ -4744,6 +4744,7 @@ SetEnvIfNoCase Referer ~*s8\-nowy\-wygraj\.comli\.com spam_ref
 SetEnvIfNoCase Referer ~*sabaapress\.com spam_ref
 SetEnvIfNoCase Referer ~*sabizonline\.com spam_ref
 SetEnvIfNoCase Referer ~*sack\.net spam_ref
+SetEnvIfNoCase Referer ~*sadaholding\.com spam_ref
 SetEnvIfNoCase Referer ~*sad\-torg\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*sady\-urala\.ru spam_ref
 SetEnvIfNoCase Referer ~*safe\-app\.net spam_ref
