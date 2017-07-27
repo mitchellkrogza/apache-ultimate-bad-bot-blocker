@@ -81,20 +81,6 @@ sudo a2dismod access_compat
 printf '%s\n%s\n%s\n\n' "############################" "Enabled include module" "############################"
 sudo a2enmod include
 
-# **************************
-# Show Loaded apache Modules
-# **************************
-
-printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
-sudo apache2ctl -M
-
-# **************************
-# Show Apache Version
-# **************************
-
-printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
-sudo apache2ctl -V
-
 # ********************************************************************************************
 # Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
@@ -130,6 +116,20 @@ sudo chown -R www-data:www-data /var/www/
 
 printf '%s\n%s\n%s\n\n' "#################################" "Force Restart of Apache 2.4" "#################################"
 sudo service apache2 restart
+
+# **************************
+# Show Loaded apache Modules
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
+sudo apache2ctl -M
+
+# **************************
+# Show Apache Version
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
+sudo apache2ctl -V
 
 # **********************
 # Test the Apache Config
