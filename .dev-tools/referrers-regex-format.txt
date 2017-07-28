@@ -2642,6 +2642,7 @@ SetEnvIfNoCase Referer ~*kvartir\-remont\.biz spam_ref
 SetEnvIfNoCase Referer ~*kvartiry\-remont\.ucoz\.ru spam_ref
 SetEnvIfNoCase Referer ~*kw21\.org spam_ref
 SetEnvIfNoCase Referer ~*kwzf\.net spam_ref
+SetEnvIfNoCase Referer ~*laapp\.com spam_ref
 SetEnvIfNoCase Referer ~*labelwater\.se spam_ref
 SetEnvIfNoCase Referer ~*labplus\.ru spam_ref
 SetEnvIfNoCase Referer ~*labvis\.host\.sk spam_ref

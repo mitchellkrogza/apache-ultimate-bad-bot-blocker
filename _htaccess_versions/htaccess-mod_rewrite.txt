@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.569
-### Bad Referrer Count: 5493
+### Version: V3.2017.07.570
+### Bad Referrer Count: 5494
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -3161,6 +3161,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kvartiry\-remont\.ucoz\.ru.*$ [
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kw21\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kwzf\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*la\-fa\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*laapp\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*labelwater\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*labplus\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*labvis\.host\.sk.*$ [NC,OR]
