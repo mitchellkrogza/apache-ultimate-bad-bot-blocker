@@ -5,9 +5,9 @@
 # CPANEL user instructions for the Apache Ultimate Bad Bot, User-Agent and Spam Referrer  Blocker
 
 _______________
-#### Version: V3.2017.07.565
-#### Bad Referrer Count: 5477
-#### Bad Bot Count: 502
+#### Version: V3.2017.07.566
+#### Bad Referrer Count: 5493
+#### Bad Bot Count: 504
 ____________________
 
 - Created by: https://github.com/mitchellkrogza
