@@ -94,8 +94,13 @@ sudo a2enmod include
 # Get new files from Repo Apache_2.4
 # **************************************
 
-printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
+printf '%s\n%s\n%s\n\n' "#################################" "Cleanup Apache 2.2 Files" "#################################"
 sudo rm /etc/apache2/custom.d/*.conf
+
+printf '%s\n%s\n%s\n\n' "#################################" "Check Apache 2.2 Files were removed" "#################################"
+ls -la /etc/apache2/custom.d/
+
+printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
