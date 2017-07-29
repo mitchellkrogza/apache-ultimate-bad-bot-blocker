@@ -4,10 +4,17 @@
 
 ### Version Information #
 ###################################################
+<<<<<<< HEAD
 ### Version: V3.2017.07.554
 ### Updated: Wed Jul 26 11:37:48 SAST 2017
 ### Bad Referrer Count: 5468
 ### Bad Bot Count: 501
+=======
+### Version: V3.2017.07.572
+### Updated: Sat Jul 29 12:49:28 SAST 2017
+### Bad Referrer Count: 5500
+### Bad Bot Count: 504
+>>>>>>> 7a6dfb5496d059c2724d18e5fdf90c1ed8b3e289
 ###################################################
 ### Version Information ##
 
