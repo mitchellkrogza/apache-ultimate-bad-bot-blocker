@@ -30,6 +30,7 @@ install:
   - bash .dev-tools/install-apache.sh
 
 script:
+  - bash .dev-tools/generate-files.sh
   - bash .dev-tools/run-curl-tests-1.sh
   - bash .dev-tools/test-apache-2.4.sh
   - bash .dev-tools/run-curl-tests-2.sh

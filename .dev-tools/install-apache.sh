@@ -133,6 +133,7 @@ sudo cp /etc/apache2/sites-available/default.conf $TRAVIS_BUILD_DIR/.dev-tools/_
 
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/deploy-package.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
+sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-files.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-htaccess.php
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
 sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh

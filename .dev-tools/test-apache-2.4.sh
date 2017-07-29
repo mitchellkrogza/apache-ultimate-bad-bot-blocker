@@ -101,7 +101,8 @@ printf '%s\n%s\n%s\n\n' "#################################" "Check Apache 2.2 Fi
 ls -la /etc/apache2/custom.d/
 
 printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
+#sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
+sudo cp $TRAVIS_BUILD_DIR/Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
@@ -114,6 +115,14 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 
 printf '%s\n%s\n%s\n\n' "#################################" "Set Ownership of /var/www/" "#################################"
 sudo chown -R www-data:www-data /var/www/
+
+# ************************************
+# Set Ownership of Travis Build Folder
+# ************************************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Set Ownership of Travis Build Folder" "#################################"
+sudo chown -R travis:travis $TRAVIS_BUILD_DIR
+ls -la $TRAVIS_BUILD_DIR
 
 # **********************
 # Now Start Apache Again
