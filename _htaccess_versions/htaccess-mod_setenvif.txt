@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.570
-### Bad Referrer Count: 5494
+### Version: V3.2017.07.571
+### Bad Referrer Count: 5500
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -552,6 +552,7 @@ SetEnvIfNoCase Referer 1bet\.com spambot=yes
 SetEnvIfNoCase Referer 1flag\.co\.za spambot=yes
 SetEnvIfNoCase Referer 1hwy\.com spambot=yes
 SetEnvIfNoCase Referer 1j7740kd\.website spambot=yes
+SetEnvIfNoCase Referer 1kdailyprofit\.me spambot=yes
 SetEnvIfNoCase Referer 1kinobig\.ru spambot=yes
 SetEnvIfNoCase Referer 1millionusd\.xyz spambot=yes
 SetEnvIfNoCase Referer 1pamm\.ru spambot=yes
@@ -660,6 +661,7 @@ SetEnvIfNoCase Referer aaronabel\.com spambot=yes
 SetEnvIfNoCase Referer abbanreddy\.com spambot=yes
 SetEnvIfNoCase Referer abcdefh\.xyz spambot=yes
 SetEnvIfNoCase Referer abcdeg\.xyz spambot=yes
+SetEnvIfNoCase Referer abcguru\.xyz spambot=yes
 SetEnvIfNoCase Referer abclauncher\.com spambot=yes
 SetEnvIfNoCase Referer abctoppictures\.net spambot=yes
 SetEnvIfNoCase Referer abiente\.ru spambot=yes
@@ -3206,6 +3208,7 @@ SetEnvIfNoCase Referer lechenie\-gemorroya\.com spambot=yes
 SetEnvIfNoCase Referer ledis\.top spambot=yes
 SetEnvIfNoCase Referer ledpolice\.ru spambot=yes
 SetEnvIfNoCase Referer legalrc\.biz spambot=yes
+SetEnvIfNoCase Referer legionalpha\.com spambot=yes
 SetEnvIfNoCase Referer lego4x4\.ru spambot=yes
 SetEnvIfNoCase Referer lenvred\.org spambot=yes
 SetEnvIfNoCase Referer lernur\.net spambot=yes
@@ -3546,6 +3549,7 @@ SetEnvIfNoCase Referer moetomnenie\.com spambot=yes
 SetEnvIfNoCase Referer moi\-glazki\.ru spambot=yes
 SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
 SetEnvIfNoCase Referer mojaocena\.com spambot=yes
+SetEnvIfNoCase Referer moje\-recenze\.cz spambot=yes
 SetEnvIfNoCase Referer mojowhois\.com spambot=yes
 SetEnvIfNoCase Referer mojpregled\.com spambot=yes
 SetEnvIfNoCase Referer mojpreskumanie\.com spambot=yes
@@ -4081,6 +4085,7 @@ SetEnvIfNoCase Referer plohaya\-kreditnaya\-istoriya\.ru spambot=yes
 SetEnvIfNoCase Referer plusnetwork\.com spambot=yes
 SetEnvIfNoCase Referer pobeiranie\.pl spambot=yes
 SetEnvIfNoCase Referer pochemychka\.net spambot=yes
+SetEnvIfNoCase Referer pochtovyi\-index\.ru spambot=yes
 SetEnvIfNoCase Referer podshipniki\-nsk\.ru spambot=yes
 SetEnvIfNoCase Referer podshipniki\-ntn\.ru spambot=yes
 SetEnvIfNoCase Referer poems\.com\.ua spambot=yes
@@ -4487,6 +4492,7 @@ SetEnvIfNoCase Referer saddiechoua\.com spambot=yes
 SetEnvIfNoCase Referer sady\-urala\.ru spambot=yes
 SetEnvIfNoCase Referer safe\-app\.net spambot=yes
 SetEnvIfNoCase Referer saitevpatorii\.com spambot=yes
+SetEnvIfNoCase Referer sajatvelemeny\.com spambot=yes
 SetEnvIfNoCase Referer sakhboard\.ru spambot=yes
 SetEnvIfNoCase Referer sale\-japan\.com spambot=yes
 SetEnvIfNoCase Referer saletool\.ru spambot=yes

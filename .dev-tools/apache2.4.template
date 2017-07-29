@@ -4,9 +4,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.07.570
-### Updated: Fri Jul 28 17:54:23 SAST 2017
-### Bad Referrer Count: 5494
+### Version: V3.2017.07.571
+### Updated: Sat Jul 29 11:42:46 SAST 2017
+### Bad Referrer Count: 5500
 ### Bad Bot Count: 504
 ###################################################
 ### Version Information ##
@@ -832,6 +832,7 @@ SetEnvIfNoCase Referer ~*1flag\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*1\-free\-share\-buttons\.com spam_ref
 SetEnvIfNoCase Referer ~*1hwy\.com spam_ref
 SetEnvIfNoCase Referer ~*1j7740kd\.website spam_ref
+SetEnvIfNoCase Referer ~*1kdailyprofit\.me spam_ref
 SetEnvIfNoCase Referer ~*1kinobig\.ru spam_ref
 SetEnvIfNoCase Referer ~*1millionusd\.xyz spam_ref
 SetEnvIfNoCase Referer ~*1pamm\.ru spam_ref
@@ -939,6 +940,7 @@ SetEnvIfNoCase Referer ~*aaronabel\.com spam_ref
 SetEnvIfNoCase Referer ~*abbanreddy\.com spam_ref
 SetEnvIfNoCase Referer ~*abcdefh\.xyz spam_ref
 SetEnvIfNoCase Referer ~*abcdeg\.xyz spam_ref
+SetEnvIfNoCase Referer ~*abcguru\.xyz spam_ref
 SetEnvIfNoCase Referer ~*abclauncher\.com spam_ref
 SetEnvIfNoCase Referer ~*abctoppictures\.net spam_ref
 SetEnvIfNoCase Referer ~*abiente\.ru spam_ref
@@ -3486,6 +3488,7 @@ SetEnvIfNoCase Referer ~*lechenie\-gemorroya\.com spam_ref
 SetEnvIfNoCase Referer ~*ledis\.top spam_ref
 SetEnvIfNoCase Referer ~*ledpolice\.ru spam_ref
 SetEnvIfNoCase Referer ~*legalrc\.biz spam_ref
+SetEnvIfNoCase Referer ~*legionalpha\.com spam_ref
 SetEnvIfNoCase Referer ~*lego4x4\.ru spam_ref
 SetEnvIfNoCase Referer ~*lenvred\.org spam_ref
 SetEnvIfNoCase Referer ~*lernur\.net spam_ref
@@ -3826,6 +3829,7 @@ SetEnvIfNoCase Referer ~*moetomnenie\.com spam_ref
 SetEnvIfNoCase Referer ~*moi\-glazki\.ru spam_ref
 SetEnvIfNoCase Referer ~*moivestiy\.biz spam_ref
 SetEnvIfNoCase Referer ~*mojaocena\.com spam_ref
+SetEnvIfNoCase Referer ~*moje\-recenze\.cz spam_ref
 SetEnvIfNoCase Referer ~*mojowhois\.com spam_ref
 SetEnvIfNoCase Referer ~*mojpregled\.com spam_ref
 SetEnvIfNoCase Referer ~*mojpreskumanie\.com spam_ref
@@ -4361,6 +4365,7 @@ SetEnvIfNoCase Referer ~*plusnetwork\.com spam_ref
 SetEnvIfNoCase Referer ~*pl\-vouchers\.com spam_ref
 SetEnvIfNoCase Referer ~*pobeiranie\.pl spam_ref
 SetEnvIfNoCase Referer ~*pochemychka\.net spam_ref
+SetEnvIfNoCase Referer ~*pochtovyi\-index\.ru spam_ref
 SetEnvIfNoCase Referer ~*podshipniki\-nsk\.ru spam_ref
 SetEnvIfNoCase Referer ~*podshipniki\-ntn\.ru spam_ref
 SetEnvIfNoCase Referer ~*poems\.com\.ua spam_ref
@@ -4764,6 +4769,7 @@ SetEnvIfNoCase Referer ~*sad\-torg\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*sady\-urala\.ru spam_ref
 SetEnvIfNoCase Referer ~*safe\-app\.net spam_ref
 SetEnvIfNoCase Referer ~*saitevpatorii\.com spam_ref
+SetEnvIfNoCase Referer ~*sajatvelemeny\.com spam_ref
 SetEnvIfNoCase Referer ~*sakhboard\.ru spam_ref
 SetEnvIfNoCase Referer ~*sale\-japan\.com spam_ref
 SetEnvIfNoCase Referer ~*saletool\.ru spam_ref
