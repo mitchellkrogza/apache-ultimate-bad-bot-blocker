@@ -234,6 +234,7 @@ SetEnvIfNoCase Referer ~*adviceforum\.info spam_ref
 SetEnvIfNoCase Referer ~*advocatemsk\.ru spam_ref
 SetEnvIfNoCase Referer ~*advokateg\.ru spam_ref
 SetEnvIfNoCase Referer ~*advokateg\.xyz spam_ref
+SetEnvIfNoCase Referer ~*advokat\-grodno\.by spam_ref
 SetEnvIfNoCase Referer ~*ad\-words\.ru spam_ref
 SetEnvIfNoCase Referer ~*adzerg\.com spam_ref
 SetEnvIfNoCase Referer ~*adzpower\.com spam_ref
@@ -2614,6 +2615,7 @@ SetEnvIfNoCase Referer ~*kostenloser\-sex\.com spam_ref
 SetEnvIfNoCase Referer ~*kostenlos\-sexvideos\.com spam_ref
 SetEnvIfNoCase Referer ~*kosynka\-games\.ru spam_ref
 SetEnvIfNoCase Referer ~*kotaku\.com spam_ref
+SetEnvIfNoCase Referer ~*koversite\.info spam_ref
 SetEnvIfNoCase Referer ~*kovesszucs\.atw\.hu spam_ref
 SetEnvIfNoCase Referer ~*kozhniebolezni\.com spam_ref
 SetEnvIfNoCase Referer ~*krafte\.ru spam_ref
@@ -3227,6 +3229,7 @@ SetEnvIfNoCase Referer ~*nfljerseyscheapbiz\.us spam_ref
 SetEnvIfNoCase Referer ~*nfljerseyscheapchinabiz\.com spam_ref
 SetEnvIfNoCase Referer ~*nfljerseysforsalewholesaler\.com spam_ref
 SetEnvIfNoCase Referer ~*nfljerseys\.online spam_ref
+SetEnvIfNoCase Referer ~*nfvsz\.com spam_ref
 SetEnvIfNoCase Referer ~*ngps1\.ru spam_ref
 SetEnvIfNoCase Referer ~*nhl09\.ru spam_ref
 SetEnvIfNoCase Referer ~*nhl17coins\.exblog\.jp spam_ref
@@ -3409,6 +3412,7 @@ SetEnvIfNoCase Referer ~*owathemes\.com spam_ref
 SetEnvIfNoCase Referer ~*ownshop\.cf spam_ref
 SetEnvIfNoCase Referer ~*owohho\.com spam_ref
 SetEnvIfNoCase Referer ~*oxford\-book\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*oxotl\.com spam_ref
 SetEnvIfNoCase Referer ~*oynat\.info spam_ref
 SetEnvIfNoCase Referer ~*ozas\.net spam_ref
 SetEnvIfNoCase Referer ~*oz\-offers\.com spam_ref

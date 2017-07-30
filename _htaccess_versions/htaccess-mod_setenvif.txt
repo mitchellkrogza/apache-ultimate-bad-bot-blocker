@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.07.582
-### Bad Referrer Count: 5500
+### Version: V3.2017.07.583
+### Bad Referrer Count: 5504
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -751,6 +751,7 @@ SetEnvIfNoCase Referer advertex\.info spambot=yes
 SetEnvIfNoCase Referer advertisingtag\.net spambot=yes
 SetEnvIfNoCase Referer adviceforum\.info spambot=yes
 SetEnvIfNoCase Referer advocatemsk\.ru spambot=yes
+SetEnvIfNoCase Referer advokat\-grodno\.by spambot=yes
 SetEnvIfNoCase Referer advokateg\.ru spambot=yes
 SetEnvIfNoCase Referer advokateg\.xyz spambot=yes
 SetEnvIfNoCase Referer adzerg\.com spambot=yes
@@ -3131,6 +3132,7 @@ SetEnvIfNoCase Referer kostenlos\-sexvideos\.com spambot=yes
 SetEnvIfNoCase Referer kostenloser\-sex\.com spambot=yes
 SetEnvIfNoCase Referer kosynka\-games\.ru spambot=yes
 SetEnvIfNoCase Referer kotaku\.com spambot=yes
+SetEnvIfNoCase Referer koversite\.info spambot=yes
 SetEnvIfNoCase Referer kovesszucs\.atw\.hu spambot=yes
 SetEnvIfNoCase Referer kozhniebolezni\.com spambot=yes
 SetEnvIfNoCase Referer krafte\.ru spambot=yes
@@ -3744,6 +3746,7 @@ SetEnvIfNoCase Referer nfljerseys\.online spambot=yes
 SetEnvIfNoCase Referer nfljerseyscheapbiz\.us spambot=yes
 SetEnvIfNoCase Referer nfljerseyscheapchinabiz\.com spambot=yes
 SetEnvIfNoCase Referer nfljerseysforsalewholesaler\.com spambot=yes
+SetEnvIfNoCase Referer nfvsz\.com spambot=yes
 SetEnvIfNoCase Referer ngps1\.ru spambot=yes
 SetEnvIfNoCase Referer nhl09\.ru spambot=yes
 SetEnvIfNoCase Referer nhl17coins\.exblog\.jp spambot=yes
@@ -3926,6 +3929,7 @@ SetEnvIfNoCase Referer owathemes\.com spambot=yes
 SetEnvIfNoCase Referer ownshop\.cf spambot=yes
 SetEnvIfNoCase Referer owohho\.com spambot=yes
 SetEnvIfNoCase Referer oxford\-book\.com\.ua spambot=yes
+SetEnvIfNoCase Referer oxotl\.com spambot=yes
 SetEnvIfNoCase Referer oynat\.info spambot=yes
 SetEnvIfNoCase Referer oz\-offers\.com spambot=yes
 SetEnvIfNoCase Referer ozas\.net spambot=yes
