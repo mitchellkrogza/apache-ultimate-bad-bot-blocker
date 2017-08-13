@@ -3885,6 +3885,7 @@ SetEnvIfNoCase Referer ~*redbottomheels\.xyz spam_ref
 SetEnvIfNoCase Referer ~*redhotfreebies\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*redirectingat\.com spam_ref
 SetEnvIfNoCase Referer ~*redirectme\.net spam_ref
+SetEnvIfNoCase Referer ~*redirect\.trafficreceiver\.club spam_ref
 SetEnvIfNoCase Referer ~*redirlock\.com spam_ref
 SetEnvIfNoCase Referer ~*rednise\.com spam_ref
 SetEnvIfNoCase Referer ~*reelheroes\.net spam_ref
@@ -4809,7 +4810,9 @@ SetEnvIfNoCase Referer ~*trafficmania\.com spam_ref
 SetEnvIfNoCase Referer ~*trafficmonetize\.org spam_ref
 SetEnvIfNoCase Referer ~*trafficmp\.com spam_ref
 SetEnvIfNoCase Referer ~*trafficnetzwerk\.de spam_ref
+SetEnvIfNoCase Referer ~*trafficreceiver\.club spam_ref
 SetEnvIfNoCase Referer ~*trafficstars\.com spam_ref
+SetEnvIfNoCase Referer ~*traffictrade\.life spam_ref
 SetEnvIfNoCase Referer ~*traffique\.net spam_ref
 SetEnvIfNoCase Referer ~*traffixer\.com spam_ref
 SetEnvIfNoCase Referer ~*traffmonster\.info spam_ref
