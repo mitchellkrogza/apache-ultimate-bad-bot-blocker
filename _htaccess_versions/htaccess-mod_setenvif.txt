@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.588
-### Bad Referrer Count: 5563
+### Version: V3.2017.08.589
+### Bad Referrer Count: 5567
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -1322,6 +1322,7 @@ SetEnvIfNoCase Referer bouda\.kvalitne\.cz spambot=yes
 SetEnvIfNoCase Referer bpro1\.top spambot=yes
 SetEnvIfNoCase Referer brainboosting\.club spambot=yes
 SetEnvIfNoCase Referer brainboostingsupplements\.org spambot=yes
+SetEnvIfNoCase Referer braindaily\.xyz spambot=yes
 SetEnvIfNoCase Referer brains2\.biz spambot=yes
 SetEnvIfNoCase Referer brainsandeggs\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer braintobe\.win spambot=yes
@@ -2780,6 +2781,7 @@ SetEnvIfNoCase Referer hoporno\.com spambot=yes
 SetEnvIfNoCase Referer hornymatches\.com spambot=yes
 SetEnvIfNoCase Referer horoshieokna\.com spambot=yes
 SetEnvIfNoCase Referer host\-protection\.com spambot=yes
+SetEnvIfNoCase Referer host\-tracker\.com spambot=yes
 SetEnvIfNoCase Referer hostcritique\.com spambot=yes
 SetEnvIfNoCase Referer hoste\.octopis\.com spambot=yes
 SetEnvIfNoCase Referer hosting\-tracker\.com spambot=yes
@@ -2982,6 +2984,7 @@ SetEnvIfNoCase Referer istock\-mebel\.ru spambot=yes
 SetEnvIfNoCase Referer istripper\.com spambot=yes
 SetEnvIfNoCase Referer it\-max\.com\.ua spambot=yes
 SetEnvIfNoCase Referer itbc\.kiev\.ua spambot=yes
+SetEnvIfNoCase Referer itch\.io spambot=yes
 SetEnvIfNoCase Referer itis4you\.com spambot=yes
 SetEnvIfNoCase Referer itrevolution\.cf spambot=yes
 SetEnvIfNoCase Referer itronics\.ca spambot=yes
@@ -5283,6 +5286,7 @@ SetEnvIfNoCase Referer topkarkas\.com spambot=yes
 SetEnvIfNoCase Referer topmira\.com spambot=yes
 SetEnvIfNoCase Referer topquality\.cf spambot=yes
 SetEnvIfNoCase Referer topshef\.ru spambot=yes
+SetEnvIfNoCase Referer topsiteminecraft\.com spambot=yes
 SetEnvIfNoCase Referer topsy\.com spambot=yes
 SetEnvIfNoCase Referer topvidos\.ru spambot=yes
 SetEnvIfNoCase Referer torontoplumbinggroup\.com spambot=yes
