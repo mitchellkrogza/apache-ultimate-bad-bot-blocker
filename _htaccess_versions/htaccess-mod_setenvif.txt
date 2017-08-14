@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.589
-### Bad Referrer Count: 5567
+### Version: V3.2017.08.590
+### Bad Referrer Count: 5582
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -921,12 +921,15 @@ SetEnvIfNoCase Referer apifasterlightin\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiholdingmypage\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiitsthirteende\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apilinkswiftco\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer apiluckyleapnet\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apimegabrowsebiz\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apimossnetinfo\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apimountainbikei\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apioasisspacenet\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apioutoboxnet\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiportalmorecom\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer apiqualitinknet\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer apisecretsaucebi\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apishops\.ru spambot=yes
 SetEnvIfNoCase Referer apispringsmartne\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiwebwebgetcom\-a\.akamaihd\.net spambot=yes
@@ -1168,6 +1171,7 @@ SetEnvIfNoCase Referer best\-games\.today spambot=yes
 SetEnvIfNoCase Referer best\-seo\-offer\.com spambot=yes
 SetEnvIfNoCase Referer best\-seo\-software\.xyz spambot=yes
 SetEnvIfNoCase Referer best\-seo\-solution\.com spambot=yes
+SetEnvIfNoCase Referer best\-way\.men spambot=yes
 SetEnvIfNoCase Referer bestbrainprod\.win spambot=yes
 SetEnvIfNoCase Referer bestbuy\.ca spambot=yes
 SetEnvIfNoCase Referer bestcalovebracelet\.cn spambot=yes
@@ -1945,6 +1949,7 @@ SetEnvIfNoCase Referer dokumentalkino\.net spambot=yes
 SetEnvIfNoCase Referer domain\-submit\.info spambot=yes
 SetEnvIfNoCase Referer domain\-tracker\.com spambot=yes
 SetEnvIfNoCase Referer domain2008\.com spambot=yes
+SetEnvIfNoCase Referer domainanalyzing\.xyz spambot=yes
 SetEnvIfNoCase Referer domaincdn\.xyz spambot=yes
 SetEnvIfNoCase Referer domaincrawler\.com spambot=yes
 SetEnvIfNoCase Referer domaineaneblanc\.com spambot=yes
@@ -2750,6 +2755,7 @@ SetEnvIfNoCase Referer hildinghr\.se spambot=yes
 SetEnvIfNoCase Referer histats\.com spambot=yes
 SetEnvIfNoCase Referer histock\.info spambot=yes
 SetEnvIfNoCase Referer historichometeam\.com spambot=yes
+SetEnvIfNoCase Referer hit\-men\.men spambot=yes
 SetEnvIfNoCase Referer hitsbox\.info spambot=yes
 SetEnvIfNoCase Referer hiwibyh\.bugs3\.com spambot=yes
 SetEnvIfNoCase Referer hjaoopoa\.top spambot=yes
@@ -2830,6 +2836,7 @@ SetEnvIfNoCase Referer huhn\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer huimin764128\.com spambot=yes
 SetEnvIfNoCase Referer hulfingtonpost\.com spambot=yes
 SetEnvIfNoCase Referer hully\.altervista\.org spambot=yes
+SetEnvIfNoCase Referer humanelydrew\.com spambot=yes
 SetEnvIfNoCase Referer humanorightswatch\.org spambot=yes
 SetEnvIfNoCase Referer hundejo\.com spambot=yes
 SetEnvIfNoCase Referer hunterboots\.online spambot=yes
@@ -3531,6 +3538,7 @@ SetEnvIfNoCase Referer michaelkorssaleoutletonline\.net spambot=yes
 SetEnvIfNoCase Referer microsearch\.ru spambot=yes
 SetEnvIfNoCase Referer microsoftportal\.net spambot=yes
 SetEnvIfNoCase Referer microstatic\.pl spambot=yes
+SetEnvIfNoCase Referer middlerush\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer midst\.eu spambot=yes
 SetEnvIfNoCase Referer mielec\.pl spambot=yes
 SetEnvIfNoCase Referer migente\.com spambot=yes
@@ -3772,6 +3780,7 @@ SetEnvIfNoCase Referer netfacet\.net spambot=yes
 SetEnvIfNoCase Referer netoil\.no spambot=yes
 SetEnvIfNoCase Referer netpics\.org spambot=yes
 SetEnvIfNoCase Referer networkad\.net spambot=yes
+SetEnvIfNoCase Referer networkcheck\.xyz spambot=yes
 SetEnvIfNoCase Referer nevansk\.ru spambot=yes
 SetEnvIfNoCase Referer new\-apps\.ru spambot=yes
 SetEnvIfNoCase Referer new\-post\.tk spambot=yes
@@ -4269,6 +4278,7 @@ SetEnvIfNoCase Referer professionaldieselcare\.com spambot=yes
 SetEnvIfNoCase Referer professionalwritingservices15\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer profit\-opportunity\.com spambot=yes
 SetEnvIfNoCase Referer profitfx\.online spambot=yes
+SetEnvIfNoCase Referer profitkode\.com spambot=yes
 SetEnvIfNoCase Referer profitsport\.club spambot=yes
 SetEnvIfNoCase Referer profolan\.pl spambot=yes
 SetEnvIfNoCase Referer proftests\.net spambot=yes
@@ -4401,6 +4411,7 @@ SetEnvIfNoCase Referer rebuildermedical\.com spambot=yes
 SetEnvIfNoCase Referer recinziireale\.com spambot=yes
 SetEnvIfNoCase Referer recipedays\.com spambot=yes
 SetEnvIfNoCase Referer recipedays\.ru spambot=yes
+SetEnvIfNoCase Referer reckonstat\.info spambot=yes
 SetEnvIfNoCase Referer recordpage\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer redbottomheels\.xyz spambot=yes
 SetEnvIfNoCase Referer redhotfreebies\.co\.uk spambot=yes
@@ -5353,6 +5364,8 @@ SetEnvIfNoCase Referer trk\-4\.net spambot=yes
 SetEnvIfNoCase Referer trkdf\.com spambot=yes
 SetEnvIfNoCase Referer trkur\.com spambot=yes
 SetEnvIfNoCase Referer trubywriting\.com spambot=yes
+SetEnvIfNoCase Referer truck\-addzilla\.life spambot=yes
+SetEnvIfNoCase Referer truck\-land\.life spambot=yes
 SetEnvIfNoCase Referer trucri\.me spambot=yes
 SetEnvIfNoCase Referer trudogolik\.net spambot=yes
 SetEnvIfNoCase Referer truemfilelj\.gq spambot=yes
@@ -5360,6 +5373,7 @@ SetEnvIfNoCase Referer trumpetedextremes\.com spambot=yes
 SetEnvIfNoCase Referer trustaffs\.com spambot=yes
 SetEnvIfNoCase Referer trustedhealthtips\.com spambot=yes
 SetEnvIfNoCase Referer trustedmaccleaner\.com spambot=yes
+SetEnvIfNoCase Referer trustl\.life spambot=yes
 SetEnvIfNoCase Referer try\-rx\.com spambot=yes
 SetEnvIfNoCase Referer tsan\.net spambot=yes
 SetEnvIfNoCase Referer tsstcorpcddvdwshbbdriverfb\.aircus\.com spambot=yes
@@ -5709,6 +5723,7 @@ SetEnvIfNoCase Referer weprik\.ru spambot=yes
 SetEnvIfNoCase Referer wesharepics\.com spambot=yes
 SetEnvIfNoCase Referer wesharepics\.info spambot=yes
 SetEnvIfNoCase Referer wesharepics\.site spambot=yes
+SetEnvIfNoCase Referer westen\-v\.life spambot=yes
 SetEnvIfNoCase Referer westermarkanjou\.se spambot=yes
 SetEnvIfNoCase Referer westsextube\.com spambot=yes
 SetEnvIfNoCase Referer westum\.se spambot=yes
