@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.590
-### Bad Referrer Count: 5582
+### Version: V3.2017.08.591
+### Bad Referrer Count: 5585
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -817,6 +817,7 @@ SetEnvIfNoCase Referer all\-number\.com spambot=yes
 SetEnvIfNoCase Referer all\-streaming\-media\.com spambot=yes
 SetEnvIfNoCase Referer all4invest\.info spambot=yes
 SetEnvIfNoCase Referer all4invest\.ru spambot=yes
+SetEnvIfNoCase Referer allblogroll\.com spambot=yes
 SetEnvIfNoCase Referer allboard\.xobor\.de spambot=yes
 SetEnvIfNoCase Referer allcredits\.su spambot=yes
 SetEnvIfNoCase Referer alldownload\.pw spambot=yes
@@ -1549,6 +1550,7 @@ SetEnvIfNoCase Referer cheapjerseysfootballshop\.com spambot=yes
 SetEnvIfNoCase Referer cheapmarmot\.online spambot=yes
 SetEnvIfNoCase Referer cheapmoncler\.pw spambot=yes
 SetEnvIfNoCase Referer cheapmoncler\.win spambot=yes
+SetEnvIfNoCase Referer cheapmoncler\.xyz spambot=yes
 SetEnvIfNoCase Referer cheapsergiorossi\.online spambot=yes
 SetEnvIfNoCase Referer cheapwebsitehoster\.com spambot=yes
 SetEnvIfNoCase Referer cheatcode\-lita12\.rhcloud\.com spambot=yes
@@ -2859,6 +2861,7 @@ SetEnvIfNoCase Referer ibb\.com\.ua spambot=yes
 SetEnvIfNoCase Referer icaseclub\.ru spambot=yes
 SetEnvIfNoCase Referer ico\.re spambot=yes
 SetEnvIfNoCase Referer ictizanidinehcl4mg\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer id\-forex\.com spambot=yes
 SetEnvIfNoCase Referer idc\.com\.ua spambot=yes
 SetEnvIfNoCase Referer idealtits\.net spambot=yes
 SetEnvIfNoCase Referer ideashome\.id spambot=yes
