@@ -2147,6 +2147,7 @@ SetEnvIfNoCase Referer ~*gsasearchengineranker\.xyz spam_ref
 SetEnvIfNoCase Referer ~*gsbs\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*gsmlab\.pl spam_ref
 SetEnvIfNoCase Referer ~*gsmtlf\.ru spam_ref
+SetEnvIfNoCase Referer ~*gsou\.cf spam_ref
 SetEnvIfNoCase Referer ~*g\.starmoe\.xyz spam_ref
 SetEnvIfNoCase Referer ~*gstatey\.net spam_ref
 SetEnvIfNoCase Referer ~*gta\-club\.ru spam_ref
