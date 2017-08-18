@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.594
-### Bad Referrer Count: 5600
+### Version: V3.2017.08.595
+### Bad Referrer Count: 5609
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -731,6 +731,7 @@ SetEnvIfNoCase Referer adserver\-e7\.com spambot=yes
 SetEnvIfNoCase Referer adservme\.com spambot=yes
 SetEnvIfNoCase Referer adsfresh\.men spambot=yes
 SetEnvIfNoCase Referer adsland\.men spambot=yes
+SetEnvIfNoCase Referer adsloads\.com spambot=yes
 SetEnvIfNoCase Referer adsref\.men spambot=yes
 SetEnvIfNoCase Referer adssafeprotected\.com spambot=yes
 SetEnvIfNoCase Referer adtech\.de spambot=yes
@@ -1501,12 +1502,14 @@ SetEnvIfNoCase Referer castingbank\.ru spambot=yes
 SetEnvIfNoCase Referer catalogs\-parts\.com spambot=yes
 SetEnvIfNoCase Referer caveavins\.fr spambot=yes
 SetEnvIfNoCase Referer cayado\.snn\.gr spambot=yes
+SetEnvIfNoCase Referer cb\.iphantom\.com spambot=yes
 SetEnvIfNoCase Referer cbb1smartlist12\.click spambot=yes
 SetEnvIfNoCase Referer cbcseward\.com spambot=yes
 SetEnvIfNoCase Referer cbox\.ws spambot=yes
 SetEnvIfNoCase Referer ccbill\.com spambot=yes
 SetEnvIfNoCase Referer cctva\.tv spambot=yes
 SetEnvIfNoCase Referer cdn\.walkme\.com spambot=yes
+SetEnvIfNoCase Referer cdnanalytics\.xyz spambot=yes
 SetEnvIfNoCase Referer cdncash\.com spambot=yes
 SetEnvIfNoCase Referer cdncash\.net spambot=yes
 SetEnvIfNoCase Referer cdncash\.org spambot=yes
@@ -1860,6 +1863,7 @@ SetEnvIfNoCase Referer dekorkeramik\.ru spambot=yes
 SetEnvIfNoCase Referer delayreferat\.ru spambot=yes
 SetEnvIfNoCase Referer delfin\-aqua\.com\.ua spambot=yes
 SetEnvIfNoCase Referer dellalimov\.com spambot=yes
+SetEnvIfNoCase Referer delta\-line\.men spambot=yes
 SetEnvIfNoCase Referer deluxedumps\.com spambot=yes
 SetEnvIfNoCase Referer demenageur\.com spambot=yes
 SetEnvIfNoCase Referer demian\.kz spambot=yes
@@ -2469,6 +2473,7 @@ SetEnvIfNoCase Referer fxgallery\.com spambot=yes
 SetEnvIfNoCase Referer fxtips\.ru spambot=yes
 SetEnvIfNoCase Referer fyl\.com\.ru spambot=yes
 SetEnvIfNoCase Referer fym\.com\.ru spambot=yes
+SetEnvIfNoCase Referer fz139\.ttk\.ru spambot=yes
 SetEnvIfNoCase Referer g\.starmoe\.xyz spambot=yes
 SetEnvIfNoCase Referer g33\.org spambot=yes
 SetEnvIfNoCase Referer g7m\.pl spambot=yes
@@ -2880,6 +2885,7 @@ SetEnvIfNoCase Referer ifirestarter\.ru spambot=yes
 SetEnvIfNoCase Referer iflycapetown\.co\.za spambot=yes
 SetEnvIfNoCase Referer ifmo\.ru spambot=yes
 SetEnvIfNoCase Referer igadgetsworld\.com spambot=yes
+SetEnvIfNoCase Referer igithab\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
 SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
@@ -4033,6 +4039,7 @@ SetEnvIfNoCase Referer partner\-pop\.men spambot=yes
 SetEnvIfNoCase Referer partner\-print\.men spambot=yes
 SetEnvIfNoCase Referer partner\-stop\.men spambot=yes
 SetEnvIfNoCase Referer partner\-trustworthy\.men spambot=yes
+SetEnvIfNoCase Referer partnerads\.men spambot=yes
 SetEnvIfNoCase Referer partnerline\.men spambot=yes
 SetEnvIfNoCase Referer partners\-ship\.pro spambot=yes
 SetEnvIfNoCase Referer partnersafe\.men spambot=yes
@@ -4344,6 +4351,7 @@ SetEnvIfNoCase Referer pulseonclick\.com spambot=yes
 SetEnvIfNoCase Referer purchasepillsnorx\.com spambot=yes
 SetEnvIfNoCase Referer purplesphere\.in spambot=yes
 SetEnvIfNoCase Referer purplestats\.com spambot=yes
+SetEnvIfNoCase Referer puserving\.com spambot=yes
 SetEnvIfNoCase Referer push\-ad\.com spambot=yes
 SetEnvIfNoCase Referer pushdata\.sendpulse\.com spambot=yes
 SetEnvIfNoCase Referer pussyfleet\.com spambot=yes
@@ -5221,6 +5229,7 @@ SetEnvIfNoCase Referer timecrimea\.ru spambot=yes
 SetEnvIfNoCase Referer timer4web\.com spambot=yes
 SetEnvIfNoCase Referer timetorelax\.biz spambot=yes
 SetEnvIfNoCase Referer timhost\.ru spambot=yes
+SetEnvIfNoCase Referer titan\-cloud\.life spambot=yes
 SetEnvIfNoCase Referer titelhelden\.eu spambot=yes
 SetEnvIfNoCase Referer titslove\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer tizanidine4mg\.blogspot\.com spambot=yes
