@@ -2468,6 +2468,7 @@ SetEnvIfNoCase Referer ~*iqoption\-bin\.com spam_ref
 SetEnvIfNoCase Referer ~*iqoption\.com spam_ref
 SetEnvIfNoCase Referer ~*iqoption\.pro spam_ref
 SetEnvIfNoCase Referer ~*iqs\.biz\.ua spam_ref
+SetEnvIfNoCase Referer ~*iqupdatetmz\.win spam_ref
 SetEnvIfNoCase Referer ~*iradiology\.ru spam_ref
 SetEnvIfNoCase Referer ~*irunfar\.com spam_ref
 SetEnvIfNoCase Referer ~*iscblog\.info spam_ref
@@ -4779,6 +4780,7 @@ SetEnvIfNoCase Referer ~*tmm\-kurs\.ru spam_ref
 SetEnvIfNoCase Referer ~*tmtrck\.com spam_ref
 SetEnvIfNoCase Referer ~*tnaionline\.org spam_ref
 SetEnvIfNoCase Referer ~*tnctrx\.com spam_ref
+SetEnvIfNoCase Referer ~*tobeyouday\.win spam_ref
 SetEnvIfNoCase Referer ~*todohr\.com spam_ref
 SetEnvIfNoCase Referer ~*toloka\.hurtom\.com spam_ref
 SetEnvIfNoCase Referer ~*tomatis\.gospartner\.com spam_ref
@@ -5176,6 +5178,7 @@ SetEnvIfNoCase Referer ~*watchmygf\.net spam_ref
 SetEnvIfNoCase Referer ~*waterpurifier\.club spam_ref
 SetEnvIfNoCase Referer ~*watsonrealtycorp\.com spam_ref
 SetEnvIfNoCase Referer ~*waycash\.net spam_ref
+SetEnvIfNoCase Referer ~*waysbetter\.cn spam_ref
 SetEnvIfNoCase Referer ~*wcb\.su spam_ref
 SetEnvIfNoCase Referer ~*wdfdocando\.com spam_ref
 SetEnvIfNoCase Referer ~*wdrake\.com spam_ref

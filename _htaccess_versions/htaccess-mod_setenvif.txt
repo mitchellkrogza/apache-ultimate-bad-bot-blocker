@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.595
-### Bad Referrer Count: 5609
+### Version: V3.2017.08.596
+### Bad Referrer Count: 5612
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -2986,6 +2986,7 @@ SetEnvIfNoCase Referer iqoption\-bin\.com spambot=yes
 SetEnvIfNoCase Referer iqoption\.com spambot=yes
 SetEnvIfNoCase Referer iqoption\.pro spambot=yes
 SetEnvIfNoCase Referer iqs\.biz\.ua spambot=yes
+SetEnvIfNoCase Referer iqupdatetmz\.win spambot=yes
 SetEnvIfNoCase Referer iradiology\.ru spambot=yes
 SetEnvIfNoCase Referer irunfar\.com spambot=yes
 SetEnvIfNoCase Referer iscblog\.info spambot=yes
@@ -5296,6 +5297,7 @@ SetEnvIfNoCase Referer tmm\-kurs\.ru spambot=yes
 SetEnvIfNoCase Referer tmtrck\.com spambot=yes
 SetEnvIfNoCase Referer tnaionline\.org spambot=yes
 SetEnvIfNoCase Referer tnctrx\.com spambot=yes
+SetEnvIfNoCase Referer tobeyouday\.win spambot=yes
 SetEnvIfNoCase Referer todohr\.com spambot=yes
 SetEnvIfNoCase Referer toloka\.hurtom\.com spambot=yes
 SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
@@ -5694,6 +5696,7 @@ SetEnvIfNoCase Referer watchmygf\.net spambot=yes
 SetEnvIfNoCase Referer waterpurifier\.club spambot=yes
 SetEnvIfNoCase Referer watsonrealtycorp\.com spambot=yes
 SetEnvIfNoCase Referer waycash\.net spambot=yes
+SetEnvIfNoCase Referer waysbetter\.cn spambot=yes
 SetEnvIfNoCase Referer wcb\.su spambot=yes
 SetEnvIfNoCase Referer wdfdocando\.com spambot=yes
 SetEnvIfNoCase Referer wdrake\.com spambot=yes
