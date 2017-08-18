@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.593
-### Bad Referrer Count: 5595
+### Version: V3.2017.08.594
+### Bad Referrer Count: 5600
 ### Bad Bot Count: 504
 ### Version Information ##
 
@@ -569,6 +569,7 @@ SetEnvIfNoCase Referer 214jaluwobapef\.cf spambot=yes
 SetEnvIfNoCase Referer 21h2o\.com spambot=yes
 SetEnvIfNoCase Referer 2345\.com spambot=yes
 SetEnvIfNoCase Referer 23kw\.ru spambot=yes
+SetEnvIfNoCase Referer 24\-ak\.ru spambot=yes
 SetEnvIfNoCase Referer 24videos\.tv spambot=yes
 SetEnvIfNoCase Referer 24x7\-server\-support\.site spambot=yes
 SetEnvIfNoCase Referer 256bit\.by spambot=yes
@@ -3902,6 +3903,7 @@ SetEnvIfNoCase Referer ohmyrings\.com spambot=yes
 SetEnvIfNoCase Referer oil\-td\.ru spambot=yes
 SetEnvIfNoCase Referer ok\-ua\.info spambot=yes
 SetEnvIfNoCase Referer ok\.ru spambot=yes
+SetEnvIfNoCase Referer okayimage\.com spambot=yes
 SetEnvIfNoCase Referer okel\.co spambot=yes
 SetEnvIfNoCase Referer oklogistic\.ru spambot=yes
 SetEnvIfNoCase Referer okmusic\.jp spambot=yes
@@ -4583,6 +4585,7 @@ SetEnvIfNoCase Referer sampleletters\.net spambot=yes
 SetEnvIfNoCase Referer sanatorrii\.ru spambot=yes
 SetEnvIfNoCase Referer sandhillsonline\.com spambot=yes
 SetEnvIfNoCase Referer saneitconsulting\.com spambot=yes
+SetEnvIfNoCase Referer sanidumps\.com spambot=yes
 SetEnvIfNoCase Referer sanjosestartups\.com spambot=yes
 SetEnvIfNoCase Referer sankt\-peterburg\.nodup\.ru spambot=yes
 SetEnvIfNoCase Referer santasgift\.ml spambot=yes
@@ -5404,6 +5407,7 @@ SetEnvIfNoCase Referer tula\.howotorg\.ru spambot=yes
 SetEnvIfNoCase Referer tula\.mdverey\.ru spambot=yes
 SetEnvIfNoCase Referer tupper\-posuda\.ru spambot=yes
 SetEnvIfNoCase Referer tupper\-shop\.ru spambot=yes
+SetEnvIfNoCase Referer turbabitload\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer turbo\-suslik\.org spambot=yes
 SetEnvIfNoCase Referer turist\-strani\.ru spambot=yes
 SetEnvIfNoCase Referer turizm\.bz spambot=yes
@@ -6036,6 +6040,7 @@ SetEnvIfNoCase Referer zarenica\.net spambot=yes
 SetEnvIfNoCase Referer zarepta\.com spambot=yes
 SetEnvIfNoCase Referer zastenchivosti\.net spambot=yes
 SetEnvIfNoCase Referer zastroyka\.org spambot=yes
+SetEnvIfNoCase Referer zatjmuzu\.info spambot=yes
 SetEnvIfNoCase Referer zazagames\.org spambot=yes
 SetEnvIfNoCase Referer zdesformula\.ru spambot=yes
 SetEnvIfNoCase Referer zdesoboi\.com spambot=yes
