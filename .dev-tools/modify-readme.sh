@@ -113,11 +113,11 @@ ed -s $_inputdbA<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4_BETA/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4_BETA/README.md
 q
 IN
 rm $_inputdbA

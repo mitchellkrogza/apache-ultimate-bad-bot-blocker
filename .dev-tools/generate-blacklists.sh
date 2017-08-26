@@ -694,7 +694,7 @@ rm $_inputdb10
 
 # Copy file to correct folder
 # **********************************************
-sudo cp $_apache2 /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/custom.d/globalblacklist.conf
+sudo cp $_apache2 /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4_BETA/custom.d/globalblacklist.conf
 
 # *****************************************************************************************************************
 # *****************************************************************************************************************
