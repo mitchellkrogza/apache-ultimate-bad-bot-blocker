@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.604
-### Bad Referrer Count: 5674
-### Bad Bot Count: 504
+### Version: V3.2017.08.605
+### Bad Referrer Count: 5676
+### Bad Bot Count: 506
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -151,6 +151,8 @@ RewriteCond %{HTTP_USER_AGENT} ^GetRight.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GetWeb.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gigablast.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gigabot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^G\-i\-g\-a\-b\-o\-t.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^G\\\-i\\\-g\\\-a\\\-b\\\-o\\\-t.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Go\-Ahead\-Got\-It.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gotit.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GoZilla.* [NC,OR]
@@ -2283,6 +2285,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fashionindeed\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fast\-wordpress\-start\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fastcrawl\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fastfixing\.tech.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fatfasts\-4tmz\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fatmaelgarny\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*favorcosmetics\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*favoritemoney\.ru.*$ [NC,OR]
@@ -5097,6 +5100,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stoki\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stop\-gepatit\.te\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*store\-rx\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*storehouse\.ua.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stpicks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*stpolice\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*strag\-invest\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*strana\-krasoty\.ru.*$ [NC,OR]

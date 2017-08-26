@@ -1763,6 +1763,7 @@ SetEnvIfNoCase Referer ~*fashion\-stickers\.ru spam_ref
 SetEnvIfNoCase Referer ~*fastcrawl\.com spam_ref
 SetEnvIfNoCase Referer ~*fastfixing\.tech spam_ref
 SetEnvIfNoCase Referer ~*fast\-wordpress\-start\.com spam_ref
+SetEnvIfNoCase Referer ~*fatfasts\-4tmz\.com spam_ref
 SetEnvIfNoCase Referer ~*fatmaelgarny\.com spam_ref
 SetEnvIfNoCase Referer ~*favorcosmetics\.com spam_ref
 SetEnvIfNoCase Referer ~*favoritemoney\.ru spam_ref
@@ -4579,6 +4580,7 @@ SetEnvIfNoCase Referer ~*stoki\.ru spam_ref
 SetEnvIfNoCase Referer ~*stop\-gepatit\.te\.ua spam_ref
 SetEnvIfNoCase Referer ~*storehouse\.ua spam_ref
 SetEnvIfNoCase Referer ~*store\-rx\.com spam_ref
+SetEnvIfNoCase Referer ~*stpicks\.com spam_ref
 SetEnvIfNoCase Referer ~*stpolice\.com spam_ref
 SetEnvIfNoCase Referer ~*strag\-invest\.ru spam_ref
 SetEnvIfNoCase Referer ~*strana\-krasoty\.ru spam_ref

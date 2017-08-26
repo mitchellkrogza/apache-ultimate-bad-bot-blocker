@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.604
-### Bad Referrer Count: 5674
-### Bad Bot Count: 504
+### Version: V3.2017.08.605
+### Bad Referrer Count: 5676
+### Bad Bot Count: 506
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -150,6 +150,8 @@ SetEnvIfNoCase User-Agent ^GetRight.* spambot=yes
 SetEnvIfNoCase User-Agent ^GetWeb.* spambot=yes
 SetEnvIfNoCase User-Agent ^Gigablast.* spambot=yes
 SetEnvIfNoCase User-Agent ^Gigabot.* spambot=yes
+SetEnvIfNoCase User-Agent ^G\-i\-g\-a\-b\-o\-t.* spambot=yes
+SetEnvIfNoCase User-Agent ^G\\\-i\\\-g\\\-a\\\-b\\\-o\\\-t.* spambot=yes
 SetEnvIfNoCase User-Agent ^Go\-Ahead\-Got\-It.* spambot=yes
 SetEnvIfNoCase User-Agent ^Gotit.* spambot=yes
 SetEnvIfNoCase User-Agent ^GoZilla.* spambot=yes
@@ -2282,6 +2284,7 @@ SetEnvIfNoCase Referer fashionindeed\.ml spambot=yes
 SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
 SetEnvIfNoCase Referer fastcrawl\.com spambot=yes
 SetEnvIfNoCase Referer fastfixing\.tech spambot=yes
+SetEnvIfNoCase Referer fatfasts\-4tmz\.com spambot=yes
 SetEnvIfNoCase Referer fatmaelgarny\.com spambot=yes
 SetEnvIfNoCase Referer favorcosmetics\.com spambot=yes
 SetEnvIfNoCase Referer favoritemoney\.ru spambot=yes
@@ -5096,6 +5099,7 @@ SetEnvIfNoCase Referer stoki\.ru spambot=yes
 SetEnvIfNoCase Referer stop\-gepatit\.te\.ua spambot=yes
 SetEnvIfNoCase Referer store\-rx\.com spambot=yes
 SetEnvIfNoCase Referer storehouse\.ua spambot=yes
+SetEnvIfNoCase Referer stpicks\.com spambot=yes
 SetEnvIfNoCase Referer stpolice\.com spambot=yes
 SetEnvIfNoCase Referer strag\-invest\.ru spambot=yes
 SetEnvIfNoCase Referer strana\-krasoty\.ru spambot=yes

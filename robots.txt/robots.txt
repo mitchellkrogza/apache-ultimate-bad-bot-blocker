@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.08.604
-### Updated: Sat Aug 26 11:29:49 SAST 2017
-### Bad Bot Count: 504
+### Version: V3.2017.08.605
+### Updated: Sat Aug 26 12:24:51 SAST 2017
+### Bad Bot Count: 506
 ###################################################
 ### Version Information ##
 
@@ -261,7 +261,11 @@ User-agent: FrontPage
 Disallow:/
 User-agent: Fyrebot
 Disallow:/
+User-agent: G-i-g-a-b-o-t
+Disallow:/
 User-agent: GT::WWW
+Disallow:/
+User-agent: G\-i\-g\-a\-b\-o\-t
 Disallow:/
 User-agent: GalaxyBot
 Disallow:/
