@@ -2519,6 +2519,7 @@ SetEnvIfNoCase Referer ~*itservicesthatworkforyou\.com spam_ref
 SetEnvIfNoCase Referer ~*iusstf\.org spam_ref
 SetEnvIfNoCase Referer ~*ivanstroi\.ru spam_ref
 SetEnvIfNoCase Referer ~*ivoiretechnocom\.ci spam_ref
+SetEnvIfNoCase Referer ~*iwantedmoney\.com spam_ref
 SetEnvIfNoCase Referer ~*iwantmyfreecash\.com spam_ref
 SetEnvIfNoCase Referer ~*iwanttodeliver\.com spam_ref
 SetEnvIfNoCase Referer ~*iweblist\.info spam_ref
@@ -2591,6 +2592,7 @@ SetEnvIfNoCase Referer ~*kadashihotel\.com spam_ref
 SetEnvIfNoCase Referer ~*kaidalibor\.de spam_ref
 SetEnvIfNoCase Referer ~*kalandranis\.gr spam_ref
 SetEnvIfNoCase Referer ~*kalb\.ru spam_ref
+SetEnvIfNoCase Referer ~*kaliningrad\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*kamagragelusa\.net spam_ref
 SetEnvIfNoCase Referer ~*kamalsinha\.com spam_ref
 SetEnvIfNoCase Referer ~*kambasoft\.com spam_ref
@@ -2981,6 +2983,7 @@ SetEnvIfNoCase Referer ~*matb3aa\.com spam_ref
 SetEnvIfNoCase Referer ~*matchpal\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*matematikus\.info spam_ref
 SetEnvIfNoCase Referer ~*mathgym\.com\.au spam_ref
+SetEnvIfNoCase Referer ~*matrixalchemy\.com spam_ref
 SetEnvIfNoCase Referer ~*matsdale\.com spam_ref
 SetEnvIfNoCase Referer ~*mature\.free\-websites\.com spam_ref
 SetEnvIfNoCase Referer ~*max\-eclat\.men spam_ref
@@ -3281,6 +3284,7 @@ SetEnvIfNoCase Referer ~*namenectar\.com spam_ref
 SetEnvIfNoCase Referer ~*napalm51\.nut\.cc spam_ref
 SetEnvIfNoCase Referer ~*naperehresti\.info spam_ref
 SetEnvIfNoCase Referer ~*naphukete\.ru spam_ref
+SetEnvIfNoCase Referer ~*narco24\.me spam_ref
 SetEnvIfNoCase Referer ~*nardulan\.com spam_ref
 SetEnvIfNoCase Referer ~*narkologiya\-belgorod\.ru spam_ref
 SetEnvIfNoCase Referer ~*narkologiya\-orel\.ru spam_ref
@@ -5541,6 +5545,7 @@ SetEnvIfNoCase Referer ~*yougame\.biz spam_ref
 SetEnvIfNoCase Referer ~*yougetsignal\.com spam_ref
 SetEnvIfNoCase Referer ~*youghbould\.wordpress\.com spam_ref
 SetEnvIfNoCase Referer ~*yougotanewdomain\.com spam_ref
+SetEnvIfNoCase Referer ~*youjizz\.com spam_ref
 SetEnvIfNoCase Referer ~*youjizz\.vc spam_ref
 SetEnvIfNoCase Referer ~*youporn\-forum\.ga spam_ref
 SetEnvIfNoCase Referer ~*youporn\-ru\.com spam_ref

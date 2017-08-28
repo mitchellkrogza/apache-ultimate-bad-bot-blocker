@@ -81,6 +81,7 @@ DatabaseDriverMysqli
 Demon
 Deusu
 Devil
+Digincore
 Dirbuster
 Disco
 Discobot
@@ -129,6 +130,7 @@ GT::WWW
 G\-i\-g\-a\-b\-o\-t
 GalaxyBot
 Genieo
+GermCrawler
 GetRight
 GetWeb
 Getintent
@@ -185,6 +187,7 @@ JustView
 Jyxobot
 Kenjin Spider
 Keyword Density
+Kozmosbot
 LNSpiderguy
 LWP::Simple
 Lanshanbot
@@ -253,6 +256,7 @@ NetSpider
 NetZIP
 Netcraft
 Nettrack
+Netvibes
 NextGenSearchBot
 Nibbler
 Niki-bot
@@ -489,6 +493,7 @@ autoemailspider
 backlink-check
 cognitiveseo
 com.plumanalytics
+demandbase-bot
 eCatch
 fq
 instabid
@@ -496,6 +501,7 @@ internetVista monitor
 lwp-request
 lwp-trivial
 magpie-crawler
+mediawords
 netEstate NE Crawler
 page scorer
 pcBrowser

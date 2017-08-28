@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.08.607
-### Updated: Sat Aug 26 14:13:34 SAST 2017
-### Bad Bot Count: 506
+### Version: V3.2017.08.608
+### Updated: Mon Aug 28 11:02:04 SAST 2017
+### Bad Bot Count: 512
 ###################################################
 ### Version Information ##
 
@@ -175,6 +175,8 @@ User-agent: Deusu
 Disallow:/
 User-agent: Devil
 Disallow:/
+User-agent: Digincore
+Disallow:/
 User-agent: Dirbuster
 Disallow:/
 User-agent: Disco
@@ -270,6 +272,8 @@ Disallow:/
 User-agent: GalaxyBot
 Disallow:/
 User-agent: Genieo
+Disallow:/
+User-agent: GermCrawler
 Disallow:/
 User-agent: GetRight
 Disallow:/
@@ -382,6 +386,8 @@ Disallow:/
 User-agent: Kenjin Spider
 Disallow:/
 User-agent: Keyword Density
+Disallow:/
+User-agent: Kozmosbot
 Disallow:/
 User-agent: LNSpiderguy
 Disallow:/
@@ -518,6 +524,8 @@ Disallow:/
 User-agent: Netcraft
 Disallow:/
 User-agent: Nettrack
+Disallow:/
+User-agent: Netvibes
 Disallow:/
 User-agent: NextGenSearchBot
 Disallow:/
@@ -991,6 +999,8 @@ User-agent: cognitiveseo
 Disallow:/
 User-agent: com.plumanalytics
 Disallow:/
+User-agent: demandbase-bot
+Disallow:/
 User-agent: eCatch
 Disallow:/
 User-agent: fq
@@ -1004,6 +1014,8 @@ Disallow:/
 User-agent: lwp-trivial
 Disallow:/
 User-agent: magpie-crawler
+Disallow:/
+User-agent: mediawords
 Disallow:/
 User-agent: netEstate NE Crawler
 Disallow:/
