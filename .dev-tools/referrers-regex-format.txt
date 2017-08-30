@@ -1965,6 +1965,7 @@ SetEnvIfNoCase Referer ~*funnymama\.com spam_ref
 SetEnvIfNoCase Referer ~*funnypica\.com spam_ref
 SetEnvIfNoCase Referer ~*funponsel\.com spam_ref
 SetEnvIfNoCase Referer ~*funtoonez\.com spam_ref
+SetEnvIfNoCase Referer ~*fusoradio\.info spam_ref
 SetEnvIfNoCase Referer ~*futbolkisales\.ru spam_ref
 SetEnvIfNoCase Referer ~*fx\-brokers\-review\.com spam_ref
 SetEnvIfNoCase Referer ~*fxgallery\.com spam_ref
@@ -1985,6 +1986,7 @@ SetEnvIfNoCase Referer ~*galleryawesome\.com spam_ref
 SetEnvIfNoCase Referer ~*gallerylisting\.com spam_ref
 SetEnvIfNoCase Referer ~*gallery\.rennlist\.com spam_ref
 SetEnvIfNoCase Referer ~*gallictures\.com spam_ref
+SetEnvIfNoCase Referer ~*gambarxkata\.co spam_ref
 SetEnvIfNoCase Referer ~*gamblingnerd\.com spam_ref
 SetEnvIfNoCase Referer ~*gamedayassist\.com spam_ref
 SetEnvIfNoCase Referer ~*gamedayhouse\.com spam_ref
@@ -4277,6 +4279,7 @@ SetEnvIfNoCase Referer ~*servisural\.ru spam_ref
 SetEnvIfNoCase Referer ~*serw\.clicksor\.com spam_ref
 SetEnvIfNoCase Referer ~*seryeznie\-znakomstva\.ru spam_ref
 SetEnvIfNoCase Referer ~*sethrollins\.net spam_ref
+SetEnvIfNoCase Referer ~*sevendays\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*sevenstars7\.com spam_ref
 SetEnvIfNoCase Referer ~*se\-welding\.ru spam_ref
 SetEnvIfNoCase Referer ~*sexad\.net spam_ref
@@ -4390,6 +4393,7 @@ SetEnvIfNoCase Referer ~*site\-auditor\.online spam_ref
 SetEnvIfNoCase Referer ~*sitebeam\.net spam_ref
 SetEnvIfNoCase Referer ~*siteexpress\.co\.il spam_ref
 SetEnvIfNoCase Referer ~*siteheart\.net spam_ref
+SetEnvIfNoCase Referer ~*siteimprove\.com spam_ref
 SetEnvIfNoCase Referer ~*siteonomy\.com spam_ref
 SetEnvIfNoCase Referer ~*siteripz\.net spam_ref
 SetEnvIfNoCase Referer ~*site\-speed\-checker\.site spam_ref

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.609
-### Bad Referrer Count: 5681
+### Version: V3.2017.08.610
+### Bad Referrer Count: 5685
 ### Bad Bot Count: 512
 ### Version Information ##
 
@@ -2490,6 +2490,7 @@ SetEnvIfNoCase Referer funnymama\.com spambot=yes
 SetEnvIfNoCase Referer funnypica\.com spambot=yes
 SetEnvIfNoCase Referer funponsel\.com spambot=yes
 SetEnvIfNoCase Referer funtoonez\.com spambot=yes
+SetEnvIfNoCase Referer fusoradio\.info spambot=yes
 SetEnvIfNoCase Referer futbolkisales\.ru spambot=yes
 SetEnvIfNoCase Referer fx\-brokers\-review\.com spambot=yes
 SetEnvIfNoCase Referer fxgallery\.com spambot=yes
@@ -2511,6 +2512,7 @@ SetEnvIfNoCase Referer gallery\.rennlist\.com spambot=yes
 SetEnvIfNoCase Referer galleryawesome\.com spambot=yes
 SetEnvIfNoCase Referer gallerylisting\.com spambot=yes
 SetEnvIfNoCase Referer gallictures\.com spambot=yes
+SetEnvIfNoCase Referer gambarxkata\.co spambot=yes
 SetEnvIfNoCase Referer gamblingnerd\.com spambot=yes
 SetEnvIfNoCase Referer game\-mmorpg\.net spambot=yes
 SetEnvIfNoCase Referer game\-top\.su spambot=yes
@@ -4805,6 +4807,7 @@ SetEnvIfNoCase Referer servisural\.ru spambot=yes
 SetEnvIfNoCase Referer serw\.clicksor\.com spambot=yes
 SetEnvIfNoCase Referer seryeznie\-znakomstva\.ru spambot=yes
 SetEnvIfNoCase Referer sethrollins\.net spambot=yes
+SetEnvIfNoCase Referer sevendays\.com\.ua spambot=yes
 SetEnvIfNoCase Referer sevenstars7\.com spambot=yes
 SetEnvIfNoCase Referer sex\-dating\.co spambot=yes
 SetEnvIfNoCase Referer sex\-pr\.net spambot=yes
@@ -4920,6 +4923,7 @@ SetEnvIfNoCase Referer site5\.com spambot=yes
 SetEnvIfNoCase Referer sitebeam\.net spambot=yes
 SetEnvIfNoCase Referer siteexpress\.co\.il spambot=yes
 SetEnvIfNoCase Referer siteheart\.net spambot=yes
+SetEnvIfNoCase Referer siteimprove\.com spambot=yes
 SetEnvIfNoCase Referer siteonomy\.com spambot=yes
 SetEnvIfNoCase Referer siteripz\.net spambot=yes
 SetEnvIfNoCase Referer sitevaluation\.com spambot=yes
