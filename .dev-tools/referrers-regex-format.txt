@@ -911,6 +911,7 @@ SetEnvIfNoCase Referer ~*bycontext\.com spam_ref
 SetEnvIfNoCase Referer ~*byme\.se spam_ref
 SetEnvIfNoCase Referer ~*bytimedance\.ru spam_ref
 SetEnvIfNoCase Referer ~*bzero1jewelry\.net spam_ref
+SetEnvIfNoCase Referer ~*c1\.onedmp\.com spam_ref
 SetEnvIfNoCase Referer ~*cablecar\.us spam_ref
 SetEnvIfNoCase Referer ~*cacheimages\.com spam_ref
 SetEnvIfNoCase Referer ~*cactussoft\.biz spam_ref
@@ -1904,6 +1905,7 @@ SetEnvIfNoCase Referer ~*foxinsocks\.ru spam_ref
 SetEnvIfNoCase Referer ~*foxtechfpv\.com spam_ref
 SetEnvIfNoCase Referer ~*foxweber\.com spam_ref
 SetEnvIfNoCase Referer ~*foxydeal\.com spam_ref
+SetEnvIfNoCase Referer ~*franecki\.net spam_ref
 SetEnvIfNoCase Referer ~*fr\-bearings\.ru spam_ref
 SetEnvIfNoCase Referer ~*freakycheats\.com spam_ref
 SetEnvIfNoCase Referer ~*freecamdollars\.com spam_ref
@@ -3660,6 +3662,7 @@ SetEnvIfNoCase Referer ~*pintattoos\.com spam_ref
 SetEnvIfNoCase Referer ~*pinwallpaper\.top spam_ref
 SetEnvIfNoCase Referer ~*pinwallpaper\.xyz spam_ref
 SetEnvIfNoCase Referer ~*pio\.polytopesexempt\.com spam_ref
+SetEnvIfNoCase Referer ~*pipki\.r\.acdnpro\.com spam_ref
 SetEnvIfNoCase Referer ~*piratecams\.com spam_ref
 SetEnvIfNoCase Referer ~*pirateday\.ru spam_ref
 SetEnvIfNoCase Referer ~*piter\.xrus\.org spam_ref

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.08.611
-### Bad Referrer Count: 5693
+### Version: V3.2017.08.612
+### Bad Referrer Count: 5696
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1439,6 +1439,7 @@ SetEnvIfNoCase Referer bytimedance\.ru spambot=yes
 SetEnvIfNoCase Referer bzero1jewelry\.net spambot=yes
 SetEnvIfNoCase Referer c\-english\.ru spambot=yes
 SetEnvIfNoCase Referer c\-gainsbourg\.com spambot=yes
+SetEnvIfNoCase Referer c1\.onedmp\.com spambot=yes
 SetEnvIfNoCase Referer cablecar\.us spambot=yes
 SetEnvIfNoCase Referer cacheimages\.com spambot=yes
 SetEnvIfNoCase Referer cactussoft\.biz spambot=yes
@@ -2432,6 +2433,7 @@ SetEnvIfNoCase Referer foxweber\.com spambot=yes
 SetEnvIfNoCase Referer foxydeal\.com spambot=yes
 SetEnvIfNoCase Referer fr\-bearings\.ru spambot=yes
 SetEnvIfNoCase Referer fr\.netlog\.com spambot=yes
+SetEnvIfNoCase Referer franecki\.net spambot=yes
 SetEnvIfNoCase Referer freakycheats\.com spambot=yes
 SetEnvIfNoCase Referer free\-deals\.faith spambot=yes
 SetEnvIfNoCase Referer free\-fb\-traffic\.com spambot=yes
@@ -4186,6 +4188,7 @@ SetEnvIfNoCase Referer pintattoos\.com spambot=yes
 SetEnvIfNoCase Referer pinwallpaper\.top spambot=yes
 SetEnvIfNoCase Referer pinwallpaper\.xyz spambot=yes
 SetEnvIfNoCase Referer pio\.polytopesexempt\.com spambot=yes
+SetEnvIfNoCase Referer pipki\.r\.acdnpro\.com spambot=yes
 SetEnvIfNoCase Referer piratecams\.com spambot=yes
 SetEnvIfNoCase Referer pirateday\.ru spambot=yes
 SetEnvIfNoCase Referer piter\.xrus\.org spambot=yes
