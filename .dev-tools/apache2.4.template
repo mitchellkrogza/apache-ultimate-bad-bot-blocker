@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.08.610
-### Updated: Wed Aug 30 15:23:42 SAST 2017
-### Bad Referrer Count: 5685
-### Bad Bot Count: 512
+### Version: V3.2017.08.611
+### Updated: Thu Aug 31 11:19:22 SAST 2017
+### Bad Referrer Count: 5693
+### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
 
@@ -663,6 +663,7 @@ BrowserMatchNoCase "^(.*?)(\bWWW-Collector-E\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW-Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW::Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWWOFFLE\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx09Mozilla\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bx22Mozilla\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon_WebSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon\ WebSpider\b)(.*)$" bad_bot
@@ -994,6 +995,7 @@ SetEnvIfNoCase Referer ~*actulite\.com spam_ref
 SetEnvIfNoCase Referer ~*acunetix\-referrer\.com spam_ref
 SetEnvIfNoCase Referer ~*adamoads\.com spam_ref
 SetEnvIfNoCase Referer ~*adanih\.com spam_ref
+SetEnvIfNoCase Referer ~*adbetclickin\.pink spam_ref
 SetEnvIfNoCase Referer ~*adcash\.com spam_ref
 SetEnvIfNoCase Referer ~*adclickservice\.com spam_ref
 SetEnvIfNoCase Referer ~*adclickthru\.net spam_ref
@@ -1787,6 +1789,7 @@ SetEnvIfNoCase Referer ~*cartierlove2u\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cartierlovebraceletreplica\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cartierlovebracelet\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cartierloveringreplica\.xyz spam_ref
+SetEnvIfNoCase Referer ~*cartierlovestore\.com spam_ref
 SetEnvIfNoCase Referer ~*cartierlovestore\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cartierlove\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cartierreplica\.pw spam_ref
@@ -2088,6 +2091,7 @@ SetEnvIfNoCase Referer ~*crazyprotocol\.com spam_ref
 SetEnvIfNoCase Referer ~*crd\.clan\.su spam_ref
 SetEnvIfNoCase Referer ~*creams\.makeforum\.eu spam_ref
 SetEnvIfNoCase Referer ~*creativehutindia\.com spam_ref
+SetEnvIfNoCase Referer ~*creatives\.adbetclickin\.pink spam_ref
 SetEnvIfNoCase Referer ~*creditmoney\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*crest3d\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest\-poloski\.ru spam_ref
@@ -2644,6 +2648,7 @@ SetEnvIfNoCase Referer ~*findclan\.org spam_ref
 SetEnvIfNoCase Referer ~*findpik\.com spam_ref
 SetEnvIfNoCase Referer ~*findsexguide\.com spam_ref
 SetEnvIfNoCase Referer ~*findthe\.pet spam_ref
+SetEnvIfNoCase Referer ~*finejewelryshop\.ru spam_ref
 SetEnvIfNoCase Referer ~*finemanteam\.com spam_ref
 SetEnvIfNoCase Referer ~*finstroy\.net spam_ref
 SetEnvIfNoCase Referer ~*finteks\.ru spam_ref
@@ -4132,6 +4137,7 @@ SetEnvIfNoCase Referer ~*neodownload\.webcam spam_ref
 SetEnvIfNoCase Referer ~*nero\-us\.com spam_ref
 SetEnvIfNoCase Referer ~*nerudlogistik\.ru spam_ref
 SetEnvIfNoCase Referer ~*netallergy\.ru spam_ref
+SetEnvIfNoCase Referer ~*netanalytics\.xyz spam_ref
 SetEnvIfNoCase Referer ~*netfacet\.net spam_ref
 SetEnvIfNoCase Referer ~*netoil\.no spam_ref
 SetEnvIfNoCase Referer ~*netpics\.org spam_ref
@@ -4254,6 +4260,7 @@ SetEnvIfNoCase Referer ~*okroshki\.ru spam_ref
 SetEnvIfNoCase Referer ~*ok\.ru spam_ref
 SetEnvIfNoCase Referer ~*oktube\.ru spam_ref
 SetEnvIfNoCase Referer ~*ok\-ua\.info spam_ref
+SetEnvIfNoCase Referer ~*okuos\.com spam_ref
 SetEnvIfNoCase Referer ~*old\-rock\.com spam_ref
 SetEnvIfNoCase Referer ~*olgacvetmet\.com spam_ref
 SetEnvIfNoCase Referer ~*o\.light\.d0t\.ru spam_ref
@@ -5093,6 +5100,7 @@ SetEnvIfNoCase Referer ~*service\.adtech\.fr spam_ref
 SetEnvIfNoCase Referer ~*service\.adtech\.us spam_ref
 SetEnvIfNoCase Referer ~*servicecenter\.co\.ua spam_ref
 SetEnvIfNoCase Referer ~*service\-core\.ru spam_ref
+SetEnvIfNoCase Referer ~*serving\.adbetclickin\.pink spam_ref
 SetEnvIfNoCase Referer ~*servingnotice\.com spam_ref
 SetEnvIfNoCase Referer ~*servisural\.ru spam_ref
 SetEnvIfNoCase Referer ~*serw\.clicksor\.com spam_ref
@@ -6120,6 +6128,7 @@ SetEnvIfNoCase Referer ~*wesharepics\.com spam_ref
 SetEnvIfNoCase Referer ~*wesharepics\.info spam_ref
 SetEnvIfNoCase Referer ~*wesharepics\.site spam_ref
 SetEnvIfNoCase Referer ~*westen\-v\.life spam_ref
+SetEnvIfNoCase Referer ~*westen\-z\.life spam_ref
 SetEnvIfNoCase Referer ~*westermarkanjou\.se spam_ref
 SetEnvIfNoCase Referer ~*westsextube\.com spam_ref
 SetEnvIfNoCase Referer ~*westum\.se spam_ref
