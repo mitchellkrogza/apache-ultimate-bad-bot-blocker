@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.08.612
-### Updated: Thu Aug 31 13:56:55 SAST 2017
-### Bad Referrer Count: 5696
+### Version: V3.2017.09.613
+### Updated: Fri Sep  1 09:55:24 SAST 2017
+### Bad Referrer Count: 5695
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -5450,7 +5450,6 @@ SetEnvIfNoCase Referer ~*stuff\-about\-money\.com spam_ref
 SetEnvIfNoCase Referer ~*styro\.ru spam_ref
 SetEnvIfNoCase Referer ~*success\-seo\.com spam_ref
 SetEnvIfNoCase Referer ~*suchenindeutschland\.com spam_ref
-SetEnvIfNoCase Referer ~*suche\.t\-online\.de spam_ref
 SetEnvIfNoCase Referer ~*sudexpert66\.ru spam_ref
 SetEnvIfNoCase Referer ~*sugarkun\.com spam_ref
 SetEnvIfNoCase Referer ~*suggest\-keywords\.com spam_ref

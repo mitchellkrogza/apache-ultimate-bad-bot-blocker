@@ -4630,7 +4630,6 @@ SetEnvIfNoCase Referer ~*stuff\-about\-money\.com spam_ref
 SetEnvIfNoCase Referer ~*styro\.ru spam_ref
 SetEnvIfNoCase Referer ~*success\-seo\.com spam_ref
 SetEnvIfNoCase Referer ~*suchenindeutschland\.com spam_ref
-SetEnvIfNoCase Referer ~*suche\.t\-online\.de spam_ref
 SetEnvIfNoCase Referer ~*sudexpert66\.ru spam_ref
 SetEnvIfNoCase Referer ~*sugarkun\.com spam_ref
 SetEnvIfNoCase Referer ~*suggest\-keywords\.com spam_ref
