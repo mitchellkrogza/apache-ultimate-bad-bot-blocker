@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.615
-### Bad Referrer Count: 5731
+### Version: V3.2017.09.616
+### Bad Referrer Count: 5738
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1266,6 +1266,7 @@ SetEnvIfNoCase Referer bioca\.org spambot=yes
 SetEnvIfNoCase Referer bioscorp\.ru spambot=yes
 SetEnvIfNoCase Referer birzha\-truda\.eu spambot=yes
 SetEnvIfNoCase Referer bitcoinpile\.com spambot=yes
+SetEnvIfNoCase Referer bitcoinremote\.com spambot=yes
 SetEnvIfNoCase Referer bitcoins\-live\.ru spambot=yes
 SetEnvIfNoCase Referer biteg\.xyz spambot=yes
 SetEnvIfNoCase Referer bitnote\.co spambot=yes
@@ -1840,6 +1841,7 @@ SetEnvIfNoCase Referer cypernhuset\.se spambot=yes
 SetEnvIfNoCase Referer cyprusbuyproperties\.com spambot=yes
 SetEnvIfNoCase Referer cyse\.tk spambot=yes
 SetEnvIfNoCase Referer czat\.wp\.pl spambot=yes
+SetEnvIfNoCase Referer d\-black\.bz spambot=yes
 SetEnvIfNoCase Referer d0t\.ru spambot=yes
 SetEnvIfNoCase Referer dafatiri\.com spambot=yes
 SetEnvIfNoCase Referer dailyfinancefix\.com spambot=yes
@@ -1994,6 +1996,7 @@ SetEnvIfNoCase Referer domaincdn\.xyz spambot=yes
 SetEnvIfNoCase Referer domaincheck\.io spambot=yes
 SetEnvIfNoCase Referer domaincrawler\.com spambot=yes
 SetEnvIfNoCase Referer domaineaneblanc\.com spambot=yes
+SetEnvIfNoCase Referer domainroam\.win spambot=yes
 SetEnvIfNoCase Referer domainsatcost\.com spambot=yes
 SetEnvIfNoCase Referer domashneeruporno\.com spambot=yes
 SetEnvIfNoCase Referer domcran\.net spambot=yes
@@ -3372,6 +3375,7 @@ SetEnvIfNoCase Referer limads\.men spambot=yes
 SetEnvIfNoCase Referer limtu\.ifmo\.ru spambot=yes
 SetEnvIfNoCase Referer lincolntheatre\.com spambot=yes
 SetEnvIfNoCase Referer linerdrilling\.com spambot=yes
+SetEnvIfNoCase Referer lineshops\.biz spambot=yes
 SetEnvIfNoCase Referer link\.ac spambot=yes
 SetEnvIfNoCase Referer linkarena\.com spambot=yes
 SetEnvIfNoCase Referer linkbolic\.com spambot=yes
@@ -3725,6 +3729,7 @@ SetEnvIfNoCase Referer morlat\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer moroccosurfadventures\.com spambot=yes
 SetEnvIfNoCase Referer moscow\-clining\.ru spambot=yes
 SetEnvIfNoCase Referer moscow\-region\.ru spambot=yes
+SetEnvIfNoCase Referer moscow\.online\-podarki\.com spambot=yes
 SetEnvIfNoCase Referer moscow\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer mosdverka\.ru spambot=yes
 SetEnvIfNoCase Referer moskva\.nodup\.ru spambot=yes
@@ -3781,6 +3786,7 @@ SetEnvIfNoCase Referer mustat\.com spambot=yes
 SetEnvIfNoCase Referer mustwineblog\.com spambot=yes
 SetEnvIfNoCase Referer muz\-baza\.net spambot=yes
 SetEnvIfNoCase Referer muz\-shoes\.ru spambot=yes
+SetEnvIfNoCase Referer muz\-tracker\.net spambot=yes
 SetEnvIfNoCase Referer muzaporn\.com spambot=yes
 SetEnvIfNoCase Referer muznachas\-service\.ru spambot=yes
 SetEnvIfNoCase Referer muztops\.ru spambot=yes
@@ -3975,6 +3981,7 @@ SetEnvIfNoCase Referer oddamzadarmo\.eu spambot=yes
 SetEnvIfNoCase Referer odesproperty\.com spambot=yes
 SetEnvIfNoCase Referer odoratus\.net spambot=yes
 SetEnvIfNoCase Referer odywpjtw\.bloger\.index\.hr spambot=yes
+SetEnvIfNoCase Referer oecnhs\.info spambot=yes
 SetEnvIfNoCase Referer offer\.camp spambot=yes
 SetEnvIfNoCase Referer offer\.wpsecurity\.website spambot=yes
 SetEnvIfNoCase Referer offergroup\.info spambot=yes

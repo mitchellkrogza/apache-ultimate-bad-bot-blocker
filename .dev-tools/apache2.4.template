@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.615
-### Updated: Wed Sep  6 10:14:03 SAST 2017
-### Bad Referrer Count: 5731
+### Version: V3.2017.09.616
+### Updated: Thu Sep  7 10:16:58 SAST 2017
+### Bad Referrer Count: 5738
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -1559,6 +1559,7 @@ SetEnvIfNoCase Referer ~*bioscorp\.ru spam_ref
 SetEnvIfNoCase Referer ~*bio\.trade\-jp\.net spam_ref
 SetEnvIfNoCase Referer ~*birzha\-truda\.eu spam_ref
 SetEnvIfNoCase Referer ~*bitcoinpile\.com spam_ref
+SetEnvIfNoCase Referer ~*bitcoinremote\.com spam_ref
 SetEnvIfNoCase Referer ~*bitcoins\-live\.ru spam_ref
 SetEnvIfNoCase Referer ~*biteg\.xyz spam_ref
 SetEnvIfNoCase Referer ~*bitnote\.co spam_ref
@@ -2165,6 +2166,7 @@ SetEnvIfNoCase Referer ~*daydream\-studio\.ru spam_ref
 SetEnvIfNoCase Referer ~*dayibiao\.com spam_ref
 SetEnvIfNoCase Referer ~*daymusam\.com spam_ref
 SetEnvIfNoCase Referer ~*day\-news\.info spam_ref
+SetEnvIfNoCase Referer ~*d\-black\.bz spam_ref
 SetEnvIfNoCase Referer ~*dbmkfhqk\.bloger\.index\.hr spam_ref
 SetEnvIfNoCase Referer ~*dcj\-nn\.ru spam_ref
 SetEnvIfNoCase Referer ~*ddlmega\.net spam_ref
@@ -2286,6 +2288,7 @@ SetEnvIfNoCase Referer ~*domaincdn\.xyz spam_ref
 SetEnvIfNoCase Referer ~*domaincheck\.io spam_ref
 SetEnvIfNoCase Referer ~*domaincrawler\.com spam_ref
 SetEnvIfNoCase Referer ~*domaineaneblanc\.com spam_ref
+SetEnvIfNoCase Referer ~*domainroam\.win spam_ref
 SetEnvIfNoCase Referer ~*domainsatcost\.com spam_ref
 SetEnvIfNoCase Referer ~*domain\-submit\.info spam_ref
 SetEnvIfNoCase Referer ~*domain\-tracker\.com spam_ref
@@ -3666,6 +3669,7 @@ SetEnvIfNoCase Referer ~*limads\.men spam_ref
 SetEnvIfNoCase Referer ~*limtu\.ifmo\.ru spam_ref
 SetEnvIfNoCase Referer ~*lincolntheatre\.com spam_ref
 SetEnvIfNoCase Referer ~*linerdrilling\.com spam_ref
+SetEnvIfNoCase Referer ~*lineshops\.biz spam_ref
 SetEnvIfNoCase Referer ~*link\.ac spam_ref
 SetEnvIfNoCase Referer ~*linkarena\.com spam_ref
 SetEnvIfNoCase Referer ~*linkbolic\.com spam_ref
@@ -4018,6 +4022,7 @@ SetEnvIfNoCase Referer ~*morf\.snn\.gr spam_ref
 SetEnvIfNoCase Referer ~*morlat\.altervista\.org spam_ref
 SetEnvIfNoCase Referer ~*moroccosurfadventures\.com spam_ref
 SetEnvIfNoCase Referer ~*moscow\-clining\.ru spam_ref
+SetEnvIfNoCase Referer ~*moscow\.online\-podarki\.com spam_ref
 SetEnvIfNoCase Referer ~*moscow\-region\.ru spam_ref
 SetEnvIfNoCase Referer ~*moscow\.xrus\.org spam_ref
 SetEnvIfNoCase Referer ~*mosdverka\.ru spam_ref
@@ -4078,6 +4083,7 @@ SetEnvIfNoCase Referer ~*muz\-baza\.net spam_ref
 SetEnvIfNoCase Referer ~*muznachas\-service\.ru spam_ref
 SetEnvIfNoCase Referer ~*muz\-shoes\.ru spam_ref
 SetEnvIfNoCase Referer ~*muztops\.ru spam_ref
+SetEnvIfNoCase Referer ~*muz\-tracker\.net spam_ref
 SetEnvIfNoCase Referer ~*mvpicton\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*mwtpludn\.review spam_ref
 SetEnvIfNoCase Referer ~*myanyone\.net spam_ref
@@ -4263,6 +4269,7 @@ SetEnvIfNoCase Referer ~*oddamzadarmo\.eu spam_ref
 SetEnvIfNoCase Referer ~*odesproperty\.com spam_ref
 SetEnvIfNoCase Referer ~*odoratus\.net spam_ref
 SetEnvIfNoCase Referer ~*odywpjtw\.bloger\.index\.hr spam_ref
+SetEnvIfNoCase Referer ~*oecnhs\.info spam_ref
 SetEnvIfNoCase Referer ~*offer\.camp spam_ref
 SetEnvIfNoCase Referer ~*offergroup\.info spam_ref
 SetEnvIfNoCase Referer ~*offers\.bycontext\.com spam_ref
