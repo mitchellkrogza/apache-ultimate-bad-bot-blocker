@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.616
-### Bad Referrer Count: 5738
+### Version: V3.2017.09.617
+### Bad Referrer Count: 5742
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -3154,6 +3154,7 @@ SetEnvIfNoCase Referer kamalsinha\.com spambot=yes
 SetEnvIfNoCase Referer kambasoft\.com spambot=yes
 SetEnvIfNoCase Referer kamen\-e\.ru spambot=yes
 SetEnvIfNoCase Referer kamorel\.com spambot=yes
+SetEnvIfNoCase Referer kandidos\.com spambot=yes
 SetEnvIfNoCase Referer kanimage\.com spambot=yes
 SetEnvIfNoCase Referer karachev\-city\.ru spambot=yes
 SetEnvIfNoCase Referer karadene\.com spambot=yes
@@ -3504,6 +3505,7 @@ SetEnvIfNoCase Referer mall\.uk spambot=yes
 SetEnvIfNoCase Referer malls\.com spambot=yes
 SetEnvIfNoCase Referer malwareremovalcenter\.com spambot=yes
 SetEnvIfNoCase Referer managerpak204\.weebly\.com spambot=yes
+SetEnvIfNoCase Referer manifestation\.betteroffers\.review spambot=yes
 SetEnvIfNoCase Referer manipulyator\-peterburg\.ru spambot=yes
 SetEnvIfNoCase Referer mansparskats\.com spambot=yes
 SetEnvIfNoCase Referer mantramusic\.ru spambot=yes
@@ -4221,6 +4223,7 @@ SetEnvIfNoCase Referer pio\.polytopesexempt\.com spambot=yes
 SetEnvIfNoCase Referer pipki\.r\.acdnpro\.com spambot=yes
 SetEnvIfNoCase Referer piratecams\.com spambot=yes
 SetEnvIfNoCase Referer pirateday\.ru spambot=yes
+SetEnvIfNoCase Referer pisanieprac\.info spambot=yes
 SetEnvIfNoCase Referer piter\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer piulatte\.cz spambot=yes
 SetEnvIfNoCase Referer piuminiita\.com spambot=yes
@@ -5870,6 +5873,7 @@ SetEnvIfNoCase Referer welck\.octopis\.com spambot=yes
 SetEnvIfNoCase Referer welcomeauto\.ru spambot=yes
 SetEnvIfNoCase Referer wellcome2slovenia\.ru spambot=yes
 SetEnvIfNoCase Referer wemarketing\.se spambot=yes
+SetEnvIfNoCase Referer wemedinc\.com spambot=yes
 SetEnvIfNoCase Referer weprik\.ru spambot=yes
 SetEnvIfNoCase Referer wesharepics\.com spambot=yes
 SetEnvIfNoCase Referer wesharepics\.info spambot=yes

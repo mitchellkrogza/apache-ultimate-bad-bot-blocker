@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.616
-### Updated: Thu Sep  7 10:16:58 SAST 2017
-### Bad Referrer Count: 5738
+### Version: V3.2017.09.617
+### Updated: Fri Sep  8 10:45:10 SAST 2017
+### Bad Referrer Count: 5742
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -3448,6 +3448,7 @@ SetEnvIfNoCase Referer ~*kambasoft\.com spam_ref
 SetEnvIfNoCase Referer ~*kam\-dom\.ru spam_ref
 SetEnvIfNoCase Referer ~*kamen\-e\.ru spam_ref
 SetEnvIfNoCase Referer ~*kamorel\.com spam_ref
+SetEnvIfNoCase Referer ~*kandidos\.com spam_ref
 SetEnvIfNoCase Referer ~*kanimage\.com spam_ref
 SetEnvIfNoCase Referer ~*karachev\-city\.ru spam_ref
 SetEnvIfNoCase Referer ~*karadene\.com spam_ref
@@ -3796,6 +3797,7 @@ SetEnvIfNoCase Referer ~*malls\.com spam_ref
 SetEnvIfNoCase Referer ~*mall\.uk spam_ref
 SetEnvIfNoCase Referer ~*malwareremovalcenter\.com spam_ref
 SetEnvIfNoCase Referer ~*managerpak204\.weebly\.com spam_ref
+SetEnvIfNoCase Referer ~*manifestation\.betteroffers\.review spam_ref
 SetEnvIfNoCase Referer ~*manipulyator\-peterburg\.ru spam_ref
 SetEnvIfNoCase Referer ~*mansparskats\.com spam_ref
 SetEnvIfNoCase Referer ~*mantramusic\.ru spam_ref
@@ -4515,6 +4517,7 @@ SetEnvIfNoCase Referer ~*pio\.polytopesexempt\.com spam_ref
 SetEnvIfNoCase Referer ~*pipki\.r\.acdnpro\.com spam_ref
 SetEnvIfNoCase Referer ~*piratecams\.com spam_ref
 SetEnvIfNoCase Referer ~*pirateday\.ru spam_ref
+SetEnvIfNoCase Referer ~*pisanieprac\.info spam_ref
 SetEnvIfNoCase Referer ~*piter\.xrus\.org spam_ref
 SetEnvIfNoCase Referer ~*piulatte\.cz spam_ref
 SetEnvIfNoCase Referer ~*piuminiita\.com spam_ref
@@ -6163,6 +6166,7 @@ SetEnvIfNoCase Referer ~*welck\.octopis\.com spam_ref
 SetEnvIfNoCase Referer ~*welcomeauto\.ru spam_ref
 SetEnvIfNoCase Referer ~*wellcome2slovenia\.ru spam_ref
 SetEnvIfNoCase Referer ~*wemarketing\.se spam_ref
+SetEnvIfNoCase Referer ~*wemedinc\.com spam_ref
 SetEnvIfNoCase Referer ~*weprik\.ru spam_ref
 SetEnvIfNoCase Referer ~*wesharepics\.com spam_ref
 SetEnvIfNoCase Referer ~*wesharepics\.info spam_ref
