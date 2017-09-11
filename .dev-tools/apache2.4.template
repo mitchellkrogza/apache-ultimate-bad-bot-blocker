@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.622
-### Updated: Mon Sep 11 10:38:43 SAST 2017
-### Bad Referrer Count: 5761
+### Version: V3.2017.09.623
+### Updated: Mon Sep 11 12:20:00 SAST 2017
+### Bad Referrer Count: 5768
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -1706,6 +1706,7 @@ SetEnvIfNoCase Referer ~*businesn\.men spam_ref
 SetEnvIfNoCase Referer ~*business\-made\-fun\.com spam_ref
 SetEnvIfNoCase Referer ~*businesxxl\.com spam_ref
 SetEnvIfNoCase Referer ~*bus\-offer\.com spam_ref
+SetEnvIfNoCase Referer ~*butstrap\.space spam_ref
 SetEnvIfNoCase Referer ~*buttons\-for\-website\.com spam_ref
 SetEnvIfNoCase Referer ~*buttons\-for\-your\-website\.com spam_ref
 SetEnvIfNoCase Referer ~*buyantiviralwp\.com spam_ref
@@ -2127,6 +2128,7 @@ SetEnvIfNoCase Referer ~*customcollegeessays\.net spam_ref
 SetEnvIfNoCase Referer ~*custom\-electric\-guitar\.com spam_ref
 SetEnvIfNoCase Referer ~*customergrowthsystems\.com spam_ref
 SetEnvIfNoCase Referer ~*customerguru\.in spam_ref
+SetEnvIfNoCase Referer ~*customerpromos\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*custom\-product\-labels\.com spam_ref
 SetEnvIfNoCase Referer ~*customsua\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*cutalltheshit\.com spam_ref
@@ -2543,6 +2545,7 @@ SetEnvIfNoCase Referer ~*exportshop\.us spam_ref
 SetEnvIfNoCase Referer ~*expresstoplivo\.ru spam_ref
 SetEnvIfNoCase Referer ~*extads\.net spam_ref
 SetEnvIfNoCase Referer ~*extener\.org spam_ref
+SetEnvIfNoCase Referer ~*extlabs\.io spam_ref
 SetEnvIfNoCase Referer ~*extrabot\.com spam_ref
 SetEnvIfNoCase Referer ~*extractorandburner\.com spam_ref
 SetEnvIfNoCase Referer ~*extremal\-blog\.com spam_ref
@@ -2751,6 +2754,7 @@ SetEnvIfNoCase Referer ~*fr\-bearings\.ru spam_ref
 SetEnvIfNoCase Referer ~*frbizlist\.com spam_ref
 SetEnvIfNoCase Referer ~*frcls\.fr spam_ref
 SetEnvIfNoCase Referer ~*freakycheats\.com spam_ref
+SetEnvIfNoCase Referer ~*free411games\.com spam_ref
 SetEnvIfNoCase Referer ~*freecamdollars\.com spam_ref
 SetEnvIfNoCase Referer ~*free\-deals\.faith spam_ref
 SetEnvIfNoCase Referer ~*free\-fbook\-traffic\.com spam_ref
@@ -3063,6 +3067,7 @@ SetEnvIfNoCase Referer ~*hao123\.com spam_ref
 SetEnvIfNoCase Referer ~*happy\.new\.yeartwit\.com spam_ref
 SetEnvIfNoCase Referer ~*hasfun\.com spam_ref
 SetEnvIfNoCase Referer ~*hatdc\.org spam_ref
+SetEnvIfNoCase Referer ~*hatedriveapart\.com spam_ref
 SetEnvIfNoCase Referer ~*hauleddes\.com spam_ref
 SetEnvIfNoCase Referer ~*hausfrauensex18\.com spam_ref
 SetEnvIfNoCase Referer ~*haveinc\.xyz spam_ref
@@ -3782,6 +3787,7 @@ SetEnvIfNoCase Referer ~*macfix\.life spam_ref
 SetEnvIfNoCase Referer ~*mackeeper\-center\.club spam_ref
 SetEnvIfNoCase Referer ~*mackeeper\-land\-672695126\.us\-east\-1\.elb\.amazonaws\.com spam_ref
 SetEnvIfNoCase Referer ~*macnewtech\.com spam_ref
+SetEnvIfNoCase Referer ~*macotool\.com spam_ref
 SetEnvIfNoCase Referer ~*macresource\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*macrotek\.ru spam_ref
 SetEnvIfNoCase Referer ~*mac\-shield\.com spam_ref
@@ -6197,6 +6203,7 @@ SetEnvIfNoCase Referer ~*westsextube\.com spam_ref
 SetEnvIfNoCase Referer ~*westum\.se spam_ref
 SetEnvIfNoCase Referer ~*westvilletowingservices\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*wetgames\.ru spam_ref
+SetEnvIfNoCase Referer ~*wfb\.hatedriveapart\.com spam_ref
 SetEnvIfNoCase Referer ~*whatistizanidine2mg\.blogspot\.com spam_ref
 SetEnvIfNoCase Referer ~*whatistizanidinehclusedfor\.blogspot\.com spam_ref
 SetEnvIfNoCase Referer ~*whatsappdownload10\.com spam_ref

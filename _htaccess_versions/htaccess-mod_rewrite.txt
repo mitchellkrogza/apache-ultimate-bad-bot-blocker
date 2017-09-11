@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.622
-### Bad Referrer Count: 5761
+### Version: V3.2017.09.623
+### Bad Referrer Count: 5768
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1413,6 +1413,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*bus\-offer\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*businesn\.men.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*business\-made\-fun\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*businesxxl\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*butstrap\.space.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buttons\-for\-website\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buttons\-for\-your\-website\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*buy\-cheap\-online\.info.*$ [NC,OR]
@@ -1835,6 +1836,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customchocolate\.business\-for\
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customcollegeessays\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customergrowthsystems\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customerguru\.in.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customerpromos\-a\.akamaihd\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*customsua\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cutalltheshit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cvety24\.by.*$ [NC,OR]
@@ -2250,6 +2252,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*exportshop\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*expresstoplivo\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extads\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extener\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extlabs\.io.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extrabot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extractorandburner\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*extremal\-blog\.com.*$ [NC,OR]
@@ -2474,6 +2477,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-stock\-illustration\.com.
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-today\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-traffic\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free\-video\-tool\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*free411games\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freecamdollars\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freegamesplay\.online.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*freejabs\.com.*$ [NC,OR]
@@ -2770,6 +2774,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hao123\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*happy\.new\.yeartwit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hasfun\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hatdc\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hatedriveapart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hauleddes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hausfrauensex18\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*haveinc\.xyz.*$ [NC,OR]
@@ -3492,6 +3497,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*macfix\.life.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mackeeper\-center\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mackeeper\-land\-672695126\.us\-east\-1\.elb\.amazonaws\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*macnewtech\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*macotool\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*macresource\.co\.uk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*macrotek\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mactechinfo\.info.*$ [NC,OR]
@@ -5905,6 +5911,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*westsextube\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*westum\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*westvilletowingservices\.co\.za.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*wetgames\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*wfb\.hatedriveapart\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*whatistizanidine2mg\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*whatistizanidinehclusedfor\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*whatsappdownload10\.com.*$ [NC,OR]

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.622
-### Bad Referrer Count: 5761
+### Version: V3.2017.09.623
+### Bad Referrer Count: 5768
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1412,6 +1412,7 @@ SetEnvIfNoCase Referer bus\-offer\.com spambot=yes
 SetEnvIfNoCase Referer businesn\.men spambot=yes
 SetEnvIfNoCase Referer business\-made\-fun\.com spambot=yes
 SetEnvIfNoCase Referer businesxxl\.com spambot=yes
+SetEnvIfNoCase Referer butstrap\.space spambot=yes
 SetEnvIfNoCase Referer buttons\-for\-website\.com spambot=yes
 SetEnvIfNoCase Referer buttons\-for\-your\-website\.com spambot=yes
 SetEnvIfNoCase Referer buy\-cheap\-online\.info spambot=yes
@@ -1834,6 +1835,7 @@ SetEnvIfNoCase Referer customchocolate\.business\-for\-home\.com spambot=yes
 SetEnvIfNoCase Referer customcollegeessays\.net spambot=yes
 SetEnvIfNoCase Referer customergrowthsystems\.com spambot=yes
 SetEnvIfNoCase Referer customerguru\.in spambot=yes
+SetEnvIfNoCase Referer customerpromos\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer customsua\.com\.ua spambot=yes
 SetEnvIfNoCase Referer cutalltheshit\.com spambot=yes
 SetEnvIfNoCase Referer cvety24\.by spambot=yes
@@ -2249,6 +2251,7 @@ SetEnvIfNoCase Referer exportshop\.us spambot=yes
 SetEnvIfNoCase Referer expresstoplivo\.ru spambot=yes
 SetEnvIfNoCase Referer extads\.net spambot=yes
 SetEnvIfNoCase Referer extener\.org spambot=yes
+SetEnvIfNoCase Referer extlabs\.io spambot=yes
 SetEnvIfNoCase Referer extrabot\.com spambot=yes
 SetEnvIfNoCase Referer extractorandburner\.com spambot=yes
 SetEnvIfNoCase Referer extremal\-blog\.com spambot=yes
@@ -2473,6 +2476,7 @@ SetEnvIfNoCase Referer free\-stock\-illustration\.com spambot=yes
 SetEnvIfNoCase Referer free\-today\.com spambot=yes
 SetEnvIfNoCase Referer free\-traffic\.xyz spambot=yes
 SetEnvIfNoCase Referer free\-video\-tool\.com spambot=yes
+SetEnvIfNoCase Referer free411games\.com spambot=yes
 SetEnvIfNoCase Referer freecamdollars\.com spambot=yes
 SetEnvIfNoCase Referer freegamesplay\.online spambot=yes
 SetEnvIfNoCase Referer freejabs\.com spambot=yes
@@ -2769,6 +2773,7 @@ SetEnvIfNoCase Referer hao123\.com spambot=yes
 SetEnvIfNoCase Referer happy\.new\.yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
 SetEnvIfNoCase Referer hatdc\.org spambot=yes
+SetEnvIfNoCase Referer hatedriveapart\.com spambot=yes
 SetEnvIfNoCase Referer hauleddes\.com spambot=yes
 SetEnvIfNoCase Referer hausfrauensex18\.com spambot=yes
 SetEnvIfNoCase Referer haveinc\.xyz spambot=yes
@@ -3491,6 +3496,7 @@ SetEnvIfNoCase Referer macfix\.life spambot=yes
 SetEnvIfNoCase Referer mackeeper\-center\.club spambot=yes
 SetEnvIfNoCase Referer mackeeper\-land\-672695126\.us\-east\-1\.elb\.amazonaws\.com spambot=yes
 SetEnvIfNoCase Referer macnewtech\.com spambot=yes
+SetEnvIfNoCase Referer macotool\.com spambot=yes
 SetEnvIfNoCase Referer macresource\.co\.uk spambot=yes
 SetEnvIfNoCase Referer macrotek\.ru spambot=yes
 SetEnvIfNoCase Referer mactechinfo\.info spambot=yes
@@ -5904,6 +5910,7 @@ SetEnvIfNoCase Referer westsextube\.com spambot=yes
 SetEnvIfNoCase Referer westum\.se spambot=yes
 SetEnvIfNoCase Referer westvilletowingservices\.co\.za spambot=yes
 SetEnvIfNoCase Referer wetgames\.ru spambot=yes
+SetEnvIfNoCase Referer wfb\.hatedriveapart\.com spambot=yes
 SetEnvIfNoCase Referer whatistizanidine2mg\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer whatistizanidinehclusedfor\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer whatsappdownload10\.com spambot=yes
