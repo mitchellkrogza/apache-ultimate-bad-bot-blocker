@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.620
-### Updated: Mon Sep 11 09:43:20 SAST 2017
+### Version: V3.2017.09.621
+### Updated: Mon Sep 11 10:27:38 SAST 2017
 ### Bad Referrer Count: 5752
-### Bad Bot Count: 512
+### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
 
@@ -562,6 +562,7 @@ BrowserMatchNoCase "^(.*?)(\bSurfbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSurveyBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSuzuran\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSwiftbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bsysscan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSzukacz\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bT0PHackTeam\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bT8Abot\b)(.*)$" bad_bot
@@ -6623,6 +6624,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 162.13.185.20
 	Require not ip 173.237.189.235
 	Require not ip 173.255.210.133
+	Require not ip 185.195.18.158
 	Require not ip 185.45.14.186
 	Require not ip 192.163.217.239
 	Require not ip 192.185.4.40
@@ -6632,13 +6634,19 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 198.58.124.46
 	Require not ip 199.241.28.124
 	Require not ip 212.71.238.108
+	Require not ip 2604:180::1370:bcde
+	Require not ip 2607:5300:60:2c8b::
+	Require not ip 2a02:4780:3:1::d
 	Require not ip 37.247.121.179
 	Require not ip 37.60.253.215
 	Require not ip 45.63.68.250
 	Require not ip 45.79.139.191
+	Require not ip 50.116.71.205
 	Require not ip 50.116.84.148
+	Require not ip 52.66.147.75
 	Require not ip 52.87.112.125
 	Require not ip 66.96.183.60
+	Require not ip 69.174.53.46
 	Require not ip 89.36.223.188
 	# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###
 

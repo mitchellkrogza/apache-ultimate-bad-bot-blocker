@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.620
-### Updated: Mon Sep 11 09:43:20 SAST 2017
-### Bad Bot Count: 512
+### Version: V3.2017.09.621
+### Updated: Mon Sep 11 10:27:38 SAST 2017
+### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
 
@@ -1024,6 +1024,8 @@ Disallow:/
 User-agent: plumanalytics
 Disallow:/
 User-agent: seoscanners
+Disallow:/
+User-agent: sysscan
 Disallow:/
 User-agent: tAkeOut
 Disallow:/
