@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.623
+### Version: V3.2017.09.624
 ### Bad Referrer Count: 5768
-### Bad Bot Count: 513
+### Bad Bot Count: 514
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -39,6 +39,7 @@ RewriteCond %{HTTP_USER_AGENT} ^BackStreet.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BackWeb.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Badass.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bandit.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Barkrowler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BatchFTP.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Battleztar Bazinga.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BBBike.* [NC,OR]
