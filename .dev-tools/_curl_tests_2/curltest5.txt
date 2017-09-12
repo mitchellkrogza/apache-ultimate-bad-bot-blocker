@@ -1,2 +1,13 @@
-Last Tested: Tue Sep 12 12:19:42 SAST 2017
+Last Tested: Tue Sep 12 12:28:07 SAST 2017
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome to the Apache Ultimate Bad Bot Blocker</title>
+</head>
+<body>
+<div align=center>
+<h1>Welcome to the Apache Ultimate Bad Bot Blocker</h1>
+<p>This is merely used for testing !!!</p>
+</body>
+</html>
