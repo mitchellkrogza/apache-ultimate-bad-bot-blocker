@@ -114,7 +114,7 @@ ls -la /etc/apache2/custom.d/
 
 printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
 #sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
-sudo cp $TRAVIS_BUILD_DIR/Apache_2.4_BETA/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+sudo cp $TRAVIS_BUILD_DIR/Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
