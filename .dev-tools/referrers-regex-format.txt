@@ -476,6 +476,7 @@ SetEnvIfNoCase Referer ~*artavenuegardenstudios\.com spam_ref
 SetEnvIfNoCase Referer ~*artdeko\.info spam_ref
 SetEnvIfNoCase Referer ~*artdestshop\.eu spam_ref
 SetEnvIfNoCase Referer ~*artefakct\.com spam_ref
+SetEnvIfNoCase Referer ~*artel116\.ru spam_ref
 SetEnvIfNoCase Referer ~*articlesdirectoryme\.info spam_ref
 SetEnvIfNoCase Referer ~*artparquet\.ru spam_ref
 SetEnvIfNoCase Referer ~*artpicso\.com spam_ref
@@ -1396,6 +1397,7 @@ SetEnvIfNoCase Referer ~*detective01\.ru spam_ref
 SetEnvIfNoCase Referer ~*detki\-opt\.ru spam_ref
 SetEnvIfNoCase Referer ~*detskie\-konstruktory\.ru spam_ref
 SetEnvIfNoCase Referer ~*detskie\-zabavi\.ru spam_ref
+SetEnvIfNoCase Referer ~*detsky\-nabytek\.info spam_ref
 SetEnvIfNoCase Referer ~*deutschehobbyhuren\.net spam_ref
 SetEnvIfNoCase Referer ~*deutschland123\.de spam_ref
 SetEnvIfNoCase Referer ~*dev33\.dioniqlabb\.se spam_ref
@@ -1865,6 +1867,7 @@ SetEnvIfNoCase Referer ~*fitfloponline\.store spam_ref
 SetEnvIfNoCase Referer ~*fitnesspiks\.com spam_ref
 SetEnvIfNoCase Referer ~*fitness\-video\.net spam_ref
 SetEnvIfNoCase Referer ~*fiuxy\.com spam_ref
+SetEnvIfNoCase Referer ~*fivedwld\.cf spam_ref
 SetEnvIfNoCase Referer ~*fiverr\.com spam_ref
 SetEnvIfNoCase Referer ~*fix\-website\-errors\.com spam_ref
 SetEnvIfNoCase Referer ~*flash4fun\.com spam_ref
@@ -4596,6 +4599,7 @@ SetEnvIfNoCase Referer ~*spb\.ru spam_ref
 SetEnvIfNoCase Referer ~*special\-porn\.com spam_ref
 SetEnvIfNoCase Referer ~*speedup\-my\.site spam_ref
 SetEnvIfNoCase Referer ~*spidtest\.org spam_ref
+SetEnvIfNoCase Referer ~*spidtest\.space spam_ref
 SetEnvIfNoCase Referer ~*spin2016\.cf spam_ref
 SetEnvIfNoCase Referer ~*spinnerco\.ca spam_ref
 SetEnvIfNoCase Referer ~*spitfiremusic\.com spam_ref

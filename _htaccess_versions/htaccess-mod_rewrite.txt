@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.626
-### Bad Referrer Count: 5768
-### Bad Bot Count: 514
+### Version: V3.2017.09.627
+### Bad Referrer Count: 5772
+### Bad Bot Count: 515
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -109,6 +109,7 @@ RewriteCond %{HTTP_USER_AGENT} ^DittoSpyder.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainAppender.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainCrawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainSigmaCrawler.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DomainStatsBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Dotbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Download Demon.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Download Devil.* [NC,OR]
@@ -1004,6 +1005,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artavenuegardenstudios\.com.*$ 
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artdeko\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artdestshop\.eu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artefakct\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artel116\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*articlesdirectoryme\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artparquet\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artpicso\.com.*$ [NC,OR]
@@ -1925,6 +1927,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detective01\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detki\-opt\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detskie\-konstruktory\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detskie\-zabavi\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*detsky\-nabytek\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*deutschehobbyhuren\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*deutschland123\.de.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dev\-seo\.blog.*$ [NC,OR]
@@ -2395,6 +2398,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fitfloponline\.store.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fitness\-video\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fitnesspiks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fiuxy\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fivedwld\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fiverr\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fix\-website\-errors\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flash4fun\.com.*$ [NC,OR]
@@ -5124,6 +5128,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spbchampionat\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*special\-porn\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*speedup\-my\.site.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spidtest\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spidtest\.space.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spin2016\.cf.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spinnerco\.ca.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*spitfiremusic\.com.*$ [NC,OR]

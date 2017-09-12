@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.626
-### Bad Referrer Count: 5768
-### Bad Bot Count: 514
+### Version: V3.2017.09.627
+### Bad Referrer Count: 5772
+### Bad Bot Count: 515
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -108,6 +108,7 @@ SetEnvIfNoCase User-Agent ^DittoSpyder.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainAppender.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainCrawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainSigmaCrawler.* spambot=yes
+SetEnvIfNoCase User-Agent ^DomainStatsBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Dotbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Download Demon.* spambot=yes
 SetEnvIfNoCase User-Agent ^Download Devil.* spambot=yes
@@ -1003,6 +1004,7 @@ SetEnvIfNoCase Referer artavenuegardenstudios\.com spambot=yes
 SetEnvIfNoCase Referer artdeko\.info spambot=yes
 SetEnvIfNoCase Referer artdestshop\.eu spambot=yes
 SetEnvIfNoCase Referer artefakct\.com spambot=yes
+SetEnvIfNoCase Referer artel116\.ru spambot=yes
 SetEnvIfNoCase Referer articlesdirectoryme\.info spambot=yes
 SetEnvIfNoCase Referer artparquet\.ru spambot=yes
 SetEnvIfNoCase Referer artpicso\.com spambot=yes
@@ -1924,6 +1926,7 @@ SetEnvIfNoCase Referer detective01\.ru spambot=yes
 SetEnvIfNoCase Referer detki\-opt\.ru spambot=yes
 SetEnvIfNoCase Referer detskie\-konstruktory\.ru spambot=yes
 SetEnvIfNoCase Referer detskie\-zabavi\.ru spambot=yes
+SetEnvIfNoCase Referer detsky\-nabytek\.info spambot=yes
 SetEnvIfNoCase Referer deutschehobbyhuren\.net spambot=yes
 SetEnvIfNoCase Referer deutschland123\.de spambot=yes
 SetEnvIfNoCase Referer dev\-seo\.blog spambot=yes
@@ -2394,6 +2397,7 @@ SetEnvIfNoCase Referer fitfloponline\.store spambot=yes
 SetEnvIfNoCase Referer fitness\-video\.net spambot=yes
 SetEnvIfNoCase Referer fitnesspiks\.com spambot=yes
 SetEnvIfNoCase Referer fiuxy\.com spambot=yes
+SetEnvIfNoCase Referer fivedwld\.cf spambot=yes
 SetEnvIfNoCase Referer fiverr\.com spambot=yes
 SetEnvIfNoCase Referer fix\-website\-errors\.com spambot=yes
 SetEnvIfNoCase Referer flash4fun\.com spambot=yes
@@ -5123,6 +5127,7 @@ SetEnvIfNoCase Referer spbchampionat\.ru spambot=yes
 SetEnvIfNoCase Referer special\-porn\.com spambot=yes
 SetEnvIfNoCase Referer speedup\-my\.site spambot=yes
 SetEnvIfNoCase Referer spidtest\.org spambot=yes
+SetEnvIfNoCase Referer spidtest\.space spambot=yes
 SetEnvIfNoCase Referer spin2016\.cf spambot=yes
 SetEnvIfNoCase Referer spinnerco\.ca spambot=yes
 SetEnvIfNoCase Referer spitfiremusic\.com spambot=yes
