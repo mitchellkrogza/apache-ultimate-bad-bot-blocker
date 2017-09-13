@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.627
-### Bad Referrer Count: 5772
+### Version: V3.2017.09.628
+### Bad Referrer Count: 5777
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -2053,6 +2053,7 @@ SetEnvIfNoCase Referer druzhbany\.ru spambot=yes
 SetEnvIfNoCase Referer druzhininevgeniy63\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer dstroy\.su spambot=yes
 SetEnvIfNoCase Referer dtnlyss\.com spambot=yes
+SetEnvIfNoCase Referer dumpsmania24\.com spambot=yes
 SetEnvIfNoCase Referer duplicashapp\.com spambot=yes
 SetEnvIfNoCase Referer dustyorate\.com spambot=yes
 SetEnvIfNoCase Referer dvd\-famille\.com spambot=yes
@@ -3739,6 +3740,7 @@ SetEnvIfNoCase Referer monetizer\.com\-01\.site spambot=yes
 SetEnvIfNoCase Referer money\-every\-day\.com spambot=yes
 SetEnvIfNoCase Referer money\-for\-placing\-articles\.com spambot=yes
 SetEnvIfNoCase Referer moneymaster\.ru spambot=yes
+SetEnvIfNoCase Referer moneyteam24\.com spambot=yes
 SetEnvIfNoCase Referer moneytop\.ru spambot=yes
 SetEnvIfNoCase Referer moneyviking\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer monitorwebsitespeed\.com spambot=yes
@@ -5182,8 +5184,10 @@ SetEnvIfNoCase Referer sterva\.cc spambot=yes
 SetEnvIfNoCase Referer stevemonsen\.com spambot=yes
 SetEnvIfNoCase Referer stickers\-market\.ru spambot=yes
 SetEnvIfNoCase Referer stillmiracle\.com spambot=yes
+SetEnvIfNoCase Referer stjamesschool\.info spambot=yes
 SetEnvIfNoCase Referer stmassage\.ru spambot=yes
 SetEnvIfNoCase Referer stockquotes\.wooeb\.com spambot=yes
+SetEnvIfNoCase Referer stockspmb\.info spambot=yes
 SetEnvIfNoCase Referer stoki\.ru spambot=yes
 SetEnvIfNoCase Referer stop\-gepatit\.te\.ua spambot=yes
 SetEnvIfNoCase Referer store\-rx\.com spambot=yes
@@ -5526,6 +5530,7 @@ SetEnvIfNoCase Referer traffpartners\.com spambot=yes
 SetEnvIfNoCase Referer trahic\.ru spambot=yes
 SetEnvIfNoCase Referer trahvid\.com spambot=yes
 SetEnvIfNoCase Referer trailer\.cinemaflix\.website spambot=yes
+SetEnvIfNoCase Referer trainoffend\.ml spambot=yes
 SetEnvIfNoCase Referer tramadolandtizanidine\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer traxdom\.ru spambot=yes
 SetEnvIfNoCase Referer treasuretrack\-a\.akamaihd\.net spambot=yes
