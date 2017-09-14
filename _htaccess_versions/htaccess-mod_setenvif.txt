@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.628
-### Bad Referrer Count: 5777
+### Version: V3.2017.09.629
+### Bad Referrer Count: 5782
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -1494,6 +1494,7 @@ SetEnvIfNoCase Referer capture\-room\.com spambot=yes
 SetEnvIfNoCase Referer carabela\.com\.do spambot=yes
 SetEnvIfNoCase Referer carapics\.com spambot=yes
 SetEnvIfNoCase Referer cardiosport\.com\.ua spambot=yes
+SetEnvIfNoCase Referer cardsdumps\.com spambot=yes
 SetEnvIfNoCase Referer cardsharp1\.ru spambot=yes
 SetEnvIfNoCase Referer cardul\.ru spambot=yes
 SetEnvIfNoCase Referer carfax\.com\.ua spambot=yes
@@ -2561,6 +2562,7 @@ SetEnvIfNoCase Referer gamedayassist\.com spambot=yes
 SetEnvIfNoCase Referer gamedayhouse\.com spambot=yes
 SetEnvIfNoCase Referer gameonasia\.com spambot=yes
 SetEnvIfNoCase Referer gameplexcity\.com spambot=yes
+SetEnvIfNoCase Referer gameprimary\.com spambot=yes
 SetEnvIfNoCase Referer gamerextra\.com spambot=yes
 SetEnvIfNoCase Referer gamerscorps\.com spambot=yes
 SetEnvIfNoCase Referer games\.kolossale\.ru spambot=yes
@@ -3943,6 +3945,7 @@ SetEnvIfNoCase Referer ningessaybe\.me spambot=yes
 SetEnvIfNoCase Referer nippon\-bearings\.ru spambot=yes
 SetEnvIfNoCase Referer niroo\.info spambot=yes
 SetEnvIfNoCase Referer njkmznnb\.ru spambot=yes
+SetEnvIfNoCase Referer njpalletremoval\.com spambot=yes
 SetEnvIfNoCase Referer nl\.netlog\.com spambot=yes
 SetEnvIfNoCase Referer nmrk\.ru spambot=yes
 SetEnvIfNoCase Referer noclegonline\.info spambot=yes
@@ -5562,6 +5565,7 @@ SetEnvIfNoCase Referer ttrraacckkrr\.com spambot=yes
 SetEnvIfNoCase Referer ttsq\.fr spambot=yes
 SetEnvIfNoCase Referer tube8\.com spambot=yes
 SetEnvIfNoCase Referer tubeline\.biz spambot=yes
+SetEnvIfNoCase Referer tubeoffline\.com spambot=yes
 SetEnvIfNoCase Referer tuberkulezanet\.ru spambot=yes
 SetEnvIfNoCase Referer tuberkuleznik\.ru spambot=yes
 SetEnvIfNoCase Referer tubo360\.com spambot=yes
@@ -5689,6 +5693,7 @@ SetEnvIfNoCase Referer v720hd\.ru spambot=yes
 SetEnvIfNoCase Referer vabasa\.inwtrade\.com spambot=yes
 SetEnvIfNoCase Referer vacuumscleaner\.com spambot=yes
 SetEnvIfNoCase Referer vadimkravtcov\.ru spambot=yes
+SetEnvIfNoCase Referer validccseller\.com spambot=yes
 SetEnvIfNoCase Referer validdomain\.xyz spambot=yes
 SetEnvIfNoCase Referer valkiria\-tk\.ru spambot=yes
 SetEnvIfNoCase Referer valmetrundan\.se spambot=yes

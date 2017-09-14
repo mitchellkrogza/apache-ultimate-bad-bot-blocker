@@ -964,6 +964,7 @@ SetEnvIfNoCase Referer ~*capture\-room\.com spam_ref
 SetEnvIfNoCase Referer ~*carabela\.com\.do spam_ref
 SetEnvIfNoCase Referer ~*carapics\.com spam_ref
 SetEnvIfNoCase Referer ~*cardiosport\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*cardsdumps\.com spam_ref
 SetEnvIfNoCase Referer ~*cardsharp1\.ru spam_ref
 SetEnvIfNoCase Referer ~*cardul\.ru spam_ref
 SetEnvIfNoCase Referer ~*carfax\.com\.ua spam_ref
@@ -2031,6 +2032,7 @@ SetEnvIfNoCase Referer ~*gamedayhouse\.com spam_ref
 SetEnvIfNoCase Referer ~*game\-mmorpg\.net spam_ref
 SetEnvIfNoCase Referer ~*gameonasia\.com spam_ref
 SetEnvIfNoCase Referer ~*gameplexcity\.com spam_ref
+SetEnvIfNoCase Referer ~*gameprimary\.com spam_ref
 SetEnvIfNoCase Referer ~*gamerextra\.com spam_ref
 SetEnvIfNoCase Referer ~*gamerscorps\.com spam_ref
 SetEnvIfNoCase Referer ~*games\.kolossale\.ru spam_ref
@@ -3415,6 +3417,7 @@ SetEnvIfNoCase Referer ~*ningessaybe\.me spam_ref
 SetEnvIfNoCase Referer ~*nippon\-bearings\.ru spam_ref
 SetEnvIfNoCase Referer ~*niroo\.info spam_ref
 SetEnvIfNoCase Referer ~*njkmznnb\.ru spam_ref
+SetEnvIfNoCase Referer ~*njpalletremoval\.com spam_ref
 SetEnvIfNoCase Referer ~*nl\.netlog\.com spam_ref
 SetEnvIfNoCase Referer ~*nmrk\.ru spam_ref
 SetEnvIfNoCase Referer ~*noclegonline\.info spam_ref
@@ -5034,6 +5037,7 @@ SetEnvIfNoCase Referer ~*ttrraacckkrr\.com spam_ref
 SetEnvIfNoCase Referer ~*ttsq\.fr spam_ref
 SetEnvIfNoCase Referer ~*tube8\.com spam_ref
 SetEnvIfNoCase Referer ~*tubeline\.biz spam_ref
+SetEnvIfNoCase Referer ~*tubeoffline\.com spam_ref
 SetEnvIfNoCase Referer ~*tuberkulezanet\.ru spam_ref
 SetEnvIfNoCase Referer ~*tuberkuleznik\.ru spam_ref
 SetEnvIfNoCase Referer ~*tubo360\.com spam_ref
@@ -5160,6 +5164,7 @@ SetEnvIfNoCase Referer ~*v720hd\.ru spam_ref
 SetEnvIfNoCase Referer ~*vabasa\.inwtrade\.com spam_ref
 SetEnvIfNoCase Referer ~*vacuumscleaner\.com spam_ref
 SetEnvIfNoCase Referer ~*vadimkravtcov\.ru spam_ref
+SetEnvIfNoCase Referer ~*validccseller\.com spam_ref
 SetEnvIfNoCase Referer ~*validdomain\.xyz spam_ref
 SetEnvIfNoCase Referer ~*valkiria\-tk\.ru spam_ref
 SetEnvIfNoCase Referer ~*valmetrundan\.se spam_ref
