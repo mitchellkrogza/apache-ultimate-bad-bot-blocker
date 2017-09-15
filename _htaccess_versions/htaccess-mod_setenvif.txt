@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.629
-### Bad Referrer Count: 5782
+### Version: V3.2017.09.630
+### Bad Referrer Count: 5786
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -2824,6 +2824,7 @@ SetEnvIfNoCase Referer hermesbracelets\.xyz spambot=yes
 SetEnvIfNoCase Referer hermesreplica\.pw spambot=yes
 SetEnvIfNoCase Referer hermesreplica\.win spambot=yes
 SetEnvIfNoCase Referer herokuapp\.com spambot=yes
+SetEnvIfNoCase Referer heroz\.fr spambot=yes
 SetEnvIfNoCase Referer hesteel\.pl spambot=yes
 SetEnvIfNoCase Referer hetmanship\.xyz spambot=yes
 SetEnvIfNoCase Referer hexpilot\.com spambot=yes
@@ -3356,6 +3357,7 @@ SetEnvIfNoCase Referer laxdrills\.com spambot=yes
 SetEnvIfNoCase Referer layola\.biz\.tc spambot=yes
 SetEnvIfNoCase Referer lazy\-z\.com spambot=yes
 SetEnvIfNoCase Referer ldrtrack\.com spambot=yes
+SetEnvIfNoCase Referer le\-clos\-des\-alouettes\.com spambot=yes
 SetEnvIfNoCase Referer leadn\.pl spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
 SetEnvIfNoCase Referer leboard\.ru spambot=yes
@@ -5646,6 +5648,7 @@ SetEnvIfNoCase Referer unionmarkt\.de spambot=yes
 SetEnvIfNoCase Referer unisexjewelry\.org spambot=yes
 SetEnvIfNoCase Referer unitexindia\.com spambot=yes
 SetEnvIfNoCase Referer unitygame3d\.com spambot=yes
+SetEnvIfNoCase Referer univerfiles\.com spambot=yes
 SetEnvIfNoCase Referer universals\.com\.ua spambot=yes
 SetEnvIfNoCase Referer unmaroll\.ya\.ru spambot=yes
 SetEnvIfNoCase Referer unpredictable\.ga spambot=yes
@@ -6231,6 +6234,7 @@ SetEnvIfNoCase Referer zarepta\.com spambot=yes
 SetEnvIfNoCase Referer zastenchivosti\.net spambot=yes
 SetEnvIfNoCase Referer zastroyka\.org spambot=yes
 SetEnvIfNoCase Referer zatjmuzu\.info spambot=yes
+SetEnvIfNoCase Referer zawyna\.ua spambot=yes
 SetEnvIfNoCase Referer zazagames\.org spambot=yes
 SetEnvIfNoCase Referer zdesformula\.ru spambot=yes
 SetEnvIfNoCase Referer zdesoboi\.com spambot=yes
