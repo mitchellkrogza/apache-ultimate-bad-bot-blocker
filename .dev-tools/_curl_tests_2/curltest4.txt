@@ -1,10 +1,10 @@
-Last Tested: Fri Sep 15 16:40:58 SAST 2017
+Last Tested: Sat Sep 16 17:21:03 SAST 2017
 
 HTTP/1.1 200 OK
-Date: Fri, 15 Sep 2017 14:40:58 GMT
+Date: Sat, 16 Sep 2017 15:21:03 GMT
 Server: Apache/2.4.27 (Ubuntu)
-Last-Modified: Fri, 15 Sep 2017 14:40:45 GMT
-ETag: "f0-5593b60d379d4"
+Last-Modified: Sat, 16 Sep 2017 15:20:52 GMT
+ETag: "f0-559500e199c93"
 Accept-Ranges: bytes
 Content-Length: 240
 Vary: Accept-Encoding
