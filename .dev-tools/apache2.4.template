@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.632
-### Updated: Sun Sep 17 13:02:59 SAST 2017
-### Bad Referrer Count: 5795
+### Version: V3.2017.09.633
+### Updated: Mon Sep 18 11:31:23 SAST 2017
+### Bad Referrer Count: 5800
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -2165,6 +2165,7 @@ SetEnvIfNoCase Referer ~*daptravel\.com spam_ref
 SetEnvIfNoCase Referer ~*darkbooks\.org spam_ref
 SetEnvIfNoCase Referer ~*darmebel\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*darodar\.com spam_ref
+SetEnvIfNoCase Referer ~*data1\.scopich\.com spam_ref
 SetEnvIfNoCase Referer ~*dataloading\.net spam_ref
 SetEnvIfNoCase Referer ~*data\-mining\.tk spam_ref
 SetEnvIfNoCase Referer ~*data\.vtc\.pw spam_ref
@@ -3026,6 +3027,7 @@ SetEnvIfNoCase Referer ~*gribkovye\-zabolevaniya\.com spam_ref
 SetEnvIfNoCase Referer ~*gribokstop\.com spam_ref
 SetEnvIfNoCase Referer ~*grizzlysgrill\.com spam_ref
 SetEnvIfNoCase Referer ~*groupmoney\.ru spam_ref
+SetEnvIfNoCase Referer ~*growboxbl\.ru spam_ref
 SetEnvIfNoCase Referer ~*growmyfunds\.ca spam_ref
 SetEnvIfNoCase Referer ~*growshop\.es spam_ref
 SetEnvIfNoCase Referer ~*grtyi\.com spam_ref
@@ -5096,6 +5098,7 @@ SetEnvIfNoCase Referer ~*scenicmissouri\.us spam_ref
 SetEnvIfNoCase Referer ~*schlampen\-treffen\.com spam_ref
 SetEnvIfNoCase Referer ~*school\-diplomat\.ru spam_ref
 SetEnvIfNoCase Referer ~*scoopquest\.com spam_ref
+SetEnvIfNoCase Referer ~*scopich\.com spam_ref
 SetEnvIfNoCase Referer ~*score\-ads\.men spam_ref
 SetEnvIfNoCase Referer ~*scrapy\.org spam_ref
 SetEnvIfNoCase Referer ~*screentoolkit\.com spam_ref
@@ -5397,6 +5400,7 @@ SetEnvIfNoCase Referer ~*softonicads\.com spam_ref
 SetEnvIfNoCase Referer ~*soft\-program\.com spam_ref
 SetEnvIfNoCase Referer ~*soft\-terminal\.ru spam_ref
 SetEnvIfNoCase Referer ~*softtor\.com spam_ref
+SetEnvIfNoCase Referer ~*softwaretrend\.net spam_ref
 SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
@@ -5476,6 +5480,7 @@ SetEnvIfNoCase Referer ~*starpages\.net spam_ref
 SetEnvIfNoCase Referer ~*start\.myplaycity\.com spam_ref
 SetEnvIfNoCase Referer ~*startufa\.ru spam_ref
 SetEnvIfNoCase Referer ~*startwp\.org spam_ref
+SetEnvIfNoCase Referer ~*starwars\.wikia\.com spam_ref
 SetEnvIfNoCase Referer ~*statistici\.ro spam_ref
 SetEnvIfNoCase Referer ~*statoutlook\.info spam_ref
 SetEnvIfNoCase Referer ~*stats\-collector\.org spam_ref

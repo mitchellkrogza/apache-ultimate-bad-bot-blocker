@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.632
-### Bad Referrer Count: 5795
+### Version: V3.2017.09.633
+### Bad Referrer Count: 5800
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -1874,6 +1874,7 @@ SetEnvIfNoCase Referer darmebel\.com\.ua spambot=yes
 SetEnvIfNoCase Referer darodar\.com spambot=yes
 SetEnvIfNoCase Referer data\-mining\.tk spambot=yes
 SetEnvIfNoCase Referer data\.vtc\.pw spambot=yes
+SetEnvIfNoCase Referer data1\.scopich\.com spambot=yes
 SetEnvIfNoCase Referer dataloading\.net spambot=yes
 SetEnvIfNoCase Referer date\-withme\.com spambot=yes
 SetEnvIfNoCase Referer dating\-time\-now\.com spambot=yes
@@ -2733,6 +2734,7 @@ SetEnvIfNoCase Referer gribkovye\-zabolevaniya\.com spambot=yes
 SetEnvIfNoCase Referer gribokstop\.com spambot=yes
 SetEnvIfNoCase Referer grizzlysgrill\.com spambot=yes
 SetEnvIfNoCase Referer groupmoney\.ru spambot=yes
+SetEnvIfNoCase Referer growboxbl\.ru spambot=yes
 SetEnvIfNoCase Referer growmyfunds\.ca spambot=yes
 SetEnvIfNoCase Referer growshop\.es spambot=yes
 SetEnvIfNoCase Referer grtyi\.com spambot=yes
@@ -4805,6 +4807,7 @@ SetEnvIfNoCase Referer scenicmissouri\.us spambot=yes
 SetEnvIfNoCase Referer schlampen\-treffen\.com spambot=yes
 SetEnvIfNoCase Referer school\-diplomat\.ru spambot=yes
 SetEnvIfNoCase Referer scoopquest\.com spambot=yes
+SetEnvIfNoCase Referer scopich\.com spambot=yes
 SetEnvIfNoCase Referer score\-ads\.men spambot=yes
 SetEnvIfNoCase Referer scrapy\.org spambot=yes
 SetEnvIfNoCase Referer screentoolkit\.com spambot=yes
@@ -5103,6 +5106,7 @@ SetEnvIfNoCase Referer softomix\.com spambot=yes
 SetEnvIfNoCase Referer softomix\.net spambot=yes
 SetEnvIfNoCase Referer softonicads\.com spambot=yes
 SetEnvIfNoCase Referer softtor\.com spambot=yes
+SetEnvIfNoCase Referer softwaretrend\.net spambot=yes
 SetEnvIfNoCase Referer softxaker\.ru spambot=yes
 SetEnvIfNoCase Referer soheavyblog\.com spambot=yes
 SetEnvIfNoCase Referer sohoindia\.net spambot=yes
@@ -5182,6 +5186,7 @@ SetEnvIfNoCase Referer starpages\.net spambot=yes
 SetEnvIfNoCase Referer start\.myplaycity\.com spambot=yes
 SetEnvIfNoCase Referer startufa\.ru spambot=yes
 SetEnvIfNoCase Referer startwp\.org spambot=yes
+SetEnvIfNoCase Referer starwars\.wikia\.com spambot=yes
 SetEnvIfNoCase Referer statistici\.ro spambot=yes
 SetEnvIfNoCase Referer statoutlook\.info spambot=yes
 SetEnvIfNoCase Referer stats\-collector\.org spambot=yes
