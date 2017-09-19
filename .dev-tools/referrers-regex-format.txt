@@ -3723,6 +3723,7 @@ SetEnvIfNoCase Referer ~*pigrafix\.at spam_ref
 SetEnvIfNoCase Referer ~*pihl\.se spam_ref
 SetEnvIfNoCase Referer ~*pijoto\.net spam_ref
 SetEnvIfNoCase Referer ~*pila\.pl spam_ref
+SetEnvIfNoCase Referer ~*pills24h\.com spam_ref
 SetEnvIfNoCase Referer ~*pinkduck\.ga spam_ref
 SetEnvIfNoCase Referer ~*pinsdaddy\.com spam_ref
 SetEnvIfNoCase Referer ~*pinstake\.com spam_ref
@@ -4401,6 +4402,7 @@ SetEnvIfNoCase Referer ~*sexytrend\.ru spam_ref
 SetEnvIfNoCase Referer ~*sfd\-chess\.ru spam_ref
 SetEnvIfNoCase Referer ~*sfj\-ror\.no spam_ref
 SetEnvIfNoCase Referer ~*shakhtar\-doneck\.ru spam_ref
+SetEnvIfNoCase Referer ~*shama\-rc\.net spam_ref
 SetEnvIfNoCase Referer ~*sharebutton\.net spam_ref
 SetEnvIfNoCase Referer ~*sharebutton\.org spam_ref
 SetEnvIfNoCase Referer ~*share\-buttons\-for\-free\.com spam_ref
