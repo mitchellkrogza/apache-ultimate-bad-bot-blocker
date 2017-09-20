@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.634
-### Bad Referrer Count: 5802
+### Version: V3.2017.09.635
+### Bad Referrer Count: 5810
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -542,6 +542,7 @@ SetEnvIfNoCase Referer 0lovespells0\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer 0n\-line\.tv spambot=yes
 SetEnvIfNoCase Referer 1\-99seo\.com spambot=yes
 SetEnvIfNoCase Referer 1\-free\-share\-buttons\.com spambot=yes
+SetEnvIfNoCase Referer 1000n1\.ru spambot=yes
 SetEnvIfNoCase Referer 100dollars\-seo\.com spambot=yes
 SetEnvIfNoCase Referer 100searchengines\.com spambot=yes
 SetEnvIfNoCase Referer 101billion\.com spambot=yes
@@ -1099,6 +1100,7 @@ SetEnvIfNoCase Referer awency\.com spambot=yes
 SetEnvIfNoCase Referer axbocz\.net spambot=yes
 SetEnvIfNoCase Referer ayakino\.net spambot=yes
 SetEnvIfNoCase Referer ayanaspa\.com spambot=yes
+SetEnvIfNoCase Referer ayeartoforget\.com spambot=yes
 SetEnvIfNoCase Referer ayerbo\.xhost\.ro spambot=yes
 SetEnvIfNoCase Referer azadnegar\.com spambot=yes
 SetEnvIfNoCase Referer azartclub\.org spambot=yes
@@ -2531,6 +2533,7 @@ SetEnvIfNoCase Referer fun2cell\.net spambot=yes
 SetEnvIfNoCase Referer funcrushgames\.com spambot=yes
 SetEnvIfNoCase Referer fungamelands\.com spambot=yes
 SetEnvIfNoCase Referer fungirlsgames\.net spambot=yes
+SetEnvIfNoCase Referer funnel\.co\.za spambot=yes
 SetEnvIfNoCase Referer funnymama\.com spambot=yes
 SetEnvIfNoCase Referer funnypica\.com spambot=yes
 SetEnvIfNoCase Referer funponsel\.com spambot=yes
@@ -3247,6 +3250,7 @@ SetEnvIfNoCase Referer kinostorm\.net spambot=yes
 SetEnvIfNoCase Referer kinotorka\.ru spambot=yes
 SetEnvIfNoCase Referer kiprinform\.com spambot=yes
 SetEnvIfNoCase Referer kirov\.zrus\.org spambot=yes
+SetEnvIfNoCase Referer kiskinhouse\.com spambot=yes
 SetEnvIfNoCase Referer kit\-opt\.ru spambot=yes
 SetEnvIfNoCase Referer kiwe\-analytics\.com spambot=yes
 SetEnvIfNoCase Referer kiwi237au\.tk spambot=yes
@@ -3756,6 +3760,7 @@ SetEnvIfNoCase Referer moneyteam24\.com spambot=yes
 SetEnvIfNoCase Referer moneytop\.ru spambot=yes
 SetEnvIfNoCase Referer moneyviking\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer monitorwebsitespeed\.com spambot=yes
+SetEnvIfNoCase Referer montazhnic\.ru spambot=yes
 SetEnvIfNoCase Referer monthlywinners\.com spambot=yes
 SetEnvIfNoCase Referer montredemarque\.nl spambot=yes
 SetEnvIfNoCase Referer moomi\-daeri\.com spambot=yes
@@ -4391,6 +4396,7 @@ SetEnvIfNoCase Referer pr0fit\-b0x\.com spambot=yes
 SetEnvIfNoCase Referer praisong\.net spambot=yes
 SetEnvIfNoCase Referer pravoholding\.ru spambot=yes
 SetEnvIfNoCase Referer prchecker\.info spambot=yes
+SetEnvIfNoCase Referer predominant\-invent\.tk spambot=yes
 SetEnvIfNoCase Referer prefersurvey\.net spambot=yes
 SetEnvIfNoCase Referer pregnant\.guru spambot=yes
 SetEnvIfNoCase Referer preparevideosafesystem4unow\.site spambot=yes
@@ -4854,6 +4860,8 @@ SetEnvIfNoCase Referer seinterface\.com spambot=yes
 SetEnvIfNoCase Referer seksotur\.ru spambot=yes
 SetEnvIfNoCase Referer semalt\.com spambot=yes
 SetEnvIfNoCase Referer semaltmedia\.com spambot=yes
+SetEnvIfNoCase Referer seminarygeorgia59\.ga spambot=yes
+SetEnvIfNoCase Referer seminarykansas904\.ml spambot=yes
 SetEnvIfNoCase Referer semp\.net spambot=yes
 SetEnvIfNoCase Referer semprofile\.com spambot=yes
 SetEnvIfNoCase Referer semrush\.com spambot=yes
