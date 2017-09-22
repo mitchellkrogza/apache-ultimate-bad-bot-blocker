@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.636
-### Bad Referrer Count: 5810
+### Version: V3.2017.09.637
+### Bad Referrer Count: 5814
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -805,6 +805,7 @@ SetEnvIfNoCase Referer airlandsea\.info spambot=yes
 SetEnvIfNoCase Referer airmaxshoes\-2016\.com spambot=yes
 SetEnvIfNoCase Referer akama\.com spambot=yes
 SetEnvIfNoCase Referer akita\.kz spambot=yes
+SetEnvIfNoCase Referer aksonural\.ru spambot=yes
 SetEnvIfNoCase Referer aktivator\-windows10\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer aktobe\.xkaz\.org spambot=yes
 SetEnvIfNoCase Referer akuhni\.by spambot=yes
@@ -1428,6 +1429,7 @@ SetEnvIfNoCase Referer buy\-loft\.ru spambot=yes
 SetEnvIfNoCase Referer buy\-meds24\.com spambot=yes
 SetEnvIfNoCase Referer buyantiviralwp\.com spambot=yes
 SetEnvIfNoCase Referer buybest1\.biz spambot=yes
+SetEnvIfNoCase Referer buyclomidonlaine\.com spambot=yes
 SetEnvIfNoCase Referer buydissertation\.net spambot=yes
 SetEnvIfNoCase Referer buyessay3\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer buyessaynow\.biz spambot=yes
@@ -1630,6 +1632,7 @@ SetEnvIfNoCase Referer cialis\-samples\.com spambot=yes
 SetEnvIfNoCase Referer cialisovercounteratwalmartusa\.com spambot=yes
 SetEnvIfNoCase Referer cialiswithoutadoctor\.net spambot=yes
 SetEnvIfNoCase Referer cibpenonptib\.flu\.cc spambot=yes
+SetEnvIfNoCase Referer cicaki\.net spambot=yes
 SetEnvIfNoCase Referer ciekawinki\.pl spambot=yes
 SetEnvIfNoCase Referer cienum\.fr spambot=yes
 SetEnvIfNoCase Referer cigarpass\.com spambot=yes
@@ -4379,6 +4382,7 @@ SetEnvIfNoCase Referer porto\.abuilder\.net spambot=yes
 SetEnvIfNoCase Referer portside\.cc spambot=yes
 SetEnvIfNoCase Referer portside\.xyz spambot=yes
 SetEnvIfNoCase Referer poshiv\-chehol\.ru spambot=yes
+SetEnvIfNoCase Referer posible\.net spambot=yes
 SetEnvIfNoCase Referer positive2b\.ru spambot=yes
 SetEnvIfNoCase Referer pospr\.waw\.pl spambot=yes
 SetEnvIfNoCase Referer postclass\.com spambot=yes

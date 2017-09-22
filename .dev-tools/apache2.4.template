@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.636
-### Updated: Wed Sep 20 14:00:53 SAST 2017
-### Bad Referrer Count: 5810
+### Version: V3.2017.09.637
+### Updated: Fri Sep 22 16:23:23 SAST 2017
+### Bad Referrer Count: 5814
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -1098,6 +1098,7 @@ SetEnvIfNoCase Referer ~*airlandsea\.info spam_ref
 SetEnvIfNoCase Referer ~*airmaxshoes\-2016\.com spam_ref
 SetEnvIfNoCase Referer ~*akama\.com spam_ref
 SetEnvIfNoCase Referer ~*akita\.kz spam_ref
+SetEnvIfNoCase Referer ~*aksonural\.ru spam_ref
 SetEnvIfNoCase Referer ~*aktivator\-windows10\.blogspot\.com spam_ref
 SetEnvIfNoCase Referer ~*aktobe\.xkaz\.org spam_ref
 SetEnvIfNoCase Referer ~*akuhni\.by spam_ref
@@ -1719,6 +1720,7 @@ SetEnvIfNoCase Referer ~*buyantiviralwp\.com spam_ref
 SetEnvIfNoCase Referer ~*buybest1\.biz spam_ref
 SetEnvIfNoCase Referer ~*buy\-cheap\-online\.info spam_ref
 SetEnvIfNoCase Referer ~*buy\-cheap\-pills\-order\-online\.com spam_ref
+SetEnvIfNoCase Referer ~*buyclomidonlaine\.com spam_ref
 SetEnvIfNoCase Referer ~*buydissertation\.net spam_ref
 SetEnvIfNoCase Referer ~*buyessay3\.blogspot\.ru spam_ref
 SetEnvIfNoCase Referer ~*buyessaynow\.biz spam_ref
@@ -1923,6 +1925,7 @@ SetEnvIfNoCase Referer ~*cialisovercounteratwalmartusa\.com spam_ref
 SetEnvIfNoCase Referer ~*cialis\-samples\.com spam_ref
 SetEnvIfNoCase Referer ~*cialiswithoutadoctor\.net spam_ref
 SetEnvIfNoCase Referer ~*cibpenonptib\.flu\.cc spam_ref
+SetEnvIfNoCase Referer ~*cicaki\.net spam_ref
 SetEnvIfNoCase Referer ~*ciekawinki\.pl spam_ref
 SetEnvIfNoCase Referer ~*cienum\.fr spam_ref
 SetEnvIfNoCase Referer ~*cigarpass\.com spam_ref
@@ -4673,6 +4676,7 @@ SetEnvIfNoCase Referer ~*porto\.abuilder\.net spam_ref
 SetEnvIfNoCase Referer ~*portside\.cc spam_ref
 SetEnvIfNoCase Referer ~*portside\.xyz spam_ref
 SetEnvIfNoCase Referer ~*poshiv\-chehol\.ru spam_ref
+SetEnvIfNoCase Referer ~*posible\.net spam_ref
 SetEnvIfNoCase Referer ~*positive2b\.ru spam_ref
 SetEnvIfNoCase Referer ~*pospr\.waw\.pl spam_ref
 SetEnvIfNoCase Referer ~*postclass\.com spam_ref
