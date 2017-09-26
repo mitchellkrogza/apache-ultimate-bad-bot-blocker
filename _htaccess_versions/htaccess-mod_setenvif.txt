@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.09.637
-### Bad Referrer Count: 5814
+### Version: V3.2017.09.638
+### Bad Referrer Count: 5820
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -651,6 +651,7 @@ SetEnvIfNoCase Referer 883zy\.com spambot=yes
 SetEnvIfNoCase Referer 888\.com spambot=yes
 SetEnvIfNoCase Referer 8gold\.com spambot=yes
 SetEnvIfNoCase Referer 8kisses\.eu spambot=yes
+SetEnvIfNoCase Referer 8lufu\.com spambot=yes
 SetEnvIfNoCase Referer 8si\.ru spambot=yes
 SetEnvIfNoCase Referer 8xv8\.com spambot=yes
 SetEnvIfNoCase Referer 91abcw\.com spambot=yes
@@ -2655,6 +2656,7 @@ SetEnvIfNoCase Referer girlsatgames\.ru spambot=yes
 SetEnvIfNoCase Referer girlspicsa\.com spambot=yes
 SetEnvIfNoCase Referer given2\.com spambot=yes
 SetEnvIfNoCase Referer gk\-atlant\.info spambot=yes
+SetEnvIfNoCase Referer gk170\.ru spambot=yes
 SetEnvIfNoCase Referer gktt\.ru spambot=yes
 SetEnvIfNoCase Referer gkvector\.ru spambot=yes
 SetEnvIfNoCase Referer glall\.ru spambot=yes
@@ -3209,6 +3211,7 @@ SetEnvIfNoCase Referer kazinogames\.lv spambot=yes
 SetEnvIfNoCase Referer kazrent\.com spambot=yes
 SetEnvIfNoCase Referer kchaxton\.com spambot=yes
 SetEnvIfNoCase Referer keenoutlet\.online spambot=yes
+SetEnvIfNoCase Referer kemerovo\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer kenaba\.su spambot=yes
 SetEnvIfNoCase Referer kerei\.ru spambot=yes
 SetEnvIfNoCase Referer kerwinandcariza\.com spambot=yes
@@ -3264,6 +3267,7 @@ SetEnvIfNoCase Referer kletkimehan\.ru spambot=yes
 SetEnvIfNoCase Referer klikbonus\.com spambot=yes
 SetEnvIfNoCase Referer kliksaya\.com spambot=yes
 SetEnvIfNoCase Referer klosetkitten\.com spambot=yes
+SetEnvIfNoCase Referer klumba55\.ru spambot=yes
 SetEnvIfNoCase Referer kmd\-pto\.ru spambot=yes
 SetEnvIfNoCase Referer kmgamex\.cf spambot=yes
 SetEnvIfNoCase Referer kndxbkdx\.bloger\.index\.hr spambot=yes
@@ -4650,6 +4654,7 @@ SetEnvIfNoCase Referer retreatia\.com spambot=yes
 SetEnvIfNoCase Referer reversing\.cc spambot=yes
 SetEnvIfNoCase Referer revistaindustria\.com spambot=yes
 SetEnvIfNoCase Referer reward\-survey\.net spambot=yes
+SetEnvIfNoCase Referer rewardit\.com spambot=yes
 SetEnvIfNoCase Referer rewardpoll\.com spambot=yes
 SetEnvIfNoCase Referer reyel1985\.webnode\.fr spambot=yes
 SetEnvIfNoCase Referer rezeptiblud\.ru spambot=yes
@@ -5293,6 +5298,7 @@ SetEnvIfNoCase Referer svetodiodoff\.ru spambot=yes
 SetEnvIfNoCase Referer svnuppsalaorebro\.se spambot=yes
 SetEnvIfNoCase Referer svtrd\.com spambot=yes
 SetEnvIfNoCase Referer swagbucks\.com spambot=yes
+SetEnvIfNoCase Referer sweepstakes\.rewardit\.com spambot=yes
 SetEnvIfNoCase Referer swimpool\.ca spambot=yes
 SetEnvIfNoCase Referer swinger\-mobil\.net spambot=yes
 SetEnvIfNoCase Referer swingerseiten\.com spambot=yes

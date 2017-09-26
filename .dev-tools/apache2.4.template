@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.637
-### Updated: Fri Sep 22 16:23:23 SAST 2017
-### Bad Referrer Count: 5814
+### Version: V3.2017.09.638
+### Updated: Tue Sep 26 13:38:52 SAST 2017
+### Bad Referrer Count: 5820
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -945,6 +945,7 @@ SetEnvIfNoCase Referer ~*883zy\.com spam_ref
 SetEnvIfNoCase Referer ~*888\.com spam_ref
 SetEnvIfNoCase Referer ~*8gold\.com spam_ref
 SetEnvIfNoCase Referer ~*8kisses\.eu spam_ref
+SetEnvIfNoCase Referer ~*8lufu\.com spam_ref
 SetEnvIfNoCase Referer ~*8si\.ru spam_ref
 SetEnvIfNoCase Referer ~*8xv8\.com spam_ref
 SetEnvIfNoCase Referer ~*91abcw\.com spam_ref
@@ -2947,6 +2948,7 @@ SetEnvIfNoCase Referer ~*girlsatgames\.ru spam_ref
 SetEnvIfNoCase Referer ~*girlspicsa\.com spam_ref
 SetEnvIfNoCase Referer ~*girls\-ufa\.ru spam_ref
 SetEnvIfNoCase Referer ~*given2\.com spam_ref
+SetEnvIfNoCase Referer ~*gk170\.ru spam_ref
 SetEnvIfNoCase Referer ~*gk\-atlant\.info spam_ref
 SetEnvIfNoCase Referer ~*gktt\.ru spam_ref
 SetEnvIfNoCase Referer ~*gkvector\.ru spam_ref
@@ -3503,6 +3505,7 @@ SetEnvIfNoCase Referer ~*kaz\.kz spam_ref
 SetEnvIfNoCase Referer ~*kazrent\.com spam_ref
 SetEnvIfNoCase Referer ~*kchaxton\.com spam_ref
 SetEnvIfNoCase Referer ~*keenoutlet\.online spam_ref
+SetEnvIfNoCase Referer ~*kemerovo\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*kenaba\.su spam_ref
 SetEnvIfNoCase Referer ~*kerei\.ru spam_ref
 SetEnvIfNoCase Referer ~*kerwinandcariza\.com spam_ref
@@ -3558,6 +3561,7 @@ SetEnvIfNoCase Referer ~*kletkimehan\.ru spam_ref
 SetEnvIfNoCase Referer ~*klikbonus\.com spam_ref
 SetEnvIfNoCase Referer ~*kliksaya\.com spam_ref
 SetEnvIfNoCase Referer ~*klosetkitten\.com spam_ref
+SetEnvIfNoCase Referer ~*klumba55\.ru spam_ref
 SetEnvIfNoCase Referer ~*kmd\-pto\.ru spam_ref
 SetEnvIfNoCase Referer ~*kmgamex\.cf spam_ref
 SetEnvIfNoCase Referer ~*kndxbkdx\.bloger\.index\.hr spam_ref
@@ -4943,6 +4947,7 @@ SetEnvIfNoCase Referer ~*rethinkwasteni\.info spam_ref
 SetEnvIfNoCase Referer ~*retreatia\.com spam_ref
 SetEnvIfNoCase Referer ~*reversing\.cc spam_ref
 SetEnvIfNoCase Referer ~*revistaindustria\.com spam_ref
+SetEnvIfNoCase Referer ~*rewardit\.com spam_ref
 SetEnvIfNoCase Referer ~*rewardpoll\.com spam_ref
 SetEnvIfNoCase Referer ~*reward\-survey\.net spam_ref
 SetEnvIfNoCase Referer ~*reyel1985\.webnode\.fr spam_ref
@@ -5587,6 +5592,7 @@ SetEnvIfNoCase Referer ~*svetodiodoff\.ru spam_ref
 SetEnvIfNoCase Referer ~*svnuppsalaorebro\.se spam_ref
 SetEnvIfNoCase Referer ~*svtrd\.com spam_ref
 SetEnvIfNoCase Referer ~*swagbucks\.com spam_ref
+SetEnvIfNoCase Referer ~*sweepstakes\.rewardit\.com spam_ref
 SetEnvIfNoCase Referer ~*swimpool\.ca spam_ref
 SetEnvIfNoCase Referer ~*swinger\-mobil\.net spam_ref
 SetEnvIfNoCase Referer ~*swingerseiten\.com spam_ref
