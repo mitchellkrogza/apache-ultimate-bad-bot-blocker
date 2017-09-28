@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.638
-### Updated: Tue Sep 26 13:38:52 SAST 2017
-### Bad Referrer Count: 5820
+### Version: V3.2017.09.639
+### Updated: Thu Sep 28 10:40:45 SAST 2017
+### Bad Referrer Count: 5830
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -2311,6 +2311,7 @@ SetEnvIfNoCase Referer ~*domainroam\.win spam_ref
 SetEnvIfNoCase Referer ~*domainsatcost\.com spam_ref
 SetEnvIfNoCase Referer ~*domain\-submit\.info spam_ref
 SetEnvIfNoCase Referer ~*domain\-tracker\.com spam_ref
+SetEnvIfNoCase Referer ~*domain\.webkeyit\.com spam_ref
 SetEnvIfNoCase Referer ~*domashneeruporno\.com spam_ref
 SetEnvIfNoCase Referer ~*domcran\.net spam_ref
 SetEnvIfNoCase Referer ~*domik\-derevne\.ru spam_ref
@@ -2517,8 +2518,10 @@ SetEnvIfNoCase Referer ~*eshop\.md spam_ref
 SetEnvIfNoCase Referer ~*esnm\.ru spam_ref
 SetEnvIfNoCase Referer ~*esopini\.com spam_ref
 SetEnvIfNoCase Referer ~*espaceinventoristes\.com spam_ref
+SetEnvIfNoCase Referer ~*essay\-edu\.biz spam_ref
 SetEnvIfNoCase Referer ~*essaypro\.com spam_ref
 SetEnvIfNoCase Referer ~*essayservicewriting\.org spam_ref
+SetEnvIfNoCase Referer ~*essay\-writing\.work spam_ref
 SetEnvIfNoCase Referer ~*estelight\.ru spam_ref
 SetEnvIfNoCase Referer ~*este\-line\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*estibot\.com spam_ref
@@ -3997,6 +4000,7 @@ SetEnvIfNoCase Referer ~*mirtorrent\.net spam_ref
 SetEnvIfNoCase Referer ~*mirzonru\.net spam_ref
 SetEnvIfNoCase Referer ~*misandesign\.se spam_ref
 SetEnvIfNoCase Referer ~*missclub\.info spam_ref
+SetEnvIfNoCase Referer ~*missis\.top spam_ref
 SetEnvIfNoCase Referer ~*missvietnam\.org spam_ref
 SetEnvIfNoCase Referer ~*misswell\.net spam_ref
 SetEnvIfNoCase Referer ~*misterjtbarbers\.com spam_ref
@@ -4222,6 +4226,7 @@ SetEnvIfNoCase Referer ~*netoil\.no spam_ref
 SetEnvIfNoCase Referer ~*netpics\.org spam_ref
 SetEnvIfNoCase Referer ~*net\-profits\.xyz spam_ref
 SetEnvIfNoCase Referer ~*net\-radar\.com spam_ref
+SetEnvIfNoCase Referer ~*netvouz\.com spam_ref
 SetEnvIfNoCase Referer ~*networkad\.net spam_ref
 SetEnvIfNoCase Referer ~*networkcheck\.xyz spam_ref
 SetEnvIfNoCase Referer ~*nevansk\.ru spam_ref
@@ -4599,6 +4604,7 @@ SetEnvIfNoCase Referer ~*playlott\.com spam_ref
 SetEnvIfNoCase Referer ~*play\-movie\.pl spam_ref
 SetEnvIfNoCase Referer ~*play\-mp3\.com spam_ref
 SetEnvIfNoCase Referer ~*playmsn\.com spam_ref
+SetEnvIfNoCase Referer ~*pl\.id\-forex\.com spam_ref
 SetEnvIfNoCase Referer ~*pliks\.pl spam_ref
 SetEnvIfNoCase Referer ~*ploenjitmedia\.azurewebsites\.net spam_ref
 SetEnvIfNoCase Referer ~*plohaya\-kreditnaya\-istoriya\.ru spam_ref
@@ -4788,6 +4794,7 @@ SetEnvIfNoCase Referer ~*pr\-ten\.de spam_ref
 SetEnvIfNoCase Referer ~*psa48\.ru spam_ref
 SetEnvIfNoCase Referer ~*pskcijdc\.bloger\.index\.hr spam_ref
 SetEnvIfNoCase Referer ~*psoriasis\-file\.trade spam_ref
+SetEnvIfNoCase Referer ~*pssucai\.info spam_ref
 SetEnvIfNoCase Referer ~*pst2017\.onlinewebshop\.net spam_ref
 SetEnvIfNoCase Referer ~*psvita\.ru spam_ref
 SetEnvIfNoCase Referer ~*ptr\.ruvds\.com spam_ref
@@ -5036,6 +5043,7 @@ SetEnvIfNoCase Referer ~*saletool\.ru spam_ref
 SetEnvIfNoCase Referer ~*sa\-live\.com spam_ref
 SetEnvIfNoCase Referer ~*salmonfishingsacramentoriver\.com spam_ref
 SetEnvIfNoCase Referer ~*salutmontreal\.com spam_ref
+SetEnvIfNoCase Referer ~*sammlungfotos\.online spam_ref
 SetEnvIfNoCase Referer ~*sammyweaver\.com spam_ref
 SetEnvIfNoCase Referer ~*samoiedo\.it spam_ref
 SetEnvIfNoCase Referer ~*samolet\.fr spam_ref
@@ -6158,6 +6166,7 @@ SetEnvIfNoCase Referer ~*vremya\.eu spam_ref
 SetEnvIfNoCase Referer ~*vriel\.batcave\.net spam_ref
 SetEnvIfNoCase Referer ~*vrnelectro\.ru spam_ref
 SetEnvIfNoCase Referer ~*vrotike\.ru spam_ref
+SetEnvIfNoCase Referer ~*vsdshnik\.com spam_ref
 SetEnvIfNoCase Referer ~*vsesubwaysurfers\.com spam_ref
 SetEnvIfNoCase Referer ~*vseuznaem\.com spam_ref
 SetEnvIfNoCase Referer ~*vsexkontakte\.net spam_ref
@@ -6206,6 +6215,7 @@ SetEnvIfNoCase Referer ~*webinstantservice\.com spam_ref
 SetEnvIfNoCase Referer ~*webix\.biz spam_ref
 SetEnvIfNoCase Referer ~*webix\.me spam_ref
 SetEnvIfNoCase Referer ~*webjam\.com spam_ref
+SetEnvIfNoCase Referer ~*webkeyit\.com spam_ref
 SetEnvIfNoCase Referer ~*weblo\.com spam_ref
 SetEnvIfNoCase Referer ~*webmasterhome\.cn spam_ref
 SetEnvIfNoCase Referer ~*webmasters\.stackexchange\.com spam_ref
