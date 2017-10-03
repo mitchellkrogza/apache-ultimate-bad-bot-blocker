@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.09.640
-### Updated: Fri Sep 29 11:22:29 SAST 2017
-### Bad Referrer Count: 5839
+### Version: V3.2017.10.641
+### Updated: Tue Oct  3 11:17:47 SAST 2017
+### Bad Referrer Count: 5840
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -1475,6 +1475,7 @@ SetEnvIfNoCase Referer ~*bcmp\.org spam_ref
 SetEnvIfNoCase Referer ~*bdsmgalls\.net spam_ref
 SetEnvIfNoCase Referer ~*beachdriveblog\.com spam_ref
 SetEnvIfNoCase Referer ~*beachpics\.com spam_ref
+SetEnvIfNoCase Referer ~*beatifullandscape\.co spam_ref
 SetEnvIfNoCase Referer ~*beauby\.ru spam_ref
 SetEnvIfNoCase Referer ~*beauty\-b0x\.pl spam_ref
 SetEnvIfNoCase Referer ~*beauty\-bracelet\.com spam_ref

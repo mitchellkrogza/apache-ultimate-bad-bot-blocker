@@ -653,6 +653,7 @@ SetEnvIfNoCase Referer ~*bcmp\.org spam_ref
 SetEnvIfNoCase Referer ~*bdsmgalls\.net spam_ref
 SetEnvIfNoCase Referer ~*beachdriveblog\.com spam_ref
 SetEnvIfNoCase Referer ~*beachpics\.com spam_ref
+SetEnvIfNoCase Referer ~*beatifullandscape\.co spam_ref
 SetEnvIfNoCase Referer ~*beauby\.ru spam_ref
 SetEnvIfNoCase Referer ~*beauty\-b0x\.pl spam_ref
 SetEnvIfNoCase Referer ~*beauty\-bracelet\.com spam_ref
