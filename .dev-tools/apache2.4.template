@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.641
-### Updated: Tue Oct  3 11:17:47 SAST 2017
-### Bad Referrer Count: 5840
+### Version: V3.2017.10.642
+### Updated: Wed Oct  4 16:10:43 SAST 2017
+### Bad Referrer Count: 5843
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -1705,6 +1705,7 @@ SetEnvIfNoCase Referer ~*buigas\.00it\.com spam_ref
 SetEnvIfNoCase Referer ~*builtwith\.com spam_ref
 SetEnvIfNoCase Referer ~*buketeg\.xyz spam_ref
 SetEnvIfNoCase Referer ~*bukleteg\.xyz spam_ref
+SetEnvIfNoCase Referer ~*bumble\.cheapwebsitehoster\.com spam_ref
 SetEnvIfNoCase Referer ~*bum\.com\.ru spam_ref
 SetEnvIfNoCase Referer ~*bumskontakte\.org spam_ref
 SetEnvIfNoCase Referer ~*bupropion\-sr\-150\-mg\.us spam_ref
@@ -5504,6 +5505,7 @@ SetEnvIfNoCase Referer ~*stackthatbucks\.com spam_ref
 SetEnvIfNoCase Referer ~*staff\.prairiesouth\.ca spam_ref
 SetEnvIfNoCase Referer ~*stairliftsarea\.com spam_ref
 SetEnvIfNoCase Referer ~*stairliftstrue\.com spam_ref
+SetEnvIfNoCase Referer ~*stair\.registrydomainservices\.com spam_ref
 SetEnvIfNoCase Referer ~*stal\-rulon\.ru spam_ref
 SetEnvIfNoCase Referer ~*standardchartered\-forex\.com spam_ref
 SetEnvIfNoCase Referer ~*stanthonyscatholicchurch\.org spam_ref
@@ -6286,6 +6288,7 @@ SetEnvIfNoCase Referer ~*wheelchairliftsarea\.com spam_ref
 SetEnvIfNoCase Referer ~*whengirlsgowild\.com spam_ref
 SetEnvIfNoCase Referer ~*whereiskentoday\.com spam_ref
 SetEnvIfNoCase Referer ~*where\-toget\.com spam_ref
+SetEnvIfNoCase Referer ~*while\.cheapwebsitehoster\.com spam_ref
 SetEnvIfNoCase Referer ~*whipme\.yopoint\.in spam_ref
 SetEnvIfNoCase Referer ~*whiteelephantwellington\.com spam_ref
 SetEnvIfNoCase Referer ~*whiteproduct\.com spam_ref

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.641
-### Bad Referrer Count: 5840
+### Version: V3.2017.10.642
+### Bad Referrer Count: 5843
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -1412,6 +1412,7 @@ SetEnvIfNoCase Referer builtwith\.com spambot=yes
 SetEnvIfNoCase Referer buketeg\.xyz spambot=yes
 SetEnvIfNoCase Referer bukleteg\.xyz spambot=yes
 SetEnvIfNoCase Referer bum\.com\.ru spambot=yes
+SetEnvIfNoCase Referer bumble\.cheapwebsitehoster\.com spambot=yes
 SetEnvIfNoCase Referer bumskontakte\.org spambot=yes
 SetEnvIfNoCase Referer bupropion\-sr\-150\-mg\.us spambot=yes
 SetEnvIfNoCase Referer buqayy0\.livejournal\.com spambot=yes
@@ -5208,6 +5209,7 @@ SetEnvIfNoCase Referer srgwebmail\.nl spambot=yes
 SetEnvIfNoCase Referer sstroy44\.ru spambot=yes
 SetEnvIfNoCase Referer stackthatbucks\.com spambot=yes
 SetEnvIfNoCase Referer staff\.prairiesouth\.ca spambot=yes
+SetEnvIfNoCase Referer stair\.registrydomainservices\.com spambot=yes
 SetEnvIfNoCase Referer stairliftsarea\.com spambot=yes
 SetEnvIfNoCase Referer stairliftstrue\.com spambot=yes
 SetEnvIfNoCase Referer stal\-rulon\.ru spambot=yes
@@ -5993,6 +5995,7 @@ SetEnvIfNoCase Referer wheelchairliftsarea\.com spambot=yes
 SetEnvIfNoCase Referer whengirlsgowild\.com spambot=yes
 SetEnvIfNoCase Referer where\-toget\.com spambot=yes
 SetEnvIfNoCase Referer whereiskentoday\.com spambot=yes
+SetEnvIfNoCase Referer while\.cheapwebsitehoster\.com spambot=yes
 SetEnvIfNoCase Referer whipme\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer white\-truck\.life spambot=yes
 SetEnvIfNoCase Referer whiteelephantwellington\.com spambot=yes
