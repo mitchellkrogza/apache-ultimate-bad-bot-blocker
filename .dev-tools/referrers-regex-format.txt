@@ -3259,6 +3259,7 @@ SetEnvIfNoCase Referer ~*more\-letom\.ru spam_ref
 SetEnvIfNoCase Referer ~*morepoweronmac\.trade spam_ref
 SetEnvIfNoCase Referer ~*morf\.snn\.gr spam_ref
 SetEnvIfNoCase Referer ~*morlat\.altervista\.org spam_ref
+SetEnvIfNoCase Referer ~*morocco\-nomad\-excursions\.com spam_ref
 SetEnvIfNoCase Referer ~*moroccosurfadventures\.com spam_ref
 SetEnvIfNoCase Referer ~*moscow\-clining\.ru spam_ref
 SetEnvIfNoCase Referer ~*moscow\.online\-podarki\.com spam_ref
@@ -5328,6 +5329,7 @@ SetEnvIfNoCase Referer ~*viven\.host\.sk spam_ref
 SetEnvIfNoCase Referer ~*vizag\.kharkov\.ua spam_ref
 SetEnvIfNoCase Referer ~*vizitki\.net spam_ref
 SetEnvIfNoCase Referer ~*vkak\.ru spam_ref
+SetEnvIfNoCase Referer ~*vkgaleria\.com spam_ref
 SetEnvIfNoCase Referer ~*vk\-mus\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkontaktemusic\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkontarkte\.com spam_ref
