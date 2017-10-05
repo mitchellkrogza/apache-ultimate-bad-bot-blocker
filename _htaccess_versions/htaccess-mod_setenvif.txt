@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.642
-### Bad Referrer Count: 5843
+### Version: V3.2017.10.643
+### Bad Referrer Count: 5849
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -2994,6 +2994,7 @@ SetEnvIfNoCase Referer ikritikimou\.gr spambot=yes
 SetEnvIfNoCase Referer ilbe\.club spambot=yes
 SetEnvIfNoCase Referer ilikevitaly\.com spambot=yes
 SetEnvIfNoCase Referer ilmen\.net spambot=yes
+SetEnvIfNoCase Referer ilmexico\.com spambot=yes
 SetEnvIfNoCase Referer iloveitaly\.ru spambot=yes
 SetEnvIfNoCase Referer ilovevitaly\.com spambot=yes
 SetEnvIfNoCase Referer ilovevitaly\.ru spambot=yes
@@ -4286,6 +4287,7 @@ SetEnvIfNoCase Referer pipki\.r\.acdnpro\.com spambot=yes
 SetEnvIfNoCase Referer piratecams\.com spambot=yes
 SetEnvIfNoCase Referer pirateday\.ru spambot=yes
 SetEnvIfNoCase Referer pisanieprac\.info spambot=yes
+SetEnvIfNoCase Referer piski\.top spambot=yes
 SetEnvIfNoCase Referer piter\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer piulatte\.cz spambot=yes
 SetEnvIfNoCase Referer piuminiita\.com spambot=yes
@@ -4372,6 +4374,7 @@ SetEnvIfNoCase Referer porno\-play\.net spambot=yes
 SetEnvIfNoCase Referer porno\-raskazy\.ru spambot=yes
 SetEnvIfNoCase Referer porno\-transsexuals\.ru spambot=yes
 SetEnvIfNoCase Referer porno\-video\-chati\.ru spambot=yes
+SetEnvIfNoCase Referer porno\.simple\-image\.com\.ua spambot=yes
 SetEnvIfNoCase Referer pornoblood\.com spambot=yes
 SetEnvIfNoCase Referer pornobrazzers\.biz spambot=yes
 SetEnvIfNoCase Referer pornodojd\.ru spambot=yes
@@ -5084,6 +5087,7 @@ SetEnvIfNoCase Referer slutloadlive\.com spambot=yes
 SetEnvIfNoCase Referer smailik\.org spambot=yes
 SetEnvIfNoCase Referer small\-game\.com spambot=yes
 SetEnvIfNoCase Referer small\-games\.biz spambot=yes
+SetEnvIfNoCase Referer smallseotools\.com spambot=yes
 SetEnvIfNoCase Referer smart\-balancewheel\.com spambot=yes
 SetEnvIfNoCase Referer smart\-scripts\.com spambot=yes
 SetEnvIfNoCase Referer smartadserver\.com spambot=yes
@@ -6071,6 +6075,7 @@ SetEnvIfNoCase Referer wtsindia\.in spambot=yes
 SetEnvIfNoCase Referer wttavern\.com spambot=yes
 SetEnvIfNoCase Referer wurr\.voila\.net spambot=yes
 SetEnvIfNoCase Referer ww1943\.ru spambot=yes
+SetEnvIfNoCase Referer ww2awards\.info spambot=yes
 SetEnvIfNoCase Referer www\.888\.com spambot=yes
 SetEnvIfNoCase Referer www\.arenda\-yeisk\.ru spambot=yes
 SetEnvIfNoCase Referer www\.event\-tracking\.com spambot=yes
@@ -6151,6 +6156,7 @@ SetEnvIfNoCase Referer xn\-\-80abgj3a5acid6ghs\.top spambot=yes
 SetEnvIfNoCase Referer xn\-\-80adaggc5bdhlfamsfdij4p7b\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80aeahghtf8ac5i\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80aebbcbcdemfkhba4byaehoejh8dza3v\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-80ahdheogk5l\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80ahvj9e\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-80aikhbrhr\.net spambot=yes
 SetEnvIfNoCase Referer xn\-\-80ajbshivpvn2i\.xn\-\-p1ai spambot=yes
