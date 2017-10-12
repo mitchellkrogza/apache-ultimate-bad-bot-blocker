@@ -3368,6 +3368,7 @@ SetEnvIfNoCase Referer ~*myseoconsultant\.com spam_ref
 SetEnvIfNoCase Referer ~*myshopmatemac\.com spam_ref
 SetEnvIfNoCase Referer ~*mystats\.xyz spam_ref
 SetEnvIfNoCase Referer ~*mywallpaper\.top spam_ref
+SetEnvIfNoCase Referer ~*myxdate\.info spam_ref
 SetEnvIfNoCase Referer ~*myyour\.eu spam_ref
 SetEnvIfNoCase Referer ~*na15\.ru spam_ref
 SetEnvIfNoCase Referer ~*nacap\.ru spam_ref
