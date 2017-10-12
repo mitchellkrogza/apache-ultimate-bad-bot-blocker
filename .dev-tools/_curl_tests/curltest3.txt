@@ -1,7 +1,7 @@
-Last Tested: Mon Oct  9 11:16:18 SAST 2017
+Last Tested: Thu Oct 12 10:33:37 SAST 2017
 
 HTTP/1.1 403 Forbidden
-Date: Mon, 09 Oct 2017 09:16:18 GMT
+Date: Thu, 12 Oct 2017 08:33:37 GMT
 Server: Apache/2.4.27 (Ubuntu)
 Content-Type: text/html; charset=iso-8859-1
 

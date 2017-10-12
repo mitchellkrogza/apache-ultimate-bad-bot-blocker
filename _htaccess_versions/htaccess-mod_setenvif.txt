@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.647
-### Bad Referrer Count: 5851
+### Version: V3.2017.10.648
+### Bad Referrer Count: 5859
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -1215,6 +1215,7 @@ SetEnvIfNoCase Referer bestcurs\.org spambot=yes
 SetEnvIfNoCase Referer bestdooz\.com spambot=yes
 SetEnvIfNoCase Referer bestdraws\.com spambot=yes
 SetEnvIfNoCase Referer bestempresas\.es spambot=yes
+SetEnvIfNoCase Referer besthoro\.ru spambot=yes
 SetEnvIfNoCase Referer bestimagecoollibrary\.com spambot=yes
 SetEnvIfNoCase Referer bestkfiledxd\.cf spambot=yes
 SetEnvIfNoCase Referer bestmarriages\.com spambot=yes
@@ -3397,6 +3398,7 @@ SetEnvIfNoCase Referer legionalpha\.com spambot=yes
 SetEnvIfNoCase Referer lego4x4\.ru spambot=yes
 SetEnvIfNoCase Referer lenvred\.org spambot=yes
 SetEnvIfNoCase Referer lernur\.net spambot=yes
+SetEnvIfNoCase Referer lerporn\.info spambot=yes
 SetEnvIfNoCase Referer lesbian\.xyz spambot=yes
 SetEnvIfNoCase Referer lescinq\.com spambot=yes
 SetEnvIfNoCase Referer letmacwork\.world spambot=yes
@@ -4214,6 +4216,7 @@ SetEnvIfNoCase Referer pb\-dv\.ru spambot=yes
 SetEnvIfNoCase Referer pc\-services\.ru spambot=yes
 SetEnvIfNoCase Referer pc\-test\.net spambot=yes
 SetEnvIfNoCase Referer pc\-virus\-d0l92j2\.pw spambot=yes
+SetEnvIfNoCase Referer pc4download\.co spambot=yes
 SetEnvIfNoCase Referer pcads\.ru spambot=yes
 SetEnvIfNoCase Referer pcboa\.se spambot=yes
 SetEnvIfNoCase Referer pcgroup\.com\.uy spambot=yes
@@ -4454,6 +4457,7 @@ SetEnvIfNoCase Referer prizesbook\.online spambot=yes
 SetEnvIfNoCase Referer prizestohandle\.club spambot=yes
 SetEnvIfNoCase Referer prlog\.ru spambot=yes
 SetEnvIfNoCase Referer pro\-okis\.ru spambot=yes
+SetEnvIfNoCase Referer pro\-tec\.kz spambot=yes
 SetEnvIfNoCase Referer prod2016\.com spambot=yes
 SetEnvIfNoCase Referer prodess\.ru spambot=yes
 SetEnvIfNoCase Referer producm\.ru spambot=yes
@@ -5528,6 +5532,7 @@ SetEnvIfNoCase Referer top250movies\.ru spambot=yes
 SetEnvIfNoCase Referer topads\.men spambot=yes
 SetEnvIfNoCase Referer topappspro\.com spambot=yes
 SetEnvIfNoCase Referer topbestgames\.com spambot=yes
+SetEnvIfNoCase Referer topcar\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer topclickguru\.com spambot=yes
 SetEnvIfNoCase Referer topdownloads\.ru spambot=yes
 SetEnvIfNoCase Referer topkarkas\.com spambot=yes
@@ -5716,6 +5721,8 @@ SetEnvIfNoCase Referer upproar\.com spambot=yes
 SetEnvIfNoCase Referer uprour\.com spambot=yes
 SetEnvIfNoCase Referer upstore\.me spambot=yes
 SetEnvIfNoCase Referer uptime\-alpha\.net spambot=yes
+SetEnvIfNoCase Referer uptime\-delta\.net spambot=yes
+SetEnvIfNoCase Referer uptime\-gamma\.net spambot=yes
 SetEnvIfNoCase Referer uptime\.com spambot=yes
 SetEnvIfNoCase Referer uptimebot\.net spambot=yes
 SetEnvIfNoCase Referer uptimechecker\.com spambot=yes
@@ -6222,6 +6229,7 @@ SetEnvIfNoCase Referer yellowads\.men spambot=yes
 SetEnvIfNoCase Referer yellowfootprints\.com spambot=yes
 SetEnvIfNoCase Referer yellowstonesafaritours\.com spambot=yes
 SetEnvIfNoCase Referer yellowstonevisitortours\.com spambot=yes
+SetEnvIfNoCase Referer yes\-com\.com spambot=yes
 SetEnvIfNoCase Referer yhit\.press spambot=yes
 SetEnvIfNoCase Referer ynymnwbm\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer yogamatsexpert\.com spambot=yes
