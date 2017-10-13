@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.650
-### Bad Referrer Count: 5860
+### Version: V3.2017.10.651
+### Bad Referrer Count: 5870
 ### Bad Bot Count: 515
 ### Version Information ##
 
@@ -1708,6 +1708,7 @@ SetEnvIfNoCase Referer coldfilm\.ru spambot=yes
 SetEnvIfNoCase Referer colehaanoutlet\.store spambot=yes
 SetEnvIfNoCase Referer collegeessay19\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer collegerentals\.com spambot=yes
+SetEnvIfNoCase Referer colobit\.biz spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.host spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.site spambot=yes
 SetEnvIfNoCase Referer com\-secure\.download spambot=yes
@@ -2575,6 +2576,7 @@ SetEnvIfNoCase Referer galleryawesome\.com spambot=yes
 SetEnvIfNoCase Referer gallerylisting\.com spambot=yes
 SetEnvIfNoCase Referer gallictures\.com spambot=yes
 SetEnvIfNoCase Referer gambarkatabaru\.com spambot=yes
+SetEnvIfNoCase Referer gambarkataku\.co spambot=yes
 SetEnvIfNoCase Referer gambarxkata\.co spambot=yes
 SetEnvIfNoCase Referer gamblingnerd\.com spambot=yes
 SetEnvIfNoCase Referer game\-mmorpg\.net spambot=yes
@@ -3119,6 +3121,7 @@ SetEnvIfNoCase Referer itronics\.ca spambot=yes
 SetEnvIfNoCase Referer itsdp3\.com spambot=yes
 SetEnvIfNoCase Referer itservicesthatworkforyou\.com spambot=yes
 SetEnvIfNoCase Referer iusstf\.org spambot=yes
+SetEnvIfNoCase Referer ivanovo\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer ivanstroi\.ru spambot=yes
 SetEnvIfNoCase Referer ivoiretechnocom\.ci spambot=yes
 SetEnvIfNoCase Referer iwantedmoney\.com spambot=yes
@@ -3250,6 +3253,7 @@ SetEnvIfNoCase Referer kino\-filmi\.com spambot=yes
 SetEnvIfNoCase Referer kino\-fun\.ru spambot=yes
 SetEnvIfNoCase Referer kino\-key\.info spambot=yes
 SetEnvIfNoCase Referer kino\-rating\.ru spambot=yes
+SetEnvIfNoCase Referer kino2018\.club spambot=yes
 SetEnvIfNoCase Referer kinobaks\.com spambot=yes
 SetEnvIfNoCase Referer kinobest\.pl spambot=yes
 SetEnvIfNoCase Referer kinocccp\.net spambot=yes
@@ -3324,6 +3328,7 @@ SetEnvIfNoCase Referer krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer krasnodar\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer krasnodar\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer krassh\.ru spambot=yes
+SetEnvIfNoCase Referer krasula\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer kreativperlen\.ch spambot=yes
 SetEnvIfNoCase Referer kredit\-pod\-zalog\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer kriokomora\.info spambot=yes
@@ -3382,6 +3387,7 @@ SetEnvIfNoCase Referer law\-check\-nine\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-check\-seven\.xyz spambot=yes
 SetEnvIfNoCase Referer law\-check\-two\.xyz spambot=yes
 SetEnvIfNoCase Referer lawyers\.cafe spambot=yes
+SetEnvIfNoCase Referer lawyersinfo\.org spambot=yes
 SetEnvIfNoCase Referer laxdrills\.com spambot=yes
 SetEnvIfNoCase Referer layola\.biz\.tc spambot=yes
 SetEnvIfNoCase Referer lazy\-z\.com spambot=yes
@@ -3833,6 +3839,7 @@ SetEnvIfNoCase Referer muabancantho\.info spambot=yes
 SetEnvIfNoCase Referer mug\-na\-chas\-moscow\.ru spambot=yes
 SetEnvIfNoCase Referer muizre\.ru spambot=yes
 SetEnvIfNoCase Referer mulberryoutletonlineeu\.com spambot=yes
+SetEnvIfNoCase Referer multgo\.ru spambot=yes
 SetEnvIfNoCase Referer mundoaberrante\.com spambot=yes
 SetEnvIfNoCase Referer muschisexbilder\.com spambot=yes
 SetEnvIfNoCase Referer musezone\.ru spambot=yes
@@ -4272,6 +4279,7 @@ SetEnvIfNoCase Referer picsearch\.com spambot=yes
 SetEnvIfNoCase Referer picsfair\.com spambot=yes
 SetEnvIfNoCase Referer picsforkeywordsuggestion\.com spambot=yes
 SetEnvIfNoCase Referer picture\-group\.com spambot=yes
+SetEnvIfNoCase Referer pictures\-and\-images\.net spambot=yes
 SetEnvIfNoCase Referer picturesfrom\.com spambot=yes
 SetEnvIfNoCase Referer picturesify\.com spambot=yes
 SetEnvIfNoCase Referer picturesmania\.com spambot=yes
@@ -5216,6 +5224,7 @@ SetEnvIfNoCase Referer sr\-rekneskap\.no spambot=yes
 SetEnvIfNoCase Referer srdrvp\.com spambot=yes
 SetEnvIfNoCase Referer srecorder\.com spambot=yes
 SetEnvIfNoCase Referer srgwebmail\.nl spambot=yes
+SetEnvIfNoCase Referer sribno\.net spambot=yes
 SetEnvIfNoCase Referer sstroy44\.ru spambot=yes
 SetEnvIfNoCase Referer stackthatbucks\.com spambot=yes
 SetEnvIfNoCase Referer staff\.prairiesouth\.ca spambot=yes
@@ -6348,6 +6357,7 @@ SetEnvIfNoCase Referer zixizop\.net\.ru spambot=yes
 SetEnvIfNoCase Referer zkjovpdgxivg\.ga spambot=yes
 SetEnvIfNoCase Referer zlatnajesen\.com spambot=yes
 SetEnvIfNoCase Referer zmoda\.hostreo\.com spambot=yes
+SetEnvIfNoCase Referer znakom\.sibtest\.ru spambot=yes
 SetEnvIfNoCase Referer znakomstva\-moskva77\.ru spambot=yes
 SetEnvIfNoCase Referer znakomstva\-piter78\.ru spambot=yes
 SetEnvIfNoCase Referer znakomstvaonlain\.ru spambot=yes
