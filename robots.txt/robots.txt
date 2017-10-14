@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.671
-### Updated: Sat Oct 14 11:59:19 SAST 2017
+### Version: V3.2017.10.672
+### Updated: Sat Oct 14 12:07:31 SAST 2017
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -268,6 +268,8 @@ Disallow:/
 User-agent: G-i-g-a-b-o-t
 Disallow:/
 User-agent: GT::WWW
+Disallow:/
+User-agent: G\-i\-g\-a\-b\-o\-t
 Disallow:/
 User-agent: GalaxyBot
 Disallow:/

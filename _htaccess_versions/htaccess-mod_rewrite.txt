@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.671
+### Version: V3.2017.10.672
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 515
 ### Version Information ##
@@ -156,6 +156,7 @@ RewriteCond %{HTTP_USER_AGENT} ^GetWeb.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gigablast.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gigabot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^G\-i\-g\-a\-b\-o\-t.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^G\\\-i\\\-g\\\-a\\\-b\\\-o\\\-t.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Go\-Ahead\-Got\-It.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Gotit.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GoZilla.* [NC,OR]
