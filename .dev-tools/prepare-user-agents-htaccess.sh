@@ -34,7 +34,7 @@ _output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.l
 # ********************************************
 
 #sed 's/\\ / /g' $_input > $_output
-sudo cp $_input > $_output
+#sudo cp $_input > $_output
 
 
 # *************************************

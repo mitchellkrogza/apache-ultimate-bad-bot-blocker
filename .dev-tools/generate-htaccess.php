@@ -68,7 +68,9 @@ class Generator
      */
     public function domainWorker2()
     {
-        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
+        //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
+        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
+        
 
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
