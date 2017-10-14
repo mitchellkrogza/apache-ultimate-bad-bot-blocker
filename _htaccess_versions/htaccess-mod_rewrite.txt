@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.658
+### Version: V3.2017.10.659
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 515
 ### Version Information ##
@@ -41,14 +41,14 @@ RewriteCond %{HTTP_USER_AGENT} ^Badass.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bandit.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Barkrowler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BatchFTP.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Battleztar\\ Bazinga.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Battleztar Bazinga.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BBBike.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BDFetch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BetaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bigfoot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bitacle.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Blackboard.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Black\\ Hole.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Black Hole.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BlackWidow.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BLEXBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Blow.* [NC,OR]

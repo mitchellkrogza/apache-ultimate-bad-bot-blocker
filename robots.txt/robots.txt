@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.658
-### Updated: Sat Oct 14 10:40:21 SAST 2017
+### Version: V3.2017.10.659
+### Updated: Sat Oct 14 10:45:03 SAST 2017
 ### Bad Bot Count: 515
 ###################################################
 ### Version Information ##
@@ -69,7 +69,7 @@ User-agent: Barkrowler
 Disallow:/
 User-agent: BatchFTP
 Disallow:/
-User-agent: Battleztar\ Bazinga
+User-agent: Battleztar Bazinga
 Disallow:/
 User-agent: BetaBot
 Disallow:/
@@ -77,9 +77,9 @@ User-agent: Bigfoot
 Disallow:/
 User-agent: Bitacle
 Disallow:/
-User-agent: BlackWidow
+User-agent: Black Hole
 Disallow:/
-User-agent: Black\ Hole
+User-agent: BlackWidow
 Disallow:/
 User-agent: Blackboard
 Disallow:/
