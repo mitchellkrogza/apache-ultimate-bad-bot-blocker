@@ -28,12 +28,12 @@ Badass\
 Bandit\
 Barkrowler\
 BatchFTP\
-Battleztar\Bazinga\
+Battleztar\ Bazinga\
 BetaBot\
 Bigfoot\
 Bitacle\
 BlackWidow\
-Black\Hole\
+Black\ Hole\
 Blackboard\
 BlowFish\
 Blow\
@@ -76,7 +76,7 @@ Curious\
 Custo\
 DBLBot\
 DIIbot\
-DTS\\Agent\
+DTS\\ Agent\
 DataCha0s\
 DatabaseDriverMysqli\
 Demon\
@@ -93,16 +93,16 @@ DomainCrawler\
 DomainSigmaCrawler\
 DomainStatsBot\
 Dotbot\
-Download\\Demon\
-Download\\Devil\
-Download\\Wonder\
+Download\\ Demon\
+Download\\ Devil\
+Download\\ Wonder\
 Dragonfly\
 Drip\
 ECCP/1.0\
-EMail\\Collector\
-EMail\\Extractor\
-EMail\\Siphon\
-EMail\\Wolf\
+EMail\\ Collector\
+EMail\\ Extractor\
+EMail\\ Siphon\
+EMail\\ Wolf\
 EasyDL\
 Ebingbong\
 Ecxi\
@@ -110,10 +110,10 @@ EirGrabber\
 EroCrawler\
 Evil\
 Exabot\
-Express\\WebPictures\
+Express\\ WebPictures\
 ExtractorPro\
 Extractor\
-Extreme\\Picture\\Finder\
+Extreme\\ Picture\\ Finder\
 EyeNetIE\
 Ezooms\
 FDM\
@@ -164,19 +164,19 @@ IRLbot\
 Iblog\
 Id-search\
 IlseBot\
-Image\\Fetch\
-Image\\Stripper\
-Image\\Sucker\
-Indy\\Library\
+Image\\ Fetch\
+Image\\ Stripper\
+Image\\ Sucker\
+Indy\\ Library\
 InfoNaviRobot\
 InfoTekies\
 Intelliseek\
 InterGET\
 InternetSeer\
-Internet\\Ninja\
+Internet\\ Ninja\
 Iria\
 Iskanie\
-JOC\\Web\\Spider\
+JOC\\ Web\\ Spider\
 JamesBOT\
 Jbrofuzz\
 JennyBot\
@@ -186,8 +186,8 @@ Joomla\
 Jorgee\
 JustView\
 Jyxobot\
-Kenjin\\Spider\
-Keyword\\Density\
+Kenjin\\ Spider\
+Keyword\\ Density\
 Kozmosbot\
 LNSpiderguy\
 LWP::Simple\
@@ -215,35 +215,35 @@ Litemage_walker\
 Lmspider\
 Ltx71\
 MFC_Tear_Sample\
-MIDown\\tool\
+MIDown\\ tool\
 MIIxpc\
 MJ12bot\
 MSFrontPage\
 MSIECrawler\
-MSIE\\6.0\
-MS\\Web\\Services\\Client\\Protocol\
+MSIE\\ 6.0\
+MS\\ Web\\ Services\\ Client\\ Protocol\
 Mag-Net\
 Magnet\
 Mail.ru\
 Majestic12\
 MarkMonitor\
 MarkWatch\
-Mass\\Downloader\
+Mass\\ Downloader\
 Masscan\
-Mata\\Hari\
+Mata\\ Hari\
 Meanpathbot\
 MegaIndex.ru\
 Metauri\
-Microsoft\\Data\\Access\
-Microsoft\\URL\\Control\
-Mister\\PiX\
+Microsoft\\ Data\\ Access\
+Microsoft\\ URL\\ Control\
+Mister\\ PiX\
 Mojeek\
-Morfeus\\Fucking\\Scanner\
+Morfeus\\ Fucking\\ Scanner\
 Msrabot\
 Musobot\
 NICErsPRO\
 NPbot\
-Name\\Intelligence\
+Name\\ Intelligence\
 Nameprotect\
 Navroad\
 NearSite\
@@ -254,7 +254,7 @@ NetLyzer\
 NetMechanic\
 NetSpider\
 NetZIP\
-Net\\Vampire\
+Net\\ Vampire\
 Netcraft\
 Nettrack\
 Netvibes\
@@ -267,8 +267,8 @@ Ninja\
 Nmap\
 Nutch\
 Octopus\
-Offline\\Explorer\
-Offline\\Navigator\
+Offline\\ Explorer\
+Offline\\ Navigator\
 OpenLinkProfiler\
 Openfind\
 Openvas\
@@ -281,10 +281,10 @@ POE-Component-Client-HTTP\
 PageAnalyzer\
 PageGrabber\
 PageScorer\
-Page\\Analyzer\
-Page\\Grabber\
+Page\\ Analyzer\
+Page\\ Grabber\
 Panscient\
-Papa\\Foto\
+Papa\\ Foto\
 Pavuk\
 PeoplePal\
 Pi-Monster\
@@ -302,7 +302,7 @@ Proximic\
 Psbot\
 Pump\
 PyCurl\
-QueryN\\Metasearch\
+QueryN\\ Metasearch\
 Qwantify\
 RankActiveLinkBot\
 RankActive\
@@ -328,13 +328,13 @@ SEOlyticsCrawler\
 SEOprofiler\
 SEOstats\
 SISTRIX\
-SISTRIX\\Crawler\
+SISTRIX\\ Crawler\
 SalesIntelligent\
 ScanAlert\
 Scanbot\
 Scrapy\
 Screaming\
-Screaming\\Frog\\SEO\\Spider\
+Screaming\\ Frog\\ SEO\\ Spider\
 ScreenerBot\
 Searchestate\
 SearchmetricsBot\
@@ -346,7 +346,7 @@ SiteExplorer\
 SiteLockSpider\
 SiteSnagger\
 SiteSucker\
-Site\\Sucker\
+Site\\ Sucker\
 Sitebeam\
 Siteimprove\
 Sitevigil\
@@ -357,7 +357,7 @@ Snake\
 Snapbot\
 Snoopy\
 SocialRankIOBot\
-Sogou\\web\\spider\
+Sogou\\ web\\ spider\
 Sosospider\
 Sottopop\
 SpaceBison\
@@ -389,7 +389,7 @@ Telesoft\
 Telesphoreo\
 Telesphorep\
 TheNomad\
-The\\Intraformant\
+The\\ Intraformant\
 TightTwatBot\
 Titan\
 Toata\
@@ -398,15 +398,15 @@ Trendictionbot\
 True_Robot\
 Turingos\
 TurnitinBot\
-Turnitin\\Bot\
-Turnitin\\Robot\
+Turnitin\\ Bot\
+Turnitin\\ Robot\
 TwengaBot\
 Twice\
 Typhoeus\
 URLy.Warning\
-URLy\\Warning\
+URLy\\ Warning\
 UnisterBot\
-VB\\Project\
+VB\\ Project\
 VCI\
 Vacuum\
 Vagabondo\
@@ -419,7 +419,7 @@ Voltron\
 WASALive-Bot\
 WBSearchBot\
 WEBDAV\
-WEBDAV\\Client\
+WEBDAV\\ Client\
 WISENutbot\
 WPScan\
 WWW-Collector-E\
@@ -436,7 +436,7 @@ WebCopier\
 WebEnhancer\
 WebFetch\
 WebFuck\
-WebGo\\IS\
+WebGo\\ IS\
 WebImageCollector\
 WebLeacher\
 WebPix\
@@ -446,39 +446,39 @@ WebStripper\
 WebSucker\
 WebWhacker\
 WebZIP\
-Web\\Auto\
-Web\\Bandit\
-Web\\Collage\
-Web\\Copier\
-Web\\Enhancer\
-Web\\Fetch\
-Web\\Fuck\
-Web\\Image\\Collector\
-Web\\Pix\
-Web\\Reaper\
-Web\\Sauger\
-Web\\Stripper\
-Web\\Sucker\
-Web\\Whacker\
+Web\\ Auto\
+Web\\ Bandit\
+Web\\ Collage\
+Web\\ Copier\
+Web\\ Enhancer\
+Web\\ Fetch\
+Web\\ Fuck\
+Web\\ Image\\ Collector\
+Web\\ Pix\
+Web\\ Reaper\
+Web\\ Sauger\
+Web\\ Stripper\
+Web\\ Sucker\
+Web\\ Whacker\
 Webalta\
 WebmasterWorldForumBot\
 Webshag\
 WebsiteExtractor\
 WebsiteQuester\
-Website\\Extractor\
-Website\\Quester\
+Website\\ Extractor\
+Website\\ Quester\
 Webster\
 Whack\
 Whacker\
 Whatweb\
 Widow\
 WinHTTrack\
-WiseGuys\\Robot\
+WiseGuys\\ Robot\
 Wonderbot\
 Woobot\
 Wotbox\
 Wprecon\
-Xaldon\\WebSpider\
+Xaldon\\ WebSpider\
 Xaldon_WebSpider\
 Xenu\
 YoudaoBot\
@@ -498,13 +498,13 @@ demandbase-bot\
 eCatch\
 fq\
 instabid\
-internetVista\\monitor\
+internetVista\\ monitor\
 lwp-request\
 lwp-trivial\
 magpie-crawler\
 mediawords\
-netEstate\\NE\\Crawler\
-page\\scorer\
+netEstate\\ NE\\ Crawler\
+page\\ scorer\
 pcBrowser\
 plumanalytics\
 seoscanners\
