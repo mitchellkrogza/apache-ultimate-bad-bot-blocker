@@ -35,7 +35,7 @@ sudo truncate -s 0 $_output
 # ********************************************
 
 #sed 's/\\ / /g' $_input > $_output
-sed 's/\\//g' $_input > $_output
+sed 's/\\//g' $_input >$_output
 #sudo cp $_input $_output
 
 
