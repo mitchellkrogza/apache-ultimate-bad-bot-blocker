@@ -34,12 +34,7 @@ sudo truncate -s 0 $_output
 # Use sed to strip the \ out of the input file
 # ********************************************
 
-#sudo sed 's/\\ / /g' $_input > $_output
-#sed 's/\\\([^\\]*\)|\([^\\]*\)\\/\1\2/'  $_input > $_output
-#sed 's/\\//g' $_input >$_output
-#sed 's/\\\//g' $_input >$_output
-#sudo cp $_input $_output
-#sed 's/[\]//g' $_input > $_output
+#sed 's/\\ / /g' $_input > $_output
 cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
 
 # *************************************
