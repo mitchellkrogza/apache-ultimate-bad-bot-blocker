@@ -4,7 +4,7 @@
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for Apache Web Servers (2.2 > 2.4+)
 
 _______________
-#### Version: V3.2017.10.664
+#### Version: V3.2017.10.665
 #### Bad Referrer Count: 5870
 #### Bad Bot Count: 515
 ____________________
