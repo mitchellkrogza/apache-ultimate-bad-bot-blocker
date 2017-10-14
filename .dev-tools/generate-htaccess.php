@@ -80,6 +80,7 @@ class Generator
         while (($line = fgets($handle)) !== false) {
             //$line = trim(preg_replace('/\s\s+/', ' ', $line));
             //$line = trim(preg_replace('/\s+/', '\ ', $line));
+            $line = trim(preg_replace('/\s+/', ' ', $line));
 
             // convert internationalized domain names
             if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
