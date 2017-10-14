@@ -46,7 +46,7 @@ cd $TRAVIS_BUILD_DIR
 # Generate our files with build and version information
 # *****************************************************
 
-sudo bash -x $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
+sudo $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
 php ./.dev-tools/apache-referers-regex.php
 php ./.dev-tools/generate-htaccess.php
 php ./.dev-tools/generate-google-exclude.php
