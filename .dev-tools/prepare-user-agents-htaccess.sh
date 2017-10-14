@@ -20,7 +20,8 @@
 # Specify Input and Output Files
 # ******************************
 
-_input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
+#_input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
+_input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents-htaccess.list
 _output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
 
 # *****************
