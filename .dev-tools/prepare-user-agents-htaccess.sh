@@ -33,7 +33,7 @@ sudo truncate -s 0 $_output
 # Use sed to strip the \ out of the input file
 # ********************************************
 
-sed 's/\\ / /g' $_input > $_output
+#sed 's/\\ / /g' $_input > $_output
 
 
 # *************************************

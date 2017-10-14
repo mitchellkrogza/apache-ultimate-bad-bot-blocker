@@ -68,7 +68,7 @@ class Generator
      */
     public function domainWorker2()
     {
-        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents-htaccess.list";
+        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
 
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
@@ -76,7 +76,7 @@ class Generator
         }
         $lines2 = array();
         while (($line = fgets($handle)) !== false) {
-            $line = trim(preg_replace('/\s\s+/', '\ ', $line));
+            $line = trim(preg_replace('/\s\s+/', ' ', $line));
 
             // convert internationalized domain names
             if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
