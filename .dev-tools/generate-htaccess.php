@@ -84,13 +84,13 @@ class Generator
             
             
             // convert internationalized domain names
-            //if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
+            if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
 
-                //$IDN = new IdnaConvert();
+                $IDN = new IdnaConvert();
 
-                //$line = $IDN->encode($line);
+                $line = $IDN->encode($line);
 
-            //}
+            }
 
             if (empty($line)) {
                 continue;
