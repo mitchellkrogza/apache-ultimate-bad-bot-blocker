@@ -80,7 +80,7 @@ class Generator
         }
         $lines2 = array();
         while (($line = fgets($handle)) !== false) {
-                //$line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
+                $line = trim(preg_replace(' ', ' ', $line)); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
             
             
@@ -93,9 +93,9 @@ class Generator
 
             //}
 
-            //if (empty($line)) {
-            //    continue;
-            //}
+            if (empty($line)) {
+                continue;
+            }
             $lines2[] = $line;
         }
         fclose($handle);
