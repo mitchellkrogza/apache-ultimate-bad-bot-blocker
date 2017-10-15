@@ -45,7 +45,7 @@
 # Set Input Files
 # ***************
 
-_input1=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
+_input1=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
 _tmprobots=/tmp/robots.txt
 _inputtmp=$TRAVIS_BUILD_DIR/.dev-tools/_robots_generator_files/robots.tmp
 _output=$TRAVIS_BUILD_DIR/.dev-tools/_robots_generator_files/robots.list
