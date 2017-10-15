@@ -69,10 +69,10 @@ class Generator
      */
     public function domainWorker2()
     {
-    $lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
+    //$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
     //}
 
-        //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
+        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
         
 
@@ -80,7 +80,7 @@ class Generator
         //if (!$handle) {
             //throw new \RuntimeException('Error opening file ' . $domainsFile);
         //}
-        //$lines2 = array();
+        $lines2 = array();
         //while (($line = fgets($handle)) !== false) {
                 //$line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
