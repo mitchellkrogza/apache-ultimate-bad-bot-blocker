@@ -137,7 +137,7 @@ class Generator
             "<IfModule mod_rewrite.c>\nRewriteEngine On\n";
         foreach ($lines2 as $line) {
             if ($line === end($lines2)) {
-                $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . preg_quote($line) . ".* [NC]\n";
+                $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
                 break;
             }
 
