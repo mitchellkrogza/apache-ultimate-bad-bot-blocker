@@ -78,23 +78,23 @@ class Generator
             throw new \RuntimeException('Error opening file ' . $domainsFile);
         }
         $lines2 = array();
-        while (($line = fgets($handle)) !== false) {
+        //while (($line = fgets($handle)) !== false) {
                 //$line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
             
             
             // convert internationalized domain names
-            if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
+            //if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
 
-                $IDN = new IdnaConvert();
+                //$IDN = new IdnaConvert();
 
-                $line = $IDN->encode($line);
+                //$line = $IDN->encode($line);
 
-            }
+            //}
 
-            if (empty($line)) {
-                continue;
-            }
+            //if (empty($line)) {
+            //    continue;
+            //}
             $lines2[] = $line;
         }
         //fclose($handle);
