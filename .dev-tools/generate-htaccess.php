@@ -73,15 +73,13 @@ class Generator
     //}
 
         $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
-        //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
         
-
-        //$handle = fopen($domainsFile, "r");
-        //if (!$handle) {
-            //throw new \RuntimeException('Error opening file ' . $domainsFile);
-        //}
+        $handle = fopen($domainsFile, "r");
+        if (!$handle) {
+            throw new \RuntimeException('Error opening file ' . $domainsFile);
+        }
         $lines2 = array();
-        //while (($line = fgets($handle)) !== false) {
+        while (($line = fgets($handle)) !== false) {
                 //$line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
             
@@ -98,11 +96,11 @@ class Generator
             //if (empty($line)) {
             //    continue;
             //}
-            //$lines2[] = $line;
-        //}
-        //fclose($handle);
-        //$uniqueLines = array_unique($lines2, SORT_STRING);
-        //sort($uniqueLines, SORT_STRING);
+            $lines2[] = $line;
+        }
+        fclose($handle);
+        $uniqueLines = array_unique($lines2, SORT_STRING);
+        sort($uniqueLines, SORT_STRING);
         //if (is_writable($domainsFile)) {
         //    file_put_contents($domainsFile, implode("\n", $uniqueLines));
         //} else {
@@ -145,7 +143,7 @@ class Generator
                 //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
                 //break;
             //}
-            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . ($line) . ".* [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . preg_quote($line) . ".* [NC,OR]\n";
         }
         foreach ($lines as $line) {
             if ($line === end($lines)) {
