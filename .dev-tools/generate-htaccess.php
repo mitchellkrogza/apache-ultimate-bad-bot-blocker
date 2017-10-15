@@ -1,3 +1,4 @@
+#!/home/travis/.phpenv/shims/php
 <?php
     /* .htaccess File Generator Script for the Apache Ultimate Bad Bot Blocker
      * Adapted from Script Copyright (c) 2017 Stevie-Ray - https://github.com/Stevie-Ray
