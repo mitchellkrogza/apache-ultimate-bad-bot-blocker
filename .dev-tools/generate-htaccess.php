@@ -97,14 +97,14 @@ class Generator
             }
             $lines2[] = $line;
         }
-        fclose($handle);
-        $uniqueLines = array_unique($lines2, SORT_STRING);
-        sort($uniqueLines, SORT_STRING);
-        if (is_writable($domainsFile)) {
-            file_put_contents($domainsFile, implode("\n", $uniqueLines));
-        } else {
-            trigger_error("Permission denied");
-        }
+        //fclose($handle);
+        //$uniqueLines = array_unique($lines2, SORT_STRING);
+        //sort($uniqueLines, SORT_STRING);
+        //if (is_writable($domainsFile)) {
+        //    file_put_contents($domainsFile, implode("\n", $uniqueLines));
+        //} else {
+        //    trigger_error("Permission denied");
+        //}
 
         return $lines2;
     }
