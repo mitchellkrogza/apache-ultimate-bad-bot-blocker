@@ -145,7 +145,7 @@ class Generator
                 //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
                 //break;
             //}
-            $data .= "RewriteCond %{HTTP_USER_AGENT} ^"  $line  ".* [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . ($line) . ".* [NC,OR]\n";
         }
         foreach ($lines as $line) {
             if ($line === end($lines)) {
