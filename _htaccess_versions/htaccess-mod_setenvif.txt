@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.714
-### Bad Referrer Count: 5870
+### Version: V3.2017.10.715
+### Bad Referrer Count: 5877
 ### Bad Bot Count: 514
 ### Version Information ##
 
@@ -1326,6 +1326,7 @@ SetEnvIfNoCase Referer blpmovies\.com spambot=yes
 SetEnvIfNoCase Referer blue\-square\.biz spambot=yes
 SetEnvIfNoCase Referer bluejays\-jerseys\.us spambot=yes
 SetEnvIfNoCase Referer bluerobot\.info spambot=yes
+SetEnvIfNoCase Referer bluesalt\.co spambot=yes
 SetEnvIfNoCase Referer bluesman\.nu spambot=yes
 SetEnvIfNoCase Referer bmw\-ark\.ru spambot=yes
 SetEnvIfNoCase Referer bmw\.afora\.ru spambot=yes
@@ -1403,6 +1404,7 @@ SetEnvIfNoCase Referer btc4u\.ru spambot=yes
 SetEnvIfNoCase Referer btnativenav\.com spambot=yes
 SetEnvIfNoCase Referer btvn\.ru spambot=yes
 SetEnvIfNoCase Referer buchananshardware\.com spambot=yes
+SetEnvIfNoCase Referer buckspar\.gq spambot=yes
 SetEnvIfNoCase Referer budilneg\.xyz spambot=yes
 SetEnvIfNoCase Referer budpost\.com\.ua spambot=yes
 SetEnvIfNoCase Referer buehne\-fuer\-menschenrechte\.de spambot=yes
@@ -1669,6 +1671,7 @@ SetEnvIfNoCase Referer cleanpcnow\.com spambot=yes
 SetEnvIfNoCase Referer cleansearch\.net spambot=yes
 SetEnvIfNoCase Referer clevernt\.com spambot=yes
 SetEnvIfNoCase Referer clickaider\.com spambot=yes
+SetEnvIfNoCase Referer clickbank\.net spambot=yes
 SetEnvIfNoCase Referer clickbanksites\.info spambot=yes
 SetEnvIfNoCase Referer clickcash\.com spambot=yes
 SetEnvIfNoCase Referer clickhype\.com spambot=yes
@@ -2507,6 +2510,7 @@ SetEnvIfNoCase Referer freecamdollars\.com spambot=yes
 SetEnvIfNoCase Referer freegamesplay\.online spambot=yes
 SetEnvIfNoCase Referer freejabs\.com spambot=yes
 SetEnvIfNoCase Referer freelifetimefuckbook\.com spambot=yes
+SetEnvIfNoCase Referer freelinkbuilding\.website\.tk spambot=yes
 SetEnvIfNoCase Referer freelotto\.com spambot=yes
 SetEnvIfNoCase Referer freemags\.cc spambot=yes
 SetEnvIfNoCase Referer freemaintenancesysforpcandmac\.top spambot=yes
@@ -2892,6 +2896,7 @@ SetEnvIfNoCase Referer homelygarden\.com spambot=yes
 SetEnvIfNoCase Referer homemade\.gq spambot=yes
 SetEnvIfNoCase Referer homemature\.net spambot=yes
 SetEnvIfNoCase Referer honyaku\.yahoofs\.jp spambot=yes
+SetEnvIfNoCase Referer hop\.clickbank\.net spambot=yes
 SetEnvIfNoCase Referer hopeonthestreet\.co\.uk spambot=yes
 SetEnvIfNoCase Referer hoporno\.com spambot=yes
 SetEnvIfNoCase Referer hornymatches\.com spambot=yes
@@ -3559,6 +3564,7 @@ SetEnvIfNoCase Referer maglid\.ru spambot=yes
 SetEnvIfNoCase Referer magnetpress\.sk spambot=yes
 SetEnvIfNoCase Referer mail\.allnews24\.in spambot=yes
 SetEnvIfNoCase Referer mainlinehobby\.net spambot=yes
+SetEnvIfNoCase Referer maju\.bluesalt\.co spambot=yes
 SetEnvIfNoCase Referer make\-money\-online\.com spambot=yes
 SetEnvIfNoCase Referer makedo\.ru spambot=yes
 SetEnvIfNoCase Referer makemoneyonline\.com spambot=yes
@@ -5144,6 +5150,7 @@ SetEnvIfNoCase Referer socialbutton\.xyz spambot=yes
 SetEnvIfNoCase Referer socialbuttons\.xyz spambot=yes
 SetEnvIfNoCase Referer socialmadesimple\.com spambot=yes
 SetEnvIfNoCase Referer socialmediasuggest\.com spambot=yes
+SetEnvIfNoCase Referer socialmonkee\.com spambot=yes
 SetEnvIfNoCase Referer socialseet\.ru spambot=yes
 SetEnvIfNoCase Referer socialtrade\.biz spambot=yes
 SetEnvIfNoCase Referer sockshare\.net spambot=yes

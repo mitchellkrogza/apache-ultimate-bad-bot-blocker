@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.714
-### Updated: Sun Oct 15 15:53:29 SAST 2017
-### Bad Referrer Count: 5870
+### Version: V3.2017.10.715
+### Updated: Sun Oct 15 16:33:52 SAST 2017
+### Bad Referrer Count: 5877
 ### Bad Bot Count: 514
 ###################################################
 ### Version Information ##
@@ -1618,6 +1618,7 @@ SetEnvIfNoCase Referer ~*bloke\.com spam_ref
 SetEnvIfNoCase Referer ~*blpmovies\.com spam_ref
 SetEnvIfNoCase Referer ~*bluejays\-jerseys\.us spam_ref
 SetEnvIfNoCase Referer ~*bluerobot\.info spam_ref
+SetEnvIfNoCase Referer ~*bluesalt\.co spam_ref
 SetEnvIfNoCase Referer ~*bluesman\.nu spam_ref
 SetEnvIfNoCase Referer ~*blue\-square\.biz spam_ref
 SetEnvIfNoCase Referer ~*bmw\.afora\.ru spam_ref
@@ -1697,6 +1698,7 @@ SetEnvIfNoCase Referer ~*btc4u\.ru spam_ref
 SetEnvIfNoCase Referer ~*btnativenav\.com spam_ref
 SetEnvIfNoCase Referer ~*btvn\.ru spam_ref
 SetEnvIfNoCase Referer ~*buchananshardware\.com spam_ref
+SetEnvIfNoCase Referer ~*buckspar\.gq spam_ref
 SetEnvIfNoCase Referer ~*budilneg\.xyz spam_ref
 SetEnvIfNoCase Referer ~*budpost\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*buehne\-fuer\-menschenrechte\.de spam_ref
@@ -1962,6 +1964,7 @@ SetEnvIfNoCase Referer ~*clean\-start\.net spam_ref
 SetEnvIfNoCase Referer ~*clean\-virus\-mac\.com spam_ref
 SetEnvIfNoCase Referer ~*clevernt\.com spam_ref
 SetEnvIfNoCase Referer ~*clickaider\.com spam_ref
+SetEnvIfNoCase Referer ~*clickbank\.net spam_ref
 SetEnvIfNoCase Referer ~*clickbanksites\.info spam_ref
 SetEnvIfNoCase Referer ~*clickcash\.com spam_ref
 SetEnvIfNoCase Referer ~*clickhype\.com spam_ref
@@ -2791,6 +2794,7 @@ SetEnvIfNoCase Referer ~*free\-gluten\.ru spam_ref
 SetEnvIfNoCase Referer ~*freejabs\.com spam_ref
 SetEnvIfNoCase Referer ~*free\-laptop\-reward\.com spam_ref
 SetEnvIfNoCase Referer ~*freelifetimefuckbook\.com spam_ref
+SetEnvIfNoCase Referer ~*freelinkbuilding\.website\.tk spam_ref
 SetEnvIfNoCase Referer ~*freelotto\.com spam_ref
 SetEnvIfNoCase Referer ~*freemags\.cc spam_ref
 SetEnvIfNoCase Referer ~*freemaintenancesysforpcandmac\.top spam_ref
@@ -3186,6 +3190,7 @@ SetEnvIfNoCase Referer ~*homemade\.gq spam_ref
 SetEnvIfNoCase Referer ~*homemature\.net spam_ref
 SetEnvIfNoCase Referer ~*home\.myplaycity\.com spam_ref
 SetEnvIfNoCase Referer ~*honyaku\.yahoofs\.jp spam_ref
+SetEnvIfNoCase Referer ~*hop\.clickbank\.net spam_ref
 SetEnvIfNoCase Referer ~*hopeonthestreet\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*hoporno\.com spam_ref
 SetEnvIfNoCase Referer ~*hornymatches\.com spam_ref
@@ -3851,6 +3856,7 @@ SetEnvIfNoCase Referer ~*maglid\.ru spam_ref
 SetEnvIfNoCase Referer ~*magnetpress\.sk spam_ref
 SetEnvIfNoCase Referer ~*mail\.allnews24\.in spam_ref
 SetEnvIfNoCase Referer ~*mainlinehobby\.net spam_ref
+SetEnvIfNoCase Referer ~*maju\.bluesalt\.co spam_ref
 SetEnvIfNoCase Referer ~*makedo\.ru spam_ref
 SetEnvIfNoCase Referer ~*make\-money\-online\.com spam_ref
 SetEnvIfNoCase Referer ~*makemoneyonline\.com spam_ref
@@ -5432,6 +5438,7 @@ SetEnvIfNoCase Referer ~*socialbutton\.xyz spam_ref
 SetEnvIfNoCase Referer ~*social\-fun\.ru spam_ref
 SetEnvIfNoCase Referer ~*socialmadesimple\.com spam_ref
 SetEnvIfNoCase Referer ~*socialmediasuggest\.com spam_ref
+SetEnvIfNoCase Referer ~*socialmonkee\.com spam_ref
 SetEnvIfNoCase Referer ~*social\-search\.me spam_ref
 SetEnvIfNoCase Referer ~*socialseet\.ru spam_ref
 SetEnvIfNoCase Referer ~*social\-s\-ggg\.xyz spam_ref
