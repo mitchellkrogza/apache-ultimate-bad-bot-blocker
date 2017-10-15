@@ -41,7 +41,10 @@ cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]_]/\\&/g' > $_inputtmp && mv $
 
 # Test above using awk
 
-cat $_input | awk 'gsub(/[^[:alnum:]]/,"\\\\&")+1' > $_inputtmp2 && mv $_inputtmp2 $_output2
+#cat $_input | awk 'gsub(/[^[:alnum:]]/,"\\\\&")+1' > $_inputtmp2 && mv $_inputtmp2 $_output2
+
+cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > $_inputtmp2 && mv $_inputtmp2 $_output2
+
 
 # *************************************
 # Sort our output file and remove dupes
