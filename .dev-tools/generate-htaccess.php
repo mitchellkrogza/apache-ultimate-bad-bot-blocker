@@ -69,9 +69,6 @@ class Generator
      */
     public function domainWorker2()
     {
-    //$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
-    //}
-
         $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
         
         $handle = fopen($domainsFile, "r");
@@ -80,19 +77,7 @@ class Generator
         }
         $lines2 = array();
         while (($line = fgets($handle)) !== false) {
-                $line = trim($line); // We replace space with '\s'
-    			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
-            
-            
-            // convert internationalized domain names
-            //if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
-
-                //$IDN = new IdnaConvert();
-
-                //$line = $IDN->encode($line);
-
-            //}
-
+                $line = trim($line);
             if (empty($line)) {
                 continue;
             }
@@ -101,12 +86,6 @@ class Generator
         fclose($handle);
         $uniqueLines = array_unique($lines2, SORT_STRING);
         sort($uniqueLines, SORT_STRING);
-        //if (is_writable($domainsFile)) {
-        //    file_put_contents($domainsFile, implode("\n", $uniqueLines));
-        //} else {
-        //    trigger_error("Permission denied");
-        //}
-
         return $lines2;
     }
 
@@ -133,16 +112,10 @@ class Generator
      */
     public function createApache1($date, array $lines, array $lines2)
     {    
-		//$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
-		//$domainsFile = file(/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list);
         $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\n";
         foreach ($lines2 as $line) {
-            //if ($line === end($lines2)) {
-                //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
-                //break;
-            //}
             $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC,OR]\n";
         }
         foreach ($lines as $line) {
@@ -169,7 +142,7 @@ class Generator
         $data = "##Apache Spam Referer Blocker .htaccess version for mod_senenvif.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n";
         $data .= "<IfModule mod_setenvif.c>\n";
         foreach ($lines2 as $line) {
-            $data .= "SetEnvIfNoCase User-Agent ^" . preg_quote($line) . ".* spambot=yes\n";
+            $data .= "SetEnvIfNoCase User-Agent ^" . $line . ".* spambot=yes\n";
         }
         foreach ($lines as $line) {
             $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
