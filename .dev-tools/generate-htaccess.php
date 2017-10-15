@@ -135,11 +135,11 @@ class Generator
         $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\n";
-        foreach ($lines2 as $line) {
-            if ($line === end($lines2)) {
-                $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
-                break;
-            }
+        //foreach ($lines2 as $line) {
+            //if ($line === end($lines2)) {
+                //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
+                //break;
+            //}
 
             $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC,OR]\n";
         }
