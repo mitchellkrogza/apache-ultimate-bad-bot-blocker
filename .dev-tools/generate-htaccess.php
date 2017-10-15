@@ -70,7 +70,7 @@ class Generator
     public function domainWorker2()
     {
     $lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
-    }
+    //}
 
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
@@ -109,8 +109,8 @@ class Generator
         //    trigger_error("Permission denied");
         //}
 
-        //return $lines2;
-    //}
+        return $lines2;
+    }
 
     /**
      * @param $file
