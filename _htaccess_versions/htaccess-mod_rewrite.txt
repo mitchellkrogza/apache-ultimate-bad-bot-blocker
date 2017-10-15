@@ -5,13 +5,1041 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.698
+### Version: V3.2017.10.699
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 514
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
+RewriteCond %{HTTP_USER_AGENT} ^360Spider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^80legs
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Abonti
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Aboundex
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Acunetix
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ADmantX
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AhrefsBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AIBOT
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AiHitBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Aipbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Alexibot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Alligator
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AllSubmitter
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Anarchie
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Apexoo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ASPSeek
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Asterias
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Attach
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^autoemailspider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BackDoorBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Backlink\\\-Ceck
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^backlink\\\-check
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BacklinkCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BackStreet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BackWeb
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Badass
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bandit
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Barkrowler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BatchFTP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Battleztar\\ Bazinga
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BBBike
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BDFetch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BetaBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bigfoot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bitacle
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Blackboard
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Black\\ Hole
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BlackWidow
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BLEXBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Blow
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BlowFish
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Boardreader
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bolt
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BotALot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Brandprotect
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BrandProtect
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Brandwatch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bubing
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Buddy
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BuiltBotTough
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BuiltWith
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Bullseye
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BunnySlippers
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BuzzSumo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Calculon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CATExplorador
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CazoodleBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CCBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Cegbfeieh
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CheeseBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CherryPicker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Chlooe
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Claritybot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Cliqzbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Cogentbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^cognitiveseo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Collector
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^com\\\.plumanalytics
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Copier
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CopyRightCheck
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Copyscape
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Cosmos
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Craftbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CrazyWebCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CRAZYWEBCRAWLER
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Crescent
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^CSHttp
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Curious
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Custo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DatabaseDriverMysqli
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DataCha0s
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DBLBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^demandbase\\\-bot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Demon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Deusu
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Devil
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Digincore
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DIIbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Dirbuster
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Disco
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Discobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Discoverybot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DittoSpyder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DomainAppender
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DomainCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DomainSigmaCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DomainStatsBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Dotbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Download\\ Demon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Download\\ Devil
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Download\\ Wonder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Dragonfly
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Drip
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DTS\\ Agent
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EasyDL
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ebingbong
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^eCatch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ECCP\\/1\\\.0
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ecxi
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EirGrabber
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EMail\\ Collector
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EMail\\ Extractor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EMail\\ Siphon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EMail\\ Wolf
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EroCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Evil
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Exabot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Express\\ WebPictures
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Extractor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Extreme\\ Picture\\ Finder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ezooms
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^FDM
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^FHscan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Fimap
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Firefox\\/7\\\.0
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^FlashGet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Flunky
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Foobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^fq
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Freeuploader
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^FrontPage
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Fyrebot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GalaxyBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Genieo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GermCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Getintent
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetRight
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GetWeb
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Gigablast
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Gigabot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^G\\\-i\\\-g\\\-a\\\-b\\\-o\\\-t
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Go\\\-Ahead\\\-Got\\\-It
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Gotit
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GoZilla
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Go\\\!Zilla
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Grabber
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GrabNet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Grafula
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GrapeFX
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GrapeshotCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GridBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^GT\\\:\\\:WWW
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HaosouSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Harvest
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Havij
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HEADMasterSEO
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Heritrix
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Hloader
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HMView
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HTMLparser
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HTTP\\\:\\\:Lite
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HTTrack
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Humanlinks
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^HybridBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Iblog
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^IDBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Id\\\-search
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^IlseBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\\ Fetch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\\ Stripper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Image\\ Sucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Indy\\ Library
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^InfoNaviRobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^InfoTekies
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^instabid
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Intelliseek
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^InterGET
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Internet\\ Ninja
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^InternetSeer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^internetVista\\ monitor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Iria
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^IRLbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Iskanie
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JamesBOT
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Jbrofuzz
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JennyBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JetCar
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JikeSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JOC\\ Web\\ Spider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Joomla
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Jorgee
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^JustView
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Jyxobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Kenjin\\ Spider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Keyword\\ Density
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Kozmosbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Lanshanbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Larbin
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LeechFTP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LeechGet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LexiBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Lftp
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LibWeb
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Libwhisker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Lightspeedsystems
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Likse
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Linkdexbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkextractorPro
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkpadBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkScan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinksManager
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinkWalker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinqiaMetadataDownloaderBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinqiaRSSBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LinqiaScrapeBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Lipperhey
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Litemage_walker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Lmspider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LNSpiderguy
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ltx71
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^lwp\\\-request
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^LWP\\\:\\\:Simple
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^lwp\\\-trivial
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Magnet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mag\\\-Net
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^magpie\\\-crawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mail\\\.ru
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Majestic12
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MarkMonitor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MarkWatch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Masscan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mass\\ Downloader
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mata\\ Hari
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Meanpathbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^mediawords
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MegaIndex\\\.ru
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Metauri
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MFC_Tear_Sample
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Microsoft\\ Data\\ Access
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Microsoft\\ URL\\ Control
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MIDown\\ tool
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MIIxpc
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mister\\ PiX
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MJ12bot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mojeek
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Morfeus\\ Fucking\\ Scanner
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MSFrontPage
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MSIE\\ 6\\\.0
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MSIECrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Msrabot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MS\\ Web\\ Services\\ Client\\ Protocol
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Musobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Name\\ Intelligence
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nameprotect
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Navroad
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NearSite
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Needle
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nessus
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetAnts
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Netcraft
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^netEstate\\ NE\\ Crawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetLyzer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetMechanic
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nettrack
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Net\\ Vampire
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Netvibes
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NetZIP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NextGenSearchBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nibbler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NICErsPRO
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Niki\\\-bot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nikto
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NimbleCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ninja
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nmap
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^NPbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Nutch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Octopus
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Offline\\ Explorer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Offline\\ Navigator
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Openfind
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^OpenLinkProfiler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Openvas
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^OrangeBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^OrangeSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^OutfoxBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PageAnalyzer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Page\\ Analyzer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PageGrabber
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Page\\ Grabber
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^page\\ scorer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PageScorer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Panscient
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Papa\\ Foto
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pavuk
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^pcBrowser
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PECL\\\:\\\:HTTP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PeoplePal
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PHPCrawl
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Picscout
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Picsearch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PictureFinder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pimonster
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pi\\\-Monster
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pixray
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PleaseCrawl
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^plumanalytics
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pockey
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^POE\\\-Component\\\-Client\\\-HTTP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Probethenet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ProPowerBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ProWebWalker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Proximic
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Psbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Pump
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PyCurl
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^QueryN\\ Metasearch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Qwantify
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankActive
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankActiveLinkBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankFlex
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankingBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankingBot2
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Rankivabot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RankurBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RealDownload
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Reaper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RebelMouse
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Recorder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RedesScrapy
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ReGet
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RepoMonkey
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Ripper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^RocketCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Rogerbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SalesIntelligent
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SBIder
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ScanAlert
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Scanbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Scrapy
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Screaming
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Screaming\\ Frog\\ SEO\\ Spider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ScreenerBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Searchestate
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SearchmetricsBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Semrush
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SemrushBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SEOkicks
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SEOkicks\\\-Robot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SEOlyticsCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Seomoz
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SEOprofiler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^seoscanners
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SEOstats
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Siphon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SISTRIX
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SISTRIX\\ Crawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sitebeam
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteExplorer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Siteimprove
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteLockSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSnagger
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SiteSucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Site\\ Sucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sitevigil
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Slackbot\\\-LinkExpanding
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SlySearch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SmartDownload
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Snake
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Snapbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Snoopy
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SocialRankIOBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sogou\\ web\\ spider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sosospider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sottopop
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SpaceBison
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Spammen
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SpankBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Spanner
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Spbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Spinn3r
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SputnikBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sqlmap
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sqlworm
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sqworm
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Steeler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Stripper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Sucuri
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SuperHTTP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Surfbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SurveyBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Suzuran
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Swiftbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^sysscan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Szukacz
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^T0PHackTeam
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^T8Abot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^tAkeOut
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Teleport
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^TeleportPro
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Telesoft
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Telesphoreo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Telesphorep
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^The\\ Intraformant
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^TheNomad
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^TightTwatBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Titan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Toata
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Toweyabot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Trendictionbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^True_Robot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Turingos
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^TurnitinBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Turnitin\\ Bot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Turnitin\\ Robot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^TwengaBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Twice
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Typhoeus
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^UnisterBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^URLy\\ Warning
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^URLy\\\.Warning
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Vacuum
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Vagabondo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^VB\\ Project
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^VCI
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^VeriCiteCrawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^VidibleScraper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Virusdie
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^VoidEYE
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Voil
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Voltron
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wallpapers\\/3\\\.0
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WallpapersHD
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WASALive\\\-Bot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WBSearchBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Webalta
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebAuto
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Auto
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebBandit
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Bandit
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCollage
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Collage
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebCopier
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Copier
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WEBDAV
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WEBDAV\\ Client
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebEnhancer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Enhancer
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebFetch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Fetch
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebFuck
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Fuck
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebGo\\ IS
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebImageCollector
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Image\\ Collector
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebLeacher
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebmasterWorldForumBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^webmeup\\\-crawler
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebPix
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Pix
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebReaper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Reaper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebSauger
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Sauger
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Webshag
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebsiteExtractor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Website\\ Extractor
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebsiteQuester
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Website\\ Quester
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Webster
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebStripper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Stripper
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebSucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Sucker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebWhacker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Web\\ Whacker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WebZIP
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WeSEE
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Whack
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Whacker
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Whatweb
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Widow
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WinHTTrack
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WiseGuys\\ Robot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WISENutbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wonderbot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Woobot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wotbox
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Wprecon
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WPScan
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWW\\\-Collector\\\-E
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWW\\\-Mechanize
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWW\\\:\\\:Mechanize
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^x09Mozilla
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^x22Mozilla
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon_WebSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\\ WebSpider
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xenu
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^YoudaoBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zade
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zermelo
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zeus
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zgrab
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Zitebot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ZmEu
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ZumBot
+.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ZyBorg
+.* [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000free\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*007angels\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*00author\.com.*$ [NC,OR]
