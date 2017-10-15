@@ -60,7 +60,7 @@ sudo truncate -s 0 $_output
 # Use sed to prepare our new input file
 # *************************************
 
-cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
+cat $_input1 | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
 
 # ******************
 # Set Some Variables
