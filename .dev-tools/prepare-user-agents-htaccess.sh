@@ -30,12 +30,9 @@ _output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.l
 
 sudo truncate -s 0 $_output
 
-# ********************************************
-# Use sed to strip the \ out of the input file
-# ********************************************
-
-#sed 's/\\ / /g' $_input > $_output
-#cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
+# *************************************
+# Use sed to prepare our new input file
+# *************************************
 
 cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]_]/\\&/g' > $_inputtmp && mv $_inputtmp $_output
 
