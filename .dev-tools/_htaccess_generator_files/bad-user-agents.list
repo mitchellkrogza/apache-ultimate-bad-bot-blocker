@@ -18,8 +18,8 @@ Asterias
 Attach
 autoemailspider
 BackDoorBot
-Backlink-Ceck
-backlink-check
+Backlink\-Ceck
+backlink\-check
 BacklinkCrawler
 BackStreet
 BackWeb
@@ -27,14 +27,14 @@ Badass
 Bandit
 Barkrowler
 BatchFTP
-Battleztar Bazinga
+Battleztar\ Bazinga
 BBBike
 BDFetch
 BetaBot
 Bigfoot
 Bitacle
 Blackboard
-Black Hole
+Black\ Hole
 BlackWidow
 BLEXBot
 Blow
@@ -66,7 +66,7 @@ Cliqzbot
 Cogentbot
 cognitiveseo
 Collector
-com.plumanalytics
+com\.plumanalytics
 Copier
 CopyRightCheck
 Copyscape
@@ -81,7 +81,7 @@ Custo
 DatabaseDriverMysqli
 DataCha0s
 DBLBot
-demandbase-bot
+demandbase\-bot
 Demon
 Deusu
 Devil
@@ -97,35 +97,35 @@ DomainCrawler
 DomainSigmaCrawler
 DomainStatsBot
 Dotbot
-Download Demon
-Download Devil
-Download Wonder
+Download\ Demon
+Download\ Devil
+Download\ Wonder
 Dragonfly
 Drip
-DTS Agent
+DTS\ Agent
 EasyDL
 Ebingbong
 eCatch
-ECCP/1.0
+ECCP\/1\.0
 Ecxi
 EirGrabber
-EMail Collector
-EMail Extractor
-EMail Siphon
-EMail Wolf
+EMail\ Collector
+EMail\ Extractor
+EMail\ Siphon
+EMail\ Wolf
 EroCrawler
 Evil
 Exabot
-Express WebPictures
+Express\ WebPictures
 Extractor
 ExtractorPro
-Extreme Picture Finder
+Extreme\ Picture\ Finder
 EyeNetIE
 Ezooms
 FDM
 FHscan
 Fimap
-Firefox/7.0
+Firefox\/7\.0
 FlashGet
 Flunky
 Foobot
@@ -141,18 +141,18 @@ GetRight
 GetWeb
 Gigablast
 Gigabot
-G-i-g-a-b-o-t
-Go-Ahead-Got-It
+G\-i\-g\-a\-b\-o\-t
+Go\-Ahead\-Got\-It
 Gotit
 GoZilla
-Go!Zilla
+Go\!Zilla
 Grabber
 GrabNet
 Grafula
 GrapeFX
 GrapeshotCrawler
 GridBot
-GT::WWW
+GT\:\:WWW
 HaosouSpider
 Harvest
 Havij
@@ -161,26 +161,26 @@ Heritrix
 Hloader
 HMView
 HTMLparser
-HTTP::Lite
+HTTP\:\:Lite
 HTTrack
 Humanlinks
 HybridBot
 Iblog
 IDBot
-Id-search
+Id\-search
 IlseBot
-Image Fetch
-Image Stripper
-Image Sucker
-Indy Library
+Image\ Fetch
+Image\ Stripper
+Image\ Sucker
+Indy\ Library
 InfoNaviRobot
 InfoTekies
 instabid
 Intelliseek
 InterGET
-Internet Ninja
+Internet\ Ninja
 InternetSeer
-internetVista monitor
+internetVista\ monitor
 Iria
 IRLbot
 Iskanie
@@ -189,13 +189,13 @@ Jbrofuzz
 JennyBot
 JetCar
 JikeSpider
-JOC Web Spider
+JOC\ Web\ Spider
 Joomla
 Jorgee
 JustView
 Jyxobot
-Kenjin Spider
-Keyword Density
+Kenjin\ Spider
+Keyword\ Density
 Kozmosbot
 Lanshanbot
 Larbin
@@ -221,39 +221,39 @@ Litemage_walker
 Lmspider
 LNSpiderguy
 Ltx71
-lwp-request
-LWP::Simple
-lwp-trivial
+lwp\-request
+LWP\:\:Simple
+lwp\-trivial
 Magnet
-Mag-Net
-magpie-crawler
-Mail.ru
+Mag\-Net
+magpie\-crawler
+Mail\.ru
 Majestic12
 MarkMonitor
 MarkWatch
 Masscan
-Mass Downloader
-Mata Hari
+Mass\ Downloader
+Mata\ Hari
 Meanpathbot
 mediawords
-MegaIndex.ru
+MegaIndex\.ru
 Metauri
 MFC_Tear_Sample
-Microsoft Data Access
-Microsoft URL Control
-MIDown tool
+Microsoft\ Data\ Access
+Microsoft\ URL\ Control
+MIDown\ tool
 MIIxpc
-Mister PiX
+Mister\ PiX
 MJ12bot
 Mojeek
-Morfeus Fucking Scanner
+Morfeus\ Fucking\ Scanner
 MSFrontPage
-MSIE 6.0
+MSIE\ 6\.0
 MSIECrawler
 Msrabot
-MS Web Services Client Protocol
+MS\ Web\ Services\ Client\ Protocol
 Musobot
-Name Intelligence
+Name\ Intelligence
 Nameprotect
 Navroad
 NearSite
@@ -261,18 +261,18 @@ Needle
 Nessus
 NetAnts
 Netcraft
-netEstate NE Crawler
+netEstate\ NE\ Crawler
 NetLyzer
 NetMechanic
 NetSpider
 Nettrack
-Net Vampire
+Net\ Vampire
 Netvibes
 NetZIP
 NextGenSearchBot
 Nibbler
 NICErsPRO
-Niki-bot
+Niki\-bot
 Nikto
 NimbleCrawler
 Ninja
@@ -280,8 +280,8 @@ Nmap
 NPbot
 Nutch
 Octopus
-Offline Explorer
-Offline Navigator
+Offline\ Explorer
+Offline\ Navigator
 Openfind
 OpenLinkProfiler
 Openvas
@@ -289,28 +289,28 @@ OrangeBot
 OrangeSpider
 OutfoxBot
 PageAnalyzer
-Page Analyzer
+Page\ Analyzer
 PageGrabber
-Page Grabber
-page scorer
+Page\ Grabber
+page\ scorer
 PageScorer
 Panscient
-Papa Foto
+Papa\ Foto
 Pavuk
 pcBrowser
-PECL::HTTP
+PECL\:\:HTTP
 PeoplePal
 PHPCrawl
 Picscout
 Picsearch
 PictureFinder
 Pimonster
-Pi-Monster
+Pi\-Monster
 Pixray
 PleaseCrawl
 plumanalytics
 Pockey
-POE-Component-Client-HTTP
+POE\-Component\-Client\-HTTP
 Probethenet
 ProPowerBot
 ProWebWalker
@@ -318,7 +318,7 @@ Proximic
 Psbot
 Pump
 PyCurl
-QueryN Metasearch
+QueryN\ Metasearch
 Qwantify
 RankActive
 RankActiveLinkBot
@@ -343,14 +343,14 @@ ScanAlert
 Scanbot
 Scrapy
 Screaming
-Screaming Frog SEO Spider
+Screaming\ Frog\ SEO\ Spider
 ScreenerBot
 Searchestate
 SearchmetricsBot
 Semrush
 SemrushBot
 SEOkicks
-SEOkicks-Robot
+SEOkicks\-Robot
 SEOlyticsCrawler
 Seomoz
 SEOprofiler
@@ -358,23 +358,23 @@ seoscanners
 SEOstats
 Siphon
 SISTRIX
-SISTRIX Crawler
+SISTRIX\ Crawler
 Sitebeam
 SiteExplorer
 Siteimprove
 SiteLockSpider
 SiteSnagger
 SiteSucker
-Site Sucker
+Site\ Sucker
 Sitevigil
-Slackbot-LinkExpanding
+Slackbot\-LinkExpanding
 SlySearch
 SmartDownload
 Snake
 Snapbot
 Snoopy
 SocialRankIOBot
-Sogou web spider
+Sogou\ web\ spider
 Sosospider
 Sottopop
 SpaceBison
@@ -407,7 +407,7 @@ TeleportPro
 Telesoft
 Telesphoreo
 Telesphorep
-The Intraformant
+The\ Intraformant
 TheNomad
 TightTwatBot
 Titan
@@ -417,17 +417,17 @@ Trendictionbot
 True_Robot
 Turingos
 TurnitinBot
-Turnitin Bot
-Turnitin Robot
+Turnitin\ Bot
+Turnitin\ Robot
 TwengaBot
 Twice
 Typhoeus
 UnisterBot
-URLy Warning
-URLy.Warning
+URLy\ Warning
+URLy\.Warning
 Vacuum
 Vagabondo
-VB Project
+VB\ Project
 VCI
 VeriCiteCrawler
 VidibleScraper
@@ -435,51 +435,51 @@ Virusdie
 VoidEYE
 Voil
 Voltron
-Wallpapers/3.0
+Wallpapers\/3\.0
 WallpapersHD
-WASALive-Bot
+WASALive\-Bot
 WBSearchBot
 Webalta
 WebAuto
-Web Auto
+Web\ Auto
 WebBandit
-Web Bandit
+Web\ Bandit
 WebCollage
-Web Collage
+Web\ Collage
 WebCopier
-Web Copier
+Web\ Copier
 WEBDAV
-WEBDAV Client
+WEBDAV\ Client
 WebEnhancer
-Web Enhancer
+Web\ Enhancer
 WebFetch
-Web Fetch
+Web\ Fetch
 WebFuck
-Web Fuck
-WebGo IS
+Web\ Fuck
+WebGo\ IS
 WebImageCollector
-Web Image Collector
+Web\ Image\ Collector
 WebLeacher
 WebmasterWorldForumBot
-webmeup-crawler
+webmeup\-crawler
 WebPix
-Web Pix
+Web\ Pix
 WebReaper
-Web Reaper
+Web\ Reaper
 WebSauger
-Web Sauger
+Web\ Sauger
 Webshag
 WebsiteExtractor
-Website Extractor
+Website\ Extractor
 WebsiteQuester
-Website Quester
+Website\ Quester
 Webster
 WebStripper
-Web Stripper
+Web\ Stripper
 WebSucker
-Web Sucker
+Web\ Sucker
 WebWhacker
-Web Whacker
+Web\ Whacker
 WebZIP
 WeSEE
 Whack
@@ -487,21 +487,21 @@ Whacker
 Whatweb
 Widow
 WinHTTrack
-WiseGuys Robot
+WiseGuys\ Robot
 WISENutbot
 Wonderbot
 Woobot
 Wotbox
 Wprecon
 WPScan
-WWW-Collector-E
-WWW-Mechanize
-WWW::Mechanize
+WWW\-Collector\-E
+WWW\-Mechanize
+WWW\:\:Mechanize
 WWWOFFLE
 x09Mozilla
 x22Mozilla
-Xaldon WebSpider
 Xaldon_WebSpider
+Xaldon\ WebSpider
 Xenu
 YoudaoBot
 Zade
