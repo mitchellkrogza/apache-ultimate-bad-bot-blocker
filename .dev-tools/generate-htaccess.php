@@ -83,9 +83,15 @@ class Generator
             //$line = trim(preg_replace('/+/', ' ', $line));
             //
             //$line = str_replace(' ', '\ ', $line);
+            
+            //Nissar
     		//$line = trim(preg_replace('/\s\s+/', '\s', $line));
-    		$line = trim(preg_replace('/\s/', '\\s', $line)); // We replace space with '\s'
-    		$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
+    		//$line = trim(preg_replace('/\s/', '\\s', $line)); // We replace space with '\s'
+    		//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
+                $line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
+    			$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
+            
+            
             // convert internationalized domain names
             //if (preg_match('/[А-Яа-яЁёɢ]/u', $line)) {
 
