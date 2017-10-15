@@ -24,9 +24,9 @@ _input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
 _inputtmp=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.tmp
 _output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
 
-# *****************
-# Truncate our file
-# *****************
+# ***********************
+# Truncate our input file
+# ***********************
 
 sudo truncate -s 0 $_output
 
