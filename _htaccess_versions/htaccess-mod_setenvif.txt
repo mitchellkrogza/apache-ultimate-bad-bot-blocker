@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.709
+### Version: V3.2017.10.710
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 514
 ### Version Information ##
@@ -230,7 +230,7 @@ SetEnvIfNoCase User-Agent ^LinqiaMetadataDownloaderBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^LinqiaRSSBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^LinqiaScrapeBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Lipperhey.* spambot=yes
-SetEnvIfNoCase User-Agent ^Litemage_walker.* spambot=yes
+SetEnvIfNoCase User-Agent ^Litemage\_walker.* spambot=yes
 SetEnvIfNoCase User-Agent ^Lmspider.* spambot=yes
 SetEnvIfNoCase User-Agent ^LNSpiderguy.* spambot=yes
 SetEnvIfNoCase User-Agent ^Ltx71.* spambot=yes
@@ -251,7 +251,7 @@ SetEnvIfNoCase User-Agent ^Meanpathbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^mediawords.* spambot=yes
 SetEnvIfNoCase User-Agent ^MegaIndex\.ru.* spambot=yes
 SetEnvIfNoCase User-Agent ^Metauri.* spambot=yes
-SetEnvIfNoCase User-Agent ^MFC_Tear_Sample.* spambot=yes
+SetEnvIfNoCase User-Agent ^MFC\_Tear\_Sample.* spambot=yes
 SetEnvIfNoCase User-Agent ^Microsoft\ Data\ Access.* spambot=yes
 SetEnvIfNoCase User-Agent ^Microsoft\ URL\ Control.* spambot=yes
 SetEnvIfNoCase User-Agent ^MIDown\ tool.* spambot=yes
@@ -427,7 +427,7 @@ SetEnvIfNoCase User-Agent ^Titan.* spambot=yes
 SetEnvIfNoCase User-Agent ^Toata.* spambot=yes
 SetEnvIfNoCase User-Agent ^Toweyabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Trendictionbot.* spambot=yes
-SetEnvIfNoCase User-Agent ^True_Robot.* spambot=yes
+SetEnvIfNoCase User-Agent ^True\_Robot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Turingos.* spambot=yes
 SetEnvIfNoCase User-Agent ^TurnitinBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Turnitin\ Bot.* spambot=yes
@@ -513,8 +513,8 @@ SetEnvIfNoCase User-Agent ^WWW\:\:Mechanize.* spambot=yes
 SetEnvIfNoCase User-Agent ^WWWOFFLE.* spambot=yes
 SetEnvIfNoCase User-Agent ^x09Mozilla.* spambot=yes
 SetEnvIfNoCase User-Agent ^x22Mozilla.* spambot=yes
-SetEnvIfNoCase User-Agent ^Xaldon_WebSpider.* spambot=yes
 SetEnvIfNoCase User-Agent ^Xaldon\ WebSpider.* spambot=yes
+SetEnvIfNoCase User-Agent ^Xaldon\_WebSpider.* spambot=yes
 SetEnvIfNoCase User-Agent ^Xenu.* spambot=yes
 SetEnvIfNoCase User-Agent ^YoudaoBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zade.* spambot=yes

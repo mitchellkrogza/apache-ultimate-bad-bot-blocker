@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.709
-### Updated: Sun Oct 15 14:58:37 SAST 2017
+### Version: V3.2017.10.710
+### Updated: Sun Oct 15 15:03:35 SAST 2017
 ### Bad Bot Count: 514
 ###################################################
 ### Version Information ##
@@ -447,7 +447,7 @@ User-agent: LinqiaScrapeBot
 Disallow:/
 User-agent: Lipperhey
 Disallow:/
-User-agent: Litemage_walker
+User-agent: Litemage\_walker
 Disallow:/
 User-agent: Lmspider
 Disallow:/
@@ -489,7 +489,7 @@ User-agent: MegaIndex\.ru
 Disallow:/
 User-agent: Metauri
 Disallow:/
-User-agent: MFC_Tear_Sample
+User-agent: MFC\_Tear\_Sample
 Disallow:/
 User-agent: Microsoft\ Data\ Access
 Disallow:/
@@ -841,7 +841,7 @@ User-agent: Toweyabot
 Disallow:/
 User-agent: Trendictionbot
 Disallow:/
-User-agent: True_Robot
+User-agent: True\_Robot
 Disallow:/
 User-agent: Turingos
 Disallow:/
@@ -1013,9 +1013,9 @@ User-agent: x09Mozilla
 Disallow:/
 User-agent: x22Mozilla
 Disallow:/
-User-agent: Xaldon_WebSpider
-Disallow:/
 User-agent: Xaldon\ WebSpider
+Disallow:/
+User-agent: Xaldon\_WebSpider
 Disallow:/
 User-agent: Xenu
 Disallow:/

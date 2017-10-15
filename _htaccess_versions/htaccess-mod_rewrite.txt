@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.709
+### Version: V3.2017.10.710
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 514
 ### Version Information ##
@@ -231,7 +231,7 @@ RewriteCond %{HTTP_USER_AGENT} ^LinqiaMetadataDownloaderBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^LinqiaRSSBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^LinqiaScrapeBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Lipperhey.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Litemage_walker.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Litemage\_walker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Lmspider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^LNSpiderguy.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Ltx71.* [NC,OR]
@@ -252,7 +252,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Meanpathbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^mediawords.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MegaIndex\.ru.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Metauri.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^MFC_Tear_Sample.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^MFC\_Tear\_Sample.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Microsoft\ Data\ Access.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Microsoft\ URL\ Control.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MIDown\ tool.* [NC,OR]
@@ -428,7 +428,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Titan.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Toata.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Toweyabot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Trendictionbot.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^True_Robot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^True\_Robot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Turingos.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^TurnitinBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Turnitin\ Bot.* [NC,OR]
@@ -514,8 +514,8 @@ RewriteCond %{HTTP_USER_AGENT} ^WWW\:\:Mechanize.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WWWOFFLE.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^x09Mozilla.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^x22Mozilla.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Xaldon_WebSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Xaldon\_WebSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Xenu.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^YoudaoBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zade.* [NC,OR]
