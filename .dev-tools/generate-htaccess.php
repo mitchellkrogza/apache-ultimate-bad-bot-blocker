@@ -80,7 +80,7 @@ class Generator
         }
         $lines2 = array();
         while (($line = fgets($handle)) !== false) {
-                $line = preg_quote($line); // We replace space with '\s'
+                $line = trim($line); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
             
             
@@ -143,7 +143,7 @@ class Generator
                 //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
                 //break;
             //}
-            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . preg_quote($line) . ".* [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC,OR]\n";
         }
         foreach ($lines as $line) {
             if ($line === end($lines)) {
