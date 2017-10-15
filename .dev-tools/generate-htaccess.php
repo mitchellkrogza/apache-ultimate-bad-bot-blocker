@@ -67,8 +67,11 @@ class Generator
     /**
      * @return array for bad user-agents
      */
-    //public function domainWorker2()
-    //{
+    public function domainWorker2()
+    {
+    $lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
+    }
+
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
         
@@ -132,7 +135,7 @@ class Generator
      */
     public function createApache1($date, array $lines, array $lines2)
     {    
-		$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
+		//$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
 		//$domainsFile = file(/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list);
         $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
