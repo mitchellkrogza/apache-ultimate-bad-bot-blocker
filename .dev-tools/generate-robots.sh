@@ -47,6 +47,20 @@
 
 _input1=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
 _tmprobots=/tmp/robots.txt
+_inputtmp=$TRAVIS_BUILD_DIR/.dev-tools/_robots_generator_files/robots.tmp
+_output=$TRAVIS_BUILD_DIR/.dev-tools/_robots_generator_files/robots.list
+
+# ***********************
+# Truncate our input file
+# ***********************
+
+sudo truncate -s 0 $_output
+
+# *************************************
+# Use sed to prepare our new input file
+# *************************************
+
+cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
 
 # ******************
 # Set Some Variables
@@ -75,7 +89,7 @@ printf '%s\n%s\n%s%s\n%s%s\n%s%s\n%s\n%s\n\n%s\n%s\n%s\n' "$_startmarker" "#####
 while IFS= read -r LINE
 do
 printf 'User-agent: %s\n%s\n' "${LINE}" "Disallow:/" >> "$_tmprobots"
-done < $_input1
+done < $_output
 printf '\n' >> "$_tmprobots"
 sudo cp $_tmprobots $TRAVIS_BUILD_DIR/robots.txt/robots.txt
 exit 0
