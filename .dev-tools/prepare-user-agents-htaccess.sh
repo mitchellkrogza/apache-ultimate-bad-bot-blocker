@@ -35,7 +35,9 @@ sudo truncate -s 0 $_output
 # ********************************************
 
 #sed 's/\\ / /g' $_input > $_output
-cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
+#cat $_input | sed 's/\\ / /g' > $_inputtmp && mv $_inputtmp $_output
+
+cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]_]/\\&/g' > $_inputtmp && mv $_inputtmp $_output
 
 # *************************************
 # Sort our output file and remove dupes
