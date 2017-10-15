@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.696
+### Version: V3.2017.10.697
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 514
 ### Version Information ##
@@ -1039,7 +1039,7 @@ RewriteCond %{HTTP_USER_AGENT} ^ZmEu
 RewriteCond %{HTTP_USER_AGENT} ^ZumBot
 .* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ZyBorg
-.* [NC]
+.* [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000free\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*007angels\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*00author\.com.*$ [NC,OR]
