@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.702
+### Version: V3.2017.10.703
 ### Bad Referrer Count: 5870
 ### Bad Bot Count: 514
 ### Version Information ##
@@ -51,9 +51,9 @@ SetEnvIfNoCase User-Agent ^autoemailspider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^BackDoorBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Backlink\\\-Ceck
+SetEnvIfNoCase User-Agent ^Backlink\\\\\\\-Ceck
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^backlink\\\-check
+SetEnvIfNoCase User-Agent ^backlink\\\\\\\-check
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^BacklinkCrawler
 .* spambot=yes
@@ -69,7 +69,7 @@ SetEnvIfNoCase User-Agent ^Barkrowler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^BatchFTP
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Battleztar\\ Bazinga
+SetEnvIfNoCase User-Agent ^Battleztar\\\\ Bazinga
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^BBBike
 .* spambot=yes
@@ -83,7 +83,7 @@ SetEnvIfNoCase User-Agent ^Bitacle
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Blackboard
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Black\\ Hole
+SetEnvIfNoCase User-Agent ^Black\\\\ Hole
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^BlackWidow
 .* spambot=yes
@@ -147,7 +147,7 @@ SetEnvIfNoCase User-Agent ^cognitiveseo
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Collector
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^com\\\.plumanalytics
+SetEnvIfNoCase User-Agent ^com\\\\\\\.plumanalytics
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Copier
 .* spambot=yes
@@ -177,7 +177,7 @@ SetEnvIfNoCase User-Agent ^DataCha0s
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^DBLBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^demandbase\\\-bot
+SetEnvIfNoCase User-Agent ^demandbase\\\\\\\-bot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Demon
 .* spambot=yes
@@ -209,17 +209,17 @@ SetEnvIfNoCase User-Agent ^DomainStatsBot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Dotbot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Download\\ Demon
+SetEnvIfNoCase User-Agent ^Download\\\\ Demon
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Download\\ Devil
+SetEnvIfNoCase User-Agent ^Download\\\\ Devil
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Download\\ Wonder
+SetEnvIfNoCase User-Agent ^Download\\\\ Wonder
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Dragonfly
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Drip
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^DTS\\ Agent
+SetEnvIfNoCase User-Agent ^DTS\\\\ Agent
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^EasyDL
 .* spambot=yes
@@ -227,19 +227,19 @@ SetEnvIfNoCase User-Agent ^Ebingbong
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^eCatch
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^ECCP\\/1\\\.0
+SetEnvIfNoCase User-Agent ^ECCP\\\\/1\\\\\\\.0
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Ecxi
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^EirGrabber
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^EMail\\ Collector
+SetEnvIfNoCase User-Agent ^EMail\\\\ Collector
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^EMail\\ Extractor
+SetEnvIfNoCase User-Agent ^EMail\\\\ Extractor
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^EMail\\ Siphon
+SetEnvIfNoCase User-Agent ^EMail\\\\ Siphon
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^EMail\\ Wolf
+SetEnvIfNoCase User-Agent ^EMail\\\\ Wolf
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^EroCrawler
 .* spambot=yes
@@ -247,13 +247,13 @@ SetEnvIfNoCase User-Agent ^Evil
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Exabot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Express\\ WebPictures
+SetEnvIfNoCase User-Agent ^Express\\\\ WebPictures
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Extractor
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^ExtractorPro
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Extreme\\ Picture\\ Finder
+SetEnvIfNoCase User-Agent ^Extreme\\\\ Picture\\\\ Finder
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^EyeNetIE
 .* spambot=yes
@@ -265,7 +265,7 @@ SetEnvIfNoCase User-Agent ^FHscan
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Fimap
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Firefox\\/7\\\.0
+SetEnvIfNoCase User-Agent ^Firefox\\\\/7\\\\\\\.0
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^FlashGet
 .* spambot=yes
@@ -297,15 +297,15 @@ SetEnvIfNoCase User-Agent ^Gigablast
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Gigabot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^G\\\-i\\\-g\\\-a\\\-b\\\-o\\\-t
+SetEnvIfNoCase User-Agent ^G\\\\\\\-i\\\\\\\-g\\\\\\\-a\\\\\\\-b\\\\\\\-o\\\\\\\-t
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Go\\\-Ahead\\\-Got\\\-It
+SetEnvIfNoCase User-Agent ^Go\\\\\\\-Ahead\\\\\\\-Got\\\\\\\-It
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Gotit
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^GoZilla
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Go\\\!Zilla
+SetEnvIfNoCase User-Agent ^Go\\\\\\\!Zilla
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Grabber
 .* spambot=yes
@@ -319,7 +319,7 @@ SetEnvIfNoCase User-Agent ^GrapeshotCrawler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^GridBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^GT\\\:\\\:WWW
+SetEnvIfNoCase User-Agent ^GT\\\\\\\:\\\\\\\:WWW
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^HaosouSpider
 .* spambot=yes
@@ -337,7 +337,7 @@ SetEnvIfNoCase User-Agent ^HMView
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^HTMLparser
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^HTTP\\\:\\\:Lite
+SetEnvIfNoCase User-Agent ^HTTP\\\\\\\:\\\\\\\:Lite
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^HTTrack
 .* spambot=yes
@@ -349,17 +349,17 @@ SetEnvIfNoCase User-Agent ^Iblog
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^IDBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Id\\\-search
+SetEnvIfNoCase User-Agent ^Id\\\\\\\-search
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^IlseBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Image\\ Fetch
+SetEnvIfNoCase User-Agent ^Image\\\\ Fetch
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Image\\ Stripper
+SetEnvIfNoCase User-Agent ^Image\\\\ Stripper
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Image\\ Sucker
+SetEnvIfNoCase User-Agent ^Image\\\\ Sucker
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Indy\\ Library
+SetEnvIfNoCase User-Agent ^Indy\\\\ Library
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^InfoNaviRobot
 .* spambot=yes
@@ -371,11 +371,11 @@ SetEnvIfNoCase User-Agent ^Intelliseek
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^InterGET
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Internet\\ Ninja
+SetEnvIfNoCase User-Agent ^Internet\\\\ Ninja
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^InternetSeer
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^internetVista\\ monitor
+SetEnvIfNoCase User-Agent ^internetVista\\\\ monitor
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Iria
 .* spambot=yes
@@ -393,7 +393,7 @@ SetEnvIfNoCase User-Agent ^JetCar
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^JikeSpider
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^JOC\\ Web\\ Spider
+SetEnvIfNoCase User-Agent ^JOC\\\\ Web\\\\ Spider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Joomla
 .* spambot=yes
@@ -403,9 +403,9 @@ SetEnvIfNoCase User-Agent ^JustView
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Jyxobot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Kenjin\\ Spider
+SetEnvIfNoCase User-Agent ^Kenjin\\\\ Spider
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Keyword\\ Density
+SetEnvIfNoCase User-Agent ^Keyword\\\\ Density
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Kozmosbot
 .* spambot=yes
@@ -457,19 +457,19 @@ SetEnvIfNoCase User-Agent ^LNSpiderguy
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Ltx71
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^lwp\\\-request
+SetEnvIfNoCase User-Agent ^lwp\\\\\\\-request
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^LWP\\\:\\\:Simple
+SetEnvIfNoCase User-Agent ^LWP\\\\\\\:\\\\\\\:Simple
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^lwp\\\-trivial
+SetEnvIfNoCase User-Agent ^lwp\\\\\\\-trivial
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Magnet
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Mag\\\-Net
+SetEnvIfNoCase User-Agent ^Mag\\\\\\\-Net
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^magpie\\\-crawler
+SetEnvIfNoCase User-Agent ^magpie\\\\\\\-crawler
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Mail\\\.ru
+SetEnvIfNoCase User-Agent ^Mail\\\\\\\.ru
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Majestic12
 .* spambot=yes
@@ -479,49 +479,49 @@ SetEnvIfNoCase User-Agent ^MarkWatch
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Masscan
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Mass\\ Downloader
+SetEnvIfNoCase User-Agent ^Mass\\\\ Downloader
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Mata\\ Hari
+SetEnvIfNoCase User-Agent ^Mata\\\\ Hari
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Meanpathbot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^mediawords
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^MegaIndex\\\.ru
+SetEnvIfNoCase User-Agent ^MegaIndex\\\\\\\.ru
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Metauri
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^MFC_Tear_Sample
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Microsoft\\ Data\\ Access
+SetEnvIfNoCase User-Agent ^Microsoft\\\\ Data\\\\ Access
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Microsoft\\ URL\\ Control
+SetEnvIfNoCase User-Agent ^Microsoft\\\\ URL\\\\ Control
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^MIDown\\ tool
+SetEnvIfNoCase User-Agent ^MIDown\\\\ tool
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^MIIxpc
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Mister\\ PiX
+SetEnvIfNoCase User-Agent ^Mister\\\\ PiX
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^MJ12bot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Mojeek
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Morfeus\\ Fucking\\ Scanner
+SetEnvIfNoCase User-Agent ^Morfeus\\\\ Fucking\\\\ Scanner
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^MSFrontPage
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^MSIE\\ 6\\\.0
+SetEnvIfNoCase User-Agent ^MSIE\\\\ 6\\\\\\\.0
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^MSIECrawler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Msrabot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^MS\\ Web\\ Services\\ Client\\ Protocol
+SetEnvIfNoCase User-Agent ^MS\\\\ Web\\\\ Services\\\\ Client\\\\ Protocol
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Musobot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Name\\ Intelligence
+SetEnvIfNoCase User-Agent ^Name\\\\ Intelligence
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Nameprotect
 .* spambot=yes
@@ -537,7 +537,7 @@ SetEnvIfNoCase User-Agent ^NetAnts
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Netcraft
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^netEstate\\ NE\\ Crawler
+SetEnvIfNoCase User-Agent ^netEstate\\\\ NE\\\\ Crawler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^NetLyzer
 .* spambot=yes
@@ -547,7 +547,7 @@ SetEnvIfNoCase User-Agent ^NetSpider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Nettrack
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Net\\ Vampire
+SetEnvIfNoCase User-Agent ^Net\\\\ Vampire
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Netvibes
 .* spambot=yes
@@ -559,7 +559,7 @@ SetEnvIfNoCase User-Agent ^Nibbler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^NICErsPRO
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Niki\\\-bot
+SetEnvIfNoCase User-Agent ^Niki\\\\\\\-bot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Nikto
 .* spambot=yes
@@ -575,9 +575,9 @@ SetEnvIfNoCase User-Agent ^Nutch
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Octopus
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Offline\\ Explorer
+SetEnvIfNoCase User-Agent ^Offline\\\\ Explorer
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Offline\\ Navigator
+SetEnvIfNoCase User-Agent ^Offline\\\\ Navigator
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Openfind
 .* spambot=yes
@@ -593,25 +593,25 @@ SetEnvIfNoCase User-Agent ^OutfoxBot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^PageAnalyzer
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Page\\ Analyzer
+SetEnvIfNoCase User-Agent ^Page\\\\ Analyzer
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^PageGrabber
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Page\\ Grabber
+SetEnvIfNoCase User-Agent ^Page\\\\ Grabber
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^page\\ scorer
+SetEnvIfNoCase User-Agent ^page\\\\ scorer
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^PageScorer
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Panscient
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Papa\\ Foto
+SetEnvIfNoCase User-Agent ^Papa\\\\ Foto
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Pavuk
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^pcBrowser
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^PECL\\\:\\\:HTTP
+SetEnvIfNoCase User-Agent ^PECL\\\\\\\:\\\\\\\:HTTP
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^PeoplePal
 .* spambot=yes
@@ -625,7 +625,7 @@ SetEnvIfNoCase User-Agent ^PictureFinder
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Pimonster
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Pi\\\-Monster
+SetEnvIfNoCase User-Agent ^Pi\\\\\\\-Monster
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Pixray
 .* spambot=yes
@@ -635,7 +635,7 @@ SetEnvIfNoCase User-Agent ^plumanalytics
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Pockey
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^POE\\\-Component\\\-Client\\\-HTTP
+SetEnvIfNoCase User-Agent ^POE\\\\\\\-Component\\\\\\\-Client\\\\\\\-HTTP
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Probethenet
 .* spambot=yes
@@ -651,7 +651,7 @@ SetEnvIfNoCase User-Agent ^Pump
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^PyCurl
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^QueryN\\ Metasearch
+SetEnvIfNoCase User-Agent ^QueryN\\\\ Metasearch
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Qwantify
 .* spambot=yes
@@ -701,7 +701,7 @@ SetEnvIfNoCase User-Agent ^Scrapy
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Screaming
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Screaming\\ Frog\\ SEO\\ Spider
+SetEnvIfNoCase User-Agent ^Screaming\\\\ Frog\\\\ SEO\\\\ Spider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^ScreenerBot
 .* spambot=yes
@@ -715,7 +715,7 @@ SetEnvIfNoCase User-Agent ^SemrushBot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOkicks
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^SEOkicks\\\-Robot
+SetEnvIfNoCase User-Agent ^SEOkicks\\\\\\\-Robot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOlyticsCrawler
 .* spambot=yes
@@ -731,7 +731,7 @@ SetEnvIfNoCase User-Agent ^Siphon
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SISTRIX
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^SISTRIX\\ Crawler
+SetEnvIfNoCase User-Agent ^SISTRIX\\\\ Crawler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Sitebeam
 .* spambot=yes
@@ -745,11 +745,11 @@ SetEnvIfNoCase User-Agent ^SiteSnagger
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SiteSucker
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Site\\ Sucker
+SetEnvIfNoCase User-Agent ^Site\\\\ Sucker
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Sitevigil
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Slackbot\\\-LinkExpanding
+SetEnvIfNoCase User-Agent ^Slackbot\\\\\\\-LinkExpanding
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SlySearch
 .* spambot=yes
@@ -763,7 +763,7 @@ SetEnvIfNoCase User-Agent ^Snoopy
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^SocialRankIOBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Sogou\\ web\\ spider
+SetEnvIfNoCase User-Agent ^Sogou\\\\ web\\\\ spider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Sosospider
 .* spambot=yes
@@ -829,7 +829,7 @@ SetEnvIfNoCase User-Agent ^Telesphoreo
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Telesphorep
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^The\\ Intraformant
+SetEnvIfNoCase User-Agent ^The\\\\ Intraformant
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^TheNomad
 .* spambot=yes
@@ -849,9 +849,9 @@ SetEnvIfNoCase User-Agent ^Turingos
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^TurnitinBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Turnitin\\ Bot
+SetEnvIfNoCase User-Agent ^Turnitin\\\\ Bot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Turnitin\\ Robot
+SetEnvIfNoCase User-Agent ^Turnitin\\\\ Robot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^TwengaBot
 .* spambot=yes
@@ -861,15 +861,15 @@ SetEnvIfNoCase User-Agent ^Typhoeus
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^UnisterBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^URLy\\ Warning
+SetEnvIfNoCase User-Agent ^URLy\\\\ Warning
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^URLy\\\.Warning
+SetEnvIfNoCase User-Agent ^URLy\\\\\\\.Warning
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Vacuum
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Vagabondo
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^VB\\ Project
+SetEnvIfNoCase User-Agent ^VB\\\\ Project
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^VCI
 .* spambot=yes
@@ -885,11 +885,11 @@ SetEnvIfNoCase User-Agent ^Voil
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Voltron
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Wallpapers\\/3\\\.0
+SetEnvIfNoCase User-Agent ^Wallpapers\\\\/3\\\\\\\.0
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WallpapersHD
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WASALive\\\-Bot
+SetEnvIfNoCase User-Agent ^WASALive\\\\\\\-Bot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WBSearchBot
 .* spambot=yes
@@ -897,83 +897,83 @@ SetEnvIfNoCase User-Agent ^Webalta
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebAuto
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Auto
+SetEnvIfNoCase User-Agent ^Web\\\\ Auto
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebBandit
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Bandit
+SetEnvIfNoCase User-Agent ^Web\\\\ Bandit
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebCollage
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Collage
+SetEnvIfNoCase User-Agent ^Web\\\\ Collage
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebCopier
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Copier
+SetEnvIfNoCase User-Agent ^Web\\\\ Copier
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WEBDAV
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WEBDAV\\ Client
+SetEnvIfNoCase User-Agent ^WEBDAV\\\\ Client
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebEnhancer
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Enhancer
+SetEnvIfNoCase User-Agent ^Web\\\\ Enhancer
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebFetch
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Fetch
+SetEnvIfNoCase User-Agent ^Web\\\\ Fetch
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebFuck
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Fuck
+SetEnvIfNoCase User-Agent ^Web\\\\ Fuck
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WebGo\\ IS
+SetEnvIfNoCase User-Agent ^WebGo\\\\ IS
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebImageCollector
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Image\\ Collector
+SetEnvIfNoCase User-Agent ^Web\\\\ Image\\\\ Collector
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebLeacher
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebmasterWorldForumBot
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^webmeup\\\-crawler
+SetEnvIfNoCase User-Agent ^webmeup\\\\\\\-crawler
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebPix
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Pix
+SetEnvIfNoCase User-Agent ^Web\\\\ Pix
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebReaper
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Reaper
+SetEnvIfNoCase User-Agent ^Web\\\\ Reaper
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebSauger
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Sauger
+SetEnvIfNoCase User-Agent ^Web\\\\ Sauger
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Webshag
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebsiteExtractor
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Website\\ Extractor
+SetEnvIfNoCase User-Agent ^Website\\\\ Extractor
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebsiteQuester
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Website\\ Quester
+SetEnvIfNoCase User-Agent ^Website\\\\ Quester
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Webster
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebStripper
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Stripper
+SetEnvIfNoCase User-Agent ^Web\\\\ Stripper
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebSucker
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Sucker
+SetEnvIfNoCase User-Agent ^Web\\\\ Sucker
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebWhacker
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Web\\ Whacker
+SetEnvIfNoCase User-Agent ^Web\\\\ Whacker
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WebZIP
 .* spambot=yes
@@ -989,7 +989,7 @@ SetEnvIfNoCase User-Agent ^Widow
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WinHTTrack
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WiseGuys\\ Robot
+SetEnvIfNoCase User-Agent ^WiseGuys\\\\ Robot
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WISENutbot
 .* spambot=yes
@@ -1003,11 +1003,11 @@ SetEnvIfNoCase User-Agent ^Wprecon
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WPScan
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WWW\\\-Collector\\\-E
+SetEnvIfNoCase User-Agent ^WWW\\\\\\\-Collector\\\\\\\-E
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WWW\\\-Mechanize
+SetEnvIfNoCase User-Agent ^WWW\\\\\\\-Mechanize
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^WWW\\\:\\\:Mechanize
+SetEnvIfNoCase User-Agent ^WWW\\\\\\\:\\\\\\\:Mechanize
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^WWWOFFLE
 .* spambot=yes
@@ -1017,7 +1017,7 @@ SetEnvIfNoCase User-Agent ^x22Mozilla
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Xaldon_WebSpider
 .* spambot=yes
-SetEnvIfNoCase User-Agent ^Xaldon\\ WebSpider
+SetEnvIfNoCase User-Agent ^Xaldon\\\\ WebSpider
 .* spambot=yes
 SetEnvIfNoCase User-Agent ^Xenu
 .* spambot=yes
