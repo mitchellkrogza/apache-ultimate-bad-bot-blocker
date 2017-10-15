@@ -67,17 +67,17 @@ class Generator
     /**
      * @return array for bad user-agents
      */
-    public function domainWorker2()
-    {
-        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
+    //public function domainWorker2()
+    //{
+        //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
         //$domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-user-agents.list";
         
 
-        $handle = fopen($domainsFile, "r");
-        if (!$handle) {
-            throw new \RuntimeException('Error opening file ' . $domainsFile);
-        }
-        $lines2 = array();
+        //$handle = fopen($domainsFile, "r");
+        //if (!$handle) {
+            //throw new \RuntimeException('Error opening file ' . $domainsFile);
+        //}
+        //$lines2 = array();
         //while (($line = fgets($handle)) !== false) {
                 //$line = trim(preg_replace('/\s/', '\s', $line)); // We replace space with '\s'
     			//$line = str_replace('/', '\/',$line); // We replace '/' with '\/' 
@@ -95,8 +95,8 @@ class Generator
             //if (empty($line)) {
             //    continue;
             //}
-            $lines2[] = $line;
-        }
+            //$lines2[] = $line;
+        //}
         //fclose($handle);
         //$uniqueLines = array_unique($lines2, SORT_STRING);
         //sort($uniqueLines, SORT_STRING);
@@ -106,8 +106,8 @@ class Generator
         //    trigger_error("Permission denied");
         //}
 
-        return $lines2;
-    }
+        //return $lines2;
+    //}
 
     /**
      * @param $file
@@ -132,15 +132,16 @@ class Generator
      */
     public function createApache1($date, array $lines, array $lines2)
     {    
+		$lines2 = file('/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list');
+		//$domainsFile = file(/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list);
         $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\n";
         foreach ($lines2 as $line) {
-            //if ($line === end($lines2)) {
-                //$data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
-                //break;
-            //}
-
+            if ($line === end($lines2)) {
+                $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC]\n";
+                break;
+            }
             $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC,OR]\n";
         }
         foreach ($lines as $line) {
