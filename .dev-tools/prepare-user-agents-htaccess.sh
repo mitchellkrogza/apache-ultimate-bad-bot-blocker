@@ -22,28 +22,22 @@
 
 _input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
 _inputtmp=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.tmp
-_inputtmp2=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents2.tmp
 _output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
-_output2=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents2.list
 
 # ***********************
 # Truncate our input file
 # ***********************
 
 sudo truncate -s 0 $_output
-sudo truncate -s 0 $_output2
 
 # *************************************
 # Use sed to prepare our new input file
 # *************************************
 
-cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]_]/\\&/g' > $_inputtmp && mv $_inputtmp $_output
+cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > $_inputtmp && mv $_inputtmp $_output
 
 # Test above using awk
-
 #cat $_input | awk 'gsub(/[^[:alnum:]]/,"\\\\&")+1' > $_inputtmp2 && mv $_inputtmp2 $_output2
-
-cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > $_inputtmp2 && mv $_inputtmp2 $_output2
 
 
 # *************************************
@@ -51,4 +45,3 @@ cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > $_inputtmp2 && mv $
 # *************************************
 
 sort -u $_output -o $_output
-sort -u $_output2 -o $_output2
