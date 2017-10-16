@@ -209,6 +209,7 @@ SetEnvIfNoCase Referer ~*admeasures\.com spam_ref
 SetEnvIfNoCase Referer ~*adminshop\.com spam_ref
 SetEnvIfNoCase Referer ~*admitad\.com spam_ref
 SetEnvIfNoCase Referer ~*adnotbad\.com spam_ref
+SetEnvIfNoCase Referer ~*adobereader\-free\.ru spam_ref
 SetEnvIfNoCase Referer ~*adpremium\.org spam_ref
 SetEnvIfNoCase Referer ~*adprotect\.net spam_ref
 SetEnvIfNoCase Referer ~*adrenalin\-stk\.ru spam_ref
@@ -3063,6 +3064,7 @@ SetEnvIfNoCase Referer ~*marcowebonyodziezowe\.pl spam_ref
 SetEnvIfNoCase Referer ~*maridan\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*marinetraffic\.com spam_ref
 SetEnvIfNoCase Referer ~*marketingtechniques\.info spam_ref
+SetEnvIfNoCase Referer ~*marketingvici\.com spam_ref
 SetEnvIfNoCase Referer ~*marketland\.ml spam_ref
 SetEnvIfNoCase Referer ~*markjaybeefractal\.com spam_ref
 SetEnvIfNoCase Referer ~*marktforschung\-stuttgart\.com spam_ref
@@ -3911,6 +3913,7 @@ SetEnvIfNoCase Referer ~*pravoholding\.ru spam_ref
 SetEnvIfNoCase Referer ~*prchecker\.info spam_ref
 SetEnvIfNoCase Referer ~*predominant\-invent\.tk spam_ref
 SetEnvIfNoCase Referer ~*prefersurvey\.net spam_ref
+SetEnvIfNoCase Referer ~*preg\.marketingvici\.com spam_ref
 SetEnvIfNoCase Referer ~*pregnant\.guru spam_ref
 SetEnvIfNoCase Referer ~*preparevideosafesystem4unow\.site spam_ref
 SetEnvIfNoCase Referer ~*preparevideosafesystem4unow\.space spam_ref

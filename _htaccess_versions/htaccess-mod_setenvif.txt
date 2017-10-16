@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.715
-### Bad Referrer Count: 5877
+### Version: V3.2017.10.716
+### Bad Referrer Count: 5880
 ### Bad Bot Count: 514
 ### Version Information ##
 
@@ -739,6 +739,7 @@ SetEnvIfNoCase Referer admeasures\.com spambot=yes
 SetEnvIfNoCase Referer adminshop\.com spambot=yes
 SetEnvIfNoCase Referer admitad\.com spambot=yes
 SetEnvIfNoCase Referer adnotbad\.com spambot=yes
+SetEnvIfNoCase Referer adobereader\-free\.ru spambot=yes
 SetEnvIfNoCase Referer adpremium\.org spambot=yes
 SetEnvIfNoCase Referer adprotect\.net spambot=yes
 SetEnvIfNoCase Referer adrenalin\-stk\.ru spambot=yes
@@ -3592,6 +3593,7 @@ SetEnvIfNoCase Referer marcowebonyodziezowe\.pl spambot=yes
 SetEnvIfNoCase Referer maridan\.com\.ua spambot=yes
 SetEnvIfNoCase Referer marinetraffic\.com spambot=yes
 SetEnvIfNoCase Referer marketingtechniques\.info spambot=yes
+SetEnvIfNoCase Referer marketingvici\.com spambot=yes
 SetEnvIfNoCase Referer marketland\.ml spambot=yes
 SetEnvIfNoCase Referer markjaybeefractal\.com spambot=yes
 SetEnvIfNoCase Referer marktforschung\-stuttgart\.com spambot=yes
@@ -4439,6 +4441,7 @@ SetEnvIfNoCase Referer pravoholding\.ru spambot=yes
 SetEnvIfNoCase Referer prchecker\.info spambot=yes
 SetEnvIfNoCase Referer predominant\-invent\.tk spambot=yes
 SetEnvIfNoCase Referer prefersurvey\.net spambot=yes
+SetEnvIfNoCase Referer preg\.marketingvici\.com spambot=yes
 SetEnvIfNoCase Referer pregnant\.guru spambot=yes
 SetEnvIfNoCase Referer preparevideosafesystem4unow\.site spambot=yes
 SetEnvIfNoCase Referer preparevideosafesystem4unow\.space spambot=yes
