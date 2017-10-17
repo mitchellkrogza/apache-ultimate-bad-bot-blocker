@@ -5583,6 +5583,7 @@ SetEnvIfNoCase Referer ~*www\.arenda\-yeisk\.ru spam_ref
 SetEnvIfNoCase Referer ~*www\.event\-tracking\.com spam_ref
 SetEnvIfNoCase Referer ~*www\.get\-free\-traffic\-now\.com spam_ref
 SetEnvIfNoCase Referer ~*www\.kabbalah\-red\-bracelets\.com spam_ref
+SetEnvIfNoCase Referer ~*www\.timer4web\.com spam_ref
 SetEnvIfNoCase Referer ~*wygraj\-skiny\.win spam_ref
 SetEnvIfNoCase Referer ~*wygraj\-teraz\.com spam_ref
 SetEnvIfNoCase Referer ~*wyniki\-lista\.pl spam_ref
