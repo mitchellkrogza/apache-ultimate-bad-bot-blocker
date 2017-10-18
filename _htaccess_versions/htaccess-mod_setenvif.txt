@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.717
-### Bad Referrer Count: 5881
+### Version: V3.2017.10.718
+### Bad Referrer Count: 5885
 ### Bad Bot Count: 514
 ### Version Information ##
 
@@ -2098,6 +2098,7 @@ SetEnvIfNoCase Referer eachdayisagift\.review spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
 SetEnvIfNoCase Referer eaplay\.ru spambot=yes
 SetEnvIfNoCase Referer earl\-brown\.info spambot=yes
+SetEnvIfNoCase Referer earncash\.com\.ua spambot=yes
 SetEnvIfNoCase Referer eas\-seo\.com spambot=yes
 SetEnvIfNoCase Referer easycommerce\.cf spambot=yes
 SetEnvIfNoCase Referer easync\.io spambot=yes
@@ -3190,6 +3191,7 @@ SetEnvIfNoCase Referer juliadiets\.com spambot=yes
 SetEnvIfNoCase Referer juliaworld\.net spambot=yes
 SetEnvIfNoCase Referer jumptap\.com spambot=yes
 SetEnvIfNoCase Referer junglenet\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer jurajskie\.info spambot=yes
 SetEnvIfNoCase Referer jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer justbcause\.com spambot=yes
 SetEnvIfNoCase Referer justdating\.online spambot=yes
@@ -4197,6 +4199,7 @@ SetEnvIfNoCase Referer panchro\.xyz spambot=yes
 SetEnvIfNoCase Referer pandarastore\.top spambot=yes
 SetEnvIfNoCase Referer panouri\-solare\-acoperis\.com spambot=yes
 SetEnvIfNoCase Referer paparazzistudios\.com\.au spambot=yes
+SetEnvIfNoCase Referer papasdelivery\.ru spambot=yes
 SetEnvIfNoCase Referer paperwritingservice17\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer paphoselectricianandplumber\.com spambot=yes
 SetEnvIfNoCase Referer paradontozanet\.ru spambot=yes
@@ -4749,6 +4752,7 @@ SetEnvIfNoCase Referer rumamba\.com spambot=yes
 SetEnvIfNoCase Referer running\-line\.ru spambot=yes
 SetEnvIfNoCase Referer runstocks\.com spambot=yes
 SetEnvIfNoCase Referer rus\-teh\.narod\.ru spambot=yes
+SetEnvIfNoCase Referer ruscoininvest\.company spambot=yes
 SetEnvIfNoCase Referer ruscopybook\.com spambot=yes
 SetEnvIfNoCase Referer rusenvironmental\.net spambot=yes
 SetEnvIfNoCase Referer rusexy\.xyz spambot=yes
