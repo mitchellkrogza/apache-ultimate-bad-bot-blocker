@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.718
-### Updated: Wed Oct 18 13:38:22 SAST 2017
+### Version: V3.2017.10.719
+### Updated: Thu Oct 19 17:01:32 SAST 2017
 ### Bad Referrer Count: 5885
 ### Bad Bot Count: 514
 ###################################################
@@ -6893,7 +6893,6 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require ip 40.76.0.0/14
 	Require ip 40.80.0.0/12
 	Require ip 40.96.0.0/12
-	Require ip 65.52.0.0/14
 	# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
 
 	# ********************
