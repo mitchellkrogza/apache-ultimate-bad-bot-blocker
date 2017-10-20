@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.719
-### Bad Referrer Count: 5885
+### Version: V3.2017.10.720
+### Bad Referrer Count: 5892
 ### Bad Bot Count: 514
 ### Version Information ##
 
@@ -935,6 +935,7 @@ SetEnvIfNoCase Referer apartmentbay\.ru spambot=yes
 SetEnvIfNoCase Referer apartmentratings\.com spambot=yes
 SetEnvIfNoCase Referer apccargo\.com spambot=yes
 SetEnvIfNoCase Referer apelsinnik\.website spambot=yes
+SetEnvIfNoCase Referer apessay\.com spambot=yes
 SetEnvIfNoCase Referer api\.stathat\.com spambot=yes
 SetEnvIfNoCase Referer apiadanaknet\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiallgeniusinfo\-a\.akamaihd\.net spambot=yes
@@ -2060,6 +2061,7 @@ SetEnvIfNoCase Referer doxyporno\.com spambot=yes
 SetEnvIfNoCase Referer doyouknowtheword\-flummox\.ml spambot=yes
 SetEnvIfNoCase Referer dpihatinh\.gov\.vn spambot=yes
 SetEnvIfNoCase Referer dprtb\.com spambot=yes
+SetEnvIfNoCase Referer drhomes\.biz spambot=yes
 SetEnvIfNoCase Referer drillsaw\.ru spambot=yes
 SetEnvIfNoCase Referer driving\.kiev\.ua spambot=yes
 SetEnvIfNoCase Referer drivotracker\.com spambot=yes
@@ -2525,6 +2527,7 @@ SetEnvIfNoCase Referer freeuploader\.com spambot=yes
 SetEnvIfNoCase Referer freeuploader\.ml spambot=yes
 SetEnvIfNoCase Referer freewebs\.com spambot=yes
 SetEnvIfNoCase Referer freewhatsappload\.com spambot=yes
+SetEnvIfNoCase Referer freewlan\.info spambot=yes
 SetEnvIfNoCase Referer frequiry\.com spambot=yes
 SetEnvIfNoCase Referer freshberry\.com\.ua spambot=yes
 SetEnvIfNoCase Referer freshdz\.com spambot=yes
@@ -2998,6 +3001,7 @@ SetEnvIfNoCase Referer igithab\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
 SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
+SetEnvIfNoCase Referer ikearugs\.xyz spambot=yes
 SetEnvIfNoCase Referer iklysha\.ml spambot=yes
 SetEnvIfNoCase Referer ikritikimou\.gr spambot=yes
 SetEnvIfNoCase Referer ilbe\.club spambot=yes
@@ -4131,6 +4135,7 @@ SetEnvIfNoCase Referer ons\-add\.men spambot=yes
 SetEnvIfNoCase Referer onstrapon\.purplesphere\.in spambot=yes
 SetEnvIfNoCase Referer ooo\-gotovie\.ru spambot=yes
 SetEnvIfNoCase Referer ooo\-olni\.ru spambot=yes
+SetEnvIfNoCase Referer ooomeru\.ru spambot=yes
 SetEnvIfNoCase Referer oops\-cinema\.ru spambot=yes
 SetEnvIfNoCase Referer open\-odyssey\.org spambot=yes
 SetEnvIfNoCase Referer openallurls\.com spambot=yes
@@ -5902,6 +5907,7 @@ SetEnvIfNoCase Referer vodaodessa\.com spambot=yes
 SetEnvIfNoCase Referer voditeltrezviy\.ru spambot=yes
 SetEnvIfNoCase Referer vodkoved\.ru spambot=yes
 SetEnvIfNoCase Referer volgograd\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer voloo\.ru spambot=yes
 SetEnvIfNoCase Referer voloomoney\.com spambot=yes
 SetEnvIfNoCase Referer voltrknc1\.com spambot=yes
 SetEnvIfNoCase Referer volume\-pills\.biz spambot=yes
@@ -6067,6 +6073,7 @@ SetEnvIfNoCase Referer witherrom55\.eklablog\.fr spambot=yes
 SetEnvIfNoCase Referer withstandingheartwarming\.com spambot=yes
 SetEnvIfNoCase Referer wladimirpayen\.com spambot=yes
 SetEnvIfNoCase Referer wma\-x\.com spambot=yes
+SetEnvIfNoCase Referer wnhjavlhezp\.gq spambot=yes
 SetEnvIfNoCase Referer wnoz\.de spambot=yes
 SetEnvIfNoCase Referer womama\.ru spambot=yes
 SetEnvIfNoCase Referer woman\-h\.ru spambot=yes

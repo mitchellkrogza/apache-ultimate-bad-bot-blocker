@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.719
-### Updated: Thu Oct 19 17:01:32 SAST 2017
-### Bad Referrer Count: 5885
+### Version: V3.2017.10.720
+### Updated: Fri Oct 20 14:35:35 SAST 2017
+### Bad Referrer Count: 5892
 ### Bad Bot Count: 514
 ###################################################
 ### Version Information ##
@@ -1227,6 +1227,7 @@ SetEnvIfNoCase Referer ~*apartmentratings\.com spam_ref
 SetEnvIfNoCase Referer ~*apartment\.ru spam_ref
 SetEnvIfNoCase Referer ~*apccargo\.com spam_ref
 SetEnvIfNoCase Referer ~*apelsinnik\.website spam_ref
+SetEnvIfNoCase Referer ~*apessay\.com spam_ref
 SetEnvIfNoCase Referer ~*apiadanaknet\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*apiallgeniusinfo\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*apiappenableinfo\-a\.akamaihd\.net spam_ref
@@ -2354,6 +2355,7 @@ SetEnvIfNoCase Referer ~*doxyporno\.com spam_ref
 SetEnvIfNoCase Referer ~*doyouknowtheword\-flummox\.ml spam_ref
 SetEnvIfNoCase Referer ~*dpihatinh\.gov\.vn spam_ref
 SetEnvIfNoCase Referer ~*dprtb\.com spam_ref
+SetEnvIfNoCase Referer ~*drhomes\.biz spam_ref
 SetEnvIfNoCase Referer ~*drillsaw\.ru spam_ref
 SetEnvIfNoCase Referer ~*driving\.kiev\.ua spam_ref
 SetEnvIfNoCase Referer ~*drivotracker\.com spam_ref
@@ -2818,6 +2820,7 @@ SetEnvIfNoCase Referer ~*freeuploader\.ml spam_ref
 SetEnvIfNoCase Referer ~*free\-video\-tool\.com spam_ref
 SetEnvIfNoCase Referer ~*freewebs\.com spam_ref
 SetEnvIfNoCase Referer ~*freewhatsappload\.com spam_ref
+SetEnvIfNoCase Referer ~*freewlan\.info spam_ref
 SetEnvIfNoCase Referer ~*frequiry\.com spam_ref
 SetEnvIfNoCase Referer ~*freshberry\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*freshdz\.com spam_ref
@@ -3290,6 +3293,7 @@ SetEnvIfNoCase Referer ~*igrovyeavtomaty777\.ru spam_ref
 SetEnvIfNoCase Referer ~*igru\-xbox\.net spam_ref
 SetEnvIfNoCase Referer ~*i\-hobot\.ru spam_ref
 SetEnvIfNoCase Referer ~*iinstalll\-fii1leis\.jus0wil\.pp\.ua spam_ref
+SetEnvIfNoCase Referer ~*ikearugs\.xyz spam_ref
 SetEnvIfNoCase Referer ~*iklysha\.ml spam_ref
 SetEnvIfNoCase Referer ~*ikritikimou\.gr spam_ref
 SetEnvIfNoCase Referer ~*ilbe\.club spam_ref
@@ -4424,6 +4428,7 @@ SetEnvIfNoCase Referer ~*o\-o\-6\-o\-o\.ru spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-8\-o\-o\.com spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-8\-o\-o\.ru spam_ref
 SetEnvIfNoCase Referer ~*ooo\-gotovie\.ru spam_ref
+SetEnvIfNoCase Referer ~*ooomeru\.ru spam_ref
 SetEnvIfNoCase Referer ~*ooo\-olni\.ru spam_ref
 SetEnvIfNoCase Referer ~*oops\-cinema\.ru spam_ref
 SetEnvIfNoCase Referer ~*openallurls\.com spam_ref
@@ -6197,6 +6202,7 @@ SetEnvIfNoCase Referer ~*voditeltrezviy\.ru spam_ref
 SetEnvIfNoCase Referer ~*vodkoved\.ru spam_ref
 SetEnvIfNoCase Referer ~*volgograd\.xrus\.org spam_ref
 SetEnvIfNoCase Referer ~*voloomoney\.com spam_ref
+SetEnvIfNoCase Referer ~*voloo\.ru spam_ref
 SetEnvIfNoCase Referer ~*voltrknc1\.com spam_ref
 SetEnvIfNoCase Referer ~*volume\-pills\.biz spam_ref
 SetEnvIfNoCase Referer ~*voluumtracker1\.com spam_ref
@@ -6361,6 +6367,7 @@ SetEnvIfNoCase Referer ~*withstandingheartwarming\.com spam_ref
 SetEnvIfNoCase Referer ~*w\-journal\.ru spam_ref
 SetEnvIfNoCase Referer ~*wladimirpayen\.com spam_ref
 SetEnvIfNoCase Referer ~*wma\-x\.com spam_ref
+SetEnvIfNoCase Referer ~*wnhjavlhezp\.gq spam_ref
 SetEnvIfNoCase Referer ~*wnoz\.de spam_ref
 SetEnvIfNoCase Referer ~*womama\.ru spam_ref
 SetEnvIfNoCase Referer ~*woman\-h\.ru spam_ref
