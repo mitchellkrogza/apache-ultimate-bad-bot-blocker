@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.720
+### Version: V3.2017.10.721
 ### Bad Referrer Count: 5892
-### Bad Bot Count: 514
+### Bad Bot Count: 513
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -328,7 +328,6 @@ RewriteCond %{HTTP_USER_AGENT} ^POE\-Component\-Client\-HTTP.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Probethenet.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ProPowerBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ProWebWalker.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Proximic.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Psbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Pump.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PyCurl.* [NC,OR]

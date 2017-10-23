@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.720
-### Updated: Fri Oct 20 14:35:35 SAST 2017
+### Version: V3.2017.10.721
+### Updated: Mon Oct 23 11:17:08 SAST 2017
 ### Bad Referrer Count: 5892
-### Bad Bot Count: 514
+### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
 
@@ -145,6 +145,7 @@ BrowserMatchNoCase "^(.*?)(\bFlipboardProxy\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bia_archiver\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bMozilla/4.0\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bMSIE\ 7.0\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\bProximic\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bR6_CommentReader\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bR6_FeedFetcher\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bRED/1\b)(.*)$" good_bot
@@ -480,7 +481,6 @@ BrowserMatchNoCase "^(.*?)(\bPOE-Component-Client-HTTP\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProbethenet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProPowerBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProWebWalker\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bProximic\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPsbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPump\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot
