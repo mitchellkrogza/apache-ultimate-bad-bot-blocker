@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.721
-### Updated: Mon Oct 23 11:17:08 SAST 2017
+### Version: V3.2017.10.722
+### Updated: Wed Oct 25 10:27:05 SAST 2017
 ### Bad Referrer Count: 5892
 ### Bad Bot Count: 513
 ###################################################
@@ -6866,6 +6866,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require ip 2800:3f0:4000::/36
 	Require ip 2a00:1450:4000::/36
 	Require ip 2c0f:fb50:4000::/36
+	Require ip 35.192.0.0/12
 	Require ip 64.18.0.0/20
 	Require ip 64.233.160.0/19
 	Require ip 64.68.80.0/21
