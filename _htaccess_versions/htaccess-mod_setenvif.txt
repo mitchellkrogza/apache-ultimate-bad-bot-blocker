@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.723
-### Bad Referrer Count: 5892
+### Version: V3.2017.10.724
+### Bad Referrer Count: 5899
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1914,6 +1914,7 @@ SetEnvIfNoCase Referer dealwifi\.com spambot=yes
 SetEnvIfNoCase Referer deanmoore\.ie spambot=yes
 SetEnvIfNoCase Referer dear\-diary\.ru spambot=yes
 SetEnvIfNoCase Referer decenttools\.com spambot=yes
+SetEnvIfNoCase Referer decoratinghomes\.ga spambot=yes
 SetEnvIfNoCase Referer decorationspcs\.com spambot=yes
 SetEnvIfNoCase Referer decorazilla\.com spambot=yes
 SetEnvIfNoCase Referer deda\-moroza\-zakaz\.ru spambot=yes
@@ -2273,6 +2274,7 @@ SetEnvIfNoCase Referer executehosting\.com spambot=yes
 SetEnvIfNoCase Referer exhibitionplus\.eu spambot=yes
 SetEnvIfNoCase Referer exmasters\.com spambot=yes
 SetEnvIfNoCase Referer exoclick\.com spambot=yes
+SetEnvIfNoCase Referer exoneration\-project\.us spambot=yes
 SetEnvIfNoCase Referer exonline\.info spambot=yes
 SetEnvIfNoCase Referer expdom\.com spambot=yes
 SetEnvIfNoCase Referer expertblog\.info spambot=yes
@@ -2601,6 +2603,7 @@ SetEnvIfNoCase Referer gamevalue7\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer gamewrath\.com spambot=yes
 SetEnvIfNoCase Referer gaming\-journal\.com spambot=yes
 SetEnvIfNoCase Referer gamingspark\.com spambot=yes
+SetEnvIfNoCase Referer garciniaxt\.us spambot=yes
 SetEnvIfNoCase Referer gardene\.ru spambot=yes
 SetEnvIfNoCase Referer gate5\.co\.za spambot=yes
 SetEnvIfNoCase Referer gateway\.zscalerone\.net spambot=yes
@@ -3024,6 +3027,7 @@ SetEnvIfNoCase Referer imfamous\.info spambot=yes
 SetEnvIfNoCase Referer img\.wallpaperstock\.net spambot=yes
 SetEnvIfNoCase Referer imgarcade\.com spambot=yes
 SetEnvIfNoCase Referer imgata\.com spambot=yes
+SetEnvIfNoCase Referer imicrovision\.com spambot=yes
 SetEnvIfNoCase Referer iminent\.com spambot=yes
 SetEnvIfNoCase Referer imitex\-plus\.ru spambot=yes
 SetEnvIfNoCase Referer immobiliaremassaro\.com spambot=yes
@@ -5073,6 +5077,7 @@ SetEnvIfNoCase Referer site\-analyzer\.com spambot=yes
 SetEnvIfNoCase Referer site\-auditor\.online spambot=yes
 SetEnvIfNoCase Referer site\-speed\-check\.site spambot=yes
 SetEnvIfNoCase Referer site\-speed\-checker\.site spambot=yes
+SetEnvIfNoCase Referer site\.ru spambot=yes
 SetEnvIfNoCase Referer site3\.free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer site5\.com spambot=yes
 SetEnvIfNoCase Referer sitebeam\.net spambot=yes
@@ -5691,6 +5696,7 @@ SetEnvIfNoCase Referer txxx\.com spambot=yes
 SetEnvIfNoCase Referer typer\.one spambot=yes
 SetEnvIfNoCase Referer tytoona\.com spambot=yes
 SetEnvIfNoCase Referer tyumen\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer tzritel\.tk spambot=yes
 SetEnvIfNoCase Referer u\-cheats\.ru spambot=yes
 SetEnvIfNoCase Referer u17795\.netangels\.ru spambot=yes
 SetEnvIfNoCase Referer u555u\.info spambot=yes
@@ -5887,6 +5893,7 @@ SetEnvIfNoCase Referer vita\.com\.hr spambot=yes
 SetEnvIfNoCase Referer vitalads\.net spambot=yes
 SetEnvIfNoCase Referer vitanail\.ru spambot=yes
 SetEnvIfNoCase Referer viteonlusarezzo\.it spambot=yes
+SetEnvIfNoCase Referer vitoriacabos\.com spambot=yes
 SetEnvIfNoCase Referer viven\.host\.sk spambot=yes
 SetEnvIfNoCase Referer vizag\.kharkov\.ua spambot=yes
 SetEnvIfNoCase Referer vizitki\.net spambot=yes

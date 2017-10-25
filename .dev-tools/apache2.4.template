@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.723
-### Updated: Wed Oct 25 10:47:20 SAST 2017
-### Bad Referrer Count: 5892
+### Version: V3.2017.10.724
+### Updated: Wed Oct 25 13:54:21 SAST 2017
+### Bad Referrer Count: 5899
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -2208,6 +2208,7 @@ SetEnvIfNoCase Referer ~*dealwifi\.com spam_ref
 SetEnvIfNoCase Referer ~*deanmoore\.ie spam_ref
 SetEnvIfNoCase Referer ~*dear\-diary\.ru spam_ref
 SetEnvIfNoCase Referer ~*decenttools\.com spam_ref
+SetEnvIfNoCase Referer ~*decoratinghomes\.ga spam_ref
 SetEnvIfNoCase Referer ~*decorationspcs\.com spam_ref
 SetEnvIfNoCase Referer ~*decorazilla\.com spam_ref
 SetEnvIfNoCase Referer ~*deda\-moroza\-zakaz\.ru spam_ref
@@ -2568,6 +2569,7 @@ SetEnvIfNoCase Referer ~*executehosting\.com spam_ref
 SetEnvIfNoCase Referer ~*exhibitionplus\.eu spam_ref
 SetEnvIfNoCase Referer ~*exmasters\.com spam_ref
 SetEnvIfNoCase Referer ~*exoclick\.com spam_ref
+SetEnvIfNoCase Referer ~*exoneration\-project\.us spam_ref
 SetEnvIfNoCase Referer ~*exonline\.info spam_ref
 SetEnvIfNoCase Referer ~*expdom\.com spam_ref
 SetEnvIfNoCase Referer ~*expertblog\.info spam_ref
@@ -2895,6 +2897,7 @@ SetEnvIfNoCase Referer ~*gamevalue7\.weebly\.com spam_ref
 SetEnvIfNoCase Referer ~*gamewrath\.com spam_ref
 SetEnvIfNoCase Referer ~*gaming\-journal\.com spam_ref
 SetEnvIfNoCase Referer ~*gamingspark\.com spam_ref
+SetEnvIfNoCase Referer ~*garciniaxt\.us spam_ref
 SetEnvIfNoCase Referer ~*gardene\.ru spam_ref
 SetEnvIfNoCase Referer ~*gate5\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*gateway\.zscalerone\.net spam_ref
@@ -3317,6 +3320,7 @@ SetEnvIfNoCase Referer ~*imfamous\.info spam_ref
 SetEnvIfNoCase Referer ~*imgarcade\.com spam_ref
 SetEnvIfNoCase Referer ~*imgata\.com spam_ref
 SetEnvIfNoCase Referer ~*img\.wallpaperstock\.net spam_ref
+SetEnvIfNoCase Referer ~*imicrovision\.com spam_ref
 SetEnvIfNoCase Referer ~*i\-midias\.net\.br spam_ref
 SetEnvIfNoCase Referer ~*iminent\.com spam_ref
 SetEnvIfNoCase Referer ~*imitex\-plus\.ru spam_ref
@@ -5371,6 +5375,7 @@ SetEnvIfNoCase Referer ~*siteheart\.net spam_ref
 SetEnvIfNoCase Referer ~*siteimprove\.com spam_ref
 SetEnvIfNoCase Referer ~*siteonomy\.com spam_ref
 SetEnvIfNoCase Referer ~*siteripz\.net spam_ref
+SetEnvIfNoCase Referer ~*site\.ru spam_ref
 SetEnvIfNoCase Referer ~*site\-speed\-checker\.site spam_ref
 SetEnvIfNoCase Referer ~*site\-speed\-check\.site spam_ref
 SetEnvIfNoCase Referer ~*sitevaluation\.com spam_ref
@@ -5986,6 +5991,7 @@ SetEnvIfNoCase Referer ~*txxx\.com spam_ref
 SetEnvIfNoCase Referer ~*typer\.one spam_ref
 SetEnvIfNoCase Referer ~*tytoona\.com spam_ref
 SetEnvIfNoCase Referer ~*tyumen\.xrus\.org spam_ref
+SetEnvIfNoCase Referer ~*tzritel\.tk spam_ref
 SetEnvIfNoCase Referer ~*u17795\.netangels\.ru spam_ref
 SetEnvIfNoCase Referer ~*u555u\.info spam_ref
 SetEnvIfNoCase Referer ~*uac\.net\.au spam_ref
@@ -6182,6 +6188,7 @@ SetEnvIfNoCase Referer ~*vita\.com\.hr spam_ref
 SetEnvIfNoCase Referer ~*vitalads\.net spam_ref
 SetEnvIfNoCase Referer ~*vitanail\.ru spam_ref
 SetEnvIfNoCase Referer ~*viteonlusarezzo\.it spam_ref
+SetEnvIfNoCase Referer ~*vitoriacabos\.com spam_ref
 SetEnvIfNoCase Referer ~*viven\.host\.sk spam_ref
 SetEnvIfNoCase Referer ~*vizag\.kharkov\.ua spam_ref
 SetEnvIfNoCase Referer ~*vizitki\.net spam_ref
