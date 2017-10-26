@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.724
-### Bad Referrer Count: 5899
+### Version: V3.2017.10.725
+### Bad Referrer Count: 5904
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -758,6 +758,7 @@ SetEnvIfNoCase Referer adtech\.fr spambot=yes
 SetEnvIfNoCase Referer adtech\.us spambot=yes
 SetEnvIfNoCase Referer adtiger\.tk spambot=yes
 SetEnvIfNoCase Referer adtology\.com spambot=yes
+SetEnvIfNoCase Referer adult\-shop\.com\.ua spambot=yes
 SetEnvIfNoCase Referer adult3dgames\.com spambot=yes
 SetEnvIfNoCase Referer adultactioncam\.com spambot=yes
 SetEnvIfNoCase Referer adultfriendfinder\.com spambot=yes
@@ -1228,6 +1229,7 @@ SetEnvIfNoCase Referer bestpriceninja\.com spambot=yes
 SetEnvIfNoCase Referer bestprofits\-there\.com spambot=yes
 SetEnvIfNoCase Referer bestserials\.com spambot=yes
 SetEnvIfNoCase Referer bestssaker\.com spambot=yes
+SetEnvIfNoCase Referer besttorrentknifta\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer bestwaystogetpaid\.us spambot=yes
 SetEnvIfNoCase Referer bestwebsiteawards\.com spambot=yes
 SetEnvIfNoCase Referer bestwebsitesawards\.com spambot=yes
@@ -3504,6 +3506,7 @@ SetEnvIfNoCase Referer loftdigital\.eu spambot=yes
 SetEnvIfNoCase Referer loginduepunti\.it spambot=yes
 SetEnvIfNoCase Referer lol\-smurfs\.com spambot=yes
 SetEnvIfNoCase Referer lollypopgaming\.com spambot=yes
+SetEnvIfNoCase Referer lolnex\.us spambot=yes
 SetEnvIfNoCase Referer lomb\.co spambot=yes
 SetEnvIfNoCase Referer lombardfinder\.ru spambot=yes
 SetEnvIfNoCase Referer lombia\.co spambot=yes
@@ -4737,6 +4740,7 @@ SetEnvIfNoCase Referer rome2rio\.com spambot=yes
 SetEnvIfNoCase Referer roofers\.org\.uk spambot=yes
 SetEnvIfNoCase Referer rootandroid\.org spambot=yes
 SetEnvIfNoCase Referer ros\-ctm\.ru spambot=yes
+SetEnvIfNoCase Referer rosbalt\.com\.ua spambot=yes
 SetEnvIfNoCase Referer rospromtest\.ru spambot=yes
 SetEnvIfNoCase Referer rossanasaavedra\.net spambot=yes
 SetEnvIfNoCase Referer rossmark\.ru spambot=yes
@@ -5939,6 +5943,7 @@ SetEnvIfNoCase Referer vtc\.pw spambot=yes
 SetEnvIfNoCase Referer vucms\.com spambot=yes
 SetEnvIfNoCase Referer vut\.com\.ru spambot=yes
 SetEnvIfNoCase Referer vvon\.co\.uk spambot=yes
+SetEnvIfNoCase Referer vvpg\.ru spambot=yes
 SetEnvIfNoCase Referer vykup\-avto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vykupavto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vysigy\.su spambot=yes

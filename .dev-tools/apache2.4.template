@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.724
-### Updated: Wed Oct 25 13:54:21 SAST 2017
-### Bad Referrer Count: 5899
+### Version: V3.2017.10.725
+### Updated: Thu Oct 26 14:47:26 SAST 2017
+### Bad Referrer Count: 5904
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -1057,6 +1057,7 @@ SetEnvIfNoCase Referer ~*adultfullhd\.com spam_ref
 SetEnvIfNoCase Referer ~*adultgalls\.com spam_ref
 SetEnvIfNoCase Referer ~*adultmeetonline\.info spam_ref
 SetEnvIfNoCase Referer ~*adultnet\.in spam_ref
+SetEnvIfNoCase Referer ~*adult\-shop\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*adultwebhosting\.info spam_ref
 SetEnvIfNoCase Referer ~*advancedcleaner\.com spam_ref
 SetEnvIfNoCase Referer ~*advancedsoftwaresupport\.com spam_ref
@@ -1521,6 +1522,7 @@ SetEnvIfNoCase Referer ~*best\-seo\-software\.xyz spam_ref
 SetEnvIfNoCase Referer ~*best\-seo\-solution\.com spam_ref
 SetEnvIfNoCase Referer ~*bestserials\.com spam_ref
 SetEnvIfNoCase Referer ~*bestssaker\.com spam_ref
+SetEnvIfNoCase Referer ~*besttorrentknifta\.weebly\.com spam_ref
 SetEnvIfNoCase Referer ~*best\-way\.men spam_ref
 SetEnvIfNoCase Referer ~*bestwaystogetpaid\.us spam_ref
 SetEnvIfNoCase Referer ~*bestwebsiteawards\.com spam_ref
@@ -3798,6 +3800,7 @@ SetEnvIfNoCase Referer ~*lodki\-pvh\.dp\.ua spam_ref
 SetEnvIfNoCase Referer ~*loftdigital\.eu spam_ref
 SetEnvIfNoCase Referer ~*loginduepunti\.it spam_ref
 SetEnvIfNoCase Referer ~*lollypopgaming\.com spam_ref
+SetEnvIfNoCase Referer ~*lolnex\.us spam_ref
 SetEnvIfNoCase Referer ~*lol\-smurfs\.com spam_ref
 SetEnvIfNoCase Referer ~*lombardfinder\.ru spam_ref
 SetEnvIfNoCase Referer ~*lomb\.co spam_ref
@@ -5031,6 +5034,7 @@ SetEnvIfNoCase Referer ~*roma\-kukareku\.livejournal\.com spam_ref
 SetEnvIfNoCase Referer ~*rome2rio\.com spam_ref
 SetEnvIfNoCase Referer ~*roofers\.org\.uk spam_ref
 SetEnvIfNoCase Referer ~*rootandroid\.org spam_ref
+SetEnvIfNoCase Referer ~*rosbalt\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*ros\-ctm\.ru spam_ref
 SetEnvIfNoCase Referer ~*rospromtest\.ru spam_ref
 SetEnvIfNoCase Referer ~*rossanasaavedra\.net spam_ref
@@ -6234,6 +6238,7 @@ SetEnvIfNoCase Referer ~*vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*vucms\.com spam_ref
 SetEnvIfNoCase Referer ~*vut\.com\.ru spam_ref
 SetEnvIfNoCase Referer ~*vvon\.co\.uk spam_ref
+SetEnvIfNoCase Referer ~*vvpg\.ru spam_ref
 SetEnvIfNoCase Referer ~*vykup\-avto\-krasnodar\.ru spam_ref
 SetEnvIfNoCase Referer ~*vykupavto\-krasnodar\.ru spam_ref
 SetEnvIfNoCase Referer ~*vysigy\.su spam_ref
