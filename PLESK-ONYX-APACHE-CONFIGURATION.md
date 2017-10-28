@@ -9,7 +9,7 @@ This guide ONLY applies to Plesk Onyx Server Configurations where Apache is the 
 
 This guide is for implementing the Blocker on a global level for Plesk meaning the blocker will be applied to ALL web sites configured and running from the Plesk System.
 
-You CAN implement this on a site by site basis only by paying special attention to the command line we run in **Step 5**
+> You CAN implement this on a site by site basis only by paying special attention to the command line we run in **Step 5**
 
 **MAKE SURE you have enabled all required modules on Apache in the Plesk Configuration for Apache - See Step 8**
 
