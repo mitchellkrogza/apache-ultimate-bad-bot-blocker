@@ -150,7 +150,6 @@ Enjoy !!! and Please Help Support This Project
 
 [![Help me out with a mug of beer](https://img.shields.io/badge/Help%20-%20me%20out%20with%20a%20mug%20of%20%F0%9F%8D%BA-blue.svg)](https://paypal.me/mitchellkrog/) or [![Help me feed my cat](https://img.shields.io/badge/Help%20-%20me%20feed%20my%20hungry%20cat%20%F0%9F%98%B8-blue.svg)](https://paypal.me/mitchellkrog/)
 
-
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/plesk-control-panel.jpg" alt="Plesk Onyx Web Host Edition Admin Interface Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker Configuration and Customizing Plesk Apache Vhost Templates"/>
 
 ************************************************
