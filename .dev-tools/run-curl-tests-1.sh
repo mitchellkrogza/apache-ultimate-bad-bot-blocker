@@ -26,6 +26,9 @@ _curltest3=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest3.txt
 _curltest4=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest4.txt
 _curltest5=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest5.txt
 _curltest6=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest6.txt
+_curltest7=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest7.txt
+_curltest8=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest8.txt
+_curltest9=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest9.txt
 _now="$(date)"
 
 # *************************************************
@@ -125,6 +128,54 @@ fi
 }
 
 
+# **************************************************
+# Function Curl Test 7 - Check for Bad Bot "Disco"
+# **************************************************
+
+run_curltest7 () {
+truncate -s 0 $_curltest7
+printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest7"
+curl -A "Disco" http://local.dev:80/index.html 2>&1 >> $_curltest7
+if grep -i 'Forbidden' $_curltest7; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+
+# *******************************************************
+# Function Curl Test 8 - Check for Bad Bot "Discoverybot"
+# *******************************************************
+
+run_curltest8 () {
+truncate -s 0 $_curltest8
+printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest8"
+curl -A "Discoverybot" http://local.dev:80/index.html 2>&1 >> $_curltest8
+if grep -i 'Forbidden' $_curltest8; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+
+# ****************************************************
+# Function Curl Test 9 - Check for Bad Bot "Disco Bot"
+# ****************************************************
+
+run_curltest9 () {
+truncate -s 0 $_curltest9
+printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest9"
+curl -A "Disco Bot" http://local.dev:80/index.html 2>&1 >> $_curltest9
+if grep -i 'Forbidden' $_curltest9; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+
 # *********************************
 # Trigger our curl functions to run
 # *********************************
@@ -135,6 +186,9 @@ run_curltest3
 run_curltest4
 run_curltest5
 run_curltest6
+run_curltest7
+run_curltest8
+run_curltest9
 
 # ****************************************
 # If everything passed then we exit with 0
