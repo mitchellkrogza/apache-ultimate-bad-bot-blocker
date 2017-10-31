@@ -191,7 +191,7 @@ if grep -i 'Forbidden' $_curltest10; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -207,7 +207,7 @@ if grep -i 'Forbidden' $_curltest11; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
