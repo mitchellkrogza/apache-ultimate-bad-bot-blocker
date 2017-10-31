@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.733
-### Updated: Tue Oct 31 11:57:51 SAST 2017
-### Bad Bot Count: 503
+### Version: V3.2017.10.735
+### Updated: Tue Oct 31 12:12:50 SAST 2017
+### Bad Bot Count: 501
 ###################################################
 ### Version Information ##
 
@@ -878,10 +878,6 @@ Disallow:/
 User-agent: WebAuto
 Disallow:/
 User-agent: Web Auto
-Disallow:/
-User-agent: WebBandit
-Disallow:/
-User-agent: Web Bandit
 Disallow:/
 User-agent: WebCollage
 Disallow:/
