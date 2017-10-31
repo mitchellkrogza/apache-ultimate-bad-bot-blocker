@@ -93,8 +93,6 @@ DomainCrawler
 DomainSigmaCrawler
 DomainStatsBot
 Dotbot
-Download\ Demon
-Download\ Devil
 Download\ Wonder
 Dragonfly
 Drip
@@ -104,9 +102,6 @@ Ebingbong
 eCatch
 ECCP\/1\.0
 Ecxi
-EirGrabber
-EMail\ Collector
-EMail\ Extractor
 EMail\ Siphon
 EMail\ Wolf
 EroCrawler
@@ -114,7 +109,6 @@ Evil
 Exabot
 Express\ WebPictures
 Extractor
-ExtractorPro
 Extreme\ Picture\ Finder
 EyeNetIE
 Ezooms
@@ -166,7 +160,6 @@ IDBot
 Id\-search
 IlseBot
 Image\ Fetch
-Image\ Stripper
 Image\ Sucker
 Indy\ Library
 InfoNaviRobot
@@ -204,7 +197,6 @@ Libwhisker
 Lightspeedsystems
 Likse
 Linkdexbot
-LinkextractorPro
 LinkpadBot
 LinkScan
 LinksManager
@@ -243,7 +235,6 @@ Mister\ PiX
 MJ12bot
 Mojeek
 Morfeus\ Fucking\ Scanner
-MSFrontPage
 MSIE\ 6\.0
 MSIECrawler
 Msrabot
@@ -286,8 +277,6 @@ OrangeSpider
 OutfoxBot
 PageAnalyzer
 Page\ Analyzer
-PageGrabber
-Page\ Grabber
 page\ scorer
 PageScorer
 Panscient
@@ -336,12 +325,10 @@ ScanAlert
 Scanbot
 Scrapy
 Screaming
-Screaming\ Frog\ SEO\ Spider
 ScreenerBot
 Searchestate
 SearchmetricsBot
 Semrush
-SemrushBot
 SEOkicks
 SEOlyticsCrawler
 Seomoz
@@ -350,7 +337,6 @@ seoscanners
 SEOstats
 Siphon
 SISTRIX
-SISTRIX\ Crawler
 Sitebeam
 SiteExplorer
 Siteimprove
@@ -407,9 +393,7 @@ Toweyabot
 Trendictionbot
 True\_Robot
 Turingos
-TurnitinBot
-Turnitin\ Bot
-Turnitin\ Robot
+Turnitin
 TwengaBot
 Twice
 Typhoeus
@@ -435,8 +419,6 @@ WebAuto
 Web\ Auto
 WebCollage
 Web\ Collage
-WebCopier
-Web\ Copier
 WEBDAV
 WebEnhancer
 Web\ Enhancer
@@ -445,35 +427,24 @@ Web\ Fetch
 WebFuck
 Web\ Fuck
 WebGo\ IS
-WebImageCollector
-Web\ Image\ Collector
 WebLeacher
 WebmasterWorldForumBot
 webmeup\-crawler
 WebPix
 Web\ Pix
-WebReaper
-Web\ Reaper
 WebSauger
 Web\ Sauger
 Webshag
-WebsiteExtractor
-Website\ Extractor
 WebsiteQuester
 Website\ Quester
 Webster
-WebStripper
-Web\ Stripper
 WebSucker
 Web\ Sucker
-WebWhacker
-Web\ Whacker
 WebZIP
 WeSEE
 Whack
 Whatweb
 Widow
-WinHTTrack
 WiseGuys\ Robot
 WISENutbot
 Wonderbot
@@ -481,7 +452,6 @@ Woobot
 Wotbox
 Wprecon
 WPScan
-WWW\-Collector\-E
 WWW\-Mechanize
 WWW\:\:Mechanize
 WWWOFFLE

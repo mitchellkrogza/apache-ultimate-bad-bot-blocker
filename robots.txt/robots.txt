@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.735
-### Updated: Tue Oct 31 12:12:50 SAST 2017
-### Bad Bot Count: 501
+### Version: V3.2017.10.737
+### Updated: Tue Oct 31 12:39:29 SAST 2017
+### Bad Bot Count: 471
 ###################################################
 ### Version Information ##
 
@@ -199,10 +199,6 @@ User-agent: DomainStatsBot
 Disallow:/
 User-agent: Dotbot
 Disallow:/
-User-agent: Download Demon
-Disallow:/
-User-agent: Download Devil
-Disallow:/
 User-agent: Download Wonder
 Disallow:/
 User-agent: Dragonfly
@@ -221,12 +217,6 @@ User-agent: ECCP/1.0
 Disallow:/
 User-agent: Ecxi
 Disallow:/
-User-agent: EirGrabber
-Disallow:/
-User-agent: EMail Collector
-Disallow:/
-User-agent: EMail Extractor
-Disallow:/
 User-agent: EMail Siphon
 Disallow:/
 User-agent: EMail Wolf
@@ -240,8 +230,6 @@ Disallow:/
 User-agent: Express WebPictures
 Disallow:/
 User-agent: Extractor
-Disallow:/
-User-agent: ExtractorPro
 Disallow:/
 User-agent: Extreme Picture Finder
 Disallow:/
@@ -345,8 +333,6 @@ User-agent: IlseBot
 Disallow:/
 User-agent: Image Fetch
 Disallow:/
-User-agent: Image Stripper
-Disallow:/
 User-agent: Image Sucker
 Disallow:/
 User-agent: Indy Library
@@ -420,8 +406,6 @@ Disallow:/
 User-agent: Likse
 Disallow:/
 User-agent: Linkdexbot
-Disallow:/
-User-agent: LinkextractorPro
 Disallow:/
 User-agent: LinkpadBot
 Disallow:/
@@ -498,8 +482,6 @@ Disallow:/
 User-agent: Mojeek
 Disallow:/
 User-agent: Morfeus Fucking Scanner
-Disallow:/
-User-agent: MSFrontPage
 Disallow:/
 User-agent: MSIE 6.0
 Disallow:/
@@ -584,10 +566,6 @@ Disallow:/
 User-agent: PageAnalyzer
 Disallow:/
 User-agent: Page Analyzer
-Disallow:/
-User-agent: PageGrabber
-Disallow:/
-User-agent: Page Grabber
 Disallow:/
 User-agent: page scorer
 Disallow:/
@@ -685,8 +663,6 @@ User-agent: Scrapy
 Disallow:/
 User-agent: Screaming
 Disallow:/
-User-agent: Screaming Frog SEO Spider
-Disallow:/
 User-agent: ScreenerBot
 Disallow:/
 User-agent: Searchestate
@@ -694,8 +670,6 @@ Disallow:/
 User-agent: SearchmetricsBot
 Disallow:/
 User-agent: Semrush
-Disallow:/
-User-agent: SemrushBot
 Disallow:/
 User-agent: SEOkicks
 Disallow:/
@@ -712,8 +686,6 @@ Disallow:/
 User-agent: Siphon
 Disallow:/
 User-agent: SISTRIX
-Disallow:/
-User-agent: SISTRIX Crawler
 Disallow:/
 User-agent: Sitebeam
 Disallow:/
@@ -827,11 +799,7 @@ User-agent: True_Robot
 Disallow:/
 User-agent: Turingos
 Disallow:/
-User-agent: TurnitinBot
-Disallow:/
-User-agent: Turnitin Bot
-Disallow:/
-User-agent: Turnitin Robot
+User-agent: Turnitin
 Disallow:/
 User-agent: TwengaBot
 Disallow:/
@@ -883,10 +851,6 @@ User-agent: WebCollage
 Disallow:/
 User-agent: Web Collage
 Disallow:/
-User-agent: WebCopier
-Disallow:/
-User-agent: Web Copier
-Disallow:/
 User-agent: WEBDAV
 Disallow:/
 User-agent: WebEnhancer
@@ -903,10 +867,6 @@ User-agent: Web Fuck
 Disallow:/
 User-agent: WebGo IS
 Disallow:/
-User-agent: WebImageCollector
-Disallow:/
-User-agent: Web Image Collector
-Disallow:/
 User-agent: WebLeacher
 Disallow:/
 User-agent: WebmasterWorldForumBot
@@ -917,19 +877,11 @@ User-agent: WebPix
 Disallow:/
 User-agent: Web Pix
 Disallow:/
-User-agent: WebReaper
-Disallow:/
-User-agent: Web Reaper
-Disallow:/
 User-agent: WebSauger
 Disallow:/
 User-agent: Web Sauger
 Disallow:/
 User-agent: Webshag
-Disallow:/
-User-agent: WebsiteExtractor
-Disallow:/
-User-agent: Website Extractor
 Disallow:/
 User-agent: WebsiteQuester
 Disallow:/
@@ -937,17 +889,9 @@ User-agent: Website Quester
 Disallow:/
 User-agent: Webster
 Disallow:/
-User-agent: WebStripper
-Disallow:/
-User-agent: Web Stripper
-Disallow:/
 User-agent: WebSucker
 Disallow:/
 User-agent: Web Sucker
-Disallow:/
-User-agent: WebWhacker
-Disallow:/
-User-agent: Web Whacker
 Disallow:/
 User-agent: WebZIP
 Disallow:/
@@ -958,8 +902,6 @@ Disallow:/
 User-agent: Whatweb
 Disallow:/
 User-agent: Widow
-Disallow:/
-User-agent: WinHTTrack
 Disallow:/
 User-agent: WiseGuys Robot
 Disallow:/
@@ -974,8 +916,6 @@ Disallow:/
 User-agent: Wprecon
 Disallow:/
 User-agent: WPScan
-Disallow:/
-User-agent: WWW-Collector-E
 Disallow:/
 User-agent: WWW-Mechanize
 Disallow:/
