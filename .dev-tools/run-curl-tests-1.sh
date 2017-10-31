@@ -29,6 +29,9 @@ _curltest6=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest6.txt
 _curltest7=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest7.txt
 _curltest8=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest8.txt
 _curltest9=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest9.txt
+_curltest10=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest10.txt
+_curltest11=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest11.txt
+
 _now="$(date)"
 
 # *************************************************
