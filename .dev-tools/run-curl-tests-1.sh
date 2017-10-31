@@ -176,6 +176,38 @@ else
 fi
 }
 
+# ******************************************************
+# Function Curl Test 10 - Check for Bad Bot "Web Bandit"
+# ******************************************************
+
+run_curltest10 () {
+truncate -s 0 $_curltest10
+printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest10"
+curl -A "Web Bandit" http://local.dev:80/index.html 2>&1 >> $_curltest10
+if grep -i 'Forbidden' $_curltest10; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+
+# *****************************************************
+# Function Curl Test 11 - Check for Bad Bot "WebBandit"
+# *****************************************************
+
+run_curltest11 () {
+truncate -s 0 $_curltest11
+printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest11"
+curl -A "WebBandit" http://local.dev:80/index.html 2>&1 >> $_curltest11
+if grep -i 'Forbidden' $_curltest11; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+
 # *********************************
 # Trigger our curl functions to run
 # *********************************
@@ -189,6 +221,8 @@ run_curltest6
 run_curltest7
 run_curltest8
 run_curltest9
+run_curltest10
+run_curltest11
 
 # ****************************************
 # If everything passed then we exit with 0
