@@ -1,14 +1,60 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.737
-### Updated: Tue Oct 31 12:39:29 SAST 2017
-### Bad Bot Count: 471
+### Version: V3.2017.10.739
+### Updated: Tue Oct 31 13:01:45 SAST 2017
+### Bad Bot Count: 494
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+User-agent: EirGrabber
+Disallow:/
+User-agent: ExtractorPro
+Disallow:/
+User-agent: LinkextractorPro
+Disallow:/
+User-agent: MSFrontPage
+Disallow:/
+User-agent: PageGrabber
+Disallow:/
+User-agent: SemrushBot
+Disallow:/
+User-agent: TurnitinBot
+Disallow:/
+User-agent: WebCopier
+Disallow:/
+User-agent: WebImageCollector
+Disallow:/
+User-agent: WebReaper
+Disallow:/
+User-agent: WebsiteExtractor
+Disallow:/
+User-agent: WebStripper
+Disallow:/
+User-agent: WebWhacker
+Disallow:/
+User-agent: WinHTTrack
+Disallow:/
+User-agent: WWW-Collector-E
+Disallow:/
+User-agent: WebBandit
+Disallow:/
+User-agent: BlowFish
+Disallow:/
+User-agent: Discobot
+Disallow:/
+User-agent: Discoverybot
+Disallow:/
+User-agent: RankActiveLinkBot
+Disallow:/
+User-agent: RankingBot2
+Disallow:/
+User-agent: TeleportPro
+Disallow:/
+User-agent: Whacker
+Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
