@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.730
-### Updated: Sun Oct 29 16:29:05 SAST 2017
+### Version: V3.2017.10.731
+### Updated: Tue Oct 31 11:43:59 SAST 2017
 ### Bad Referrer Count: 5904
-### Bad Bot Count: 513
+### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
 
@@ -205,12 +205,10 @@ BrowserMatchNoCase "^(.*?)(\bBlack\ Hole\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlackWidow\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBLEXBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlow\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBlowFish\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBoardreader\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBolt\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBotALot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBrandprotect\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBrandProtect\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBrandwatch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBubing\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBuddy\b)(.*)$" bad_bot
@@ -240,7 +238,6 @@ BrowserMatchNoCase "^(.*?)(\bCopyscape\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCosmos\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCraftbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrazyWebCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCRAZYWEBCRAWLER\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrescent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCSHttp\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCurious\b)(.*)$" bad_bot
@@ -256,7 +253,6 @@ BrowserMatchNoCase "^(.*?)(\bDigincore\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDIIbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDirbuster\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDisco\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bDiscobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDiscoverybot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDittoSpyder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainAppender\b)(.*)$" bad_bot
@@ -487,10 +483,8 @@ BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bQueryN\ Metasearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bQwantify\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankActive\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRankActiveLinkBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankFlex\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankingBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRankingBot2\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankivabot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankurBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRealDownload\b)(.*)$" bad_bot
@@ -516,7 +510,6 @@ BrowserMatchNoCase "^(.*?)(\bSearchmetricsBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSemrush\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSemrushBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOkicks\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSEOkicks-Robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOlyticsCrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSeomoz\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOprofiler\b)(.*)$" bad_bot
@@ -569,7 +562,6 @@ BrowserMatchNoCase "^(.*?)(\bT0PHackTeam\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bT8Abot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\btAkeOut\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTeleport\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bTeleportPro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesoft\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesphoreo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesphorep\b)(.*)$" bad_bot
@@ -615,7 +607,6 @@ BrowserMatchNoCase "^(.*?)(\bWeb\ Collage\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebCopier\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Copier\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWEBDAV\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWEBDAV\ Client\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebEnhancer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Enhancer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebFetch\b)(.*)$" bad_bot
@@ -649,7 +640,6 @@ BrowserMatchNoCase "^(.*?)(\bWeb\ Whacker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebZIP\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeSEE\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWhack\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bWhacker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWhatweb\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWidow\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWinHTTrack\b)(.*)$" bad_bot

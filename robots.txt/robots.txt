@@ -1,8 +1,8 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.730
-### Updated: Sun Oct 29 16:29:04 SAST 2017
-### Bad Bot Count: 513
+### Version: V3.2017.10.731
+### Updated: Tue Oct 31 11:43:59 SAST 2017
+### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
 
@@ -89,8 +89,6 @@ User-agent: BLEXBot
 Disallow:/
 User-agent: Blow
 Disallow:/
-User-agent: BlowFish
-Disallow:/
 User-agent: Boardreader
 Disallow:/
 User-agent: Bolt
@@ -98,8 +96,6 @@ Disallow:/
 User-agent: BotALot
 Disallow:/
 User-agent: Brandprotect
-Disallow:/
-User-agent: BrandProtect
 Disallow:/
 User-agent: Brandwatch
 Disallow:/
@@ -159,8 +155,6 @@ User-agent: Craftbot
 Disallow:/
 User-agent: CrazyWebCrawler
 Disallow:/
-User-agent: CRAZYWEBCRAWLER
-Disallow:/
 User-agent: Crescent
 Disallow:/
 User-agent: CSHttp
@@ -190,8 +184,6 @@ Disallow:/
 User-agent: Dirbuster
 Disallow:/
 User-agent: Disco
-Disallow:/
-User-agent: Discobot
 Disallow:/
 User-agent: Discoverybot
 Disallow:/
@@ -653,13 +645,9 @@ User-agent: Qwantify
 Disallow:/
 User-agent: RankActive
 Disallow:/
-User-agent: RankActiveLinkBot
-Disallow:/
 User-agent: RankFlex
 Disallow:/
 User-agent: RankingBot
-Disallow:/
-User-agent: RankingBot2
 Disallow:/
 User-agent: Rankivabot
 Disallow:/
@@ -710,8 +698,6 @@ Disallow:/
 User-agent: SemrushBot
 Disallow:/
 User-agent: SEOkicks
-Disallow:/
-User-agent: SEOkicks-Robot
 Disallow:/
 User-agent: SEOlyticsCrawler
 Disallow:/
@@ -817,8 +803,6 @@ User-agent: tAkeOut
 Disallow:/
 User-agent: Teleport
 Disallow:/
-User-agent: TeleportPro
-Disallow:/
 User-agent: Telesoft
 Disallow:/
 User-agent: Telesphoreo
@@ -909,8 +893,6 @@ User-agent: Web Copier
 Disallow:/
 User-agent: WEBDAV
 Disallow:/
-User-agent: WEBDAV Client
-Disallow:/
 User-agent: WebEnhancer
 Disallow:/
 User-agent: Web Enhancer
@@ -976,8 +958,6 @@ Disallow:/
 User-agent: WeSEE
 Disallow:/
 User-agent: Whack
-Disallow:/
-User-agent: Whacker
 Disallow:/
 User-agent: Whatweb
 Disallow:/

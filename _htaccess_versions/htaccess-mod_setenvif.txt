@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.730
+### Version: V3.2017.10.731
 ### Bad Referrer Count: 5904
-### Bad Bot Count: 513
+### Bad Bot Count: 503
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -51,12 +51,10 @@ SetEnvIfNoCase User-Agent ^Black\ Hole.* spambot=yes
 SetEnvIfNoCase User-Agent ^BlackWidow.* spambot=yes
 SetEnvIfNoCase User-Agent ^BLEXBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Blow.* spambot=yes
-SetEnvIfNoCase User-Agent ^BlowFish.* spambot=yes
 SetEnvIfNoCase User-Agent ^Boardreader.* spambot=yes
 SetEnvIfNoCase User-Agent ^Bolt.* spambot=yes
 SetEnvIfNoCase User-Agent ^BotALot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Brandprotect.* spambot=yes
-SetEnvIfNoCase User-Agent ^BrandProtect.* spambot=yes
 SetEnvIfNoCase User-Agent ^Brandwatch.* spambot=yes
 SetEnvIfNoCase User-Agent ^Bubing.* spambot=yes
 SetEnvIfNoCase User-Agent ^Buddy.* spambot=yes
@@ -86,7 +84,6 @@ SetEnvIfNoCase User-Agent ^Copyscape.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cosmos.* spambot=yes
 SetEnvIfNoCase User-Agent ^Craftbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^CrazyWebCrawler.* spambot=yes
-SetEnvIfNoCase User-Agent ^CRAZYWEBCRAWLER.* spambot=yes
 SetEnvIfNoCase User-Agent ^Crescent.* spambot=yes
 SetEnvIfNoCase User-Agent ^CSHttp.* spambot=yes
 SetEnvIfNoCase User-Agent ^Curious.* spambot=yes
@@ -102,7 +99,6 @@ SetEnvIfNoCase User-Agent ^Digincore.* spambot=yes
 SetEnvIfNoCase User-Agent ^DIIbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Dirbuster.* spambot=yes
 SetEnvIfNoCase User-Agent ^Disco.* spambot=yes
-SetEnvIfNoCase User-Agent ^Discobot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Discoverybot.* spambot=yes
 SetEnvIfNoCase User-Agent ^DittoSpyder.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainAppender.* spambot=yes
@@ -333,10 +329,8 @@ SetEnvIfNoCase User-Agent ^PyCurl.* spambot=yes
 SetEnvIfNoCase User-Agent ^QueryN\ Metasearch.* spambot=yes
 SetEnvIfNoCase User-Agent ^Qwantify.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActive.* spambot=yes
-SetEnvIfNoCase User-Agent ^RankActiveLinkBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankFlex.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankingBot.* spambot=yes
-SetEnvIfNoCase User-Agent ^RankingBot2.* spambot=yes
 SetEnvIfNoCase User-Agent ^Rankivabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankurBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RealDownload.* spambot=yes
@@ -362,7 +356,6 @@ SetEnvIfNoCase User-Agent ^SearchmetricsBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Semrush.* spambot=yes
 SetEnvIfNoCase User-Agent ^SemrushBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOkicks.* spambot=yes
-SetEnvIfNoCase User-Agent ^SEOkicks\-Robot.* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOlyticsCrawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^Seomoz.* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOprofiler.* spambot=yes
@@ -415,7 +408,6 @@ SetEnvIfNoCase User-Agent ^T0PHackTeam.* spambot=yes
 SetEnvIfNoCase User-Agent ^T8Abot.* spambot=yes
 SetEnvIfNoCase User-Agent ^tAkeOut.* spambot=yes
 SetEnvIfNoCase User-Agent ^Teleport.* spambot=yes
-SetEnvIfNoCase User-Agent ^TeleportPro.* spambot=yes
 SetEnvIfNoCase User-Agent ^Telesoft.* spambot=yes
 SetEnvIfNoCase User-Agent ^Telesphoreo.* spambot=yes
 SetEnvIfNoCase User-Agent ^Telesphorep.* spambot=yes
@@ -461,7 +453,6 @@ SetEnvIfNoCase User-Agent ^Web\ Collage.* spambot=yes
 SetEnvIfNoCase User-Agent ^WebCopier.* spambot=yes
 SetEnvIfNoCase User-Agent ^Web\ Copier.* spambot=yes
 SetEnvIfNoCase User-Agent ^WEBDAV.* spambot=yes
-SetEnvIfNoCase User-Agent ^WEBDAV\ Client.* spambot=yes
 SetEnvIfNoCase User-Agent ^WebEnhancer.* spambot=yes
 SetEnvIfNoCase User-Agent ^Web\ Enhancer.* spambot=yes
 SetEnvIfNoCase User-Agent ^WebFetch.* spambot=yes
@@ -495,7 +486,6 @@ SetEnvIfNoCase User-Agent ^Web\ Whacker.* spambot=yes
 SetEnvIfNoCase User-Agent ^WebZIP.* spambot=yes
 SetEnvIfNoCase User-Agent ^WeSEE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whack.* spambot=yes
-SetEnvIfNoCase User-Agent ^Whacker.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whatweb.* spambot=yes
 SetEnvIfNoCase User-Agent ^Widow.* spambot=yes
 SetEnvIfNoCase User-Agent ^WinHTTrack.* spambot=yes
