@@ -1,26 +1,6 @@
-EirGrabber
-ExtractorPro
-LinkextractorPro
-MSFrontPage
-PageGrabber
-SemrushBot
-TurnitinBot
-WebCopier
-WebImageCollector
-WebReaper
-WebsiteExtractor
-WebStripper
-WebWhacker
-WinHTTrack
-WWW-Collector-E
-WebBandit
-BlowFish
-Discobot
-Discoverybot
-RankActiveLinkBot
-RankingBot2
-TeleportPro
-Whacker
+Trendiction
+trendiction\.de
+trendiction\.com
 360Spider
 80legs
 Abonti
@@ -61,6 +41,7 @@ Black Hole
 BlackWidow
 BLEXBot
 Blow
+BlowFish
 Boardreader
 Bolt
 BotALot
@@ -109,6 +90,7 @@ Digincore
 DIIbot
 Dirbuster
 Disco
+Discobot
 Discoverybot
 DittoSpyder
 DomainAppender
@@ -125,6 +107,7 @@ Ebingbong
 eCatch
 ECCP/1.0
 Ecxi
+EirGrabber
 EMail Siphon
 EMail Wolf
 EroCrawler
@@ -132,6 +115,7 @@ Evil
 Exabot
 Express WebPictures
 Extractor
+ExtractorPro
 Extreme Picture Finder
 EyeNetIE
 Ezooms
@@ -220,6 +204,7 @@ Libwhisker
 Lightspeedsystems
 Likse
 Linkdexbot
+LinkextractorPro
 LinkpadBot
 LinkScan
 LinksManager
@@ -258,6 +243,7 @@ Mister PiX
 MJ12bot
 Mojeek
 Morfeus Fucking Scanner
+MSFrontPage
 MSIE 6.0
 MSIECrawler
 Msrabot
@@ -300,6 +286,7 @@ OrangeSpider
 OutfoxBot
 PageAnalyzer
 Page Analyzer
+PageGrabber
 page scorer
 PageScorer
 Panscient
@@ -328,8 +315,10 @@ PyCurl
 QueryN Metasearch
 Qwantify
 RankActive
+RankActiveLinkBot
 RankFlex
 RankingBot
+RankingBot2
 Rankivabot
 RankurBot
 RealDownload
@@ -352,6 +341,7 @@ ScreenerBot
 Searchestate
 SearchmetricsBot
 Semrush
+SemrushBot
 SEOkicks
 SEOlyticsCrawler
 Seomoz
@@ -404,6 +394,7 @@ T0PHackTeam
 T8Abot
 tAkeOut
 Teleport
+TeleportPro
 Telesoft
 Telesphoreo
 Telesphorep
@@ -417,6 +408,7 @@ Trendictionbot
 True_Robot
 Turingos
 Turnitin
+TurnitinBot
 TwengaBot
 Twice
 Typhoeus
@@ -440,8 +432,10 @@ WBSearchBot
 Webalta
 WebAuto
 Web Auto
+WebBandit
 WebCollage
 Web Collage
+WebCopier
 WEBDAV
 WebEnhancer
 Web Enhancer
@@ -450,24 +444,31 @@ Web Fetch
 WebFuck
 Web Fuck
 WebGo IS
+WebImageCollector
 WebLeacher
 WebmasterWorldForumBot
 webmeup-crawler
 WebPix
 Web Pix
+WebReaper
 WebSauger
 Web Sauger
 Webshag
+WebsiteExtractor
 WebsiteQuester
 Website Quester
 Webster
+WebStripper
 WebSucker
 Web Sucker
+WebWhacker
 WebZIP
 WeSEE
 Whack
+Whacker
 Whatweb
 Widow
+WinHTTrack
 WiseGuys Robot
 WISENutbot
 Wonderbot
@@ -475,6 +476,7 @@ Woobot
 Wotbox
 Wprecon
 WPScan
+WWW-Collector-E
 WWW-Mechanize
 WWW::Mechanize
 WWWOFFLE

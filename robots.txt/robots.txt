@@ -1,59 +1,19 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.10.739
-### Updated: Tue Oct 31 13:01:45 SAST 2017
-### Bad Bot Count: 494
+### Version: V3.2017.11.741
+### Updated: Wed Nov  1 12:05:49 SAST 2017
+### Bad Bot Count: 496
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: EirGrabber
+User-agent: Trendiction
 Disallow:/
-User-agent: ExtractorPro
+User-agent: trendiction\.de
 Disallow:/
-User-agent: LinkextractorPro
-Disallow:/
-User-agent: MSFrontPage
-Disallow:/
-User-agent: PageGrabber
-Disallow:/
-User-agent: SemrushBot
-Disallow:/
-User-agent: TurnitinBot
-Disallow:/
-User-agent: WebCopier
-Disallow:/
-User-agent: WebImageCollector
-Disallow:/
-User-agent: WebReaper
-Disallow:/
-User-agent: WebsiteExtractor
-Disallow:/
-User-agent: WebStripper
-Disallow:/
-User-agent: WebWhacker
-Disallow:/
-User-agent: WinHTTrack
-Disallow:/
-User-agent: WWW-Collector-E
-Disallow:/
-User-agent: WebBandit
-Disallow:/
-User-agent: BlowFish
-Disallow:/
-User-agent: Discobot
-Disallow:/
-User-agent: Discoverybot
-Disallow:/
-User-agent: RankActiveLinkBot
-Disallow:/
-User-agent: RankingBot2
-Disallow:/
-User-agent: TeleportPro
-Disallow:/
-User-agent: Whacker
+User-agent: trendiction\.com
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -134,6 +94,8 @@ Disallow:/
 User-agent: BLEXBot
 Disallow:/
 User-agent: Blow
+Disallow:/
+User-agent: BlowFish
 Disallow:/
 User-agent: Boardreader
 Disallow:/
@@ -231,6 +193,8 @@ User-agent: Dirbuster
 Disallow:/
 User-agent: Disco
 Disallow:/
+User-agent: Discobot
+Disallow:/
 User-agent: Discoverybot
 Disallow:/
 User-agent: DittoSpyder
@@ -263,6 +227,8 @@ User-agent: ECCP/1.0
 Disallow:/
 User-agent: Ecxi
 Disallow:/
+User-agent: EirGrabber
+Disallow:/
 User-agent: EMail Siphon
 Disallow:/
 User-agent: EMail Wolf
@@ -276,6 +242,8 @@ Disallow:/
 User-agent: Express WebPictures
 Disallow:/
 User-agent: Extractor
+Disallow:/
+User-agent: ExtractorPro
 Disallow:/
 User-agent: Extreme Picture Finder
 Disallow:/
@@ -453,6 +421,8 @@ User-agent: Likse
 Disallow:/
 User-agent: Linkdexbot
 Disallow:/
+User-agent: LinkextractorPro
+Disallow:/
 User-agent: LinkpadBot
 Disallow:/
 User-agent: LinkScan
@@ -528,6 +498,8 @@ Disallow:/
 User-agent: Mojeek
 Disallow:/
 User-agent: Morfeus Fucking Scanner
+Disallow:/
+User-agent: MSFrontPage
 Disallow:/
 User-agent: MSIE 6.0
 Disallow:/
@@ -613,6 +585,8 @@ User-agent: PageAnalyzer
 Disallow:/
 User-agent: Page Analyzer
 Disallow:/
+User-agent: PageGrabber
+Disallow:/
 User-agent: page scorer
 Disallow:/
 User-agent: PageScorer
@@ -669,9 +643,13 @@ User-agent: Qwantify
 Disallow:/
 User-agent: RankActive
 Disallow:/
+User-agent: RankActiveLinkBot
+Disallow:/
 User-agent: RankFlex
 Disallow:/
 User-agent: RankingBot
+Disallow:/
+User-agent: RankingBot2
 Disallow:/
 User-agent: Rankivabot
 Disallow:/
@@ -716,6 +694,8 @@ Disallow:/
 User-agent: SearchmetricsBot
 Disallow:/
 User-agent: Semrush
+Disallow:/
+User-agent: SemrushBot
 Disallow:/
 User-agent: SEOkicks
 Disallow:/
@@ -821,6 +801,8 @@ User-agent: tAkeOut
 Disallow:/
 User-agent: Teleport
 Disallow:/
+User-agent: TeleportPro
+Disallow:/
 User-agent: Telesoft
 Disallow:/
 User-agent: Telesphoreo
@@ -846,6 +828,8 @@ Disallow:/
 User-agent: Turingos
 Disallow:/
 User-agent: Turnitin
+Disallow:/
+User-agent: TurnitinBot
 Disallow:/
 User-agent: TwengaBot
 Disallow:/
@@ -893,9 +877,13 @@ User-agent: WebAuto
 Disallow:/
 User-agent: Web Auto
 Disallow:/
+User-agent: WebBandit
+Disallow:/
 User-agent: WebCollage
 Disallow:/
 User-agent: Web Collage
+Disallow:/
+User-agent: WebCopier
 Disallow:/
 User-agent: WEBDAV
 Disallow:/
@@ -913,6 +901,8 @@ User-agent: Web Fuck
 Disallow:/
 User-agent: WebGo IS
 Disallow:/
+User-agent: WebImageCollector
+Disallow:/
 User-agent: WebLeacher
 Disallow:/
 User-agent: WebmasterWorldForumBot
@@ -923,11 +913,15 @@ User-agent: WebPix
 Disallow:/
 User-agent: Web Pix
 Disallow:/
+User-agent: WebReaper
+Disallow:/
 User-agent: WebSauger
 Disallow:/
 User-agent: Web Sauger
 Disallow:/
 User-agent: Webshag
+Disallow:/
+User-agent: WebsiteExtractor
 Disallow:/
 User-agent: WebsiteQuester
 Disallow:/
@@ -935,9 +929,13 @@ User-agent: Website Quester
 Disallow:/
 User-agent: Webster
 Disallow:/
+User-agent: WebStripper
+Disallow:/
 User-agent: WebSucker
 Disallow:/
 User-agent: Web Sucker
+Disallow:/
+User-agent: WebWhacker
 Disallow:/
 User-agent: WebZIP
 Disallow:/
@@ -945,9 +943,13 @@ User-agent: WeSEE
 Disallow:/
 User-agent: Whack
 Disallow:/
+User-agent: Whacker
+Disallow:/
 User-agent: Whatweb
 Disallow:/
 User-agent: Widow
+Disallow:/
+User-agent: WinHTTrack
 Disallow:/
 User-agent: WiseGuys Robot
 Disallow:/
@@ -962,6 +964,8 @@ Disallow:/
 User-agent: Wprecon
 Disallow:/
 User-agent: WPScan
+Disallow:/
+User-agent: WWW-Collector-E
 Disallow:/
 User-agent: WWW-Mechanize
 Disallow:/

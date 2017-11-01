@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.10.739
+### Version: V3.2017.11.741
 ### Bad Referrer Count: 5904
-### Bad Bot Count: 493
+### Bad Bot Count: 496
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -415,7 +415,10 @@ RewriteCond %{HTTP_USER_AGENT} ^TightTwatBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Titan.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Toata.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Toweyabot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Trendiction.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Trendictionbot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^trendiction\\\.com.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^trendiction\\\.de.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^True\_Robot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Turingos.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Turnitin.* [NC,OR]
