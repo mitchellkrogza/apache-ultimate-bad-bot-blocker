@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.741
-### Updated: Wed Nov  1 12:05:49 SAST 2017
+### Version: V3.2017.11.742
+### Updated: Wed Nov  1 12:14:01 SAST 2017
 ### Bad Bot Count: 496
 ###################################################
 ### Version Information ##
@@ -9,12 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: Trendiction
-Disallow:/
-User-agent: trendiction\.de
-Disallow:/
-User-agent: trendiction\.com
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
@@ -821,7 +815,13 @@ User-agent: Toata
 Disallow:/
 User-agent: Toweyabot
 Disallow:/
+User-agent: Trendiction
+Disallow:/
 User-agent: Trendictionbot
+Disallow:/
+User-agent: trendiction.com
+Disallow:/
+User-agent: trendiction.de
 Disallow:/
 User-agent: True_Robot
 Disallow:/
