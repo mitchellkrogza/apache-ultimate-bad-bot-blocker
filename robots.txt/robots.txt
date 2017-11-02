@@ -1,15 +1,15 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.748
-### Updated: Thu Nov  2 17:20:37 SAST 2017
-### Bad Bot Count: 502
+### Version: V3.2017.11.749
+### Updated: Thu Nov  2 17:29:47 SAST 2017
+### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: Seznam
+User-agent: sexsearcher
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -708,6 +708,8 @@ Disallow:/
 User-agent: seoscanners
 Disallow:/
 User-agent: SEOstats
+Disallow:/
+User-agent: Seznam
 Disallow:/
 User-agent: SeznamBot
 Disallow:/
