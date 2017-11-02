@@ -62,7 +62,7 @@ _input8=$TRAVIS_BUILD_DIR/_generator_lists/wordpress-theme-detectors-apache.list
 _input9=$TRAVIS_BUILD_DIR/_generator_lists/nibbler-seo.list
 _input10=$TRAVIS_BUILD_DIR/_generator_lists/cloudflare-ip-ranges.list
 _input11=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
-_input12=$TRAVIS_BUILD_DIR/_fail2ban_bad_hosts/bad-user-agents.list
+_input12=$TRAVIS_BUILD_DIR/_fail2ban_apache-badbots/bad-user-agents.list
 
 # *******************************************************
 # Declare temporary database files used during generation
