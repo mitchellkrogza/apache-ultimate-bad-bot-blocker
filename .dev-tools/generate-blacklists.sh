@@ -62,6 +62,7 @@ _input8=$TRAVIS_BUILD_DIR/_generator_lists/wordpress-theme-detectors-apache.list
 _input9=$TRAVIS_BUILD_DIR/_generator_lists/nibbler-seo.list
 _input10=$TRAVIS_BUILD_DIR/_generator_lists/cloudflare-ip-ranges.list
 _input11=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
+_input12=$TRAVIS_BUILD_DIR/_fail2ban_bad_hosts/bad-user-agents.list
 
 # *******************************************************
 # Declare temporary database files used during generation
@@ -109,6 +110,7 @@ sort -u $_input7 -o $_input7
 sort -u $_input8 -o $_input8
 sort -u $_input9 -o $_input9
 sort -u $_input10 -o $_input10
+sort -u $_input12 -o $_input12
 
 # Start and End Strings to Search for to do inserts into template
 _start1="# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###"
