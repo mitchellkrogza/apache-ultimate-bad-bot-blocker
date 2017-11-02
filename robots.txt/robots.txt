@@ -1,23 +1,15 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.747
-### Updated: Thu Nov  2 17:15:09 SAST 2017
-### Bad Bot Count: 501
+### Version: V3.2017.11.748
+### Updated: Thu Nov  2 17:20:37 SAST 2017
+### Bad Bot Count: 502
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: Cloud mapping
-Disallow:/
-User-agent: Who.is Bot
-Disallow:/
-User-agent: SeznamBot
-Disallow:/
-User-agent: evc-batch
-Disallow:/
-User-agent: Who.is
+User-agent: Seznam
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -147,6 +139,8 @@ User-agent: Claritybot
 Disallow:/
 User-agent: Cliqzbot
 Disallow:/
+User-agent: Cloud mapping
+Disallow:/
 User-agent: Cogentbot
 Disallow:/
 User-agent: cognitiveseo
@@ -238,6 +232,8 @@ Disallow:/
 User-agent: EMail Wolf
 Disallow:/
 User-agent: EroCrawler
+Disallow:/
+User-agent: evc-batch
 Disallow:/
 User-agent: Evil
 Disallow:/
@@ -713,6 +709,8 @@ User-agent: seoscanners
 Disallow:/
 User-agent: SEOstats
 Disallow:/
+User-agent: SeznamBot
+Disallow:/
 User-agent: Siphon
 Disallow:/
 User-agent: SISTRIX
@@ -956,6 +954,10 @@ Disallow:/
 User-agent: Whacker
 Disallow:/
 User-agent: Whatweb
+Disallow:/
+User-agent: Who.is
+Disallow:/
+User-agent: Who.is Bot
 Disallow:/
 User-agent: Widow
 Disallow:/
