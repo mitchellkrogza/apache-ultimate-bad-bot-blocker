@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.744
-### Updated: Thu Nov  2 13:57:02 SAST 2017
-### Bad Referrer Count: 5915
+### Version: V3.2017.11.745
+### Updated: Thu Nov  2 14:10:26 SAST 2017
+### Bad Referrer Count: 5920
 ### Bad Bot Count: 496
 ###################################################
 ### Version Information ##
@@ -2120,6 +2120,7 @@ SetEnvIfNoCase Referer ~*creams\.makeforum\.eu spam_ref
 SetEnvIfNoCase Referer ~*creativehutindia\.com spam_ref
 SetEnvIfNoCase Referer ~*creatives\.adbetclickin\.pink spam_ref
 SetEnvIfNoCase Referer ~*creditmoney\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*creditwell\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest3d\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest\-poloski\.ru spam_ref
 SetEnvIfNoCase Referer ~*crirussian\.ru spam_ref
@@ -3108,6 +3109,7 @@ SetEnvIfNoCase Referer ~*havepussy\.com spam_ref
 SetEnvIfNoCase Referer ~*hayate\.biz spam_ref
 SetEnvIfNoCase Referer ~*hazardky\.net spam_ref
 SetEnvIfNoCase Referer ~*hcate\.com spam_ref
+SetEnvIfNoCase Referer ~*hchha\.com spam_ref
 SetEnvIfNoCase Referer ~*hd720kino\.ru spam_ref
 SetEnvIfNoCase Referer ~*hdapp1008\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*hd\-film\.pl spam_ref
@@ -3678,6 +3680,7 @@ SetEnvIfNoCase Referer ~*larchik\.net spam_ref
 SetEnvIfNoCase Referer ~*larger\.io spam_ref
 SetEnvIfNoCase Referer ~*larose\.jb2c\.me spam_ref
 SetEnvIfNoCase Referer ~*larutti\.ru spam_ref
+SetEnvIfNoCase Referer ~*lashstudia\.ru spam_ref
 SetEnvIfNoCase Referer ~*lasvegaslockandsafe\.com spam_ref
 SetEnvIfNoCase Referer ~*laudit\.ru spam_ref
 SetEnvIfNoCase Referer ~*laulini\.soclog\.se spam_ref
@@ -4977,6 +4980,7 @@ SetEnvIfNoCase Referer ~*repeatlogo\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*replicaclub\.ru spam_ref
 SetEnvIfNoCase Referer ~*replicalouboutin\.xyz spam_ref
 SetEnvIfNoCase Referer ~*replica\-watch\.ru spam_ref
+SetEnvIfNoCase Referer ~*resant\.ru spam_ref
 SetEnvIfNoCase Referer ~*research\.ifmo\.ru spam_ref
 SetEnvIfNoCase Referer ~*resellerclub\.com spam_ref
 SetEnvIfNoCase Referer ~*responsinator\.com spam_ref
@@ -5872,6 +5876,7 @@ SetEnvIfNoCase Referer ~*torrent\-to\-magnet\.com spam_ref
 SetEnvIfNoCase Referer ~*torrnada\.ru spam_ref
 SetEnvIfNoCase Referer ~*torture\.ml spam_ref
 SetEnvIfNoCase Referer ~*totu\.info spam_ref
+SetEnvIfNoCase Referer ~*totu\.us spam_ref
 SetEnvIfNoCase Referer ~*touchmods\.fr spam_ref
 SetEnvIfNoCase Referer ~*tourcroatia\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*tourismvictoria\.com spam_ref

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.744
-### Bad Referrer Count: 5915
+### Version: V3.2017.11.745
+### Bad Referrer Count: 5920
 ### Bad Bot Count: 496
 ### Version Information ##
 
@@ -1825,6 +1825,7 @@ SetEnvIfNoCase Referer creams\.makeforum\.eu spambot=yes
 SetEnvIfNoCase Referer creativehutindia\.com spambot=yes
 SetEnvIfNoCase Referer creatives\.adbetclickin\.pink spambot=yes
 SetEnvIfNoCase Referer creditmoney\.com\.ua spambot=yes
+SetEnvIfNoCase Referer creditwell\.ru spambot=yes
 SetEnvIfNoCase Referer crest\-poloski\.ru spambot=yes
 SetEnvIfNoCase Referer crest3d\.ru spambot=yes
 SetEnvIfNoCase Referer crirussian\.ru spambot=yes
@@ -2813,6 +2814,7 @@ SetEnvIfNoCase Referer havepussy\.com spambot=yes
 SetEnvIfNoCase Referer hayate\.biz spambot=yes
 SetEnvIfNoCase Referer hazardky\.net spambot=yes
 SetEnvIfNoCase Referer hcate\.com spambot=yes
+SetEnvIfNoCase Referer hchha\.com spambot=yes
 SetEnvIfNoCase Referer hd\-film\.pl spambot=yes
 SetEnvIfNoCase Referer hd\-filmy\.net spambot=yes
 SetEnvIfNoCase Referer hd720kino\.ru spambot=yes
@@ -3383,6 +3385,7 @@ SetEnvIfNoCase Referer larchik\.net spambot=yes
 SetEnvIfNoCase Referer larger\.io spambot=yes
 SetEnvIfNoCase Referer larose\.jb2c\.me spambot=yes
 SetEnvIfNoCase Referer larutti\.ru spambot=yes
+SetEnvIfNoCase Referer lashstudia\.ru spambot=yes
 SetEnvIfNoCase Referer lasvegaslockandsafe\.com spambot=yes
 SetEnvIfNoCase Referer laudit\.ru spambot=yes
 SetEnvIfNoCase Referer laulini\.soclog\.se spambot=yes
@@ -4682,6 +4685,7 @@ SetEnvIfNoCase Referer repeatlogo\.co\.uk spambot=yes
 SetEnvIfNoCase Referer replica\-watch\.ru spambot=yes
 SetEnvIfNoCase Referer replicaclub\.ru spambot=yes
 SetEnvIfNoCase Referer replicalouboutin\.xyz spambot=yes
+SetEnvIfNoCase Referer resant\.ru spambot=yes
 SetEnvIfNoCase Referer research\.ifmo\.ru spambot=yes
 SetEnvIfNoCase Referer resellerclub\.com spambot=yes
 SetEnvIfNoCase Referer responsinator\.com spambot=yes
@@ -5577,6 +5581,7 @@ SetEnvIfNoCase Referer torrents\.cd spambot=yes
 SetEnvIfNoCase Referer torrnada\.ru spambot=yes
 SetEnvIfNoCase Referer torture\.ml spambot=yes
 SetEnvIfNoCase Referer totu\.info spambot=yes
+SetEnvIfNoCase Referer totu\.us spambot=yes
 SetEnvIfNoCase Referer touchmods\.fr spambot=yes
 SetEnvIfNoCase Referer tour\-line\.net spambot=yes
 SetEnvIfNoCase Referer tourcroatia\.co\.uk spambot=yes
