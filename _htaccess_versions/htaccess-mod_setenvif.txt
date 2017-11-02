@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.746
+### Version: V3.2017.11.747
 ### Bad Referrer Count: 5920
-### Bad Bot Count: 496
+### Bad Bot Count: 501
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -75,6 +75,7 @@ SetEnvIfNoCase User-Agent ^ChinaClaw.* spambot=yes
 SetEnvIfNoCase User-Agent ^Chlooe.* spambot=yes
 SetEnvIfNoCase User-Agent ^Claritybot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cliqzbot.* spambot=yes
+SetEnvIfNoCase User-Agent ^Cloud\ mapping.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cogentbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^cognitiveseo.* spambot=yes
 SetEnvIfNoCase User-Agent ^Collector.* spambot=yes
@@ -121,6 +122,7 @@ SetEnvIfNoCase User-Agent ^EirGrabber.* spambot=yes
 SetEnvIfNoCase User-Agent ^EMail\ Siphon.* spambot=yes
 SetEnvIfNoCase User-Agent ^EMail\ Wolf.* spambot=yes
 SetEnvIfNoCase User-Agent ^EroCrawler.* spambot=yes
+SetEnvIfNoCase User-Agent ^evc\-batch.* spambot=yes
 SetEnvIfNoCase User-Agent ^Evil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Exabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Express\ WebPictures.* spambot=yes
@@ -358,6 +360,7 @@ SetEnvIfNoCase User-Agent ^Seomoz.* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOprofiler.* spambot=yes
 SetEnvIfNoCase User-Agent ^seoscanners.* spambot=yes
 SetEnvIfNoCase User-Agent ^SEOstats.* spambot=yes
+SetEnvIfNoCase User-Agent ^SeznamBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Siphon.* spambot=yes
 SetEnvIfNoCase User-Agent ^SISTRIX.* spambot=yes
 SetEnvIfNoCase User-Agent ^Sitebeam.* spambot=yes
@@ -480,6 +483,8 @@ SetEnvIfNoCase User-Agent ^WeSEE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whack.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whacker.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whatweb.* spambot=yes
+SetEnvIfNoCase User-Agent ^Who\.is.* spambot=yes
+SetEnvIfNoCase User-Agent ^Who\.is\ Bot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Widow.* spambot=yes
 SetEnvIfNoCase User-Agent ^WinHTTrack.* spambot=yes
 SetEnvIfNoCase User-Agent ^WiseGuys\ Robot.* spambot=yes

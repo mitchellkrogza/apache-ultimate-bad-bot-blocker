@@ -1,14 +1,24 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.746
-### Updated: Thu Nov  2 14:24:29 SAST 2017
-### Bad Bot Count: 496
+### Version: V3.2017.11.747
+### Updated: Thu Nov  2 17:15:09 SAST 2017
+### Bad Bot Count: 501
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+User-agent: Cloud mapping
+Disallow:/
+User-agent: Who.is Bot
+Disallow:/
+User-agent: SeznamBot
+Disallow:/
+User-agent: evc-batch
+Disallow:/
+User-agent: Who.is
+Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs

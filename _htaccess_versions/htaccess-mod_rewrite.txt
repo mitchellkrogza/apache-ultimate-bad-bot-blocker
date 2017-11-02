@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.746
+### Version: V3.2017.11.747
 ### Bad Referrer Count: 5920
-### Bad Bot Count: 496
+### Bad Bot Count: 501
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -76,6 +76,7 @@ RewriteCond %{HTTP_USER_AGENT} ^ChinaClaw.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Chlooe.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Claritybot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cliqzbot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Cloud\ mapping.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cogentbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^cognitiveseo.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Collector.* [NC,OR]
@@ -122,6 +123,7 @@ RewriteCond %{HTTP_USER_AGENT} ^EirGrabber.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^EMail\ Siphon.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^EMail\ Wolf.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^EroCrawler.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^evc\-batch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Evil.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Exabot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures.* [NC,OR]
@@ -359,6 +361,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Seomoz.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^SEOprofiler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^seoscanners.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^SEOstats.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SeznamBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Siphon.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^SISTRIX.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Sitebeam.* [NC,OR]
@@ -481,6 +484,8 @@ RewriteCond %{HTTP_USER_AGENT} ^WeSEE.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whack.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whacker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whatweb.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Who\.is.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Who\.is\ Bot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Widow.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WinHTTrack.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WiseGuys\ Robot.* [NC,OR]
