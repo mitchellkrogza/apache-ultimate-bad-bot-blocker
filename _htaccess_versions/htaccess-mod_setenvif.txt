@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.749
+### Version: V3.2017.11.750
 ### Bad Referrer Count: 5920
 ### Bad Bot Count: 503
 ### Version Information ##
@@ -17,6 +17,7 @@ SetEnvIfNoCase User-Agent ^Abonti.* spambot=yes
 SetEnvIfNoCase User-Agent ^Aboundex.* spambot=yes
 SetEnvIfNoCase User-Agent ^Acunetix.* spambot=yes
 SetEnvIfNoCase User-Agent ^ADmantX.* spambot=yes
+SetEnvIfNoCase User-Agent ^AfD\-Verbotsverfahren.* spambot=yes
 SetEnvIfNoCase User-Agent ^AhrefsBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^AIBOT.* spambot=yes
 SetEnvIfNoCase User-Agent ^AiHitBot.* spambot=yes
@@ -485,7 +486,6 @@ SetEnvIfNoCase User-Agent ^WeSEE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whack.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whacker.* spambot=yes
 SetEnvIfNoCase User-Agent ^Whatweb.* spambot=yes
-SetEnvIfNoCase User-Agent ^Who\.is.* spambot=yes
 SetEnvIfNoCase User-Agent ^Who\.is\ Bot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Widow.* spambot=yes
 SetEnvIfNoCase User-Agent ^WinHTTrack.* spambot=yes

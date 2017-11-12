@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.749
+### Version: V3.2017.11.750
 ### Bad Referrer Count: 5920
 ### Bad Bot Count: 503
 ### Version Information ##
@@ -18,6 +18,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Abonti.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Aboundex.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Acunetix.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ADmantX.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AfD\-Verbotsverfahren.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^AhrefsBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^AIBOT.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^AiHitBot.* [NC,OR]
@@ -486,7 +487,6 @@ RewriteCond %{HTTP_USER_AGENT} ^WeSEE.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whack.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whacker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Whatweb.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Who\.is.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Who\.is\ Bot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Widow.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^WinHTTrack.* [NC,OR]

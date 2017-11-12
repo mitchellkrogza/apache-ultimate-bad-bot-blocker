@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.749
-### Updated: Thu Nov  2 17:29:47 SAST 2017
+### Version: V3.2017.11.750
+### Updated: Sun Nov 12 11:51:27 SAST 2017
 ### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
@@ -9,7 +9,7 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: sexsearcher
+User-agent: AfD-Verbotsverfahren
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -709,6 +709,8 @@ User-agent: seoscanners
 Disallow:/
 User-agent: SEOstats
 Disallow:/
+User-agent: sexsearcher
+Disallow:/
 User-agent: Seznam
 Disallow:/
 User-agent: SeznamBot
@@ -956,8 +958,6 @@ Disallow:/
 User-agent: Whacker
 Disallow:/
 User-agent: Whatweb
-Disallow:/
-User-agent: Who.is
 Disallow:/
 User-agent: Who.is Bot
 Disallow:/
