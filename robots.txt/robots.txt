@@ -1,15 +1,15 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.750
-### Updated: Sun Nov 12 11:51:27 SAST 2017
-### Bad Bot Count: 503
+### Version: V3.2017.11.751
+### Updated: Mon Nov 13 09:23:45 SAST 2017
+### Bad Bot Count: 504
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: AfD-Verbotsverfahren
+User-agent: Mozilla/4
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -22,6 +22,8 @@ Disallow:/
 User-agent: Acunetix
 Disallow:/
 User-agent: ADmantX
+Disallow:/
+User-agent: AfD-Verbotsverfahren
 Disallow:/
 User-agent: AhrefsBot
 Disallow:/
