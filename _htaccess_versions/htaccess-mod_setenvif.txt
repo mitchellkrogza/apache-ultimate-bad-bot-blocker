@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.752
+### Version: V3.2017.11.753
 ### Bad Referrer Count: 5920
 ### Bad Bot Count: 504
 ### Version Information ##
@@ -270,7 +270,7 @@ SetEnvIfNoCase User-Agent ^NearSite.* spambot=yes
 SetEnvIfNoCase User-Agent ^Needle.* spambot=yes
 SetEnvIfNoCase User-Agent ^Nessus.* spambot=yes
 SetEnvIfNoCase User-Agent ^NetAnts.* spambot=yes
-SetEnvIfNoCase User-Agent ^NetcraftSurveyAgent\/1.* spambot=yes
+SetEnvIfNoCase User-Agent ^Netcraft.* spambot=yes
 SetEnvIfNoCase User-Agent ^netEstate\ NE\ Crawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^NetLyzer.* spambot=yes
 SetEnvIfNoCase User-Agent ^NetMechanic.* spambot=yes
@@ -510,7 +510,7 @@ SetEnvIfNoCase User-Agent ^YoudaoBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zade.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zermelo.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zeus.* spambot=yes
-SetEnvIfNoCase User-Agent ^zgrab\/0.* spambot=yes
+SetEnvIfNoCase User-Agent ^zgrab.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zitebot.* spambot=yes
 SetEnvIfNoCase User-Agent ^ZmEu.* spambot=yes
 SetEnvIfNoCase User-Agent ^ZumBot.* spambot=yes

@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.752
-### Updated: Mon Nov 13 10:06:09 SAST 2017
+### Version: V3.2017.11.753
+### Updated: Mon Nov 13 11:32:47 SAST 2017
 ### Bad Referrer Count: 5920
 ### Bad Bot Count: 504
 ###################################################
@@ -423,7 +423,7 @@ BrowserMatchNoCase "^(.*?)(\bNearSite\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNeedle\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNessus\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetAnts\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNetcraftSurveyAgent/1\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetcraft\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bnetEstate\ NE\ Crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetLyzer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetMechanic\b)(.*)$" bad_bot
@@ -663,7 +663,7 @@ BrowserMatchNoCase "^(.*?)(\bYoudaoBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZade\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZermelo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZeus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bzgrab/0\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bzgrab\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZitebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZmEu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZumBot\b)(.*)$" bad_bot

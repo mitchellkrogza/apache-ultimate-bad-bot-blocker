@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.752
+### Version: V3.2017.11.753
 ### Bad Referrer Count: 5920
 ### Bad Bot Count: 504
 ### Version Information ##
@@ -271,7 +271,7 @@ RewriteCond %{HTTP_USER_AGENT} ^NearSite.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Needle.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Nessus.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^NetAnts.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^NetcraftSurveyAgent\/1.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Netcraft.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^netEstate\ NE\ Crawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^NetLyzer.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^NetMechanic.* [NC,OR]
@@ -511,7 +511,7 @@ RewriteCond %{HTTP_USER_AGENT} ^YoudaoBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zade.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zermelo.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zeus.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^zgrab\/0.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^zgrab.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zitebot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ZmEu.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ZumBot.* [NC,OR]
