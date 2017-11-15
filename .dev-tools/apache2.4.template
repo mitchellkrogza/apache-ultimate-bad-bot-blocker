@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.755
-### Updated: Tue Nov 14 12:38:33 SAST 2017
-### Bad Referrer Count: 5947
+### Version: V3.2017.11.756
+### Updated: Wed Nov 15 10:15:09 SAST 2017
+### Bad Referrer Count: 5958
 ### Bad Bot Count: 505
 ###################################################
 ### Version Information ##
@@ -1288,6 +1288,7 @@ SetEnvIfNoCase Referer ~*arendatora\.ru spam_ref
 SetEnvIfNoCase Referer ~*arenda\-yeisk\.ru spam_ref
 SetEnvIfNoCase Referer ~*arendovalka\.xyz spam_ref
 SetEnvIfNoCase Referer ~*arewater\.com spam_ref
+SetEnvIfNoCase Referer ~*arius\.tech spam_ref
 SetEnvIfNoCase Referer ~*arkartex\.ru spam_ref
 SetEnvIfNoCase Referer ~*arkkivoltti\.net spam_ref
 SetEnvIfNoCase Referer ~*arpelsreplica\.xyz spam_ref
@@ -1444,6 +1445,7 @@ SetEnvIfNoCase Referer ~*banki76\.ru spam_ref
 SetEnvIfNoCase Referer ~*bankiem\.pl spam_ref
 SetEnvIfNoCase Referer ~*bankmib\.ru spam_ref
 SetEnvIfNoCase Referer ~*bankofthewext\.com spam_ref
+SetEnvIfNoCase Referer ~*bank\.uz spam_ref
 SetEnvIfNoCase Referer ~*bannerads\.de spam_ref
 SetEnvIfNoCase Referer ~*bannerbank\.ru spam_ref
 SetEnvIfNoCase Referer ~*bannerconnect\.net spam_ref
@@ -2131,6 +2133,7 @@ SetEnvIfNoCase Referer ~*creams\.makeforum\.eu spam_ref
 SetEnvIfNoCase Referer ~*creativehutindia\.com spam_ref
 SetEnvIfNoCase Referer ~*creatives\.adbetclickin\.pink spam_ref
 SetEnvIfNoCase Referer ~*creditmoney\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*creditnation\.ru spam_ref
 SetEnvIfNoCase Referer ~*creditwell\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest3d\.ru spam_ref
 SetEnvIfNoCase Referer ~*crest\-poloski\.ru spam_ref
@@ -3004,6 +3007,7 @@ SetEnvIfNoCase Referer ~*gogalleryawesome\.com spam_ref
 SetEnvIfNoCase Referer ~*gogps\.me spam_ref
 SetEnvIfNoCase Referer ~*gojiberriess\.apishops\.ru spam_ref
 SetEnvIfNoCase Referer ~*gok\-kasten\.net spam_ref
+SetEnvIfNoCase Referer ~*golaya\.pw spam_ref
 SetEnvIfNoCase Referer ~*goldadpremium\.com spam_ref
 SetEnvIfNoCase Referer ~*goldandcard\.ru spam_ref
 SetEnvIfNoCase Referer ~*golden\-catalog\.pro spam_ref
@@ -3530,6 +3534,7 @@ SetEnvIfNoCase Referer ~*karting196\.ru spam_ref
 SetEnvIfNoCase Referer ~*kartiniresto\.com spam_ref
 SetEnvIfNoCase Referer ~*karusel\-market\.ru spam_ref
 SetEnvIfNoCase Referer ~*kashubadesign\.ru spam_ref
+SetEnvIfNoCase Referer ~*kasino\-money\.pw spam_ref
 SetEnvIfNoCase Referer ~*katjimej\.blog\.fc2\.com spam_ref
 SetEnvIfNoCase Referer ~*katushka\.net spam_ref
 SetEnvIfNoCase Referer ~*kazan\.xrus\.org spam_ref
@@ -4430,6 +4435,7 @@ SetEnvIfNoCase Referer ~*onlineku\.com spam_ref
 SetEnvIfNoCase Referer ~*onlinemeetingnow\.com spam_ref
 SetEnvIfNoCase Referer ~*onlinemegax\.com spam_ref
 SetEnvIfNoCase Referer ~*online\-podarki\.com spam_ref
+SetEnvIfNoCase Referer ~*onlineporno\.site spam_ref
 SetEnvIfNoCase Referer ~*onlineserialy\.ru spam_ref
 SetEnvIfNoCase Referer ~*onlineslotmaschine\.com spam_ref
 SetEnvIfNoCase Referer ~*online\-templatestore\.com spam_ref
@@ -5075,6 +5081,7 @@ SetEnvIfNoCase Referer ~*ruf777\.com spam_ref
 SetEnvIfNoCase Referer ~*rukino\.org spam_ref
 SetEnvIfNoCase Referer ~*rumamba\.com spam_ref
 SetEnvIfNoCase Referer ~*running\-line\.ru spam_ref
+SetEnvIfNoCase Referer ~*runofilms\.ru spam_ref
 SetEnvIfNoCase Referer ~*runstocks\.com spam_ref
 SetEnvIfNoCase Referer ~*ruscoininvest\.company spam_ref
 SetEnvIfNoCase Referer ~*ruscopybook\.com spam_ref
@@ -5082,6 +5089,7 @@ SetEnvIfNoCase Referer ~*rusenvironmental\.net spam_ref
 SetEnvIfNoCase Referer ~*rusexy\.xyz spam_ref
 SetEnvIfNoCase Referer ~*rusoft\-zone\.ru spam_ref
 SetEnvIfNoCase Referer ~*ruspdd\.com spam_ref
+SetEnvIfNoCase Referer ~*rusprostitute\.com spam_ref
 SetEnvIfNoCase Referer ~*russia\-tao\.ru spam_ref
 SetEnvIfNoCase Referer ~*russia\-today\-video\.ru spam_ref
 SetEnvIfNoCase Referer ~*russintv\.fr spam_ref
@@ -5289,6 +5297,7 @@ SetEnvIfNoCase Referer ~*sexblog\.pw spam_ref
 SetEnvIfNoCase Referer ~*sexcamamateurchat\.com spam_ref
 SetEnvIfNoCase Referer ~*sex\-dating\.co spam_ref
 SetEnvIfNoCase Referer ~*sexflirtbook\.com spam_ref
+SetEnvIfNoCase Referer ~*sex\-foto\.pw spam_ref
 SetEnvIfNoCase Referer ~*sex\.hotblog\.top spam_ref
 SetEnvIfNoCase Referer ~*sexkontakteao\.info spam_ref
 SetEnvIfNoCase Referer ~*sexkontakte\-seite\.com spam_ref
@@ -6291,6 +6300,7 @@ SetEnvIfNoCase Referer ~*warezkeeper\.com spam_ref
 SetEnvIfNoCase Referer ~*warningwar\.ru spam_ref
 SetEnvIfNoCase Referer ~*warningzscaler\.heraeus\.com spam_ref
 SetEnvIfNoCase Referer ~*watchdogs\-2\.ru spam_ref
+SetEnvIfNoCase Referer ~*watchinf\.com spam_ref
 SetEnvIfNoCase Referer ~*watch\-movies\.ru spam_ref
 SetEnvIfNoCase Referer ~*watchmyfb\.pl spam_ref
 SetEnvIfNoCase Referer ~*watchmygf\.net spam_ref
@@ -6742,6 +6752,7 @@ SetEnvIfNoCase Referer ~*zoosexart\.com spam_ref
 SetEnvIfNoCase Referer ~*zootoplist\.com spam_ref
 SetEnvIfNoCase Referer ~*zootravel\.com spam_ref
 SetEnvIfNoCase Referer ~*zophim\.me spam_ref
+SetEnvIfNoCase Referer ~*zrelaya\.pw spam_ref
 SetEnvIfNoCase Referer ~*zrizvtrnpale\.tk spam_ref
 SetEnvIfNoCase Referer ~*zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*zryydi\.com spam_ref

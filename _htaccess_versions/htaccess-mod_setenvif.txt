@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.755
-### Bad Referrer Count: 5947
+### Version: V3.2017.11.756
+### Bad Referrer Count: 5958
 ### Bad Bot Count: 505
 ### Version Information ##
 
@@ -995,6 +995,7 @@ SetEnvIfNoCase Referer arendas\.net spambot=yes
 SetEnvIfNoCase Referer arendatora\.ru spambot=yes
 SetEnvIfNoCase Referer arendovalka\.xyz spambot=yes
 SetEnvIfNoCase Referer arewater\.com spambot=yes
+SetEnvIfNoCase Referer arius\.tech spambot=yes
 SetEnvIfNoCase Referer arkartex\.ru spambot=yes
 SetEnvIfNoCase Referer arkkivoltti\.net spambot=yes
 SetEnvIfNoCase Referer arpelsreplica\.xyz spambot=yes
@@ -1147,6 +1148,7 @@ SetEnvIfNoCase Referer bamo\.xsl\.pt spambot=yes
 SetEnvIfNoCase Referer banan\.tv spambot=yes
 SetEnvIfNoCase Referer bang\-hotties\.com spambot=yes
 SetEnvIfNoCase Referer bangla\-chat\-uk\-paralud\.ga spambot=yes
+SetEnvIfNoCase Referer bank\.uz spambot=yes
 SetEnvIfNoCase Referer bankcrediti\.ru spambot=yes
 SetEnvIfNoCase Referer banki76\.ru spambot=yes
 SetEnvIfNoCase Referer bankiem\.pl spambot=yes
@@ -1838,6 +1840,7 @@ SetEnvIfNoCase Referer creams\.makeforum\.eu spambot=yes
 SetEnvIfNoCase Referer creativehutindia\.com spambot=yes
 SetEnvIfNoCase Referer creatives\.adbetclickin\.pink spambot=yes
 SetEnvIfNoCase Referer creditmoney\.com\.ua spambot=yes
+SetEnvIfNoCase Referer creditnation\.ru spambot=yes
 SetEnvIfNoCase Referer creditwell\.ru spambot=yes
 SetEnvIfNoCase Referer crest\-poloski\.ru spambot=yes
 SetEnvIfNoCase Referer crest3d\.ru spambot=yes
@@ -2712,6 +2715,7 @@ SetEnvIfNoCase Referer gogalleryawesome\.com spambot=yes
 SetEnvIfNoCase Referer gogps\.me spambot=yes
 SetEnvIfNoCase Referer gojiberriess\.apishops\.ru spambot=yes
 SetEnvIfNoCase Referer gok\-kasten\.net spambot=yes
+SetEnvIfNoCase Referer golaya\.pw spambot=yes
 SetEnvIfNoCase Referer goldadpremium\.com spambot=yes
 SetEnvIfNoCase Referer goldandcard\.ru spambot=yes
 SetEnvIfNoCase Referer golden\-catalog\.pro spambot=yes
@@ -3237,6 +3241,7 @@ SetEnvIfNoCase Referer karting196\.ru spambot=yes
 SetEnvIfNoCase Referer kartiniresto\.com spambot=yes
 SetEnvIfNoCase Referer karusel\-market\.ru spambot=yes
 SetEnvIfNoCase Referer kashubadesign\.ru spambot=yes
+SetEnvIfNoCase Referer kasino\-money\.pw spambot=yes
 SetEnvIfNoCase Referer katjimej\.blog\.fc2\.com spambot=yes
 SetEnvIfNoCase Referer katushka\.net spambot=yes
 SetEnvIfNoCase Referer kaz\.kz spambot=yes
@@ -4144,6 +4149,7 @@ SetEnvIfNoCase Referer onlinefilmz\.net spambot=yes
 SetEnvIfNoCase Referer onlineku\.com spambot=yes
 SetEnvIfNoCase Referer onlinemeetingnow\.com spambot=yes
 SetEnvIfNoCase Referer onlinemegax\.com spambot=yes
+SetEnvIfNoCase Referer onlineporno\.site spambot=yes
 SetEnvIfNoCase Referer onlineserialy\.ru spambot=yes
 SetEnvIfNoCase Referer onlineslotmaschine\.com spambot=yes
 SetEnvIfNoCase Referer onlinetvseries\.me spambot=yes
@@ -4782,6 +4788,7 @@ SetEnvIfNoCase Referer ruf777\.com spambot=yes
 SetEnvIfNoCase Referer rukino\.org spambot=yes
 SetEnvIfNoCase Referer rumamba\.com spambot=yes
 SetEnvIfNoCase Referer running\-line\.ru spambot=yes
+SetEnvIfNoCase Referer runofilms\.ru spambot=yes
 SetEnvIfNoCase Referer runstocks\.com spambot=yes
 SetEnvIfNoCase Referer rus\-teh\.narod\.ru spambot=yes
 SetEnvIfNoCase Referer ruscoininvest\.company spambot=yes
@@ -4790,6 +4797,7 @@ SetEnvIfNoCase Referer rusenvironmental\.net spambot=yes
 SetEnvIfNoCase Referer rusexy\.xyz spambot=yes
 SetEnvIfNoCase Referer rusoft\-zone\.ru spambot=yes
 SetEnvIfNoCase Referer ruspdd\.com spambot=yes
+SetEnvIfNoCase Referer rusprostitute\.com spambot=yes
 SetEnvIfNoCase Referer russia\-tao\.ru spambot=yes
 SetEnvIfNoCase Referer russia\-today\-video\.ru spambot=yes
 SetEnvIfNoCase Referer russintv\.fr spambot=yes
@@ -4994,6 +5002,7 @@ SetEnvIfNoCase Referer sethrollins\.net spambot=yes
 SetEnvIfNoCase Referer sevendays\.com\.ua spambot=yes
 SetEnvIfNoCase Referer sevenstars7\.com spambot=yes
 SetEnvIfNoCase Referer sex\-dating\.co spambot=yes
+SetEnvIfNoCase Referer sex\-foto\.pw spambot=yes
 SetEnvIfNoCase Referer sex\-pr\.net spambot=yes
 SetEnvIfNoCase Referer sex\-sex\-sex5\.com spambot=yes
 SetEnvIfNoCase Referer sex\-tracker\.com spambot=yes
@@ -6000,6 +6009,7 @@ SetEnvIfNoCase Referer warningwar\.ru spambot=yes
 SetEnvIfNoCase Referer warningzscaler\.heraeus\.com spambot=yes
 SetEnvIfNoCase Referer watch\-movies\.ru spambot=yes
 SetEnvIfNoCase Referer watchdogs\-2\.ru spambot=yes
+SetEnvIfNoCase Referer watchinf\.com spambot=yes
 SetEnvIfNoCase Referer watchmyfb\.pl spambot=yes
 SetEnvIfNoCase Referer watchmygf\.net spambot=yes
 SetEnvIfNoCase Referer waterpurifier\.club spambot=yes
@@ -6449,6 +6459,7 @@ SetEnvIfNoCase Referer zoosexart\.com spambot=yes
 SetEnvIfNoCase Referer zootoplist\.com spambot=yes
 SetEnvIfNoCase Referer zootravel\.com spambot=yes
 SetEnvIfNoCase Referer zophim\.me spambot=yes
+SetEnvIfNoCase Referer zrelaya\.pw spambot=yes
 SetEnvIfNoCase Referer zrizvtrnpale\.tk spambot=yes
 SetEnvIfNoCase Referer zrus\.org spambot=yes
 SetEnvIfNoCase Referer zryydi\.com spambot=yes
