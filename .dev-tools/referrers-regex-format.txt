@@ -1908,6 +1908,7 @@ SetEnvIfNoCase Referer ~*finuse\.com spam_ref
 SetEnvIfNoCase Referer ~*fireads\.men spam_ref
 SetEnvIfNoCase Referer ~*firesub\.pl spam_ref
 SetEnvIfNoCase Referer ~*firma\-legion\.ru spam_ref
+SetEnvIfNoCase Referer ~*firstdrugmall\.ru spam_ref
 SetEnvIfNoCase Referer ~*firstsiteguide\.com spam_ref
 SetEnvIfNoCase Referer ~*fishingwholesale\.us spam_ref
 SetEnvIfNoCase Referer ~*fitfloponline\.store spam_ref
@@ -2077,6 +2078,7 @@ SetEnvIfNoCase Referer ~*gambarkatabaru\.com spam_ref
 SetEnvIfNoCase Referer ~*gambarkataku\.co spam_ref
 SetEnvIfNoCase Referer ~*gambarxkata\.co spam_ref
 SetEnvIfNoCase Referer ~*gamblingnerd\.com spam_ref
+SetEnvIfNoCase Referer ~*gamebackyard\.com spam_ref
 SetEnvIfNoCase Referer ~*gamedayassist\.com spam_ref
 SetEnvIfNoCase Referer ~*gamedayhouse\.com spam_ref
 SetEnvIfNoCase Referer ~*game\-mmorpg\.net spam_ref
@@ -2163,6 +2165,7 @@ SetEnvIfNoCase Referer ~*gilsonchiro\.xyz spam_ref
 SetEnvIfNoCase Referer ~*girlgamerdaily\.com spam_ref
 SetEnvIfNoCase Referer ~*girlporn\.ru spam_ref
 SetEnvIfNoCase Referer ~*girlsatgames\.ru spam_ref
+SetEnvIfNoCase Referer ~*girlsfuckdick\.com spam_ref
 SetEnvIfNoCase Referer ~*girlspicsa\.com spam_ref
 SetEnvIfNoCase Referer ~*girls\-ufa\.ru spam_ref
 SetEnvIfNoCase Referer ~*given2\.com spam_ref
@@ -5381,6 +5384,7 @@ SetEnvIfNoCase Referer ~*videochat\.ph spam_ref
 SetEnvIfNoCase Referer ~*videochat\.tv\.br spam_ref
 SetEnvIfNoCase Referer ~*videochat\.world spam_ref
 SetEnvIfNoCase Referer ~*videochaty\.ru spam_ref
+SetEnvIfNoCase Referer ~*videogamesecrets\.com spam_ref
 SetEnvIfNoCase Referer ~*video\-hollywood\.ru spam_ref
 SetEnvIfNoCase Referer ~*videojam\.tv spam_ref
 SetEnvIfNoCase Referer ~*videokrik\.net spam_ref

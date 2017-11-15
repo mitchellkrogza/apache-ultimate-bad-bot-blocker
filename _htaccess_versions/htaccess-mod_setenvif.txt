@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.756
-### Bad Referrer Count: 5958
+### Version: V3.2017.11.757
+### Bad Referrer Count: 5962
 ### Bad Bot Count: 505
 ### Version Information ##
 
@@ -2428,6 +2428,7 @@ SetEnvIfNoCase Referer finuse\.com spambot=yes
 SetEnvIfNoCase Referer fireads\.men spambot=yes
 SetEnvIfNoCase Referer firesub\.pl spambot=yes
 SetEnvIfNoCase Referer firma\-legion\.ru spambot=yes
+SetEnvIfNoCase Referer firstdrugmall\.ru spambot=yes
 SetEnvIfNoCase Referer firstsiteguide\.com spambot=yes
 SetEnvIfNoCase Referer fishingwholesale\.us spambot=yes
 SetEnvIfNoCase Referer fitfloponline\.store spambot=yes
@@ -2598,6 +2599,7 @@ SetEnvIfNoCase Referer gambarxkata\.co spambot=yes
 SetEnvIfNoCase Referer gamblingnerd\.com spambot=yes
 SetEnvIfNoCase Referer game\-mmorpg\.net spambot=yes
 SetEnvIfNoCase Referer game\-top\.su spambot=yes
+SetEnvIfNoCase Referer gamebackyard\.com spambot=yes
 SetEnvIfNoCase Referer gamedayassist\.com spambot=yes
 SetEnvIfNoCase Referer gamedayhouse\.com spambot=yes
 SetEnvIfNoCase Referer gameonasia\.com spambot=yes
@@ -2683,6 +2685,7 @@ SetEnvIfNoCase Referer girlgamerdaily\.com spambot=yes
 SetEnvIfNoCase Referer girlporn\.ru spambot=yes
 SetEnvIfNoCase Referer girls\-ufa\.ru spambot=yes
 SetEnvIfNoCase Referer girlsatgames\.ru spambot=yes
+SetEnvIfNoCase Referer girlsfuckdick\.com spambot=yes
 SetEnvIfNoCase Referer girlspicsa\.com spambot=yes
 SetEnvIfNoCase Referer given2\.com spambot=yes
 SetEnvIfNoCase Referer gk\-atlant\.info spambot=yes
@@ -5903,6 +5906,7 @@ SetEnvIfNoCase Referer videochat\.ph spambot=yes
 SetEnvIfNoCase Referer videochat\.tv\.br spambot=yes
 SetEnvIfNoCase Referer videochat\.world spambot=yes
 SetEnvIfNoCase Referer videochaty\.ru spambot=yes
+SetEnvIfNoCase Referer videogamesecrets\.com spambot=yes
 SetEnvIfNoCase Referer videojam\.tv spambot=yes
 SetEnvIfNoCase Referer videokrik\.net spambot=yes
 SetEnvIfNoCase Referer videooko\.weebly\.com spambot=yes
