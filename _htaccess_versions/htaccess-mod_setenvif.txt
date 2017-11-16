@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.758
-### Bad Referrer Count: 5962
+### Version: V3.2017.11.759
+### Bad Referrer Count: 5971
 ### Bad Bot Count: 502
 ### Version Information ##
 
@@ -835,6 +835,7 @@ SetEnvIfNoCase Referer all4invest\.ru spambot=yes
 SetEnvIfNoCase Referer allblogroll\.com spambot=yes
 SetEnvIfNoCase Referer allboard\.xobor\.de spambot=yes
 SetEnvIfNoCase Referer allcredits\.su spambot=yes
+SetEnvIfNoCase Referer alldezservice\.kz spambot=yes
 SetEnvIfNoCase Referer alldownload\.pw spambot=yes
 SetEnvIfNoCase Referer alldubai\.biz spambot=yes
 SetEnvIfNoCase Referer allesohnegirls\.net spambot=yes
@@ -910,6 +911,7 @@ SetEnvIfNoCase Referer anime\.dougasouko\.com spambot=yes
 SetEnvIfNoCase Referer animebox\.com\.ua spambot=yes
 SetEnvIfNoCase Referer anjalika\.co\.in spambot=yes
 SetEnvIfNoCase Referer anlimebel\.kiev\.ua spambot=yes
+SetEnvIfNoCase Referer anmysite\.com spambot=yes
 SetEnvIfNoCase Referer anniemation\.com spambot=yes
 SetEnvIfNoCase Referer anonymizeme\.pro spambot=yes
 SetEnvIfNoCase Referer anonymous\-redirect\.com spambot=yes
@@ -2201,6 +2203,7 @@ SetEnvIfNoCase Referer encodable\.com spambot=yes
 SetEnvIfNoCase Referer energy\-ua\.com spambot=yes
 SetEnvIfNoCase Referer energydiet\-info\.ru spambot=yes
 SetEnvIfNoCase Referer energydiet24\.ru spambot=yes
+SetEnvIfNoCase Referer eng\-lyrics\.com spambot=yes
 SetEnvIfNoCase Referer enge\-fotzen\.info spambot=yes
 SetEnvIfNoCase Referer enginebay\.ru spambot=yes
 SetEnvIfNoCase Referer engines\-usa\.com spambot=yes
@@ -2249,6 +2252,7 @@ SetEnvIfNoCase Referer este\-line\.com\.ua spambot=yes
 SetEnvIfNoCase Referer estelight\.ru spambot=yes
 SetEnvIfNoCase Referer estibot\.com spambot=yes
 SetEnvIfNoCase Referer etm\-consult\.de spambot=yes
+SetEnvIfNoCase Referer etur\.ru spambot=yes
 SetEnvIfNoCase Referer eu\-cookie\-law\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer eu\-cookie\-law\.info spambot=yes
 SetEnvIfNoCase Referer eugenevaultstorage\.com spambot=yes
@@ -2474,6 +2478,7 @@ SetEnvIfNoCase Referer forodvd\.com spambot=yes
 SetEnvIfNoCase Referer forpackningsutveckling\.se spambot=yes
 SetEnvIfNoCase Referer forpostlock\.ru spambot=yes
 SetEnvIfNoCase Referer forsex\.info spambot=yes
+SetEnvIfNoCase Referer fortevidyoze\.net spambot=yes
 SetEnvIfNoCase Referer fortunejack\.com spambot=yes
 SetEnvIfNoCase Referer forum\-engineering\.ru spambot=yes
 SetEnvIfNoCase Referer forum\.doctissimo\.fr spambot=yes
@@ -5073,6 +5078,7 @@ SetEnvIfNoCase Referer shoppytoolmac\.com spambot=yes
 SetEnvIfNoCase Referer shopsellcardsdumps\.com spambot=yes
 SetEnvIfNoCase Referer shopvilleroyboch\.com\.ua spambot=yes
 SetEnvIfNoCase Referer shopwme\.ru spambot=yes
+SetEnvIfNoCase Referer shtaketniki\.kz spambot=yes
 SetEnvIfNoCase Referer shtaketniki\.ru spambot=yes
 SetEnvIfNoCase Referer shtora66\.ru spambot=yes
 SetEnvIfNoCase Referer shymkent\.xkaz\.org spambot=yes
@@ -5406,6 +5412,7 @@ SetEnvIfNoCase Referer symbaloo\.com spambot=yes
 SetEnvIfNoCase Referer symphonyintegratedhealthcare\.com spambot=yes
 SetEnvIfNoCase Referer syvertsen\-da\.no spambot=yes
 SetEnvIfNoCase Referer szamponrevita\.pl spambot=yes
+SetEnvIfNoCase Referer szucs\.ru spambot=yes
 SetEnvIfNoCase Referer t\-bygg\.com spambot=yes
 SetEnvIfNoCase Referer t3chtonic\.com spambot=yes
 SetEnvIfNoCase Referer taaaak\.com spambot=yes
@@ -6191,6 +6198,7 @@ SetEnvIfNoCase Referer x\-musics\.com spambot=yes
 SetEnvIfNoCase Referer x\-porno\.video spambot=yes
 SetEnvIfNoCase Referer x\-rates\.ru spambot=yes
 SetEnvIfNoCase Referer x\-stars\.ru spambot=yes
+SetEnvIfNoCase Referer x\-true\.info spambot=yes
 SetEnvIfNoCase Referer xaijo\.com spambot=yes
 SetEnvIfNoCase Referer xaylapdiendanang\.com spambot=yes
 SetEnvIfNoCase Referer xbaboon\.com spambot=yes
@@ -6375,6 +6383,7 @@ SetEnvIfNoCase Referer zahvat\.ru spambot=yes
 SetEnvIfNoCase Referer zaidia\.xhost\.ro spambot=yes
 SetEnvIfNoCase Referer zaim\-pod\-zalog\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer zaimhelp\.ru spambot=yes
+SetEnvIfNoCase Referer zaimite\.ru spambot=yes
 SetEnvIfNoCase Referer zajm\-pod\-zalog\-nedvizhimosti\.ru spambot=yes
 SetEnvIfNoCase Referer zajm\-zalog\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer zakazfutbolki\.com spambot=yes
