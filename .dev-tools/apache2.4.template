@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.762
-### Updated: Sat Nov 18 15:03:40 SAST 2017
-### Bad Referrer Count: 5983
+### Version: V3.2017.11.763
+### Updated: Sat Nov 18 15:22:09 SAST 2017
+### Bad Referrer Count: 5984
 ### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
@@ -2592,6 +2592,7 @@ SetEnvIfNoCase Referer ~*expresstoplivo\.ru spam_ref
 SetEnvIfNoCase Referer ~*extads\.net spam_ref
 SetEnvIfNoCase Referer ~*extener\.org spam_ref
 SetEnvIfNoCase Referer ~*extlabs\.io spam_ref
+SetEnvIfNoCase Referer ~*extlinks\.com spam_ref
 SetEnvIfNoCase Referer ~*extrabot\.com spam_ref
 SetEnvIfNoCase Referer ~*extractorandburner\.com spam_ref
 SetEnvIfNoCase Referer ~*extremal\-blog\.com spam_ref
