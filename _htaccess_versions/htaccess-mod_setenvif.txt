@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.761
-### Bad Referrer Count: 5974
+### Version: V3.2017.11.762
+### Bad Referrer Count: 5983
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -957,6 +957,7 @@ SetEnvIfNoCase Referer apispringsmartne\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiwebwebgetcom\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer apiwoodensealcom\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer app\-ready\.xyz spambot=yes
+SetEnvIfNoCase Referer app5\.letmacworkfaster\.world spambot=yes
 SetEnvIfNoCase Referer apparel\-offer\.com spambot=yes
 SetEnvIfNoCase Referer appartement\-stumm\.at spambot=yes
 SetEnvIfNoCase Referer appearance\-cool\.com spambot=yes
@@ -964,6 +965,7 @@ SetEnvIfNoCase Referer apper\.de spambot=yes
 SetEnvIfNoCase Referer appfastplay\.com spambot=yes
 SetEnvIfNoCase Referer appfixing\.space spambot=yes
 SetEnvIfNoCase Referer appiq\.mobi spambot=yes
+SetEnvIfNoCase Referer apple\.com\-cleaner\.systems spambot=yes
 SetEnvIfNoCase Referer apple\.com\-webbrowsing\-security\.review spambot=yes
 SetEnvIfNoCase Referer apple\.com\-webbrowsing\-security\.science spambot=yes
 SetEnvIfNoCase Referer appleid\-verification\.com spambot=yes
@@ -973,6 +975,7 @@ SetEnvIfNoCase Referer approved\.su spambot=yes
 SetEnvIfNoCase Referer approvedlocal\.co\.za spambot=yes
 SetEnvIfNoCase Referer apps\-analytics\.net spambot=yes
 SetEnvIfNoCase Referer appsaurus\.com spambot=yes
+SetEnvIfNoCase Referer appsecurityr\.com spambot=yes
 SetEnvIfNoCase Referer apptester\.tk spambot=yes
 SetEnvIfNoCase Referer aproposde\.com spambot=yes
 SetEnvIfNoCase Referer apxeo\.info spambot=yes
@@ -1208,6 +1211,7 @@ SetEnvIfNoCase Referer best\-seo\-offer\.com spambot=yes
 SetEnvIfNoCase Referer best\-seo\-software\.xyz spambot=yes
 SetEnvIfNoCase Referer best\-seo\-solution\.com spambot=yes
 SetEnvIfNoCase Referer best\-way\.men spambot=yes
+SetEnvIfNoCase Referer bestadbid\.com spambot=yes
 SetEnvIfNoCase Referer bestbrainprod\.win spambot=yes
 SetEnvIfNoCase Referer bestbuy\.ca spambot=yes
 SetEnvIfNoCase Referer bestcalovebracelet\.cn spambot=yes
@@ -1717,6 +1721,7 @@ SetEnvIfNoCase Referer colehaanoutlet\.store spambot=yes
 SetEnvIfNoCase Referer collegeessay19\.blogspot\.ru spambot=yes
 SetEnvIfNoCase Referer collegerentals\.com spambot=yes
 SetEnvIfNoCase Referer colobit\.biz spambot=yes
+SetEnvIfNoCase Referer com\-cleaner\.systems spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.host spambot=yes
 SetEnvIfNoCase Referer com\-onlinesupport\.site spambot=yes
 SetEnvIfNoCase Referer com\-secure\.download spambot=yes
@@ -3445,6 +3450,7 @@ SetEnvIfNoCase Referer lesbian\.xyz spambot=yes
 SetEnvIfNoCase Referer lescinq\.com spambot=yes
 SetEnvIfNoCase Referer letmacwork\.world spambot=yes
 SetEnvIfNoCase Referer letmacworkfaster\.site spambot=yes
+SetEnvIfNoCase Referer letmacworkfaster\.world spambot=yes
 SetEnvIfNoCase Referer letolove\.ru spambot=yes
 SetEnvIfNoCase Referer letsart\.ru spambot=yes
 SetEnvIfNoCase Referer letslowbefast\.site spambot=yes
@@ -4137,6 +4143,7 @@ SetEnvIfNoCase Referer onclkads\.com spambot=yes
 SetEnvIfNoCase Referer one\-gear\.com spambot=yes
 SetEnvIfNoCase Referer oneclickfiles\.com spambot=yes
 SetEnvIfNoCase Referer onefilms\.net spambot=yes
+SetEnvIfNoCase Referer onemactrckr\.com spambot=yes
 SetEnvIfNoCase Referer onemantrip\.com spambot=yes
 SetEnvIfNoCase Referer oneminutesite\.it spambot=yes
 SetEnvIfNoCase Referer onescreen\.cc spambot=yes
@@ -6035,6 +6042,7 @@ SetEnvIfNoCase Referer we\-are\-gamers\.com spambot=yes
 SetEnvIfNoCase Referer web\-betting\.ru spambot=yes
 SetEnvIfNoCase Referer web\.cvut\.cz spambot=yes
 SetEnvIfNoCase Referer webads\.co\.nz spambot=yes
+SetEnvIfNoCase Referer webadvance\.club spambot=yes
 SetEnvIfNoCase Referer webalan\.ru spambot=yes
 SetEnvIfNoCase Referer webenlace\.com\.ar spambot=yes
 SetEnvIfNoCase Referer webextract\.profound\.net spambot=yes
@@ -6366,6 +6374,7 @@ SetEnvIfNoCase Referer yoursearch\.me spambot=yes
 SetEnvIfNoCase Referer yourserverisdown\.com spambot=yes
 SetEnvIfNoCase Referer yoursite\.com spambot=yes
 SetEnvIfNoCase Referer yourtemplatefinder\.com spambot=yes
+SetEnvIfNoCase Referer youthreaders\.com spambot=yes
 SetEnvIfNoCase Referer youtoner\.it spambot=yes
 SetEnvIfNoCase Referer youtube\-downloader\.savetubevideo\.com spambot=yes
 SetEnvIfNoCase Referer youtubedownload\.org spambot=yes
