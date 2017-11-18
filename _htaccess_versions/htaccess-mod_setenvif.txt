@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.759
-### Bad Referrer Count: 5971
-### Bad Bot Count: 502
+### Version: V3.2017.11.761
+### Bad Referrer Count: 5974
+### Bad Bot Count: 503
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -127,6 +127,7 @@ SetEnvIfNoCase User-Agent ^evc\-batch.* spambot=yes
 SetEnvIfNoCase User-Agent ^Evil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Exabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Express\ WebPictures.* spambot=yes
+SetEnvIfNoCase User-Agent ^ExtLinksBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Extractor.* spambot=yes
 SetEnvIfNoCase User-Agent ^ExtractorPro.* spambot=yes
 SetEnvIfNoCase User-Agent ^Extreme\ Picture\ Finder.* spambot=yes
@@ -644,6 +645,7 @@ SetEnvIfNoCase Referer 8si\.ru spambot=yes
 SetEnvIfNoCase Referer 8xv8\.com spambot=yes
 SetEnvIfNoCase Referer 91abcw\.com spambot=yes
 SetEnvIfNoCase Referer 98oi\.ru spambot=yes
+SetEnvIfNoCase Referer 991mostfm\.co\.id spambot=yes
 SetEnvIfNoCase Referer 999webdesign\.com spambot=yes
 SetEnvIfNoCase Referer 9icmzvn6\.website spambot=yes
 SetEnvIfNoCase Referer 9med\.net spambot=yes
@@ -2894,6 +2896,7 @@ SetEnvIfNoCase Referer histats\.com spambot=yes
 SetEnvIfNoCase Referer histock\.info spambot=yes
 SetEnvIfNoCase Referer historichometeam\.com spambot=yes
 SetEnvIfNoCase Referer hit\-men\.men spambot=yes
+SetEnvIfNoCase Referer hitcpm\.com spambot=yes
 SetEnvIfNoCase Referer hitsbox\.info spambot=yes
 SetEnvIfNoCase Referer hiwibyh\.bugs3\.com spambot=yes
 SetEnvIfNoCase Referer hjaoopoa\.top spambot=yes
@@ -3441,6 +3444,7 @@ SetEnvIfNoCase Referer lerporn\.info spambot=yes
 SetEnvIfNoCase Referer lesbian\.xyz spambot=yes
 SetEnvIfNoCase Referer lescinq\.com spambot=yes
 SetEnvIfNoCase Referer letmacwork\.world spambot=yes
+SetEnvIfNoCase Referer letmacworkfaster\.site spambot=yes
 SetEnvIfNoCase Referer letolove\.ru spambot=yes
 SetEnvIfNoCase Referer letsart\.ru spambot=yes
 SetEnvIfNoCase Referer letslowbefast\.site spambot=yes

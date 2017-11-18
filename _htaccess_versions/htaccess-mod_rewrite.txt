@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.759
-### Bad Referrer Count: 5971
-### Bad Bot Count: 502
+### Version: V3.2017.11.761
+### Bad Referrer Count: 5974
+### Bad Bot Count: 503
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -128,6 +128,7 @@ RewriteCond %{HTTP_USER_AGENT} ^evc\-batch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Evil.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Exabot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Express\ WebPictures.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ExtLinksBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Extractor.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ExtractorPro.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Extreme\ Picture\ Finder.* [NC,OR]
@@ -645,6 +646,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*8si\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*8xv8\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*91abcw\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*98oi\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*991mostfm\.co\.id.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*999webdesign\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*9icmzvn6\.website.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*9med\.net.*$ [NC,OR]
@@ -2895,6 +2897,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*histats\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*histock\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*historichometeam\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hit\-men\.men.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hitcpm\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hitsbox\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hiwibyh\.bugs3\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hjaoopoa\.top.*$ [NC,OR]
@@ -3442,6 +3445,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lerporn\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lesbian\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lescinq\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letmacwork\.world.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letmacworkfaster\.site.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letolove\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letsart\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*letslowbefast\.site.*$ [NC,OR]
