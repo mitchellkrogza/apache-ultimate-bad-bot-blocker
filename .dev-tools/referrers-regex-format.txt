@@ -3687,7 +3687,6 @@ SetEnvIfNoCase Referer ~*ooo\-gotovie\.ru spam_ref
 SetEnvIfNoCase Referer ~*ooomeru\.ru spam_ref
 SetEnvIfNoCase Referer ~*ooo\-olni\.ru spam_ref
 SetEnvIfNoCase Referer ~*oops\-cinema\.ru spam_ref
-SetEnvIfNoCase Referer ~*openallurls\.com spam_ref
 SetEnvIfNoCase Referer ~*openfrost\.com spam_ref
 SetEnvIfNoCase Referer ~*openfrost\.net spam_ref
 SetEnvIfNoCase Referer ~*openlibrary\.org spam_ref
