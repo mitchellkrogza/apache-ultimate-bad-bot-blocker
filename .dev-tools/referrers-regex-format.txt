@@ -1185,6 +1185,7 @@ SetEnvIfNoCase Referer ~*clickzzs\.nl spam_ref
 SetEnvIfNoCase Referer ~*clipartnew\.com spam_ref
 SetEnvIfNoCase Referer ~*clippingphotoindia\.com spam_ref
 SetEnvIfNoCase Referer ~*clips\.ua\.ac\.be spam_ref
+SetEnvIfNoCase Referer ~*clknsee\.com spam_ref
 SetEnvIfNoCase Referer ~*clksite\.com spam_ref
 SetEnvIfNoCase Referer ~*clmforexeu\.com spam_ref
 SetEnvIfNoCase Referer ~*clodo\.ru spam_ref

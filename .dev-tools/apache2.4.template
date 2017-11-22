@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.768
-### Updated: Wed Nov 22 10:34:16 SAST 2017
-### Bad Referrer Count: 6018
+### Version: V3.2017.11.769
+### Updated: Wed Nov 22 13:23:23 SAST 2017
+### Bad Referrer Count: 6019
 ### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
@@ -1994,6 +1994,7 @@ SetEnvIfNoCase Referer ~*clickzzs\.nl spam_ref
 SetEnvIfNoCase Referer ~*clipartnew\.com spam_ref
 SetEnvIfNoCase Referer ~*clippingphotoindia\.com spam_ref
 SetEnvIfNoCase Referer ~*clips\.ua\.ac\.be spam_ref
+SetEnvIfNoCase Referer ~*clknsee\.com spam_ref
 SetEnvIfNoCase Referer ~*clksite\.com spam_ref
 SetEnvIfNoCase Referer ~*clmforexeu\.com spam_ref
 SetEnvIfNoCase Referer ~*clodo\.ru spam_ref
