@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.767
-### Bad Referrer Count: 6015
+### Version: V3.2017.11.768
+### Bad Referrer Count: 6018
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -831,6 +831,7 @@ SetEnvIfNoCase Referer aliexpress\.com spambot=yes
 SetEnvIfNoCase Referer aliexpresscashback\.club spambot=yes
 SetEnvIfNoCase Referer alif\-ba\-ta\.com spambot=yes
 SetEnvIfNoCase Referer alive\-ua\.com spambot=yes
+SetEnvIfNoCase Referer alkoravto\.ru spambot=yes
 SetEnvIfNoCase Referer all\-number\.com spambot=yes
 SetEnvIfNoCase Referer all\-streaming\-media\.com spambot=yes
 SetEnvIfNoCase Referer all4invest\.info spambot=yes
@@ -2663,6 +2664,7 @@ SetEnvIfNoCase Referer geileweiber\.tk spambot=yes
 SetEnvIfNoCase Referer gelezki\.com spambot=yes
 SetEnvIfNoCase Referer gemara\.com spambot=yes
 SetEnvIfNoCase Referer gembird\.com spambot=yes
+SetEnvIfNoCase Referer gemgrab\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer generalporn\.org spambot=yes
 SetEnvIfNoCase Referer generic\-pills\-online\.com spambot=yes
 SetEnvIfNoCase Referer genericlowlatencyasiodriverhq\.aircus\.com spambot=yes
@@ -4865,6 +4867,7 @@ SetEnvIfNoCase Referer sale\-japan\.com spambot=yes
 SetEnvIfNoCase Referer saletool\.ru spambot=yes
 SetEnvIfNoCase Referer salmonfishingsacramentoriver\.com spambot=yes
 SetEnvIfNoCase Referer salutmontreal\.com spambot=yes
+SetEnvIfNoCase Referer samara\.rosfirm\.ru spambot=yes
 SetEnvIfNoCase Referer sammlungfotos\.online spambot=yes
 SetEnvIfNoCase Referer sammyweaver\.com spambot=yes
 SetEnvIfNoCase Referer samo\-soznanie\.ru spambot=yes

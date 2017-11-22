@@ -314,6 +314,7 @@ SetEnvIfNoCase Referer ~*aliexpresscashback\.club spam_ref
 SetEnvIfNoCase Referer ~*aliexpress\.com spam_ref
 SetEnvIfNoCase Referer ~*alif\-ba\-ta\.com spam_ref
 SetEnvIfNoCase Referer ~*alive\-ua\.com spam_ref
+SetEnvIfNoCase Referer ~*alkoravto\.ru spam_ref
 SetEnvIfNoCase Referer ~*all4invest\.info spam_ref
 SetEnvIfNoCase Referer ~*all4invest\.ru spam_ref
 SetEnvIfNoCase Referer ~*allblogroll\.com spam_ref
@@ -2146,6 +2147,7 @@ SetEnvIfNoCase Referer ~*geileweiber\.tk spam_ref
 SetEnvIfNoCase Referer ~*gelezki\.com spam_ref
 SetEnvIfNoCase Referer ~*gemara\.com spam_ref
 SetEnvIfNoCase Referer ~*gembird\.com spam_ref
+SetEnvIfNoCase Referer ~*gemgrab\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*generalporn\.org spam_ref
 SetEnvIfNoCase Referer ~*genericlowlatencyasiodriverhq\.aircus\.com spam_ref
 SetEnvIfNoCase Referer ~*generic\-pills\-online\.com spam_ref
@@ -4347,6 +4349,7 @@ SetEnvIfNoCase Referer ~*saletool\.ru spam_ref
 SetEnvIfNoCase Referer ~*sa\-live\.com spam_ref
 SetEnvIfNoCase Referer ~*salmonfishingsacramentoriver\.com spam_ref
 SetEnvIfNoCase Referer ~*salutmontreal\.com spam_ref
+SetEnvIfNoCase Referer ~*samara\.rosfirm\.ru spam_ref
 SetEnvIfNoCase Referer ~*sammlungfotos\.online spam_ref
 SetEnvIfNoCase Referer ~*sammyweaver\.com spam_ref
 SetEnvIfNoCase Referer ~*samoiedo\.it spam_ref
