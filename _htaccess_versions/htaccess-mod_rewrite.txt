@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.770
-### Bad Referrer Count: 6018
+### Version: V3.2017.11.771
+### Bad Referrer Count: 6021
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -2988,6 +2988,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hoverboardforsaledirect\.com.*$
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*howlongdoestizanidinestayinyoursystem\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*howmuchdoestizanidinecost\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*howopen\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*howtoclean\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*howtowhitenteethfast\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hplaserjetpdriver8y\.pen\.io.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hptwaakw\.blog\.fc2\.com.*$ [NC,OR]
@@ -5521,6 +5522,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-trader\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-usa\-games\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*theallgirlarcade\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebestweightlosspills\.ovh.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebitcoincode\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebluenoodle\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebluffs\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thecoolimages\.net.*$ [NC,OR]
@@ -6078,6 +6080,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*web\.cvut\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webads\.co\.nz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webadvance\.club.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webalan\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webcamdevochka\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webenlace\.com\.ar.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webextract\.profound\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webinstantservice\.com.*$ [NC,OR]

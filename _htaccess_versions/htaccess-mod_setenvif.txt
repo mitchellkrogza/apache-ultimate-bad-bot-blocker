@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.770
-### Bad Referrer Count: 6018
+### Version: V3.2017.11.771
+### Bad Referrer Count: 6021
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -2987,6 +2987,7 @@ SetEnvIfNoCase Referer hoverboardforsaledirect\.com spambot=yes
 SetEnvIfNoCase Referer howlongdoestizanidinestayinyoursystem\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer howmuchdoestizanidinecost\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer howopen\.ru spambot=yes
+SetEnvIfNoCase Referer howtoclean\.club spambot=yes
 SetEnvIfNoCase Referer howtowhitenteethfast\.xyz spambot=yes
 SetEnvIfNoCase Referer hplaserjetpdriver8y\.pen\.io spambot=yes
 SetEnvIfNoCase Referer hptwaakw\.blog\.fc2\.com spambot=yes
@@ -5520,6 +5521,7 @@ SetEnvIfNoCase Referer the\-trader\.net spambot=yes
 SetEnvIfNoCase Referer the\-usa\-games\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer theallgirlarcade\.com spambot=yes
 SetEnvIfNoCase Referer thebestweightlosspills\.ovh spambot=yes
+SetEnvIfNoCase Referer thebitcoincode\.com spambot=yes
 SetEnvIfNoCase Referer thebluenoodle\.com spambot=yes
 SetEnvIfNoCase Referer thebluffs\.com spambot=yes
 SetEnvIfNoCase Referer thecoolimages\.net spambot=yes
@@ -6077,6 +6079,7 @@ SetEnvIfNoCase Referer web\.cvut\.cz spambot=yes
 SetEnvIfNoCase Referer webads\.co\.nz spambot=yes
 SetEnvIfNoCase Referer webadvance\.club spambot=yes
 SetEnvIfNoCase Referer webalan\.ru spambot=yes
+SetEnvIfNoCase Referer webcamdevochka\.com spambot=yes
 SetEnvIfNoCase Referer webenlace\.com\.ar spambot=yes
 SetEnvIfNoCase Referer webextract\.profound\.net spambot=yes
 SetEnvIfNoCase Referer webinstantservice\.com spambot=yes
