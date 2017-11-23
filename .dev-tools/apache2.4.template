@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2017.11.771
-### Updated: Thu Nov 23 11:38:18 SAST 2017
-### Bad Referrer Count: 6021
+### Version: V3.2017.11.772
+### Updated: Thu Nov 23 14:13:03 SAST 2017
+### Bad Referrer Count: 6025
 ### Bad Bot Count: 503
 ###################################################
 ### Version Information ##
@@ -1435,6 +1435,7 @@ SetEnvIfNoCase Referer ~*baixar\-musicas\-gratis\.com spam_ref
 SetEnvIfNoCase Referer ~*baksman\.com spam_ref
 SetEnvIfNoCase Referer ~*baladur\.ru spam_ref
 SetEnvIfNoCase Referer ~*bala\.getenjoyment\.net spam_ref
+SetEnvIfNoCase Referer ~*balans\.shahterworld\.org spam_ref
 SetEnvIfNoCase Referer ~*balitouroffice\.com spam_ref
 SetEnvIfNoCase Referer ~*balkanfarma\.org spam_ref
 SetEnvIfNoCase Referer ~*balkanfarma\.ru spam_ref
@@ -3540,6 +3541,7 @@ SetEnvIfNoCase Referer ~*justbcause\.com spam_ref
 SetEnvIfNoCase Referer ~*justdating\.online spam_ref
 SetEnvIfNoCase Referer ~*justkillingti\.me spam_ref
 SetEnvIfNoCase Referer ~*justprofit\.xyz spam_ref
+SetEnvIfNoCase Referer ~*justucalling32211123456789\.tk spam_ref
 SetEnvIfNoCase Referer ~*jwss\.cc spam_ref
 SetEnvIfNoCase Referer ~*kaac\.ru spam_ref
 SetEnvIfNoCase Referer ~*kabbalah\-red\-bracelets\.com spam_ref
@@ -4704,6 +4706,7 @@ SetEnvIfNoCase Referer ~*platesauto\.com spam_ref
 SetEnvIfNoCase Referer ~*platezhka\.net spam_ref
 SetEnvIfNoCase Referer ~*platinumdeals\.gr spam_ref
 SetEnvIfNoCase Referer ~*playboyfiles\.xblog\.in spam_ref
+SetEnvIfNoCase Referer ~*play\.leadzupc\.com spam_ref
 SetEnvIfNoCase Referer ~*playlott\.com spam_ref
 SetEnvIfNoCase Referer ~*play\-movie\.pl spam_ref
 SetEnvIfNoCase Referer ~*play\-mp3\.com spam_ref
@@ -5178,6 +5181,7 @@ SetEnvIfNoCase Referer ~*sanyuprojects\.com spam_ref
 SetEnvIfNoCase Referer ~*sarafangel\.ru spam_ref
 SetEnvIfNoCase Referer ~*saratov\.xrus\.org spam_ref
 SetEnvIfNoCase Referer ~*sardinie\.us spam_ref
+SetEnvIfNoCase Referer ~*sa\-rewards\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*sarf3omlat\.com spam_ref
 SetEnvIfNoCase Referer ~*sarm\.tk spam_ref
 SetEnvIfNoCase Referer ~*sashagreyblog\.ga spam_ref

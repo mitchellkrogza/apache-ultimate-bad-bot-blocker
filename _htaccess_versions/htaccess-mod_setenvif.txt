@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.771
-### Bad Referrer Count: 6021
+### Version: V3.2017.11.772
+### Bad Referrer Count: 6025
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -1143,6 +1143,7 @@ SetEnvIfNoCase Referer baixar\-musicas\-gratis\.com spambot=yes
 SetEnvIfNoCase Referer baksman\.com spambot=yes
 SetEnvIfNoCase Referer bala\.getenjoyment\.net spambot=yes
 SetEnvIfNoCase Referer baladur\.ru spambot=yes
+SetEnvIfNoCase Referer balans\.shahterworld\.org spambot=yes
 SetEnvIfNoCase Referer balitouroffice\.com spambot=yes
 SetEnvIfNoCase Referer balkanfarma\.org spambot=yes
 SetEnvIfNoCase Referer balkanfarma\.ru spambot=yes
@@ -3247,6 +3248,7 @@ SetEnvIfNoCase Referer justbcause\.com spambot=yes
 SetEnvIfNoCase Referer justdating\.online spambot=yes
 SetEnvIfNoCase Referer justkillingti\.me spambot=yes
 SetEnvIfNoCase Referer justprofit\.xyz spambot=yes
+SetEnvIfNoCase Referer justucalling32211123456789\.tk spambot=yes
 SetEnvIfNoCase Referer jwss\.cc spambot=yes
 SetEnvIfNoCase Referer kaac\.ru spambot=yes
 SetEnvIfNoCase Referer kabbalah\-red\-bracelets\.com spambot=yes
@@ -4415,6 +4417,7 @@ SetEnvIfNoCase Referer platezhka\.net spambot=yes
 SetEnvIfNoCase Referer platinumdeals\.gr spambot=yes
 SetEnvIfNoCase Referer play\-movie\.pl spambot=yes
 SetEnvIfNoCase Referer play\-mp3\.com spambot=yes
+SetEnvIfNoCase Referer play\.leadzupc\.com spambot=yes
 SetEnvIfNoCase Referer playboyfiles\.xblog\.in spambot=yes
 SetEnvIfNoCase Referer playlott\.com spambot=yes
 SetEnvIfNoCase Referer playmsn\.com spambot=yes
@@ -4853,6 +4856,7 @@ SetEnvIfNoCase Referer s\-iwantyou\.com spambot=yes
 SetEnvIfNoCase Referer s\.lollypopgaming\.com spambot=yes
 SetEnvIfNoCase Referer s8\-nowy\-wygraj\.comli\.com spambot=yes
 SetEnvIfNoCase Referer sa\-live\.com spambot=yes
+SetEnvIfNoCase Referer sa\-rewards\.co\.za spambot=yes
 SetEnvIfNoCase Referer sabaapress\.com spambot=yes
 SetEnvIfNoCase Referer sabizonline\.com spambot=yes
 SetEnvIfNoCase Referer sack\.net spambot=yes
