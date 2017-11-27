@@ -4,8 +4,8 @@
 ### PLEASE READ CONFIGURATION INSTRUCTIONS BELOW THOROUGHLY
 
 _______________
-#### Version: V3.2017.11.773
-#### Bad Referrer Count: 6048
+#### Version: V3.2017.11.774
+#### Bad Referrer Count: 6053
 #### Bad Bot Count: 503
 ____________________
 

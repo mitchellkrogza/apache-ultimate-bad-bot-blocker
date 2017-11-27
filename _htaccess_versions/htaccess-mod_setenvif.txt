@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.773
-### Bad Referrer Count: 6048
+### Version: V3.2017.11.774
+### Bad Referrer Count: 6053
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -1361,6 +1361,7 @@ SetEnvIfNoCase Referer bombla\.org spambot=yes
 SetEnvIfNoCase Referer bonanza\-fortune\.men spambot=yes
 SetEnvIfNoCase Referer bongacams\.com spambot=yes
 SetEnvIfNoCase Referer bongiornos\.info spambot=yes
+SetEnvIfNoCase Referer bonky\.biz spambot=yes
 SetEnvIfNoCase Referer bonux\.nextview\.ru spambot=yes
 SetEnvIfNoCase Referer bonvillan\.com spambot=yes
 SetEnvIfNoCase Referer bonzbuddy\.com spambot=yes
@@ -4850,6 +4851,7 @@ SetEnvIfNoCase Referer rumamba\.com spambot=yes
 SetEnvIfNoCase Referer running\-line\.ru spambot=yes
 SetEnvIfNoCase Referer runofilms\.ru spambot=yes
 SetEnvIfNoCase Referer runstocks\.com spambot=yes
+SetEnvIfNoCase Referer runtnc\.net spambot=yes
 SetEnvIfNoCase Referer rus\-teh\.narod\.ru spambot=yes
 SetEnvIfNoCase Referer ruscoininvest\.company spambot=yes
 SetEnvIfNoCase Referer ruscopybook\.com spambot=yes
@@ -5323,6 +5325,7 @@ SetEnvIfNoCase Referer spb\.afora\.ru spambot=yes
 SetEnvIfNoCase Referer spb\.ru spambot=yes
 SetEnvIfNoCase Referer spbchampionat\.ru spambot=yes
 SetEnvIfNoCase Referer special\-porn\.com spambot=yes
+SetEnvIfNoCase Referer specialfinanceoffers\.com spambot=yes
 SetEnvIfNoCase Referer speedup\-my\.site spambot=yes
 SetEnvIfNoCase Referer spidtest\.org spambot=yes
 SetEnvIfNoCase Referer spidtest\.space spambot=yes
@@ -6434,6 +6437,8 @@ SetEnvIfNoCase Referer yourdesires\.ru spambot=yes
 SetEnvIfNoCase Referer youresponsive\.com spambot=yes
 SetEnvIfNoCase Referer yourmovies\.pl spambot=yes
 SetEnvIfNoCase Referer yourothersite\.com spambot=yes
+SetEnvIfNoCase Referer yourporn\.com spambot=yes
+SetEnvIfNoCase Referer yourporngay\.com spambot=yes
 SetEnvIfNoCase Referer yoursearch\.me spambot=yes
 SetEnvIfNoCase Referer yourserverisdown\.com spambot=yes
 SetEnvIfNoCase Referer yoursite\.com spambot=yes
