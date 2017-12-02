@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.11.775
-### Bad Referrer Count: 6062
+### Version: V3.2017.12.776
+### Bad Referrer Count: 6065
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -2475,6 +2475,7 @@ SetEnvIfNoCase Referer fiverr\.com spambot=yes
 SetEnvIfNoCase Referer fix\-website\-errors\.com spambot=yes
 SetEnvIfNoCase Referer flash4fun\.com spambot=yes
 SetEnvIfNoCase Referer flashbannernow\.com spambot=yes
+SetEnvIfNoCase Referer flashlarevista\.com spambot=yes
 SetEnvIfNoCase Referer flavors\.me spambot=yes
 SetEnvIfNoCase Referer flex4launch\.ru spambot=yes
 SetEnvIfNoCase Referer flipper\.top spambot=yes
@@ -3940,6 +3941,7 @@ SetEnvIfNoCase Referer musezone\.ru spambot=yes
 SetEnvIfNoCase Referer musezone\.su spambot=yes
 SetEnvIfNoCase Referer musflashtv\.com spambot=yes
 SetEnvIfNoCase Referer music\.utrolive\.ru spambot=yes
+SetEnvIfNoCase Referer music7s\.me spambot=yes
 SetEnvIfNoCase Referer musicas\.baixar\-musicas\-gratis\.com spambot=yes
 SetEnvIfNoCase Referer musicdaddy\.net spambot=yes
 SetEnvIfNoCase Referer musicktab\.com spambot=yes
@@ -5600,6 +5602,7 @@ SetEnvIfNoCase Referer timetorelax\.biz spambot=yes
 SetEnvIfNoCase Referer timhost\.ru spambot=yes
 SetEnvIfNoCase Referer titan\-ads\.life spambot=yes
 SetEnvIfNoCase Referer titan\-cloud\.life spambot=yes
+SetEnvIfNoCase Referer titangel\-vietnam\.com spambot=yes
 SetEnvIfNoCase Referer titelhelden\.eu spambot=yes
 SetEnvIfNoCase Referer titslove\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer tizanidine4mg\.blogspot\.com spambot=yes
