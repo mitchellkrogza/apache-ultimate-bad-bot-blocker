@@ -105,6 +105,7 @@ SetEnvIfNoCase Referer ~*5kstore\.com spam_ref
 SetEnvIfNoCase Referer ~*5\-steps\-to\-start\-business\.com spam_ref
 SetEnvIfNoCase Referer ~*5tey7463\.weebly\.com spam_ref
 SetEnvIfNoCase Referer ~*5u\.com spam_ref
+SetEnvIfNoCase Referer ~*5ws\.dating\-app\.ru spam_ref
 SetEnvIfNoCase Referer ~*6128786\.com spam_ref
 SetEnvIfNoCase Referer ~*66cpwgln\.space spam_ref
 SetEnvIfNoCase Referer ~*6hopping\.com spam_ref
@@ -1407,6 +1408,7 @@ SetEnvIfNoCase Referer ~*dataloading\.net spam_ref
 SetEnvIfNoCase Referer ~*data\-mining\.tk spam_ref
 SetEnvIfNoCase Referer ~*data\.vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*date\-withme\.com spam_ref
+SetEnvIfNoCase Referer ~*dating\-app\.ru spam_ref
 SetEnvIfNoCase Referer ~*dating\-time\-now\.com spam_ref
 SetEnvIfNoCase Referer ~*datract\.com spam_ref
 SetEnvIfNoCase Referer ~*datsun\-do\.com spam_ref
@@ -3118,6 +3120,7 @@ SetEnvIfNoCase Referer ~*macrotek\.ru spam_ref
 SetEnvIfNoCase Referer ~*mac\-shield\.com spam_ref
 SetEnvIfNoCase Referer ~*mactechinfo\.info spam_ref
 SetEnvIfNoCase Referer ~*madot\.onlinewebshop\.net spam_ref
+SetEnvIfNoCase Referer ~*mafa\-free\.com spam_ref
 SetEnvIfNoCase Referer ~*mafcards\.ru spam_ref
 SetEnvIfNoCase Referer ~*magazin\-pics\.ru spam_ref
 SetEnvIfNoCase Referer ~*magazintiande\.ru spam_ref
@@ -5577,6 +5580,7 @@ SetEnvIfNoCase Referer ~*wallpapers\-best\.com spam_ref
 SetEnvIfNoCase Referer ~*wallpapersdesk\.info spam_ref
 SetEnvIfNoCase Referer ~*wallpapersist\.com spam_ref
 SetEnvIfNoCase Referer ~*wallpaperstock\.net spam_ref
+SetEnvIfNoCase Referer ~*wanker\.us spam_ref
 SetEnvIfNoCase Referer ~*wapsite\.me spam_ref
 SetEnvIfNoCase Referer ~*wareseeker\.com spam_ref
 SetEnvIfNoCase Referer ~*warezaccess\.com spam_ref

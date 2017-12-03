@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.12.776
-### Bad Referrer Count: 6065
+### Version: V3.2017.12.777
+### Bad Referrer Count: 6069
 ### Bad Bot Count: 503
 ### Version Information ##
 
@@ -621,6 +621,7 @@ SetEnvIfNoCase Referer 5i2\.net spambot=yes
 SetEnvIfNoCase Referer 5kstore\.com spambot=yes
 SetEnvIfNoCase Referer 5tey7463\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer 5u\.com spambot=yes
+SetEnvIfNoCase Referer 5ws\.dating\-app\.ru spambot=yes
 SetEnvIfNoCase Referer 6128786\.com spambot=yes
 SetEnvIfNoCase Referer 66cpwgln\.space spambot=yes
 SetEnvIfNoCase Referer 6hopping\.com spambot=yes
@@ -1924,6 +1925,7 @@ SetEnvIfNoCase Referer data\.vtc\.pw spambot=yes
 SetEnvIfNoCase Referer data1\.scopich\.com spambot=yes
 SetEnvIfNoCase Referer dataloading\.net spambot=yes
 SetEnvIfNoCase Referer date\-withme\.com spambot=yes
+SetEnvIfNoCase Referer dating\-app\.ru spambot=yes
 SetEnvIfNoCase Referer dating\-time\-now\.com spambot=yes
 SetEnvIfNoCase Referer datract\.com spambot=yes
 SetEnvIfNoCase Referer datsun\-do\.com spambot=yes
@@ -3636,6 +3638,7 @@ SetEnvIfNoCase Referer macresource\.co\.uk spambot=yes
 SetEnvIfNoCase Referer macrotek\.ru spambot=yes
 SetEnvIfNoCase Referer mactechinfo\.info spambot=yes
 SetEnvIfNoCase Referer madot\.onlinewebshop\.net spambot=yes
+SetEnvIfNoCase Referer mafa\-free\.com spambot=yes
 SetEnvIfNoCase Referer mafcards\.ru spambot=yes
 SetEnvIfNoCase Referer magazin\-pics\.ru spambot=yes
 SetEnvIfNoCase Referer magazintiande\.ru spambot=yes
@@ -6094,6 +6097,7 @@ SetEnvIfNoCase Referer wallpapers\-best\.com spambot=yes
 SetEnvIfNoCase Referer wallpapersdesk\.info spambot=yes
 SetEnvIfNoCase Referer wallpapersist\.com spambot=yes
 SetEnvIfNoCase Referer wallpaperstock\.net spambot=yes
+SetEnvIfNoCase Referer wanker\.us spambot=yes
 SetEnvIfNoCase Referer wapsite\.me spambot=yes
 SetEnvIfNoCase Referer wareseeker\.com spambot=yes
 SetEnvIfNoCase Referer warezaccess\.com spambot=yes
