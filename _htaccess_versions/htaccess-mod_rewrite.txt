@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.12.777
+### Version: V3.2017.12.779
 ### Bad Referrer Count: 6069
-### Bad Bot Count: 503
+### Bad Bot Count: 509
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -78,6 +78,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Chlooe.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Claritybot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cliqzbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cloud\ mapping.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^coccocbot\-web.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cogentbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^cognitiveseo.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Collector.* [NC,OR]
@@ -100,6 +101,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Demon.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Deusu.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Devil.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Digincore.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DigitalPebble.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DIIbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Dirbuster.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Disco.* [NC,OR]
@@ -135,6 +137,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Extreme\ Picture\ Finder.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^EyeNetIE.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Ezooms.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^FDM.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^FemtosearchBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^FHscan.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Fimap.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Firefox\/7\.0.* [NC,OR]
@@ -192,6 +195,7 @@ RewriteCond %{HTTP_USER_AGENT} ^InterGET.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Internet\ Ninja.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^InternetSeer.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^internetVista\ monitor.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^ips\-agent.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Iria.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^IRLbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Iskanie.* [NC,OR]
@@ -289,6 +293,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Ninja.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Nmap.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^NPbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Nutch.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^oBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Octopus.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Offline\ Explorer.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Offline\ Navigator.* [NC,OR]
@@ -378,6 +383,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Sitevigil.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Slackbot\-LinkExpanding.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^SlySearch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^SmartDownload.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^SMTBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Snake.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Snapbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Snoopy.* [NC,OR]

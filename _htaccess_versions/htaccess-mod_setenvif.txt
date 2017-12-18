@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.12.777
+### Version: V3.2017.12.779
 ### Bad Referrer Count: 6069
-### Bad Bot Count: 503
+### Bad Bot Count: 509
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -77,6 +77,7 @@ SetEnvIfNoCase User-Agent ^Chlooe.* spambot=yes
 SetEnvIfNoCase User-Agent ^Claritybot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cliqzbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cloud\ mapping.* spambot=yes
+SetEnvIfNoCase User-Agent ^coccocbot\-web.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cogentbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^cognitiveseo.* spambot=yes
 SetEnvIfNoCase User-Agent ^Collector.* spambot=yes
@@ -99,6 +100,7 @@ SetEnvIfNoCase User-Agent ^Demon.* spambot=yes
 SetEnvIfNoCase User-Agent ^Deusu.* spambot=yes
 SetEnvIfNoCase User-Agent ^Devil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Digincore.* spambot=yes
+SetEnvIfNoCase User-Agent ^DigitalPebble.* spambot=yes
 SetEnvIfNoCase User-Agent ^DIIbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Dirbuster.* spambot=yes
 SetEnvIfNoCase User-Agent ^Disco.* spambot=yes
@@ -134,6 +136,7 @@ SetEnvIfNoCase User-Agent ^Extreme\ Picture\ Finder.* spambot=yes
 SetEnvIfNoCase User-Agent ^EyeNetIE.* spambot=yes
 SetEnvIfNoCase User-Agent ^Ezooms.* spambot=yes
 SetEnvIfNoCase User-Agent ^FDM.* spambot=yes
+SetEnvIfNoCase User-Agent ^FemtosearchBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^FHscan.* spambot=yes
 SetEnvIfNoCase User-Agent ^Fimap.* spambot=yes
 SetEnvIfNoCase User-Agent ^Firefox\/7\.0.* spambot=yes
@@ -191,6 +194,7 @@ SetEnvIfNoCase User-Agent ^InterGET.* spambot=yes
 SetEnvIfNoCase User-Agent ^Internet\ Ninja.* spambot=yes
 SetEnvIfNoCase User-Agent ^InternetSeer.* spambot=yes
 SetEnvIfNoCase User-Agent ^internetVista\ monitor.* spambot=yes
+SetEnvIfNoCase User-Agent ^ips\-agent.* spambot=yes
 SetEnvIfNoCase User-Agent ^Iria.* spambot=yes
 SetEnvIfNoCase User-Agent ^IRLbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Iskanie.* spambot=yes
@@ -288,6 +292,7 @@ SetEnvIfNoCase User-Agent ^Ninja.* spambot=yes
 SetEnvIfNoCase User-Agent ^Nmap.* spambot=yes
 SetEnvIfNoCase User-Agent ^NPbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Nutch.* spambot=yes
+SetEnvIfNoCase User-Agent ^oBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Octopus.* spambot=yes
 SetEnvIfNoCase User-Agent ^Offline\ Explorer.* spambot=yes
 SetEnvIfNoCase User-Agent ^Offline\ Navigator.* spambot=yes
@@ -377,6 +382,7 @@ SetEnvIfNoCase User-Agent ^Sitevigil.* spambot=yes
 SetEnvIfNoCase User-Agent ^Slackbot\-LinkExpanding.* spambot=yes
 SetEnvIfNoCase User-Agent ^SlySearch.* spambot=yes
 SetEnvIfNoCase User-Agent ^SmartDownload.* spambot=yes
+SetEnvIfNoCase User-Agent ^SMTBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Snake.* spambot=yes
 SetEnvIfNoCase User-Agent ^Snapbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Snoopy.* spambot=yes
