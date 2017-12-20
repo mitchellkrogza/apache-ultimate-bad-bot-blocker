@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2017.12.779
-### Updated: Mon Dec 18 11:59:40 SAST 2017
+### Version: V3.2017.12.780
+### Updated: Wed Dec 20 12:42:22 SAST 2017
 ### Bad Bot Count: 509
 ###################################################
 ### Version Information ##
@@ -257,9 +257,9 @@ User-agent: EyeNetIE
 Disallow:/
 User-agent: Ezooms
 Disallow:/
-User-agent: FemtosearchBot
-Disallow:/
 User-agent: FDM
+Disallow:/
+User-agent: FemtosearchBot
 Disallow:/
 User-agent: FHscan
 Disallow:/
