@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2017.12.780
-### Bad Referrer Count: 6096
+### Version: V3.2018.01.781
+### Bad Referrer Count: 6098
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -2109,6 +2109,7 @@ SetEnvIfNoCase Referer doxyporno\.com spambot=yes
 SetEnvIfNoCase Referer doyouknowtheword\-flummox\.ml spambot=yes
 SetEnvIfNoCase Referer dpihatinh\.gov\.vn spambot=yes
 SetEnvIfNoCase Referer dprtb\.com spambot=yes
+SetEnvIfNoCase Referer dptaughtme\.com spambot=yes
 SetEnvIfNoCase Referer drhomes\.biz spambot=yes
 SetEnvIfNoCase Referer drillsaw\.ru spambot=yes
 SetEnvIfNoCase Referer driving\.kiev\.ua spambot=yes
@@ -5561,6 +5562,7 @@ SetEnvIfNoCase Referer tedxrj\.com spambot=yes
 SetEnvIfNoCase Referer tedy\.su spambot=yes
 SetEnvIfNoCase Referer teenbbw\.yopoint\.in spambot=yes
 SetEnvIfNoCase Referer teesdaleflyballclub\.co\.uk spambot=yes
+SetEnvIfNoCase Referer teguh\.info spambot=yes
 SetEnvIfNoCase Referer tehngr\.ru spambot=yes
 SetEnvIfNoCase Referer telefonsex\-ohne0900\.net spambot=yes
 SetEnvIfNoCase Referer telefonsexi\.com spambot=yes
