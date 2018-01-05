@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.01.782
-### Updated: Thu Jan  4 13:59:02 SAST 2018
-### Bad Referrer Count: 6098
+### Version: V3.2018.01.783
+### Updated: Fri Jan  5 14:00:19 SAST 2018
+### Bad Referrer Count: 6101
 ### Bad Bot Count: 509
 ###################################################
 ### Version Information ##
@@ -1908,6 +1908,7 @@ SetEnvIfNoCase Referer ~*c\-gainsbourg\.com spam_ref
 SetEnvIfNoCase Referer ~*cgi2\.nintendo\.co\.jp spam_ref
 SetEnvIfNoCase Referer ~*charmstroy\.info spam_ref
 SetEnvIfNoCase Referer ~*chastnoeporno\.com spam_ref
+SetEnvIfNoCase Referer ~*chatroulette\.life spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.online spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.si spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.video spam_ref
@@ -3466,6 +3467,7 @@ SetEnvIfNoCase Referer ~*inzn\.ru spam_ref
 SetEnvIfNoCase Referer ~*io9\.com spam_ref
 SetEnvIfNoCase Referer ~*iomoio\.net spam_ref
 SetEnvIfNoCase Referer ~*iopeninghours\.co\.uk spam_ref
+SetEnvIfNoCase Referer ~*ipchicken\.com spam_ref
 SetEnvIfNoCase Referer ~*ip\-guide\.com spam_ref
 SetEnvIfNoCase Referer ~*iphantom\.com spam_ref
 SetEnvIfNoCase Referer ~*iplogger\.org spam_ref
@@ -6366,6 +6368,7 @@ SetEnvIfNoCase Referer ~*vizitki\.net spam_ref
 SetEnvIfNoCase Referer ~*vkak\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkgaleria\.com spam_ref
 SetEnvIfNoCase Referer ~*vk\-mus\.ru spam_ref
+SetEnvIfNoCase Referer ~*vkonche\.com spam_ref
 SetEnvIfNoCase Referer ~*vkontaktemusic\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkontarkte\.com spam_ref
 SetEnvIfNoCase Referer ~*vksaver\-all\.ru spam_ref

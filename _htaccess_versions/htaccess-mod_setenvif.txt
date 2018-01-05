@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.782
-### Bad Referrer Count: 6098
+### Version: V3.2018.01.783
+### Bad Referrer Count: 6101
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -1615,6 +1615,7 @@ SetEnvIfNoCase Referer cfsrating\.sonicwall\.com spambot=yes
 SetEnvIfNoCase Referer cgi2\.nintendo\.co\.jp spambot=yes
 SetEnvIfNoCase Referer charmstroy\.info spambot=yes
 SetEnvIfNoCase Referer chastnoeporno\.com spambot=yes
+SetEnvIfNoCase Referer chatroulette\.life spambot=yes
 SetEnvIfNoCase Referer chatroulette\.online spambot=yes
 SetEnvIfNoCase Referer chatroulette\.si spambot=yes
 SetEnvIfNoCase Referer chatroulette\.video spambot=yes
@@ -3175,6 +3176,7 @@ SetEnvIfNoCase Referer io9\.com spambot=yes
 SetEnvIfNoCase Referer iomoio\.net spambot=yes
 SetEnvIfNoCase Referer iopeninghours\.co\.uk spambot=yes
 SetEnvIfNoCase Referer ip\-guide\.com spambot=yes
+SetEnvIfNoCase Referer ipchicken\.com spambot=yes
 SetEnvIfNoCase Referer iphantom\.com spambot=yes
 SetEnvIfNoCase Referer iplogger\.org spambot=yes
 SetEnvIfNoCase Referer iplusbit\.blogspot\.co\.za spambot=yes
@@ -6073,6 +6075,7 @@ SetEnvIfNoCase Referer vizitki\.net spambot=yes
 SetEnvIfNoCase Referer vk\-mus\.ru spambot=yes
 SetEnvIfNoCase Referer vkak\.ru spambot=yes
 SetEnvIfNoCase Referer vkgaleria\.com spambot=yes
+SetEnvIfNoCase Referer vkonche\.com spambot=yes
 SetEnvIfNoCase Referer vkontaktemusic\.ru spambot=yes
 SetEnvIfNoCase Referer vkontarkte\.com spambot=yes
 SetEnvIfNoCase Referer vksaver\-all\.ru spambot=yes
