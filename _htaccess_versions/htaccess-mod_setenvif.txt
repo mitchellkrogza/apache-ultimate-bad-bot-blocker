@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.784
-### Bad Referrer Count: 6101
+### Version: V3.2018.01.785
+### Bad Referrer Count: 6103
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -1886,6 +1886,7 @@ SetEnvIfNoCase Referer creditwell\.ru spambot=yes
 SetEnvIfNoCase Referer crest\-poloski\.ru spambot=yes
 SetEnvIfNoCase Referer crest3d\.ru spambot=yes
 SetEnvIfNoCase Referer crirussian\.ru spambot=yes
+SetEnvIfNoCase Referer crynet\.cc spambot=yes
 SetEnvIfNoCase Referer crystalslot\.com spambot=yes
 SetEnvIfNoCase Referer cs\-passion\.pl spambot=yes
 SetEnvIfNoCase Referer cscwtalkto\.site spambot=yes
@@ -5591,6 +5592,7 @@ SetEnvIfNoCase Referer the\-torrent\-tracker\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer the\-trader\.net spambot=yes
 SetEnvIfNoCase Referer the\-usa\-games\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer theallgirlarcade\.com spambot=yes
+SetEnvIfNoCase Referer theautoprofit\.ml spambot=yes
 SetEnvIfNoCase Referer thebestweightlosspills\.ovh spambot=yes
 SetEnvIfNoCase Referer thebitcoincode\.com spambot=yes
 SetEnvIfNoCase Referer thebluenoodle\.com spambot=yes

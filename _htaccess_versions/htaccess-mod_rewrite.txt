@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.784
-### Bad Referrer Count: 6101
+### Version: V3.2018.01.785
+### Bad Referrer Count: 6103
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -1887,6 +1887,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*creditwell\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*crest\-poloski\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*crest3d\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*crirussian\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*crynet\.cc.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*crystalslot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cs\-passion\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cscwtalkto\.site.*$ [NC,OR]
@@ -5592,6 +5593,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-torrent\-tracker\.blogspot
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-trader\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*the\-usa\-games\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*theallgirlarcade\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*theautoprofit\.ml.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebestweightlosspills\.ovh.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebitcoincode\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*thebluenoodle\.com.*$ [NC,OR]
