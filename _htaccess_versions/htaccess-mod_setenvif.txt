@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.785
-### Bad Referrer Count: 6103
+### Version: V3.2018.01.786
+### Bad Referrer Count: 6110
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -2177,6 +2177,7 @@ SetEnvIfNoCase Referer edwinkonijn\.com\.au spambot=yes
 SetEnvIfNoCase Referer ee77ee\.com spambot=yes
 SetEnvIfNoCase Referer efkt\.jp spambot=yes
 SetEnvIfNoCase Referer efnor\-ac\.com spambot=yes
+SetEnvIfNoCase Referer ege\-russian\.ru spambot=yes
 SetEnvIfNoCase Referer egovaleo\.it spambot=yes
 SetEnvIfNoCase Referer egvar\.net spambot=yes
 SetEnvIfNoCase Referer ekaterinburg\.xrus\.org spambot=yes
@@ -2245,6 +2246,7 @@ SetEnvIfNoCase Referer empathica\.com spambot=yes
 SetEnvIfNoCase Referer empirepoker\.com spambot=yes
 SetEnvIfNoCase Referer empis\.magix\.net spambot=yes
 SetEnvIfNoCase Referer en\.altezza\.travel spambot=yes
+SetEnvIfNoCase Referer en\.home\-task\.com spambot=yes
 SetEnvIfNoCase Referer enbersoft\.com spambot=yes
 SetEnvIfNoCase Referer encodable\.com spambot=yes
 SetEnvIfNoCase Referer energy\-ua\.com spambot=yes
@@ -2293,6 +2295,7 @@ SetEnvIfNoCase Referer esopini\.com spambot=yes
 SetEnvIfNoCase Referer espaceinventoristes\.com spambot=yes
 SetEnvIfNoCase Referer essay\-edu\.biz spambot=yes
 SetEnvIfNoCase Referer essay\-writing\.work spambot=yes
+SetEnvIfNoCase Referer essayassist\.com spambot=yes
 SetEnvIfNoCase Referer essaypro\.com spambot=yes
 SetEnvIfNoCase Referer essayservicewriting\.org spambot=yes
 SetEnvIfNoCase Referer este\-line\.com\.ua spambot=yes
@@ -2759,6 +2762,7 @@ SetEnvIfNoCase Referer glasof\.es spambot=yes
 SetEnvIfNoCase Referer glass\-msk\.ru spambot=yes
 SetEnvIfNoCase Referer glastecfilms\.com\.my spambot=yes
 SetEnvIfNoCase Referer glavprofit\.ru spambot=yes
+SetEnvIfNoCase Referer glavtral\.ru spambot=yes
 SetEnvIfNoCase Referer glcomputers\.ru spambot=yes
 SetEnvIfNoCase Referer glicol\.kz spambot=yes
 SetEnvIfNoCase Referer global\-ics\.co\.za spambot=yes
@@ -2972,6 +2976,7 @@ SetEnvIfNoCase Referer hoholikik\.club spambot=yes
 SetEnvIfNoCase Referer hol\.es spambot=yes
 SetEnvIfNoCase Referer holidaypics\.org spambot=yes
 SetEnvIfNoCase Referer hollywoodactress\.info spambot=yes
+SetEnvIfNoCase Referer home\-task\.com spambot=yes
 SetEnvIfNoCase Referer home\.myplaycity\.com spambot=yes
 SetEnvIfNoCase Referer homeandhealth\.ru spambot=yes
 SetEnvIfNoCase Referer homedecoguide\.info spambot=yes
@@ -3641,6 +3646,7 @@ SetEnvIfNoCase Referer lutherstable\.org spambot=yes
 SetEnvIfNoCase Referer luxmagazine\.cf spambot=yes
 SetEnvIfNoCase Referer luxup\.ru spambot=yes
 SetEnvIfNoCase Referer lyngdalhudterapi\.no spambot=yes
+SetEnvIfNoCase Referer lyrics\.home\-task\.com spambot=yes
 SetEnvIfNoCase Referer lyrster\.com spambot=yes
 SetEnvIfNoCase Referer m\-google\.xyz spambot=yes
 SetEnvIfNoCase Referer m\.b00kmarks\.com spambot=yes
@@ -6266,6 +6272,7 @@ SetEnvIfNoCase Referer witherrom55\.eklablog\.fr spambot=yes
 SetEnvIfNoCase Referer withstandingheartwarming\.com spambot=yes
 SetEnvIfNoCase Referer wjgony\.com spambot=yes
 SetEnvIfNoCase Referer wladimirpayen\.com spambot=yes
+SetEnvIfNoCase Referer wleuaprpxuvr\.ga spambot=yes
 SetEnvIfNoCase Referer wma\-x\.com spambot=yes
 SetEnvIfNoCase Referer wnhjavlhezp\.gq spambot=yes
 SetEnvIfNoCase Referer wnoz\.de spambot=yes
