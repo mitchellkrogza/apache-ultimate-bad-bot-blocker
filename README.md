@@ -142,11 +142,11 @@ Allows you to add your own custom list of user agents with this new include file
 
 ## Step 6:
 
-**INCLUDE THE GLOBALBLACKLIST.CONF FILE INTO A VIRTUALHOST**
+**INCLUDE THE GLOBALBLACKLIST.CONF**
 
- Include the globalblacklist.conf file in the beginning of a directory block just after your opening Options statements and before the rest of your host config example below. **Remove the "<<<<<< This needs to be added" part**
+Include the globalblacklist.conf file in the beginning of a directory block just after your opening Options statements and before the rest of your host config example below. **Remove the "<<<<<< This needs to be added" part**
 
-```
+```apache
  <VirtualHost *:443>
  .....
  .....
@@ -158,6 +158,22 @@ Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
  ......
  BEGIN WordPress
 <IfModule mod_rewrite.c>
+```
+
+You can include globalblacklist.conf globally (for all virtual hosts) if you put the following configuration after virtual host configuration.
+
+```apache
+# ######################################
+# GLOBAL! deny bad bots and IP addresses
+# ######################################
+#
+# should be set after <VirtualHost>s see https://httpd.apache.org/docs/2.4/sections.html#merging
+<Location "/">
+	# AND-combine with preceding configuration sections  
+	AuthMerging And
+	# include black list
+	Include /etc/apache2/custom.d/globalblacklist.conf
+</Location>
 ```
 
 ## Step 7:
