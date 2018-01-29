@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.791
-### Bad Referrer Count: 6162
+### Version: V3.2018.01.792
+### Bad Referrer Count: 6174
 ### Bad Bot Count: 509
 ### Version Information ##
 
@@ -803,6 +803,7 @@ SetEnvIfNoCase Referer agreda\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer agroeconom\.kz spambot=yes
 SetEnvIfNoCase Referer agysya\.ru spambot=yes
 SetEnvIfNoCase Referer ahrefs\.com spambot=yes
+SetEnvIfNoCase Referer ahrntal\.verymes\.xyz spambot=yes
 SetEnvIfNoCase Referer aihelen\.net spambot=yes
 SetEnvIfNoCase Referer aimayangzhi\.com spambot=yes
 SetEnvIfNoCase Referer air\-edem\.ru spambot=yes
@@ -1204,6 +1205,7 @@ SetEnvIfNoCase Referer bcmp\.org spambot=yes
 SetEnvIfNoCase Referer bdsmgalls\.net spambot=yes
 SetEnvIfNoCase Referer beachdriveblog\.com spambot=yes
 SetEnvIfNoCase Referer beachpics\.com spambot=yes
+SetEnvIfNoCase Referer bear\.gotcher\.us spambot=yes
 SetEnvIfNoCase Referer beatifullandscape\.co spambot=yes
 SetEnvIfNoCase Referer beauby\.ru spambot=yes
 SetEnvIfNoCase Referer beauty\-b0x\.pl spambot=yes
@@ -1381,6 +1383,7 @@ SetEnvIfNoCase Referer bombla\.org spambot=yes
 SetEnvIfNoCase Referer bonanza\-fortune\.men spambot=yes
 SetEnvIfNoCase Referer bongacams\.com spambot=yes
 SetEnvIfNoCase Referer bongiornos\.info spambot=yes
+SetEnvIfNoCase Referer bonkers\.name spambot=yes
 SetEnvIfNoCase Referer bonky\.biz spambot=yes
 SetEnvIfNoCase Referer bonux\.nextview\.ru spambot=yes
 SetEnvIfNoCase Referer bonvillan\.com spambot=yes
@@ -1938,6 +1941,7 @@ SetEnvIfNoCase Referer damedingel\.ya\.ru spambot=yes
 SetEnvIfNoCase Referer danashop\.ru spambot=yes
 SetEnvIfNoCase Referer danceuniverse\.ru spambot=yes
 SetEnvIfNoCase Referer dandiyabeats\.in spambot=yes
+SetEnvIfNoCase Referer daneshetabiat\.com spambot=yes
 SetEnvIfNoCase Referer dangphoto\.trade spambot=yes
 SetEnvIfNoCase Referer danschawbel\.com spambot=yes
 SetEnvIfNoCase Referer daooda\.com spambot=yes
@@ -2181,6 +2185,7 @@ SetEnvIfNoCase Referer edelstahlschornstein\-123\.de spambot=yes
 SetEnvIfNoCase Referer edge\.sharethis\.com spambot=yes
 SetEnvIfNoCase Referer editmedios\.com spambot=yes
 SetEnvIfNoCase Referer editors\.choice6912650\.hulfingtonpost\.com spambot=yes
+SetEnvIfNoCase Referer ednorxmed\.com spambot=yes
 SetEnvIfNoCase Referer educatemetv\.com spambot=yes
 SetEnvIfNoCase Referer education\-cz\.ru spambot=yes
 SetEnvIfNoCase Referer educontest\.net spambot=yes
@@ -2697,6 +2702,7 @@ SetEnvIfNoCase Referer gardene\.ru spambot=yes
 SetEnvIfNoCase Referer gate5\.co\.za spambot=yes
 SetEnvIfNoCase Referer gateway\.zscalerone\.net spambot=yes
 SetEnvIfNoCase Referer gateway\.zscalertwo\.net spambot=yes
+SetEnvIfNoCase Referer gavuer\.ru spambot=yes
 SetEnvIfNoCase Referer gay\-file\.com spambot=yes
 SetEnvIfNoCase Referer gay\.adultgalls\.com spambot=yes
 SetEnvIfNoCase Referer gaygalls\.net spambot=yes
@@ -2832,6 +2838,7 @@ SetEnvIfNoCase Referer gorodservis\.ru spambot=yes
 SetEnvIfNoCase Referer gosarhivrt\.ru spambot=yes
 SetEnvIfNoCase Referer gosmeb\.ru spambot=yes
 SetEnvIfNoCase Referer gosreg\.amchs\.ru spambot=yes
+SetEnvIfNoCase Referer gotcher\.us spambot=yes
 SetEnvIfNoCase Referer gotomontenegro\.net spambot=yes
 SetEnvIfNoCase Referer gotorussia\.com spambot=yes
 SetEnvIfNoCase Referer gotwebsite1\.com spambot=yes
@@ -3379,6 +3386,7 @@ SetEnvIfNoCase Referer kino2018\.club spambot=yes
 SetEnvIfNoCase Referer kinobaks\.com spambot=yes
 SetEnvIfNoCase Referer kinobest\.pl spambot=yes
 SetEnvIfNoCase Referer kinocccp\.net spambot=yes
+SetEnvIfNoCase Referer kinoduh\.ru spambot=yes
 SetEnvIfNoCase Referer kinofak\.net spambot=yes
 SetEnvIfNoCase Referer kinoflux\.net spambot=yes
 SetEnvIfNoCase Referer kinogolos\.ru spambot=yes
@@ -3426,6 +3434,7 @@ SetEnvIfNoCase Referer kongruan\.com spambot=yes
 SetEnvIfNoCase Referer konkursov\.net spambot=yes
 SetEnvIfNoCase Referer konkursowo\-24\.pl spambot=yes
 SetEnvIfNoCase Referer konoplisemena\.com spambot=yes
+SetEnvIfNoCase Referer konpax\.com spambot=yes
 SetEnvIfNoCase Referer konteiner24\.com spambot=yes
 SetEnvIfNoCase Referer konturkrasoty\.ru spambot=yes
 SetEnvIfNoCase Referer koopilka\.com spambot=yes
@@ -5248,6 +5257,7 @@ SetEnvIfNoCase Referer signal03\.ru spambot=yes
 SetEnvIfNoCase Referer signoredom\.com spambot=yes
 SetEnvIfNoCase Referer signx\.info spambot=yes
 SetEnvIfNoCase Referer siha\.de spambot=yes
+SetEnvIfNoCase Referer sildenafil\-tadalafil\.info spambot=yes
 SetEnvIfNoCase Referer sildenafilcitratemed\.com spambot=yes
 SetEnvIfNoCase Referer silktide\.com spambot=yes
 SetEnvIfNoCase Referer silverage\.ru spambot=yes
@@ -6060,6 +6070,7 @@ SetEnvIfNoCase Referer vepad\.com spambot=yes
 SetEnvIfNoCase Referer vereo\.eu spambot=yes
 SetEnvIfNoCase Referer versaut\.xxx\-cam\.webcam spambot=yes
 SetEnvIfNoCase Referer vertaform\.com spambot=yes
+SetEnvIfNoCase Referer verymes\.xyz spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.com spambot=yes
 SetEnvIfNoCase Referer vesnatehno\.ru spambot=yes
 SetEnvIfNoCase Referer vezuviy\.su spambot=yes
@@ -6340,6 +6351,7 @@ SetEnvIfNoCase Referer word\-vorlagen\.xyz spambot=yes
 SetEnvIfNoCase Referer wordkeyhelper\.com spambot=yes
 SetEnvIfNoCase Referer wordpress\-crew\.net spambot=yes
 SetEnvIfNoCase Referer wordpresscore\.com spambot=yes
+SetEnvIfNoCase Referer workle\.website spambot=yes
 SetEnvIfNoCase Referer works\.if\.ua spambot=yes
 SetEnvIfNoCase Referer world\-mmo\.com spambot=yes
 SetEnvIfNoCase Referer worldhistory\.biz spambot=yes
