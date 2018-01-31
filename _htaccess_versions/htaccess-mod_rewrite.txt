@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.01.792
+### Version: V3.2018.01.793
 ### Bad Referrer Count: 6174
-### Bad Bot Count: 509
+### Bad Bot Count: 510
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -266,6 +266,7 @@ RewriteCond %{HTTP_USER_AGENT} ^MSFrontPage.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MSIECrawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Msrabot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MS\ Web\ Services\ Client\ Protocol.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^muhstik\-scan.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Musobot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Name\ Intelligence.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Nameprotect.* [NC,OR]
