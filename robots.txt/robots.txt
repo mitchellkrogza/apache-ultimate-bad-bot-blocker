@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.01.793
-### Updated: Wed Jan 31 09:22:49 SAST 2018
+### Version: V3.2018.02.795
+### Updated: Fri Feb 16 09:02:06 SAST 2018
 ### Bad Bot Count: 510
 ###################################################
 ### Version Information ##
@@ -9,8 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: muhstik-scan
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
@@ -518,6 +516,8 @@ Disallow:/
 User-agent: Msrabot
 Disallow:/
 User-agent: MS Web Services Client Protocol
+Disallow:/
+User-agent: muhstik-scan
 Disallow:/
 User-agent: Musobot
 Disallow:/
