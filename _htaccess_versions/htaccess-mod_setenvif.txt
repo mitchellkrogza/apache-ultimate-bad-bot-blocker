@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.02.795
-### Bad Referrer Count: 6174
+### Version: V3.2018.02.796
+### Bad Referrer Count: 6177
 ### Bad Bot Count: 510
 ### Version Information ##
 
@@ -4078,6 +4078,7 @@ SetEnvIfNoCase Referer nagdak\.ru spambot=yes
 SetEnvIfNoCase Referer nailsimg\.com spambot=yes
 SetEnvIfNoCase Referer naj\-filmy24\.pl spambot=yes
 SetEnvIfNoCase Referer najaden\.no spambot=yes
+SetEnvIfNoCase Referer nakozhe\.com spambot=yes
 SetEnvIfNoCase Referer nalogovyy\-kodeks\.ru spambot=yes
 SetEnvIfNoCase Referer nalogovyykodeks\.ru spambot=yes
 SetEnvIfNoCase Referer namenectar\.com spambot=yes
@@ -4608,6 +4609,7 @@ SetEnvIfNoCase Referer positive2b\.ru spambot=yes
 SetEnvIfNoCase Referer pospr\.waw\.pl spambot=yes
 SetEnvIfNoCase Referer postclass\.com spambot=yes
 SetEnvIfNoCase Referer potoideas\.us spambot=yes
+SetEnvIfNoCase Referer potolokelekor\.ru spambot=yes
 SetEnvIfNoCase Referer powc\.r\.ca\.d\.sendibm2\.com spambot=yes
 SetEnvIfNoCase Referer powenlite24\.ru spambot=yes
 SetEnvIfNoCase Referer powitania\.pl spambot=yes
@@ -4796,6 +4798,7 @@ SetEnvIfNoCase Referer rapevideosmovies\.com spambot=yes
 SetEnvIfNoCase Referer rapidgator\-porn\.ga spambot=yes
 SetEnvIfNoCase Referer rapidokbrain\.com spambot=yes
 SetEnvIfNoCase Referer rapidsites\.pro spambot=yes
+SetEnvIfNoCase Referer raschtextil\.com\.ua spambot=yes
 SetEnvIfNoCase Referer rasteniya\-vs\-zombi\.ru spambot=yes
 SetEnvIfNoCase Referer ratemodels\.net spambot=yes
 SetEnvIfNoCase Referer razamicroelectronics\.com spambot=yes
