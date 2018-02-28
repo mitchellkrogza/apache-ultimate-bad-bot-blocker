@@ -938,6 +938,7 @@ SetEnvIfNoCase Referer ~*buqyxa\.rincian\.info spam_ref
 SetEnvIfNoCase Referer ~*burger\-imperia\.com spam_ref
 SetEnvIfNoCase Referer ~*burkesales\.com spam_ref
 SetEnvIfNoCase Referer ~*burn\-fat\.ga spam_ref
+SetEnvIfNoCase Referer ~*buron\.pw spam_ref
 SetEnvIfNoCase Referer ~*businescoop\.men spam_ref
 SetEnvIfNoCase Referer ~*businesn\.men spam_ref
 SetEnvIfNoCase Referer ~*business\-made\-fun\.com spam_ref
@@ -5885,6 +5886,7 @@ SetEnvIfNoCase Referer ~*wygraj\-skiny\.win spam_ref
 SetEnvIfNoCase Referer ~*wygraj\-teraz\.com spam_ref
 SetEnvIfNoCase Referer ~*wyniki\-lista\.pl spam_ref
 SetEnvIfNoCase Referer ~*wzgyyq\.com spam_ref
+SetEnvIfNoCase Referer ~*x69ty\.ru spam_ref
 SetEnvIfNoCase Referer ~*xaijo\.com spam_ref
 SetEnvIfNoCase Referer ~*xaylapdiendanang\.com spam_ref
 SetEnvIfNoCase Referer ~*xbaboon\.com spam_ref
