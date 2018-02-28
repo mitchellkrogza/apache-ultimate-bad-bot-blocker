@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.02.797
+### Version: V3.2018.02.799
 ### Bad Referrer Count: 6191
-### Bad Bot Count: 510
+### Bad Bot Count: 509
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -242,7 +242,7 @@ RewriteCond %{HTTP_USER_AGENT} ^lwp\-trivial.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Magnet.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Mag\-Net.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^magpie\-crawler.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Mail\.ru.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Mail\.RU\_Bot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Majestic12.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MarkMonitor.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^MarkWatch.* [NC,OR]
@@ -333,7 +333,6 @@ RewriteCond %{HTTP_USER_AGENT} ^Psbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Pump.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PyCurl.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^QueryN\ Metasearch.* [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^Qwantify.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankActive.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankActiveLinkBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankFlex.* [NC,OR]
