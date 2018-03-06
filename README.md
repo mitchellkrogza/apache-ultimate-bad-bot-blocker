@@ -58,8 +58,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 # CONFIGURATION OF THE APACHE BAD BOT BLOCKER:
 
-- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
-- Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
+- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_other_distros/CPANEL-Instructions.md
+- Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_htaccess_versions/README.md
 - Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 - Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
 - Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
@@ -225,7 +225,17 @@ The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
 Updating to the latest version is now as simple as:
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
+### For Apache 2.2
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
+
+`sudo apache2ctl configtest`
+
+`sudo service apache2 reload` 
+
+### For Apache 2.4
+
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
 
 `sudo apache2ctl configtest`
 
@@ -237,8 +247,13 @@ And you will be up to date with all your whitelisted domains included automatica
 
 See my latest auto updater bash script at:
 
-https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/update-apacheblocker.sh
+### For Apache 2.2
 
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Apache_2.2/update-apacheblocker.sh
+
+### For Apache 2.4
+
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Apache_2.4/update-apacheblocker.sh
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
@@ -267,17 +282,20 @@ Relax now and sleep better at night knowing your site is telling all those baddi
 -    Browser Adware and Malware (Yontoo etc)
 
 ### To contribute your own bad referers 
+
 please add them into the
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Pull%20Requests%20Here%20Please/badreferers.list
 file and then send a Pull Request (PR). 
 All additions will be checked for accuracy before being merged.
 
 ### Issues:
+
 Log any issues regarding incorrect listings on the issues system and they will be investigated
 and removed if necessary.
 
 ### No root access to your Apache server and Unable to run this blocker?
-Version 2.2017.03 introduced .htaccess versions of the spam referrer for those unable to run the full Apache Bad Bot Blocker look inside the .htaccess folder in this repo for instructions.
+
+Version 2.2017.03 introduced .htaccess versions of the spam referrer for those unable to run the full Apache Bad Bot Blocker look inside the https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/_htaccess_versions folder in this repo for instructions.
 
 ### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
