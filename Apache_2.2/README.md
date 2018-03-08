@@ -24,8 +24,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 <a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
-- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CPANEL-Instructions.md
-- Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/.htaccess
+- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_other_distros/CPANEL-Instructions.md
+- Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_htaccess_versions/README.md
 - Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 - Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
 - Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
@@ -41,11 +41,11 @@ Copy the contents of **globalblacklist.conf** into your /etc/apache2/custom.d fo
 
 `sudo mkdir /etc/apache2/custom.d`
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
 
 If your Linux distribution does not have wget you can replace the wget commands using curl as follows:
 
-`curl -sL https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -o /etc/apache2/custom.d/globalblacklist.conf`
+`curl -sL https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -o /etc/apache2/custom.d/globalblacklist.conf`
 
 ## Step 2:
 
@@ -55,12 +55,12 @@ Whitelist all your own domain names and IP addresses. **Please note important ch
 
 - copy the whitelist-ips.conf file into that folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf`
 
 
 - copy the whitelist-domains.conf file into the same folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf`
 
 Use nano, vim or any other text editor to edit both whitelist-ips.conf and whitelist-domains.conf to include all your own domain names and IP addresses that you want to specifically whitelist from the blocker script. 
 
@@ -74,7 +74,7 @@ Blacklist any IP addresses or Ranges you wish to keep out of your servers. **Ple
 
 - copy the blacklist-ips.conf file into that folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf`
 
 
 Use nano, vim or any other text editor to edit the blacklist-ips.conf file as you like. 
@@ -89,7 +89,7 @@ Scan for any bad referrer words you wish to keep out of your servers. **Please n
 
 - copy the bad-referrer-words.conf file into that folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf`
 
 
 Use nano, vim or any other text editor to edit the bad-referrer-words.conf file as you like. 
@@ -104,7 +104,7 @@ Allows you to add your own custom list of user agents with this new include file
 
 - copy the blacklist-user-agents.conf file into that folder
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf`
 
 **NOTE:** On the Apache Blocker if you want to over-ride any of the whitelisted bots you can add them to this include file and the previously whitelisted bots in the blocker will be over-ridden by this include file. So let's say for some "obscure" reason you really do not want any search engines like Googlebot or Bingbot to ever access or index your site, you add them to your blacklist-user-agents.conf and they will be over-ridden from the earlier whitelisting in the blocker. This now gives users total control over the blocker without every having to try and modify the globalblacklist.conf file. So now you can customize all your include files and you can still pull the daily updates of globalblacklist.conf and it will not touch any of your custom include files.
 
@@ -177,7 +177,7 @@ The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
 Updating to the latest version is now as simple as:
 
-`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
+`sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
 
 `sudo apache2ctl configtest`
 
@@ -189,7 +189,7 @@ And you will be up to date with all your whitelisted domains included automatica
 
 See my latest auto updater bash script at:
 
-https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/update-apacheblocker.sh
+https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/update-apacheblocker.sh
 
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
