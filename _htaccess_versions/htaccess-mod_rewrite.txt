@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.03.802
+### Version: V3.2018.03.803
 ### Bad Referrer Count: 6193
-### Bad Bot Count: 509
+### Bad Bot Count: 510
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -512,6 +512,7 @@ RewriteCond %{HTTP_USER_AGENT} ^x22Mozilla.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Xaldon\ WebSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Xaldon\_WebSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Xenu.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^xpymep1\.exe.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^YoudaoBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zade.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Zermelo.* [NC,OR]
