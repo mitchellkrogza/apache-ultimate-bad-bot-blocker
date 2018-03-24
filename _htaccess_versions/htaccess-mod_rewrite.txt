@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.03.806
+### Version: V3.2018.03.807
 ### Bad Referrer Count: 6215
-### Bad Bot Count: 509
+### Bad Bot Count: 513
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -26,6 +26,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Aipbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Alexibot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Alligator.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^AllSubmitter.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^AlphaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Anarchie.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Apexoo.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ASPSeek.* [NC,OR]
@@ -44,6 +45,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Barkrowler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BatchFTP.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Battleztar\ Bazinga.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BBBike.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^BDCbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BDFetch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^BetaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Bigfoot.* [NC,OR]
@@ -108,6 +110,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Disco.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Discobot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Discoverybot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DittoSpyder.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^DnyzBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainAppender.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainCrawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^DomainSigmaCrawler.* [NC,OR]
@@ -199,6 +202,7 @@ RewriteCond %{HTTP_USER_AGENT} ^ips\-agent.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Iria.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^IRLbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Iskanie.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^IstellaBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^JamesBOT.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Jbrofuzz.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^JennyBot.* [NC,OR]

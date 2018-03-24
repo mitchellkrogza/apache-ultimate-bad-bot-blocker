@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.03.806
+### Version: V3.2018.03.807
 ### Bad Referrer Count: 6215
-### Bad Bot Count: 509
+### Bad Bot Count: 513
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -25,6 +25,7 @@ SetEnvIfNoCase User-Agent ^Aipbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Alexibot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Alligator.* spambot=yes
 SetEnvIfNoCase User-Agent ^AllSubmitter.* spambot=yes
+SetEnvIfNoCase User-Agent ^AlphaBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Anarchie.* spambot=yes
 SetEnvIfNoCase User-Agent ^Apexoo.* spambot=yes
 SetEnvIfNoCase User-Agent ^ASPSeek.* spambot=yes
@@ -43,6 +44,7 @@ SetEnvIfNoCase User-Agent ^Barkrowler.* spambot=yes
 SetEnvIfNoCase User-Agent ^BatchFTP.* spambot=yes
 SetEnvIfNoCase User-Agent ^Battleztar\ Bazinga.* spambot=yes
 SetEnvIfNoCase User-Agent ^BBBike.* spambot=yes
+SetEnvIfNoCase User-Agent ^BDCbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^BDFetch.* spambot=yes
 SetEnvIfNoCase User-Agent ^BetaBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Bigfoot.* spambot=yes
@@ -107,6 +109,7 @@ SetEnvIfNoCase User-Agent ^Disco.* spambot=yes
 SetEnvIfNoCase User-Agent ^Discobot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Discoverybot.* spambot=yes
 SetEnvIfNoCase User-Agent ^DittoSpyder.* spambot=yes
+SetEnvIfNoCase User-Agent ^DnyzBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainAppender.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainCrawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^DomainSigmaCrawler.* spambot=yes
@@ -198,6 +201,7 @@ SetEnvIfNoCase User-Agent ^ips\-agent.* spambot=yes
 SetEnvIfNoCase User-Agent ^Iria.* spambot=yes
 SetEnvIfNoCase User-Agent ^IRLbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Iskanie.* spambot=yes
+SetEnvIfNoCase User-Agent ^IstellaBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^JamesBOT.* spambot=yes
 SetEnvIfNoCase User-Agent ^Jbrofuzz.* spambot=yes
 SetEnvIfNoCase User-Agent ^JennyBot.* spambot=yes
