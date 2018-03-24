@@ -1,14 +1,16 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.03.805
-### Updated: Sat Mar 24 12:04:45 SAST 2018
-### Bad Bot Count: 508
+### Version: V3.2018.03.806
+### Updated: Sat Mar 24 16:17:25 SAST 2018
+### Bad Bot Count: 509
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+User-agent: Shodan
+Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
