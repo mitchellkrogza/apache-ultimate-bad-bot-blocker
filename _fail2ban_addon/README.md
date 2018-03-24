@@ -19,10 +19,10 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 ##### Firewall: IPTables
 
 ### Dependancies: 
-#####requires apacherepeatoffender.conf in /etc/fail2ban/filter.d folder
-#####requires apacherepeatoffender.conf in /etc/fail2ban/action.d folder
-#####requires jail settings called [apacherepeatoffender]
-#####requires apache.repeatoffender file in /etc/fail2ban
+##### requires apacherepeatoffender.conf in /etc/fail2ban/filter.d folder
+##### requires apacherepeatoffender.conf in /etc/fail2ban/action.d folder
+##### requires jail settings called [apacherepeatoffender]
+##### requires apache.repeatoffender file in /etc/fail2ban
 `create with sudo touch /etc/fail2ban/apache.repeatoffender`
 
 `chmod +x /etc/fail2ban/apache.repeatoffender`
