@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.03.807
-### Updated: Sat Mar 24 16:26:03 SAST 2018
+### Version: V3.2018.03.809
+### Updated: Sun Mar 25 10:01:13 SAST 2018
 ### Bad Bot Count: 513
 ###################################################
 ### Version Information ##
@@ -9,14 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: BDCbot
-Disallow:/
-User-agent: IstellaBot
-Disallow:/
-User-agent: DnyzBot
-Disallow:/
-User-agent: AlphaBot
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 80legs
@@ -44,6 +36,8 @@ Disallow:/
 User-agent: Alligator
 Disallow:/
 User-agent: AllSubmitter
+Disallow:/
+User-agent: AlphaBot
 Disallow:/
 User-agent: Anarchie
 Disallow:/
@@ -80,6 +74,8 @@ Disallow:/
 User-agent: Battleztar Bazinga
 Disallow:/
 User-agent: BBBike
+Disallow:/
+User-agent: BDCbot
 Disallow:/
 User-agent: BDFetch
 Disallow:/
@@ -208,6 +204,8 @@ Disallow:/
 User-agent: Discoverybot
 Disallow:/
 User-agent: DittoSpyder
+Disallow:/
+User-agent: DnyzBot
 Disallow:/
 User-agent: DomainAppender
 Disallow:/
@@ -390,6 +388,8 @@ Disallow:/
 User-agent: IRLbot
 Disallow:/
 User-agent: Iskanie
+Disallow:/
+User-agent: IstellaBot
 Disallow:/
 User-agent: JamesBOT
 Disallow:/
