@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.03.809
-### Bad Referrer Count: 6215
+### Version: V3.2018.03.810
+### Bad Referrer Count: 6220
 ### Bad Bot Count: 513
 ### Version Information ##
 
@@ -1537,6 +1537,7 @@ SetEnvIfNoCase Referer camdenmemorials\.com spambot=yes
 SetEnvIfNoCase Referer camdolls\.com spambot=yes
 SetEnvIfNoCase Referer camel\-beach\.com spambot=yes
 SetEnvIfNoCase Referer camsex\.xxx\-cam\.webcam spambot=yes
+SetEnvIfNoCase Referer canacopegdl\.com spambot=yes
 SetEnvIfNoCase Referer cand\.jp spambot=yes
 SetEnvIfNoCase Referer candcstuccoandstone\.com spambot=yes
 SetEnvIfNoCase Referer candelluxsklep\.pl spambot=yes
@@ -1670,6 +1671,7 @@ SetEnvIfNoCase Referer cherrypointplace\.ca spambot=yes
 SetEnvIfNoCase Referer cherubinimobili\.it spambot=yes
 SetEnvIfNoCase Referer chiblackhawks\-jerseys\.com spambot=yes
 SetEnvIfNoCase Referer chidporn\.com spambot=yes
+SetEnvIfNoCase Referer children\-learningreading\.info spambot=yes
 SetEnvIfNoCase Referer chimiver\.info spambot=yes
 SetEnvIfNoCase Referer chinacheapelitejerseys\.com spambot=yes
 SetEnvIfNoCase Referer chinaelitecheapjerseys\.com spambot=yes
@@ -2485,6 +2487,7 @@ SetEnvIfNoCase Referer fikasound\.tk spambot=yes
 SetEnvIfNoCase Referer fil\.ru spambot=yes
 SetEnvIfNoCase Referer filefilter\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer filerockstar298\.weebly\.com spambot=yes
+SetEnvIfNoCase Referer filesclub\.net spambot=yes
 SetEnvIfNoCase Referer filesmonster\.porn spambot=yes
 SetEnvIfNoCase Referer filesvine\.com spambot=yes
 SetEnvIfNoCase Referer filkhbr\.com spambot=yes
@@ -5843,6 +5846,7 @@ SetEnvIfNoCase Referer topdownloads\.ru spambot=yes
 SetEnvIfNoCase Referer topkarkas\.com spambot=yes
 SetEnvIfNoCase Referer topmira\.com spambot=yes
 SetEnvIfNoCase Referer topquality\.cf spambot=yes
+SetEnvIfNoCase Referer toproadrunner5\.info spambot=yes
 SetEnvIfNoCase Referer topshef\.ru spambot=yes
 SetEnvIfNoCase Referer topsiteminecraft\.com spambot=yes
 SetEnvIfNoCase Referer topsy\.com spambot=yes
@@ -6171,6 +6175,7 @@ SetEnvIfNoCase Referer vip2ch\.com spambot=yes
 SetEnvIfNoCase Referer vipms\.ru spambot=yes
 SetEnvIfNoCase Referer vipps\.com\.my spambot=yes
 SetEnvIfNoCase Referer vipromoffers\.com spambot=yes
+SetEnvIfNoCase Referer vipsexfinders\.com spambot=yes
 SetEnvIfNoCase Referer vipsiterip\.org spambot=yes
 SetEnvIfNoCase Referer virtuagirl\.com spambot=yes
 SetEnvIfNoCase Referer visa\-china\.ru spambot=yes
