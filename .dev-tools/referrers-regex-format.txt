@@ -4646,6 +4646,7 @@ SetEnvIfNoCase Referer ~*sendearnings\.com spam_ref
 SetEnvIfNoCase Referer ~*senger\.atspace\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*seo\-2\-0\.com spam_ref
 SetEnvIfNoCase Referer ~*seoanalyses\.com spam_ref
+SetEnvIfNoCase Referer ~*seoboxes\.com spam_ref
 SetEnvIfNoCase Referer ~*seocdvig\.ru spam_ref
 SetEnvIfNoCase Referer ~*seocheckupx\.com spam_ref
 SetEnvIfNoCase Referer ~*seocheki\.net spam_ref

@@ -5,14 +5,16 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.03.811
-### Bad Referrer Count: 6229
-### Bad Bot Count: 513
+### Version: V3.2018.03.812
+### Bad Referrer Count: 6230
+### Bad Bot Count: 515
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} ^360Spider.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^404checker.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^404enemy.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^80legs.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Abonti.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Aboundex.* [NC,OR]
@@ -5180,6 +5182,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-smm\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-tools\-optimizing\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seo\-traffic\-ranking\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seoanalyses\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seoboxes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seocdvig\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seocheckupx\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*seocheki\.net.*$ [NC,OR]
