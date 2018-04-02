@@ -5156,6 +5156,7 @@ SetEnvIfNoCase Referer ~*taxi\-v\-eisk\.ru spam_ref
 SetEnvIfNoCase Referer ~*t\-bygg\.com spam_ref
 SetEnvIfNoCase Referer ~*td\-33\.ru spam_ref
 SetEnvIfNoCase Referer ~*td\-l\-market\.ru spam_ref
+SetEnvIfNoCase Referer ~*tds\-advert005\.info spam_ref
 SetEnvIfNoCase Referer ~*tdsing\.ru spam_ref
 SetEnvIfNoCase Referer ~*teastory\.co spam_ref
 SetEnvIfNoCase Referer ~*tech4master\.com spam_ref
