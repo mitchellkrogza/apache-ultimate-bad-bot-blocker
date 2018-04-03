@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.815
-### Bad Referrer Count: 6244
-### Bad Bot Count: 519
+### Version: V3.2018.04.816
+### Bad Referrer Count: 6248
+### Bad Bot Count: 520
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -92,6 +92,7 @@ RewriteCond %{HTTP_USER_AGENT} ^CopyRightCheck.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Copyscape.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Cosmos.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Craftbot.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^crawler4j.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^crawler\.feedback.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^CrazyWebCrawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Crescent.* [NC,OR]
@@ -605,6 +606,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2girls1cup\-free\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2itech\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2kata\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2nt\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2pxg8bcf\.top.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2rich4bitches\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*2x2fan\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*3\-letter\-domains\.net.*$ [NC,OR]
@@ -3234,6 +3236,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*internet\-apteka\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*internetartfair\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*internetproviderstucson\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*intervsem\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*intim\-uslugi\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*intimshop\-fantasy\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*invest\-pamm\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*investingclub\.ru.*$ [NC,OR]
@@ -4350,6 +4353,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onlythegames\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onlywoman\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ons\-add\.men.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onstrapon\.purplesphere\.in.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ontargetseo\.us.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ooo\-gotovie\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ooo\-olni\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ooomeru\.ru.*$ [NC,OR]
@@ -6082,6 +6086,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urengoy\.pro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*url\-img\.link.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*url2image\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urlcut\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urldelivery\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urll\.eu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urlopener\.blogspot\.com\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*urlopener\.com.*$ [NC,OR]

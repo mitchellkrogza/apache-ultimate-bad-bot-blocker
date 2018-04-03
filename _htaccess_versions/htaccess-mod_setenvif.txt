@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.815
-### Bad Referrer Count: 6244
-### Bad Bot Count: 519
+### Version: V3.2018.04.816
+### Bad Referrer Count: 6248
+### Bad Bot Count: 520
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -91,6 +91,7 @@ SetEnvIfNoCase User-Agent ^CopyRightCheck.* spambot=yes
 SetEnvIfNoCase User-Agent ^Copyscape.* spambot=yes
 SetEnvIfNoCase User-Agent ^Cosmos.* spambot=yes
 SetEnvIfNoCase User-Agent ^Craftbot.* spambot=yes
+SetEnvIfNoCase User-Agent ^crawler4j.* spambot=yes
 SetEnvIfNoCase User-Agent ^crawler\.feedback.* spambot=yes
 SetEnvIfNoCase User-Agent ^CrazyWebCrawler.* spambot=yes
 SetEnvIfNoCase User-Agent ^Crescent.* spambot=yes
@@ -604,6 +605,7 @@ SetEnvIfNoCase Referer 2girls1cup\-free\.com spambot=yes
 SetEnvIfNoCase Referer 2itech\.ru spambot=yes
 SetEnvIfNoCase Referer 2kata\.ru spambot=yes
 SetEnvIfNoCase Referer 2nt\.ru spambot=yes
+SetEnvIfNoCase Referer 2pxg8bcf\.top spambot=yes
 SetEnvIfNoCase Referer 2rich4bitches\.com spambot=yes
 SetEnvIfNoCase Referer 2x2fan\.ru spambot=yes
 SetEnvIfNoCase Referer 3\-letter\-domains\.net spambot=yes
@@ -3233,6 +3235,7 @@ SetEnvIfNoCase Referer internet\-apteka\.ru spambot=yes
 SetEnvIfNoCase Referer internetartfair\.com spambot=yes
 SetEnvIfNoCase Referer internetproviderstucson\.com spambot=yes
 SetEnvIfNoCase Referer intervsem\.ru spambot=yes
+SetEnvIfNoCase Referer intim\-uslugi\.info spambot=yes
 SetEnvIfNoCase Referer intimshop\-fantasy\.ru spambot=yes
 SetEnvIfNoCase Referer invest\-pamm\.ru spambot=yes
 SetEnvIfNoCase Referer investingclub\.ru spambot=yes
@@ -4349,6 +4352,7 @@ SetEnvIfNoCase Referer onlythegames\.com spambot=yes
 SetEnvIfNoCase Referer onlywoman\.org spambot=yes
 SetEnvIfNoCase Referer ons\-add\.men spambot=yes
 SetEnvIfNoCase Referer onstrapon\.purplesphere\.in spambot=yes
+SetEnvIfNoCase Referer ontargetseo\.us spambot=yes
 SetEnvIfNoCase Referer ooo\-gotovie\.ru spambot=yes
 SetEnvIfNoCase Referer ooo\-olni\.ru spambot=yes
 SetEnvIfNoCase Referer ooomeru\.ru spambot=yes
@@ -6081,6 +6085,7 @@ SetEnvIfNoCase Referer urengoy\.pro spambot=yes
 SetEnvIfNoCase Referer url\-img\.link spambot=yes
 SetEnvIfNoCase Referer url2image\.com spambot=yes
 SetEnvIfNoCase Referer urlcut\.ru spambot=yes
+SetEnvIfNoCase Referer urldelivery\.com spambot=yes
 SetEnvIfNoCase Referer urll\.eu spambot=yes
 SetEnvIfNoCase Referer urlopener\.blogspot\.com\.au spambot=yes
 SetEnvIfNoCase Referer urlopener\.com spambot=yes

@@ -6,9 +6,9 @@
 ## The Ultimate Bad Bot, User-Agent and Spam Referrer Blocker for CentOS and Apache Web Servers
 
 _______________
-#### Version: V3.2018.04.815
-#### Bad Referrer Count: 6244
-#### Bad Bot Count: 519
+#### Version: V3.2018.04.816
+#### Bad Referrer Count: 6248
+#### Bad Bot Count: 520
 ____________________
 
 # For CentOS 6.8 and Apache 2.2.15 ONLY !!!

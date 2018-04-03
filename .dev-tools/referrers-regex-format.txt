@@ -72,6 +72,7 @@ SetEnvIfNoCase Referer ~*2girls1cup\-free\.com spam_ref
 SetEnvIfNoCase Referer ~*2itech\.ru spam_ref
 SetEnvIfNoCase Referer ~*2kata\.ru spam_ref
 SetEnvIfNoCase Referer ~*2nt\.ru spam_ref
+SetEnvIfNoCase Referer ~*2pxg8bcf\.top spam_ref
 SetEnvIfNoCase Referer ~*2rich4bitches\.com spam_ref
 SetEnvIfNoCase Referer ~*2x2fan\.ru spam_ref
 SetEnvIfNoCase Referer ~*300richmond\.co\.nz spam_ref
@@ -2699,6 +2700,7 @@ SetEnvIfNoCase Referer ~*internetartfair\.com spam_ref
 SetEnvIfNoCase Referer ~*internetproviderstucson\.com spam_ref
 SetEnvIfNoCase Referer ~*intervsem\.ru spam_ref
 SetEnvIfNoCase Referer ~*intimshop\-fantasy\.ru spam_ref
+SetEnvIfNoCase Referer ~*intim\-uslugi\.info spam_ref
 SetEnvIfNoCase Referer ~*int\.search\.mywebsearch\.com spam_ref
 SetEnvIfNoCase Referer ~*int\.search\.tb\.ask\.com spam_ref
 SetEnvIfNoCase Referer ~*investingclub\.ru spam_ref
@@ -3812,6 +3814,7 @@ SetEnvIfNoCase Referer ~*onlythegames\.com spam_ref
 SetEnvIfNoCase Referer ~*onlywoman\.org spam_ref
 SetEnvIfNoCase Referer ~*ons\-add\.men spam_ref
 SetEnvIfNoCase Referer ~*onstrapon\.purplesphere\.in spam_ref
+SetEnvIfNoCase Referer ~*ontargetseo\.us spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-11\-o\-o\.com spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-6\-o\-o\.com spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-6\-o\-o\.ru spam_ref
@@ -5548,6 +5551,7 @@ SetEnvIfNoCase Referer ~*urdoot\.win spam_ref
 SetEnvIfNoCase Referer ~*urengoy\.pro spam_ref
 SetEnvIfNoCase Referer ~*url2image\.com spam_ref
 SetEnvIfNoCase Referer ~*urlcut\.ru spam_ref
+SetEnvIfNoCase Referer ~*urldelivery\.com spam_ref
 SetEnvIfNoCase Referer ~*url\-img\.link spam_ref
 SetEnvIfNoCase Referer ~*urll\.eu spam_ref
 SetEnvIfNoCase Referer ~*urlopener\.blogspot\.com\.au spam_ref
