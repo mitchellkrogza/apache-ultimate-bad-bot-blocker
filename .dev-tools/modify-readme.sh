@@ -45,7 +45,7 @@
 
 yeartag=$(date +%Y)
 monthtag=$(date +%m)
-my_git_tage=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
+my_git_tag=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
 bad_referrers=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list)
 bad_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list)
 
