@@ -7,7 +7,7 @@
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
 _______________
-#### Version: V3.2018.04.818
+#### Version: 
 #### Bad Referrer Count: 6268
 #### Bad Bot Count: 521
 ____________________
