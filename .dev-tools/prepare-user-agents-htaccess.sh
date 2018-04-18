@@ -20,28 +20,31 @@
 # Specify Input and Output Files
 # ******************************
 
-_input=$TRAVIS_BUILD_DIR/_generator_lists/bad-user-agents.list
-_inputtmp=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.tmp
-_output=$TRAVIS_BUILD_DIR/.dev-tools/_htaccess_generator_files/bad-user-agents.list
+input=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
+inputtmp=${TRAVIS_BUILD_DIR}/.dev-tools/_htaccess_generator_files/bad-user-agents.tmp
+output=${TRAVIS_BUILD_DIR}/.dev-tools/_htaccess_generator_files/bad-user-agents.list
 
 # ***********************
 # Truncate our input file
 # ***********************
 
-sudo truncate -s 0 $_output
+sudo truncate -s 0 ${output}
 
 # *************************************
 # Use sed to prepare our new input file
 # *************************************
 
-cat $_input | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > $_inputtmp && mv $_inputtmp $_output
-
-# Test above using awk
-#cat $_input | awk 'gsub(/[^[:alnum:]]/,"\\\\&")+1' > $_inputtmp2 && mv $_inputtmp2 $_output2
+cat ${input} | sed 's/\\ / /g' | sed 's/[^[:alnum:]]/\\&/g' > ${inputtmp} && mv ${inputtmp} ${output}
 
 
 # *************************************
 # Sort our output file and remove dupes
 # *************************************
 
-sort -u $_output -o $_output
+sort -u ${output} -o ${output}
+
+# **********************
+# Exit With Error Number
+# **********************
+
+exit ${?}

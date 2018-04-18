@@ -20,29 +20,29 @@
 # Set Location of our Curl Test Results Files
 # *******************************************
 
-_curltest1=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest1.txt
-_curltest2=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest2.txt
-_curltest3=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest3.txt
-_curltest4=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest4.txt
-_curltest5=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest5.txt
-_curltest6=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest6.txt
-_curltest7=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest7.txt
-_curltest8=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest8.txt
-_curltest9=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest9.txt
-_curltest10=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest10.txt
-_curltest11=$TRAVIS_BUILD_DIR/.dev-tools/_curl_tests/curltest11.txt
+curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest1.txt
+curltest2=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest2.txt
+curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest3.txt
+curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest4.txt
+curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest5.txt
+curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest6.txt
+curltest7=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest7.txt
+curltest8=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest8.txt
+curltest9=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest9.txt
+curltest10=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest10.txt
+curltest11=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests/curltest11.txt
 
-_now="$(date)"
+now="$(date)"
 
 # *************************************************
 # Function Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
 run_curltest1 () {
-truncate -s 0 $_curltest1
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest1"
-curl -A "80legs" http://local.dev:80/index.html 2>&1 >> $_curltest1
-if grep -i 'Forbidden' $_curltest1; then
+truncate -s 0 ${curltest1}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
+curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
+if grep -i 'Forbidden' ${curltest1}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -55,10 +55,10 @@ fi
 # **************************************************
 
 run_curltest2 () {
-truncate -s 0 $_curltest2
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest2"
-curl -A "masscan" http://local.dev:80/index.html 2>&1 >> $_curltest2
-if grep -i 'Forbidden' $_curltest2; then
+truncate -s 0 ${curltest2}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest2}"
+curl -A "masscan" http://local.dev:80/index.html 2>&1 >> ${curltest2}
+if grep -i 'Forbidden' ${curltest2}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -71,10 +71,10 @@ fi
 # ******************************************************************
 
 run_curltest3 () {
-truncate -s 0 $_curltest3
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest3"
-curl -I http://local.dev:80/index.html -e http://100dollars-seo.com 2>&1 >> $_curltest3
-if grep -i 'Forbidden' $_curltest3; then
+truncate -s 0 ${curltest3}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest3}"
+curl -I http://local.dev:80/index.html -e http://100dollars-seo.com 2>&1 >> ${curltest3}
+if grep -i 'Forbidden' ${curltest3}; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'
@@ -87,10 +87,10 @@ fi
 # ******************************************************
 
 run_curltest4 () {
-truncate -s 0 $_curltest4
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest4"
-curl -I http://local.dev:80/index.html -e http://zx6.ru 2>&1 >> $_curltest4
-if grep -i 'Forbidden' $_curltest4; then
+truncate -s 0 ${curltest4}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest4}"
+curl -I http://local.dev:80/index.html -e http://zx6.ru 2>&1 >> ${curltest4}
+if grep -i 'Forbidden' ${curltest4}; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'
@@ -103,10 +103,10 @@ fi
 # *****************************************************
 
 run_curltest5 () {
-truncate -s 0 $_curltest5
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest5"
-curl -v -A "GoogleBot" http://local.dev:80/index.html 2>&1 >> $_curltest5
-if grep -i 'Welcome' $_curltest5; then
+truncate -s 0 ${curltest5}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest5}"
+curl -v -A "GoogleBot" http://local.dev:80/index.html 2>&1 >> ${curltest5}
+if grep -i 'Welcome' ${curltest5}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
    echo 'GOOD BOT NOT ALLOWED THROUGH - TEST FAILED'
@@ -119,10 +119,10 @@ fi
 # ***************************************************
 
 run_curltest6 () {
-truncate -s 0 $_curltest6
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest6"
-curl -v -A "BingBot" http://local.dev:80/index.html 2>&1 >> $_curltest6
-if grep -i 'Welcome' $_curltest6; then
+truncate -s 0 ${curltest6}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest6}"
+curl -v -A "BingBot" http://local.dev:80/index.html 2>&1 >> ${curltest6}
+if grep -i 'Welcome' ${curltest6}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
    echo 'GOOD BOT NOT ALLOWED THROUGH - TEST FAILED'
@@ -136,10 +136,10 @@ fi
 # **************************************************
 
 run_curltest7 () {
-truncate -s 0 $_curltest7
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest7"
-curl -A "Disco" http://local.dev:80/index.html 2>&1 >> $_curltest7
-if grep -i 'Forbidden' $_curltest7; then
+truncate -s 0 ${curltest7}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest7}"
+curl -A "Disco" http://local.dev:80/index.html 2>&1 >> ${curltest7}
+if grep -i 'Forbidden' ${curltest7}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -152,10 +152,10 @@ fi
 # *******************************************************
 
 run_curltest8 () {
-truncate -s 0 $_curltest8
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest8"
-curl -A "Discoverybot" http://local.dev:80/index.html 2>&1 >> $_curltest8
-if grep -i 'Forbidden' $_curltest8; then
+truncate -s 0 ${curltest8}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest8}"
+curl -A "Discoverybot" http://local.dev:80/index.html 2>&1 >> ${curltest8}
+if grep -i 'Forbidden' ${curltest8}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -168,10 +168,10 @@ fi
 # ****************************************************
 
 run_curltest9 () {
-truncate -s 0 $_curltest9
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest9"
-curl -A "Disco Bot" http://local.dev:80/index.html 2>&1 >> $_curltest9
-if grep -i 'Forbidden' $_curltest9; then
+truncate -s 0 ${curltest9}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest9}"
+curl -A "Disco Bot" http://local.dev:80/index.html 2>&1 >> ${curltest9}
+if grep -i 'Forbidden' ${curltest9}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -184,10 +184,10 @@ fi
 # ******************************************************
 
 run_curltest10 () {
-truncate -s 0 $_curltest10
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest10"
-curl -A "Web Bandit" http://local.dev:80/index.html 2>&1 >> $_curltest10
-if grep -i 'Forbidden' $_curltest10; then
+truncate -s 0 ${curltest10}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest10}"
+curl -A "Web Bandit" http://local.dev:80/index.html 2>&1 >> ${curltest10}
+if grep -i 'Forbidden' ${curltest10}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
@@ -200,10 +200,10 @@ fi
 # *****************************************************
 
 run_curltest11 () {
-truncate -s 0 $_curltest11
-printf '%s%s\n\n' "Last Tested: " "$_now" >> "$_curltest11"
-curl -A "WebBandit" http://local.dev:80/index.html 2>&1 >> $_curltest11
-if grep -i 'Forbidden' $_curltest11; then
+truncate -s 0 ${curltest11}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest11}"
+curl -A "WebBandit" http://local.dev:80/index.html 2>&1 >> ${curltest11}
+if grep -i 'Forbidden' ${curltest11}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'

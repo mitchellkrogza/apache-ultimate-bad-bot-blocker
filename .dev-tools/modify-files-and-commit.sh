@@ -44,9 +44,9 @@
 # Set Some Variables
 # ******************
 
-YEAR=$(date +"%Y")
-MONTH=$(date +"%m")
-cd $TRAVIS_BUILD_DIR
+yeartag=$(date +"%Y")
+monthtag=$(date +"%m")
+cd ${TRAVIS_BUILD_DIR}
 
 # *******************************
 # Remove Remote Added by TravisCI
@@ -79,34 +79,29 @@ git config --global push.default simple
 
 git checkout master
 
-# ***************************************************
-# Modify our files with build and version information
-# ***************************************************
-
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
-#php ./.dev-tools/apache-referers-regex.php
-#php ./.dev-tools/generate-htaccess.php
-#php ./.dev-tools/generate-google-exclude.php
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
-#sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
-
 # ***************************************************************
 # Gzip Our Latest Release So We can Include it the Travis Release
 # ***************************************************************
 
-cd $TRAVIS_BUILD_DIR/.latest_release/
-tar -czf Apache_2.2.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.2/ .
-tar -czf Apache_2.4.tar.gz -C $TRAVIS_BUILD_DIR/Apache_2.4/ .
+cd ${TRAVIS_BUILD_DIR}/.latest_release/
+tar -czf Apache_2.2.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.2/ .
+tar -czf Apache_2.4.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.4/ .
 
 # *************************************
 # Add all the modified files and commit
 # *************************************
 
 git add -A
-git commit -am "V3.$YEAR.$MONTH.$TRAVIS_BUILD_NUMBER [ci skip]"
+git commit -am "V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER} [ci skip]"
 
 # *************************************************************
 # Travis now moves to the before_deploy: section of .travis.yml
 # *************************************************************
+
+# **********************
+# Exit With Error Number
+# **********************
+
+exit ${?}
+
+

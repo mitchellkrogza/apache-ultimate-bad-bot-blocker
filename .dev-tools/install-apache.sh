@@ -70,13 +70,13 @@ sudo rm /etc/apache2/sites-enabled/*
 # Copy our virtual host template to sites-enabled overwriting the default site conf
 # *********************************************************************************
 
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite.conf /etc/apache2/sites-available/default.conf
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/defaultsite.conf /etc/apache2/sites-available/default.conf
 
 # *****************************************************
 # Copy basic testing index.html file into /var/www/html
 # *****************************************************
 
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/index.html /var/www/html/index.html
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/index.html /var/www/html/index.html
 
 # *************************
 # Set Ownership of /var/www
@@ -103,7 +103,7 @@ sudo a2ensite default.conf
 # Set ServerName Globally
 # ***********************
 
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
 sudo a2enconf servername
 
 # *************************************
@@ -134,32 +134,39 @@ sudo apache2ctl configtest
 # Get a copy of all conf files for checking
 # *****************************************
 
-sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/
-sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/apache2.conf
-sudo cp /etc/apache2/sites-available/default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.2/default.conf
+sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/
+sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/apache2.conf
+sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/default.conf
 
 
 # ***********************************************************
 # Set all our other setup and deploy scripts to be executable
 # ***********************************************************
 
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/deploy-package.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-files.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-htaccess.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/generate-google-exclude.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/apache-referers-regex.php
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/modify-files-and-commit.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests-1.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/run-curl-tests-2.sh
-sudo chmod +x $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/deploy-package.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-blacklists.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-files.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-htaccess.php
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-robots.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-google-disavow.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/generate-google-exclude.php
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/apache-referers-regex.php
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/modify-readme.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/modify-files-and-commit.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/run-curl-tests-1.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/run-curl-tests-2.sh
+sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/prepare-user-agents-htaccess.sh
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
 # *****************************************************************************************
+
+# **********************
+# Exit With Error Number
+# **********************
+
+exit ${?}
+
 
 # MIT License
 

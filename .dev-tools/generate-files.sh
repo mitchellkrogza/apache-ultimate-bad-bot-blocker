@@ -40,18 +40,24 @@
 # SOFTWARE.
 
 
-cd $TRAVIS_BUILD_DIR
+cd ${TRAVIS_BUILD_DIR}
 
 # *****************************************************
 # Generate our files with build and version information
 # *****************************************************
 
-sudo $TRAVIS_BUILD_DIR/.dev-tools/prepare-user-agents-htaccess.sh
+sudo ${TRAVIS_BUILD_DIR}/.dev-tools/prepare-user-agents-htaccess.sh
 php ./.dev-tools/apache-referers-regex.php
 php ./.dev-tools/generate-htaccess.php
 php ./.dev-tools/generate-google-exclude.php
-sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-robots.sh
-sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-google-disavow.sh
-sudo $TRAVIS_BUILD_DIR/.dev-tools/generate-blacklists.sh
-sudo $TRAVIS_BUILD_DIR/.dev-tools/modify-readme.sh
+sudo ${TRAVIS_BUILD_DIR}/.dev-tools/generate-robots.sh
+sudo ${TRAVIS_BUILD_DIR}/.dev-tools/generate-google-disavow.sh
+sudo ${TRAVIS_BUILD_DIR}/.dev-tools/generate-blacklists.sh
+sudo ${TRAVIS_BUILD_DIR}/.dev-tools/modify-readme.sh
+
+# **********************
+# Exit With Error Number
+# **********************
+
+exit ${?}
 

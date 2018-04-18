@@ -61,7 +61,7 @@ printf '%s\n%s\n%s\n\n' "#########################" "Remove Apache 2.2 Vhost" "#
 sudo rm /etc/apache2/sites-available/default.conf
 
 printf '%s\n%s\n%s\n\n' "#########################" "Install Apache 2.4 Vhost" "#########################"
-sudo cp $TRAVIS_BUILD_DIR/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/defaultsite24.conf /etc/apache2/sites-available/default.conf
 
 # *******************
 # Enable Default Site
@@ -114,7 +114,7 @@ ls -la /etc/apache2/custom.d/
 
 printf '%s\n%s\n%s\n\n' "#################################" "Download Apache 2.4 Files from Repo" "#################################"
 #sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
-sudo cp $TRAVIS_BUILD_DIR/Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+sudo cp ${TRAVIS_BUILD_DIR}/Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
@@ -133,8 +133,8 @@ sudo chown -R www-data:www-data /var/www/
 # ************************************
 
 printf '%s\n%s\n%s\n\n' "#################################" "Set Ownership of Travis Build Folder" "#################################"
-sudo chown -R travis:travis $TRAVIS_BUILD_DIR
-ls -la $TRAVIS_BUILD_DIR
+sudo chown -R travis:travis ${TRAVIS_BUILD_DIR}
+ls -la ${TRAVIS_BUILD_DIR}
 
 # **********************
 # Now Start Apache Again
@@ -179,13 +179,20 @@ curl -A "GoogleBot" http://local.dev
 # Get a copy of all conf files for checking
 # *****************************************
 
-sudo cp /etc/apache2/custom.d/*.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/
-sudo cp /etc/apache2/apache2.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/apache2.conf
-sudo cp /etc/apache2/sites-available/default.conf $TRAVIS_BUILD_DIR/.dev-tools/_conf_files_2.4/default.conf
+sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/
+sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/apache2.conf
+sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/default.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
 # *****************************************************************************************
+
+# **********************
+# Exit With Error Number
+# **********************
+
+exit ${?}
+
 
 # MIT License
 
