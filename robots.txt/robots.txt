@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.04.822
-### Updated: Fri Apr 20 11:23:12 SAST 2018
+### Version: V3.2018.04.823
+### Updated: Fri Apr 20 11:50:15 SAST 2018
 ### Bad Bot Count: 526
 ###################################################
 ### Version Information ##
@@ -9,8 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: OutclicksBot
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 404checker
@@ -614,6 +612,8 @@ Disallow:/
 User-agent: OrangeBot
 Disallow:/
 User-agent: OrangeSpider
+Disallow:/
+User-agent: OutclicksBot
 Disallow:/
 User-agent: OutfoxBot
 Disallow:/
