@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.820
+### Version: V3.2018.04.821
 ### Bad Referrer Count: 6268
-### Bad Bot Count: 521
+### Bad Bot Count: 525
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -346,6 +346,8 @@ SetEnvIfNoCase User-Agent ^QueryN\ Metasearch.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActive.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActiveLinkBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankFlex.* spambot=yes
+SetEnvIfNoCase User-Agent ^RankingBot.* spambot=yes
+SetEnvIfNoCase User-Agent ^RankingBot2.* spambot=yes
 SetEnvIfNoCase User-Agent ^Rankivabot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankurBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^RealDownload.* spambot=yes
@@ -525,6 +527,8 @@ SetEnvIfNoCase User-Agent ^Xenu.* spambot=yes
 SetEnvIfNoCase User-Agent ^xpymep1\.exe.* spambot=yes
 SetEnvIfNoCase User-Agent ^YoudaoBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zade.* spambot=yes
+SetEnvIfNoCase User-Agent ^Zauba.* spambot=yes
+SetEnvIfNoCase User-Agent ^zauba\.io.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zermelo.* spambot=yes
 SetEnvIfNoCase User-Agent ^Zeus.* spambot=yes
 SetEnvIfNoCase User-Agent ^zgrab.* spambot=yes
