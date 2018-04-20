@@ -535,7 +535,7 @@ a large number of 403 errors. This custom jail for Fail2Ban will scan logs over 
 It helps a great deal in keeping out some repeat offenders and preventing them from filling up your log files with 403 errors.
 See the Fail2Ban folder for instructions on configuring this great add on for the Apache Bad Bot Blocker.
 
-### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+### If this helps you [![Help me out with a mug of beer](https://img.shields.io/badge/Help%20-%20me%20out%20with%20a%20mug%20of%20%F0%9F%8D%BA-blue.svg)](https://paypal.me/mitchellkrog/) or [![Help me feed my cat](https://img.shields.io/badge/Help%20-%20me%20feed%20my%20hungry%20cat%20%F0%9F%98%B8-blue.svg)](https://paypal.me/mitchellkrog/)
 
 ************************************************
 ### Also Checkout The Big List of Hacked Malware Web Sites
@@ -544,7 +544,6 @@ This repository contains a list of all web sites I come across that are hacked w
 Most site owners are unaware their sites have been hacked and are being used to plant malware.
 
 Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
-
 
 ************************************************
 ### Some other free projects
