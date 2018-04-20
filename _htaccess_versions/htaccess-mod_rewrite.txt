@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.821
+### Version: V3.2018.04.822
 ### Bad Referrer Count: 6268
-### Bad Bot Count: 525
+### Bad Bot Count: 526
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -314,6 +314,7 @@ RewriteCond %{HTTP_USER_AGENT} ^OpenLinkProfiler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Openvas.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^OrangeBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^OrangeSpider.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^OutclicksBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^OutfoxBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PageAnalyzer.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Page\ Analyzer.* [NC,OR]
