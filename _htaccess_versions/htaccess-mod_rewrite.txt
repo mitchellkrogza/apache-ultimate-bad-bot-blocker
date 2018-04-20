@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.824
-### Bad Referrer Count: 6279
+### Version: V3.2018.04.825
+### Bad Referrer Count: 6280
 ### Bad Bot Count: 526
 ### Version Information ##
 
@@ -6360,6 +6360,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webmasterhome\.cn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webmasters\.stackexchange\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webmonetizer\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webnode\.me.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*weboptimizes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webpromotion\.ae.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webradiology\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*webs\.com.*$ [NC,OR]

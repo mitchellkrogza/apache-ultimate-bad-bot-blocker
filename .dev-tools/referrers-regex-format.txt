@@ -5819,6 +5819,7 @@ SetEnvIfNoCase Referer ~*webmasterhome\.cn spam_ref
 SetEnvIfNoCase Referer ~*webmasters\.stackexchange\.com spam_ref
 SetEnvIfNoCase Referer ~*webmonetizer\.net spam_ref
 SetEnvIfNoCase Referer ~*webnode\.me spam_ref
+SetEnvIfNoCase Referer ~*weboptimizes\.com spam_ref
 SetEnvIfNoCase Referer ~*webpromotion\.ae spam_ref
 SetEnvIfNoCase Referer ~*webradiology\.ru spam_ref
 SetEnvIfNoCase Referer ~*webs\.com spam_ref
