@@ -608,7 +608,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 ************************************************
 
-## Also follow me on twitter @ubuntu101za for update notifications
+## Also follow me on twitter <a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
 ************************************************
 # MIT License
