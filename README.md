@@ -52,7 +52,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 <a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
-#### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+#### If this helps you [![Help me out with a mug of beer](https://img.shields.io/badge/Help%20-%20me%20out%20with%20a%20mug%20of%20%F0%9F%8D%BA-blue.svg)](https://paypal.me/mitchellkrog/) or [![Help me feed my cat](https://img.shields.io/badge/Help%20-%20me%20feed%20my%20hungry%20cat%20%F0%9F%98%B8-blue.svg)](https://paypal.me/mitchellkrog/)
 
 ****************************************************************
 
@@ -64,7 +64,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 - Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
 - Includes .htaccess and robots.txt files for users without root access to their Apache Servers.
 
-## Step 1:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-1.png"/>
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
 
@@ -79,7 +80,8 @@ If your Linux distribution does not have wget you can replace the wget commands 
 
 `curl -sL https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/custom.d/globalblacklist.conf -o /etc/apache2/custom.d/globalblacklist.conf`
 
-## Step 2:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-2.png"/>
 
 **WHITELIST ALL YOUR OWN DOMAIN NAMES AND IP ADDRESSES**
 
@@ -98,7 +100,8 @@ Use nano, vim or any other text editor to edit both whitelist-ips.conf and white
 
 When pulling any future updates now you can simply pull the latest globalblacklist.conf file and it will automatically include your whitelisted domains and IP addresses. No more remembering having to do this yourself.
 
-## Step 3:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-3.png"/>
 
 **DOWNLOAD CUSTOM BLACKLIST INCLUDE FILE FOR IP ADDRESS AND IP RANGE BLOCKING**
 
@@ -113,7 +116,8 @@ Use nano, vim or any other text editor to edit the blacklist-ips.conf file as yo
 
 When pulling any future updates now your custom IP blacklist will not be overwritten.
 
-## Step 4:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-4.png"/>
 
 **DOWNLOAD CUSTOM BAD REFERRER WORDS INCLUDE FILE FOR CUSTOMIZED SCANNING OF BAD WORDS**
 
@@ -128,7 +132,8 @@ Use nano, vim or any other text editor to edit the bad-referrer-words.conf file 
 
 When pulling any future updates now your custom bad referrer words list will not be overwritten.
 
-## Step 5:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-5.png"/>
 
 **DOWNLOAD CUSTOM BLACKLIST USER-AGENTS INCLUDE FILE FOR CUSTOMIZED BLOCKING OF USER AGENTS**
 
@@ -140,7 +145,8 @@ Allows you to add your own custom list of user agents with this new include file
 
 **NOTE:** On the Apache Blocker if you want to over-ride any of the whitelisted bots you can add them to this include file and the previously whitelisted bots in the blocker will be over-ridden by this include file. So let's say for some "obscure" reason you really do not want any search engines like Googlebot or Bingbot to ever access or index your site, you add them to your blacklist-user-agents.conf and they will be over-ridden from the earlier whitelisting in the blocker. This now gives users total control over the blocker without every having to try and modify the globalblacklist.conf file. So now you can customize all your include files and you can still pull the daily updates of globalblacklist.conf and it will not touch any of your custom include files.
 
-## Step 6:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-6.png"/>
 
 **INCLUDE THE GLOBALBLACKLIST.CONF**
 
@@ -176,7 +182,8 @@ You can include globalblacklist.conf globally (for all virtual hosts) if you put
 </Location>
 ```
 
-## Step 7:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-7.png"/>
 
 **TEST YOUR APACHE CONFIGURATION**
 
@@ -194,7 +201,8 @@ or
 
 The blocker is now active and working so now you can run some simple tests from another linux machine to make sure it's working.
 
-## Step 8:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-8.png"/>
 
 *TESTING**
 
@@ -219,7 +227,8 @@ Should respond with 403 Forbidden
 
 The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
-## Step 9:
+************************************************
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-9.png"/>
 
 **UPDATING THE APACHE BAD BOT BLOCKER** is now easy thanks to the automatic includes for whitelisting your own domain names.
 
@@ -243,6 +252,7 @@ Updating to the latest version is now as simple as:
 
 And you will be up to date with all your whitelisted domains included automatically for you now. 
 
+************************************************
 # AUTO UPDATING:
 
 See my latest auto updater bash script at:
@@ -257,7 +267,7 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Ap
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
-
+************************************************
 ### WHY BLOCK BAD BOTS ?
 ##### Bad bots are:
 
@@ -281,6 +291,7 @@ Relax now and sleep better at night knowing your site is telling all those baddi
 -    Stopping Google Analytics Ghost Spam
 -    Browser Adware and Malware (Yontoo etc)
 
+************************************************
 ### To contribute your own bad referers 
 
 please add them into the
@@ -288,16 +299,21 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Pu
 file and then send a Pull Request (PR). 
 All additions will be checked for accuracy before being merged.
 
+************************************************
 ### Issues:
 
 Log any issues regarding incorrect listings on the issues system and they will be investigated
 and removed if necessary.
 
+************************************************
 ### No root access to your Apache server and Unable to run this blocker?
 
 Version 2.2017.03 introduced .htaccess versions of the spam referrer for those unable to run the full Apache Bad Bot Blocker look inside the https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/_htaccess_versions folder in this repo for instructions.
 
-### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+************************************************
+### If this helps you 
+
+[![Help me out with a mug of beer](https://img.shields.io/badge/Help%20-%20me%20out%20with%20a%20mug%20of%20%F0%9F%8D%BA-blue.svg)](https://paypal.me/mitchellkrog/) or [![Help me feed my cat](https://img.shields.io/badge/Help%20-%20me%20feed%20my%20hungry%20cat%20%F0%9F%98%B8-blue.svg)](https://paypal.me/mitchellkrog/)
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
@@ -308,6 +324,7 @@ not only ignorant but also blocking out very legitimate crawlers including some 
 
 # Welcome to the Ultimate Bad Bot and Referer Blocker for Apache Web Server 2.4.x
 
+************************************************
 ### THE METHOD IN MY MADNESS
 
 This bot blocker list is designed to be an Apache include file and uses the apache
@@ -339,6 +356,7 @@ not case-sensitive so will catch any combination like "Bot" "bOt" and "bOT".
 
 So for those of you who SUCK with Regex my Apache Bad Bot Blocker is your saviour !!!
 
+************************************************
 ### IT'S CENTRALISED:
 
 The beauty of this is that it is one central file used by all your web sites.
@@ -346,6 +364,7 @@ This means there is only place to make amendments ie. adding new bots that you
 discover in your log files. Any changes are applied immediately to all sites after
 a simple "sudo service apache2 reload". 
 
+************************************************
 ### IT IS TINY AND LIGHTWEIGHT
 
 The file is tiny in size. At the time of this writing and the first public commit of this
@@ -353,11 +372,13 @@ the file size including all the commenting "which Apache ignores" is a mere 212 
 It is so lightweight that Apache does not even know it's there. It already contains thousands
 of entries.
 
+************************************************
 ### NO COMPLICATED REWRITE RULES:
 
 This also does not use ReWrite Rules and Conditions which also put overhead onto
 Apache, this sends a simple 403 Forbidden Response and DONE !!!
 
+************************************************
 ### APACHE WILL LOVE YOU FOR IT !!!!
 
 This approach also makes this very lightweight on Apache versus the usual .htaccess
@@ -369,6 +390,7 @@ a pain when it comes to maintenance and updating your ruleset.
 .htaccess just sucks full stop. One reason after 9 years I have moved everything to
 Nginx but will continue to keep this file updated as it is solid and it works.
 
+************************************************
 ## FEATURES OF THE APACHE ULTIMATE BAD BOT BLOCKER:
 
 - Extensive Lists of Bad and Known Bad Bots and Scrapers (updated almost daily)
@@ -387,6 +409,7 @@ Nginx but will continue to keep this file updated as it is solid and it works.
 - Ability to add other IP ranges and IP blocks that you want to block out.
 - If its out there and it's bad it's already in here and BLOCKED !!
 
+************************************************
 ### UNDERSTANDS PUNYCODE / IDN DOMAIN NAMES
 A lot of lists out there put funny domains into their hosts file. Your hosts file and DNS will not understand this. This list uses converted domains which are in the correct DNS format to be understood by any operating system. **Avoid using lists** that do not put the correctly formatted domain structure into their lists.
 
@@ -421,6 +444,7 @@ xn--lifehacer-1rb.com	nameserver = dns1.yandex.net.
 
 - Look at: https://www.charset.org/punycode for more info on this.
 
+************************************************
 ## WARNING:
 
  Please understand why you are using the Apache Bad Bot Blocker before you even use this.
@@ -428,6 +452,7 @@ xn--lifehacer-1rb.com	nameserver = dns1.yandex.net.
  Do not become a copy and paste Linux "Guru", learn things properly before you use them
  and always test everything you do one step at a time.
 
+************************************************
 ## MONITOR WHAT YOU ARE DOING:
 
  MAKE SURE to monitor your web site logs after implementing this. I suggest you first
@@ -437,6 +462,7 @@ xn--lifehacer-1rb.com	nameserver = dns1.yandex.net.
  Also monitor your logs daily for new bad referers and user-agent strings that you
  want to block. Your best source of adding to this list is your own server logs, not mine.
 
+************************************************
 ## HOW TO MONITOR YOUR APACHE LOGS DAILY (The Easy Way):
 
 With great thanks and appreciation to https://blog.nexcess.net/2011/01/21/one-liners-for-apache-log-files/
@@ -459,6 +485,7 @@ can add that functionality if you like copying the awk statement !~ from the fir
 `00 08 * * * tail -50000 /var/log/apache/mydomain-access.log | awk '{print $12}' | tr -d '"' | sort | uniq -c | sort -rn | head -1000 | mail -s "Top 1000 Agents for Mydomain.com" me@mydomain.com`
 
 
+************************************************
 # EASY CONFIGURATION INSTRUCTIONS FOR STOPPING GOOGLE ANALYTICS "GHOST" SPAM
 
 Simply using the Apache blocker does not stop Google Analytics ghost referral spam because they are hitting Analytics directly and not always necessarily touching your website. 
@@ -495,10 +522,12 @@ Follow the step by step visual instructions below to add these google-exclude fi
   </tr>
 </table>
 
+************************************************
 ## Blocking Spam Referrer Domains Using Google Webmaster Tools (How to use google-disavow.txt file)
 
 I have added the creation of a Google Disavow text file called google-disavow.txt. This file can be used in Google's Webmaster Tools to block all these domains out as spammy or bad links. Use with caution.
 
+************************************************
 ## Blocking Agressive Bots at Firewall Level Using Fail2Ban
 
 I have added a custom Fail2Ban filter and action that I have written which monitors your Apache logs for bots that generate
@@ -508,6 +537,81 @@ See the Fail2Ban folder for instructions on configuring this great add on for th
 
 ### If this helps you [You can buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
+************************************************
+### Also Checkout The Big List of Hacked Malware Web Sites
+
+This repository contains a list of all web sites I come across that are hacked with malware. 
+Most site owners are unaware their sites have been hacked and are being used to plant malware.
+
+Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+
+
+************************************************
+### Some other free projects
+
+- https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
+- https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+- https://github.com/mitchellkrogza/Badd-Boyz-Hosts
+- https://github.com/mitchellkrogza/Ultimate.Hosts.Blacklist
+- https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO
+- https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+- https://github.com/mitchellkrogza/fail2ban-useful-scripts
+- https://github.com/mitchellkrogza/linux-server-administration-scripts
+- https://github.com/mitchellkrogza/Travis-CI-Nginx-for-Testing-Nginx-Configuration
+- https://github.com/mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations
+- https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
+- https://github.com/funilrys/PyFunceble
+- https://github.com/funilrys/dead-hosts
+- https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
+- https://github.com/mitchellkrogza/Suspicious.Snooping.Sniffing.Hacking.IP.Addresses
+- https://github.com/mitchellkrogza/Fail2Ban.WebExploits
+
+************************************************
+### Acknowledgements:
+
+Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
+
+- Konstantin Goretzki @konstantingoretzki https://github.com/konstantingoretzki (Improved Regex on Fail2Ban Filter)
+- Stevie-Ray Hartog https://github.com/Stevie-Ray
+- Nissar Chababy @funilrys - https://github.com/funilrys/funceble (Excellent script for checking ACTIVE, INACTIVE and EXPIRED Domain Names)
+- Marius Voila https://github.com/mariusv
+- Cătălin Mariș https://github.com/alrra
+- deformhead https://github.com/deformhead
+- bluedragonz https://github.com/bluedragonz
+- Alexander https://github.com/shoonois
+- Steven Black https://github.com/StevenBlack
+- Fail2Ban - https://github.com/fail2ban
+- Sir Athos from StackOverFlow - http://stackoverflow.com/users/2245910/sir-athos (help with Travis Build Tagging and Committing)
+- StackOverflow - http://stackoverflow.com/ (bash scripts from hundreds of questions and answers)
+- SuperUser - http://superuser.com/ (snippets from various questions and answers)
+
+If you believe your name should be here, drop me a line.
+
+************************************************
+### INTO PHOTOGRAPHY?
+
+Come drop by and visit me at [mitchellkrog.com](https://mitchellkrog.com) or [Facebook](https://www.facebook.com/MitchellKrogPhotography) or Follow Me on Twitter <a href='https://twitter.com/MitchellKrog'><img src='https://img.shields.io/twitter/follow/MitchellKrog.svg?style=social&label=Follow' alt='Follow @MitchellKrog'></a>
+
+************************************************
+Thousand of hours of programming and testing have gone into this project, show some love
+
+[![Help me out with a mug of beer](https://img.shields.io/badge/Help%20-%20me%20out%20with%20a%20mug%20of%20%F0%9F%8D%BA-blue.svg)](https://paypal.me/mitchellkrog/) or [![Help me feed my cat](https://img.shields.io/badge/Help%20-%20me%20feed%20my%20hungry%20cat%20%F0%9F%98%B8-blue.svg)](https://paypal.me/mitchellkrog/)
+
+<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/zuko.png"/>
+
+************************************************
+
+## Update Notification System
+
+Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
+or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
+**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+
+************************************************
+
+## Also follow me on twitter @ubuntu101za for update notifications
+
+************************************************
 # MIT License
 
 ## Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
@@ -530,57 +634,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
-### Also Checkout The Big List of Hacked Malware Web Sites
-
-This repository contains a list of all web sites I come across that are hacked with malware. 
-Most site owners are unaware their sites have been hacked and are being used to plant malware.
-
-Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malware-Web-Sites
-
-### Into Photography?
-
-Come drop by and visit me at https://mitchellkrog.com or <a href='https://twitter.com/MitchellKrog'><img src='https://img.shields.io/twitter/follow/MitchellKrog.svg?style=social&label=Follow' alt='Follow @MitchellKrog'></a>
-
-### Some other free projects
-
-- https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker
-- https://github.com/mitchellkrogza/Badd-Boyz-Hosts
-- https://github.com/mitchellkrogza/Stop.Google.Analytics.Ghost.Spam.HOWTO
-- https://github.com/mitchellkrogza/fail2ban-useful-scripts
-- https://github.com/mitchellkrogza/linux-server-administration-scripts
-- https://github.com/mitchellkrogza/Travis-CI-Nginx-for-Testing-Nginx-Configuration
-- https://github.com/mitchellkrogza/Travis-CI-for-Apache-For-Testing-Apache-and-PHP-Configurations
-- https://github.com/mitchellkrogza/Fail2Ban-Blacklist-JAIL-for-Repeat-Offenders-with-Perma-Extended-Banning
-- https://github.com/funilrys/funceble
-- https://github.com/mariusv/nginx-badbot-blocker
-
-### Acknowledgements:
-
-Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
-
-- Konstantin Goretzki @konstantingoretzki https://github.com/konstantingoretzki (Improved Regex on Fail2Ban Filter)
-- Stevie-Ray Hartog https://github.com/Stevie-Ray
-- Nissar Chababy @funilrys - https://github.com/funilrys/funceble (Excellent script for checking ACTIVE, INACTIVE and EXPIRED Domain Names)
-- Marius Voila https://github.com/mariusv
-- Cătălin Mariș https://github.com/alrra
-- deformhead https://github.com/deformhead
-- bluedragonz https://github.com/bluedragonz
-- Alexander https://github.com/shoonois
-- Steven Black https://github.com/StevenBlack
-- Fail2Ban - https://github.com/fail2ban
-- Sir Athos from StackOverFlow - http://stackoverflow.com/users/2245910/sir-athos (help with Travis Build Tagging and Committing)
-- StackOverflow - http://stackoverflow.com/ (bash scripts from hundreds of questions and answers)
-- SuperUser - http://superuser.com/ (snippets from various questions and answers)
-
-If you believe your name should be here, drop me a line.
-
-### And remember [Coding make me thirsty so why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
-
-## Update Notification System
-
-Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
-or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
-**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
-
-## Also follow me on twitter @ubuntu101za for update notifications
