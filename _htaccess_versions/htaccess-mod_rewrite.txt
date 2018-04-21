@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.04.825
-### Bad Referrer Count: 6280
-### Bad Bot Count: 526
+### Version: V3.2018.04.826
+### Bad Referrer Count: 6283
+### Bad Bot Count: 527
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -175,6 +175,7 @@ RewriteCond %{HTTP_USER_AGENT} ^GrapeFX.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GrapeshotCrawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GridBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^GT\:\:WWW.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Haansoft.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^HaosouSpider.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Harvest.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Havij.* [NC,OR]
@@ -2077,6 +2078,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dignitasdata\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dikqlyremy\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dikx\.gdn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dildofotzen\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dimaka\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*diminishedvalueoforegon\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dimkino\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dinkolove\.ya\.ru.*$ [NC,OR]
@@ -2564,6 +2566,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fiverr\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fix\-website\-errors\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flagcounter\.me.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flash4fun\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flashahead\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flashbannernow\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flashlarevista\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*flavors\.me.*$ [NC,OR]
@@ -2586,6 +2589,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fodelsedagspresenter\.nu.*$ [NC
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fok\.nl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*folowsite\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*food\.dtu\.dk.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*foodcrafts\.website.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*footbalive\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*footballfarrago\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fordsonmajbor\.cf.*$ [NC,OR]
