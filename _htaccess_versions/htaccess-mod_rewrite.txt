@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.05.827
-### Bad Referrer Count: 6294
+### Version: V3.2018.05.828
+### Bad Referrer Count: 6293
 ### Bad Bot Count: 527
 ### Version Information ##
 
@@ -2291,7 +2291,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elektrozigaretten1\.postbit\.co
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elektrozigaretten1\.tumblr\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elektrozigaretten1\.webs\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elektrozigaretten2\.yn\.lt.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eliasonrealty\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elidelcream\.weebly\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elite\-sex\-finders\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*elitedollars\.com.*$ [NC,OR]

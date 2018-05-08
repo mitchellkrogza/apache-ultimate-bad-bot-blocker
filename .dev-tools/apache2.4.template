@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.05.827
-### Updated: Tue May  8 10:22:53 SAST 2018
-### Bad Referrer Count: 6294
+### Version: V3.2018.05.828
+### Updated: Tue May  8 11:37:04 SAST 2018
+### Bad Referrer Count: 6293
 ### Bad Bot Count: 527
 ###################################################
 ### Version Information ##
@@ -2581,7 +2581,6 @@ SetEnvIfNoCase Referer ~*elektrozigaretten1\.postbit\.com spam_ref
 SetEnvIfNoCase Referer ~*elektrozigaretten1\.tumblr\.com spam_ref
 SetEnvIfNoCase Referer ~*elektrozigaretten1\.webs\.com spam_ref
 SetEnvIfNoCase Referer ~*elektrozigaretten2\.yn\.lt spam_ref
-SetEnvIfNoCase Referer ~*eliasonrealty\.com spam_ref
 SetEnvIfNoCase Referer ~*elidelcream\.weebly\.com spam_ref
 SetEnvIfNoCase Referer ~*elitedollars\.com spam_ref
 SetEnvIfNoCase Referer ~*elitepcgames\.com spam_ref
