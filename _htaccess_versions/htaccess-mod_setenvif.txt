@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.05.828
-### Bad Referrer Count: 6293
+### Version: V3.2018.05.829
+### Bad Referrer Count: 6300
 ### Bad Bot Count: 527
 ### Version Information ##
 
@@ -1177,6 +1177,7 @@ SetEnvIfNoCase Referer backlink4u\.net spambot=yes
 SetEnvIfNoCase Referer backlinkwatch\.com spambot=yes
 SetEnvIfNoCase Referer backuperwebcam\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer bad\-stars\.net spambot=yes
+SetEnvIfNoCase Referer baditri\.com spambot=yes
 SetEnvIfNoCase Referer baersaratov\.ru spambot=yes
 SetEnvIfNoCase Referer bag77\.ru spambot=yes
 SetEnvIfNoCase Referer bagcionderlab\.com spambot=yes
@@ -2242,6 +2243,7 @@ SetEnvIfNoCase Referer education\-cz\.ru spambot=yes
 SetEnvIfNoCase Referer educontest\.net spambot=yes
 SetEnvIfNoCase Referer edudocs\.net spambot=yes
 SetEnvIfNoCase Referer eduinfosite\.com spambot=yes
+SetEnvIfNoCase Referer eduserver\.net spambot=yes
 SetEnvIfNoCase Referer edwinkonijn\.com\.au spambot=yes
 SetEnvIfNoCase Referer ee77ee\.com spambot=yes
 SetEnvIfNoCase Referer efkt\.jp spambot=yes
@@ -2526,6 +2528,7 @@ SetEnvIfNoCase Referer fil\.ru spambot=yes
 SetEnvIfNoCase Referer filefilter\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer filerockstar298\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer filesclub\.net spambot=yes
+SetEnvIfNoCase Referer filesdatabase\.net spambot=yes
 SetEnvIfNoCase Referer filesmonster\.porn spambot=yes
 SetEnvIfNoCase Referer filesvine\.com spambot=yes
 SetEnvIfNoCase Referer filkhbr\.com spambot=yes
@@ -3474,6 +3477,7 @@ SetEnvIfNoCase Referer kinohit1\.ru spambot=yes
 SetEnvIfNoCase Referer kinomaniatv\.pl spambot=yes
 SetEnvIfNoCase Referer kinoplen\.ru spambot=yes
 SetEnvIfNoCase Referer kinopolet\.net spambot=yes
+SetEnvIfNoCase Referer kinosed\.net spambot=yes
 SetEnvIfNoCase Referer kinostorm\.net spambot=yes
 SetEnvIfNoCase Referer kinotorka\.ru spambot=yes
 SetEnvIfNoCase Referer kiprinform\.com spambot=yes
@@ -4329,6 +4333,8 @@ SetEnvIfNoCase Referer offergroup\.info spambot=yes
 SetEnvIfNoCase Referer offers\.bycontext\.com spambot=yes
 SetEnvIfNoCase Referer offf\.info spambot=yes
 SetEnvIfNoCase Referer office\-windows\.ru spambot=yes
+SetEnvIfNoCase Referer office2web\.com spambot=yes
+SetEnvIfNoCase Referer officedocuments\.net spambot=yes
 SetEnvIfNoCase Referer offside2\.5v\.pl spambot=yes
 SetEnvIfNoCase Referer offtime\.ru spambot=yes
 SetEnvIfNoCase Referer offtopic\.biz spambot=yes
@@ -4692,6 +4698,7 @@ SetEnvIfNoCase Referer pornoklad\.net spambot=yes
 SetEnvIfNoCase Referer pornoklad\.ru spambot=yes
 SetEnvIfNoCase Referer pornokorol\.com spambot=yes
 SetEnvIfNoCase Referer pornolook\.net spambot=yes
+SetEnvIfNoCase Referer pornonik\.com spambot=yes
 SetEnvIfNoCase Referer pornophoto\.xyz spambot=yes
 SetEnvIfNoCase Referer pornosee\.info spambot=yes
 SetEnvIfNoCase Referer pornosemki\.info spambot=yes
