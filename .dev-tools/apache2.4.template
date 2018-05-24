@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.05.830
-### Updated: Fri May 11 13:19:17 SAST 2018
-### Bad Referrer Count: 6300
-### Bad Bot Count: 527
+### Version: V3.2018.05.831
+### Updated: Thu May 24 09:07:16 SAST 2018
+### Bad Referrer Count: 6298
+### Bad Bot Count: 526
 ###################################################
 ### Version Information ##
 
@@ -302,7 +302,6 @@ BrowserMatchNoCase "^(.*?)(\bFirefox/7.0\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFlashGet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFlunky\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFoobot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bfq\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFreeuploader\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFrontPage\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFyrebot\b)(.*)$" bad_bot
@@ -6972,8 +6971,6 @@ SetEnvIfNoCase Referer ~*yogamatsexpert\.com spam_ref
 SetEnvIfNoCase Referer ~*yoluxuryevents\.com spam_ref
 SetEnvIfNoCase Referer ~*yoopsie\.com spam_ref
 SetEnvIfNoCase Referer ~*yopoint\.in spam_ref
-SetEnvIfNoCase Referer ~*yorkshireccc\.com spam_ref
-SetEnvIfNoCase Referer ~*yorkshire\.com spam_ref
 SetEnvIfNoCase Referer ~*yoshkarola\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*yottos\.com spam_ref
 SetEnvIfNoCase Referer ~*youandcredit\.ru spam_ref

@@ -6139,8 +6139,6 @@ SetEnvIfNoCase Referer ~*yogamatsexpert\.com spam_ref
 SetEnvIfNoCase Referer ~*yoluxuryevents\.com spam_ref
 SetEnvIfNoCase Referer ~*yoopsie\.com spam_ref
 SetEnvIfNoCase Referer ~*yopoint\.in spam_ref
-SetEnvIfNoCase Referer ~*yorkshireccc\.com spam_ref
-SetEnvIfNoCase Referer ~*yorkshire\.com spam_ref
 SetEnvIfNoCase Referer ~*yoshkarola\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*yottos\.com spam_ref
 SetEnvIfNoCase Referer ~*youandcredit\.ru spam_ref
