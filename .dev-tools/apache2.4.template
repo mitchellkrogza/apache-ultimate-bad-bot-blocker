@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.06.833
-### Updated: Wed Jun  6 08:02:11 SAST 2018
+### Version: V3.2018.06.834
+### Updated: Wed Jun  6 09:03:28 SAST 2018
 ### Bad Referrer Count: 6298
-### Bad Bot Count: 526
+### Bad Bot Count: 525
 ###################################################
 ### Version Information ##
 
@@ -455,7 +455,6 @@ BrowserMatchNoCase "^(.*?)(\bNinja\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNmap\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNPbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNutch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bNYU\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\boBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOctopus\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOffline\ Explorer\b)(.*)$" bad_bot
