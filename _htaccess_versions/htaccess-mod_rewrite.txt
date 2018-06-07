@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.06.835
-### Bad Referrer Count: 6298
-### Bad Bot Count: 526
+### Version: V3.2018.06.836
+### Bad Referrer Count: 6299
+### Bad Bot Count: 527
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -343,6 +343,7 @@ RewriteCond %{HTTP_USER_AGENT} ^ProPowerBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^ProWebWalker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Psbot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^Pump.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^PxBroker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PyCurl.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^QueryN\ Metasearch.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankActive.* [NC,OR]
@@ -2007,6 +2008,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*day\-news\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*daydream\-studio\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dayibiao\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*daymusam\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*db\.speedup\.gdn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dbmkfhqk\.bloger\.index\.hr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dcj\-nn\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ddlmega\.net.*$ [NC,OR]

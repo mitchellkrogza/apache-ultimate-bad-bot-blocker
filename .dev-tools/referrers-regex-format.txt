@@ -1468,6 +1468,7 @@ SetEnvIfNoCase Referer ~*daymusam\.com spam_ref
 SetEnvIfNoCase Referer ~*day\-news\.info spam_ref
 SetEnvIfNoCase Referer ~*d\-black\.bz spam_ref
 SetEnvIfNoCase Referer ~*dbmkfhqk\.bloger\.index\.hr spam_ref
+SetEnvIfNoCase Referer ~*db\.speedup\.gdn spam_ref
 SetEnvIfNoCase Referer ~*dcj\-nn\.ru spam_ref
 SetEnvIfNoCase Referer ~*ddlmega\.net spam_ref
 SetEnvIfNoCase Referer ~*ddospanel\.com spam_ref

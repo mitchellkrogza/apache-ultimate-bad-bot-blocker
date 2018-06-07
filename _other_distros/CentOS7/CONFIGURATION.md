@@ -4,9 +4,9 @@
 ### PLEASE READ CONFIGURATION INSTRUCTIONS BELOW THOROUGHLY
 
 _______________
-#### Version: V3.2018.06.835
-#### Bad Referrer Count: 6298
-#### Bad Bot Count: 526
+#### Version: V3.2018.06.836
+#### Bad Referrer Count: 6299
+#### Bad Bot Count: 527
 ____________________
 
 - Created by: https://github.com/mitchellkrogza

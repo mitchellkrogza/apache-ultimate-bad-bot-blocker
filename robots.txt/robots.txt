@@ -1,15 +1,15 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.06.835
-### Updated: Wed Jun  6 16:46:21 SAST 2018
-### Bad Bot Count: 526
+### Version: V3.2018.06.836
+### Updated: Thu Jun  7 11:20:30 SAST 2018
+### Bad Bot Count: 527
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: Mr.4x3
+User-agent: PxBroker
 Disallow:/
 User-agent: 360Spider
 Disallow:/
@@ -530,6 +530,8 @@ Disallow:/
 User-agent: Mojeek
 Disallow:/
 User-agent: Morfeus Fucking Scanner
+Disallow:/
+User-agent: Mr.4x3
 Disallow:/
 User-agent: MSFrontPage
 Disallow:/

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.06.835
-### Bad Referrer Count: 6298
-### Bad Bot Count: 526
+### Version: V3.2018.06.836
+### Bad Referrer Count: 6299
+### Bad Bot Count: 527
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -342,6 +342,7 @@ SetEnvIfNoCase User-Agent ^ProPowerBot.* spambot=yes
 SetEnvIfNoCase User-Agent ^ProWebWalker.* spambot=yes
 SetEnvIfNoCase User-Agent ^Psbot.* spambot=yes
 SetEnvIfNoCase User-Agent ^Pump.* spambot=yes
+SetEnvIfNoCase User-Agent ^PxBroker.* spambot=yes
 SetEnvIfNoCase User-Agent ^PyCurl.* spambot=yes
 SetEnvIfNoCase User-Agent ^QueryN\ Metasearch.* spambot=yes
 SetEnvIfNoCase User-Agent ^RankActive.* spambot=yes
@@ -2006,6 +2007,7 @@ SetEnvIfNoCase Referer day\-news\.info spambot=yes
 SetEnvIfNoCase Referer daydream\-studio\.ru spambot=yes
 SetEnvIfNoCase Referer dayibiao\.com spambot=yes
 SetEnvIfNoCase Referer daymusam\.com spambot=yes
+SetEnvIfNoCase Referer db\.speedup\.gdn spambot=yes
 SetEnvIfNoCase Referer dbmkfhqk\.bloger\.index\.hr spambot=yes
 SetEnvIfNoCase Referer dcj\-nn\.ru spambot=yes
 SetEnvIfNoCase Referer ddlmega\.net spambot=yes
