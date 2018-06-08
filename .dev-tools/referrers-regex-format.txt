@@ -4647,6 +4647,7 @@ SetEnvIfNoCase Referer ~*scoopquest\.com spam_ref
 SetEnvIfNoCase Referer ~*scopich\.com spam_ref
 SetEnvIfNoCase Referer ~*score\-ads\.men spam_ref
 SetEnvIfNoCase Referer ~*scottbywater\.com spam_ref
+SetEnvIfNoCase Referer ~*scrapinghub\.com spam_ref
 SetEnvIfNoCase Referer ~*scrapy\.org spam_ref
 SetEnvIfNoCase Referer ~*screentoolkit\.com spam_ref
 SetEnvIfNoCase Referer ~*scripted\.com spam_ref

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.06.836
-### Bad Referrer Count: 6299
-### Bad Bot Count: 527
+### Version: V3.2018.06.837
+### Bad Referrer Count: 6300
+### Bad Bot Count: 528
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -346,6 +346,7 @@ RewriteCond %{HTTP_USER_AGENT} ^Pump.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PxBroker.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^PyCurl.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^QueryN\ Metasearch.* [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} ^Quick\-Crawler.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankActive.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankActiveLinkBot.* [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} ^RankFlex.* [NC,OR]
@@ -5191,6 +5192,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scoopquest\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scopich\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*score\-ads\.men.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scottbywater\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scrapinghub\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scrapy\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*screentoolkit\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scripted\.com.*$ [NC,OR]

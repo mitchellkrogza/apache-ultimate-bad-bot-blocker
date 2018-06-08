@@ -1,4 +1,4 @@
-Last Tested: Thu Jun  7 11:20:34 SAST 2018
+Last Tested: Fri Jun  8 10:50:16 SAST 2018
 
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
@@ -6,8 +6,7 @@ Last Tested: Thu Jun  7 11:20:34 SAST 2018
 </head><body>
 <h1>Forbidden</h1>
 <p>You don't have permission to access /index.html
-on this server.<br />
-</p>
+on this server.</p>
 <hr>
-<address>Apache/2.4.33 (Ubuntu) Server at local.dev Port 80</address>
+<address>Apache/2.4.7 (Ubuntu) Server at local.dev Port 80</address>
 </body></html>

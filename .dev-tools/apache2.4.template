@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.06.836
-### Updated: Thu Jun  7 11:20:31 SAST 2018
-### Bad Referrer Count: 6299
-### Bad Bot Count: 527
+### Version: V3.2018.06.837
+### Updated: Fri Jun  8 10:50:14 SAST 2018
+### Bad Referrer Count: 6300
+### Bad Bot Count: 528
 ###################################################
 ### Version Information ##
 
@@ -497,6 +497,7 @@ BrowserMatchNoCase "^(.*?)(\bPump\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPxBroker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bQueryN\ Metasearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQuick-Crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankActive\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankActiveLinkBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankFlex\b)(.*)$" bad_bot
@@ -5480,6 +5481,7 @@ SetEnvIfNoCase Referer ~*scoopquest\.com spam_ref
 SetEnvIfNoCase Referer ~*scopich\.com spam_ref
 SetEnvIfNoCase Referer ~*score\-ads\.men spam_ref
 SetEnvIfNoCase Referer ~*scottbywater\.com spam_ref
+SetEnvIfNoCase Referer ~*scrapinghub\.com spam_ref
 SetEnvIfNoCase Referer ~*scrapy\.org spam_ref
 SetEnvIfNoCase Referer ~*screentoolkit\.com spam_ref
 SetEnvIfNoCase Referer ~*scripted\.com spam_ref
