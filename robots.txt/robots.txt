@@ -1,7 +1,7 @@
 ### Version Information #
 ###################################################
-### Version: V3.2018.06.837
-### Updated: Fri Jun  8 10:50:13 SAST 2018
+### Version: V3.2018.07.838
+### Updated: Wed Jul 11 13:40:51 SAST 2018
 ### Bad Bot Count: 528
 ###################################################
 ### Version Information ##
@@ -9,8 +9,6 @@
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
-User-agent: Quick-Crawler
-Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 404checker
@@ -678,6 +676,8 @@ Disallow:/
 User-agent: PyCurl
 Disallow:/
 User-agent: QueryN Metasearch
+Disallow:/
+User-agent: Quick-Crawler
 Disallow:/
 User-agent: RankActive
 Disallow:/
