@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.07.839
-### Bad Referrer Count: 6314
+### Version: V3.2018.07.840
+### Bad Referrer Count: 6320
 ### Bad Bot Count: 528
 ### Version Information ##
 
@@ -1733,6 +1733,7 @@ SetEnvIfNoCase Referer cicaki\.net spambot=yes
 SetEnvIfNoCase Referer ciekawinki\.pl spambot=yes
 SetEnvIfNoCase Referer cienum\.fr spambot=yes
 SetEnvIfNoCase Referer cigarpass\.com spambot=yes
+SetEnvIfNoCase Referer cindymatches\.com spambot=yes
 SetEnvIfNoCase Referer cineacademy\.ru spambot=yes
 SetEnvIfNoCase Referer cinemaenergy\-hd\.ru spambot=yes
 SetEnvIfNoCase Referer cinemaflix\.website spambot=yes
@@ -1761,6 +1762,7 @@ SetEnvIfNoCase Referer cleanmypc\.com spambot=yes
 SetEnvIfNoCase Referer cleanpcnow\.com spambot=yes
 SetEnvIfNoCase Referer cleansearch\.net spambot=yes
 SetEnvIfNoCase Referer clevernt\.com spambot=yes
+SetEnvIfNoCase Referer click2pawn\.com spambot=yes
 SetEnvIfNoCase Referer clickaider\.com spambot=yes
 SetEnvIfNoCase Referer clickbank\.net spambot=yes
 SetEnvIfNoCase Referer clickbanksites\.info spambot=yes
@@ -3617,6 +3619,7 @@ SetEnvIfNoCase Referer law\-check\-two\.xyz spambot=yes
 SetEnvIfNoCase Referer lawyers\.cafe spambot=yes
 SetEnvIfNoCase Referer lawyersinfo\.org spambot=yes
 SetEnvIfNoCase Referer laxdrills\.com spambot=yes
+SetEnvIfNoCase Referer laxob\.com spambot=yes
 SetEnvIfNoCase Referer layola\.biz\.tc spambot=yes
 SetEnvIfNoCase Referer lazy\-z\.com spambot=yes
 SetEnvIfNoCase Referer lazymanyoga\.com spambot=yes
@@ -4908,6 +4911,7 @@ SetEnvIfNoCase Referer raisedseo\.com spambot=yes
 SetEnvIfNoCase Referer randalljhoward\.com spambot=yes
 SetEnvIfNoCase Referer randki\-sex\.com spambot=yes
 SetEnvIfNoCase Referer rangjued\.com spambot=yes
+SetEnvIfNoCase Referer rangoman\.date spambot=yes
 SetEnvIfNoCase Referer rank\-checker\.online spambot=yes
 SetEnvIfNoCase Referer rankexperience\.com spambot=yes
 SetEnvIfNoCase Referer rankia\.com spambot=yes
@@ -5114,6 +5118,7 @@ SetEnvIfNoCase Referer sakhboard\.ru spambot=yes
 SetEnvIfNoCase Referer sale\-japan\.com spambot=yes
 SetEnvIfNoCase Referer saletool\.ru spambot=yes
 SetEnvIfNoCase Referer salmonfishingsacramentoriver\.com spambot=yes
+SetEnvIfNoCase Referer salut\-camp\.ru spambot=yes
 SetEnvIfNoCase Referer salutmontreal\.com spambot=yes
 SetEnvIfNoCase Referer samara\.rosfirm\.ru spambot=yes
 SetEnvIfNoCase Referer sammlungfotos\.online spambot=yes
@@ -5727,6 +5732,7 @@ SetEnvIfNoCase Referer swsociety\.se spambot=yes
 SetEnvIfNoCase Referer sygraem\.com spambot=yes
 SetEnvIfNoCase Referer symbaloo\.com spambot=yes
 SetEnvIfNoCase Referer symphonyintegratedhealthcare\.com spambot=yes
+SetEnvIfNoCase Referer syndicate\.fun spambot=yes
 SetEnvIfNoCase Referer syvertsen\-da\.no spambot=yes
 SetEnvIfNoCase Referer szamponrevita\.pl spambot=yes
 SetEnvIfNoCase Referer szucs\.ru spambot=yes
