@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.07.838
-### Updated: Wed Jul 11 13:40:51 SAST 2018
-### Bad Referrer Count: 6310
+### Version: V3.2018.07.839
+### Updated: Mon Jul 16 16:11:26 SAST 2018
+### Bad Referrer Count: 6314
 ### Bad Bot Count: 528
 ###################################################
 ### Version Information ##
@@ -1954,6 +1954,7 @@ SetEnvIfNoCase Referer ~*cfjump\.com spam_ref
 SetEnvIfNoCase Referer ~*cfsrating\.sonicwall\.com spam_ref
 SetEnvIfNoCase Referer ~*c\-gainsbourg\.com spam_ref
 SetEnvIfNoCase Referer ~*cgi2\.nintendo\.co\.jp spam_ref
+SetEnvIfNoCase Referer ~*changde\.58\.com spam_ref
 SetEnvIfNoCase Referer ~*charmstroy\.info spam_ref
 SetEnvIfNoCase Referer ~*chastnoeporno\.com spam_ref
 SetEnvIfNoCase Referer ~*chatroulette\.life spam_ref
@@ -4339,6 +4340,7 @@ SetEnvIfNoCase Referer ~*moneymaster\.ru spam_ref
 SetEnvIfNoCase Referer ~*moneyteam24\.com spam_ref
 SetEnvIfNoCase Referer ~*moneytop\.ru spam_ref
 SetEnvIfNoCase Referer ~*moneyviking\-a\.akamaihd\.net spam_ref
+SetEnvIfNoCase Referer ~*moneyzzz\.ru spam_ref
 SetEnvIfNoCase Referer ~*monitorwebsitespeed\.com spam_ref
 SetEnvIfNoCase Referer ~*monsterdivx\.com spam_ref
 SetEnvIfNoCase Referer ~*monsterdivx\.tv spam_ref
@@ -5374,6 +5376,7 @@ SetEnvIfNoCase Referer ~*rusexy\.xyz spam_ref
 SetEnvIfNoCase Referer ~*rusoft\-zone\.ru spam_ref
 SetEnvIfNoCase Referer ~*ruspdd\.com spam_ref
 SetEnvIfNoCase Referer ~*rusprostitute\.com spam_ref
+SetEnvIfNoCase Referer ~*russian\-postindex\.ru spam_ref
 SetEnvIfNoCase Referer ~*russia\-tao\.ru spam_ref
 SetEnvIfNoCase Referer ~*russia\-today\-video\.ru spam_ref
 SetEnvIfNoCase Referer ~*russintv\.fr spam_ref
@@ -5741,6 +5744,7 @@ SetEnvIfNoCase Referer ~*skylta\.com spam_ref
 SetEnvIfNoCase Referer ~*sky\-mine\.ru spam_ref
 SetEnvIfNoCase Referer ~*skytraf\.xyz spam_ref
 SetEnvIfNoCase Referer ~*skyway24\.ru spam_ref
+SetEnvIfNoCase Referer ~*sladkoevideo\.com spam_ref
 SetEnvIfNoCase Referer ~*slavia\.info spam_ref
 SetEnvIfNoCase Referer ~*slavic\-magic\.ru spam_ref
 SetEnvIfNoCase Referer ~*slavkokacunko\.de spam_ref

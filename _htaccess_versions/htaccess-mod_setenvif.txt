@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.07.838
-### Bad Referrer Count: 6310
+### Version: V3.2018.07.839
+### Bad Referrer Count: 6314
 ### Bad Bot Count: 528
 ### Version Information ##
 
@@ -1661,6 +1661,7 @@ SetEnvIfNoCase Referer cfcl\.co\.uk spambot=yes
 SetEnvIfNoCase Referer cfjump\.com spambot=yes
 SetEnvIfNoCase Referer cfsrating\.sonicwall\.com spambot=yes
 SetEnvIfNoCase Referer cgi2\.nintendo\.co\.jp spambot=yes
+SetEnvIfNoCase Referer changde\.58\.com spambot=yes
 SetEnvIfNoCase Referer charmstroy\.info spambot=yes
 SetEnvIfNoCase Referer chastnoeporno\.com spambot=yes
 SetEnvIfNoCase Referer chatroulette\.life spambot=yes
@@ -4046,6 +4047,7 @@ SetEnvIfNoCase Referer moneymaster\.ru spambot=yes
 SetEnvIfNoCase Referer moneyteam24\.com spambot=yes
 SetEnvIfNoCase Referer moneytop\.ru spambot=yes
 SetEnvIfNoCase Referer moneyviking\-a\.akamaihd\.net spambot=yes
+SetEnvIfNoCase Referer moneyzzz\.ru spambot=yes
 SetEnvIfNoCase Referer monitorwebsitespeed\.com spambot=yes
 SetEnvIfNoCase Referer monsterdivx\.com spambot=yes
 SetEnvIfNoCase Referer monsterdivx\.tv spambot=yes
@@ -5084,6 +5086,7 @@ SetEnvIfNoCase Referer ruspdd\.com spambot=yes
 SetEnvIfNoCase Referer rusprostitute\.com spambot=yes
 SetEnvIfNoCase Referer russia\-tao\.ru spambot=yes
 SetEnvIfNoCase Referer russia\-today\-video\.ru spambot=yes
+SetEnvIfNoCase Referer russian\-postindex\.ru spambot=yes
 SetEnvIfNoCase Referer russintv\.fr spambot=yes
 SetEnvIfNoCase Referer russkie\-gorki\.ru spambot=yes
 SetEnvIfNoCase Referer russkoe\-zdorovie\.ru spambot=yes
@@ -5449,6 +5452,7 @@ SetEnvIfNoCase Referer sky\-mine\.ru spambot=yes
 SetEnvIfNoCase Referer skylta\.com spambot=yes
 SetEnvIfNoCase Referer skytraf\.xyz spambot=yes
 SetEnvIfNoCase Referer skyway24\.ru spambot=yes
+SetEnvIfNoCase Referer sladkoevideo\.com spambot=yes
 SetEnvIfNoCase Referer slavia\.info spambot=yes
 SetEnvIfNoCase Referer slavic\-magic\.ru spambot=yes
 SetEnvIfNoCase Referer slavkokacunko\.de spambot=yes
