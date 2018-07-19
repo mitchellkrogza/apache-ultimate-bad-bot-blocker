@@ -1,4 +1,4 @@
-Last Tested: Mon Jul 16 16:31:33 SAST 2018
+Last Tested: Thu Jul 19 15:32:55 SAST 2018
 
 <!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
 <html><head>
@@ -9,5 +9,5 @@ Last Tested: Mon Jul 16 16:31:33 SAST 2018
 on this server.<br />
 </p>
 <hr>
-<address>Apache/2.4.33 (Ubuntu) Server at local.dev Port 80</address>
+<address>Apache/2.4.34 (Ubuntu) Server at local.dev Port 80</address>
 </body></html>
