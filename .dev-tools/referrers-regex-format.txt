@@ -604,7 +604,6 @@ SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.com spam_ref
 SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.ru spam_ref
 SetEnvIfNoCase Referer ~*avtovolop\.ru spam_ref
 SetEnvIfNoCase Referer ~*awaybird\.ru spam_ref
-SetEnvIfNoCase Referer ~*away\.vk\.com spam_ref
 SetEnvIfNoCase Referer ~*awency\.com spam_ref
 SetEnvIfNoCase Referer ~*axbocz\.net spam_ref
 SetEnvIfNoCase Referer ~*ayakino\.net spam_ref
