@@ -17,9 +17,9 @@
 
 # Please Note:
 # ************
-# This version will work on Apache 2.2 > 2.4+ but on Apache 2.4+ it requires the mod_access_compat module
-# to be loaded. The new Apache 2.4 version uses the new Apache Access Control methods and does not require
-# the mod_access_compat module to be loaded in order to work.
+# This script will install Apache 2.2 or 2.4 configurations.
+# If you attempt to use Apache 2.2 configs wiht Apache 2.4 you will need the mod_access_compat module to be loaded.
+# The new Apache 2.4 version uses the new Apache Access Control methods and does not require the mod_access_compat module to be loaded in order to work.
 
 # PLEASE READ CONFIGURATION INSTRUCTIONS BEFORE USING THIS - THIS IS ONLY A PARTIAL INSTALLER
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md
@@ -31,20 +31,31 @@
 ### You must manually edit any vhost files with the required include or it will not actually be protecting any sites.
 ### READ: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/CONFIGURATION.md
 
-# Save this file as /usr/sbin/install-apacheblocker.sh
-# sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/install-apacheblocker.sh -O install-apacheblocker.sh
-# Make it Executable chmod +x /usr/sbin/install-apacheblocker.sh
-# Run it from the command line using sudo /usr/sbin/install-apacheblocker.sh
+# Save this file as ~/install-apacheblocker.sh
+# sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/install-apacheblocker.sh -O ~/install-apacheblocker.sh
+# Make it Executable chmod +x ~/install-apacheblocker.sh
+# Run it from the command line using sudo ~/install-apacheblocker.sh
+
+#Update all environment variables to suit your OS/Apache version.
 
 # LETS INSTALL NOW
- 
-sudo mkdir /etc/apache2/custom.d
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+
+#Major Apache version e.g. 2.2, 2.4
+APACHE_VERSION='2.4'
+#Directory where bad bot configs are located.
+#Generally /etc/apache2 or /etc/httpd depending on OS
+APACHE_CONF='/etc/apache2'
+#location of Apache blocker files
+BLOCKER_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d"
+
+sudo mkdir -p "${APACHE_CONF}/custom.d"
+sudo wget ${BLOCKER_URL}/globalblacklist.conf -O "${APACHE_CONF}/custom.d/globalblacklist.conf"
+sudo wget ${BLOCKER_URL}/whitelist-ips.conf -O "${APACHE_CONF}/custom.d/whitelist-ips.conf"
+sudo wget ${BLOCKER_URL}/whitelist-domains.conf -O "${APACHE_CONF}/custom.d/whitelist-domains.conf"
+sudo wget ${BLOCKER_URL}/blacklist-ips.conf -O "${APACHE_CONF}/custom.d/blacklist-ips.conf"
+sudo wget ${BLOCKER_URL}/bad-referrer-words.conf -O "${APACHE_CONF}/custom.d/bad-referrer-words.conf"
+sudo wget ${BLOCKER_URL}/blacklist-user-agents.conf -O "${APACHE_CONF}/custom.d/blacklist-user-agents.conf"
+echo "Manually edit vhost to include globalblacklist.conf"
 exit 0
 
 # PLEASE READ CONFIGURATION INSTRUCTIONS
