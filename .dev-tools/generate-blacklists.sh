@@ -985,7 +985,7 @@ rm ${inputdb10}
 
 # Copy files to correct folder
 # **********************************************
-sudo cp ${apache3} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
+#sudo cp ${apache3} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/conf.d/globalblacklist.conf
 
 # *****************************************************************************************************************
 # *****************************************************************************************************************
@@ -1263,7 +1263,7 @@ rm ${inputdb10}
 
 # Copy files to correct folder
 # **********************************************
-sudo cp ${apache4} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custom.d/globalblacklist.conf
+#sudo cp ${apache4} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/custom.d/globalblacklist.conf
 
 # **********************
 # Exit With Error Number
