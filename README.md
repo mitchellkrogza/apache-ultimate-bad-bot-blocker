@@ -166,7 +166,7 @@ Note - Some default Apache 2.4 installs have "Require all granted" which seems t
 <Directory "/var/www/mywebsite/htdocs/">
 Options +Includes
 Options +FollowSymLinks -Indexes
-custom.d/globalblacklist.conf <<<<<< This needs to be added
+Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
  ......
  ......
  BEGIN WordPress
@@ -185,7 +185,7 @@ You can include globalblacklist.conf globally (for all virtual hosts) if you put
 	# AND-combine with preceding configuration sections  
 	AuthMerging And
 	# include black list
-	custom.d/globalblacklist.conf
+	Include /etc/apache2/custom.d/globalblacklist.conf
 </Location>
 ```
 

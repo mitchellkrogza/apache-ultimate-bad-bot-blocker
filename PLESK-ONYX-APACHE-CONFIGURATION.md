@@ -56,7 +56,7 @@ Modify this section as follows:
 
 ```
 Options <?php echo $VAR->domain->physicalHosting->ssi ? '+' : '-' ?>Includes <?php echo $VAR->domain->physicalHosting->cgi && $webuser->cgi ? '+' : '-' ?>ExecCGI
-custom.d/globalblacklist.conf
+Include /etc/apache2/custom.d/globalblacklist.conf
 </Directory>
 ```
 
@@ -109,7 +109,7 @@ You can confirm this by looking at the httpd.conf file for a vhost. In this case
 Scroll down in the file and you will see the Include as below.
 
 ```
-custom.d/globalblacklist.conf
+Include /etc/apache2/custom.d/globalblacklist.conf
 </Directory>
 ```
 
