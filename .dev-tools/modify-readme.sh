@@ -84,44 +84,6 @@ q
 IN
 rm ${inputdbA}
 
-# ****************************************************
-# PRINT VERSION INFORMATION INTO README.md Apache 2.2
-# ****************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/README.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/README.md
-q
-IN
-rm ${inputdbA}
-
-# ******************************************************
-# PRINT VERSION INFORMATION INTO README.md Apache 2.4
-# ******************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/README.md
-q
-IN
-rm ${inputdbA}
-
 # ******************************************************
 # PRINT VERSION INFORMATION INTO CONFIGURATION.md
 # ******************************************************
@@ -198,81 +160,6 @@ q
 IN
 rm ${inputdbA}
 
-# ********************************************************
-# PRINT VERSION INFORMATION INTO CentOS6 README.md
-# ********************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/README.md
-q
-IN
-rm ${inputdbA}
-
-# ********************************************************
-# PRINT VERSION INFORMATION INTO CentOS6 CONFIGURATION.md
-# ********************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/CONFIGURATION.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS6/CONFIGURATION.md
-q
-IN
-rm ${inputdbA}
-
-# ********************************************************
-# PRINT VERSION INFORMATION INTO CentOS7 README.md
-# ********************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/README.md
-q
-IN
-rm ${inputdbA}
-
-# ********************************************************
-# PRINT VERSION INFORMATION INTO CentOS7 CONFIGURATION.md
-# ********************************************************
-
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
-mv ${tmpapacheA} ${inputdbA}
-ed -s ${inputdbA}<<\IN
-1,/_______________/d
-/____________________/,$d
-,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/CONFIGURATION.md
-/_______________/x
-.t.
-.,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CentOS7/CONFIGURATION.md
-q
-IN
-rm ${inputdbA}
 
 # ********************************************************
 # PRINT VERSION INFORMATION INTO CPanel Instructions
@@ -284,11 +171,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CPANEL-Instructions.md
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_other_distros/CPANEL-Instructions.md
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
 q
 IN
 rm ${inputdbA}

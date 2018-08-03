@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.07.843
-### Bad Referrer Count: 6332
+### Version: V3.2018.08.861
+### Bad Referrer Count: 6338
 ### Bad Bot Count: 529
 ### Version Information ##
 
@@ -944,6 +944,7 @@ SetEnvIfNoCase Referer android\-systems\.ru spambot=yes
 SetEnvIfNoCase Referer android\-vsem\.org spambot=yes
 SetEnvIfNoCase Referer android4fun\.org spambot=yes
 SetEnvIfNoCase Referer androids\-store\.com spambot=yes
+SetEnvIfNoCase Referer angel1777\.kz spambot=yes
 SetEnvIfNoCase Referer angigreene\.com spambot=yes
 SetEnvIfNoCase Referer angkortours\.vn spambot=yes
 SetEnvIfNoCase Referer angry\-fermi\-7633\.arukascloud\.io spambot=yes
@@ -1138,6 +1139,7 @@ SetEnvIfNoCase Referer avon\-novosib\.ru spambot=yes
 SetEnvIfNoCase Referer avon\-severozapad\.ru spambot=yes
 SetEnvIfNoCase Referer avon\-ukraine\.com spambot=yes
 SetEnvIfNoCase Referer avramstroy\.ru spambot=yes
+SetEnvIfNoCase Referer avto\-oligarh\.ru spambot=yes
 SetEnvIfNoCase Referer avtoarenda\.by spambot=yes
 SetEnvIfNoCase Referer avtochehli\.by spambot=yes
 SetEnvIfNoCase Referer avtocredit\-legko\.ru spambot=yes
@@ -3529,6 +3531,7 @@ SetEnvIfNoCase Referer komputernaya\-pomosh\-moscow\.ru spambot=yes
 SetEnvIfNoCase Referer komputers\-best\.ru spambot=yes
 SetEnvIfNoCase Referer kongoultry\.net spambot=yes
 SetEnvIfNoCase Referer kongruan\.com spambot=yes
+SetEnvIfNoCase Referer konica\.kz spambot=yes
 SetEnvIfNoCase Referer konkursov\.net spambot=yes
 SetEnvIfNoCase Referer konkursowo\-24\.pl spambot=yes
 SetEnvIfNoCase Referer konoplisemena\.com spambot=yes
@@ -3549,6 +3552,7 @@ SetEnvIfNoCase Referer kotaku\.com spambot=yes
 SetEnvIfNoCase Referer kountrylife\.com spambot=yes
 SetEnvIfNoCase Referer koversite\.info spambot=yes
 SetEnvIfNoCase Referer kovesszucs\.atw\.hu spambot=yes
+SetEnvIfNoCase Referer kovrenok\.ru spambot=yes
 SetEnvIfNoCase Referer kozhniebolezni\.com spambot=yes
 SetEnvIfNoCase Referer krafte\.ru spambot=yes
 SetEnvIfNoCase Referer kraljeva\-sutjeska\.com spambot=yes
@@ -4145,6 +4149,7 @@ SetEnvIfNoCase Referer mxgetcode\.com spambot=yes
 SetEnvIfNoCase Referer my\-bc\.ru spambot=yes
 SetEnvIfNoCase Referer my\-big\-family\.com spambot=yes
 SetEnvIfNoCase Referer my\-cash\-bot\.co spambot=yes
+SetEnvIfNoCase Referer my\-floor\.in\.ua spambot=yes
 SetEnvIfNoCase Referer myanyone\.net spambot=yes
 SetEnvIfNoCase Referer mybinaryoptionsrobot\.com spambot=yes
 SetEnvIfNoCase Referer myblogregistercm\.tk spambot=yes
@@ -5942,6 +5947,7 @@ SetEnvIfNoCase Referer todohr\.com spambot=yes
 SetEnvIfNoCase Referer toloka\.hurtom\.com spambot=yes
 SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
 SetEnvIfNoCase Referer tomck\.com spambot=yes
+SetEnvIfNoCase Referer tonerbox\.kz spambot=yes
 SetEnvIfNoCase Referer tongkatmadura\.info spambot=yes
 SetEnvIfNoCase Referer toolsky\.com spambot=yes
 SetEnvIfNoCase Referer toon\-families\.com spambot=yes

@@ -94,13 +94,13 @@ printf '%s\n%s\n%s\n\n' "############################" "Enabled include module" 
 sudo a2enmod include
 
 # ********************************************************************************************
-# Replace apache2.conf with out Apache 2.4 version of apache2.conf to /etc/apache2
+# Replace apache2.conf with our Apache 2.4 version of apache2.conf to /etc/apache2
 # ********************************************************************************************
 
-#sudo service apache2 stop
-#sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
-#sudo cp $TRAVIS_BUILD_DIR/.dev-tools/apache2.conf /etc/apache2/apache2.conf
-#sudo service apache2 restart
+sudo service apache2 stop
+sudo mv /etc/apache2/apache2.conf /etc/apache2/apache2.bak
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/apache2.4.conf /etc/apache2/apache2.conf
+sudo service apache2 restart
 
 # **************************************
 # Get new files from Repo Apache_2.4
