@@ -241,7 +241,7 @@ The Apache Ultimate Bot Blocker is now WORKING and PROTECTING your web sites !!!
 
 Updating to the latest version is now as simple as:
 
-### For Apache 2.2
+### For Apache 2.2 & 2.4
 
 `sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf`
 
@@ -260,9 +260,9 @@ Updating to the latest version is now as simple as:
 And you will be up to date with all your whitelisted domains included automatically for you now. 
 
 ************************************************
-# AUTO UPDATING:
+# AUTO UPDATING WITH CRON:
 
-See the latest auto updater bash script contributed by @lutaylor at:
+See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by @lutaylor at:
 
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 
