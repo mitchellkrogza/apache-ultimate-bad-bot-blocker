@@ -68,9 +68,14 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/step-1.png"/>
 
 **COPY THE GLOBALBLACKLIST.CONF FILE FROM THE REPO**
+$APACHE_CONF is generally located at /etc/apache2 or /etc/httpd depending on OS
 
-Copy the contents of **globalblacklist.conf** into your /etc/apache2/custom.d folder. 
+Copy the contents of **globalblacklist.conf** into your $APACHE_CONF/custom.d folder. 
+e.g. /etc/apache2/custom.d on Ubuntu/Debian
+     /etc/httpd on RHEL/centos
 **You need to create this folder.**
+
+The following directions use /etc/apache2 as an example.
 
 `sudo mkdir /etc/apache2/custom.d`
 
@@ -151,6 +156,8 @@ Allows you to add your own custom list of user agents with this new include file
 **INCLUDE THE GLOBALBLACKLIST.CONF**
 
 Include the globalblacklist.conf file in the beginning of a directory block just after your opening Options statements and before the rest of your host config example below. **Remove the "<<<<<< This needs to be added" part**
+
+Note - Some default Apache 2.4 installs have "Require all granted" which seems to need to be changed to "Require all denied" for any of this to work.
 
 ```apache
  <VirtualHost *:443>
@@ -257,13 +264,7 @@ And you will be up to date with all your whitelisted domains included automatica
 
 See my latest auto updater bash script at:
 
-### For Apache 2.2
-
-https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Apache_2.2/update-apacheblocker.sh
-
-### For Apache 2.4
-
-https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/Apache_2.4/update-apacheblocker.sh
+https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 
 Relax now and sleep better at night knowing your site is telling all those baddies FORBIDDEN !!!
 
