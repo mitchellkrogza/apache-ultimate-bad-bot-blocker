@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.07.843
-### Updated: Tue Jul 24 09:27:54 SAST 2018
-### Bad Referrer Count: 6332
+### Version: V3.2018.08.846
+### Updated: Fri Aug  3 15:04:25 SAST 2018
+### Bad Referrer Count: 6338
 ### Bad Bot Count: 529
 ###################################################
 ### Version Information ##
@@ -1236,6 +1236,7 @@ SetEnvIfNoCase Referer ~*androids\-store\.com spam_ref
 SetEnvIfNoCase Referer ~*android\-style\.com spam_ref
 SetEnvIfNoCase Referer ~*android\-systems\.ru spam_ref
 SetEnvIfNoCase Referer ~*android\-vsem\.org spam_ref
+SetEnvIfNoCase Referer ~*angel1777\.kz spam_ref
 SetEnvIfNoCase Referer ~*angigreene\.com spam_ref
 SetEnvIfNoCase Referer ~*angkortours\.vn spam_ref
 SetEnvIfNoCase Referer ~*angry\-fermi\-7633\.arukascloud\.io spam_ref
@@ -1437,6 +1438,7 @@ SetEnvIfNoCase Referer ~*avtocredit\-legko\.ru spam_ref
 SetEnvIfNoCase Referer ~*avtointeres\.ru spam_ref
 SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.com spam_ref
 SetEnvIfNoCase Referer ~*avtolombard\-krasnodar\.ru spam_ref
+SetEnvIfNoCase Referer ~*avto\-oligarh\.ru spam_ref
 SetEnvIfNoCase Referer ~*avtovolop\.ru spam_ref
 SetEnvIfNoCase Referer ~*awaybird\.ru spam_ref
 SetEnvIfNoCase Referer ~*awency\.com spam_ref
@@ -3822,6 +3824,7 @@ SetEnvIfNoCase Referer ~*komputernaya\-pomosh\-moscow\.ru spam_ref
 SetEnvIfNoCase Referer ~*komputers\-best\.ru spam_ref
 SetEnvIfNoCase Referer ~*kongoultry\.net spam_ref
 SetEnvIfNoCase Referer ~*kongruan\.com spam_ref
+SetEnvIfNoCase Referer ~*konica\.kz spam_ref
 SetEnvIfNoCase Referer ~*konkursov\.net spam_ref
 SetEnvIfNoCase Referer ~*konkursowo\-24\.pl spam_ref
 SetEnvIfNoCase Referer ~*konoplisemena\.com spam_ref
@@ -3842,6 +3845,7 @@ SetEnvIfNoCase Referer ~*kotaku\.com spam_ref
 SetEnvIfNoCase Referer ~*kountrylife\.com spam_ref
 SetEnvIfNoCase Referer ~*koversite\.info spam_ref
 SetEnvIfNoCase Referer ~*kovesszucs\.atw\.hu spam_ref
+SetEnvIfNoCase Referer ~*kovrenok\.ru spam_ref
 SetEnvIfNoCase Referer ~*kozhniebolezni\.com spam_ref
 SetEnvIfNoCase Referer ~*krafte\.ru spam_ref
 SetEnvIfNoCase Referer ~*kraljeva\-sutjeska\.com spam_ref
@@ -4448,6 +4452,7 @@ SetEnvIfNoCase Referer ~*mydirtyhobby\.com spam_ref
 SetEnvIfNoCase Referer ~*mydirtystuff\.com spam_ref
 SetEnvIfNoCase Referer ~*mydownloadengine\.com spam_ref
 SetEnvIfNoCase Referer ~*mydownlodablefiles\.com spam_ref
+SetEnvIfNoCase Referer ~*my\-floor\.in\.ua spam_ref
 SetEnvIfNoCase Referer ~*myfreecams\.com spam_ref
 SetEnvIfNoCase Referer ~*myfreemp3\.eu spam_ref
 SetEnvIfNoCase Referer ~*myfreetutorials\.com spam_ref
@@ -6235,6 +6240,7 @@ SetEnvIfNoCase Referer ~*todohr\.com spam_ref
 SetEnvIfNoCase Referer ~*toloka\.hurtom\.com spam_ref
 SetEnvIfNoCase Referer ~*tomatis\.gospartner\.com spam_ref
 SetEnvIfNoCase Referer ~*tomck\.com spam_ref
+SetEnvIfNoCase Referer ~*tonerbox\.kz spam_ref
 SetEnvIfNoCase Referer ~*tongkatmadura\.info spam_ref
 SetEnvIfNoCase Referer ~*toolsky\.com spam_ref
 SetEnvIfNoCase Referer ~*toondinsey\.com spam_ref
