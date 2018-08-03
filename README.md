@@ -58,7 +58,7 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 # CONFIGURATION OF THE APACHE BAD BOT BLOCKER:
 
-- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_other_distros/CPANEL-Instructions.md
+- CPANEL Users read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_CPanel_Instructions/README.md
 - Users Unable to run the full Bot Blocker read - https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/_htaccess_versions/README.md
 - Includes the creation of a google-exclude.txt file for creating filters / segments in Google Analytics (see instructions lower down)
 - Includes the creation of a google-disavow.txt file for use in Google Webmaster Tools (see instructions lower down)
@@ -262,7 +262,7 @@ And you will be up to date with all your whitelisted domains included automatica
 ************************************************
 # AUTO UPDATING:
 
-See my latest auto updater bash script at:
+See the latest auto updater bash script contributed by @lutaylor at:
 
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 

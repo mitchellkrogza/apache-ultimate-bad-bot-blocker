@@ -171,11 +171,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/CPANEL-Instructions.md
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/CPANEL-Instructions.md
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
 q
 IN
 rm ${inputdbA}
