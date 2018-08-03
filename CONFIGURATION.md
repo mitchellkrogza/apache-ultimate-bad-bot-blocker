@@ -124,7 +124,7 @@ When pulling any future updates now your custom bad referrer words list will not
 <Directory "/var/www/mywebsite/htdocs/">
 Options +Includes
 Options +FollowSymLinks -Indexes
-Include /etc/apache2/custom.d/globalblacklist.conf <<<<<< This needs to be added
+custom.d/globalblacklist.conf <<<<<< This needs to be added
  ......
  ......
  BEGIN WordPress

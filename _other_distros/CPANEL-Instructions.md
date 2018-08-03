@@ -60,7 +60,7 @@ Location: https://yourdomain.com/
 
 This means it is redirecting all http traffic (port 80) to https (port 443). At this point most bad bots and bad referrers give up and will not even bother to follow the redirect. If they do however they will get blocked. 
 
-You can change this behavior however by also adding the `Include /etc/apache2/custom.d/globalblacklist.conf` into the `<VirtualHost 1.2.3.4:80>` section of your config below before the ReWrite conditions take effect. Which means bots and bad referers hitting your http site will get blocked and will not even be shown the redirect to your https site. (see in config example below)
+You can change this behavior however by also adding the `custom.d/globalblacklist.conf` into the `<VirtualHost 1.2.3.4:80>` section of your config below before the ReWrite conditions take effect. Which means bots and bad referers hitting your http site will get blocked and will not even be shown the redirect to your https site. (see in config example below)
 
 ## To Test Bad User Agents
 
@@ -145,7 +145,7 @@ New referrers and bots are added every other day. Each time you update **MAKE SU
 
       ### INCLUDE THE APACHE ULTIMATE BAD BOT BLOCKER HERE 
       ### make the folder custom.d and place globalblacklist.conf into that folder
-	  Include /etc/apache2/custom.d/globalblacklist.conf
+	  custom.d/globalblacklist.conf
 
     </Directory>
   </IfModule>
@@ -200,7 +200,7 @@ New referrers and bots are added every other day. Each time you update **MAKE SU
       ### INCLUDE THE APACHE ULTIMATE BAD BOT BLOCKER HERE AGAIN
       ### This will block bots before your server even issues the redirect to port 443
       ### UnComment the include line below if you want this functionality.
-	    ###Include /etc/apache2/custom.d/globalblacklist.conf
+	    ###custom.d/globalblacklist.conf
 
         RewriteEngine On
         RewriteCond %{HTTPS} off
