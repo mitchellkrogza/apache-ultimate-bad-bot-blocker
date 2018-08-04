@@ -1,4 +1,3 @@
-language: php
 env:
   global:
     - secure: j4hwh5XrHRSAjjVYIxS7l3Rj+lnvIRHSBgqVc2nQvKrYIDU91bsqhE3SfFrYVTga447KSHYqrPgUWk18my2myjoKZntb/zWfveEvD62fOQeAzxwLSsSV5W1hekYmntBcFG+mkEeENpaVLJ/YoPuRIQeLPQDNaEaB8lLlR3NU6MNmUvJxoPpES8K9brL7nBcw349raspuJzEjObUJFU1IWWsv1PNCueksBWHtS5mGrMfqpzvu+C22djKi/ooAhG1LkCcV88czLhs3dGYB3+q6ZCr54cP/gB6vrSv8WnNEEI3NneMeiH1fFm3sLI2v+ECA/SVTPJfbG7n5ww+Whcsyp88ECRCisgdOR7RoBbdFO4WDNsXvl+865iQkXrEaaskQ7CJuXHy89gHYA6JmshKqerW5CY3wgvM2dDqyYQCVuwFmvOkG9p0+FVg/lvjVm1XiltQA/G2OTwfhJZ+FtA/NlR0inQRMc3X1Uh/0lGvPfQ0lbaf7T537mmL1bcOZuw15jW/FoDzXFhmloOYzJoZWFG8m1KYcLbZ9X4zprcxDlKR5IBa0vwgtjVasQ8grgDoxqvUFJdeiFQPmZuiy87un9Ao/+o1W7UpTgqyCGhMM+K0TB3myAQSGFV3NKE4jmNaZ79nLVPhPSooBdM+193aaI7KSCsZI9OTnkrRpnvCVMeo=
@@ -6,8 +5,11 @@ env:
     - GIT_EMAIL: mitchellkrog@gmail.com
     - TRAVIS_REPO_SLUG: mitchellkrogza/apache-ultimate-bad-bot-blocker
     - GIT_BRANCH: master
-sudo: required
-dist: trusty
+    - TZ:       Africa/Johannesburg
+  matrix:
+    - USE_NETWORK=true
+
+language: php
 
 matrix:
   include:
@@ -23,8 +25,7 @@ addons:
 cache:
   - apt
 
-before_install:
-  - export TZ=Africa/Johannesburg
+sudo:           required
 
 install:
   - bash .dev-tools/install-apache.sh
@@ -57,5 +58,7 @@ deploy:
     branches:
        only:
          - "master"
+
 notifications:
-  email: false
+  on_success:   change
+  on_failure:   always
