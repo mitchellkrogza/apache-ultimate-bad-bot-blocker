@@ -66,6 +66,35 @@ sudo /usr/local/apache2/bin/apachectl start
 
 wget -qO- http://localhost | grep "It works!"
 
+# **************************
+# Show Loaded apache Modules
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
+sudo /usr/local/apache2/bin/apachectl -M
+
+# **************************
+# Show Apache Version
+# **************************
+
+printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
+sudo /usr/local/apache2/bin/apachectl -V
+
+# **********************
+# Test the Apache Config
+# **********************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Config Test" "#################################"
+sudo /usr/local/apache2/bin/apachectl configtest
+
+# Stat our apache2 directory
+ls -la /usr/local/apache2
+
+# Copy our 2.2 httpd.conf file to test_result
+cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/httpd.conf
+
+
+
 
 
 # **********************
