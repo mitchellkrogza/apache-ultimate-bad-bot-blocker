@@ -45,7 +45,8 @@
 
 sudo apt-get remove --purge apache2
 sudo apt-get install build-essential
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz /tmp
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz /tmp/httpd-2.2.25.tar.gz
+ls -la /tmp
 cd /tmp
 
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
@@ -96,7 +97,7 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/http
 
 # Put new httpd-vhosts.conf into place
 echo "Copy httpd-vhosts.conf"
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/apache2.2.25/extra/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 
 # Restart Apache 2.2.25
 
