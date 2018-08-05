@@ -179,7 +179,7 @@ echo "Restarting Apache 2.2"
 # Test Apache 2 Curl
 # ******************
 
-sudo wget -qO- http://local.dev
+wget -qO- http://local.dev
 
 # **********************
 # Exit With Error Number
