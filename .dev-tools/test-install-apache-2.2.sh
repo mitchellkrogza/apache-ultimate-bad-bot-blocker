@@ -87,11 +87,17 @@ sudo /usr/local/apache2/bin/apachectl -V
 printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Config Test" "#################################"
 sudo /usr/local/apache2/bin/apachectl configtest
 
-# Stat our apache2 directory
-ls -la /usr/local/apache2
+# Put new httpd.conf into place
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
-# Copy our 2.2 httpd.conf file to test_result
-cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/httpd.conf
+# Restart Apache 2.2
+
+sudo /usr/local/apache2/bin/apachectl restart
+
+# Test Apache 2 Curl
+
+wget -qO- http://travis.local | grep "It works!"
+
 
 
 
