@@ -91,6 +91,9 @@ sudo /usr/local/apache2/bin/apachectl configtest
 echo "Copy httpd.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
+# Get a copy of conf/extra/httpd-vhosts.conf for modification
+sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/
+
 # Restart Apache 2.2
 
 echo "Restarting Apache 2.2"
@@ -98,7 +101,7 @@ sudo /usr/local/apache2/bin/apachectl restart
 
 # Test Apache 2 Curl
 
-wget -qO- http://localhost | grep "It works!"
+wget -qO- http://local.dev | grep "It works!"
 
 
 
