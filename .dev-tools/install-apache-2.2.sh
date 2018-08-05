@@ -142,9 +142,9 @@ sudo /usr/local/apache2/bin/apachectl configtest
 # Restart Apache 2.2.25
 # *********************
 
-echo "Restarting Apache 2.2"
-sudo /usr/local/apache2/bin/apachectl stop
-sudo /usr/local/apache2/bin/apachectl start
+echo "Reloading Apache 2.2"
+sudo /usr/local/apache2/bin/apachectl reload
+#sudo /usr/local/apache2/bin/apachectl start
 
 # ******************
 # Test Apache 2 Curl
@@ -152,6 +152,8 @@ sudo /usr/local/apache2/bin/apachectl start
 
 #wget -qO- http://local.dev
 curl -sL http://local.dev
+
+echo "Done"
 
 # **********************
 # Exit With Error Number
