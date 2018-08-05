@@ -173,6 +173,13 @@ sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_result
 sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
 sudo cp /etc/apache2/sites-available/000-default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/000-default.conf
 
+# Check our Apache2 conf-enabled folder
+ls -la /etc/apache2/conf-enabled/
+
+# Check our Apache2 mods-enabled folder
+ls -la /etc/apache2/mods-enabled/
+
+
 
 # **********************
 # Exit With Error Number
