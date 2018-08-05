@@ -106,6 +106,11 @@ sudo /usr/local/apache2/bin/apachectl restart
 
 wget -qO- http://local.dev | grep "It works!"
 
+# Stop Apache 2.2.25
+
+echo "Stopping Apache 2.2"
+sudo /usr/local/apache2/bin/apachectl stop
+
 # Set Apache 2.2.25 up as a service and test
 
 sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache22
