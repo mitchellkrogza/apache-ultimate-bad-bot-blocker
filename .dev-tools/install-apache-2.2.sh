@@ -79,6 +79,7 @@ wget -qO- http://localhost | grep "It works!"
 # Copy basic testing index.html file into /var/www/html
 # *****************************************************
 
+sudo mkdir /var/www
 sudo mkdir /var/www/html
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/index.html /var/www/html/index.html
 
