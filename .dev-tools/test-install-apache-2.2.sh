@@ -54,7 +54,7 @@ cd zlib-1.2.11/
 make
 sudo make install
 
-wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
+wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
