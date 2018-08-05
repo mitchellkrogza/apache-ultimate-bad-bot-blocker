@@ -81,13 +81,17 @@ sudo apache2ctl -V
 
 # Get copy of apache2.conf for 2.4
 #sudo cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd.conf
-sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf
+#sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf
 
 # Get copy of httpd-vhosts.conf for 2.4
 #sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd-vhosts.conf
 
+# Get copy of default vhosts files
+sudo cp /etc/apache2/sites-available/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/
+
 # Stat directories
-ls -la /etc/apache2/sites-available/
+#ls -la /etc/apache2/sites-available/
+#sudo rm /etc/apache2/sites-available/*.conf
 
 
 
