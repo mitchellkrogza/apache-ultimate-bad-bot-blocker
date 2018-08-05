@@ -22,6 +22,11 @@ matrix:
 addons:
   hosts:
     - local.dev
+addons:
+  apt:
+    packages:
+      - zip
+
 cache:
   - apt
 
