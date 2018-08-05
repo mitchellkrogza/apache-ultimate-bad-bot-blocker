@@ -148,6 +148,19 @@ sudo a2dismod access_compat
 sudo service apache2 reload
 sudo service apache2 restart
 
+# *******************************
+# Test with modified apache2.conf
+# *******************************
+
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf /etc/apache2/
+
+# *************
+# Reload Apache
+# *************
+
+sudo service apache2 reload
+sudo service apache2 restart
+
 # *************************************************
 # Function Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
@@ -172,13 +185,6 @@ run_curltest1
 sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
 sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
 sudo cp /etc/apache2/sites-available/000-default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/000-default.conf
-
-# Check our Apache2 conf-enabled folder
-ls -la /etc/apache2/conf-enabled/
-
-# Check our Apache2 mods-enabled folder
-ls -la /etc/apache2/mods-enabled/
-
 
 
 # **********************
