@@ -88,15 +88,17 @@ printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Conf
 sudo /usr/local/apache2/bin/apachectl configtest
 
 # Put new httpd.conf into place
+echo "Copy httpd.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
 # Restart Apache 2.2
 
+echo "Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
 
 # Test Apache 2 Curl
 
-wget -qO- http://travis.local | grep "It works!"
+wget -qO- http://localhost | grep "It works!"
 
 
 
