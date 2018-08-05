@@ -59,18 +59,18 @@ wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar -xvf zlib-1.2.11.tar.gz >/dev/null 2>&1
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local
-make
+make >/dev/null 2>&1
 echo "Building Zlib"
-sudo make install
+sudo make install >/dev/null 2>&1
 echo "Done"
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz >/dev/null 2>&1
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
-make
+make >/dev/null 2>&1
 echo "Building Apache 2.2.25"
-sudo make install
+sudo make install >/dev/null 2>&1
 echo "Done"
 
 sudo /usr/local/apache2/bin/apachectl start
@@ -143,8 +143,7 @@ sudo /usr/local/apache2/bin/apachectl configtest
 # *********************
 
 echo "Restarting Apache 2.2"
-sudo /usr/local/apache2/bin/apachectl stop
-sudo /usr/local/apache2/bin/apachectl start
+sudo /usr/local/apache2/bin/apachectl restart
 
 # ******************
 # Test Apache 2 Curl
@@ -158,7 +157,7 @@ curl -sL http://local.dev
 # **********************
 
 #exit ${?}
-exit 0
+
 
 # MIT License
 
