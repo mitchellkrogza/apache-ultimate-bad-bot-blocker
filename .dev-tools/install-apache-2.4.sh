@@ -104,22 +104,11 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.4 Config Test" "#################################"
 sudo apache2ctl configtest
 
-# *********************
-# Restart Apache 2.2.25
-# *********************
-
-echo "Restarting Apache 2.2"
-#sudo /usr/local/apache2/bin/apachectl restart
-
 # ******************
 # Test Apache 2 Curl
 # ******************
 
 sudo wget -qO- http://local.dev
-
-# **********************
-# Exit With Error Number
-# **********************
 
 # *******************************************
 # Set Location of our Curl Test Results Files
@@ -144,6 +133,49 @@ else
 fi
 }
 run_curltest1
+
+# *****************************
+# Now Disable mod_access_compat
+# *****************************
+
+printf '%s\n%s\n%s\n\n' "############################" "Disable mod access_compat" "############################"
+sudo a2dismod access_compat
+
+# *************
+# Reload Apache
+# *************
+
+sudo service apache2 reload
+
+# *************************************************
+# Function Curl Test 1 - Check for Bad Bot "80legs"
+# *************************************************
+
+run_curltest1 () {
+truncate -s 0 ${curltest1}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
+curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
+if grep -i 'Forbidden' ${curltest1}; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+run_curltest1
+
+# *****************************************
+# Get a copy of all conf files for checking
+# *****************************************
+
+sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
+sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
+sudo cp /etc/apache2/sites-available/000-default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/000-default.conf
+
+
+# **********************
+# Exit With Error Number
+# **********************
 
 exit ${?}
 
