@@ -45,7 +45,7 @@
 
 sudo apt-get remove --purge apache2
 sudo apt-get install build-essential
-
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz /tmp
 cd /tmp
 
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
@@ -55,7 +55,7 @@ cd zlib-1.2.11/
 make
 sudo make install
 
-wget https://archive.apache.org/dist/httpd/httpd-2.2.25.tar.gz
+#wget https://archive.apache.org/dist/httpd/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
@@ -92,9 +92,13 @@ echo "Copy httpd.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
 # Get a copy of conf/extra/httpd-vhosts.conf for modification
-sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/
+#sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/apache2.2.25/
 
-# Restart Apache 2.2
+# Put new httpd-vhosts.conf into place
+echo "Copy httpd-vhosts.conf"
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/apache2.2.25/extra/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+
+# Restart Apache 2.2.25
 
 echo "Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
@@ -103,10 +107,14 @@ sudo /usr/local/apache2/bin/apachectl restart
 
 wget -qO- http://local.dev | grep "It works!"
 
+# Set Apache 2.2.25 up as a service and test
 
+sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache22
+sudo chmod +x /etc/init.d/apache22
+sudo service apache22 stop
+sudo service apache22 start
 
-
-
+sudo service apache22 configtest
 
 # **********************
 # Exit With Error Number
