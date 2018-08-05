@@ -1,5 +1,5 @@
 #!/bin/bash
-# Setup Apache for Testing the Apache Ultimate Bad Bot Blocker on apache 2.4 without mod_access_compat
+# Setup Apache for Testing the Apache Ultimate Bad Bot Blocker on apache 2.2.25
 # Created by: Mitchell Krog (mitchellkrog@gmail.com)
 # Copyright: Mitchell Krog - https://github.com/mitchellkrogza
 # Repo Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
@@ -39,12 +39,20 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
-# *******************************************************
-# Test Installing Apache 2.2.25
-# *******************************************************
-
+# **************************************
+# Make sure no other Apache is Installed
+# **************************************
 sudo apt-get remove --purge apache2
+
+# *************************************************************
+# Make sure We Have Build Essentials for Building apache 2.2.25
+# *************************************************************
 sudo apt-get install build-essential
+
+# ************************
+# Lets Build Apache 2.2.25
+# ************************
+
 cd /tmp
 
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
@@ -65,6 +73,21 @@ sudo /usr/local/apache2/bin/apachectl start
 
 wget -qO- http://localhost | grep "It works!"
 
+# *********************************
+# Prepare Apache 2.2.25 For Testing
+# *****************************************************
+# Copy basic testing index.html file into /var/www/html
+# *****************************************************
+
+sudo mkdir /var/www/html
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/index.html /var/www/html/index.html
+
+# *************************
+# Set Ownership of /var/www
+# *************************
+
+sudo chown -R www-data:www-data /var/www/
+
 # **************************
 # Show Loaded apache Modules
 # **************************
@@ -79,21 +102,15 @@ sudo /usr/local/apache2/bin/apachectl -M
 printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
 sudo /usr/local/apache2/bin/apachectl -V
 
-# **********************
-# Test the Apache Config
-# **********************
-
-printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Config Test" "#################################"
-sudo /usr/local/apache2/bin/apachectl configtest
-
+# *****************************
 # Put new httpd.conf into place
+# *****************************
 echo "Copy httpd.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
-# Get a copy of conf/extra/httpd-vhosts.conf for modification
-#sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/apache2.2.25/
-
+# ************************************
 # Put new httpd-vhosts.conf into place
+# ************************************
 echo "Copy httpd-vhosts.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 
@@ -101,7 +118,7 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/http
 # Get files from Repo Apache_2.2
 # *************************************
 
-#sudo mkdir /etc/apache2/custom.d
+sudo mkdir /etc/apache2/custom.d
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
@@ -109,28 +126,25 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
 
+# **********************
+# Test the Apache Config
+# **********************
+
+printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Config Test" "#################################"
+sudo /usr/local/apache2/bin/apachectl configtest
+
+# *********************
 # Restart Apache 2.2.25
+# *********************
 
 echo "Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
 
+# ******************
 # Test Apache 2 Curl
+# ******************
 
 wget -qO- http://local.dev
-
-# Stop Apache 2.2.25
-
-#echo "Stopping Apache 2.2"
-#sudo /usr/local/apache2/bin/apachectl stop
-
-# Set Apache 2.2.25 up as a service and test
-
-#sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache22
-#sudo chmod +x /etc/init.d/apache22
-#sudo service apache22 stop
-#sudo service apache22 start
-
-#sudo service apache22 configtest
 
 # **********************
 # Exit With Error Number
