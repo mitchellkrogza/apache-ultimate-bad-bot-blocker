@@ -20,12 +20,12 @@
 # Set Location of our Curl Test Results Files
 # *******************************************
 
-curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest1.txt
-curltest2=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest2.txt
-curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest3.txt
-curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest4.txt
-curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest5.txt
-curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_curl_tests_2/curltest6.txt
+curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest1.txt
+curltest2=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest2.txt
+curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest3.txt
+curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest4.txt
+curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest5.txt
+curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest6.txt
 now="$(date)"
 
 # *************************************************

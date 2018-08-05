@@ -52,6 +52,7 @@
 sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update
 sudo apt-get install -y apache2 apache2-utils
+# apt-get install apache2=2.2.14-5ubuntu8.7
 
 # ****************************
 # Install zip for our releases
@@ -134,9 +135,9 @@ sudo apache2ctl configtest
 # Get a copy of all conf files for checking
 # *****************************************
 
-sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/
-sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/apache2.conf
-sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.2/default.conf
+sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/
+sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/apache2.conf
+sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/default.conf
 
 
 # ***********************************************************

@@ -179,9 +179,9 @@ curl -A "GoogleBot" http://local.dev
 # Get a copy of all conf files for checking
 # *****************************************
 
-sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/
-sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/apache2.conf
-sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_2.4/default.conf
+sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
+sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
+sudo cp /etc/apache2/sites-available/default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/default.conf
 
 # *****************************************************************************************
 # Travis now moves into running the rest of the tests in the script: section of .travis.yml
