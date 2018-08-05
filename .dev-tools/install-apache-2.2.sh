@@ -52,6 +52,9 @@ sudo apt-get install build-essential
 # ************************
 # Lets Build Apache 2.2.25
 # ************************
+# With Thanks to https://serverfault.com/users/385523/johano-fierra
+# REF: https://serverfault.com/questions/544779/how-can-i-install-apache-with-a-specific-version
+# **********************************************************************************************
 
 cd /tmp
 
