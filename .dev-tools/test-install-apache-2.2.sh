@@ -94,8 +94,8 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/http
 #sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/apache2.2.25/
 
 # Put new httpd-vhosts.conf into place
-#echo "Copy httpd-vhosts.conf"
-#sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+echo "Copy httpd-vhosts.conf"
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 
 # Restart Apache 2.2.25
 
@@ -104,21 +104,21 @@ sudo /usr/local/apache2/bin/apachectl restart
 
 # Test Apache 2 Curl
 
-wget -qO- http://local.dev | grep "It works!"
+wget -qO- http://local.dev
 
 # Stop Apache 2.2.25
 
-echo "Stopping Apache 2.2"
-sudo /usr/local/apache2/bin/apachectl stop
+#echo "Stopping Apache 2.2"
+#sudo /usr/local/apache2/bin/apachectl stop
 
 # Set Apache 2.2.25 up as a service and test
 
-sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache22
-sudo chmod +x /etc/init.d/apache22
-sudo service apache22 stop
-sudo service apache22 start
+#sudo cp /usr/local/apache2/bin/apachectl /etc/init.d/apache22
+#sudo chmod +x /etc/init.d/apache22
+#sudo service apache22 stop
+#sudo service apache22 start
 
-sudo service apache22 configtest
+#sudo service apache22 configtest
 
 # **********************
 # Exit With Error Number
