@@ -79,27 +79,11 @@ sudo apache2ctl -M
 printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
 sudo apache2ctl -V
 
-# Get copy of apache2.conf for 2.4
-#sudo cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd.conf
-#sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf
+# Put modified 000-default.conf into place
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
 
-# Get copy of httpd-vhosts.conf for 2.4
-#sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd-vhosts.conf
-
-# Get copy of default vhosts files
-sudo cp /etc/apache2/sites-available/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/
-
-# Stat directories
-#ls -la /etc/apache2/sites-available/
-#sudo rm /etc/apache2/sites-available/*.conf
-
-
-
-# ************************************
-# Put new httpd-vhosts.conf into place
-# ************************************
-#echo "Copy httpd-vhosts.conf"
-#sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+# Reload Apache
+sudo service apache2 reload
 
 # *************************************
 # Get files from Repo Apache_2.4
@@ -118,7 +102,7 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 # **********************
 
 printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.4 Config Test" "#################################"
-#sudo /usr/local/apache2/bin/apachectl configtest
+sudo apache2ctl configtest
 
 # *********************
 # Restart Apache 2.2.25
@@ -136,6 +120,30 @@ sudo wget -qO- http://local.dev
 # **********************
 # Exit With Error Number
 # **********************
+
+# *******************************************
+# Set Location of our Curl Test Results Files
+# *******************************************
+
+curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest1.txt
+now="$(date)"
+
+# *************************************************
+# Function Curl Test 1 - Check for Bad Bot "80legs"
+# *************************************************
+
+run_curltest1 () {
+truncate -s 0 ${curltest1}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
+curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
+if grep -i 'Forbidden' ${curltest1}; then
+   echo 'BAD BOT DETECTED - TEST PASSED'
+else
+   echo 'BAD BOT NOT DETECTED - TEST FAILED'
+   #exit 1
+fi
+}
+run_curltest1
 
 exit ${?}
 
