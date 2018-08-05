@@ -61,29 +61,25 @@ ls -la /tmp
 # Lets Build Apache 2.4.34
 # ************************
 
-#cd /tmp
+cd /tmp
 
-#wget http://www.zlib.net/zlib-1.2.11.tar.gz
-#tar -xvf zlib-1.2.11.tar.gz
-#cd zlib-1.2.11/
-#./configure --prefix=/usr/local
-#make
-#sudo make install
+wget http://www.zlib.net/zlib-1.2.11.tar.gz
+tar -xvf zlib-1.2.11.tar.gz
+cd zlib-1.2.11/
+./configure --prefix=/usr/local
+make
+sudo make install
 
-#wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.4.34.tar.gz
-#tar -xvf httpd-2.4.34.tar.gz
-#cd httpd-2.4.34/
-#./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
-#make
-#sudo make install
+wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.4.34.tar.gz
+tar -xvf httpd-2.4.34.tar.gz
+cd httpd-2.4.34/
+./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
+make
+sudo make install
 
-#sudo /usr/local/apache2/bin/apachectl start
+sudo /usr/local/apache2/bin/apachectl start
 
-#wget -qO- http://localhost | grep "It works!"
-
-# We can install 2.4 from Ubuntu repo's
-sudo apt install apache2
-sudo service apache2 start
+wget -qO- http://localhost | grep "It works!"
 
 # *********************************
 # Prepare Apache 2.2.25 For Testing
@@ -106,16 +102,14 @@ sudo service apache2 start
 # **************************
 
 printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
-#sudo /usr/local/apache2/bin/apachectl -M
-sudo apache2ctl -M
+sudo /usr/local/apache2/bin/apachectl -M
 
 # **************************
 # Show Apache Version
 # **************************
 
 printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
-#sudo /usr/local/apache2/bin/apachectl -V
-sudo apache2ctl -V
+sudo /usr/local/apache2/bin/apachectl -V
 
 # *****************************
 # Put new httpd.conf into place
@@ -123,16 +117,11 @@ sudo apache2ctl -V
 #echo "Copy httpd.conf"
 #sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
-# Get copy of apache2.conf for 2.4
-#sudo cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd.conf
-sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf
+# Get copy of httpd.conf for 2.4
+sudo cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd.conf
 
 # Get copy of httpd-vhosts.conf for 2.4
-#sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd-vhosts.conf
-
-# Stat directories
-ls -la /etc/apache2/sites-available/
-
+sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/httpd-vhosts.conf
 
 
 # ************************************
@@ -158,14 +147,14 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 # **********************
 
 printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.4 Config Test" "#################################"
-#sudo /usr/local/apache2/bin/apachectl configtest
+sudo /usr/local/apache2/bin/apachectl configtest
 
 # *********************
 # Restart Apache 2.2.25
 # *********************
 
 echo "Restarting Apache 2.2"
-#sudo /usr/local/apache2/bin/apachectl restart
+sudo /usr/local/apache2/bin/apachectl restart
 
 # ******************
 # Test Apache 2 Curl
