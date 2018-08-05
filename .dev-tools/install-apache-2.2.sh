@@ -149,14 +149,13 @@ sudo /usr/local/apache2/bin/apachectl restart
 # Test Apache 2 Curl
 # ******************
 
-#wget -qO- http://local.dev
-curl -sL http://local.dev
+wget -qO- http://local.dev
 
 # **********************
 # Exit With Error Number
 # **********************
 
-#exit ${?}
+exit ${?}
 
 
 # MIT License
