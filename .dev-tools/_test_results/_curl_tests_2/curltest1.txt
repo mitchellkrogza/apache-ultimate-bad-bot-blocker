@@ -1,13 +1,13 @@
-Last Tested: Sun Aug  5 15:48:26 SAST 2018
+Last Tested: Sun Aug  5 15:54:42 SAST 2018
 
-<!DOCTYPE html>
-<html>
-<head>
-<title>Welcome to the Apache Ultimate Bad Bot Blocker</title>
-</head>
-<body>
-<div align=center>
-<h1>Welcome to the Apache Ultimate Bad Bot Blocker</h1>
-<p>This is merely used for testing !!!</p>
-</body>
-</html>
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML 2.0//EN">
+<html><head>
+<title>403 Forbidden</title>
+</head><body>
+<h1>Forbidden</h1>
+<p>You don't have permission to access /index.html
+on this server.<br />
+</p>
+<hr>
+<address>Apache/2.4.34 (Ubuntu) Server at local.dev Port 80</address>
+</body></html>
