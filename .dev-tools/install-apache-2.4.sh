@@ -146,6 +146,7 @@ sudo a2dismod access_compat
 # *************
 
 sudo service apache2 reload
+sudo service apache2 restart
 
 # *************************************************
 # Function Curl Test 1 - Check for Bad Bot "80legs"
