@@ -82,16 +82,8 @@ ls -la /tmp
 #wget -qO- http://localhost | grep "It works!"
 
 # We can install 2.4 from Ubuntu repo's
-#sudo apt install apache2
-#sudo service apache2 start
-
-# ***************************************************
-# Install latest Apache from Repo: ppa:ondrej/apache2
-# ***************************************************
-
-sudo add-apt-repository ppa:ondrej/apache2 -y
-sudo apt-get update
-sudo apt-get install -y apache2 apache2-utils
+sudo apt install apache2
+sudo service apache2 start
 
 # *********************************
 # Prepare Apache 2.2.25 For Testing
