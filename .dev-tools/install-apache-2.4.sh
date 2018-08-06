@@ -149,7 +149,7 @@ now="$(date)"
 # Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-echo "TEST FOR 80legs User-Agent"
+printf "\n\nTEST FOR 80legs User-Agent\n\n"
 curl -A "80legs" http://local.dev:80/index.html
 
 # *****************************
@@ -183,14 +183,14 @@ sudo service apache2 restart
 # Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-echo "TEST FOR 80legs User-Agent"
+printf "\n\nTEST FOR 80legs User-Agent\n\n"
 curl -A "80legs" http://local.dev:80/index.html
 
 # ******************************************************************
 # Curl Test 2 - Check for Bad Referrer "000free.us"
 # ******************************************************************
 
-echo "TEST FOR 000free.us Referrer"
+printf "\n\nTEST FOR 000free.us Referrer\n\n"
 curl -I http://local.dev:80/index.html -e http://000free.us
 
 # *****************************************
