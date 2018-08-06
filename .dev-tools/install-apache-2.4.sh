@@ -79,8 +79,27 @@ sudo apache2ctl -M
 printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
 sudo apache2ctl -V
 
+# ***********************
+# Set ServerName Globally
+# ***********************
+
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
+sudo a2enconf servername
+
+# ****************************************
 # Put modified 000-default.conf into place
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
+# ****************************************
+
+sudo rm /etc/apache2/sites-available/*
+sudo rm /etc/apache2/sites-enabled/*
+
+# ****************************
+# Put testsite.conf into place
+# ****************************
+
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
+
+sudo a2ensite testsite.conf
 
 # Reload Apache
 sudo service apache2 reload
@@ -89,7 +108,7 @@ sudo service apache2 reload
 # Get files from Repo Apache_2.4
 # *************************************
 
-#sudo mkdir /etc/apache2/custom.d
+sudo mkdir /etc/apache2/custom.d
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
@@ -110,29 +129,12 @@ sudo apache2ctl configtest
 
 sudo wget -qO- http://local.dev
 
-# *******************************************
-# Set Location of our Curl Test Results Files
-# *******************************************
-
-curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest1.txt
-now="$(date)"
-
 # *************************************************
-# Function Curl Test 1 - Check for Bad Bot "80legs"
+# Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-run_curltest1 () {
-truncate -s 0 ${curltest1}
-printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
-curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
-if grep -i 'Forbidden' ${curltest1}; then
-   echo 'BAD BOT DETECTED - TEST PASSED'
-else
-   echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
-fi
-}
-run_curltest1
+printf "\n\nTEST FOR 80legs User-Agent\n\n"
+curl -A "80legs" http://local.dev:80/index.html
 
 # *****************************
 # Now Disable mod_access_compat
@@ -162,21 +164,32 @@ sudo service apache2 reload
 sudo service apache2 restart
 
 # *************************************************
-# Function Curl Test 1 - Check for Bad Bot "80legs"
+# Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-run_curltest1 () {
-truncate -s 0 ${curltest1}
-printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
-curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
-if grep -i 'Forbidden' ${curltest1}; then
-   echo 'BAD BOT DETECTED - TEST PASSED'
-else
-   echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
-fi
-}
-run_curltest1
+printf "\n\nTEST FOR 80legs User-Agent\n\n"
+curl -A "80legs" http://local.dev:80/index.html
+
+# ******************************************************************
+# Curl Test 2 - Check for Bad Referrer "000free.us"
+# ******************************************************************
+
+printf "\n\nTEST FOR 000free.us Referrer\n\n"
+curl -I http://local.dev:80/index.html -e http://000free.us
+
+# *************************************************
+# Curl Test 3 - Check for Good Bot "Googlebot"
+# *************************************************
+
+printf "\n\nTEST FOR GoogleBot User-Agent\n\n"
+curl -A "Googlebot" http://local.dev:80/index.html
+
+# ******************************************************************
+# Curl Test 4 - Check for Good Referrer "google.com"
+# ******************************************************************
+
+printf "\n\nTEST FOR google.com Referrer\n\n"
+curl -I http://local.dev:80/index.html -e http://google.com
 
 # *****************************************
 # Get a copy of all conf files for checking
@@ -184,7 +197,7 @@ run_curltest1
 
 sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
 sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
-sudo cp /etc/apache2/sites-available/000-default.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/000-default.conf
+sudo cp /etc/apache2/sites-available/* ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
 
 # Copy entire /etc/apache2 folder for diff checking
 sudo cp -a /etc/apache2/. ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_apache2.4_etc_folder/
