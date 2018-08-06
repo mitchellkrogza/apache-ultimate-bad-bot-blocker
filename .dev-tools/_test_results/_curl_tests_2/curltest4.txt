@@ -1,10 +1,10 @@
-Last Tested: Sun Aug  5 13:20:45 SAST 2018
+Last Tested: Mon Aug  6 10:04:24 SAST 2018
 
 HTTP/1.1 200 OK
-Date: Sun, 05 Aug 2018 11:20:45 GMT
+Date: Mon, 06 Aug 2018 08:04:24 GMT
 Server: Apache/2.4.34 (Ubuntu)
-Last-Modified: Sun, 05 Aug 2018 11:20:35 GMT
-ETag: "f0-572ae5985c28e"
+Last-Modified: Mon, 06 Aug 2018 08:03:42 GMT
+ETag: "f0-572bfb73bab26"
 Accept-Ranges: bytes
 Content-Length: 240
 Vary: Accept-Encoding
