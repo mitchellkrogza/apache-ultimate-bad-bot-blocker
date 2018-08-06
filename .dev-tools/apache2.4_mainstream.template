@@ -699,7 +699,7 @@ BrowserMatchNoCase "^(.*?)(\bZyBorg\b)(.*)$" bad_bot
 	# Include your Own Custom List of Bad User Agents
 	# ***********************************************
 
-Include "/etc/apache2/custom.d/blacklist-user-agents.conf"
+#Include "/etc/apache2/custom.d/blacklist-user-agents.conf"
 
 	# ************************************
 	# GOOD REFERERS - Spared from Checking 
@@ -713,7 +713,7 @@ Include "/etc/apache2/custom.d/blacklist-user-agents.conf"
   	# Read Comments inside whitelist-domains.conf for customization tips.
   	# Updating the main globalblacklist.conf file will not touch your custom include files
 
-Include "/etc/apache2/custom.d/whitelist-domains.conf"
+#Include "/etc/apache2/custom.d/whitelist-domains.conf"
 
 
 # ****************************************
@@ -783,7 +783,7 @@ Include "/etc/apache2/custom.d/whitelist-domains.conf"
   	# Read Comments inside bad-referrer-words.conf for customization tips.
   	# Updating the main globalblacklist.conf file will not touch your custom include files
 
-Include "/etc/apache2/custom.d/bad-referrer-words.conf"
+#Include "/etc/apache2/custom.d/bad-referrer-words.conf"
 
 	# ************************
 	# Bad Referer Domain Names
@@ -7283,7 +7283,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
   	# Read Comments inside blacklist-ips.conf for customization tips.
   	# Updating the main globalblacklist.conf file will not touch your custom include files
   
-	Include "/etc/apache2/custom.d/blacklist-ips.conf"
+	#Include "/etc/apache2/custom.d/blacklist-ips.conf"
 
 	</RequireAll>
 
@@ -7306,7 +7306,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
   	# Read Comments inside whitelist-ips.conf for customization tips.
   	# Updating the main globalblacklist.conf file will not touch your custom include files
 
-	Include "/etc/apache2/custom.d/whitelist-ips.conf"
+	#Include "/etc/apache2/custom.d/whitelist-ips.conf"
 
 	# ***********
 	# Google Bots
