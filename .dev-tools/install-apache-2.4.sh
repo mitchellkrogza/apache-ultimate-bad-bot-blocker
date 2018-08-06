@@ -146,21 +146,10 @@ curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest1.t
 now="$(date)"
 
 # *************************************************
-# Function Curl Test 1 - Check for Bad Bot "80legs"
+# Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-run_curltest1 () {
-truncate -s 0 ${curltest1}
-printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
-curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
-if grep -i 'Forbidden' ${curltest1}; then
-   echo 'BAD BOT DETECTED - TEST PASSED'
-else
-   echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
-fi
-}
-run_curltest1
+curl -A "80legs" http://local.dev:80/index.html
 
 # *****************************
 # Now Disable mod_access_compat
@@ -190,21 +179,16 @@ sudo service apache2 reload
 sudo service apache2 restart
 
 # *************************************************
-# Function Curl Test 1 - Check for Bad Bot "80legs"
+# Curl Test 1 - Check for Bad Bot "80legs"
 # *************************************************
 
-run_curltest1 () {
-truncate -s 0 ${curltest1}
-printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest1}"
-curl -A "80legs" http://local.dev:80/index.html 2>&1 >> ${curltest1}
-if grep -i 'Forbidden' ${curltest1}; then
-   echo 'BAD BOT DETECTED - TEST PASSED'
-else
-   echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
-fi
-}
-run_curltest1
+curl -A "80legs" http://local.dev:80/index.html
+
+# ******************************************************************
+# Curl Test 2 - Check for Bad Referrer "000free.us"
+# ******************************************************************
+
+curl -I http://local.dev:80/index.html -e http://000free.us
 
 # *****************************************
 # Get a copy of all conf files for checking
