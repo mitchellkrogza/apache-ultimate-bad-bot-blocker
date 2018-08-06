@@ -1,0 +1,1 @@
+LoadModule http2_module /usr/lib/apache2/modules/mod_http2.so
