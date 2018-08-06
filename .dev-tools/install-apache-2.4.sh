@@ -105,7 +105,7 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-
 # *************************************
 
 sudo mkdir /etc/apache2/custom.d
-#sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/.dev-tools/_deprecated/apache2.4.template-original -O /etc/apache2/custom.d/globalblacklist.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/apache-2-4-mainstream/Apache_2.4_mainstream/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
@@ -117,7 +117,7 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 # This is where we can make or break !!!
 # !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
 
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+#sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 
 # *************
 # Reload Apache
