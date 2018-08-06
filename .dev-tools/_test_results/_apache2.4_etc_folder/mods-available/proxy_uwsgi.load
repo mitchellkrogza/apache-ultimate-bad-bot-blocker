@@ -1,2 +1,0 @@
-# Depends: proxy
-LoadModule proxy_uwsgi_module /usr/lib/apache2/modules/mod_proxy_uwsgi.so

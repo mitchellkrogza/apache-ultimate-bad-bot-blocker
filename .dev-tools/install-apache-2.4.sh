@@ -199,9 +199,6 @@ sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_result
 sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
 sudo cp /etc/apache2/sites-available/* ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
 
-# Copy entire /etc/apache2 folder for diff checking
-sudo cp -a /etc/apache2/. ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_apache2.4_etc_folder/
-
 # **********************
 # Exit With Error Number
 # **********************

@@ -1,2 +1,0 @@
-# Depends: proxy http2
-LoadModule proxy_http2_module /usr/lib/apache2/modules/mod_proxy_http2.so
