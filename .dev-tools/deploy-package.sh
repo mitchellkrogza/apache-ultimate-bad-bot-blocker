@@ -48,7 +48,7 @@ git tag ${GIT_TAG} -a -m "V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}"
 # Push our commit and tags back to the repo
 # *****************************************
 
-sudo git push origin master && git push origin master --tags
+sudo git push origin apache-2-4-mainstream && git push origin apache-2-4-mainstream --tags
 
 # *************************************************************************
 # Now TravisCI moves into the deploy: section of TravisCI - see .travis.yml

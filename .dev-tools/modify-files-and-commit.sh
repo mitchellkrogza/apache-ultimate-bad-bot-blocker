@@ -77,14 +77,14 @@ git config --global push.default simple
 # Make sure we have checked out master branch
 # *******************************************
 
-git checkout master
+git checkout apache-2-4-mainstream
 
 # ***************************************************************
 # Gzip Our Latest Release So We can Include it the Travis Release
 # ***************************************************************
 
 cd ${TRAVIS_BUILD_DIR}/.latest_release/
-tar -czf Apache_2.2.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.2/ .
+#tar -czf Apache_2.2.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.2/ .
 tar -czf Apache_2.4.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.4/ .
 
 # *************************************
