@@ -1,12 +1,7 @@
-Last Tested: Mon Aug  6 14:03:04 SAST 2018
+Last Tested: Mon Aug  6 14:15:12 SAST 2018
 
-HTTP/1.1 200 OK
-Date: Mon, 06 Aug 2018 12:03:04 GMT
+HTTP/1.1 403 Forbidden
+Date: Mon, 06 Aug 2018 12:15:13 GMT
 Server: Apache/2.4.34 (Ubuntu)
-Last-Modified: Mon, 06 Aug 2018 12:02:24 GMT
-ETag: "f0-572c30ce40c35"
-Accept-Ranges: bytes
-Content-Length: 240
-Vary: Accept-Encoding
-Content-Type: text/html
+Content-Type: text/html; charset=iso-8859-1
 
