@@ -65,6 +65,22 @@ sudo add-apt-repository ppa:ondrej/apache2 -y
 sudo apt-get update
 sudo apt-get install -y apache2 apache2-utils
 
+# *********************************
+# Prepare Apache 2.2.25 For Testing
+# *****************************************************
+# Copy basic testing index.html file into /var/www/html
+# *****************************************************
+
+sudo mkdir /var/www
+sudo mkdir /var/www/html
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/index.html /var/www/html/index.html
+
+# *************************
+# Set Ownership of /var/www
+# *************************
+
+sudo chown -R www-data:www-data /var/www/
+
 # **************************
 # Show Loaded apache Modules
 # **************************
@@ -89,7 +105,7 @@ sudo service apache2 reload
 # Get files from Repo Apache_2.4
 # *************************************
 
-#sudo mkdir /etc/apache2/custom.d
+sudo mkdir /etc/apache2/custom.d
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
