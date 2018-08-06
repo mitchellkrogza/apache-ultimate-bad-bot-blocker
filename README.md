@@ -162,25 +162,21 @@ Include the globalblacklist.conf file in the beginning of a directory block just
 
 ```
 <VirtualHost *:80>
-
 	ServerName local.dev
-    ServerAlias www.local.dev
 	DocumentRoot /var/www/html
-	ErrorLog ${APACHE_LOG_DIR}/error.log
-	CustomLog ${APACHE_LOG_DIR}/access.log combined
+	ErrorLog /tmp/error.log
 
-		<Directory "/var/www/html">
-    		AllowOverride All
-    		Options FollowSymLinks
-			Include custom.d/globalblacklist.conf
-  		</Directory>
-
+	<Directory "/var/www/html">
+	Options +Includes
+	Options +FollowSymLinks -Indexes
+	Include custom.d/globalblacklist.conf
+	</Directory>
 </VirtualHost>
 ```
 
 You can include globalblacklist.conf globally (for all virtual hosts) if you put the following configuration after virtual host configuration.
 
-```apache
+```
 # ######################################
 # GLOBAL! deny bad bots and IP addresses
 # ######################################
@@ -375,11 +371,13 @@ Include the globalblacklist.conf file in the beginning of a directory block just
   		</Directory>
 
 </VirtualHost>
+
+# vim: syntax=apache ts=4 sw=4 sts=4 sr noet
 ```
 
 You can include globalblacklist.conf globally (for all virtual hosts) if you put the following configuration after virtual host configuration.
 
-```apache
+```
 # ######################################
 # GLOBAL! deny bad bots and IP addresses
 # ######################################
