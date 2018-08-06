@@ -28,7 +28,7 @@ cache:
 sudo:           required
 
 script:
-  #- bash .dev-tools/generate-files.sh
+  - bash .dev-tools/generate-files.sh
   #- bash .dev-tools/install-apache-2.2.sh
   #- bash .dev-tools/run-curl-tests-2.2.sh
   - bash .dev-tools/install-apache-2.4.sh
