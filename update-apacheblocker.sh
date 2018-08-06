@@ -34,8 +34,6 @@
 APACHE_VERSION='2.4'
 #Directory where bad bot configs are located.
 APACHE_CONF='/etc/apache2/custom.d'
-#Apache service name e.g. apache2 or httpd. 
-APACHE_SERVICE_NAME='apache2'
 #location of globalblacklist
 BLACKLIST_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
 #Address to send update notifications
@@ -62,7 +60,7 @@ else
     wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.conf;
     apachectl configtest || TESTFAIL=true;
     if [ -z ${TESTFAIL} ] ; then
-      service ${APACHE_SERVICE_NAME} reload;
+      apachectl graceful;
       echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t ${EMAIL};
       exit 0;
     else
