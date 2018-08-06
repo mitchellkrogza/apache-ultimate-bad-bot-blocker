@@ -20,12 +20,12 @@
 # Set Location of our Curl Test Results Files
 # *******************************************
 
-curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest1.txt
-curltest2=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest2.txt
-curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest3.txt
-curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest4.txt
-curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest5.txt
-curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2/curltest6.txt
+curltest1=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest1.txt
+curltest2=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest2.txt
+curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest3.txt
+curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest4.txt
+curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest5.txt
+curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest6.txt
 now="$(date)"
 
 # *************************************************
@@ -40,7 +40,7 @@ if grep -i 'Forbidden' ${curltest1}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -56,7 +56,7 @@ if grep -i 'Forbidden' ${curltest2}; then
    echo 'BAD BOT DETECTED - TEST PASSED'
 else
    echo 'BAD BOT NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -72,7 +72,7 @@ if grep -i 'Forbidden' ${curltest3}; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -88,7 +88,7 @@ if grep -i 'Forbidden' ${curltest4}; then
    echo 'BAD REFERRER DETECTED - TEST PASSED'
 else
    echo 'BAD REFERRER NOT DETECTED - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -99,12 +99,12 @@ fi
 run_curltest5 () {
 truncate -s 0 ${curltest5}
 printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest5}"
-curl -v -A "GoogleBot" http://local.dev:80/index.html 2>&1 >> ${curltest5}
+curl -v -A "Googlebot" http://local.dev:80/index.html 2>&1 >> ${curltest5}
 if grep -i 'Welcome' ${curltest5}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
    echo 'GOOD BOT NOT ALLOWED THROUGH - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 
@@ -115,12 +115,12 @@ fi
 run_curltest6 () {
 truncate -s 0 ${curltest6}
 printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest6}"
-curl -v -A "BingBot" http://local.dev:80/index.html 2>&1 >> ${curltest6}
+curl -v -A "bingbot" http://local.dev:80/index.html 2>&1 >> ${curltest6}
 if grep -i 'Welcome' ${curltest6}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
    echo 'GOOD BOT NOT ALLOWED THROUGH - TEST FAILED'
-   #exit 1
+   exit 1
 fi
 }
 

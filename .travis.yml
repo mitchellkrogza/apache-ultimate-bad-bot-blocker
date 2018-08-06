@@ -29,32 +29,12 @@ sudo:           required
 
 script:
   - bash .dev-tools/generate-files.sh
-  #- bash .dev-tools/install-apache-2.2.sh
-  #- bash .dev-tools/run-curl-tests-2.2.sh
   - bash .dev-tools/install-apache-2.4.sh
-  #- bash .dev-tools/run-curl-tests-2.4.sh
+  - bash .dev-tools/run-curl-tests-2.4.sh
   - bash .dev-tools/modify-files-and-commit.sh
 
 before_deploy:
   - bash .dev-tools/deploy-package.sh
-
-#deploy:
-#  provider: releases
-#  api_key:
-#    secure: ${GH_TOKEN}
-#  file:
-#      - .latest_release/Apache_2.4.tar.gz
-#  skip_cleanup: true
-#  on:
-#    repo: mitchellkrogza/apache-ultimate-bad-bot-blocker
-#    tags: false
-#    branches:
-#      except:
-#        - "/^v[0-9]/"
-#        - "/^V.*$/"
-#    branches:
-#       only:
-#         - "apache-2-4-mainstream"
 
 notifications:
   on_success:   change
