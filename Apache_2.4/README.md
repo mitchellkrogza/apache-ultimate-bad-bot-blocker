@@ -31,6 +31,7 @@ If your Linux distribution does not have wget you can replace the wget commands 
 **WHITELIST ALL YOUR OWN DOMAIN NAMES AND IP ADDRESSES**
 
 Whitelist all your own domain names and IP addresses. **Please note important changes**, this is now done using include files so that you do not have to keep reinserting your whitelisted domains and IP addresses every time you update.
+
 :exclamation: :exclamation: :exclamation: WARNING: Please do NOT ever use 127.0.0.1 as a whitelisted IP address in whitelist-ips.conf it will cause the blocker to stop functioning.
 
 - copy the whitelist-ips.conf file into that folder
