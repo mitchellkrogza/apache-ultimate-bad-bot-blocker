@@ -105,7 +105,7 @@ fi
 run_curltest5 () {
 truncate -s 0 ${curltest5}
 printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest5}"
-curl -v -A "GoogleBot" http://local.dev:80/index.html 2>&1 >> ${curltest5}
+curl -v -A "Googlebot" http://local.dev:80/index.html 2>&1 >> ${curltest5}
 if grep -i 'Welcome' ${curltest5}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
@@ -121,7 +121,7 @@ fi
 run_curltest6 () {
 truncate -s 0 ${curltest6}
 printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest6}"
-curl -v -A "BingBot" http://local.dev:80/index.html 2>&1 >> ${curltest6}
+curl -v -A "bingbot" http://local.dev:80/index.html 2>&1 >> ${curltest6}
 if grep -i 'Welcome' ${curltest6}; then
    echo 'GOOD BOT ALLOWED THROUGH - TEST PASSED'
 else
