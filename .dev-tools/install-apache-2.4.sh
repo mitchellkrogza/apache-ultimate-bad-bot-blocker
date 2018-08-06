@@ -98,7 +98,16 @@ sudo a2enconf servername
 # Put modified 000-default.conf into place
 # ****************************************
 
+sudo rm /etc/apache2/sites-available/*
+sudo rm /etc/apache2/sites-enabled/*
+
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
+
+# ***********************
+# Enable the Default Site
+# ***********************
+
+sudo a2ensite 000-default.conf
 
 # *************************************
 # Get files from Repo Apache_2.4
