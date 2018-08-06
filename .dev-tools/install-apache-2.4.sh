@@ -44,18 +44,18 @@
 # Stop Apache 2.2.25
 # ******************
 
-echo "Stopping Apache 2.2"
-sudo /usr/local/apache2/bin/apachectl stop
+#echo "Stopping Apache 2.2"
+#sudo /usr/local/apache2/bin/apachectl stop
 
 # **********************
 # Clean Up Apache 2.2.25
 # **********************
 
-sudo rm -rf /usr/local/apache2/
-ls -la /usr/local
-sudo rm -rf /tmp/zlib-1.2.11/
-sudo rm -rf /tmp/httpd-2.2.25/
-ls -la /tmp
+#sudo rm -rf /usr/local/apache2/
+#ls -la /usr/local
+#sudo rm -rf /tmp/zlib-1.2.11/
+#sudo rm -rf /tmp/httpd-2.2.25/
+#ls -la /tmp
 
 # ***************************************************
 # Install latest Apache from Repo: ppa:ondrej/apache2
