@@ -38,6 +38,8 @@ APACHE_CONF='/etc/apache2/custom.d'
 BLACKLIST_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
 #Address to send update notifications
 EMAIL='email@example.com'
+#Make backup of globalblacklist.conf when updating true or false.
+MAKE_BACKUP=false
 SERVER_NAME=$(hostname)
 UPDATE_FAIL="Bad bot failed to update globalblacklist on ${SERVER_NAME}" 
 UPDATE_SUCCESS="Bad bot globalblacklist successfully updated on ${SERVER_NAME}" 
@@ -56,7 +58,9 @@ else
     echo "Bad bot globalblacklist is already up to date";
     exit 0;
   else
-    cp "${APACHE_CONF}/globalblacklist.conf" "${APACHE_CONF}/globalblacklist.${DATE}.backup";
+    if [ ${MAKE_BACKUP} = true ] ; then
+      cp "${APACHE_CONF}/globalblacklist.conf" "${APACHE_CONF}/globalblacklist.${DATE}.backup";
+    fi
     wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.conf;
     apachectl configtest || TESTFAIL=true;
     if [ -z ${TESTFAIL} ] ; then
