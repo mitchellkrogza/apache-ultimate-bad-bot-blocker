@@ -40,23 +40,6 @@
 # SOFTWARE.
 
 
-# ******************
-# Stop Apache 2.2.25
-# ******************
-
-#echo "Stopping Apache 2.2"
-#sudo /usr/local/apache2/bin/apachectl stop
-
-# **********************
-# Clean Up Apache 2.2.25
-# **********************
-
-#sudo rm -rf /usr/local/apache2/
-#ls -la /usr/local
-#sudo rm -rf /tmp/zlib-1.2.11/
-#sudo rm -rf /tmp/httpd-2.2.25/
-#ls -la /tmp
-
 # ***************************************************
 # Install latest Apache from Repo: ppa:ondrej/apache2
 # ***************************************************
@@ -95,20 +78,14 @@ sudo apache2ctl -M
 printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
 sudo apache2ctl -V
 
-# Put modified 000-default.conf into place
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
+# ******************************
+# Enable required Apache modules
+# ******************************
 
-# *************************************
-# Get files from Repo Apache_2.4
-# *************************************
-
-sudo mkdir /etc/apache2/custom.d
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/.dev-tools/_deprecated/apache2.4.template-original -O /etc/apache2/custom.d/globalblacklist.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+sudo a2enmod rewrite
+sudo a2enmod expires
+sudo a2enmod headers
+sudo a2enmod mime
 
 # ***********************
 # Set ServerName Globally
@@ -116,6 +93,31 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
 sudo a2enconf servername
+
+# ****************************************
+# Put modified 000-default.conf into place
+# ****************************************
+
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
+
+# *************************************
+# Get files from Repo Apache_2.4
+# *************************************
+
+sudo mkdir /etc/apache2/custom.d
+#sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/.dev-tools/_deprecated/apache2.4.template-original -O /etc/apache2/custom.d/globalblacklist.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+# HERE We Can test with a modified globalblacklist.conf which only affects test on this mainstream branch and not master
+# This is where we can make or break !!!
+# !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 
 # *************
 # Reload Apache
@@ -174,9 +176,9 @@ sudo a2dismod access_compat
 sudo service apache2 reload
 sudo service apache2 restart
 
-# *******************************
-# Test with modified apache2.conf
-# *******************************
+# ***********************************
+# Now Test with modified apache2.conf
+# ***********************************
 
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf /etc/apache2/
 
