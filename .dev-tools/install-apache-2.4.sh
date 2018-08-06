@@ -82,10 +82,10 @@ sudo apache2ctl -V
 # Enable required Apache modules
 # ******************************
 
-sudo a2enmod rewrite
-sudo a2enmod expires
-sudo a2enmod headers
-sudo a2enmod mime
+#sudo a2enmod rewrite
+#sudo a2enmod expires
+#sudo a2enmod headers
+#sudo a2enmod mime
 
 # ***********************
 # Set ServerName Globally
