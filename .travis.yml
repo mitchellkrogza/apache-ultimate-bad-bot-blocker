@@ -20,6 +20,9 @@ matrix:
   fast_finish: true
 
 addons:
+  apt:
+    packages:
+      - mailutils
   hosts:
     - local.dev
 cache:
