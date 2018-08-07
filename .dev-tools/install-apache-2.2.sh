@@ -163,9 +163,9 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/old-
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O /usr/sbin/update-apacheblocker.sh
 sed "s/2\.4/2\.2/g" /usr/sbin/update-apacheblocker.sh > /tmp/update-apacheblocker.tmp && sudo mv /tmp/update-apacheblocker.tmp /usr/sbin/update-apacheblocker.sh
 sed "s/email@example.com/mitchellkrog@gmail.com/g" /usr/sbin/update-apacheblocker.sh > /tmp/update-apacheblocker.tmp && sudo mv /tmp/update-apacheblocker.tmp /usr/sbin/update-apacheblocker.sh
-cat /usr/sbin/update-apacheblocker.sh
+#cat /usr/sbin/update-apacheblocker.sh
 sudo chmod +x /usr/sbin/update-apacheblocker.sh
-sudo /usr/sbin/update-apacheblocker.sh
+bash /usr/sbin/update-apacheblocker.sh
 
 # **********************
 # Exit With Error Number
