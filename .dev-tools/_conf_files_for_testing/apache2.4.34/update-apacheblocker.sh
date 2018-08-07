@@ -37,7 +37,7 @@ APACHE_CONF='/etc/apache2/custom.d'
 #location of globalblacklist
 BLACKLIST_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
 #Address to send update notifications
-EMAIL='email@example.com'
+EMAIL='mitchellkrog@gmail.com'
 #Make backup of globalblacklist.conf when updating true or false.
 MAKE_BACKUP=false
 SERVER_NAME=$(hostname)
