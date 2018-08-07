@@ -1630,6 +1630,7 @@ SetEnvIfNoCase Referer ~*dostavimvdom\.ru spam_ref
 SetEnvIfNoCase Referer ~*dostavka\-v\-krym\.com spam_ref
 SetEnvIfNoCase Referer ~*dostavka\-v\-ukrainu\.ru spam_ref
 SetEnvIfNoCase Referer ~*dosug\-lux\.ru spam_ref
+SetEnvIfNoCase Referer ~*dosugrostov\.site spam_ref
 SetEnvIfNoCase Referer ~*dotnetdotcom\.org spam_ref
 SetEnvIfNoCase Referer ~*doublepimp\.com spam_ref
 SetEnvIfNoCase Referer ~*downloaddy\.net spam_ref
@@ -2692,6 +2693,7 @@ SetEnvIfNoCase Referer ~*impisr\.edunsk\.ru spam_ref
 SetEnvIfNoCase Referer ~*impisr\.ru spam_ref
 SetEnvIfNoCase Referer ~*importchinacoach\-teach\.com spam_ref
 SetEnvIfNoCase Referer ~*import\-sales\.com spam_ref
+SetEnvIfNoCase Referer ~*impotentik\.com spam_ref
 SetEnvIfNoCase Referer ~*impresagaia\.it spam_ref
 SetEnvIfNoCase Referer ~*inbabes\.sexushost\.com spam_ref
 SetEnvIfNoCase Referer ~*inboundlinks\.win spam_ref
@@ -3494,6 +3496,7 @@ SetEnvIfNoCase Referer ~*moesen\-ficken\.com spam_ref
 SetEnvIfNoCase Referer ~*moesonce\.com spam_ref
 SetEnvIfNoCase Referer ~*moetomnenie\.com spam_ref
 SetEnvIfNoCase Referer ~*moi\-glazki\.ru spam_ref
+SetEnvIfNoCase Referer ~*moinozhki\.com spam_ref
 SetEnvIfNoCase Referer ~*moivestiy\.biz spam_ref
 SetEnvIfNoCase Referer ~*mojaocena\.com spam_ref
 SetEnvIfNoCase Referer ~*moje\-recenze\.cz spam_ref
@@ -4517,6 +4520,7 @@ SetEnvIfNoCase Referer ~*rique\.host\.sk spam_ref
 SetEnvIfNoCase Referer ~*risparmiocasa\.bz\.it spam_ref
 SetEnvIfNoCase Referer ~*ritlweb\.com spam_ref
 SetEnvIfNoCase Referer ~*rixpix\.ru spam_ref
+SetEnvIfNoCase Referer ~*rniaeba\.ga spam_ref
 SetEnvIfNoCase Referer ~*rn\-to\-bsn\.com spam_ref
 SetEnvIfNoCase Referer ~*robot\-forex\.biz spam_ref
 SetEnvIfNoCase Referer ~*rocketchange\.ru spam_ref
@@ -6115,6 +6119,8 @@ SetEnvIfNoCase Referer ~*xn\-\-b1adccaf1bzj\.xn\-\-p1ai spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-b1ag5cfn\.xn\-\-p1ai spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-b1agm2d\.net spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-c1acygb\.xn\-\-p1ai spam_ref
+SetEnvIfNoCase Referer ~*xn\-\-\-\-ctbbcjd3dbsehgi\.xn\-\-p1ai spam_ref
+SetEnvIfNoCase Referer ~*xn\-\-\-\-ctbigni3aj4h\.xn\-\-p1ai spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-d1abj0abs9d\.in\.ua spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-d1aifoe0a9a\.top spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-\-\-dtbndd4ae7eub\.top spam_ref

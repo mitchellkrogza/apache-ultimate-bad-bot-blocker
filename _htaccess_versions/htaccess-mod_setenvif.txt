@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.978
-### Bad Referrer Count: 6343
+### Version: V3.2018.08.979
+### Bad Referrer Count: 6349
 ### Bad Bot Count: 529
 ### Version Information ##
 
@@ -2172,6 +2172,7 @@ SetEnvIfNoCase Referer dostavimvdom\.ru spambot=yes
 SetEnvIfNoCase Referer dostavka\-v\-krym\.com spambot=yes
 SetEnvIfNoCase Referer dostavka\-v\-ukrainu\.ru spambot=yes
 SetEnvIfNoCase Referer dosug\-lux\.ru spambot=yes
+SetEnvIfNoCase Referer dosugrostov\.site spambot=yes
 SetEnvIfNoCase Referer dotnetdotcom\.org spambot=yes
 SetEnvIfNoCase Referer doublepimp\.com spambot=yes
 SetEnvIfNoCase Referer download\-of\-the\-warez\.blogspot\.com spambot=yes
@@ -3235,6 +3236,7 @@ SetEnvIfNoCase Referer impisr\.edunsk\.ru spambot=yes
 SetEnvIfNoCase Referer impisr\.ru spambot=yes
 SetEnvIfNoCase Referer import\-sales\.com spambot=yes
 SetEnvIfNoCase Referer importchinacoach\-teach\.com spambot=yes
+SetEnvIfNoCase Referer impotentik\.com spambot=yes
 SetEnvIfNoCase Referer impresagaia\.it spambot=yes
 SetEnvIfNoCase Referer inbabes\.sexushost\.com spambot=yes
 SetEnvIfNoCase Referer inboundlinks\.win spambot=yes
@@ -4036,6 +4038,7 @@ SetEnvIfNoCase Referer moesen\-ficken\.com spambot=yes
 SetEnvIfNoCase Referer moesonce\.com spambot=yes
 SetEnvIfNoCase Referer moetomnenie\.com spambot=yes
 SetEnvIfNoCase Referer moi\-glazki\.ru spambot=yes
+SetEnvIfNoCase Referer moinozhki\.com spambot=yes
 SetEnvIfNoCase Referer moivestiy\.biz spambot=yes
 SetEnvIfNoCase Referer mojaocena\.com spambot=yes
 SetEnvIfNoCase Referer moje\-recenze\.cz spambot=yes
@@ -5060,6 +5063,7 @@ SetEnvIfNoCase Referer risparmiocasa\.bz\.it spambot=yes
 SetEnvIfNoCase Referer ritlweb\.com spambot=yes
 SetEnvIfNoCase Referer rixpix\.ru spambot=yes
 SetEnvIfNoCase Referer rn\-to\-bsn\.com spambot=yes
+SetEnvIfNoCase Referer rniaeba\.ga spambot=yes
 SetEnvIfNoCase Referer robot\-forex\.biz spambot=yes
 SetEnvIfNoCase Referer rocketchange\.ru spambot=yes
 SetEnvIfNoCase Referer rockingclicks\.com spambot=yes
@@ -6635,6 +6639,8 @@ SetEnvIfNoCase Referer xn\-\-\-\-8sbdbjgb1ap7a9c4czbh\.xn\-\-p1acf spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-8sbhefaln6acifdaon5c6f4axh\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-9sbebi2bvzr7h\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-9sbubg3ambdfl1j\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-ctbbcjd3dbsehgi\.xn\-\-p1ai spambot=yes
+SetEnvIfNoCase Referer xn\-\-\-\-ctbigni3aj4h\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-dtbndd4ae7eub\.top spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-itbeirbjbi7bc6bh2d\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xn\-\-\-\-itbkqkfiq\.xn\-\-p1ai spambot=yes
