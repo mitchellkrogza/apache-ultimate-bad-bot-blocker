@@ -192,7 +192,7 @@ And you will be up to date with all your whitelisted domains included automatica
 ************************************************
 # AUTO UPDATING WITH CRON:
 
-See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by @lutaylor at:
+See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by Luke Taylor @lutaylor at:
 
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 

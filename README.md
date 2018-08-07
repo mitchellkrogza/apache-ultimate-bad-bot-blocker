@@ -254,7 +254,7 @@ And you will be up to date with all your whitelisted domains included automatica
 ************************************************
 # AUTO UPDATING WITH CRON:
 
-See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by @lutaylor at:
+See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by Luke Taylor @lutaylor at:
 
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 
@@ -456,7 +456,7 @@ And you will be up to date with all your whitelisted domains included automatica
 ************************************************
 # AUTO UPDATING WITH CRON:
 
-See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by @lutaylor at:
+See the latest auto updater bash script for Apache 2.2 and 2.4 contributed by Luke Taylor @lutaylor at:
 
 https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/update-apacheblocker.sh
 
@@ -773,7 +773,7 @@ Check it out at: https://github.com/mitchellkrogza/The-Big-List-of-Hacked-Malwar
 
 Many parts of the generator scripts and code running behind this project have been adapted from multiple sources. In fact it's so hard to mention everyone but here are a few key people whose little snippets of code have helped me introduce new features all the time. Show them some love and check out some of their projects too
 
-- Lu Taylor @lutaylor (Improvements to the install and update scripts and fixing paths for Apache 2.2, 2.4 and CentOS Versions)
+- Luke Taylor @lutaylor (Improvements to the install and update scripts and fixing paths for Apache 2.2, 2.4 and CentOS Versions)
 - Konstantin Goretzki @konstantingoretzki https://github.com/konstantingoretzki (Improved Regex on Fail2Ban Filter)
 - Stevie-Ray Hartog https://github.com/Stevie-Ray
 - Nissar Chababy @funilrys - https://github.com/funilrys/funceble (Excellent script for checking ACTIVE, INACTIVE and EXPIRED Domain Names)
