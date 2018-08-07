@@ -156,13 +156,15 @@ wget -qO- http://local.dev
 
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/old-globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
 
-# ********************
-# Download the updater
-# ********************
+# *****************************
+# Download and test the updater
+# *****************************
 
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O /usr/sbin/update-apacheblocker.sh
-sed "s/\'2\.4\'/\'2\.2\'/g" /usr/sbin/update-apacheblocker.sh > /usr/sbin/update-apacheblocker.tmp && sudo mv /usr/sbin/update-apacheblocker.tmp /usr/sbin/update-apacheblocker.sh
+sed "s/2\.4/2\.2/g" /usr/sbin/update-apacheblocker.sh > /usr/sbin/update-apacheblocker.tmp && sudo mv /usr/sbin/update-apacheblocker.tmp /usr/sbin/update-apacheblocker.sh
 cat /usr/sbin/update-apacheblocker.sh
+sudo chmod +x /usr/sbin/update-apacheblocker.sh
+sudo /usr/sbin/update-apacheblocker.sh
 
 # **********************
 # Exit With Error Number
