@@ -117,7 +117,7 @@ class Generator
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\n";
         foreach ($lines2 as $line) {
-            $data .= "RewriteCond %{HTTP_USER_AGENT} ^" . $line . ".* [NC,OR]\n";
+            $data .= "RewriteCond %{HTTP_USER_AGENT} \b" . $line . "\b [NC,OR]\n";
         }
         foreach ($lines as $line) {
             if ($line === end($lines)) {
@@ -143,7 +143,7 @@ class Generator
         $data = "##Apache Spam Referer Blocker .htaccess version for mod_senenvif.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n";
         $data .= "<IfModule mod_setenvif.c>\n";
         foreach ($lines2 as $line) {
-            $data .= "SetEnvIfNoCase User-Agent ^" . $line . ".* spambot=yes\n";
+            $data .= "SetEnvIfNoCase User-Agent \b" . $line . "\b spambot=yes\n";
         }
         foreach ($lines as $line) {
             $data .= "SetEnvIfNoCase Referer " . preg_quote($line) . " spambot=yes\n";
