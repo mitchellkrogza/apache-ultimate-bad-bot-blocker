@@ -1,7 +1,7 @@
-Last Tested: Tue Aug  7 10:23:41 SAST 2018
+Last Tested: Tue Aug  7 12:03:37 SAST 2018
 
 HTTP/1.1 403 Forbidden
-Date: Tue, 07 Aug 2018 08:23:41 GMT
-Server: Apache/2.2.25 (Unix) DAV/2
+Date: Tue, 07 Aug 2018 10:03:37 GMT
+Server: Apache/2.4.34 (Ubuntu)
 Content-Type: text/html; charset=iso-8859-1
 

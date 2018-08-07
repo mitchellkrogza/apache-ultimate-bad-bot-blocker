@@ -1,5 +1,5 @@
 #!/bin/bash
-# Bash Script for Auto Updating the Apache Bad Bot Blocker for Apache 2.2 > 2.4
+# Bash Script for Auto Updating the Apache Bad Bot Blocker for Apache 2.2 > 2.2
 # Copyright - https://github.com/mitchellkrogza
 # Project Url: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
@@ -30,14 +30,14 @@
  
 #Update all environment variables to suit your OS/Apache version.
 
-#Major Apache version e.g. 2.2, 2.4
-APACHE_VERSION='2.4'
+#Major Apache version e.g. 2.2, 2.2
+APACHE_VERSION='2.2'
 #Directory where bad bot configs are located.
-APACHE_CONF='/etc/apache2/custom.d'
+APACHE_CONF='/usr/local/apache2/custom.d'
 #location of globalblacklist
 BLACKLIST_URL="https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_${APACHE_VERSION}/custom.d/globalblacklist.conf"
 #Address to send update notifications
-EMAIL='email@example.com'
+EMAIL='mitchellkrog@gmail.com'
 #Make backup of globalblacklist.conf when updating true or false.
 MAKE_BACKUP=false
 SERVER_NAME=$(hostname)
@@ -62,9 +62,9 @@ else
       cp "${APACHE_CONF}/globalblacklist.conf" "${APACHE_CONF}/globalblacklist.${DATE}.backup";
     fi
     wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.conf;
-    apachectl configtest || TESTFAIL=true;
+    /usr/local/apache2/bin/apachectl configtest || TESTFAIL=true;
     if [ -z ${TESTFAIL} ] ; then
-      apachectl graceful;
+      /usr/local/apache2/bin/apachectl graceful;
       echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t ${EMAIL};
       exit 0;
     else
