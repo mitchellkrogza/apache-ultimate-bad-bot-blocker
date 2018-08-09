@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.987
-### Bad Referrer Count: 6349
+### Version: V3.2018.08.988
+### Bad Referrer Count: 6353
 ### Bad Bot Count: 530
 ### Version Information ##
 
@@ -2716,6 +2716,7 @@ SetEnvIfNoCase Referer fsakhalin\.ru spambot=yes
 SetEnvIfNoCase Referer fsalas\.com spambot=yes
 SetEnvIfNoCase Referer ftns\.ru spambot=yes
 SetEnvIfNoCase Referer fuck\-paid\-share\-buttons\.xyz spambot=yes
+SetEnvIfNoCase Referer fuckbuddybestgilf\.info spambot=yes
 SetEnvIfNoCase Referer fuckingawesome\.com spambot=yes
 SetEnvIfNoCase Referer fuckmill\.com spambot=yes
 SetEnvIfNoCase Referer fuel\-gas\.com spambot=yes
@@ -3598,6 +3599,7 @@ SetEnvIfNoCase Referer labafydjxa\.su spambot=yes
 SetEnvIfNoCase Referer labelwater\.se spambot=yes
 SetEnvIfNoCase Referer labplus\.ru spambot=yes
 SetEnvIfNoCase Referer labvis\.host\.sk spambot=yes
+SetEnvIfNoCase Referer lacapilla\.info spambot=yes
 SetEnvIfNoCase Referer lacasamorett\.com spambot=yes
 SetEnvIfNoCase Referer lacave\.ntic\.fr spambot=yes
 SetEnvIfNoCase Referer lacloop\.info spambot=yes
@@ -5703,6 +5705,7 @@ SetEnvIfNoCase Referer stroyplus\.ru spambot=yes
 SetEnvIfNoCase Referer strv\.se spambot=yes
 SetEnvIfNoCase Referer students\-cheapskate\.ml spambot=yes
 SetEnvIfNoCase Referer studiofaca\.com spambot=yes
+SetEnvIfNoCase Referer studiokamyk\.com\.pl spambot=yes
 SetEnvIfNoCase Referer stuff\-about\-money\.com spambot=yes
 SetEnvIfNoCase Referer styro\.ru spambot=yes
 SetEnvIfNoCase Referer success\-seo\.com spambot=yes
@@ -6099,6 +6102,7 @@ SetEnvIfNoCase Referer turvgori\.ru spambot=yes
 SetEnvIfNoCase Referer tv\-spoty\.info spambot=yes
 SetEnvIfNoCase Referer tvand\.ru spambot=yes
 SetEnvIfNoCase Referer tversvet\.ru spambot=yes
+SetEnvIfNoCase Referer tvnewsclips\.info spambot=yes
 SetEnvIfNoCase Referer tvorozhnaja\-zapekanka\-recept\.ru spambot=yes
 SetEnvIfNoCase Referer tvoystartup\.ru spambot=yes
 SetEnvIfNoCase Referer tvteleport\.ru spambot=yes

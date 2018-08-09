@@ -2170,6 +2170,7 @@ SetEnvIfNoCase Referer ~*frvo\.alptandem\.ru spam_ref
 SetEnvIfNoCase Referer ~*fsakhalin\.ru spam_ref
 SetEnvIfNoCase Referer ~*fsalas\.com spam_ref
 SetEnvIfNoCase Referer ~*ftns\.ru spam_ref
+SetEnvIfNoCase Referer ~*fuckbuddybestgilf\.info spam_ref
 SetEnvIfNoCase Referer ~*fuckingawesome\.com spam_ref
 SetEnvIfNoCase Referer ~*fuckmill\.com spam_ref
 SetEnvIfNoCase Referer ~*fuck\-paid\-share\-buttons\.xyz spam_ref
@@ -3052,6 +3053,7 @@ SetEnvIfNoCase Referer ~*labafydjxa\.su spam_ref
 SetEnvIfNoCase Referer ~*labelwater\.se spam_ref
 SetEnvIfNoCase Referer ~*labplus\.ru spam_ref
 SetEnvIfNoCase Referer ~*labvis\.host\.sk spam_ref
+SetEnvIfNoCase Referer ~*lacapilla\.info spam_ref
 SetEnvIfNoCase Referer ~*lacasamorett\.com spam_ref
 SetEnvIfNoCase Referer ~*lacave\.ntic\.fr spam_ref
 SetEnvIfNoCase Referer ~*lacloop\.info spam_ref
@@ -5158,6 +5160,7 @@ SetEnvIfNoCase Referer ~*stroy\-portal22\.ru spam_ref
 SetEnvIfNoCase Referer ~*strv\.se spam_ref
 SetEnvIfNoCase Referer ~*students\-cheapskate\.ml spam_ref
 SetEnvIfNoCase Referer ~*studiofaca\.com spam_ref
+SetEnvIfNoCase Referer ~*studiokamyk\.com\.pl spam_ref
 SetEnvIfNoCase Referer ~*stuff\-about\-money\.com spam_ref
 SetEnvIfNoCase Referer ~*styro\.ru spam_ref
 SetEnvIfNoCase Referer ~*success\-seo\.com spam_ref
@@ -5553,6 +5556,7 @@ SetEnvIfNoCase Referer ~*turn\-up\-life\.life spam_ref
 SetEnvIfNoCase Referer ~*turvgori\.ru spam_ref
 SetEnvIfNoCase Referer ~*tvand\.ru spam_ref
 SetEnvIfNoCase Referer ~*tversvet\.ru spam_ref
+SetEnvIfNoCase Referer ~*tvnewsclips\.info spam_ref
 SetEnvIfNoCase Referer ~*tvorozhnaja\-zapekanka\-recept\.ru spam_ref
 SetEnvIfNoCase Referer ~*tvoystartup\.ru spam_ref
 SetEnvIfNoCase Referer ~*tv\-spoty\.info spam_ref
