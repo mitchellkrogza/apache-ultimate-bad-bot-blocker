@@ -141,7 +141,7 @@ class Generator
     {
         $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt";
         $data = "##Apache Spam Referer Blocker .htaccess version for mod_senenvif.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n";
-        $data .= "<IfModule mod_setenvif.c>\n\nSetEnvIfNoCase User-Agent ^\W spambot=yes\n";
+        $data .= "<IfModule mod_setenvif.c>\n\nSetEnvIfNoCase User-Agent ^\W spambot=yes\nSetEnvIfNoCase User-Agent ^$ spambot=yes\n";
         foreach ($lines2 as $line) {
             $data .= "SetEnvIfNoCase User-Agent \b" . $line . "\b spambot=yes\n";
         }
