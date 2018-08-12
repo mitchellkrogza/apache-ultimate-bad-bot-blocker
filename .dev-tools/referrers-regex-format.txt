@@ -2351,6 +2351,7 @@ SetEnvIfNoCase Referer ~*golden\-praga\.ru spam_ref
 SetEnvIfNoCase Referer ~*goldpanningtools\.com spam_ref
 SetEnvIfNoCase Referer ~*golfresa\.lucania\.se spam_ref
 SetEnvIfNoCase Referer ~*golmau\.host\.sk spam_ref
+SetEnvIfNoCase Referer ~*gombita\.info spam_ref
 SetEnvIfNoCase Referer ~*gomusix\.com spam_ref
 SetEnvIfNoCase Referer ~*gonextmedia\.com spam_ref
 SetEnvIfNoCase Referer ~*goodhousekeeping\.com spam_ref
@@ -4125,6 +4126,7 @@ SetEnvIfNoCase Referer ~*pliks\.pl spam_ref
 SetEnvIfNoCase Referer ~*ploenjitmedia\.azurewebsites\.net spam_ref
 SetEnvIfNoCase Referer ~*plohaya\-kreditnaya\-istoriya\.ru spam_ref
 SetEnvIfNoCase Referer ~*pl\-top\.pl spam_ref
+SetEnvIfNoCase Referer ~*plugingeorgia\.com spam_ref
 SetEnvIfNoCase Referer ~*plusnetwork\.com spam_ref
 SetEnvIfNoCase Referer ~*pl\-vouchers\.com spam_ref
 SetEnvIfNoCase Referer ~*pobeiranie\.pl spam_ref
