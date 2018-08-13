@@ -53,7 +53,7 @@ SERVER_NAME=$(hostname)
 UPDATE_FAIL="Bad bot failed to update globalblacklist on ${SERVER_NAME}" 
 UPDATE_SUCCESS="Bad bot globalblacklist successfully updated on ${SERVER_NAME}"
 CURL_FAIL="Bad bot curl tests have failed on ${SERVER_NAME}."
-WGET_FAIL="Unable to obtain updated globalblacklist. Wget failed."
+WGET_FAIL="Unable to obtain updated globalblacklist. Wget failed on ${SERVER_NAME}."
 CONF_ERROR="Bad bot globalblacklist not present. Does not appear to be setup properly. Aborting update on ${SERVER_NAME}"
 DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
