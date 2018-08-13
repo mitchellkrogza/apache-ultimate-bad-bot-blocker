@@ -52,13 +52,14 @@ CURL_TEST_URL_NAME=localhost
 SERVER_NAME=$(hostname)
 UPDATE_FAIL="Bad bot failed to update globalblacklist on ${SERVER_NAME}" 
 UPDATE_SUCCESS="Bad bot globalblacklist successfully updated on ${SERVER_NAME}"
-CURL_FAIL="Bad bot curl tests have failed on ${SERVER_NAME}." 
+CURL_FAIL="Bad bot curl tests have failed on ${SERVER_NAME}."
+WGET_FAIL="Unable to obtain updated globalblacklist. Wget failed."
 CONF_ERROR="Bad bot globalblacklist not present. Does not appear to be setup properly. Aborting update on ${SERVER_NAME}"
 DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
 if [ ! -f ${APACHE_CONF}/globalblacklist.conf ] ; then
   #Aborting update
-  echo -e "Subject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | sendmail -t ${EMAIL};
+  echo -e "Subject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | /usr/sbin/sendmail -t ${EMAIL};
   exit 1;
 else
   diff <(wget -q -O - ${BLACKLIST_URL}) ${APACHE_CONF}/globalblacklist.conf;
@@ -70,8 +71,13 @@ else
   else
     if [ ${MAKE_BACKUP} = true ] ; then
       cp "${APACHE_CONF}/globalblacklist.conf" "${APACHE_CONF}/globalblacklist.${DATE}.backup";
+    fi 
+    wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
+    if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
+      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${WGET_FAIL}\\n" | /usr/sbin/sendmail -t ${EMAIL};
+      rm -f ${APACHE_CONF}/globalblacklist.tmp;
+      exit 1;
     fi
-    wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.conf;
     if [ ${TEST_BEFORE_RELOAD} = true ] ; then
       apachectl configtest || TESTFAIL=true;
     fi
@@ -81,14 +87,14 @@ else
         CURL_RESPONSE_BAD=$(curl -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         CURL_RESPONSE_GOOD=$(curl -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         if [ $CURL_RESPONSE_BAD != "403" ] || [ $CURL_RESPONSE_GOOD != "200" ] ; then
-          echo -e "Subject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t ${EMAIL};
+          echo -e "Subject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | /usr/sbin/sendmail -t ${EMAIL};
           exit 1;
         fi
       fi
-      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t ${EMAIL};
+      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | /usr/sbin/sendmail -t ${EMAIL};
       exit 0;
     else
-      echo -e "Subject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "Subject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | /usr/sbin/sendmail -t ${EMAIL};
       exit 1;
     fi
   fi
