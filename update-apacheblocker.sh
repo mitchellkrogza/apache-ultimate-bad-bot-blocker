@@ -74,7 +74,7 @@ else
     fi 
     wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
     if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
-      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "Subject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
       rm -f ${APACHE_CONF}/globalblacklist.tmp;
       exit 1;
     fi
