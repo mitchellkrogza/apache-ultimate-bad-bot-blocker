@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1013
-### Bad Referrer Count: 6377
+### Version: V3.2018.08.1014
+### Bad Referrer Count: 6386
 ### Bad Bot Count: 1772
 ### Version Information ##
 
@@ -3416,6 +3416,7 @@ SetEnvIfNoCase Referer domoysshop\.ru spambot=yes
 SetEnvIfNoCase Referer domznaniy\.ru spambot=yes
 SetEnvIfNoCase Referer donna7753191\.ru spambot=yes
 SetEnvIfNoCase Referer donvito\.unas\.cz spambot=yes
+SetEnvIfNoCase Referer dood\.live spambot=yes
 SetEnvIfNoCase Referer dorratex\.tn spambot=yes
 SetEnvIfNoCase Referer doska\-vsem\.ru spambot=yes
 SetEnvIfNoCase Referer dostavimvdom\.ru spambot=yes
@@ -3744,6 +3745,7 @@ SetEnvIfNoCase Referer farmingworm\.com spambot=yes
 SetEnvIfNoCase Referer farmprofi\.net spambot=yes
 SetEnvIfNoCase Referer fashion\-mk\.net spambot=yes
 SetEnvIfNoCase Referer fashion\-stickers\.ru spambot=yes
+SetEnvIfNoCase Referer fashion\.stellaconstance\.co spambot=yes
 SetEnvIfNoCase Referer fashionavenuegame\.com spambot=yes
 SetEnvIfNoCase Referer fashionindeed\.ml spambot=yes
 SetEnvIfNoCase Referer fast\-wordpress\-start\.com spambot=yes
@@ -4192,6 +4194,7 @@ SetEnvIfNoCase Referer greatgrace\.ru spambot=yes
 SetEnvIfNoCase Referer greatzip\.com spambot=yes
 SetEnvIfNoCase Referer green\-tea\.tv spambot=yes
 SetEnvIfNoCase Referer greendream\.com\.ua spambot=yes
+SetEnvIfNoCase Referer greenidesign\.co spambot=yes
 SetEnvIfNoCase Referer greenzaim\.ru spambot=yes
 SetEnvIfNoCase Referer gribkovye\-zabolevaniya\.com spambot=yes
 SetEnvIfNoCase Referer gribokstop\.com spambot=yes
@@ -4451,6 +4454,7 @@ SetEnvIfNoCase Referer igadgetsworld\.com spambot=yes
 SetEnvIfNoCase Referer igithab\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
+SetEnvIfNoCase Referer igtools\.club spambot=yes
 SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer ikearugs\.xyz spambot=yes
 SetEnvIfNoCase Referer iklysha\.ml spambot=yes
@@ -4719,6 +4723,7 @@ SetEnvIfNoCase Referer keywordblocks\.com spambot=yes
 SetEnvIfNoCase Referer keywordhut\.com spambot=yes
 SetEnvIfNoCase Referer keywords\-monitoring\-success\.com spambot=yes
 SetEnvIfNoCase Referer keywords\-monitoring\-your\-success\.com spambot=yes
+SetEnvIfNoCase Referer keywordsdoctor\.com spambot=yes
 SetEnvIfNoCase Referer keywordsking\.com spambot=yes
 SetEnvIfNoCase Referer keywordsuggest\.org spambot=yes
 SetEnvIfNoCase Referer keywordsuggests\.com spambot=yes
@@ -4879,6 +4884,7 @@ SetEnvIfNoCase Referer larchik\.net spambot=yes
 SetEnvIfNoCase Referer larger\.io spambot=yes
 SetEnvIfNoCase Referer larose\.jb2c\.me spambot=yes
 SetEnvIfNoCase Referer larutti\.ru spambot=yes
+SetEnvIfNoCase Referer laserpen\.club spambot=yes
 SetEnvIfNoCase Referer lashstudia\.ru spambot=yes
 SetEnvIfNoCase Referer lasvegaslockandsafe\.com spambot=yes
 SetEnvIfNoCase Referer laudit\.ru spambot=yes
@@ -5212,6 +5218,7 @@ SetEnvIfNoCase Referer mesbuta\.info spambot=yes
 SetEnvIfNoCase Referer message\-warning\.net spambot=yes
 SetEnvIfNoCase Referer mesto\-x\.com spambot=yes
 SetEnvIfNoCase Referer metabar\.ru spambot=yes
+SetEnvIfNoCase Referer metallosajding\.ru spambot=yes
 SetEnvIfNoCase Referer metalonly\.info spambot=yes
 SetEnvIfNoCase Referer metarip\.ru spambot=yes
 SetEnvIfNoCase Referer metascephe\.com spambot=yes
@@ -6813,6 +6820,7 @@ SetEnvIfNoCase Referer socialmadesimple\.com spambot=yes
 SetEnvIfNoCase Referer socialmediasuggest\.com spambot=yes
 SetEnvIfNoCase Referer socialmonkee\.com spambot=yes
 SetEnvIfNoCase Referer socialseet\.ru spambot=yes
+SetEnvIfNoCase Referer socialsignals24\.com spambot=yes
 SetEnvIfNoCase Referer socialtrade\.biz spambot=yes
 SetEnvIfNoCase Referer sockshare\.net spambot=yes
 SetEnvIfNoCase Referer soda\.media spambot=yes
@@ -8071,6 +8079,7 @@ SetEnvIfNoCase Referer zaloadi\.ru spambot=yes
 SetEnvIfNoCase Referer zaloro\.com spambot=yes
 SetEnvIfNoCase Referer zambini\.ru spambot=yes
 SetEnvIfNoCase Referer zaobao\.com\.sg spambot=yes
+SetEnvIfNoCase Referer zapatosenventa\.info spambot=yes
 SetEnvIfNoCase Referer zapiszto\.pl spambot=yes
 SetEnvIfNoCase Referer zarabiaj\-dzis\.pl spambot=yes
 SetEnvIfNoCase Referer zarabotat\-na\-sajte\.ru spambot=yes
