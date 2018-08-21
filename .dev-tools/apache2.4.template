@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.08.1009
-### Updated: Sun Aug 19 11:27:51 SAST 2018
-### Bad Referrer Count: 6368
-### Bad Bot Count: 530
+### Version: V3.2018.08.1013
+### Updated: Tue Aug 21 13:26:40 SAST 2018
+### Bad Referrer Count: 6377
+### Bad Bot Count: 1772
 ###################################################
 ### Version Information ##
 
@@ -163,536 +163,1778 @@ BrowserMatchNoCase "^(.*?)(\bYandexImages\b)(.*)$" good_bot
 	# Known Vulnerability Scanners (now merged into one section)
 
 # START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
+BrowserMatchNoCase "^(.*?)(\b173.212soso\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b192.comagent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b1noonbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b1on1searchbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\b360Spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b3de_search2\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b3d_search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b3g\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b3gse\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\b404checker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\b404enemy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\b50.nu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\b80legs\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bA1\ sitemap\ generator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bA1\ website\ download\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bA6-indexer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAasp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAbachobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAbonti\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAbotemailsearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAboundex\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAboutusbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAccmonitor\ compliance\ server\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAccoon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAchulkov.net\ page\ walker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAcme.spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAcoonbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAcquia-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bActivetouristbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAcunetix\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAdamm\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAdbeat_bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bADmantX\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAdminshop.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAd\ muncher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAdvanced\ email\ extractor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAesop_com_spiderman\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAespider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAfD-Verbotsverfahren\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAf\ knowledge\ now\ verity\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAggregator:vocus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAh-ha.com\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAhrefs\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAhrefsBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAIBOT\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAidu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAiHitBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAipbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAisiid\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAitcsrobot/1.1\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAjsitemap\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAkamai-sitesnapshot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAlexawebsearchplatform\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAlexfdownload\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAlexibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAlkalinebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAll\ acronyms\ bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAlligator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAllSubmitter\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAlphaBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAlpha\ search\ agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAmerla\ search\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAmfibibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAmpmppc.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAmznkassocbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAnarchie\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnemone\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnonymous\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnotherbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnswerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnswerbus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAnswerchase\ prove\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAntbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAntibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAntisantyworm\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAntro.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAonde-spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bApexoo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAport\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAppengine-google\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAppid:\ s~stremor-crawler-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAqua_products\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArachmo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArachnophilia\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAria\ equalizer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArianna.libero.it\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArikus_spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArtavisbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArtera\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bArt-online.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAsaha\ search\ engine\ turkey\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAsk\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAspider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bASPSeek\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAsterias\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAstrofind\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAthenusbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAtlocalbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAtomic_email_hunter\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bAttach\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bautoemailspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAttrakt\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAttributor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAugurfind\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAuresys\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAutobaron\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAutoemailspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAutowebdir\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAvsearch-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAxfeedsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAxonize-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bAyna\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bB2w\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBackDoorBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBacklink-Ceck\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bbacklink-check\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBacklink-check\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBacklinkCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBackrub\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBackStreet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBackstreet\ browser\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBackWeb\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBadass\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBandit\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBarkrowler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBatchFTP\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBattleztar\ Bazinga\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBaypup\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBBBike\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBDCbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBDFetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBecomebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBecomejpbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBeetlebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBender\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBesserscheitern-crawl\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBetaBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBigado.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBig\ brother\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBigcliquebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBig\ data\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBigfoot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBiglotron\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBilbo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBilgibetabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBilgibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBintellibot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBitacle\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBitlybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBitvouseragent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBizbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBizworks\ retriever\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlackbird\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlackboard\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlack.hole\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlack\ Hole\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlackmask.net\ search\ engine\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlackWidow\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bBLEXBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBladder\ fusion\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlaiz-bee\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlexbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlinkx\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlitzbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlog\ conversation\ project\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlogmyway\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlogpulselive\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlogrefsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlogscope\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlogslive\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBloobybot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlow\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBlowFish\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBlt\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBnf.fr_bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBoaconstrictor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBoardreader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBoia.org\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBoia-scan-agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBoi_crawl_00\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBoitho\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBolt\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBookmark\ buddy\ bookmark\ checker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBookmark\ search\ tool\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBosug\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBotALot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBot\ apoena\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBotrighthere\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBotswana\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBottybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBpbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBraintime_search\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBrandprotect\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBrandwatch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBrokenlinkcheck.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBrowseremulator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBrowsermob\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBruinbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBsearchr&d\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBtbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBtsearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBubing\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBuddy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuibui\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuildcms\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBuiltBotTough\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBuiltWith\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBullseye\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBumblebee\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBunnySlippers\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuscadorclarin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuscaplus\ robi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bButterfly\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuyhawaiibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBuzzbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bBuzzSumo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bByindia\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bByspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bByteserver\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bBzbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCacheblaster\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCaddbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCafi\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCalculon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCamcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCamelstampede\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCanon-webrecord\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCareerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCataguru\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCatchbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCATExplorador\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bCazoodleBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCazoodle\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCCBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCcgcrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCcubee\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCd-preload\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCegbfeieh\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCe-preload\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCerberian\ drtrs\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCert\ figleafbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCfetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCfnetwork\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bChameleon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCharlotte\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCheckbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCheck&get\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bChecklinks\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCheeseBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bChemiede-nodebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCherryPicker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bChilkat\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bChinaClaw\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bChlooe\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bChromeframe\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCipinetbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCis455crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCiteseerxbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCizilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bClariabot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bClaritybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bClimate\ ark\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bClimateark\ spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCliqzbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCloud\ mapping\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bcoccocbot-web\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bClshttp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bClushbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoast\ scan\ engine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoast\ webmaster\ pro\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoccoc\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoccocbot-web\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCogentbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bcognitiveseo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCognitiveseo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCollapsarweb\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCollector\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bcom.plumanalytics\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bColocrossing\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCombine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCom.plumanalytics\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bConnectsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bConpilot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bContentsmartz\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bContextad\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bContype\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCookienet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoolbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCoolcheck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCopernic\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCopier\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCopyRightCheck\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCopyscape\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCore-project\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCosmos\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCovario-ids\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCowbot-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCowdog\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrabbybot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCraftbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bcrawler4j\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bcrawler.feedback\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bC\ r\ a\ w\ l\ 3\ r\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawl_application\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler@\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler43.ejupiter.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler4j\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler.feedback\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler_for_infomine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawler.kpricorn.org\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCrawly\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrazyWebCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCreativecommons\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrescent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCs-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCse\ html\ validator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCSHttp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCshttpclient\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCuasarbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCulsearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCurious\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCusto\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCvaulev\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCyberdog\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCybernavi_webget\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCyberpatrol\ sitecat\ webbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCyberspyder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCydralspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bD1garabicengine\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDatabaseDriverMysqli\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDataCha0s\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDatafountains\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDataparksearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDataprovider.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDatascape\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDataspearspiderbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDataspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDattatec.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDaumoa\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDBLBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bdemandbase-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDcpbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDeclumbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDeepindex\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDeepnet\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDeeptrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDejan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDel.icio.us-thumbnails\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDeltascan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDelvubot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDemandbase-bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDemon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDer\ gro§e\ bildersauger\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDer\ große\ bildersauger\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDeusu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDevil\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDfs-fetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDiagem\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDiamond\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDidaxusbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDigext\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDigger\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDigincore\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDigi-rssbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDigitalarchivesbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDigitalPebble\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDigout4u\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDIIbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDillo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDirbuster\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDir_snatch.exe\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDisco\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDiscobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDiscoverybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDistilled-reputation-monitor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDittoSpyder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDjangotraineebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDkimrepbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDmoz\ downloader\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDnyzBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDocomo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDof-verify\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainAppender\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDomainscan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainSigmaCrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainStatsBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDomainwatcher\ bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDotbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDotspotsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDow\ jones\ searchbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDownload\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDownload\ Wonder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDoy\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDragonfly\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDrip\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDrone\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDtaagent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDTS\ Agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDtsearchspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDumbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDwaar\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDxseeker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEah\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEarth\ platform\ indexer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEarth\ science\ educator\ \ robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEasyDL\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEbingbong\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\beCatch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEc2linkfinder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEcairn-grabber\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bECatch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bECCP/1.0\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEchoosebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEcxi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEdisterbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEdugovsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEgothor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEidetica.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEirGrabber\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bElblindo\ the\ blind\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bElisabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEllerdalebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmailcollector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmail\ extractor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmailleach\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmailsiphon\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEMail\ Siphon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmailwolf\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEMail\ Wolf\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmeraldshield\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEmpas_robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEnabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEndeca\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEnigmabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEnswer\ neuro\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEnter\ user-agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEntitycubebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEroCrawler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bevc-batch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bE-societyrobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEstylesearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEsyndicat\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEurosoft-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEvaal\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEvc-batch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEventware\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEverest-vulcan\ inc.\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEvil\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bExactsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bExactseek\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bExooba\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bExploder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExpress\ WebPictures\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExtLinksBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExtractor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExtractorPro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bExtreme\ Picture\ Finder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEyenetie\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEyeNetIE\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bEzooms\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bEz-robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFactbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFairad\ client\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFalcon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFastbot\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFastbot.de\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFast\ data\ search\ document\ retriever\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFast\ esp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFast-search-engine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFatbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFavcollector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFaviconizer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFavorites\ sweeper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bF-bot\ test\ pilot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFDM\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFdse\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFedcontractorbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFembot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFemtosearchBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFetch\ api\ request\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFetch_ici\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFgcrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFHscan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFilangy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFilehound\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFimap\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFindanisp.com_isp_finder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFindlinks\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFindweb\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFirebat\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFirefox/7.0\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFirstgov.gov\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFlaming\ attackbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFlamingo_searchengine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFlashcapture\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFlashGet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFlickysearchbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFluffy\ the\ spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFlunky\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFocused_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFollowsite\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFoobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFooooo_web_video_crawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFopper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFormulafinderbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bForschungsportal\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFrancis\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFr_crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFreeuploader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFreewebmonitoring\ sitechecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFreshcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFreshdownload\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFreshlinks.exe\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFriendfeedbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFrodo.at\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFroggle\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFrontPage\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFroola\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFull_breadth_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFu-nbi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFunnelback\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFurlbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bFyberSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bFyrebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bG10-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGaisbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGalaxyBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGazz\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGbplugin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGenerate_infomine_category_classifiers\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGenevabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeniebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGenieo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeomaxenginebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeometabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeonabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeovisu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGermCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGethtmlcontents\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGetintent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGetleft\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGetRight\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGetsmart\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGeturl.rexx\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGetWeb\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGiant\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGigablast\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGigablastopensource\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGigabot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bG-i-g-a-b-o-t\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGirafabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGleamebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGnome-vfs\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGo-Ahead-Got-It\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoforitbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoforit.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGo-http-client\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGold\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoldfire\ server\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGolem\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoodjelly\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGordon-college-google-mini\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoroam\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGoseebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGotit\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGovbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGoZilla\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGo!Zilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGpu\ p2p\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGrabber\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGrabNet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGrafula\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGrapeFX\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bGrapeshotCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGrapeshot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGrbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGreenyogi\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGridBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGromit\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGrub\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGsa\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGslfbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bGT::WWW\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGulliver\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGulperbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGurujibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvcbot.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ business\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ search\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ web\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ weblink\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bGvc\ world\ links\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHaansoft\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHaosouSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHappyfunbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHarvest\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHatena\ antenna\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHavij\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHcat\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHclsreport-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHd\ nutch\ agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHeader_test_client\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHEADMasterSEO\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHealia\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHelix\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHere\ will\ be\ link\ to\ crawler\ site\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHeritrix\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHiscan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHisoftware\ accmonitor\ server\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHisoftware\ accverify\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHitcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHivabot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHloader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHmsebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHMView\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHoge\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHolmes\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHomepagesearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHooblybot-image\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHoowwwer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHostcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHsft\ -\ link\ scanner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHsft\ -\ lvu\ scanner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHslide\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHt://check\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHtdig\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHtml\ link\ validator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHTMLparser\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHttplib\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHTTP::Lite\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHTTrack\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHuaweisymantecspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHul-wax\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHumanlinks\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bHybridBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHyperestraier\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bHyperix\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIblog\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIbuena\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIcab\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIcds-ingestion\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIchiro\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIcopyright\ conductor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIDBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIDG/UK\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bId-search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIeautodiscovery\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIecheck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIhwebchecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIiitbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIim_405\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIlseBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIltrovatore\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImagebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bImage\ Fetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImage-fetcher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImagefortress\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImageshereimagesthereimageseverywhere\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImage\ stripper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bImage\ Sucker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImagevisu\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImds_monitor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bImo-google-robot-intelink\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInagist.com\ url\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIndeedBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIndexer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIndustry\ cortex\ webcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIndylabs_marius\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIndy\ Library\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInelabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInet32\ ctrl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInetbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInfolink\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInfomine\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bInfoNaviRobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInformant\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInfo\ seeker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInfoseek\ sidewinder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bInfoTekies\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\binstabid\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInfousabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIngrid\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInktomi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInsightscollector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInsightsworksbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInspirebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInstabid\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInsumascout\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIntelix\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIntelliseek\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bInterGET\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInternetlinkagent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bInternet\ Ninja\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInternet\ radio\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bInternetSeer\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\binternetVista\ monitor\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bips-agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInternetVista\ monitor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bInterseek\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIoi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIpadd\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIps-agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIpselonbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIp-web-crawler.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIria\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIRLbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIron33\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIsara\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIsilox\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIskanie\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bIstellaBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIts-learning\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIu_csci_b659_class_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bIvia\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJadynave\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJamesBOT\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJbrofuzz\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJemmathetourist\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJennyBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJetbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJetbrains\ omea\ pro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJetCar\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJikeSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJim\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJobo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJobspider_ba\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJoc\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJOC\ Web\ Spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJoedog\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJoomla\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJorgee\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJoyscapebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJspyda\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJunut\ bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJustView\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJyxobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKakclebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKalooga\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKatatudo-spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKbeta1\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKeepni\ web\ site\ monitor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKenjin.spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bKenjin\ Spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKeybot\ translation-search-machine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKeywenbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKeyword.density\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bKeyword\ Density\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKinjabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKitenga-crawler-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKiwistatus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKmbot-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKmccrew\ bot\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKnight\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKnowitall\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKnowledge.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKnowledge\ engine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKoepabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKoninklijke\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKorniki\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bKozmosbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKrowler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bK.s.bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKuloko-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKulturarw3\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKummhttp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKurzor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bKyluka\ crawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLabhoo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLabourunions411\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLachesis\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLament\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLamerexterminator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLanshanbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLapozzbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLarbin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLeaptag\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLeechFTP\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLeechGet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLetscrawl.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLexiBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLexxebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLftp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLibcrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLibiviacore\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLibw\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLibWeb\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLibwhisker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLightspeedsystems\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLikse\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinguee\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkalarm\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkcheck\ by\ siteimprove.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkchecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLink_checker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLink\ checker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkcheck\ scanner\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinkdexbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkdex.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinkextractorPro\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinklint\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinklooker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinkman\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinkpadBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinkScan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinksManager\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinksmanager.com_bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinks\ sql\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLinksweeper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLink\ validator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinkWalker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinqiaMetadataDownloaderBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinqiaRSSBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLinqiaScrapeBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLipperhey\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLitefinder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLitemage_walker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLitlrbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLittle\ grabber\ at\ skanktale.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLivelapbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLm\ harvester\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLmqueuebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLmspider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLNSpiderguy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLoadtimebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLocalcombot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLocust\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLolongbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLookbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLssbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLt\ scotland\ checklink\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLtx71\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\blwp-request\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bL.webis\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLWP\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bLWP::Simple\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\blwp-trivial\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLwp-trivial\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLycos_spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLydia\ entity\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLynnbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bLytranslate\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMagnet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMag-Net\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bmagpie-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMagpie-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMagus\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMail.ru\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMail.RU_Bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMainseek_bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMajestic12\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMammoth\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMap\ robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMarkMonitor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMarkWatch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMasagool\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMasidani_bot_\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMasscan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMass\ Downloader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMata.hari\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMata\ Hari\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMatentzn\ at\ cs\ dot\ man\ dot\ ac\ dot\ uk\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMauiBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMaxamine.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMaxomobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMcbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMeanpathbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bmediawords\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMediawords\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMedrabbit\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMegaIndex.ru\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMegite\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMemacbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMemo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMendeleybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMercator-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMercuryboard_user_agent_sql_injection.nasl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetacarta\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetaeuro\ web\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetager2\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetagloss\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetal\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetaquerier\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetaspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMetaspinner\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMetauri\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMfcrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMFC_Tear_Sample\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMfhttpscan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMicrosoft\ Data\ Access\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMicrosoft\ URL\ Control\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMIDown\ tool\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMIIxpc\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMinibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMinirank\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMini-robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMirror\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMissigua\ locator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMister.pix\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMister\ PiX\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMiva\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMJ12bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMnogosearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMod_accessibility\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bModuna.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMoget\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMojeek\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMonkeycrawl\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMorfeus\ Fucking\ Scanner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMoses\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMowserbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMqbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMr.4x3\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMse360\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMSFrontPage\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMSIECrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMsindianwebcrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMsmobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMsnptc\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMsrabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMsrbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMS\ Web\ Services\ Client\ Protocol\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bmuhstik-scan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMt-soft\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMuhstik-scan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMultitext\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bMusobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMyapp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMycompanybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMycrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMyengines-us-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMyfamilybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMy-heritrix-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMy_little_searchengine_project\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bMyra\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNajdi.si\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNambu\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bName\ Intelligence\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNameprotect\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNasa\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNatchcvs\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNatweb-bad-link-mailer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNaver\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNavroad\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNearSite\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNec-meshexplorer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNeedle\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNeosciocrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNerdbynature.bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNerdybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNerima-crawl-\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNessus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNestreader\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetAnts\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetcarta\ cyberpilot\ pro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetcraft\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bnetEstate\ NE\ Crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetEstate\ NE\ Crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetexperts\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetid.com\ bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetLyzer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetMechanic\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetprospector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetresearchserver\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetseer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetshift\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetsongbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetsparker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNetsrcherp\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNettrack\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNet::trackback\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNet\ Vampire\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetvibes\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNetZIP\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNewmedhunt\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNews\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNewsgatherer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNewsgroupreporter\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNews_search_app\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNewstrovebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNextGenSearchBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNextthing.org\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNibbler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNicebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNICErsPRO\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNiki-bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNikto\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNimbleCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNimbus-1\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNinetowns\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNinja\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNjuicebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNlese\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNmap\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNogate\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNorbert\ the\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNoteworthybot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNPbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNrcan\ intranet\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNsdl_search_bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNuggetize.com\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNusearch\ spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNutch\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\boBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNu_tch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNwspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNymesis\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNys-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bObjectssearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bObvius\ external\ linkcheck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOcelli\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOctopus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOdp\ entries\ t_st\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOegp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOffline.explorer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOffline\ Explorer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOffline\ Navigator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOgspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOmiexplorer_bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOmniexplorer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOmnifind\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOmniweb\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOnetszukaj\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOnline\ link\ validator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOozbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpenbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOpenfind\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpenintelligencedata\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpenisearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOpenLinkProfiler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bOpenvas\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpenlink\ virtuoso\ rdf\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpensearchserver_bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOpenVAS\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOpidig\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOptidiscover\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOracle\ secure\ enterprise\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOracle\ ultra\ search\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOrangeBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOrangeSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOrisbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOrnl_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOrnl_mercury\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOsis-project.jp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOso\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOutclicksBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bOutfoxBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOutfoxmelonbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOwler-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOwsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bOzelot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bP3p\ client\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPageAnalyzer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPage\ Analyzer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagebiteshyperbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagebull\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagedown\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagefetcher\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPageGrabber\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bpage\ scorer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagepeeker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPagerank\ monitor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPage\ scorer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPageScorer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPage_verifier\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPamsnbot.htm\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPanopy\ bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPanscient\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPansophica\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPapa\ Foto\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPaperlibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bParasite\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bParsijoo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPathtraq\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPattern\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPatwebbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPavuk\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bpcBrowser\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPaxleframework\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPbbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPcBrowser\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPcore-http\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPd-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPECL::HTTP\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPenthesila\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPeoplePal\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPerform_crawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPerman\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPersonal\ ultimate\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPHPCrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPhpdig\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPhp\ version\ tracker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPicosearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPicscout\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPicsearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPictureFinder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPieno\ robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPimonster\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPi-Monster\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPipbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPipeliner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPita\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPixfinder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPixray\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPiyushbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPlanetwork\ bot\ search\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPleaseCrawl\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bplumanalytics\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPlucker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPlukkie\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPlumanalytics\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPlumtree\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPockey\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPocohttp\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPOE-Component-Client-HTTP\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPogodak.ba\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPogodak.co.yu\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPoirot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPolybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPompos\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPoodle\ predictor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPopscreenbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPostpost\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPrivacyfinder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProbethenet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bProjectwf-java-test-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProPowerBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bProWebWalker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bProxem\ websearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bProximic\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bProxy\ crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPss-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPsycheclone\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPub-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPucl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPulsebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPump\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bPwebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPxBroker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bPyCurl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQeavis\ agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQfkbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQualidade\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQualidator.com\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQuepasacreep\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQueryn.metasearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQueryn\ metasearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bQueryN\ Metasearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQuest.durato\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bQuick-Crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQuintura-crw\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQunarbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQwantify\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQweerybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bQweery_robot.txt_checkbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bR2ibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bR6_commentreader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bR6_feedfetcher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bR6_votereader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRadian6\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRadiation\ retriever\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRampybot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankActive\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bRankActiveLinkBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankFlex\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankingBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankingBot2\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankivabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRankur\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRankurBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRational\ sitecheck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRcstartbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRealDownload\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bReaper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRebelMouse\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRebi-shoveler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRecorder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRedbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRedcarpet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRedesScrapy\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bReGet\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRepoMonkey\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bResearch\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRiddler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRiight\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRipper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRisenetbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRiverglassscanner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRobopal\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRobosourcer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRobotek\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRobozilla\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRocketCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRoger\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRogerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRome\ client\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRondello\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRotondo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRoverbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRpt-httpclient\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRtgibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRufusbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRunnk\ online\ rss\ reader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bRunnk\ rss\ aggregator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bS2bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSafaribookmarkchecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSafednsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSafetynet\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSaladspoon\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSalesIntelligent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSapienti\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSapphireweb\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSBIder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSbl-bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScanAlert\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScanbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bscan.lol\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScan.lol\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScfcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScich\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScientificcommons.org\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScollspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScooperbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScooter\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScoutjet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScrapebox\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScrapy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScrawltest\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScreaming\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScreenerBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScrubby\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bScumbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearcharoo.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchblox\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch-channel\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchengine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch-engine-studio\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSearchestate\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchhippo.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchit-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch.kumkie.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchmarking\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchmarks\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchmee\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSearchmetricsBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchmining\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchnowbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchpreview\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch\ publisher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearchspider.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch.updated.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch.usgs.gov\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearch\ x-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSearqubot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeb\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeekbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeeker.lookseek.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeeqbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeeqpod-vertical-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSelflinkchecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSemager\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSemanticdiscovery\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSemantifire\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSemisearch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSemrush\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSemrushBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeoengworldbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOkicks\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOlyticsCrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSeomoz\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOprofiler\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bseoscanners\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSeoscanners\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOstats\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bsexsearcher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSexsearcher\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSeznam\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSeznamBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShablastbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShadowwebanalyzer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShareaza\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShelob\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSherlock\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShim-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bShodan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShopsalad\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShopwiki\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShowlinks\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bShowyoubot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSiclab\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSilk\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSimplepie\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiphon\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSISTRIX\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSitebeam\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSitebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSitecheck\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiteExplorer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSitefinder\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSiteguardbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiteimprove\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiteLockSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSiteorbiter\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiteSnagger\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSiteSucker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSite\ Sucker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSitesweeper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSitevigil\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSitexpert\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSkimbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSkimwordsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSkreemrbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSkywalker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSlackbot-LinkExpanding\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSleipnir\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSlow-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSlySearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSmart-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSmartDownload\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSmarte\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSmartwit.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSMTBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSnake\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSnapbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSnap.com\ beta\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSnappreviewbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSnappy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSnookit\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSnooper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSnoopy\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSocialRankIOBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSocietyrobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSocscibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSoft411\ directory\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSogou\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSogou\ web\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSohu\ agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSohu-search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSokitomi\ crawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSolbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSondeur\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSootle\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSosospider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSottopop\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpacebison\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpace\ bison\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpaceBison\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpace\ fung\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpammen\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpankBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpanner\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpatineo\ monitor\ controller\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpatineo\ serval\ controller\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpatineo\ serval\ getmapbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpecial_archiver\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpeedy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSphere\ scout\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSphider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpiderengine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpiderku\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpiderman\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpider.terranautic.net\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSpinn3r\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpinne\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSportcrew-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSproose\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSputnikBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSpyder3.microsys.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSqlmap\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSqlworm\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSquidclamav_redirector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSquid-prefetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSq\ webscanner\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSqworm\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSrevbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSslbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSsm\ agent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bS~stremor-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStackrambler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStardownloader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStatbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStatcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStatedept-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSteeler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStegmann-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStero\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bStripper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bStumbler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSuchclip\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSucker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSucuri\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSumeetbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSumitbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSummizebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSummizefeedreader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSunrise\ xp\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSuperBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSuperHTTP\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSuperlumin\ downloader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSuperpagesbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSupremesearch.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSupybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSurdotlybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSurf\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSurfbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSurveyBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSuzuran\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSwebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSwiftbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bsysscan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSwish-e\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSygolbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSynapticwalker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSyntryx\ ant\ scout\ chassis\ pheromone\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSysscan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bSystemsearch-robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSzukacz\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bT0PHackTeam\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bT8Abot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\btAkeOut\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTailrank\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTAkeOut\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTalkro\ web-shot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTamu_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTapuzbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTarantula\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTargetblaster.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTargetyournews.com\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTausdatabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTaxinomiabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTeamsoft\ wininet\ component\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTecomi\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTeezirbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTeleport\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTeleportPro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesoft\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesphoreo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTelesphorep\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTeradex\ mapper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTeragram_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTerrawizbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTestbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTesting\ of\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTextbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThatrobotsite.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThe\ dyslexalizer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThe.intraformant\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bThe\ Intraformant\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTheNomad\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTheophrastus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTheusefulbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThumbbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThumbnail.cz\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bThumbshots-de-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bT-h-u-n-d-e-r-s-t-o-n-e\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTigerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTighttwatbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTightTwatBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTineye\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTitan\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bToata\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTocrawl\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTo-dress_ru_bot_\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTo-night-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTopicalizer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTopicblogs\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bToplistbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTopserver\ php\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTopyx-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTouche\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTourlentascanner\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bToweyabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTpsystem\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTraazi\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTracemyfile\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTransgenikbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTravelbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTravellazerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTravel-search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTreezy\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTrendiction\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTrendictionbot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\btrendiction.com\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\btrendiction.de\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTrendiction.com\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTrendiction.de\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTrex\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTridentspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTrovator\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTrue_Robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTscholarsbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTsm\ translation-search-machine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTswebbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTulipchain\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTuringos\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTurnitin\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTurnitinBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTutorgigbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTweetedtimes\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTweetmemebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTwengaBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTwice\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTwikle\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTwinuffbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTwisted\ pagegetter\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTwitturls\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTwitturly\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTygobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bTygoprowler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bTyphoeus\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUberbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUcb-nutch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUdmsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUfam-crawler-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUltraseek\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUnchaos\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUnidentified\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bUnisterBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUnitek\ uniengine\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUniversalsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUnwindfetchor\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUoftdb_experiment\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUpdated\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrlappendbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrlblaze\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrlchecker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrl-checker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrlck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrl\ control\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrldispatcher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrl_gather\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUrlspiderpro\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bURLy.Warning\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bURLy\ Warning\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUsaf\ afkn\ k2spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUsasearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bU.s.\ government\ printing\ office\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUss-cosmix\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bUsyd-nlp-spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVacobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVacuum\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVadixbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVagabondo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bValidator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bValkyrie\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVB\ Project\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVbseo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVCI\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVci\ webviewer\ vci\ webviewer\ win32\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVerbstarbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVeriCiteCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVerifactrola\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVerity-url-gateway\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVermut\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVersus\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVersus.integis.ch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bViasarchivinginformation.html\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVidibleScraper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVipr\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVirus_detector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVirus-detector\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVirusdie\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVisbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVishal\ for\ clia\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVisweb\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVital\ search'n\ urchin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVlad\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVlsearch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVmbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVocusbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVoidEYE\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVoil\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVoilabot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bVoltron\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVortex\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVoyager\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bVspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bW3c_unicorn\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bW3c-webcon\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bW3search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWacbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWallpapers/3.0\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWallpapersHD\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWanadoo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWASALive-Bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWastrix\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWater\ conserve\ portal\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWater\ conserve\ spider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWatzbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWauuu\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWavefire\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWaypath\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWazzup\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWbdbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWBSearchBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb-agent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebalta\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebaltbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebAuto\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Auto\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebBandit\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebbul-bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcapture\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ ceo\ online\ robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcheck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebclipping.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebCollage\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Collage\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebCopier\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcopy\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcorp\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebcrawl.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebdatacentrebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWEBDAV\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ downloader\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebdownloader\ for\ x\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebdup\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebemailextrac\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebEnhancer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Enhancer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebFetch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Fetch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebFuck\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Fuck\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebgather\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebgobbler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebGo\ IS\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb.image.collector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ image\ collector\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebImageCollector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebimages\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebinator-search2\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebinator-wbi\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebindex\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeblayers\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebLeacher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeblexbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeblinker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ link\ validator\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeblyzard\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ magnet\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebmastercoffee\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebmasterworld\ extractor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebmasterWorldForumBot\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bwebmeup-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebmeup-crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebminer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebmoose\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebPix\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Pix\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebReaper\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebripper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebSauger\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Sauger\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebscan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebsearchbench\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebshag\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebsite\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb\ site\ downloader\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebsiteExtractor\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebsiteQuester\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebsite\ Quester\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeb-sniffer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebspear\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebsphinx\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebspider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebster\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebStripper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebSucker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeb\ Sucker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebtrafficexpress\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebtrends\ link\ analyzer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebvac\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebwalk\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebwasher\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebwatch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebWhacker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWebxm\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWebZIP\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWeddings.info\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWenbin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWepa\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWep\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWerelatebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWeSEE\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWhack\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWhacker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWhatweb\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWhirlpool\ web\ engine\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWho.is\ Bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWhowhere\ robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWidow\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWikiabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWikio\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWikiwix-bot-\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWinhttp\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWinHTTrack\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWire\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWisebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWiseGuys\ Robot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWISENutbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWish-la\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWish-project\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWisponbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWmcai-robot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWminer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWmsbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWonderbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWoobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWoriobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWorldshop\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWorqmada\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWotbox\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWprecon\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWPScan\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWume_crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWww\ collector\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWww-collector-e\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW-Collector-E\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWww-mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW-Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW::Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWWOFFLE\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bx09Mozilla\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bx22Mozilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWwwrobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWwwster\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWwwwanderer\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWwwxref\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bWysigot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bX09Mozilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bX22Mozilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXaldon\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon_WebSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon\ WebSpider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bX-clawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bX-crawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXenu\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bxpymep1.exe\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXerka\ metabot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXerka\ webbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXget\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXirq\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXmarksfetch\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXpymep1.exe\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bXqrobot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYacybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYacy.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYanga\ worldsearch\ bot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYarienavoir.net\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYasaklibot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYats\ crawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYebolbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYellowjacket\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYeti\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bY!j\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYolinkbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYooglifetchagent\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYoono\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYottacars_bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bYoudaoBot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bYourls\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZ-add\ link\ checker\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZade\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZagrebin\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZao\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZauba\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bzauba.io\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZauba.io\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZedzo.validate\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZermelo\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZeus\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bzgrab\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZgrab\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZibber-v\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZimeno\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZing-bottabo\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZipppbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZitebot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZmEu\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZongbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZoomspider\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZotag\ search\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZsebot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZuibot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZumBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bZyBorg\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bZyte\b)(.*)$" bad_bot
 # END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
 
 
@@ -1569,6 +2811,7 @@ SetEnvIfNoCase Referer ~*best\-games\.today spam_ref
 SetEnvIfNoCase Referer ~*besthoro\.ru spam_ref
 SetEnvIfNoCase Referer ~*bestimagecoollibrary\.com spam_ref
 SetEnvIfNoCase Referer ~*bestkfiledxd\.cf spam_ref
+SetEnvIfNoCase Referer ~*best\-mam\.ru spam_ref
 SetEnvIfNoCase Referer ~*bestmarriages\.com spam_ref
 SetEnvIfNoCase Referer ~*bestmobilityscooterstoday\.com spam_ref
 SetEnvIfNoCase Referer ~*bestofferswalkmydogouteveryday\.gq spam_ref
@@ -3418,6 +4661,7 @@ SetEnvIfNoCase Referer ~*hotel\-mkad\.ru spam_ref
 SetEnvIfNoCase Referer ~*hotenergy\.ru spam_ref
 SetEnvIfNoCase Referer ~*hotgirlhdwallpaper\.com spam_ref
 SetEnvIfNoCase Referer ~*hothor\.se spam_ref
+SetEnvIfNoCase Referer ~*hothot\.ru spam_ref
 SetEnvIfNoCase Referer ~*hotkeys\.com spam_ref
 SetEnvIfNoCase Referer ~*hotloans\.ru spam_ref
 SetEnvIfNoCase Referer ~*hotshoppymac\.com spam_ref
@@ -3879,6 +5123,7 @@ SetEnvIfNoCase Referer ~*ktotut\.net spam_ref
 SetEnvIfNoCase Referer ~*ku6\.com spam_ref
 SetEnvIfNoCase Referer ~*kumuk\.info spam_ref
 SetEnvIfNoCase Referer ~*kung\-fu\-ru\.com spam_ref
+SetEnvIfNoCase Referer ~*kupiproday\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*kupit\-adenu\.ru spam_ref
 SetEnvIfNoCase Referer ~*kurbappeal\.info spam_ref
 SetEnvIfNoCase Referer ~*kursy\-ege\.ru spam_ref
@@ -4204,6 +5449,7 @@ SetEnvIfNoCase Referer ~*mearns\-tractors\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*mebel\-alait\.ru spam_ref
 SetEnvIfNoCase Referer ~*mebelcomplekt\.ru spam_ref
 SetEnvIfNoCase Referer ~*mebeldekor\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*mebel\-ekb\.com spam_ref
 SetEnvIfNoCase Referer ~*mebel\-vstroika\.ru spam_ref
 SetEnvIfNoCase Referer ~*meble\-bogart\.info spam_ref
 SetEnvIfNoCase Referer ~*mecash\.ru spam_ref
@@ -4381,6 +5627,7 @@ SetEnvIfNoCase Referer ~*montazhnic\.ru spam_ref
 SetEnvIfNoCase Referer ~*monthlywinners\.com spam_ref
 SetEnvIfNoCase Referer ~*montredemarque\.nl spam_ref
 SetEnvIfNoCase Referer ~*moomi\-daeri\.com spam_ref
+SetEnvIfNoCase Referer ~*moonci\.ru spam_ref
 SetEnvIfNoCase Referer ~*morefastermac\.trade spam_ref
 SetEnvIfNoCase Referer ~*more\-letom\.ru spam_ref
 SetEnvIfNoCase Referer ~*morepoweronmac\.trade spam_ref
@@ -4997,6 +6244,7 @@ SetEnvIfNoCase Referer ~*pomoc\-drogowa\.cba\.pl spam_ref
 SetEnvIfNoCase Referer ~*pons\-presse\.com spam_ref
 SetEnvIfNoCase Referer ~*pontiacsolstice\.info spam_ref
 SetEnvIfNoCase Referer ~*pony\-business\.com spam_ref
+SetEnvIfNoCase Referer ~*pooleroadmedicalcentre\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*popads\.net spam_ref
 SetEnvIfNoCase Referer ~*popander\.mobi spam_ref
 SetEnvIfNoCase Referer ~*popcash\.net spam_ref
@@ -5445,6 +6693,7 @@ SetEnvIfNoCase Referer ~*sale\-japan\.com spam_ref
 SetEnvIfNoCase Referer ~*saletool\.ru spam_ref
 SetEnvIfNoCase Referer ~*sa\-live\.com spam_ref
 SetEnvIfNoCase Referer ~*salmonfishingsacramentoriver\.com spam_ref
+SetEnvIfNoCase Referer ~*saltspray\.ru spam_ref
 SetEnvIfNoCase Referer ~*salut\-camp\.ru spam_ref
 SetEnvIfNoCase Referer ~*salutmontreal\.com spam_ref
 SetEnvIfNoCase Referer ~*samara\.rosfirm\.ru spam_ref
@@ -5644,6 +6893,7 @@ SetEnvIfNoCase Referer ~*sexcamamateurchat\.com spam_ref
 SetEnvIfNoCase Referer ~*sex\-dating\.co spam_ref
 SetEnvIfNoCase Referer ~*sexflirtbook\.com spam_ref
 SetEnvIfNoCase Referer ~*sex\-foto\.pw spam_ref
+SetEnvIfNoCase Referer ~*sexgalleries\.top spam_ref
 SetEnvIfNoCase Referer ~*sex\.hotblog\.top spam_ref
 SetEnvIfNoCase Referer ~*sexkontakteao\.info spam_ref
 SetEnvIfNoCase Referer ~*sexkontakte\-seite\.com spam_ref
@@ -5666,6 +6916,7 @@ SetEnvIfNoCase Referer ~*sexvideo\-sex\.com spam_ref
 SetEnvIfNoCase Referer ~*sexvporno\.ru spam_ref
 SetEnvIfNoCase Referer ~*sex\-watch\.com spam_ref
 SetEnvIfNoCase Referer ~*sexyali\.com spam_ref
+SetEnvIfNoCase Referer ~*sexy\.babes\.frontend\-stack\.top spam_ref
 SetEnvIfNoCase Referer ~*sexy\-pings\.com spam_ref
 SetEnvIfNoCase Referer ~*sexy\-screen\-savers\.com spam_ref
 SetEnvIfNoCase Referer ~*sexystrippe\.info spam_ref
