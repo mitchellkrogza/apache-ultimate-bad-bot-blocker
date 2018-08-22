@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1014
-### Bad Referrer Count: 6386
+### Version: V3.2018.08.1015
+### Bad Referrer Count: 6391
 ### Bad Bot Count: 1772
 ### Version Information ##
 
@@ -3259,6 +3259,7 @@ SetEnvIfNoCase Referer dating\-time\-now\.com spambot=yes
 SetEnvIfNoCase Referer datract\.com spambot=yes
 SetEnvIfNoCase Referer datsun\-do\.com spambot=yes
 SetEnvIfNoCase Referer davebestdeals\.com spambot=yes
+SetEnvIfNoCase Referer davidovic\.info spambot=yes
 SetEnvIfNoCase Referer day\-news\.info spambot=yes
 SetEnvIfNoCase Referer daydream\-studio\.ru spambot=yes
 SetEnvIfNoCase Referer dayibiao\.com spambot=yes
@@ -5532,6 +5533,7 @@ SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
 SetEnvIfNoCase Referer newstudio\.tv spambot=yes
 SetEnvIfNoCase Referer newtechspb\.ru spambot=yes
 SetEnvIfNoCase Referer newyorkhotelsmotels\.info spambot=yes
+SetEnvIfNoCase Referer next\-dentists\.tk spambot=yes
 SetEnvIfNoCase Referer nextbackgroundcheck\.gq spambot=yes
 SetEnvIfNoCase Referer nextconseil\.com spambot=yes
 SetEnvIfNoCase Referer nextlnk12\.com spambot=yes
@@ -5864,6 +5866,7 @@ SetEnvIfNoCase Referer physfunc\.ru spambot=yes
 SetEnvIfNoCase Referer pic2fly\.com spambot=yes
 SetEnvIfNoCase Referer piccdata\.com spambot=yes
 SetEnvIfNoCase Referer piccshare\.com spambot=yes
+SetEnvIfNoCase Referer picmoonco\.pw spambot=yes
 SetEnvIfNoCase Referer picphotos\.net spambot=yes
 SetEnvIfNoCase Referer picquery\.com spambot=yes
 SetEnvIfNoCase Referer pics\-group\.com spambot=yes
@@ -7045,6 +7048,7 @@ SetEnvIfNoCase Referer tabakur77\.com spambot=yes
 SetEnvIfNoCase Referer tabletkinaodchudzanie\.com\.pl spambot=yes
 SetEnvIfNoCase Referer taboola\.com spambot=yes
 SetEnvIfNoCase Referer tacbelarus\.ru spambot=yes
+SetEnvIfNoCase Referer tackletarts\.co spambot=yes
 SetEnvIfNoCase Referer tagil\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer taihouse\.ru spambot=yes
 SetEnvIfNoCase Referer takeflyte\.com spambot=yes
@@ -7143,6 +7147,7 @@ SetEnvIfNoCase Referer thetattoohut\.com spambot=yes
 SetEnvIfNoCase Referer thetoiletpaper\.com spambot=yes
 SetEnvIfNoCase Referer thewebsitetemplate\.info spambot=yes
 SetEnvIfNoCase Referer thewomenlife\.com spambot=yes
+SetEnvIfNoCase Referer thexart\.club spambot=yes
 SetEnvIfNoCase Referer thfox\.com spambot=yes
 SetEnvIfNoCase Referer thiegs\.reco\.ws spambot=yes
 SetEnvIfNoCase Referer thin\.me\.pn spambot=yes
