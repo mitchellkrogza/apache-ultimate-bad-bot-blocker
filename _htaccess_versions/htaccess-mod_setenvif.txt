@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1015
-### Bad Referrer Count: 6391
+### Version: V3.2018.08.1016
+### Bad Referrer Count: 6399
 ### Bad Bot Count: 1772
 ### Version Information ##
 
@@ -2704,6 +2704,7 @@ SetEnvIfNoCase Referer breget74\.ru spambot=yes
 SetEnvIfNoCase Referer brendbutik\.ru spambot=yes
 SetEnvIfNoCase Referer brewdom\.ru spambot=yes
 SetEnvIfNoCase Referer brg8\.com spambot=yes
+SetEnvIfNoCase Referer brianhenry\.co spambot=yes
 SetEnvIfNoCase Referer brillianty\.info spambot=yes
 SetEnvIfNoCase Referer brimstonehillfortress\.org spambot=yes
 SetEnvIfNoCase Referer briomotor\.co spambot=yes
@@ -2805,6 +2806,7 @@ SetEnvIfNoCase Referer californianews\.cf spambot=yes
 SetEnvIfNoCase Referer call\-of\-duty\.info spambot=yes
 SetEnvIfNoCase Referer callawaygolfoutlet\.online spambot=yes
 SetEnvIfNoCase Referer callawaygolfstore\.online spambot=yes
+SetEnvIfNoCase Referer callcafe\.info spambot=yes
 SetEnvIfNoCase Referer callejondelpozo\.es spambot=yes
 SetEnvIfNoCase Referer callmd5map\.com spambot=yes
 SetEnvIfNoCase Referer calstaterealty\.us spambot=yes
@@ -3260,6 +3262,7 @@ SetEnvIfNoCase Referer datract\.com spambot=yes
 SetEnvIfNoCase Referer datsun\-do\.com spambot=yes
 SetEnvIfNoCase Referer davebestdeals\.com spambot=yes
 SetEnvIfNoCase Referer davidovic\.info spambot=yes
+SetEnvIfNoCase Referer dawlenie\.com spambot=yes
 SetEnvIfNoCase Referer day\-news\.info spambot=yes
 SetEnvIfNoCase Referer daydream\-studio\.ru spambot=yes
 SetEnvIfNoCase Referer dayibiao\.com spambot=yes
@@ -4250,6 +4253,7 @@ SetEnvIfNoCase Referer handicapvantoday\.com spambot=yes
 SetEnvIfNoCase Referer handsandlegs\.ru spambot=yes
 SetEnvIfNoCase Referer hanink\.biz\.ly spambot=yes
 SetEnvIfNoCase Referer hannasolution\.ru spambot=yes
+SetEnvIfNoCase Referer hanwei\.us spambot=yes
 SetEnvIfNoCase Referer hao123\.com spambot=yes
 SetEnvIfNoCase Referer happy\.new\.yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer hard\-porn\.mobi spambot=yes
@@ -4524,6 +4528,7 @@ SetEnvIfNoCase Referer innodgfdriverhm\.aircus\.com spambot=yes
 SetEnvIfNoCase Referer inome\.com\.ua spambot=yes
 SetEnvIfNoCase Referer insider\.pro spambot=yes
 SetEnvIfNoCase Referer insomniagamingfestival\.com spambot=yes
+SetEnvIfNoCase Referer inspiring\-desperate\.tk spambot=yes
 SetEnvIfNoCase Referer insta\-add\.pro spambot=yes
 SetEnvIfNoCase Referer instabid\.tech spambot=yes
 SetEnvIfNoCase Referer insurple\.com spambot=yes
@@ -4942,6 +4947,7 @@ SetEnvIfNoCase Referer life\-instyle\.com spambot=yes
 SetEnvIfNoCase Referer life\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer lifebyleese\.com spambot=yes
 SetEnvIfNoCase Referer lifehacĸer\.com spambot=yes
+SetEnvIfNoCase Referer liffa\.ru spambot=yes
 SetEnvIfNoCase Referer light\.ifmo\.ru spambot=yes
 SetEnvIfNoCase Referer lightinghomes\.net spambot=yes
 SetEnvIfNoCase Referer lignofix\.ua spambot=yes
@@ -6227,6 +6233,7 @@ SetEnvIfNoCase Referer raschtextil\.com\.ua spambot=yes
 SetEnvIfNoCase Referer rasteniya\-vs\-zombi\.ru spambot=yes
 SetEnvIfNoCase Referer ratemodels\.net spambot=yes
 SetEnvIfNoCase Referer razamicroelectronics\.com spambot=yes
+SetEnvIfNoCase Referer razleton\.com spambot=yes
 SetEnvIfNoCase Referer razorweb\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer razyboard\.com spambot=yes
 SetEnvIfNoCase Referer rcb101\.ru spambot=yes
@@ -7353,6 +7360,7 @@ SetEnvIfNoCase Referer try\-rx\.com spambot=yes
 SetEnvIfNoCase Referer tsan\.net spambot=yes
 SetEnvIfNoCase Referer tsstcorpcddvdwshbbdriverfb\.aircus\.com spambot=yes
 SetEnvIfNoCase Referer tsyndicate\.com spambot=yes
+SetEnvIfNoCase Referer tt\-ipd\.info spambot=yes
 SetEnvIfNoCase Referer ttrraacckkrr\.com spambot=yes
 SetEnvIfNoCase Referer ttsq\.fr spambot=yes
 SetEnvIfNoCase Referer tube8\.com spambot=yes
