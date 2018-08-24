@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1016
+### Version: V3.2018.08.1017
 ### Bad Referrer Count: 6399
-### Bad Bot Count: 1772
+### Bad Bot Count: 1774
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -316,6 +316,7 @@ SetEnvIfNoCase User-Agent \bCrawler4j\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrawler\.feedback\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrawler\_for\_infomine\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrawler\.kpricorn\.org\b spambot=yes
+SetEnvIfNoCase User-Agent \bcrawl\.sogou\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrawly\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrazyWebCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bCreativecommons\b spambot=yes
@@ -1336,6 +1337,7 @@ SetEnvIfNoCase User-Agent \bSocietyrobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSocscibot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSoft411\ directory\b spambot=yes
 SetEnvIfNoCase User-Agent \bSogou\b spambot=yes
+SetEnvIfNoCase User-Agent \bsogouspider\b spambot=yes
 SetEnvIfNoCase User-Agent \bSogou\ web\ spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bSohu\ agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bSohu\-search\b spambot=yes

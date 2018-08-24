@@ -6,15 +6,19 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.08.1016
-### Updated: Fri Aug 24 10:45:29 SAST 2018
-### Bad Bot Count: 1772
+### Version: V3.2018.08.1017
+### Updated: Fri Aug 24 16:56:00 SAST 2018
+### Bad Bot Count: 1774
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+User-agent: sogouspider
+Disallow:/
+User-agent: crawl.sogou.com
+Disallow:/
 User-agent: 173.212soso
 Disallow:/
 User-agent: 192.comagent

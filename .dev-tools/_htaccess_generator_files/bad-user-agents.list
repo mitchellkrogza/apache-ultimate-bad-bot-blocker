@@ -301,6 +301,7 @@ Crawler4j
 Crawler\.feedback
 Crawler\_for\_infomine
 Crawler\.kpricorn\.org
+crawl\.sogou\.com
 Crawly
 CrazyWebCrawler
 Creativecommons
@@ -1321,6 +1322,7 @@ Societyrobot
 Socscibot
 Soft411\ directory
 Sogou
+sogouspider
 Sogou\ web\ spider
 Sohu\ agent
 Sohu\-search

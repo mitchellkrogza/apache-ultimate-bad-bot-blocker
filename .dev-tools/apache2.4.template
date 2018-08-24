@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.08.1016
-### Updated: Fri Aug 24 10:45:30 SAST 2018
+### Version: V3.2018.08.1017
+### Updated: Fri Aug 24 16:56:01 SAST 2018
 ### Bad Referrer Count: 6399
-### Bad Bot Count: 1772
+### Bad Bot Count: 1774
 ###################################################
 ### Version Information ##
 
@@ -466,6 +466,7 @@ BrowserMatchNoCase "^(.*?)(\bCrawler4j\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrawler.feedback\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrawler_for_infomine\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrawler.kpricorn.org\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bcrawl.sogou.com\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrawly\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCrazyWebCrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCreativecommons\b)(.*)$" bad_bot
@@ -1486,6 +1487,7 @@ BrowserMatchNoCase "^(.*?)(\bSocietyrobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSocscibot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSoft411\ directory\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSogou\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bsogouspider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSogou\ web\ spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSohu\ agent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSohu-search\b)(.*)$" bad_bot

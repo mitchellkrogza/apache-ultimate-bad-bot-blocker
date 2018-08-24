@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1016
+### Version: V3.2018.08.1017
 ### Bad Referrer Count: 6399
-### Bad Bot Count: 1772
+### Bad Bot Count: 1774
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -316,6 +316,7 @@ RewriteCond %{HTTP_USER_AGENT} \bCrawler4j\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrawler\.feedback\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrawler\_for\_infomine\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrawler\.kpricorn\.org\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bcrawl\.sogou\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrawly\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrazyWebCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCreativecommons\b [NC,OR]
@@ -1336,6 +1337,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSocietyrobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSocscibot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSoft411\ directory\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSogou\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bsogouspider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSogou\ web\ spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSohu\ agent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSohu\-search\b [NC,OR]
