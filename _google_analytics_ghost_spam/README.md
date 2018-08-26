@@ -3,9 +3,9 @@
 # EASY CONFIGURATION INSTRUCTIONS FOR STOPPING GOOGLE ANALYTICS "GHOST" SPAM
 
 _______________
-#### Version: V3.2018.08.1017
+#### Version: V3.2018.08.1019
 #### Bad Referrer Count: 6399
-#### Bad Bot Count: 1774
+#### Bad Bot Count: 1773
 ____________________
 
 Simply using the Apache blocker does not stop Google Analytics ghost referral spam because they are hitting Analytics directly and not always necessarily touching your website. 

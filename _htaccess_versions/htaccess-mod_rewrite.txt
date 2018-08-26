@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1017
+### Version: V3.2018.08.1019
 ### Bad Referrer Count: 6399
-### Bad Bot Count: 1774
+### Bad Bot Count: 1773
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -586,7 +586,6 @@ RewriteCond %{HTTP_USER_AGENT} \bGreenyogi\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGridBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGromit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrub\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bGsa\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGslfbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGT\:\:WWW\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGulliver\b [NC,OR]
