@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1019
-### Bad Referrer Count: 6399
+### Version: V3.2018.08.1021
+### Bad Referrer Count: 6405
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -2432,6 +2432,7 @@ SetEnvIfNoCase Referer baersaratov\.ru spambot=yes
 SetEnvIfNoCase Referer bag77\.ru spambot=yes
 SetEnvIfNoCase Referer bagcionderlab\.com spambot=yes
 SetEnvIfNoCase Referer bagsonsale\.online spambot=yes
+SetEnvIfNoCase Referer baikaleminer\.com spambot=yes
 SetEnvIfNoCase Referer baixar\-musicas\-gratis\.com spambot=yes
 SetEnvIfNoCase Referer baksman\.com spambot=yes
 SetEnvIfNoCase Referer bala\.getenjoyment\.net spambot=yes
@@ -3640,6 +3641,7 @@ SetEnvIfNoCase Referer essayservicewriting\.org spambot=yes
 SetEnvIfNoCase Referer este\-line\.com\.ua spambot=yes
 SetEnvIfNoCase Referer estelight\.ru spambot=yes
 SetEnvIfNoCase Referer estibot\.com spambot=yes
+SetEnvIfNoCase Referer etenininrade\.ga spambot=yes
 SetEnvIfNoCase Referer etm\-consult\.de spambot=yes
 SetEnvIfNoCase Referer etotupo\.ru spambot=yes
 SetEnvIfNoCase Referer etur\.ru spambot=yes
@@ -3809,6 +3811,7 @@ SetEnvIfNoCase Referer filmbokep69\.com spambot=yes
 SetEnvIfNoCase Referer filmetricsasia\.com spambot=yes
 SetEnvIfNoCase Referer filmfanatic\.com spambot=yes
 SetEnvIfNoCase Referer filmgo\.ru spambot=yes
+SetEnvIfNoCase Referer filmi\-onlain\.info spambot=yes
 SetEnvIfNoCase Referer filmidivx\.com spambot=yes
 SetEnvIfNoCase Referer filunika\.com\.ru spambot=yes
 SetEnvIfNoCase Referer financehint\.eu spambot=yes
@@ -4526,6 +4529,7 @@ SetEnvIfNoCase Referer infostatsvc\.com spambot=yes
 SetEnvIfNoCase Referer infowarcraft\.ru spambot=yes
 SetEnvIfNoCase Referer inmate\-locator\.us spambot=yes
 SetEnvIfNoCase Referer innodgfdriverhm\.aircus\.com spambot=yes
+SetEnvIfNoCase Referer innoslicon\.com spambot=yes
 SetEnvIfNoCase Referer inome\.com\.ua spambot=yes
 SetEnvIfNoCase Referer insider\.pro spambot=yes
 SetEnvIfNoCase Referer insomniagamingfestival\.com spambot=yes
@@ -5057,6 +5061,7 @@ SetEnvIfNoCase Referer luckyshop\.net\.ua spambot=yes
 SetEnvIfNoCase Referer lulea\-auktionsverk\.se spambot=yes
 SetEnvIfNoCase Referer lumb\.co spambot=yes
 SetEnvIfNoCase Referer lunamedia\.co spambot=yes
+SetEnvIfNoCase Referer lunchrock\.co spambot=yes
 SetEnvIfNoCase Referer lutherstable\.org spambot=yes
 SetEnvIfNoCase Referer luxmagazine\.cf spambot=yes
 SetEnvIfNoCase Referer luxup\.ru spambot=yes
@@ -6400,6 +6405,7 @@ SetEnvIfNoCase Referer russintv\.fr spambot=yes
 SetEnvIfNoCase Referer russkie\-gorki\.ru spambot=yes
 SetEnvIfNoCase Referer russkoe\-zdorovie\.ru spambot=yes
 SetEnvIfNoCase Referer rustic\-quiver\.win spambot=yes
+SetEnvIfNoCase Referer rutor\.vip spambot=yes
 SetEnvIfNoCase Referer rvtv\.ru spambot=yes
 SetEnvIfNoCase Referer rvzr\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer rybalka\-opt\.ru spambot=yes
