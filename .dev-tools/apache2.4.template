@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2018.08.1023
-### Updated: Tue Aug 28 09:25:12 SAST 2018
-### Bad Referrer Count: 6407
+### Version: V3.2018.08.1024
+### Updated: Tue Aug 28 10:00:53 SAST 2018
+### Bad Referrer Count: 6413
 ### Bad Bot Count: 1773
 ###################################################
 ### Version Information ##
@@ -4572,6 +4572,7 @@ SetEnvIfNoCase Referer ~*hdapp1008\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*hd\-film\.pl spam_ref
 SetEnvIfNoCase Referer ~*hd\-filmy\.net spam_ref
 SetEnvIfNoCase Referer ~*hdfreeporno\.net spam_ref
+SetEnvIfNoCase Referer ~*hdhc\.ru spam_ref
 SetEnvIfNoCase Referer ~*hdimagegallery\.net spam_ref
 SetEnvIfNoCase Referer ~*hdimagelib\.com spam_ref
 SetEnvIfNoCase Referer ~*hdpixent\.com spam_ref
@@ -4798,6 +4799,7 @@ SetEnvIfNoCase Referer ~*impresagaia\.it spam_ref
 SetEnvIfNoCase Referer ~*inbabes\.sexushost\.com spam_ref
 SetEnvIfNoCase Referer ~*inboundlinks\.win spam_ref
 SetEnvIfNoCase Referer ~*inboxdollars\.com spam_ref
+SetEnvIfNoCase Referer ~*incanto\.in\.ua spam_ref
 SetEnvIfNoCase Referer ~*incep\.imagine\-ex\.co spam_ref
 SetEnvIfNoCase Referer ~*inclk\.com spam_ref
 SetEnvIfNoCase Referer ~*incolors\.club spam_ref
@@ -5207,6 +5209,7 @@ SetEnvIfNoCase Referer ~*ldrtrack\.com spam_ref
 SetEnvIfNoCase Referer ~*leadn\.pl spam_ref
 SetEnvIfNoCase Referer ~*leadwayau\.com spam_ref
 SetEnvIfNoCase Referer ~*leboard\.ru spam_ref
+SetEnvIfNoCase Referer ~*lecbter\-relationships\.ga spam_ref
 SetEnvIfNoCase Referer ~*lechenie\-gemorroya\.com spam_ref
 SetEnvIfNoCase Referer ~*lechtaczka\.net spam_ref
 SetEnvIfNoCase Referer ~*le\-clos\-des\-alouettes\.com spam_ref
@@ -6337,6 +6340,7 @@ SetEnvIfNoCase Referer ~*pospr\.waw\.pl spam_ref
 SetEnvIfNoCase Referer ~*postclass\.com spam_ref
 SetEnvIfNoCase Referer ~*potoideas\.us spam_ref
 SetEnvIfNoCase Referer ~*potolokelekor\.ru spam_ref
+SetEnvIfNoCase Referer ~*pourvous\.info spam_ref
 SetEnvIfNoCase Referer ~*powc\.r\.ca\.d\.sendibm2\.com spam_ref
 SetEnvIfNoCase Referer ~*powenlite24\.ru spam_ref
 SetEnvIfNoCase Referer ~*powitania\.pl spam_ref
@@ -7542,6 +7546,7 @@ SetEnvIfNoCase Referer ~*tnaionline\.org spam_ref
 SetEnvIfNoCase Referer ~*tnctrx\.com spam_ref
 SetEnvIfNoCase Referer ~*tobeyouday\.win spam_ref
 SetEnvIfNoCase Referer ~*todohr\.com spam_ref
+SetEnvIfNoCase Referer ~*token\-lab\.org spam_ref
 SetEnvIfNoCase Referer ~*toloka\.hurtom\.com spam_ref
 SetEnvIfNoCase Referer ~*tomatis\.gospartner\.com spam_ref
 SetEnvIfNoCase Referer ~*tomck\.com spam_ref
@@ -8173,6 +8178,7 @@ SetEnvIfNoCase Referer ~*wygraj\-skiny\.win spam_ref
 SetEnvIfNoCase Referer ~*wygraj\-teraz\.com spam_ref
 SetEnvIfNoCase Referer ~*wyniki\-lista\.pl spam_ref
 SetEnvIfNoCase Referer ~*wzgyyq\.com spam_ref
+SetEnvIfNoCase Referer ~*x5market\.ru spam_ref
 SetEnvIfNoCase Referer ~*x69ty\.ru spam_ref
 SetEnvIfNoCase Referer ~*xaijo\.com spam_ref
 SetEnvIfNoCase Referer ~*xaylapdiendanang\.com spam_ref

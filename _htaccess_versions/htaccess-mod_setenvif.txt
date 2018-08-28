@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1023
-### Bad Referrer Count: 6407
+### Version: V3.2018.08.1024
+### Bad Referrer Count: 6413
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -4281,6 +4281,7 @@ SetEnvIfNoCase Referer hd\-filmy\.net spambot=yes
 SetEnvIfNoCase Referer hd720kino\.ru spambot=yes
 SetEnvIfNoCase Referer hdapp1008\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer hdfreeporno\.net spambot=yes
+SetEnvIfNoCase Referer hdhc\.ru spambot=yes
 SetEnvIfNoCase Referer hdimagegallery\.net spambot=yes
 SetEnvIfNoCase Referer hdimagelib\.com spambot=yes
 SetEnvIfNoCase Referer hdpixent\.com spambot=yes
@@ -4508,6 +4509,7 @@ SetEnvIfNoCase Referer impresagaia\.it spambot=yes
 SetEnvIfNoCase Referer inbabes\.sexushost\.com spambot=yes
 SetEnvIfNoCase Referer inboundlinks\.win spambot=yes
 SetEnvIfNoCase Referer inboxdollars\.com spambot=yes
+SetEnvIfNoCase Referer incanto\.in\.ua spambot=yes
 SetEnvIfNoCase Referer incep\.imagine\-ex\.co spambot=yes
 SetEnvIfNoCase Referer inclk\.com spambot=yes
 SetEnvIfNoCase Referer incolors\.club spambot=yes
@@ -4917,6 +4919,7 @@ SetEnvIfNoCase Referer le\-clos\-des\-alouettes\.com spambot=yes
 SetEnvIfNoCase Referer leadn\.pl spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
 SetEnvIfNoCase Referer leboard\.ru spambot=yes
+SetEnvIfNoCase Referer lecbter\-relationships\.ga spambot=yes
 SetEnvIfNoCase Referer lechenie\-gemorroya\.com spambot=yes
 SetEnvIfNoCase Referer lechtaczka\.net spambot=yes
 SetEnvIfNoCase Referer ledis\.top spambot=yes
@@ -6046,6 +6049,7 @@ SetEnvIfNoCase Referer pospr\.waw\.pl spambot=yes
 SetEnvIfNoCase Referer postclass\.com spambot=yes
 SetEnvIfNoCase Referer potoideas\.us spambot=yes
 SetEnvIfNoCase Referer potolokelekor\.ru spambot=yes
+SetEnvIfNoCase Referer pourvous\.info spambot=yes
 SetEnvIfNoCase Referer powc\.r\.ca\.d\.sendibm2\.com spambot=yes
 SetEnvIfNoCase Referer powenlite24\.ru spambot=yes
 SetEnvIfNoCase Referer powitania\.pl spambot=yes
@@ -7251,6 +7255,7 @@ SetEnvIfNoCase Referer tnaionline\.org spambot=yes
 SetEnvIfNoCase Referer tnctrx\.com spambot=yes
 SetEnvIfNoCase Referer tobeyouday\.win spambot=yes
 SetEnvIfNoCase Referer todohr\.com spambot=yes
+SetEnvIfNoCase Referer token\-lab\.org spambot=yes
 SetEnvIfNoCase Referer toloka\.hurtom\.com spambot=yes
 SetEnvIfNoCase Referer tomatis\.gospartner\.com spambot=yes
 SetEnvIfNoCase Referer tomck\.com spambot=yes
@@ -7892,6 +7897,7 @@ SetEnvIfNoCase Referer x\-porno\.video spambot=yes
 SetEnvIfNoCase Referer x\-rates\.ru spambot=yes
 SetEnvIfNoCase Referer x\-stars\.ru spambot=yes
 SetEnvIfNoCase Referer x\-true\.info spambot=yes
+SetEnvIfNoCase Referer x5market\.ru spambot=yes
 SetEnvIfNoCase Referer x69ty\.ru spambot=yes
 SetEnvIfNoCase Referer xaijo\.com spambot=yes
 SetEnvIfNoCase Referer xaylapdiendanang\.com spambot=yes
