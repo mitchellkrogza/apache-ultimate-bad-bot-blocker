@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1021
-### Bad Referrer Count: 6405
+### Version: V3.2018.08.1023
+### Bad Referrer Count: 6407
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -3818,6 +3818,7 @@ SetEnvIfNoCase Referer financehint\.eu spambot=yes
 SetEnvIfNoCase Referer financeloan\.us spambot=yes
 SetEnvIfNoCase Referer financepoints\.eu spambot=yes
 SetEnvIfNoCase Referer financetip\.eu spambot=yes
+SetEnvIfNoCase Referer finansov\.info spambot=yes
 SetEnvIfNoCase Referer find1friend\.com spambot=yes
 SetEnvIfNoCase Referer findacheaplawyers\.com spambot=yes
 SetEnvIfNoCase Referer findanysex\.com spambot=yes
@@ -7152,6 +7153,7 @@ SetEnvIfNoCase Referer themeforest\.net spambot=yes
 SetEnvIfNoCase Referer themestotal\.com spambot=yes
 SetEnvIfNoCase Referer thenetinfo\.com spambot=yes
 SetEnvIfNoCase Referer thenews\-today\.info spambot=yes
+SetEnvIfNoCase Referer thepantonpractice\.co\.uk spambot=yes
 SetEnvIfNoCase Referer theplacetoupdating\.pw spambot=yes
 SetEnvIfNoCase Referer thepokertimer\.com spambot=yes
 SetEnvIfNoCase Referer theprofitsmaker\.net spambot=yes
