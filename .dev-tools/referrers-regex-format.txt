@@ -3927,6 +3927,7 @@ SetEnvIfNoCase Referer ~*onlywoman\.org spam_ref
 SetEnvIfNoCase Referer ~*ons\-add\.men spam_ref
 SetEnvIfNoCase Referer ~*onstrapon\.purplesphere\.in spam_ref
 SetEnvIfNoCase Referer ~*ontargetseo\.us spam_ref
+SetEnvIfNoCase Referer ~*onthemarch\.co spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-11\-o\-o\.com spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-6\-o\-o\.com spam_ref
 SetEnvIfNoCase Referer ~*o\-o\-6\-o\-o\.ru spam_ref
@@ -5235,6 +5236,7 @@ SetEnvIfNoCase Referer ~*supermesta\.ru spam_ref
 SetEnvIfNoCase Referer ~*supernew\.org spam_ref
 SetEnvIfNoCase Referer ~*superoboi\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*supers\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*superstarfloraluk\.com spam_ref
 SetEnvIfNoCase Referer ~*superstats\.com spam_ref
 SetEnvIfNoCase Referer ~*supervesti\.ru spam_ref
 SetEnvIfNoCase Referer ~*support\.nopeas\.sk spam_ref
