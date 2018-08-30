@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1025
-### Bad Referrer Count: 6415
+### Version: V3.2018.08.1026
+### Bad Referrer Count: 6418
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -2107,6 +2107,7 @@ SetEnvIfNoCase Referer alfa\-medosmotr\.ru spambot=yes
 SetEnvIfNoCase Referer alfa9\.com spambot=yes
 SetEnvIfNoCase Referer alfabot\.xyz spambot=yes
 SetEnvIfNoCase Referer alfapro\.ru spambot=yes
+SetEnvIfNoCase Referer algarveglobal\.com spambot=yes
 SetEnvIfNoCase Referer algerianembassy\.co\.in spambot=yes
 SetEnvIfNoCase Referer alibestsale\.com spambot=yes
 SetEnvIfNoCase Referer alice\.it spambot=yes
@@ -2482,6 +2483,7 @@ SetEnvIfNoCase Referer bbtec\.net spambot=yes
 SetEnvIfNoCase Referer bcmp\.org spambot=yes
 SetEnvIfNoCase Referer bdsmgalls\.net spambot=yes
 SetEnvIfNoCase Referer beachdriveblog\.com spambot=yes
+SetEnvIfNoCase Referer beachfix\.co spambot=yes
 SetEnvIfNoCase Referer beachpics\.com spambot=yes
 SetEnvIfNoCase Referer beachtoday\.ru spambot=yes
 SetEnvIfNoCase Referer bear\.gotcher\.us spambot=yes
@@ -6882,6 +6884,7 @@ SetEnvIfNoCase Referer souvenirua\.com spambot=yes
 SetEnvIfNoCase Referer sovetogorod\.ru spambot=yes
 SetEnvIfNoCase Referer soviet\-portal\.do\.am spambot=yes
 SetEnvIfNoCase Referer sovinsteel\.ru spambot=yes
+SetEnvIfNoCase Referer spabali\.org spambot=yes
 SetEnvIfNoCase Referer spacash\.com spambot=yes
 SetEnvIfNoCase Referer space\-worry\.ml spambot=yes
 SetEnvIfNoCase Referer space4update\.pw spambot=yes
