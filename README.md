@@ -42,13 +42,15 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Ap
 ```
 ****************************************************************
 
-## Update Notification System
+### Update Notification System - Stay up to date on New Builds and Major Feature Changes 
 
-Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
-or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
-**Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+**For Support, Contributions & Idea Sharing**
 
-#### Also follow me on twitter @ubuntu101za for update notifications
+<a href="https://keybase.io/team/apachebotblocker">Join the Team on Keybase<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/keybase.png"/></a>
+
+Please make sure you are subscribed to Github Notifications to be notified when the blocker is updated or when any important or mission critical (potentially breaking) changes may take place.
+
+##### Also follow me on twitter @ubuntu101za 
 
 <a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
