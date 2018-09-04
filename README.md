@@ -42,9 +42,7 @@ https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/tree/master/Ap
 ```
 ****************************************************************
 
-### Update Notification System - Stay up to date on New Builds and Major Feature Changes 
-
-**For Support, Contributions & Idea Sharing**
+### For Support, Contributions & Idea Sharing
 
 <a href="https://keybase.io/team/apachebotblocker">Join the Team on Keybase<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/keybase.png"/></a>
 
