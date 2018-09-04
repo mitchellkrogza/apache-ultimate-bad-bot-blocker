@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.08.1026
-### Bad Referrer Count: 6418
+### Version: V3.2018.09.1027
+### Bad Referrer Count: 6423
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -4264,6 +4264,7 @@ SetEnvIfNoCase Referer hanwei\.us spambot=yes
 SetEnvIfNoCase Referer hao123\.com spambot=yes
 SetEnvIfNoCase Referer happy\.new\.yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer hard\-porn\.mobi spambot=yes
+SetEnvIfNoCase Referer harmonyglen\.us spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
 SetEnvIfNoCase Referer hatdc\.org spambot=yes
 SetEnvIfNoCase Referer hatedriveapart\.com spambot=yes
@@ -4508,6 +4509,7 @@ SetEnvIfNoCase Referer import\-sales\.com spambot=yes
 SetEnvIfNoCase Referer importchinacoach\-teach\.com spambot=yes
 SetEnvIfNoCase Referer impotentik\.com spambot=yes
 SetEnvIfNoCase Referer impresagaia\.it spambot=yes
+SetEnvIfNoCase Referer in\-tandem\.co spambot=yes
 SetEnvIfNoCase Referer inbabes\.sexushost\.com spambot=yes
 SetEnvIfNoCase Referer inboundlinks\.win spambot=yes
 SetEnvIfNoCase Referer inboxdollars\.com spambot=yes
@@ -4695,6 +4697,7 @@ SetEnvIfNoCase Referer kaac\.ru spambot=yes
 SetEnvIfNoCase Referer kabbalah\-red\-bracelets\.com spambot=yes
 SetEnvIfNoCase Referer kadashihotel\.com spambot=yes
 SetEnvIfNoCase Referer kaidalibor\.de spambot=yes
+SetEnvIfNoCase Referer kakablog\.net spambot=yes
 SetEnvIfNoCase Referer kalandranis\.gr spambot=yes
 SetEnvIfNoCase Referer kalb\.ru spambot=yes
 SetEnvIfNoCase Referer kaliningrad\.zrus\.org spambot=yes
@@ -4734,8 +4737,10 @@ SetEnvIfNoCase Referer kerwinandcariza\.com spambot=yes
 SetEnvIfNoCase Referer ketoanhanoi\.info spambot=yes
 SetEnvIfNoCase Referer ketrzyn\.pl spambot=yes
 SetEnvIfNoCase Referer keyhantercume\.com spambot=yes
+SetEnvIfNoCase Referer keywesthideaways\.co spambot=yes
 SetEnvIfNoCase Referer keyword\-suggestions\.com spambot=yes
 SetEnvIfNoCase Referer keywordblocks\.com spambot=yes
+SetEnvIfNoCase Referer keywordglobal\.co\.za spambot=yes
 SetEnvIfNoCase Referer keywordhut\.com spambot=yes
 SetEnvIfNoCase Referer keywords\-monitoring\-success\.com spambot=yes
 SetEnvIfNoCase Referer keywords\-monitoring\-your\-success\.com spambot=yes

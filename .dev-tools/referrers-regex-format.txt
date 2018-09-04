@@ -2476,6 +2476,7 @@ SetEnvIfNoCase Referer ~*hanwei\.us spam_ref
 SetEnvIfNoCase Referer ~*hao123\.com spam_ref
 SetEnvIfNoCase Referer ~*happy\.new\.yeartwit\.com spam_ref
 SetEnvIfNoCase Referer ~*hard\-porn\.mobi spam_ref
+SetEnvIfNoCase Referer ~*harmonyglen\.us spam_ref
 SetEnvIfNoCase Referer ~*hasfun\.com spam_ref
 SetEnvIfNoCase Referer ~*hatdc\.org spam_ref
 SetEnvIfNoCase Referer ~*hatedriveapart\.com spam_ref
@@ -2753,6 +2754,7 @@ SetEnvIfNoCase Referer ~*inspiring\-desperate\.tk spam_ref
 SetEnvIfNoCase Referer ~*insta\-add\.pro spam_ref
 SetEnvIfNoCase Referer ~*instabid\.tech spam_ref
 SetEnvIfNoCase Referer ~*insurple\.com spam_ref
+SetEnvIfNoCase Referer ~*in\-tandem\.co spam_ref
 SetEnvIfNoCase Referer ~*integritylandscapeservices\.com spam_ref
 SetEnvIfNoCase Referer ~*intelhdgraphicsgtdrive6w\.metroblog\.com spam_ref
 SetEnvIfNoCase Referer ~*intellego\.info spam_ref
@@ -2907,6 +2909,7 @@ SetEnvIfNoCase Referer ~*kaac\.ru spam_ref
 SetEnvIfNoCase Referer ~*kabbalah\-red\-bracelets\.com spam_ref
 SetEnvIfNoCase Referer ~*kadashihotel\.com spam_ref
 SetEnvIfNoCase Referer ~*kaidalibor\.de spam_ref
+SetEnvIfNoCase Referer ~*kakablog\.net spam_ref
 SetEnvIfNoCase Referer ~*kalandranis\.gr spam_ref
 SetEnvIfNoCase Referer ~*kalb\.ru spam_ref
 SetEnvIfNoCase Referer ~*kaliningrad\.zrus\.org spam_ref
@@ -2946,7 +2949,9 @@ SetEnvIfNoCase Referer ~*kerwinandcariza\.com spam_ref
 SetEnvIfNoCase Referer ~*ketoanhanoi\.info spam_ref
 SetEnvIfNoCase Referer ~*ketrzyn\.pl spam_ref
 SetEnvIfNoCase Referer ~*keyhantercume\.com spam_ref
+SetEnvIfNoCase Referer ~*keywesthideaways\.co spam_ref
 SetEnvIfNoCase Referer ~*keywordblocks\.com spam_ref
+SetEnvIfNoCase Referer ~*keywordglobal\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*keywordhut\.com spam_ref
 SetEnvIfNoCase Referer ~*keywordsdoctor\.com spam_ref
 SetEnvIfNoCase Referer ~*keywordsking\.com spam_ref
