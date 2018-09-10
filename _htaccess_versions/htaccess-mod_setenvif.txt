@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.09.1027
-### Bad Referrer Count: 6423
+### Version: V3.2018.09.1028
+### Bad Referrer Count: 6435
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -2315,6 +2315,7 @@ SetEnvIfNoCase Referer ascat\.porn spambot=yes
 SetEnvIfNoCase Referer asdfg\.pro spambot=yes
 SetEnvIfNoCase Referer asdfz\.pro spambot=yes
 SetEnvIfNoCase Referer asia\-forum\.ru spambot=yes
+SetEnvIfNoCase Referer asiavirtualsolutions\.com spambot=yes
 SetEnvIfNoCase Referer asiengirls\.net spambot=yes
 SetEnvIfNoCase Referer asmxsatadriverin\.aircus\.com spambot=yes
 SetEnvIfNoCase Referer asociatia\-tipografilor\-transilvania\.ro spambot=yes
@@ -2560,6 +2561,7 @@ SetEnvIfNoCase Referer bezlimitko\.xyz spambot=yes
 SetEnvIfNoCase Referer bezsporno\.ru spambot=yes
 SetEnvIfNoCase Referer beztuberkuleza\.ru spambot=yes
 SetEnvIfNoCase Referer bfz\.biz spambot=yes
+SetEnvIfNoCase Referer bg6s0\.com spambot=yes
 SetEnvIfNoCase Referer bharatdefencekavach\.com spambot=yes
 SetEnvIfNoCase Referer bibys\.com spambot=yes
 SetEnvIfNoCase Referer bidbuy\.co\.kr spambot=yes
@@ -2639,6 +2641,7 @@ SetEnvIfNoCase Referer blogporn\.in spambot=yes
 SetEnvIfNoCase Referer blogqpot\.com spambot=yes
 SetEnvIfNoCase Referer blogrankers\.com spambot=yes
 SetEnvIfNoCase Referer blogs\.rediff\.com spambot=yes
+SetEnvIfNoCase Referer blogsfunky672\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer bloke\.com spambot=yes
 SetEnvIfNoCase Referer blpmovies\.com spambot=yes
 SetEnvIfNoCase Referer blue\-square\.biz spambot=yes
@@ -3251,6 +3254,7 @@ SetEnvIfNoCase Referer dangphoto\.trade spambot=yes
 SetEnvIfNoCase Referer danschawbel\.com spambot=yes
 SetEnvIfNoCase Referer daooda\.com spambot=yes
 SetEnvIfNoCase Referer daptravel\.com spambot=yes
+SetEnvIfNoCase Referer daretodonate\.co spambot=yes
 SetEnvIfNoCase Referer darkages\.info spambot=yes
 SetEnvIfNoCase Referer darkbooks\.org spambot=yes
 SetEnvIfNoCase Referer darmebel\.com\.ua spambot=yes
@@ -3810,6 +3814,7 @@ SetEnvIfNoCase Referer filkhbr\.com spambot=yes
 SetEnvIfNoCase Referer fillmewithhappiness\.com spambot=yes
 SetEnvIfNoCase Referer film\-one\.ru spambot=yes
 SetEnvIfNoCase Referer filmbokep69\.com spambot=yes
+SetEnvIfNoCase Referer filmci\.pro spambot=yes
 SetEnvIfNoCase Referer filmetricsasia\.com spambot=yes
 SetEnvIfNoCase Referer filmfanatic\.com spambot=yes
 SetEnvIfNoCase Referer filmgo\.ru spambot=yes
@@ -4222,6 +4227,7 @@ SetEnvIfNoCase Referer gsasearchengineranker\.space spambot=yes
 SetEnvIfNoCase Referer gsasearchengineranker\.top spambot=yes
 SetEnvIfNoCase Referer gsasearchengineranker\.xyz spambot=yes
 SetEnvIfNoCase Referer gsasearchenginerankerdiscount\.com spambot=yes
+SetEnvIfNoCase Referer gsasearchenginerankerhelp\.com spambot=yes
 SetEnvIfNoCase Referer gsbs\.com\.ua spambot=yes
 SetEnvIfNoCase Referer gsmlab\.pl spambot=yes
 SetEnvIfNoCase Referer gsmtlf\.ru spambot=yes
@@ -4609,6 +4615,7 @@ SetEnvIfNoCase Referer istmira\.ru spambot=yes
 SetEnvIfNoCase Referer istock\-mebel\.ru spambot=yes
 SetEnvIfNoCase Referer istripper\.com spambot=yes
 SetEnvIfNoCase Referer it\-max\.com\.ua spambot=yes
+SetEnvIfNoCase Referer itag\.pw spambot=yes
 SetEnvIfNoCase Referer itbc\.kiev\.ua spambot=yes
 SetEnvIfNoCase Referer itch\.io spambot=yes
 SetEnvIfNoCase Referer itis4you\.com spambot=yes
@@ -4719,6 +4726,7 @@ SetEnvIfNoCase Referer kartiniresto\.com spambot=yes
 SetEnvIfNoCase Referer karusel\-market\.ru spambot=yes
 SetEnvIfNoCase Referer kashubadesign\.ru spambot=yes
 SetEnvIfNoCase Referer kasino\-money\.pw spambot=yes
+SetEnvIfNoCase Referer katadhin\.co spambot=yes
 SetEnvIfNoCase Referer katjimej\.blog\.fc2\.com spambot=yes
 SetEnvIfNoCase Referer katushka\.net spambot=yes
 SetEnvIfNoCase Referer kaz\.kz spambot=yes
@@ -4729,6 +4737,7 @@ SetEnvIfNoCase Referer kazka\.ru spambot=yes
 SetEnvIfNoCase Referer kazrent\.com spambot=yes
 SetEnvIfNoCase Referer kchaxton\.com spambot=yes
 SetEnvIfNoCase Referer keenoutlet\.online spambot=yes
+SetEnvIfNoCase Referer keki\.info spambot=yes
 SetEnvIfNoCase Referer kemerovo\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer kenaba\.su spambot=yes
 SetEnvIfNoCase Referer kerch\.site spambot=yes
@@ -4736,6 +4745,7 @@ SetEnvIfNoCase Referer kerei\.ru spambot=yes
 SetEnvIfNoCase Referer kerwinandcariza\.com spambot=yes
 SetEnvIfNoCase Referer ketoanhanoi\.info spambot=yes
 SetEnvIfNoCase Referer ketrzyn\.pl spambot=yes
+SetEnvIfNoCase Referer kevblog\.top spambot=yes
 SetEnvIfNoCase Referer keyhantercume\.com spambot=yes
 SetEnvIfNoCase Referer keywesthideaways\.co spambot=yes
 SetEnvIfNoCase Referer keyword\-suggestions\.com spambot=yes
@@ -5976,6 +5986,7 @@ SetEnvIfNoCase Referer pogodnyyeavarii\.gq spambot=yes
 SetEnvIfNoCase Referer pogosh\.com spambot=yes
 SetEnvIfNoCase Referer pogruztehnik\.ru spambot=yes
 SetEnvIfNoCase Referer poisk\-zakona\.ru spambot=yes
+SetEnvIfNoCase Referer poiskzakona\.ru spambot=yes
 SetEnvIfNoCase Referer pojdelo\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer pokemon\-go\-play\.online spambot=yes
 SetEnvIfNoCase Referer pokemongooo\.ml spambot=yes
@@ -6435,6 +6446,7 @@ SetEnvIfNoCase Referer sad\-torg\.com\.ua spambot=yes
 SetEnvIfNoCase Referer sadaholding\.com spambot=yes
 SetEnvIfNoCase Referer saddiechoua\.com spambot=yes
 SetEnvIfNoCase Referer sady\-urala\.ru spambot=yes
+SetEnvIfNoCase Referer saecsa\.co spambot=yes
 SetEnvIfNoCase Referer safe\-app\.net spambot=yes
 SetEnvIfNoCase Referer saitevpatorii\.com spambot=yes
 SetEnvIfNoCase Referer sajatvelemeny\.com spambot=yes
