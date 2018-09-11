@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2018.09.1028
-### Bad Referrer Count: 6435
+### Version: V3.2018.09.1029
+### Bad Referrer Count: 6441
 ### Bad Bot Count: 1773
 ### Version Information ##
 
@@ -1878,6 +1878,7 @@ SetEnvIfNoCase Referer 45en\.ru spambot=yes
 SetEnvIfNoCase Referer 4inn\.ru spambot=yes
 SetEnvIfNoCase Referer 4istoshop\.com spambot=yes
 SetEnvIfNoCase Referer 4k\-player\.pl spambot=yes
+SetEnvIfNoCase Referer 4kpics\.rocks spambot=yes
 SetEnvIfNoCase Referer 4kplayer\.pl spambot=yes
 SetEnvIfNoCase Referer 4pp13\.com spambot=yes
 SetEnvIfNoCase Referer 4rent\.ru spambot=yes
@@ -3682,6 +3683,7 @@ SetEnvIfNoCase Referer exct\.net spambot=yes
 SetEnvIfNoCase Referer exdocsfiles\.com spambot=yes
 SetEnvIfNoCase Referer executehosting\.com spambot=yes
 SetEnvIfNoCase Referer exhibitionplus\.eu spambot=yes
+SetEnvIfNoCase Referer exlarseva\.webblog\.es spambot=yes
 SetEnvIfNoCase Referer exmasters\.com spambot=yes
 SetEnvIfNoCase Referer exoclick\.com spambot=yes
 SetEnvIfNoCase Referer exoneration\-project\.us spambot=yes
@@ -3923,6 +3925,7 @@ SetEnvIfNoCase Referer foxweber\.com spambot=yes
 SetEnvIfNoCase Referer foxydeal\.com spambot=yes
 SetEnvIfNoCase Referer fr\-bearings\.ru spambot=yes
 SetEnvIfNoCase Referer fr\.netlog\.com spambot=yes
+SetEnvIfNoCase Referer franch\.info spambot=yes
 SetEnvIfNoCase Referer franecki\.net spambot=yes
 SetEnvIfNoCase Referer franklinfire\.co spambot=yes
 SetEnvIfNoCase Referer frbizlist\.com spambot=yes
@@ -4171,6 +4174,7 @@ SetEnvIfNoCase Referer goodhousekeeping\.com spambot=yes
 SetEnvIfNoCase Referer goodhumor24\.com spambot=yes
 SetEnvIfNoCase Referer goodnightjournal\.com spambot=yes
 SetEnvIfNoCase Referer goodprotein\.ru spambot=yes
+SetEnvIfNoCase Referer goodwinmetals\.co spambot=yes
 SetEnvIfNoCase Referer goodwriterssales\.com spambot=yes
 SetEnvIfNoCase Referer googglet\.com spambot=yes
 SetEnvIfNoCase Referer google\-liar\.ru spambot=yes
@@ -4342,6 +4346,7 @@ SetEnvIfNoCase Referer hildinghr\.se spambot=yes
 SetEnvIfNoCase Referer histats\.com spambot=yes
 SetEnvIfNoCase Referer histock\.info spambot=yes
 SetEnvIfNoCase Referer historichometeam\.com spambot=yes
+SetEnvIfNoCase Referer hit\-kino\.ru spambot=yes
 SetEnvIfNoCase Referer hit\-men\.men spambot=yes
 SetEnvIfNoCase Referer hitcpm\.com spambot=yes
 SetEnvIfNoCase Referer hitsbox\.info spambot=yes
@@ -7660,6 +7665,7 @@ SetEnvIfNoCase Referer vizitki\.net spambot=yes
 SetEnvIfNoCase Referer vk\-mus\.ru spambot=yes
 SetEnvIfNoCase Referer vkak\.ru spambot=yes
 SetEnvIfNoCase Referer vkgaleria\.com spambot=yes
+SetEnvIfNoCase Referer vkmusics\.ru spambot=yes
 SetEnvIfNoCase Referer vkonche\.com spambot=yes
 SetEnvIfNoCase Referer vkontaktemusic\.ru spambot=yes
 SetEnvIfNoCase Referer vkontarkte\.com spambot=yes

@@ -89,6 +89,7 @@ SetEnvIfNoCase Referer ~*40cg\.com spam_ref
 SetEnvIfNoCase Referer ~*45en\.ru spam_ref
 SetEnvIfNoCase Referer ~*4inn\.ru spam_ref
 SetEnvIfNoCase Referer ~*4istoshop\.com spam_ref
+SetEnvIfNoCase Referer ~*4kpics\.rocks spam_ref
 SetEnvIfNoCase Referer ~*4k\-player\.pl spam_ref
 SetEnvIfNoCase Referer ~*4kplayer\.pl spam_ref
 SetEnvIfNoCase Referer ~*4pp13\.com spam_ref
@@ -1894,6 +1895,7 @@ SetEnvIfNoCase Referer ~*exct\.net spam_ref
 SetEnvIfNoCase Referer ~*exdocsfiles\.com spam_ref
 SetEnvIfNoCase Referer ~*executehosting\.com spam_ref
 SetEnvIfNoCase Referer ~*exhibitionplus\.eu spam_ref
+SetEnvIfNoCase Referer ~*exlarseva\.webblog\.es spam_ref
 SetEnvIfNoCase Referer ~*exmasters\.com spam_ref
 SetEnvIfNoCase Referer ~*exoclick\.com spam_ref
 SetEnvIfNoCase Referer ~*exoneration\-project\.us spam_ref
@@ -2133,6 +2135,7 @@ SetEnvIfNoCase Referer ~*foxinsocks\.ru spam_ref
 SetEnvIfNoCase Referer ~*foxtechfpv\.com spam_ref
 SetEnvIfNoCase Referer ~*foxweber\.com spam_ref
 SetEnvIfNoCase Referer ~*foxydeal\.com spam_ref
+SetEnvIfNoCase Referer ~*franch\.info spam_ref
 SetEnvIfNoCase Referer ~*franecki\.net spam_ref
 SetEnvIfNoCase Referer ~*franklinfire\.co spam_ref
 SetEnvIfNoCase Referer ~*fr\-bearings\.ru spam_ref
@@ -2381,6 +2384,7 @@ SetEnvIfNoCase Referer ~*goodhumor24\.com spam_ref
 SetEnvIfNoCase Referer ~*good\-mummy\.ru spam_ref
 SetEnvIfNoCase Referer ~*goodnightjournal\.com spam_ref
 SetEnvIfNoCase Referer ~*goodprotein\.ru spam_ref
+SetEnvIfNoCase Referer ~*goodwinmetals\.co spam_ref
 SetEnvIfNoCase Referer ~*goodwriterssales\.com spam_ref
 SetEnvIfNoCase Referer ~*googglet\.com spam_ref
 SetEnvIfNoCase Referer ~*googlefeud\.com spam_ref
@@ -2555,6 +2559,7 @@ SetEnvIfNoCase Referer ~*histats\.com spam_ref
 SetEnvIfNoCase Referer ~*histock\.info spam_ref
 SetEnvIfNoCase Referer ~*historichometeam\.com spam_ref
 SetEnvIfNoCase Referer ~*hitcpm\.com spam_ref
+SetEnvIfNoCase Referer ~*hit\-kino\.ru spam_ref
 SetEnvIfNoCase Referer ~*hit\-men\.men spam_ref
 SetEnvIfNoCase Referer ~*hitsbox\.info spam_ref
 SetEnvIfNoCase Referer ~*hiwibyh\.bugs3\.com spam_ref
@@ -5871,6 +5876,7 @@ SetEnvIfNoCase Referer ~*vizag\.kharkov\.ua spam_ref
 SetEnvIfNoCase Referer ~*vizitki\.net spam_ref
 SetEnvIfNoCase Referer ~*vkak\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkgaleria\.com spam_ref
+SetEnvIfNoCase Referer ~*vkmusics\.ru spam_ref
 SetEnvIfNoCase Referer ~*vk\-mus\.ru spam_ref
 SetEnvIfNoCase Referer ~*vkonche\.com spam_ref
 SetEnvIfNoCase Referer ~*vkontaktemusic\.ru spam_ref
