@@ -27,7 +27,7 @@
 # RUN THE UPDATE
 # Here our script runs, pulls the latest update, runs a config test then reloads apache and emails you a notification
 # Place your own valid email address where it says "me@myemail.com"
- 
+
 #Update all environment variables to suit your OS/Apache version.
 
 #Major Apache version e.g. 2.2, 2.4
@@ -46,11 +46,11 @@ TEST_BEFORE_RELOAD=true
 CURL_TEST_AFTER_RELOAD=true
 #Specify if your site uses http or https
 CURL_TEST_PROTOCOL=http
-#domain name to test against. 
+#domain name to test against.
 CURL_TEST_URL_NAME=localhost
 
 SERVER_NAME=$(hostname)
-UPDATE_FAIL="Bad bot failed to update globalblacklist on ${SERVER_NAME}" 
+UPDATE_FAIL="Bad bot failed to update globalblacklist on ${SERVER_NAME}"
 UPDATE_SUCCESS="Bad bot globalblacklist successfully updated on ${SERVER_NAME}"
 CURL_FAIL="Bad bot curl tests have failed on ${SERVER_NAME}."
 WGET_FAIL="Unable to obtain updated globalblacklist. Wget failed on ${SERVER_NAME}."
@@ -71,7 +71,9 @@ else
   else
     if [ ${MAKE_BACKUP} = true ] ; then
       cp "${APACHE_CONF}/globalblacklist.conf" "${APACHE_CONF}/globalblacklist.${DATE}.backup";
-    fi 
+      # Delete backups that are older than 5 days
+      find ${APACHE_CONF} -maxdepth 1 -type f -mtime +5 -name globalblacklist.*.backup -exec rm {} \;
+    fi
     wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
     if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
       echo -e "Subject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
