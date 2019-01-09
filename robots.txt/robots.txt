@@ -2543,10 +2543,6 @@ User-agent: SEOstats
 Disallow:/
 User-agent: Sexsearcher
 Disallow:/
-User-agent: Seznam
-Disallow:/
-User-agent: SeznamBot
-Disallow:/
 User-agent: Shablastbot
 Disallow:/
 User-agent: Shadowwebanalyzer

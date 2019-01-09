@@ -104,6 +104,8 @@ BrowserMatchNoCase "^(.*?)(\bMediapartners-Google\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bmsnbot\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bmsnbot-media\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bSAMSUNG\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\bSeznam\b)(.*)$" good_bot
+BrowserMatchNoCase "^(.*?)(\bSeznamBot\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bSlackbot\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bSlackbot-LinkExpanding\b)(.*)$" good_bot
 BrowserMatchNoCase "^(.*?)(\bslurp\b)(.*)$" good_bot
@@ -1427,8 +1429,6 @@ BrowserMatchNoCase "^(.*?)(\bSEOprofiler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSeoscanners\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSEOstats\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSexsearcher\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSeznam\b)(.*)$" bad_bot
-BrowserMatchNoCase "^(.*?)(\bSeznamBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bShablastbot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bShadowwebanalyzer\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bShareaza\b)(.*)$" bad_bot
