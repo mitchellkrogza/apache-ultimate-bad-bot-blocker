@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.01.1035
+### Version: V3.2019.01.1037
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1773
+### Bad Bot Count: 1771
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -1277,8 +1277,6 @@ RewriteCond %{HTTP_USER_AGENT} \bSEOprofiler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSeoscanners\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSEOstats\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSexsearcher\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bSeznam\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bSeznamBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bShablastbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bShadowwebanalyzer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bShareaza\b [NC,OR]
