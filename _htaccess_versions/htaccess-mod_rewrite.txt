@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.01.1037
+### Version: V3.2019.01.1038
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1771
+### Bad Bot Count: 1772
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -873,6 +873,7 @@ RewriteCond %{HTTP_USER_AGENT} \bMaxamine\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMaxomobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMcbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMeanpathbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bMediatoolkitbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMediawords\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMedrabbit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMegaIndex\.ru\b [NC,OR]
