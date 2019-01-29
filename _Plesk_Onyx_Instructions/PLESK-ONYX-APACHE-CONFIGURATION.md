@@ -20,7 +20,7 @@ If this guide helps you why not
 
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/plesk-onyx-web-host-edition-apache-bad-bot-referrer-blocker-setup.jpg" alt="Plesk Onyx Web Host Edition Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker Configuration and Customizing Plesk Apache Vhost Templates"/>
 
-** PLEASE NOTE: This guide has not been tested on any future versions of Plesk or CentOS since time of writing. If you find any problems please report them in Issues or BETTER YET Please send a PR with the amendments as time is limited on my side for testing new releases.
+**PLEASE NOTE: This guide has not been tested on any future versions of Plesk or CentOS since time of writing. If you find any problems please report them in Issues or BETTER YET Please send a PR with the amendments as time is limited on my side for testing new releases.
 
 This guide was created using a trial version of Plesk installed with their [all in one ISO](https://autoinstall.plesk.com/iso/plesk-17.0-centos7-x86_64.iso) - [Thank you Plesk](https://www.plesk.com/)
 ************************************************
