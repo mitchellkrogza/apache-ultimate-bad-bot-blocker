@@ -26,6 +26,7 @@ curltest3=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest3
 curltest4=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest4.txt
 curltest5=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest5.txt
 curltest6=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest6.txt
+curltest7=${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_curl_tests_2.4/curltest7.txt
 now="$(date)"
 
 # *************************************************
@@ -124,6 +125,21 @@ else
 fi
 }
 
+# *****************************************************
+# Function Curl Test 7 - Check for User-Agent "Mozilla"
+# *****************************************************
+
+run_curltest7 () {
+truncate -s 0 ${curltest7}
+printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest7}"
+curl -A "Mozilla" http://local.dev:80/index.html 2>&1 >> ${curltest7}
+if grep -i 'Forbidden' ${curltest7}; then
+   echo 'MOZILLA DETECTED AS BAD - TEST FAILED'
+   exit 1
+else
+   echo 'MOZILLA DETECTED AS GOOD - TEST PASSED'
+fi
+}
 
 # *********************************
 # Trigger our curl functions to run
@@ -135,6 +151,7 @@ run_curltest3
 run_curltest4
 run_curltest5
 run_curltest6
+run_curltest7
 
 # ****************************************
 # If everything passed then we exit with 0
