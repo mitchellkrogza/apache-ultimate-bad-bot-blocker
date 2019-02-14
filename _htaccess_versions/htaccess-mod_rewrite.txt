@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1046
+### Version: V3.2019.02.1047
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1769
+### Bad Bot Count: 1766
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -269,7 +269,6 @@ RewriteCond %{HTTP_USER_AGENT} \bChromeframe\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCipinetbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCis455crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCiteseerxbot\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bCizilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bClariabot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bClaritybot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bClimate\ ark\b [NC,OR]
@@ -573,7 +572,6 @@ RewriteCond %{HTTP_USER_AGENT} \bGoroam\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGoseebot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGotit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGovbot\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bGoZilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGpu\ p2p\ crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabber\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabNet\b [NC,OR]
@@ -1193,7 +1191,6 @@ RewriteCond %{HTTP_USER_AGENT} \bRiverglassscanner\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRobopal\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRobosourcer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRobotek\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bRobozilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRocketCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRoger\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]

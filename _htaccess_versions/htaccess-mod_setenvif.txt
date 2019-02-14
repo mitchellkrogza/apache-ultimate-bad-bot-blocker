@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1046
+### Version: V3.2019.02.1047
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1769
+### Bad Bot Count: 1766
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -269,7 +269,6 @@ SetEnvIfNoCase User-Agent \bChromeframe\b spambot=yes
 SetEnvIfNoCase User-Agent \bCipinetbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCis455crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bCiteseerxbot\b spambot=yes
-SetEnvIfNoCase User-Agent \bCizilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bClariabot\b spambot=yes
 SetEnvIfNoCase User-Agent \bClaritybot\b spambot=yes
 SetEnvIfNoCase User-Agent \bClimate\ ark\b spambot=yes
@@ -573,7 +572,6 @@ SetEnvIfNoCase User-Agent \bGoroam\b spambot=yes
 SetEnvIfNoCase User-Agent \bGoseebot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGotit\b spambot=yes
 SetEnvIfNoCase User-Agent \bGovbot\b spambot=yes
-SetEnvIfNoCase User-Agent \bGoZilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGpu\ p2p\ crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabber\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabNet\b spambot=yes
@@ -1193,7 +1191,6 @@ SetEnvIfNoCase User-Agent \bRiverglassscanner\b spambot=yes
 SetEnvIfNoCase User-Agent \bRobopal\b spambot=yes
 SetEnvIfNoCase User-Agent \bRobosourcer\b spambot=yes
 SetEnvIfNoCase User-Agent \bRobotek\b spambot=yes
-SetEnvIfNoCase User-Agent \bRobozilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bRocketCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRoger\b spambot=yes
 SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes

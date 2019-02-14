@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.02.1046
-### Updated: Thu Feb 14 14:45:12 SAST 2019
-### Bad Bot Count: 1769
+### Version: V3.2019.02.1047
+### Updated: Thu Feb 14 15:03:19 SAST 2019
+### Bad Bot Count: 1766
 ###################################################
 ### Version Information ##
 
@@ -526,8 +526,6 @@ Disallow:/
 User-agent: Cis455crawler
 Disallow:/
 User-agent: Citeseerxbot
-Disallow:/
-User-agent: Cizilla
 Disallow:/
 User-agent: Clariabot
 Disallow:/
@@ -1134,8 +1132,6 @@ Disallow:/
 User-agent: Gotit
 Disallow:/
 User-agent: Govbot
-Disallow:/
-User-agent: GoZilla
 Disallow:/
 User-agent: Gpu p2p crawler
 Disallow:/
@@ -2374,8 +2370,6 @@ Disallow:/
 User-agent: Robosourcer
 Disallow:/
 User-agent: Robotek
-Disallow:/
-User-agent: Robozilla
 Disallow:/
 User-agent: RocketCrawler
 Disallow:/
