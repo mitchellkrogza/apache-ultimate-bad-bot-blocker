@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.01.1042
+### Version: V3.2019.02.1045
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1772
+### Bad Bot Count: 1770
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -1729,8 +1729,6 @@ RewriteCond %{HTTP_USER_AGENT} \bWwwster\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWwwwanderer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWwwxref\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWysigot\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bX09Mozilla\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bX22Mozilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]

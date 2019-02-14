@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.01.1042
-### Updated: Tue Jan 29 12:32:53 SAST 2019
-### Bad Bot Count: 1772
+### Version: V3.2019.02.1045
+### Updated: Thu Feb 14 14:38:37 SAST 2019
+### Bad Bot Count: 1770
 ###################################################
 ### Version Information ##
 
@@ -3446,10 +3446,6 @@ Disallow:/
 User-agent: Wwwxref
 Disallow:/
 User-agent: Wysigot
-Disallow:/
-User-agent: X09Mozilla
-Disallow:/
-User-agent: X22Mozilla
 Disallow:/
 User-agent: Xaldon
 Disallow:/
