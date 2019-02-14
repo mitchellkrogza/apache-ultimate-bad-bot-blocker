@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.02.1045
-### Updated: Thu Feb 14 14:38:37 SAST 2019
-### Bad Bot Count: 1770
+### Version: V3.2019.02.1046
+### Updated: Thu Feb 14 14:45:12 SAST 2019
+### Bad Bot Count: 1769
 ###################################################
 ### Version Information ##
 
@@ -1136,8 +1136,6 @@ Disallow:/
 User-agent: Govbot
 Disallow:/
 User-agent: GoZilla
-Disallow:/
-User-agent: Go!Zilla
 Disallow:/
 User-agent: Gpu p2p crawler
 Disallow:/

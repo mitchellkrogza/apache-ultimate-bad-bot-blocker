@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1045
+### Version: V3.2019.02.1046
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1770
+### Bad Bot Count: 1769
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -574,7 +574,6 @@ RewriteCond %{HTTP_USER_AGENT} \bGoseebot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGotit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGovbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGoZilla\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bGo\!Zilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGpu\ p2p\ crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabber\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabNet\b [NC,OR]
