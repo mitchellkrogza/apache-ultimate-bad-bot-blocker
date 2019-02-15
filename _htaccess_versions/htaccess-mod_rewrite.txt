@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1052
+### Version: V3.2019.02.1053
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1766
+### Bad Bot Count: 1770
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -572,6 +572,8 @@ RewriteCond %{HTTP_USER_AGENT} \bGoroam\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGoseebot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGotit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGovbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bGoZilla\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bGo\!Zilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGpu\ p2p\ crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabber\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGrabNet\b [NC,OR]
@@ -1725,6 +1727,8 @@ RewriteCond %{HTTP_USER_AGENT} \bWwwster\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWwwwanderer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWwwxref\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWysigot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bX09Mozilla\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bX22Mozilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]

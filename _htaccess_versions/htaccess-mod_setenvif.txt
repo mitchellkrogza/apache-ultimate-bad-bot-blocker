@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1052
+### Version: V3.2019.02.1053
 ### Bad Referrer Count: 6453
-### Bad Bot Count: 1766
+### Bad Bot Count: 1770
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -572,6 +572,8 @@ SetEnvIfNoCase User-Agent \bGoroam\b spambot=yes
 SetEnvIfNoCase User-Agent \bGoseebot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGotit\b spambot=yes
 SetEnvIfNoCase User-Agent \bGovbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bGoZilla\b spambot=yes
+SetEnvIfNoCase User-Agent \bGo\!Zilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGpu\ p2p\ crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabber\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabNet\b spambot=yes
@@ -1725,6 +1727,8 @@ SetEnvIfNoCase User-Agent \bWwwster\b spambot=yes
 SetEnvIfNoCase User-Agent \bWwwwanderer\b spambot=yes
 SetEnvIfNoCase User-Agent \bWwwxref\b spambot=yes
 SetEnvIfNoCase User-Agent \bWysigot\b spambot=yes
+SetEnvIfNoCase User-Agent \bX09Mozilla\b spambot=yes
+SetEnvIfNoCase User-Agent \bX22Mozilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
