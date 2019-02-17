@@ -175,9 +175,17 @@ cat ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-a
 sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
 sudo ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
 
-# **********************
-# Exit With Error Number
-# **********************
+# ***********************************************************************************
+# Put Latest Generated globalblacklist.conf into place for correct testing of changes
+# ***********************************************************************************
+
+sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
+echo "Restarting Apache 2.2"
+sudo /usr/local/apache2/bin/apachectl restart
+
+# ************************************************
+# Exit With Error Number and Continue to Run Tests
+# ************************************************
 
 exit ${?}
 
