@@ -183,6 +183,14 @@ sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache
 echo "Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
 
+# *****************************************
+# Get a copy of all conf files for checking
+# *****************************************
+
+sudo cp /usr/local/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/
+sudo cp /usr/local/apache2/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/apache2.conf
+sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/
+
 # ************************************************
 # Exit With Error Number and Continue to Run Tests
 # ************************************************
