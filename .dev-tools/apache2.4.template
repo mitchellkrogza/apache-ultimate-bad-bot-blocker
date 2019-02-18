@@ -8563,7 +8563,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 <RequireAny>
  	<RequireAll>
 
-	Require all granted
+	#Require all granted
 	Require not env bad_bot
 	Require not env spam_ref
 
