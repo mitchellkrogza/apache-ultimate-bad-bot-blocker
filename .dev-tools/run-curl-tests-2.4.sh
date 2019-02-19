@@ -135,7 +135,7 @@ printf '%s%s\n\n' "Last Tested: " "${now}" >> "${curltest7}"
 curl -A "Mozilla" http://local.dev:80/index.html 2>&1 >> ${curltest7}
 if grep -i 'Forbidden' ${curltest7}; then
    echo 'MOZILLA DETECTED AS BAD - TEST FAILED'
-   #exit 1
+   exit 1
 else
    echo 'MOZILLA DETECTED AS GOOD - TEST PASSED'
 fi
