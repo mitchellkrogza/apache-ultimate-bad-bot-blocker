@@ -86,8 +86,8 @@ else
     if [ -z ${TESTFAIL} ] ; then
       /usr/local/apache2/bin/apachectl graceful;
       if [ ${CURL_TEST_AFTER_RELOAD} = true ] ; then
-        CURL_RESPONSE_BAD=$(curl -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
-        CURL_RESPONSE_GOOD=$(curl -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
+        CURL_RESPONSE_BAD=$(curl --location -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
+        CURL_RESPONSE_GOOD=$(curl --location -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         if [ $CURL_RESPONSE_BAD != "403" ] || [ $CURL_RESPONSE_GOOD != "200" ] ; then
           echo -e "Subject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t ${EMAIL};
           exit 1;
