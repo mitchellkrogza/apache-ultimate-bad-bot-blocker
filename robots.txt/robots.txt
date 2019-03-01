@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.02.1074
-### Updated: Tue Feb 26 12:35:31 SAST 2019
-### Bad Bot Count: 1770
+### Version: V3.2019.03.1075
+### Updated: Fri Mar  1 12:54:54 SAST 2019
+### Bad Bot Count: 1769
 ###################################################
 ### Version Information ##
 
@@ -494,8 +494,6 @@ Disallow:/
 User-agent: Cert figleafbot
 Disallow:/
 User-agent: Cfetch
-Disallow:/
-User-agent: Cfnetwork
 Disallow:/
 User-agent: Chameleon
 Disallow:/

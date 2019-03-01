@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.02.1074
+### Version: V3.2019.03.1075
 ### Bad Referrer Count: 6521
-### Bad Bot Count: 1770
+### Bad Bot Count: 1769
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -253,7 +253,6 @@ RewriteCond %{HTTP_USER_AGENT} \bCe\-preload\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCerberian\ drtrs\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCert\ figleafbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCfetch\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bCfnetwork\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bChameleon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCharlotte\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCheckbot\b [NC,OR]
