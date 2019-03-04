@@ -1112,6 +1112,7 @@ SetEnvIfNoCase Referer ~*cbb1smartlist12\.click spam_ref
 SetEnvIfNoCase Referer ~*cbcseward\.com spam_ref
 SetEnvIfNoCase Referer ~*cb\.iphantom\.com spam_ref
 SetEnvIfNoCase Referer ~*cbox\.ws spam_ref
+SetEnvIfNoCase Referer ~*cbozhe\.com spam_ref
 SetEnvIfNoCase Referer ~*ccbill\.com spam_ref
 SetEnvIfNoCase Referer ~*cctva\.tv spam_ref
 SetEnvIfNoCase Referer ~*cdnanalytics\.xyz spam_ref
