@@ -1122,6 +1122,7 @@ SetEnvIfNoCase Referer ~*cdnnetwok\.xyz spam_ref
 SetEnvIfNoCase Referer ~*cdn\.walkme\.com spam_ref
 SetEnvIfNoCase Referer ~*cejewelry\.xyz spam_ref
 SetEnvIfNoCase Referer ~*celebsopics\.com spam_ref
+SetEnvIfNoCase Referer ~*celejihad\.info spam_ref
 SetEnvIfNoCase Referer ~*cellfun\.mobi spam_ref
 SetEnvIfNoCase Referer ~*cementaresearch\.se spam_ref
 SetEnvIfNoCase Referer ~*c\-english\.ru spam_ref
@@ -3396,6 +3397,7 @@ SetEnvIfNoCase Referer ~*managerpak204\.weebly\.com spam_ref
 SetEnvIfNoCase Referer ~*manifestation\.betteroffers\.review spam_ref
 SetEnvIfNoCase Referer ~*manimpotence\.com spam_ref
 SetEnvIfNoCase Referer ~*manipulyator\-peterburg\.ru spam_ref
+SetEnvIfNoCase Referer ~*mansiondelrio\.co spam_ref
 SetEnvIfNoCase Referer ~*mansparskats\.com spam_ref
 SetEnvIfNoCase Referer ~*mantramusic\.ru spam_ref
 SetEnvIfNoCase Referer ~*manualterap\.roleforum\.ru spam_ref

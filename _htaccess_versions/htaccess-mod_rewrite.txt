@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1075
-### Bad Referrer Count: 6521
+### Version: V3.2019.03.1076
+### Bad Referrer Count: 6523
 ### Bad Bot Count: 1769
 ### Version Information ##
 
@@ -2908,6 +2908,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cdncash\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cdnnetwok\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cejewelry\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*celebsopics\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*celejihad\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cellfun\.mobi.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cementaresearch\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cenokos\.ru.*$ [NC,OR]
@@ -5182,6 +5183,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*managerpak204\.weebly\.com.*$ [
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*manifestation\.betteroffers\.review.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*manimpotence\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*manipulyator\-peterburg\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mansiondelrio\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mansparskats\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mantramusic\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*manualterap\.roleforum\.ru.*$ [NC,OR]

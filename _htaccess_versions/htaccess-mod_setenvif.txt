@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1075
-### Bad Referrer Count: 6521
+### Version: V3.2019.03.1076
+### Bad Referrer Count: 6523
 ### Bad Bot Count: 1769
 ### Version Information ##
 
@@ -2908,6 +2908,7 @@ SetEnvIfNoCase Referer cdncash\.org spambot=yes
 SetEnvIfNoCase Referer cdnnetwok\.xyz spambot=yes
 SetEnvIfNoCase Referer cejewelry\.xyz spambot=yes
 SetEnvIfNoCase Referer celebsopics\.com spambot=yes
+SetEnvIfNoCase Referer celejihad\.info spambot=yes
 SetEnvIfNoCase Referer cellfun\.mobi spambot=yes
 SetEnvIfNoCase Referer cementaresearch\.se spambot=yes
 SetEnvIfNoCase Referer cenokos\.ru spambot=yes
@@ -5182,6 +5183,7 @@ SetEnvIfNoCase Referer managerpak204\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer manifestation\.betteroffers\.review spambot=yes
 SetEnvIfNoCase Referer manimpotence\.com spambot=yes
 SetEnvIfNoCase Referer manipulyator\-peterburg\.ru spambot=yes
+SetEnvIfNoCase Referer mansiondelrio\.co spambot=yes
 SetEnvIfNoCase Referer mansparskats\.com spambot=yes
 SetEnvIfNoCase Referer mantramusic\.ru spambot=yes
 SetEnvIfNoCase Referer manualterap\.roleforum\.ru spambot=yes
