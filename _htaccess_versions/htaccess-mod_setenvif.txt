@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1077
-### Bad Referrer Count: 6524
+### Version: V3.2019.03.1078
+### Bad Referrer Count: 6533
 ### Bad Bot Count: 1769
 ### Version Information ##
 
@@ -2499,6 +2499,7 @@ SetEnvIfNoCase Referer beclean\-nn\.ru spambot=yes
 SetEnvIfNoCase Referer becuo\.com spambot=yes
 SetEnvIfNoCase Referer bedandbreakfast\.com spambot=yes
 SetEnvIfNoCase Referer bedcapdealers\.com spambot=yes
+SetEnvIfNoCase Referer beetpics\.pw spambot=yes
 SetEnvIfNoCase Referer begalka\.xyz spambot=yes
 SetEnvIfNoCase Referer beget\.tech spambot=yes
 SetEnvIfNoCase Referer belinka\.com\.ua spambot=yes
@@ -2564,6 +2565,7 @@ SetEnvIfNoCase Referer bezsporno\.ru spambot=yes
 SetEnvIfNoCase Referer beztuberkuleza\.ru spambot=yes
 SetEnvIfNoCase Referer bfz\.biz spambot=yes
 SetEnvIfNoCase Referer bg6s0\.com spambot=yes
+SetEnvIfNoCase Referer bget\.ru spambot=yes
 SetEnvIfNoCase Referer bharatdefencekavach\.com spambot=yes
 SetEnvIfNoCase Referer bibys\.com spambot=yes
 SetEnvIfNoCase Referer bidbuy\.co\.kr spambot=yes
@@ -4278,6 +4280,7 @@ SetEnvIfNoCase Referer gyffu\.com spambot=yes
 SetEnvIfNoCase Referer gz2\.bbsoldes\.fr spambot=yes
 SetEnvIfNoCase Referer h2monline\.com spambot=yes
 SetEnvIfNoCase Referer habermetre\.com spambot=yes
+SetEnvIfNoCase Referer hackers\-crackers\.tk spambot=yes
 SetEnvIfNoCase Referer hacktougroup\.ru spambot=yes
 SetEnvIfNoCase Referer hahashka\.ru spambot=yes
 SetEnvIfNoCase Referer haikuware\.com spambot=yes
@@ -4479,6 +4482,7 @@ SetEnvIfNoCase Referer i\-service\.kz spambot=yes
 SetEnvIfNoCase Referer i4track\.net spambot=yes
 SetEnvIfNoCase Referer iamsport\.org spambot=yes
 SetEnvIfNoCase Referer ibb\.com\.ua spambot=yes
+SetEnvIfNoCase Referer ibmdatamanagement\.co spambot=yes
 SetEnvIfNoCase Referer iboss\.com spambot=yes
 SetEnvIfNoCase Referer icaseclub\.ru spambot=yes
 SetEnvIfNoCase Referer iccornacircri\.cf spambot=yes
@@ -4502,6 +4506,7 @@ SetEnvIfNoCase Referer igithab\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
 SetEnvIfNoCase Referer igtools\.club spambot=yes
+SetEnvIfNoCase Referer iideaidekonkatu\.info spambot=yes
 SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer ikearugs\.xyz spambot=yes
 SetEnvIfNoCase Referer iklysha\.ml spambot=yes
@@ -4936,6 +4941,7 @@ SetEnvIfNoCase Referer laexotic\.com spambot=yes
 SetEnvIfNoCase Referer lafourmiliaire\.com spambot=yes
 SetEnvIfNoCase Referer lafriore\.ru spambot=yes
 SetEnvIfNoCase Referer lakomka\.com\.ua spambot=yes
+SetEnvIfNoCase Referer lalalove\.ru spambot=yes
 SetEnvIfNoCase Referer lampokrat\.ws spambot=yes
 SetEnvIfNoCase Referer lanadelreyfans\.us spambot=yes
 SetEnvIfNoCase Referer lanasshop\.ru spambot=yes
@@ -5451,6 +5457,7 @@ SetEnvIfNoCase Referer moxo\.com spambot=yes
 SetEnvIfNoCase Referer moyakuhnia\.ru spambot=yes
 SetEnvIfNoCase Referer moyaterapiya\.ru spambot=yes
 SetEnvIfNoCase Referer moz\.com spambot=yes
+SetEnvIfNoCase Referer mozello\.ru spambot=yes
 SetEnvIfNoCase Referer mp3downloadhq\.com spambot=yes
 SetEnvIfNoCase Referer mp3films\.ru spambot=yes
 SetEnvIfNoCase Referer mp3ringtone\.info spambot=yes
@@ -6371,6 +6378,7 @@ SetEnvIfNoCase Referer reklama\-i\-rabota\.ru spambot=yes
 SetEnvIfNoCase Referer reklama1\.ru spambot=yes
 SetEnvIfNoCase Referer reklamuss\.ru spambot=yes
 SetEnvIfNoCase Referer relax\.ru spambot=yes
+SetEnvIfNoCase Referer relayblog\.com spambot=yes
 SetEnvIfNoCase Referer remedyotc\.com spambot=yes
 SetEnvIfNoCase Referer remmling\.de spambot=yes
 SetEnvIfNoCase Referer remont\-comp\-pomosh\.ru spambot=yes
@@ -7787,6 +7795,7 @@ SetEnvIfNoCase Referer vykupavto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vysigy\.su spambot=yes
 SetEnvIfNoCase Referer vzglyadriv\.kg spambot=yes
 SetEnvIfNoCase Referer vzlom\-na\-zakaz\.com spambot=yes
+SetEnvIfNoCase Referer vzubah\.com spambot=yes
 SetEnvIfNoCase Referer vzube\.com spambot=yes
 SetEnvIfNoCase Referer w\-journal\.ru spambot=yes
 SetEnvIfNoCase Referer w3data\.co spambot=yes
