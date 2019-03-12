@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1078
-### Bad Referrer Count: 6533
+### Version: V3.2019.03.1079
+### Bad Referrer Count: 6541
 ### Bad Bot Count: 1769
 ### Version Information ##
 
@@ -2531,6 +2531,7 @@ SetEnvIfNoCase Referer bestdooz\.com spambot=yes
 SetEnvIfNoCase Referer bestdraws\.com spambot=yes
 SetEnvIfNoCase Referer bestempresas\.es spambot=yes
 SetEnvIfNoCase Referer bestfortraders\.com spambot=yes
+SetEnvIfNoCase Referer besthomemadepornsites\.com spambot=yes
 SetEnvIfNoCase Referer besthoro\.ru spambot=yes
 SetEnvIfNoCase Referer bestimagecoollibrary\.com spambot=yes
 SetEnvIfNoCase Referer bestkfiledxd\.cf spambot=yes
@@ -2543,6 +2544,7 @@ SetEnvIfNoCase Referer bestplacetobuyeriacta\.jw\.lt spambot=yes
 SetEnvIfNoCase Referer bestpriceninja\.com spambot=yes
 SetEnvIfNoCase Referer bestprofits\-there\.com spambot=yes
 SetEnvIfNoCase Referer bestserials\.com spambot=yes
+SetEnvIfNoCase Referer bestsexyblog\.com spambot=yes
 SetEnvIfNoCase Referer bestssaker\.com spambot=yes
 SetEnvIfNoCase Referer besttorrentknifta\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer bestwaystogetpaid\.us spambot=yes
@@ -3480,6 +3482,7 @@ SetEnvIfNoCase Referer drupa\.com spambot=yes
 SetEnvIfNoCase Referer druzhbany\.ru spambot=yes
 SetEnvIfNoCase Referer druzhininevgeniy63\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer dstroy\.su spambot=yes
+SetEnvIfNoCase Referer dtm\-spain\.com spambot=yes
 SetEnvIfNoCase Referer dtnlyss\.com spambot=yes
 SetEnvIfNoCase Referer dumpsmania24\.com spambot=yes
 SetEnvIfNoCase Referer duplicashapp\.com spambot=yes
@@ -3876,6 +3879,7 @@ SetEnvIfNoCase Referer flash4fun\.com spambot=yes
 SetEnvIfNoCase Referer flashahead\.info spambot=yes
 SetEnvIfNoCase Referer flashbannernow\.com spambot=yes
 SetEnvIfNoCase Referer flashlarevista\.com spambot=yes
+SetEnvIfNoCase Referer flauntyoursite\.com spambot=yes
 SetEnvIfNoCase Referer flavors\.me spambot=yes
 SetEnvIfNoCase Referer flex4launch\.ru spambot=yes
 SetEnvIfNoCase Referer flipper\.top spambot=yes
@@ -4583,6 +4587,8 @@ SetEnvIfNoCase Referer insomniagamingfestival\.com spambot=yes
 SetEnvIfNoCase Referer inspiring\-desperate\.tk spambot=yes
 SetEnvIfNoCase Referer insta\-add\.pro spambot=yes
 SetEnvIfNoCase Referer instabid\.tech spambot=yes
+SetEnvIfNoCase Referer instakink\.com spambot=yes
+SetEnvIfNoCase Referer instasexyblog\.com spambot=yes
 SetEnvIfNoCase Referer insurple\.com spambot=yes
 SetEnvIfNoCase Referer int\.search\.mywebsearch\.com spambot=yes
 SetEnvIfNoCase Referer int\.search\.tb\.ask\.com spambot=yes
@@ -5904,6 +5910,7 @@ SetEnvIfNoCase Referer patol01\.pw spambot=yes
 SetEnvIfNoCase Referer patterntrader\-en\.com spambot=yes
 SetEnvIfNoCase Referer pattersonsweb\.com spambot=yes
 SetEnvIfNoCase Referer pavlodar\.xkaz\.org spambot=yes
+SetEnvIfNoCase Referer pawli\.eu spambot=yes
 SetEnvIfNoCase Referer pay2me\.pl spambot=yes
 SetEnvIfNoCase Referer paydayloanslocal\.com spambot=yes
 SetEnvIfNoCase Referer paydayonlinecom\.com spambot=yes
@@ -8016,6 +8023,7 @@ SetEnvIfNoCase Referer xaijo\.com spambot=yes
 SetEnvIfNoCase Referer xaylapdiendanang\.com spambot=yes
 SetEnvIfNoCase Referer xbaboon\.com spambot=yes
 SetEnvIfNoCase Referer xblog\.in spambot=yes
+SetEnvIfNoCase Referer xblognetwork\.com spambot=yes
 SetEnvIfNoCase Referer xboxster\.ru spambot=yes
 SetEnvIfNoCase Referer xcc24\.pl spambot=yes
 SetEnvIfNoCase Referer xchangetrak\.com spambot=yes
