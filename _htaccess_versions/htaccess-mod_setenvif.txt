@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1079
-### Bad Referrer Count: 6541
+### Version: V3.2019.03.1080
+### Bad Referrer Count: 6548
 ### Bad Bot Count: 1769
 ### Version Information ##
 
@@ -1975,6 +1975,7 @@ SetEnvIfNoCase Referer acc\.eu\.org spambot=yes
 SetEnvIfNoCase Referer accessoires\-mode\.in spambot=yes
 SetEnvIfNoCase Referer acgs\.tk spambot=yes
 SetEnvIfNoCase Referer acheterviagrafr24\.com spambot=yes
+SetEnvIfNoCase Referer acmebtn\.ml spambot=yes
 SetEnvIfNoCase Referer acortarurl\.es spambot=yes
 SetEnvIfNoCase Referer actices\.com spambot=yes
 SetEnvIfNoCase Referer actionnooz\.com spambot=yes
@@ -2156,6 +2157,7 @@ SetEnvIfNoCase Referer alpinism\.ru spambot=yes
 SetEnvIfNoCase Referer alt\-servis\.ru spambot=yes
 SetEnvIfNoCase Referer alta\-realestate\.com spambot=yes
 SetEnvIfNoCase Referer altamayoztourism\.com spambot=yes
+SetEnvIfNoCase Referer aludecor\.info spambot=yes
 SetEnvIfNoCase Referer alveris\.ru spambot=yes
 SetEnvIfNoCase Referer alvtank\.se spambot=yes
 SetEnvIfNoCase Referer alyeskaresort\.com spambot=yes
@@ -4371,6 +4373,7 @@ SetEnvIfNoCase Referer highstairs\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer hikesearch\.net spambot=yes
 SetEnvIfNoCase Referer hildinghr\.se spambot=yes
 SetEnvIfNoCase Referer himazin\.info spambot=yes
+SetEnvIfNoCase Referer himgaws\.pw spambot=yes
 SetEnvIfNoCase Referer histats\.com spambot=yes
 SetEnvIfNoCase Referer histock\.info spambot=yes
 SetEnvIfNoCase Referer historichometeam\.com spambot=yes
@@ -5088,6 +5091,7 @@ SetEnvIfNoCase Referer localflirtbuddies\.com spambot=yes
 SetEnvIfNoCase Referer localmatchbook\.com spambot=yes
 SetEnvIfNoCase Referer locatellicorretor\.com\.br spambot=yes
 SetEnvIfNoCase Referer locationdesaison\.com spambot=yes
+SetEnvIfNoCase Referer locimge\.pw spambot=yes
 SetEnvIfNoCase Referer lockerz\.com spambot=yes
 SetEnvIfNoCase Referer locksmith\.jp spambot=yes
 SetEnvIfNoCase Referer locustdesign\.co spambot=yes
@@ -6404,6 +6408,7 @@ SetEnvIfNoCase Referer renecaovillasale\.online spambot=yes
 SetEnvIfNoCase Referer renewablewealth\.com spambot=yes
 SetEnvIfNoCase Referer rennlist\.com spambot=yes
 SetEnvIfNoCase Referer rent2spb\.ru spambot=yes
+SetEnvIfNoCase Referer rentalcarnavi\.info spambot=yes
 SetEnvIfNoCase Referer rentaremotecomputer\.com spambot=yes
 SetEnvIfNoCase Referer rentehno\.ru spambot=yes
 SetEnvIfNoCase Referer rep\-am\.com spambot=yes
@@ -7243,6 +7248,7 @@ SetEnvIfNoCase Referer the\-trader\.net spambot=yes
 SetEnvIfNoCase Referer the\-usa\-games\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer theallgirlarcade\.com spambot=yes
 SetEnvIfNoCase Referer theautoprofit\.ml spambot=yes
+SetEnvIfNoCase Referer thebestphotos\.eu spambot=yes
 SetEnvIfNoCase Referer thebestweightlosspills\.ovh spambot=yes
 SetEnvIfNoCase Referer thebitcoincode\.com spambot=yes
 SetEnvIfNoCase Referer thebluenoodle\.com spambot=yes
@@ -7255,6 +7261,7 @@ SetEnvIfNoCase Referer thedownloadfromwarez\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer thefarmergame\.com spambot=yes
 SetEnvIfNoCase Referer thefds\.net spambot=yes
 SetEnvIfNoCase Referer thefotosgratis\.eu spambot=yes
+SetEnvIfNoCase Referer thegalerie\.eu spambot=yes
 SetEnvIfNoCase Referer thegameriders\.com spambot=yes
 SetEnvIfNoCase Referer thegamerznetwork\.com spambot=yes
 SetEnvIfNoCase Referer thegioixekhach\.com spambot=yes
