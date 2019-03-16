@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1082
-### Bad Referrer Count: 6548
+### Version: V3.2019.03.1083
+### Bad Referrer Count: 6553
 ### Bad Bot Count: 533
 ### Version Information ##
 
@@ -1591,6 +1591,7 @@ SetEnvIfNoCase Referer callawaygolfstore\.online spambot=yes
 SetEnvIfNoCase Referer callcafe\.info spambot=yes
 SetEnvIfNoCase Referer callejondelpozo\.es spambot=yes
 SetEnvIfNoCase Referer callmd5map\.com spambot=yes
+SetEnvIfNoCase Referer callstevens\.com spambot=yes
 SetEnvIfNoCase Referer calstaterealty\.us spambot=yes
 SetEnvIfNoCase Referer calvet\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer cam\-kontakte\.org spambot=yes
@@ -1627,6 +1628,7 @@ SetEnvIfNoCase Referer carfax\.com\.ua spambot=yes
 SetEnvIfNoCase Referer carina\-sy\.de spambot=yes
 SetEnvIfNoCase Referer carloans\.com spambot=yes
 SetEnvIfNoCase Referer carmuffler\.net spambot=yes
+SetEnvIfNoCase Referer carrauterie\.be spambot=yes
 SetEnvIfNoCase Referer cars\-modification\.net spambot=yes
 SetEnvIfNoCase Referer carsdined\.org spambot=yes
 SetEnvIfNoCase Referer carson\.getenjoyment\.net spambot=yes
@@ -4061,6 +4063,7 @@ SetEnvIfNoCase Referer megaindex\.ru spambot=yes
 SetEnvIfNoCase Referer megakino\.net spambot=yes
 SetEnvIfNoCase Referer megavolt\.net\.ua spambot=yes
 SetEnvIfNoCase Referer meget\.co\.za spambot=yes
+SetEnvIfNoCase Referer mejoresfotos\.eu spambot=yes
 SetEnvIfNoCase Referer meltwater\.com spambot=yes
 SetEnvIfNoCase Referer member\-quiz\.com spambot=yes
 SetEnvIfNoCase Referer members\.ghanaweb\.com spambot=yes
@@ -5275,10 +5278,12 @@ SetEnvIfNoCase Referer russkoe\-zdorovie\.ru spambot=yes
 SetEnvIfNoCase Referer rustic\-quiver\.win spambot=yes
 SetEnvIfNoCase Referer rutor\.group spambot=yes
 SetEnvIfNoCase Referer rutor\.vip spambot=yes
+SetEnvIfNoCase Referer rvi\.biz spambot=yes
 SetEnvIfNoCase Referer rvtv\.ru spambot=yes
 SetEnvIfNoCase Referer rvzr\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer rybalka\-opt\.ru spambot=yes
 SetEnvIfNoCase Referer ryetaw\.com spambot=yes
+SetEnvIfNoCase Referer s\-forum\.biz spambot=yes
 SetEnvIfNoCase Referer s\-iwantyou\.com spambot=yes
 SetEnvIfNoCase Referer s\.lollypopgaming\.com spambot=yes
 SetEnvIfNoCase Referer s8\-nowy\-wygraj\.comli\.com spambot=yes

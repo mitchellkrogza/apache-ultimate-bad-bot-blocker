@@ -1041,6 +1041,7 @@ SetEnvIfNoCase Referer ~*callcafe\.info spam_ref
 SetEnvIfNoCase Referer ~*callejondelpozo\.es spam_ref
 SetEnvIfNoCase Referer ~*callmd5map\.com spam_ref
 SetEnvIfNoCase Referer ~*call\-of\-duty\.info spam_ref
+SetEnvIfNoCase Referer ~*callstevens\.com spam_ref
 SetEnvIfNoCase Referer ~*calstaterealty\.us spam_ref
 SetEnvIfNoCase Referer ~*calvet\.altervista\.org spam_ref
 SetEnvIfNoCase Referer ~*camdenmemorials\.com spam_ref
@@ -1077,6 +1078,7 @@ SetEnvIfNoCase Referer ~*carfax\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*carina\-sy\.de spam_ref
 SetEnvIfNoCase Referer ~*carloans\.com spam_ref
 SetEnvIfNoCase Referer ~*carmuffler\.net spam_ref
+SetEnvIfNoCase Referer ~*carrauterie\.be spam_ref
 SetEnvIfNoCase Referer ~*carsdined\.org spam_ref
 SetEnvIfNoCase Referer ~*cars\-modification\.net spam_ref
 SetEnvIfNoCase Referer ~*carson\.getenjoyment\.net spam_ref
@@ -3511,6 +3513,7 @@ SetEnvIfNoCase Referer ~*megakino\.net spam_ref
 SetEnvIfNoCase Referer ~*mega\-polis\.biz\.ua spam_ref
 SetEnvIfNoCase Referer ~*megavolt\.net\.ua spam_ref
 SetEnvIfNoCase Referer ~*meget\.co\.za spam_ref
+SetEnvIfNoCase Referer ~*mejoresfotos\.eu spam_ref
 SetEnvIfNoCase Referer ~*me\-ke\.com spam_ref
 SetEnvIfNoCase Referer ~*meltwater\.com spam_ref
 SetEnvIfNoCase Referer ~*member\-quiz\.com spam_ref
@@ -4727,6 +4730,7 @@ SetEnvIfNoCase Referer ~*rus\-teh\.narod\.ru spam_ref
 SetEnvIfNoCase Referer ~*rustic\-quiver\.win spam_ref
 SetEnvIfNoCase Referer ~*rutor\.group spam_ref
 SetEnvIfNoCase Referer ~*rutor\.vip spam_ref
+SetEnvIfNoCase Referer ~*rvi\.biz spam_ref
 SetEnvIfNoCase Referer ~*rvtv\.ru spam_ref
 SetEnvIfNoCase Referer ~*rvzr\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*rybalka\-opt\.ru spam_ref
@@ -4981,6 +4985,7 @@ SetEnvIfNoCase Referer ~*sexyteens\.hol\.es spam_ref
 SetEnvIfNoCase Referer ~*sexytrend\.ru spam_ref
 SetEnvIfNoCase Referer ~*sfd\-chess\.ru spam_ref
 SetEnvIfNoCase Referer ~*sfj\-ror\.no spam_ref
+SetEnvIfNoCase Referer ~*s\-forum\.biz spam_ref
 SetEnvIfNoCase Referer ~*shakhtar\-doneck\.ru spam_ref
 SetEnvIfNoCase Referer ~*shama\-rc\.net spam_ref
 SetEnvIfNoCase Referer ~*sharebutton\.net spam_ref
