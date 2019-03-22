@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1083
-### Bad Referrer Count: 6553
+### Version: V3.2019.03.1084
+### Bad Referrer Count: 6562
 ### Bad Bot Count: 533
 ### Version Information ##
 
@@ -1463,6 +1463,7 @@ SetEnvIfNoCase Referer bosefux\.esy\.es spambot=yes
 SetEnvIfNoCase Referer bosman\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer bouda\.kvalitne\.cz spambot=yes
 SetEnvIfNoCase Referer bpro1\.top spambot=yes
+SetEnvIfNoCase Referer bracketsmackdown\.com spambot=yes
 SetEnvIfNoCase Referer brainboosting\.club spambot=yes
 SetEnvIfNoCase Referer brainboostingsupplements\.org spambot=yes
 SetEnvIfNoCase Referer braindaily\.xyz spambot=yes
@@ -1692,6 +1693,7 @@ SetEnvIfNoCase Referer centre\-indigo\.org\.ua spambot=yes
 SetEnvIfNoCase Referer centrumcoachingu\.com spambot=yes
 SetEnvIfNoCase Referer ceotrk\.com spambot=yes
 SetEnvIfNoCase Referer cercacamion\.it spambot=yes
+SetEnvIfNoCase Referer cerev\.info spambot=yes
 SetEnvIfNoCase Referer cete\.ru spambot=yes
 SetEnvIfNoCase Referer cezartabac\.ro spambot=yes
 SetEnvIfNoCase Referer cfacarrosserie74\.com spambot=yes
@@ -2876,6 +2878,7 @@ SetEnvIfNoCase Referer generousdeal\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer genetworx\.com spambot=yes
 SetEnvIfNoCase Referer gentamicineyedrops\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer geoads\.com spambot=yes
+SetEnvIfNoCase Referer gerhardhealer\.com spambot=yes
 SetEnvIfNoCase Referer germes\-trans\.com spambot=yes
 SetEnvIfNoCase Referer germetiki\.com\.ua spambot=yes
 SetEnvIfNoCase Referer get\-free\-social\-traffic\.com spambot=yes
@@ -3107,6 +3110,7 @@ SetEnvIfNoCase Referer healmytrauma\.info spambot=yes
 SetEnvIfNoCase Referer health\-medical\-portal\.info spambot=yes
 SetEnvIfNoCase Referer healthcarestore\.info spambot=yes
 SetEnvIfNoCase Referer heartofbeijing\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer heartofpayne\.xyz spambot=yes
 SetEnvIfNoCase Referer heatpower\.ru spambot=yes
 SetEnvIfNoCase Referer hebr\.myddns\-flir\.com spambot=yes
 SetEnvIfNoCase Referer helicalpile\.us spambot=yes
@@ -3444,6 +3448,7 @@ SetEnvIfNoCase Referer iwantmyfreecash\.com spambot=yes
 SetEnvIfNoCase Referer iwanttodeliver\.com spambot=yes
 SetEnvIfNoCase Referer iweblist\.info spambot=yes
 SetEnvIfNoCase Referer ix20\.ru spambot=yes
+SetEnvIfNoCase Referer ixora\.pro spambot=yes
 SetEnvIfNoCase Referer iyasimasennka\.com spambot=yes
 SetEnvIfNoCase Referer izhevsk\.xrus\.org spambot=yes
 SetEnvIfNoCase Referer izhevsk\.zrus\.org spambot=yes
@@ -3688,6 +3693,7 @@ SetEnvIfNoCase Referer ktotut\.net spambot=yes
 SetEnvIfNoCase Referer ku6\.com spambot=yes
 SetEnvIfNoCase Referer kumuk\.info spambot=yes
 SetEnvIfNoCase Referer kung\-fu\-ru\.com spambot=yes
+SetEnvIfNoCase Referer kunstaktien\.info spambot=yes
 SetEnvIfNoCase Referer kupiproday\.com\.ua spambot=yes
 SetEnvIfNoCase Referer kupit\-adenu\.ru spambot=yes
 SetEnvIfNoCase Referer kurbappeal\.info spambot=yes
@@ -4372,6 +4378,7 @@ SetEnvIfNoCase Referer nbsproject\.ru spambot=yes
 SetEnvIfNoCase Referer needtosellmyhousefast\.com spambot=yes
 SetEnvIfNoCase Referer negociosdasha\.com spambot=yes
 SetEnvIfNoCase Referer negral\.pluto\.ro spambot=yes
+SetEnvIfNoCase Referer neks\.info spambot=yes
 SetEnvIfNoCase Referer nelc\.edu\.eg spambot=yes
 SetEnvIfNoCase Referer neobux\-bg\.info spambot=yes
 SetEnvIfNoCase Referer neodownload\.webcam spambot=yes
@@ -4755,6 +4762,7 @@ SetEnvIfNoCase Referer pictures\-and\-images\.net spambot=yes
 SetEnvIfNoCase Referer picturesfrom\.com spambot=yes
 SetEnvIfNoCase Referer picturesify\.com spambot=yes
 SetEnvIfNoCase Referer picturesmania\.com spambot=yes
+SetEnvIfNoCase Referer picurams\.pw spambot=yes
 SetEnvIfNoCase Referer pierrehardysale\.online spambot=yes
 SetEnvIfNoCase Referer pigrafix\.at spambot=yes
 SetEnvIfNoCase Referer pihl\.se spambot=yes
@@ -4941,6 +4949,7 @@ SetEnvIfNoCase Referer pricheskaonline\.ru spambot=yes
 SetEnvIfNoCase Referer pricheski\-video\.com spambot=yes
 SetEnvIfNoCase Referer primedice\.com spambot=yes
 SetEnvIfNoCase Referer princeadvantagesales\.com spambot=yes
+SetEnvIfNoCase Referer princevc\.com spambot=yes
 SetEnvIfNoCase Referer printdirectforless\.com spambot=yes
 SetEnvIfNoCase Referer printie\.com spambot=yes
 SetEnvIfNoCase Referer printingpeach\.com spambot=yes
