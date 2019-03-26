@@ -74,7 +74,7 @@ else
       # Delete backups that are older than 5 days
       find ${APACHE_CONF} -maxdepth 1 -type f -mtime +5 -name 'globalblacklist.*.backup' -exec rm {} \;
     fi
-    wget ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
+    wget -q ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
     if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
       echo -e "Subject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
       rm -f ${APACHE_CONF}/globalblacklist.tmp;
