@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1088
+### Version: V3.2019.03.1090
 ### Bad Referrer Count: 6591
-### Bad Bot Count: 533
+### Bad Bot Count: 534
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -387,6 +387,7 @@ SetEnvIfNoCase User-Agent \bSEOlyticsCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeomoz\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOprofiler\b spambot=yes
 SetEnvIfNoCase User-Agent \bseoscanners\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOstats\b spambot=yes
 SetEnvIfNoCase User-Agent \bsexsearcher\b spambot=yes
 SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
