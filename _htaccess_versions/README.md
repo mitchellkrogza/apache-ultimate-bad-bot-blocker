@@ -4,8 +4,8 @@
 ## Copyright - https://github.com/mitchellkrogza
 
 _______________
-#### Version: V3.2019.03.1087
-#### Bad Referrer Count: 6582
+#### Version: V3.2019.03.1088
+#### Bad Referrer Count: 6591
 #### Bad Bot Count: 533
 ____________________
 

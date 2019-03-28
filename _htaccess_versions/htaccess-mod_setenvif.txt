@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1087
-### Bad Referrer Count: 6582
+### Version: V3.2019.03.1088
+### Bad Referrer Count: 6591
 ### Bad Bot Count: 533
 ### Version Information ##
 
@@ -839,6 +839,7 @@ SetEnvIfNoCase Referer aghanyna\.com spambot=yes
 SetEnvIfNoCase Referer agreda\.pluto\.ro spambot=yes
 SetEnvIfNoCase Referer agroeconom\.kz spambot=yes
 SetEnvIfNoCase Referer agysya\.ru spambot=yes
+SetEnvIfNoCase Referer ahmedabadwebs\.com spambot=yes
 SetEnvIfNoCase Referer ahrefs\.com spambot=yes
 SetEnvIfNoCase Referer ahrntal\.verymes\.xyz spambot=yes
 SetEnvIfNoCase Referer aibolita\.com spambot=yes
@@ -866,6 +867,7 @@ SetEnvIfNoCase Referer alert\-hgd\.xyz spambot=yes
 SetEnvIfNoCase Referer alert\-jdh\.xyz spambot=yes
 SetEnvIfNoCase Referer alert\.scansafe\.net spambot=yes
 SetEnvIfNoCase Referer alessandraleone\.com spambot=yes
+SetEnvIfNoCase Referer alevinefesleri\.com spambot=yes
 SetEnvIfNoCase Referer alf\-img\.com spambot=yes
 SetEnvIfNoCase Referer alfa\-img\.com spambot=yes
 SetEnvIfNoCase Referer alfa\-medosmotr\.ru spambot=yes
@@ -1454,6 +1456,7 @@ SetEnvIfNoCase Referer bonvillan\.com spambot=yes
 SetEnvIfNoCase Referer bonzbuddy\.com spambot=yes
 SetEnvIfNoCase Referer bonzibuddi\.com spambot=yes
 SetEnvIfNoCase Referer bonzybuddy\.com spambot=yes
+SetEnvIfNoCase Referer boo\-arts\.com spambot=yes
 SetEnvIfNoCase Referer boobsimge\.com spambot=yes
 SetEnvIfNoCase Referer bookhome\.info spambot=yes
 SetEnvIfNoCase Referer bookmaker\-bet\.com spambot=yes
@@ -2190,6 +2193,7 @@ SetEnvIfNoCase Referer dokfilms\.net spambot=yes
 SetEnvIfNoCase Referer doktoronline\.no spambot=yes
 SetEnvIfNoCase Referer dokumentalkino\.net spambot=yes
 SetEnvIfNoCase Referer dollartree\.info spambot=yes
+SetEnvIfNoCase Referer dolohen\.com spambot=yes
 SetEnvIfNoCase Referer domain\-submit\.info spambot=yes
 SetEnvIfNoCase Referer domain\-tracker\.com spambot=yes
 SetEnvIfNoCase Referer domain\.webkeyit\.com spambot=yes
@@ -3311,6 +3315,7 @@ SetEnvIfNoCase Referer images\-free\.net spambot=yes
 SetEnvIfNoCase Referer images\-graphics\-pics\.com spambot=yes
 SetEnvIfNoCase Referer images\.gyffu\.com spambot=yes
 SetEnvIfNoCase Referer imagine\-ex\.co spambot=yes
+SetEnvIfNoCase Referer imagui\.eu spambot=yes
 SetEnvIfNoCase Referer imediadesk\.com spambot=yes
 SetEnvIfNoCase Referer imfamous\.info spambot=yes
 SetEnvIfNoCase Referer img\.wallpaperstock\.net spambot=yes
@@ -3635,6 +3640,7 @@ SetEnvIfNoCase Referer kletkimehan\.ru spambot=yes
 SetEnvIfNoCase Referer klikbonus\.com spambot=yes
 SetEnvIfNoCase Referer kliksaya\.com spambot=yes
 SetEnvIfNoCase Referer klin3952\.ru spambot=yes
+SetEnvIfNoCase Referer klitimg\.pw spambot=yes
 SetEnvIfNoCase Referer klosetkitten\.com spambot=yes
 SetEnvIfNoCase Referer klumba55\.ru spambot=yes
 SetEnvIfNoCase Referer kmd\-pto\.ru spambot=yes
@@ -4411,6 +4417,7 @@ SetEnvIfNoCase Referer new\-post\.tk spambot=yes
 SetEnvIfNoCase Referer new7ob\.com spambot=yes
 SetEnvIfNoCase Referer newhairstylesformen2014\.com spambot=yes
 SetEnvIfNoCase Referer news\-readers\.ru spambot=yes
+SetEnvIfNoCase Referer news\-speaker\.com spambot=yes
 SetEnvIfNoCase Referer newsperuse\.com spambot=yes
 SetEnvIfNoCase Referer newstaffadsshop\.club spambot=yes
 SetEnvIfNoCase Referer newstraveller\.ru spambot=yes
@@ -5841,6 +5848,7 @@ SetEnvIfNoCase Referer stal\-rulon\.ru spambot=yes
 SetEnvIfNoCase Referer standardchartered\-forex\.com spambot=yes
 SetEnvIfNoCase Referer stanthonyscatholicchurch\.org spambot=yes
 SetEnvIfNoCase Referer star61\.de spambot=yes
+SetEnvIfNoCase Referer stard\.shop spambot=yes
 SetEnvIfNoCase Referer stardevine\.com spambot=yes
 SetEnvIfNoCase Referer stariy\-baku\.com spambot=yes
 SetEnvIfNoCase Referer starpages\.net spambot=yes
@@ -6054,6 +6062,7 @@ SetEnvIfNoCase Referer thecoral\.com\.br spambot=yes
 SetEnvIfNoCase Referer thecounter\.com spambot=yes
 SetEnvIfNoCase Referer thedownloadfreeonlinegames\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer thedownloadfromwarez\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer theendivechronicles\.com spambot=yes
 SetEnvIfNoCase Referer thefarmergame\.com spambot=yes
 SetEnvIfNoCase Referer thefds\.net spambot=yes
 SetEnvIfNoCase Referer thefotosgratis\.eu spambot=yes
