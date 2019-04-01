@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.03.1090
-### Updated: Thu Mar 28 11:52:18 SAST 2019
-### Bad Referrer Count: 6591
-### Bad Bot Count: 534
+### Version: V3.2019.04.1091
+### Updated: Mon Apr  1 13:31:15 SAST 2019
+### Bad Referrer Count: 6592
+### Bad Bot Count: 544
 ###################################################
 ### Version Information ##
 
@@ -229,6 +229,7 @@ BrowserMatchNoCase "^(.*?)(\bCCBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCegbfeieh\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCheeseBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bCherryPicker\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bCheTeam\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bChinaClaw\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bChlooe\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bClaritybot\b)(.*)$" bad_bot
@@ -520,6 +521,7 @@ BrowserMatchNoCase "^(.*?)(\bRepoMonkey\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRipper\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRocketCrawler\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bRogerbot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bs1z.ru\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSalesIntelligent\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bSBIder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bScanAlert\b)(.*)$" bad_bot
@@ -681,7 +683,15 @@ BrowserMatchNoCase "^(.*?)(\bWWW-Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWW::Mechanize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bWWWOFFLE\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bx09Mozilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22assert\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22cache\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22feed\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22init\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22JDatabase\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22JSimple\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bx22Mozilla\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22num\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bx22sanitize\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon_WebSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXaldon\ WebSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bXenu\b)(.*)$" bad_bot
@@ -5607,6 +5617,7 @@ SetEnvIfNoCase Referer ~*rvtv\.ru spam_ref
 SetEnvIfNoCase Referer ~*rvzr\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*rybalka\-opt\.ru spam_ref
 SetEnvIfNoCase Referer ~*ryetaw\.com spam_ref
+SetEnvIfNoCase Referer ~*s1z\.ru spam_ref
 SetEnvIfNoCase Referer ~*s8\-nowy\-wygraj\.comli\.com spam_ref
 SetEnvIfNoCase Referer ~*sabaapress\.com spam_ref
 SetEnvIfNoCase Referer ~*sabizonline\.com spam_ref

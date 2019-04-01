@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1090
-### Bad Referrer Count: 6591
-### Bad Bot Count: 534
+### Version: V3.2019.04.1091
+### Bad Referrer Count: 6592
+### Bad Bot Count: 544
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -79,6 +79,7 @@ SetEnvIfNoCase User-Agent \bCCBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCegbfeieh\b spambot=yes
 SetEnvIfNoCase User-Agent \bCheeseBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCherryPicker\b spambot=yes
+SetEnvIfNoCase User-Agent \bCheTeam\b spambot=yes
 SetEnvIfNoCase User-Agent \bChinaClaw\b spambot=yes
 SetEnvIfNoCase User-Agent \bChlooe\b spambot=yes
 SetEnvIfNoCase User-Agent \bClaritybot\b spambot=yes
@@ -370,6 +371,7 @@ SetEnvIfNoCase User-Agent \bRepoMonkey\b spambot=yes
 SetEnvIfNoCase User-Agent \bRipper\b spambot=yes
 SetEnvIfNoCase User-Agent \bRocketCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bs1z\.ru\b spambot=yes
 SetEnvIfNoCase User-Agent \bSalesIntelligent\b spambot=yes
 SetEnvIfNoCase User-Agent \bSBIder\b spambot=yes
 SetEnvIfNoCase User-Agent \bScanAlert\b spambot=yes
@@ -531,7 +533,15 @@ SetEnvIfNoCase User-Agent \bWWW\-Mechanize\b spambot=yes
 SetEnvIfNoCase User-Agent \bWWW\:\:Mechanize\b spambot=yes
 SetEnvIfNoCase User-Agent \bWWWOFFLE\b spambot=yes
 SetEnvIfNoCase User-Agent \bx09Mozilla\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22assert\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22cache\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22feed\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22init\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22JDatabase\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22JSimple\b spambot=yes
 SetEnvIfNoCase User-Agent \bx22Mozilla\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22num\b spambot=yes
+SetEnvIfNoCase User-Agent \bx22sanitize\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXenu\b spambot=yes
@@ -5319,6 +5329,7 @@ SetEnvIfNoCase Referer ryetaw\.com spambot=yes
 SetEnvIfNoCase Referer s\-forum\.biz spambot=yes
 SetEnvIfNoCase Referer s\-iwantyou\.com spambot=yes
 SetEnvIfNoCase Referer s\.lollypopgaming\.com spambot=yes
+SetEnvIfNoCase Referer s1z\.ru spambot=yes
 SetEnvIfNoCase Referer s8\-nowy\-wygraj\.comli\.com spambot=yes
 SetEnvIfNoCase Referer sa\-live\.com spambot=yes
 SetEnvIfNoCase Referer sa\-rewards\.co\.za spambot=yes

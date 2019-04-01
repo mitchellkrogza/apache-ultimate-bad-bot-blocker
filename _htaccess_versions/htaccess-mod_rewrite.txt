@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.03.1090
-### Bad Referrer Count: 6591
-### Bad Bot Count: 534
+### Version: V3.2019.04.1091
+### Bad Referrer Count: 6592
+### Bad Bot Count: 544
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -79,6 +79,7 @@ RewriteCond %{HTTP_USER_AGENT} \bCCBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCegbfeieh\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCheeseBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCherryPicker\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bCheTeam\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bChinaClaw\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bChlooe\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bClaritybot\b [NC,OR]
@@ -370,6 +371,7 @@ RewriteCond %{HTTP_USER_AGENT} \bRepoMonkey\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRipper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRocketCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bs1z\.ru\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSalesIntelligent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSBIder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScanAlert\b [NC,OR]
@@ -531,7 +533,15 @@ RewriteCond %{HTTP_USER_AGENT} \bWWW\-Mechanize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWWW\:\:Mechanize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWWWOFFLE\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx09Mozilla\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22assert\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22cache\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22feed\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22init\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22JDatabase\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22JSimple\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx22Mozilla\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22num\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bx22sanitize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXenu\b [NC,OR]
@@ -5319,6 +5329,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ryetaw\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*s\-forum\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*s\-iwantyou\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*s\.lollypopgaming\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*s1z\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*s8\-nowy\-wygraj\.comli\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sa\-live\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sa\-rewards\.co\.za.*$ [NC,OR]
