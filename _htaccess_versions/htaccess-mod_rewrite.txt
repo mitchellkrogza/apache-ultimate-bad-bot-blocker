@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1091
+### Version: V3.2019.04.1092
 ### Bad Referrer Count: 6592
-### Bad Bot Count: 544
+### Bad Bot Count: 536
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -533,15 +533,7 @@ RewriteCond %{HTTP_USER_AGENT} \bWWW\-Mechanize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWWW\:\:Mechanize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWWWOFFLE\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx09Mozilla\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22assert\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22cache\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22feed\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22init\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22JDatabase\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22JSimple\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx22Mozilla\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22num\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bx22sanitize\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXenu\b [NC,OR]

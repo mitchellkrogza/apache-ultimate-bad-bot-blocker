@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1091
+### Version: V3.2019.04.1092
 ### Bad Referrer Count: 6592
-### Bad Bot Count: 544
+### Bad Bot Count: 536
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -533,15 +533,7 @@ SetEnvIfNoCase User-Agent \bWWW\-Mechanize\b spambot=yes
 SetEnvIfNoCase User-Agent \bWWW\:\:Mechanize\b spambot=yes
 SetEnvIfNoCase User-Agent \bWWWOFFLE\b spambot=yes
 SetEnvIfNoCase User-Agent \bx09Mozilla\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22assert\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22cache\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22feed\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22init\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22JDatabase\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22JSimple\b spambot=yes
 SetEnvIfNoCase User-Agent \bx22Mozilla\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22num\b spambot=yes
-SetEnvIfNoCase User-Agent \bx22sanitize\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXenu\b spambot=yes
