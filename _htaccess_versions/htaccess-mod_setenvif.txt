@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1092
-### Bad Referrer Count: 6592
+### Version: V3.2019.04.1093
+### Bad Referrer Count: 6595
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -3344,6 +3344,7 @@ SetEnvIfNoCase Referer inboundlinks\.win spambot=yes
 SetEnvIfNoCase Referer inboxdollars\.com spambot=yes
 SetEnvIfNoCase Referer incanto\.in\.ua spambot=yes
 SetEnvIfNoCase Referer incep\.imagine\-ex\.co spambot=yes
+SetEnvIfNoCase Referer incest\-ru\.com spambot=yes
 SetEnvIfNoCase Referer inclk\.com spambot=yes
 SetEnvIfNoCase Referer incolors\.club spambot=yes
 SetEnvIfNoCase Referer incomekey\.net spambot=yes
@@ -4928,6 +4929,7 @@ SetEnvIfNoCase Referer pornosemki\.info spambot=yes
 SetEnvIfNoCase Referer pornoslive\.net spambot=yes
 SetEnvIfNoCase Referer pornosmola\.info spambot=yes
 SetEnvIfNoCase Referer pornotubexxx\.name spambot=yes
+SetEnvIfNoCase Referer pornowarp\.info spambot=yes
 SetEnvIfNoCase Referer pornoxxx\.com\.mx spambot=yes
 SetEnvIfNoCase Referer pornpost\.in spambot=yes
 SetEnvIfNoCase Referer pornstartits\.xblog\.in spambot=yes
@@ -5478,6 +5480,7 @@ SetEnvIfNoCase Referer segol\.tv spambot=yes
 SetEnvIfNoCase Referer sei80\.com spambot=yes
 SetEnvIfNoCase Referer seinterface\.com spambot=yes
 SetEnvIfNoCase Referer seksotur\.ru spambot=yes
+SetEnvIfNoCase Referer seksvideoonlain\.com spambot=yes
 SetEnvIfNoCase Referer sel\-hoz\.com spambot=yes
 SetEnvIfNoCase Referer selectads\.men spambot=yes
 SetEnvIfNoCase Referer sell\-fb\-group\-here\.com spambot=yes
