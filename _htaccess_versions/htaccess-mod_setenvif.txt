@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1094
-### Bad Referrer Count: 6609
+### Version: V3.2019.04.1095
+### Bad Referrer Count: 6613
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -1177,6 +1177,7 @@ SetEnvIfNoCase Referer ayakino\.net spambot=yes
 SetEnvIfNoCase Referer ayanaspa\.com spambot=yes
 SetEnvIfNoCase Referer ayeartoforget\.com spambot=yes
 SetEnvIfNoCase Referer ayerbo\.xhost\.ro spambot=yes
+SetEnvIfNoCase Referer ayodhya\.co spambot=yes
 SetEnvIfNoCase Referer azadnegar\.com spambot=yes
 SetEnvIfNoCase Referer azartclub\.org spambot=yes
 SetEnvIfNoCase Referer azartmix\.com spambot=yes
@@ -2276,6 +2277,7 @@ SetEnvIfNoCase Referer dverimegapolis\.ru spambot=yes
 SetEnvIfNoCase Referer dvervmoskvu\.ru spambot=yes
 SetEnvIfNoCase Referer dvr\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer dvrlists\.com spambot=yes
+SetEnvIfNoCase Referer dwomlink\.info spambot=yes
 SetEnvIfNoCase Referer dynainbox\.com spambot=yes
 SetEnvIfNoCase Referer dyshagi\.ru spambot=yes
 SetEnvIfNoCase Referer dyt\.net spambot=yes
@@ -5858,6 +5860,7 @@ SetEnvIfNoCase Referer srdrvp\.com spambot=yes
 SetEnvIfNoCase Referer srecorder\.com spambot=yes
 SetEnvIfNoCase Referer srgwebmail\.nl spambot=yes
 SetEnvIfNoCase Referer sribno\.net spambot=yes
+SetEnvIfNoCase Referer ssconstruction\.co spambot=yes
 SetEnvIfNoCase Referer sstroy44\.ru spambot=yes
 SetEnvIfNoCase Referer stackthatbucks\.com spambot=yes
 SetEnvIfNoCase Referer staff\.prairiesouth\.ca spambot=yes
@@ -6481,6 +6484,7 @@ SetEnvIfNoCase Referer valueclick\.com spambot=yes
 SetEnvIfNoCase Referer vancleefreplica\.pw spambot=yes
 SetEnvIfNoCase Referer vandrie\-ict\.nl spambot=yes
 SetEnvIfNoCase Referer vapeface\.club spambot=yes
+SetEnvIfNoCase Referer vapomnoncri\.tk spambot=yes
 SetEnvIfNoCase Referer vapsy\.com spambot=yes
 SetEnvIfNoCase Referer varbergsvind\.se spambot=yes
 SetEnvIfNoCase Referer varikoz24\.com spambot=yes
