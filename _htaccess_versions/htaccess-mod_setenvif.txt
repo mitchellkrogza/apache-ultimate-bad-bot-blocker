@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1096
-### Bad Referrer Count: 6613
+### Version: V3.2019.04.1097
+### Bad Referrer Count: 6618
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -4942,6 +4942,7 @@ SetEnvIfNoCase Referer pornosemki\.info spambot=yes
 SetEnvIfNoCase Referer pornoslive\.net spambot=yes
 SetEnvIfNoCase Referer pornosmola\.info spambot=yes
 SetEnvIfNoCase Referer pornotubexxx\.name spambot=yes
+SetEnvIfNoCase Referer pornotubs\.com spambot=yes
 SetEnvIfNoCase Referer pornowarp\.info spambot=yes
 SetEnvIfNoCase Referer pornoxxx\.com\.mx spambot=yes
 SetEnvIfNoCase Referer pornpost\.in spambot=yes
@@ -5282,6 +5283,7 @@ SetEnvIfNoCase Referer roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer roll123\.com spambot=yes
 SetEnvIfNoCase Referer roma\-kukareku\.livejournal\.com spambot=yes
 SetEnvIfNoCase Referer rome2rio\.com spambot=yes
+SetEnvIfNoCase Referer romhacking\.ru spambot=yes
 SetEnvIfNoCase Referer roofers\.org\.uk spambot=yes
 SetEnvIfNoCase Referer rootandroid\.org spambot=yes
 SetEnvIfNoCase Referer ros\-ctm\.ru spambot=yes
@@ -5564,7 +5566,9 @@ SetEnvIfNoCase Referer sexad\.net spambot=yes
 SetEnvIfNoCase Referer sexblog\.pw spambot=yes
 SetEnvIfNoCase Referer sexcamamateurchat\.com spambot=yes
 SetEnvIfNoCase Referer sexflirtbook\.com spambot=yes
+SetEnvIfNoCase Referer sexfreepornoxxx\.com spambot=yes
 SetEnvIfNoCase Referer sexgalleries\.top spambot=yes
+SetEnvIfNoCase Referer sexiporno\.net spambot=yes
 SetEnvIfNoCase Referer sexkontakte\-seite\.com spambot=yes
 SetEnvIfNoCase Referer sexkontakteao\.info spambot=yes
 SetEnvIfNoCase Referer sexkrasivo\.net spambot=yes
@@ -5721,6 +5725,7 @@ SetEnvIfNoCase Referer slowmacfaster\.trade spambot=yes
 SetEnvIfNoCase Referer sluganarodu\.ru spambot=yes
 SetEnvIfNoCase Referer slujbauborki\.ru spambot=yes
 SetEnvIfNoCase Referer slutloadlive\.com spambot=yes
+SetEnvIfNoCase Referer smadihome\.com spambot=yes
 SetEnvIfNoCase Referer smailik\.org spambot=yes
 SetEnvIfNoCase Referer small\-game\.com spambot=yes
 SetEnvIfNoCase Referer small\-games\.biz spambot=yes
