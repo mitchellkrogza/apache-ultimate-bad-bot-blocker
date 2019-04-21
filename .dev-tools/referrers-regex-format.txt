@@ -1738,6 +1738,7 @@ SetEnvIfNoCase Referer ~*eaplay\.ru spam_ref
 SetEnvIfNoCase Referer ~*earl\-brown\.info spam_ref
 SetEnvIfNoCase Referer ~*earncash\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*earn\-from\-articles\.com spam_ref
+SetEnvIfNoCase Referer ~*earthmagic\.info spam_ref
 SetEnvIfNoCase Referer ~*eas\-seo\.com spam_ref
 SetEnvIfNoCase Referer ~*easycommerce\.cf spam_ref
 SetEnvIfNoCase Referer ~*easync\.io spam_ref
@@ -1793,6 +1794,7 @@ SetEnvIfNoCase Referer ~*electricwheelchairsarea\.com spam_ref
 SetEnvIfNoCase Referer ~*electrik\-avenue\.com spam_ref
 SetEnvIfNoCase Referer ~*electronicadirect\.com spam_ref
 SetEnvIfNoCase Referer ~*electro\-prom\.com spam_ref
+SetEnvIfNoCase Referer ~*eleimgo\.pw spam_ref
 SetEnvIfNoCase Referer ~*elektir\.ru spam_ref
 SetEnvIfNoCase Referer ~*elektrischezi\.canalblog\.com spam_ref
 SetEnvIfNoCase Referer ~*elektrischeziga\.livejournal\.com spam_ref

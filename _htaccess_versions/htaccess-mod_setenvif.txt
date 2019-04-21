@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1097
-### Bad Referrer Count: 6618
+### Version: V3.2019.04.1098
+### Bad Referrer Count: 6620
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -2297,6 +2297,7 @@ SetEnvIfNoCase Referer eaplay\.ru spambot=yes
 SetEnvIfNoCase Referer earl\-brown\.info spambot=yes
 SetEnvIfNoCase Referer earn\-from\-articles\.com spambot=yes
 SetEnvIfNoCase Referer earncash\.com\.ua spambot=yes
+SetEnvIfNoCase Referer earthmagic\.info spambot=yes
 SetEnvIfNoCase Referer eas\-seo\.com spambot=yes
 SetEnvIfNoCase Referer easycommerce\.cf spambot=yes
 SetEnvIfNoCase Referer easync\.io spambot=yes
@@ -2346,6 +2347,7 @@ SetEnvIfNoCase Referer electricwheelchairsarea\.com spambot=yes
 SetEnvIfNoCase Referer electrik\-avenue\.com spambot=yes
 SetEnvIfNoCase Referer electro\-prom\.com spambot=yes
 SetEnvIfNoCase Referer electronicadirect\.com spambot=yes
+SetEnvIfNoCase Referer eleimgo\.pw spambot=yes
 SetEnvIfNoCase Referer elektir\.ru spambot=yes
 SetEnvIfNoCase Referer elektrischezi\.canalblog\.com spambot=yes
 SetEnvIfNoCase Referer elektrischeziga\.livejournal\.com spambot=yes
