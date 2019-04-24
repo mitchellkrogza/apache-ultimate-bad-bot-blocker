@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1099
-### Bad Referrer Count: 6625
+### Version: V3.2019.04.1100
+### Bad Referrer Count: 6628
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -2005,6 +2005,7 @@ SetEnvIfNoCase Referer csgo4\.win spambot=yes
 SetEnvIfNoCase Referer cubook\.supernew\.org spambot=yes
 SetEnvIfNoCase Referer cubs\-jerseys\.us spambot=yes
 SetEnvIfNoCase Referer culad\.com spambot=yes
+SetEnvIfNoCase Referer culmimg\.pw spambot=yes
 SetEnvIfNoCase Referer culturevie\.info spambot=yes
 SetEnvIfNoCase Referer cupday\.com spambot=yes
 SetEnvIfNoCase Referer custodieva\.ru spambot=yes
@@ -4562,6 +4563,7 @@ SetEnvIfNoCase Referer oil\-td\.ru spambot=yes
 SetEnvIfNoCase Referer ok\-ua\.info spambot=yes
 SetEnvIfNoCase Referer ok\.ru spambot=yes
 SetEnvIfNoCase Referer okayimage\.com spambot=yes
+SetEnvIfNoCase Referer okeinfo\.online spambot=yes
 SetEnvIfNoCase Referer okel\.co spambot=yes
 SetEnvIfNoCase Referer oklogistic\.ru spambot=yes
 SetEnvIfNoCase Referer okmusic\.jp spambot=yes
@@ -5614,6 +5616,7 @@ SetEnvIfNoCase Referer shemale\-sex\.net spambot=yes
 SetEnvIfNoCase Referer shemalegalls\.blogporn\.in spambot=yes
 SetEnvIfNoCase Referer sherlock\.se spambot=yes
 SetEnvIfNoCase Referer shijian\.ac\.cn spambot=yes
+SetEnvIfNoCase Referer shikiso\.info spambot=yes
 SetEnvIfNoCase Referer shiksabd\.com spambot=yes
 SetEnvIfNoCase Referer shillyourcoins\.com spambot=yes
 SetEnvIfNoCase Referer shinikiev\.com\.ua spambot=yes

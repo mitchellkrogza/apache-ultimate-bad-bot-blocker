@@ -1454,6 +1454,7 @@ SetEnvIfNoCase Referer ~*cs\-passion\.pl spam_ref
 SetEnvIfNoCase Referer ~*cubook\.supernew\.org spam_ref
 SetEnvIfNoCase Referer ~*cubs\-jerseys\.us spam_ref
 SetEnvIfNoCase Referer ~*culad\.com spam_ref
+SetEnvIfNoCase Referer ~*culmimg\.pw spam_ref
 SetEnvIfNoCase Referer ~*culturevie\.info spam_ref
 SetEnvIfNoCase Referer ~*cupday\.com spam_ref
 SetEnvIfNoCase Referer ~*custodieva\.ru spam_ref
@@ -4003,6 +4004,7 @@ SetEnvIfNoCase Referer ~*of\-ireland\.info spam_ref
 SetEnvIfNoCase Referer ~*ohmyrings\.com spam_ref
 SetEnvIfNoCase Referer ~*oil\-td\.ru spam_ref
 SetEnvIfNoCase Referer ~*okayimage\.com spam_ref
+SetEnvIfNoCase Referer ~*okeinfo\.online spam_ref
 SetEnvIfNoCase Referer ~*okel\.co spam_ref
 SetEnvIfNoCase Referer ~*oklogistic\.ru spam_ref
 SetEnvIfNoCase Referer ~*okmusic\.jp spam_ref
@@ -5061,6 +5063,7 @@ SetEnvIfNoCase Referer ~*shemalegalls\.blogporn\.in spam_ref
 SetEnvIfNoCase Referer ~*shemale\-sex\.net spam_ref
 SetEnvIfNoCase Referer ~*sherlock\.se spam_ref
 SetEnvIfNoCase Referer ~*shijian\.ac\.cn spam_ref
+SetEnvIfNoCase Referer ~*shikiso\.info spam_ref
 SetEnvIfNoCase Referer ~*shiksabd\.com spam_ref
 SetEnvIfNoCase Referer ~*shillyourcoins\.com spam_ref
 SetEnvIfNoCase Referer ~*shinikiev\.com\.ua spam_ref
