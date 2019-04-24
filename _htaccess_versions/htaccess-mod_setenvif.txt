@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1098
-### Bad Referrer Count: 6620
+### Version: V3.2019.04.1099
+### Bad Referrer Count: 6625
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -2143,6 +2143,7 @@ SetEnvIfNoCase Referer digest\-project\.ru spambot=yes
 SetEnvIfNoCase Referer digilander\.libero\.it spambot=yes
 SetEnvIfNoCase Referer digital\-sale\.su spambot=yes
 SetEnvIfNoCase Referer digital\-video\-processing\.com spambot=yes
+SetEnvIfNoCase Referer digitalassetmanagement\.site spambot=yes
 SetEnvIfNoCase Referer digitalfaq\.com spambot=yes
 SetEnvIfNoCase Referer dignitasdata\.se spambot=yes
 SetEnvIfNoCase Referer dikqlyremy\.info spambot=yes
@@ -4088,6 +4089,7 @@ SetEnvIfNoCase Referer meds\-online24\.com spambot=yes
 SetEnvIfNoCase Referer medtherapy\.ru spambot=yes
 SetEnvIfNoCase Referer meduza\-consult\.ru spambot=yes
 SetEnvIfNoCase Referer meendo\-free\-traffic\.ga spambot=yes
+SetEnvIfNoCase Referer meet\-flirt\-dating\.com spambot=yes
 SetEnvIfNoCase Referer meetingrainstorm\.bid spambot=yes
 SetEnvIfNoCase Referer meetlocalchicks\.com spambot=yes
 SetEnvIfNoCase Referer mega\-bony\-2017\.pl spambot=yes
@@ -4792,9 +4794,11 @@ SetEnvIfNoCase Referer picscout\.com spambot=yes
 SetEnvIfNoCase Referer picsearch\.com spambot=yes
 SetEnvIfNoCase Referer picsfair\.com spambot=yes
 SetEnvIfNoCase Referer picsforkeywordsuggestion\.com spambot=yes
+SetEnvIfNoCase Referer picswe\.com spambot=yes
 SetEnvIfNoCase Referer picture\-group\.com spambot=yes
 SetEnvIfNoCase Referer pictures\-and\-images\.com spambot=yes
 SetEnvIfNoCase Referer pictures\-and\-images\.net spambot=yes
+SetEnvIfNoCase Referer picturesboss\.com spambot=yes
 SetEnvIfNoCase Referer picturesfrom\.com spambot=yes
 SetEnvIfNoCase Referer picturesify\.com spambot=yes
 SetEnvIfNoCase Referer picturesmania\.com spambot=yes
@@ -5939,6 +5943,7 @@ SetEnvIfNoCase Referer stroyplus\.ru spambot=yes
 SetEnvIfNoCase Referer strv\.se spambot=yes
 SetEnvIfNoCase Referer students\-cheapskate\.ml spambot=yes
 SetEnvIfNoCase Referer studiofaca\.com spambot=yes
+SetEnvIfNoCase Referer studiofmp\.com spambot=yes
 SetEnvIfNoCase Referer studiokamyk\.com\.pl spambot=yes
 SetEnvIfNoCase Referer stuff\-about\-money\.com spambot=yes
 SetEnvIfNoCase Referer styro\.ru spambot=yes

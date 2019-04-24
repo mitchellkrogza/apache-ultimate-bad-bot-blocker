@@ -1590,6 +1590,7 @@ SetEnvIfNoCase Referer ~*dieta\-personalna\.pl spam_ref
 SetEnvIfNoCase Referer ~*diffbot\.com spam_ref
 SetEnvIfNoCase Referer ~*digest\-project\.ru spam_ref
 SetEnvIfNoCase Referer ~*digilander\.libero\.it spam_ref
+SetEnvIfNoCase Referer ~*digitalassetmanagement\.site spam_ref
 SetEnvIfNoCase Referer ~*digitalfaq\.com spam_ref
 SetEnvIfNoCase Referer ~*digital\-sale\.su spam_ref
 SetEnvIfNoCase Referer ~*digital\-video\-processing\.com spam_ref
@@ -3535,6 +3536,7 @@ SetEnvIfNoCase Referer ~*medtherapy\.ru spam_ref
 SetEnvIfNoCase Referer ~*meduza\-consult\.ru spam_ref
 SetEnvIfNoCase Referer ~*med\-zdorovie\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*meendo\-free\-traffic\.ga spam_ref
+SetEnvIfNoCase Referer ~*meet\-flirt\-dating\.com spam_ref
 SetEnvIfNoCase Referer ~*meetingrainstorm\.bid spam_ref
 SetEnvIfNoCase Referer ~*meetlocalchicks\.com spam_ref
 SetEnvIfNoCase Referer ~*megaapteka\.ru spam_ref
@@ -4241,9 +4243,11 @@ SetEnvIfNoCase Referer ~*picsearch\.com spam_ref
 SetEnvIfNoCase Referer ~*picsfair\.com spam_ref
 SetEnvIfNoCase Referer ~*picsforkeywordsuggestion\.com spam_ref
 SetEnvIfNoCase Referer ~*pics\-group\.com spam_ref
+SetEnvIfNoCase Referer ~*picswe\.com spam_ref
 SetEnvIfNoCase Referer ~*picture\-group\.com spam_ref
 SetEnvIfNoCase Referer ~*pictures\-and\-images\.com spam_ref
 SetEnvIfNoCase Referer ~*pictures\-and\-images\.net spam_ref
+SetEnvIfNoCase Referer ~*picturesboss\.com spam_ref
 SetEnvIfNoCase Referer ~*picturesfrom\.com spam_ref
 SetEnvIfNoCase Referer ~*picturesify\.com spam_ref
 SetEnvIfNoCase Referer ~*picturesmania\.com spam_ref
@@ -5388,6 +5392,7 @@ SetEnvIfNoCase Referer ~*stroy\-portal22\.ru spam_ref
 SetEnvIfNoCase Referer ~*strv\.se spam_ref
 SetEnvIfNoCase Referer ~*students\-cheapskate\.ml spam_ref
 SetEnvIfNoCase Referer ~*studiofaca\.com spam_ref
+SetEnvIfNoCase Referer ~*studiofmp\.com spam_ref
 SetEnvIfNoCase Referer ~*studiokamyk\.com\.pl spam_ref
 SetEnvIfNoCase Referer ~*stuff\-about\-money\.com spam_ref
 SetEnvIfNoCase Referer ~*styro\.ru spam_ref
