@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1100
-### Bad Referrer Count: 6628
+### Version: V3.2019.04.1101
+### Bad Referrer Count: 6636
 ### Bad Bot Count: 536
 ### Version Information ##
 
@@ -1686,6 +1686,7 @@ SetEnvIfNoCase Referer cbcseward\.com spambot=yes
 SetEnvIfNoCase Referer cbox\.ws spambot=yes
 SetEnvIfNoCase Referer cbozhe\.com spambot=yes
 SetEnvIfNoCase Referer ccbill\.com spambot=yes
+SetEnvIfNoCase Referer ccjp\.eu spambot=yes
 SetEnvIfNoCase Referer cctva\.tv spambot=yes
 SetEnvIfNoCase Referer cdn\.walkme\.com spambot=yes
 SetEnvIfNoCase Referer cdnanalytics\.xyz spambot=yes
@@ -3098,6 +3099,7 @@ SetEnvIfNoCase Referer happy\.new\.yeartwit\.com spambot=yes
 SetEnvIfNoCase Referer hard\-porn\.mobi spambot=yes
 SetEnvIfNoCase Referer harmonyglen\.us spambot=yes
 SetEnvIfNoCase Referer hasfun\.com spambot=yes
+SetEnvIfNoCase Referer hasshe\.com spambot=yes
 SetEnvIfNoCase Referer hatdc\.org spambot=yes
 SetEnvIfNoCase Referer hatedriveapart\.com spambot=yes
 SetEnvIfNoCase Referer hauleddes\.com spambot=yes
@@ -3201,6 +3203,7 @@ SetEnvIfNoCase Referer homeinns\.com spambot=yes
 SetEnvIfNoCase Referer homelygarden\.com spambot=yes
 SetEnvIfNoCase Referer homemade\.gq spambot=yes
 SetEnvIfNoCase Referer homemature\.net spambot=yes
+SetEnvIfNoCase Referer homik\.pw spambot=yes
 SetEnvIfNoCase Referer honyaku\.yahoofs\.jp spambot=yes
 SetEnvIfNoCase Referer hop\.clickbank\.net spambot=yes
 SetEnvIfNoCase Referer hopeonthestreet\.co\.uk spambot=yes
@@ -5282,6 +5285,7 @@ SetEnvIfNoCase Referer rixpix\.ru spambot=yes
 SetEnvIfNoCase Referer rn\-to\-bsn\.com spambot=yes
 SetEnvIfNoCase Referer rniaeba\.ga spambot=yes
 SetEnvIfNoCase Referer robot\-forex\.biz spambot=yes
+SetEnvIfNoCase Referer rock\-cafe\.info spambot=yes
 SetEnvIfNoCase Referer rocketchange\.ru spambot=yes
 SetEnvIfNoCase Referer rockingclicks\.com spambot=yes
 SetEnvIfNoCase Referer rockma\.se spambot=yes
@@ -5583,6 +5587,7 @@ SetEnvIfNoCase Referer sexkrasivo\.net spambot=yes
 SetEnvIfNoCase Referer sexobzor\.info spambot=yes
 SetEnvIfNoCase Referer sexpartygirls\.net spambot=yes
 SetEnvIfNoCase Referer sexphoto\.site spambot=yes
+SetEnvIfNoCase Referer sexpornotales\.com spambot=yes
 SetEnvIfNoCase Referer sexreliz\.com spambot=yes
 SetEnvIfNoCase Referer sexsaoy\.com spambot=yes
 SetEnvIfNoCase Referer sexsearch\.com spambot=yes
@@ -5681,6 +5686,7 @@ SetEnvIfNoCase Referer sindragosa\.comxa\.com spambot=yes
 SetEnvIfNoCase Referer sinel\.info spambot=yes
 SetEnvIfNoCase Referer sinestesia\.host\.sk spambot=yes
 SetEnvIfNoCase Referer sirpornogratis\.xxx spambot=yes
+SetEnvIfNoCase Referer sisi\-go\.ru spambot=yes
 SetEnvIfNoCase Referer sisiynas\.ru spambot=yes
 SetEnvIfNoCase Referer sispe\.com\.br spambot=yes
 SetEnvIfNoCase Referer site\-analyzer\.com spambot=yes
@@ -6834,6 +6840,7 @@ SetEnvIfNoCase Referer wormix\-cheats\.ru spambot=yes
 SetEnvIfNoCase Referer worst\-sites\.online spambot=yes
 SetEnvIfNoCase Referer wosik\-dach\.service\-for\-web\.de spambot=yes
 SetEnvIfNoCase Referer wowas31\.ucoz\.ru spambot=yes
+SetEnvIfNoCase Referer wowcasinoonline\.ooo spambot=yes
 SetEnvIfNoCase Referer woweb\.com\.ua spambot=yes
 SetEnvIfNoCase Referer wpsecurity\.website spambot=yes
 SetEnvIfNoCase Referer wpthemedetector\.co\.uk spambot=yes
@@ -6865,6 +6872,7 @@ SetEnvIfNoCase Referer x\-diesel\.com spambot=yes
 SetEnvIfNoCase Referer x\-diesel\.info spambot=yes
 SetEnvIfNoCase Referer x\-diesel\.org spambot=yes
 SetEnvIfNoCase Referer x\-lime\.net spambot=yes
+SetEnvIfNoCase Referer x\-mix\.info spambot=yes
 SetEnvIfNoCase Referer x\-musics\.com spambot=yes
 SetEnvIfNoCase Referer x\-porno\.video spambot=yes
 SetEnvIfNoCase Referer x\-rates\.ru spambot=yes
