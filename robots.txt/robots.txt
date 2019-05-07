@@ -475,6 +475,8 @@ User-agent: LinkWalker
 Disallow:/
 User-agent: LinqiaMetadataDownloaderBot
 Disallow:/
+User-agent: Linguee
+Disallow: /
 User-agent: LinqiaRSSBot
 Disallow:/
 User-agent: LinqiaScrapeBot
@@ -773,6 +775,10 @@ User-agent: SEOstats
 Disallow:/
 User-agent: sexsearcher
 Disallow:/
+User-agent: Seznam
+Disallow:/
+User-agent: SeznamBot
+Disallow:/
 User-agent: Shodan
 Disallow:/
 User-agent: Siphon
@@ -1065,6 +1071,8 @@ User-agent: Xenu
 Disallow:/
 User-agent: xpymep1.exe
 Disallow:/
+User-agent: YandexBot
+Disallow:/
 User-agent: YoudaoBot
 Disallow:/
 User-agent: Zade
@@ -1083,8 +1091,9 @@ User-agent: Zitebot
 Disallow:/
 User-agent: ZmEu
 Disallow:/
+User-agent: ZoominfoBot
+Disallow:/
 User-agent: ZumBot
 Disallow:/
 User-agent: ZyBorg
 Disallow:/
-
