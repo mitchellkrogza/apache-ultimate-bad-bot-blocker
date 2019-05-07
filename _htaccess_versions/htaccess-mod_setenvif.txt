@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1101
+### Version: V3.2019.05.1103
 ### Bad Referrer Count: 6636
-### Bad Bot Count: 536
+### Bad Bot Count: 541
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -236,6 +236,7 @@ SetEnvIfNoCase User-Agent \bLibWeb\b spambot=yes
 SetEnvIfNoCase User-Agent \bLibwhisker\b spambot=yes
 SetEnvIfNoCase User-Agent \bLightspeedsystems\b spambot=yes
 SetEnvIfNoCase User-Agent \bLikse\b spambot=yes
+SetEnvIfNoCase User-Agent \bLinguee\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkextractorPro\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkpadBot\b spambot=yes
@@ -392,6 +393,8 @@ SetEnvIfNoCase User-Agent \bseoscanners\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOstats\b spambot=yes
 SetEnvIfNoCase User-Agent \bsexsearcher\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeznam\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeznamBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiphon\b spambot=yes
 SetEnvIfNoCase User-Agent \bSISTRIX\b spambot=yes
@@ -538,6 +541,7 @@ SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXenu\b spambot=yes
 SetEnvIfNoCase User-Agent \bxpymep1\.exe\b spambot=yes
+SetEnvIfNoCase User-Agent \bYandexBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bYoudaoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZade\b spambot=yes
 SetEnvIfNoCase User-Agent \bZauba\b spambot=yes
@@ -547,6 +551,7 @@ SetEnvIfNoCase User-Agent \bZeus\b spambot=yes
 SetEnvIfNoCase User-Agent \bzgrab\b spambot=yes
 SetEnvIfNoCase User-Agent \bZitebot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZmEu\b spambot=yes
+SetEnvIfNoCase User-Agent \bZoominfoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZumBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZyBorg\b spambot=yes
 SetEnvIfNoCase Referer 000free\.us spambot=yes

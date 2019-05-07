@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.04.1101
+### Version: V3.2019.05.1103
 ### Bad Referrer Count: 6636
-### Bad Bot Count: 536
+### Bad Bot Count: 541
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -236,6 +236,7 @@ RewriteCond %{HTTP_USER_AGENT} \bLibWeb\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLibwhisker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLightspeedsystems\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLikse\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bLinguee\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLinkdexbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLinkextractorPro\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bLinkpadBot\b [NC,OR]
@@ -392,6 +393,8 @@ RewriteCond %{HTTP_USER_AGENT} \bseoscanners\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSeoSiteCheckup\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSEOstats\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bsexsearcher\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSeznam\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSeznamBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bShodan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiphon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSISTRIX\b [NC,OR]
@@ -538,6 +541,7 @@ RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXenu\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bxpymep1\.exe\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bYandexBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bYoudaoBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZade\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZauba\b [NC,OR]
@@ -547,6 +551,7 @@ RewriteCond %{HTTP_USER_AGENT} \bZeus\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bzgrab\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZitebot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZmEu\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bZoominfoBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZumBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZyBorg\b [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000free\.us.*$ [NC,OR]

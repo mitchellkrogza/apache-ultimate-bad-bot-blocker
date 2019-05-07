@@ -6,15 +6,25 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.04.1101
-### Updated: Mon Apr 29 13:41:53 SAST 2019
-### Bad Bot Count: 536
+### Version: V3.2019.05.1103
+### Updated: Tue May  7 16:26:41 SAST 2019
+### Bad Bot Count: 541
 ###################################################
 ### Version Information ##
 
 User-agent: *
 Disallow: /wp-admin/
 Allow: /wp-admin/admin-ajax.php
+User-agent: Linguee
+Disallow:/
+User-agent: Seznam
+Disallow:/
+User-agent: SeznamBot
+Disallow:/
+User-agent: YandexBot
+Disallow:/
+User-agent: ZoominfoBot
+Disallow:/
 User-agent: 360Spider
 Disallow:/
 User-agent: 404checker
