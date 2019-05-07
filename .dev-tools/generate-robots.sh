@@ -56,11 +56,12 @@ output=${TRAVIS_BUILD_DIR}/.dev-tools/_robots_generator_files/robots.list
 
 sudo truncate -s 0 ${output}
 
-# *************************************
-# Use sed to prepare our new input file
-# *************************************
+# **********************************************
+# Use sed and sort to prepare our new input file
+# **********************************************
 
 cat ${input1} | sed 's/\\ / /g' > ${inputtmp} && mv ${inputtmp} ${output}
+sort -u ${output} -o ${output}
 
 # ******************
 # Set Some Variables
