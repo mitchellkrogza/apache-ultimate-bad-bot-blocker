@@ -1698,6 +1698,7 @@ SetEnvIfNoCase Referer ~*download\-wallpaper\.net spam_ref
 SetEnvIfNoCase Referer ~*downtuptv\.gq spam_ref
 SetEnvIfNoCase Referer ~*downvids\.net spam_ref
 SetEnvIfNoCase Referer ~*doxyporno\.com spam_ref
+SetEnvIfNoCase Referer ~*doxysexy\.com spam_ref
 SetEnvIfNoCase Referer ~*doyouknowtheword\-flummox\.ml spam_ref
 SetEnvIfNoCase Referer ~*dpihatinh\.gov\.vn spam_ref
 SetEnvIfNoCase Referer ~*dprtb\.com spam_ref
@@ -2283,6 +2284,7 @@ SetEnvIfNoCase Referer ~*galaxy\-family\.ru spam_ref
 SetEnvIfNoCase Referer ~*galaxyflowers\.ru spam_ref
 SetEnvIfNoCase Referer ~*galaxys6manual\.info spam_ref
 SetEnvIfNoCase Referer ~*galeon\.com spam_ref
+SetEnvIfNoCase Referer ~*galeria\-zdjec\.com spam_ref
 SetEnvIfNoCase Referer ~*gallerily\.com spam_ref
 SetEnvIfNoCase Referer ~*galleryawesome\.com spam_ref
 SetEnvIfNoCase Referer ~*gallerylisting\.com spam_ref
@@ -5358,6 +5360,7 @@ SetEnvIfNoCase Referer ~*statustroll\.com spam_ref
 SetEnvIfNoCase Referer ~*stauga\.altervista\.org spam_ref
 SetEnvIfNoCase Referer ~*staynplay\.net spam_ref
 SetEnvIfNoCase Referer ~*steame\.ru spam_ref
+SetEnvIfNoCase Referer ~*steamoff\.net spam_ref
 SetEnvIfNoCase Referer ~*steelmaster\.lv spam_ref
 SetEnvIfNoCase Referer ~*stefanbakosab\.se spam_ref
 SetEnvIfNoCase Referer ~*sterva\.cc spam_ref
@@ -5571,6 +5574,7 @@ SetEnvIfNoCase Referer ~*thenews\-today\.info spam_ref
 SetEnvIfNoCase Referer ~*thepantonpractice\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*theplacetoupdating\.pw spam_ref
 SetEnvIfNoCase Referer ~*thepokertimer\.com spam_ref
+SetEnvIfNoCase Referer ~*theporndude\.com spam_ref
 SetEnvIfNoCase Referer ~*theprofitsmaker\.net spam_ref
 SetEnvIfNoCase Referer ~*thesmartsearch\.net spam_ref
 SetEnvIfNoCase Referer ~*thetardistimes\.ovh spam_ref

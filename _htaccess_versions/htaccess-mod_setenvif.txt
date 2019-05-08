@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.05.1104
-### Bad Referrer Count: 6636
+### Version: V3.2019.05.1105
+### Bad Referrer Count: 6640
 ### Bad Bot Count: 541
 ### Version Information ##
 
@@ -2254,6 +2254,7 @@ SetEnvIfNoCase Referer downloads\-whatsapp\.com spambot=yes
 SetEnvIfNoCase Referer downtuptv\.gq spambot=yes
 SetEnvIfNoCase Referer downvids\.net spambot=yes
 SetEnvIfNoCase Referer doxyporno\.com spambot=yes
+SetEnvIfNoCase Referer doxysexy\.com spambot=yes
 SetEnvIfNoCase Referer doyouknowtheword\-flummox\.ml spambot=yes
 SetEnvIfNoCase Referer dpihatinh\.gov\.vn spambot=yes
 SetEnvIfNoCase Referer dprtb\.com spambot=yes
@@ -2840,6 +2841,7 @@ SetEnvIfNoCase Referer galaxy\-family\.ru spambot=yes
 SetEnvIfNoCase Referer galaxyflowers\.ru spambot=yes
 SetEnvIfNoCase Referer galaxys6manual\.info spambot=yes
 SetEnvIfNoCase Referer galeon\.com spambot=yes
+SetEnvIfNoCase Referer galeria\-zdjec\.com spambot=yes
 SetEnvIfNoCase Referer gallerily\.com spambot=yes
 SetEnvIfNoCase Referer gallery\.rennlist\.com spambot=yes
 SetEnvIfNoCase Referer galleryawesome\.com spambot=yes
@@ -5914,6 +5916,7 @@ SetEnvIfNoCase Referer statustroll\.com spambot=yes
 SetEnvIfNoCase Referer stauga\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer staynplay\.net spambot=yes
 SetEnvIfNoCase Referer steame\.ru spambot=yes
+SetEnvIfNoCase Referer steamoff\.net spambot=yes
 SetEnvIfNoCase Referer steelmaster\.lv spambot=yes
 SetEnvIfNoCase Referer stefanbakosab\.se spambot=yes
 SetEnvIfNoCase Referer sterva\.cc spambot=yes
@@ -6130,6 +6133,7 @@ SetEnvIfNoCase Referer thenews\-today\.info spambot=yes
 SetEnvIfNoCase Referer thepantonpractice\.co\.uk spambot=yes
 SetEnvIfNoCase Referer theplacetoupdating\.pw spambot=yes
 SetEnvIfNoCase Referer thepokertimer\.com spambot=yes
+SetEnvIfNoCase Referer theporndude\.com spambot=yes
 SetEnvIfNoCase Referer theprofitsmaker\.net spambot=yes
 SetEnvIfNoCase Referer thesmartsearch\.net spambot=yes
 SetEnvIfNoCase Referer thetardistimes\.ovh spambot=yes
