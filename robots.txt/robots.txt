@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.05.1105
-### Updated: Wed May  8 14:59:32 SAST 2019
-### Bad Bot Count: 541
+### Version: V3.2019.05.1106
+### Updated: Thu May  9 09:37:32 SAST 2019
+### Bad Bot Count: 539
 ###################################################
 ### Version Information ##
 
@@ -774,10 +774,6 @@ Disallow:/
 User-agent: SEOstats
 Disallow:/
 User-agent: sexsearcher
-Disallow:/
-User-agent: Seznam
-Disallow:/
-User-agent: SeznamBot
 Disallow:/
 User-agent: Shodan
 Disallow:/
