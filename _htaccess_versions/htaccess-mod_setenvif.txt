@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.05.1106
-### Bad Referrer Count: 6640
+### Version: V3.2019.05.1107
+### Bad Referrer Count: 6644
 ### Bad Bot Count: 539
 ### Version Information ##
 
@@ -3315,6 +3315,7 @@ SetEnvIfNoCase Referer igithab\.com spambot=yes
 SetEnvIfNoCase Referer igrovyeavtomaty777\.ru spambot=yes
 SetEnvIfNoCase Referer igru\-xbox\.net spambot=yes
 SetEnvIfNoCase Referer igtools\.club spambot=yes
+SetEnvIfNoCase Referer ihc2015\.info spambot=yes
 SetEnvIfNoCase Referer iideaidekonkatu\.info spambot=yes
 SetEnvIfNoCase Referer iinstalll\-fii1leis\.jus0wil\.pp\.ua spambot=yes
 SetEnvIfNoCase Referer ikearugs\.xyz spambot=yes
@@ -4867,6 +4868,7 @@ SetEnvIfNoCase Referer play\-movie\.pl spambot=yes
 SetEnvIfNoCase Referer play\-mp3\.com spambot=yes
 SetEnvIfNoCase Referer play\.leadzupc\.com spambot=yes
 SetEnvIfNoCase Referer playboyfiles\.xblog\.in spambot=yes
+SetEnvIfNoCase Referer playfortuna\-play\.ru spambot=yes
 SetEnvIfNoCase Referer playlott\.com spambot=yes
 SetEnvIfNoCase Referer playmsn\.com spambot=yes
 SetEnvIfNoCase Referer playtap\.us spambot=yes
@@ -5106,6 +5108,7 @@ SetEnvIfNoCase Referer push\-ad\.com spambot=yes
 SetEnvIfNoCase Referer pushdata\.sendpulse\.com spambot=yes
 SetEnvIfNoCase Referer pussyfleet\.com spambot=yes
 SetEnvIfNoCase Referer pussysaga\.com spambot=yes
+SetEnvIfNoCase Referer pussyspace\.net spambot=yes
 SetEnvIfNoCase Referer puteshestvennik\.com spambot=yes
 SetEnvIfNoCase Referer putevka24\.ru spambot=yes
 SetEnvIfNoCase Referer putitin\.me spambot=yes
@@ -6266,6 +6269,7 @@ SetEnvIfNoCase Referer topvidos\.ru spambot=yes
 SetEnvIfNoCase Referer torontoplumbinggroup\.com spambot=yes
 SetEnvIfNoCase Referer torrent\-newgames\.com spambot=yes
 SetEnvIfNoCase Referer torrent\-to\-magnet\.com spambot=yes
+SetEnvIfNoCase Referer torrentdownloadhub\.com spambot=yes
 SetEnvIfNoCase Referer torrentgamer\.net spambot=yes
 SetEnvIfNoCase Referer torrents\-tracker\.com spambot=yes
 SetEnvIfNoCase Referer torrents\.cd spambot=yes

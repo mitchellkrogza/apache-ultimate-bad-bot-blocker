@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.05.1106
-### Updated: Thu May  9 09:37:32 SAST 2019
-### Bad Referrer Count: 6640
+### Version: V3.2019.05.1107
+### Updated: Thu May  9 16:22:31 SAST 2019
+### Bad Referrer Count: 6644
 ### Bad Bot Count: 539
 ###################################################
 ### Version Information ##
@@ -3603,6 +3603,7 @@ SetEnvIfNoCase Referer ~*igithab\.com spam_ref
 SetEnvIfNoCase Referer ~*igrovyeavtomaty777\.ru spam_ref
 SetEnvIfNoCase Referer ~*igru\-xbox\.net spam_ref
 SetEnvIfNoCase Referer ~*igtools\.club spam_ref
+SetEnvIfNoCase Referer ~*ihc2015\.info spam_ref
 SetEnvIfNoCase Referer ~*i\-hobot\.ru spam_ref
 SetEnvIfNoCase Referer ~*iideaidekonkatu\.info spam_ref
 SetEnvIfNoCase Referer ~*iinstalll\-fii1leis\.jus0wil\.pp\.ua spam_ref
@@ -5152,6 +5153,7 @@ SetEnvIfNoCase Referer ~*platesauto\.com spam_ref
 SetEnvIfNoCase Referer ~*platezhka\.net spam_ref
 SetEnvIfNoCase Referer ~*platinumdeals\.gr spam_ref
 SetEnvIfNoCase Referer ~*playboyfiles\.xblog\.in spam_ref
+SetEnvIfNoCase Referer ~*playfortuna\-play\.ru spam_ref
 SetEnvIfNoCase Referer ~*play\.leadzupc\.com spam_ref
 SetEnvIfNoCase Referer ~*playlott\.com spam_ref
 SetEnvIfNoCase Referer ~*play\-movie\.pl spam_ref
@@ -5397,6 +5399,7 @@ SetEnvIfNoCase Referer ~*push\-ad\.com spam_ref
 SetEnvIfNoCase Referer ~*pushdata\.sendpulse\.com spam_ref
 SetEnvIfNoCase Referer ~*pussyfleet\.com spam_ref
 SetEnvIfNoCase Referer ~*pussysaga\.com spam_ref
+SetEnvIfNoCase Referer ~*pussyspace\.net spam_ref
 SetEnvIfNoCase Referer ~*puteshestvennik\.com spam_ref
 SetEnvIfNoCase Referer ~*putevka24\.ru spam_ref
 SetEnvIfNoCase Referer ~*putitin\.me spam_ref
@@ -6555,6 +6558,7 @@ SetEnvIfNoCase Referer ~*top\-study\.work spam_ref
 SetEnvIfNoCase Referer ~*topsy\.com spam_ref
 SetEnvIfNoCase Referer ~*topvidos\.ru spam_ref
 SetEnvIfNoCase Referer ~*torontoplumbinggroup\.com spam_ref
+SetEnvIfNoCase Referer ~*torrentdownloadhub\.com spam_ref
 SetEnvIfNoCase Referer ~*torrentgamer\.net spam_ref
 SetEnvIfNoCase Referer ~*torrent\-newgames\.com spam_ref
 SetEnvIfNoCase Referer ~*torrents\.cd spam_ref
