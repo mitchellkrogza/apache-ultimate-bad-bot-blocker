@@ -2188,6 +2188,7 @@ SetEnvIfNoCase Referer ~*foxinsocks\.ru spam_ref
 SetEnvIfNoCase Referer ~*foxtechfpv\.com spam_ref
 SetEnvIfNoCase Referer ~*foxweber\.com spam_ref
 SetEnvIfNoCase Referer ~*foxydeal\.com spam_ref
+SetEnvIfNoCase Referer ~*frameimage\.org spam_ref
 SetEnvIfNoCase Referer ~*franch\.info spam_ref
 SetEnvIfNoCase Referer ~*franecki\.net spam_ref
 SetEnvIfNoCase Referer ~*franklinfire\.co spam_ref
@@ -3806,6 +3807,7 @@ SetEnvIfNoCase Referer ~*mygameplus\.ru spam_ref
 SetEnvIfNoCase Referer ~*myghillie\.info spam_ref
 SetEnvIfNoCase Referer ~*myhealthcare\.com spam_ref
 SetEnvIfNoCase Referer ~*myhitmp3\.club spam_ref
+SetEnvIfNoCase Referer ~*myhydros\.org spam_ref
 SetEnvIfNoCase Referer ~*myindospace\.com spam_ref
 SetEnvIfNoCase Referer ~*myiptest\.com spam_ref
 SetEnvIfNoCase Referer ~*mykings\.pw spam_ref

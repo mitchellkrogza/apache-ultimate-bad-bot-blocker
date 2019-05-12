@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.05.1107
-### Updated: Thu May  9 16:22:31 SAST 2019
-### Bad Referrer Count: 6644
+### Version: V3.2019.05.1108
+### Updated: Sun May 12 11:33:41 SAST 2019
+### Bad Referrer Count: 6646
 ### Bad Bot Count: 539
 ###################################################
 ### Version Information ##
@@ -3033,6 +3033,7 @@ SetEnvIfNoCase Referer ~*foxinsocks\.ru spam_ref
 SetEnvIfNoCase Referer ~*foxtechfpv\.com spam_ref
 SetEnvIfNoCase Referer ~*foxweber\.com spam_ref
 SetEnvIfNoCase Referer ~*foxydeal\.com spam_ref
+SetEnvIfNoCase Referer ~*frameimage\.org spam_ref
 SetEnvIfNoCase Referer ~*franch\.info spam_ref
 SetEnvIfNoCase Referer ~*franecki\.net spam_ref
 SetEnvIfNoCase Referer ~*franklinfire\.co spam_ref
@@ -4651,6 +4652,7 @@ SetEnvIfNoCase Referer ~*mygameplus\.ru spam_ref
 SetEnvIfNoCase Referer ~*myghillie\.info spam_ref
 SetEnvIfNoCase Referer ~*myhealthcare\.com spam_ref
 SetEnvIfNoCase Referer ~*myhitmp3\.club spam_ref
+SetEnvIfNoCase Referer ~*myhydros\.org spam_ref
 SetEnvIfNoCase Referer ~*myindospace\.com spam_ref
 SetEnvIfNoCase Referer ~*myiptest\.com spam_ref
 SetEnvIfNoCase Referer ~*mykings\.pw spam_ref
