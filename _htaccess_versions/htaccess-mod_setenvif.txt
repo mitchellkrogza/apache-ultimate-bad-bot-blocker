@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.05.1108
-### Bad Referrer Count: 6646
+### Version: V3.2019.05.1109
+### Bad Referrer Count: 6648
 ### Bad Bot Count: 539
 ### Version Information ##
 
@@ -5549,6 +5549,7 @@ SetEnvIfNoCase Referer seoheap\.com spambot=yes
 SetEnvIfNoCase Referer seoholding\.com spambot=yes
 SetEnvIfNoCase Referer seojokes\.net spambot=yes
 SetEnvIfNoCase Referer seokicks\.de spambot=yes
+SetEnvIfNoCase Referer seolab\.top spambot=yes
 SetEnvIfNoCase Referer seomarketings\.online spambot=yes
 SetEnvIfNoCase Referer seonetwizard\.com spambot=yes
 SetEnvIfNoCase Referer seoprofiler\.com spambot=yes
@@ -6884,6 +6885,7 @@ SetEnvIfNoCase Referer x\-diesel\.biz spambot=yes
 SetEnvIfNoCase Referer x\-diesel\.com spambot=yes
 SetEnvIfNoCase Referer x\-diesel\.info spambot=yes
 SetEnvIfNoCase Referer x\-diesel\.org spambot=yes
+SetEnvIfNoCase Referer x\-lime\.com spambot=yes
 SetEnvIfNoCase Referer x\-lime\.net spambot=yes
 SetEnvIfNoCase Referer x\-mix\.info spambot=yes
 SetEnvIfNoCase Referer x\-musics\.com spambot=yes

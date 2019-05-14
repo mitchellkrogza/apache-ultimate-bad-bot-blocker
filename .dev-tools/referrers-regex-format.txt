@@ -4987,6 +4987,7 @@ SetEnvIfNoCase Referer ~*seoheap\.com spam_ref
 SetEnvIfNoCase Referer ~*seoholding\.com spam_ref
 SetEnvIfNoCase Referer ~*seojokes\.net spam_ref
 SetEnvIfNoCase Referer ~*seokicks\.de spam_ref
+SetEnvIfNoCase Referer ~*seolab\.top spam_ref
 SetEnvIfNoCase Referer ~*seomarketings\.online spam_ref
 SetEnvIfNoCase Referer ~*seonetwizard\.com spam_ref
 SetEnvIfNoCase Referer ~*seo\-platform\.com spam_ref
@@ -6357,6 +6358,7 @@ SetEnvIfNoCase Referer ~*xitjw\.info spam_ref
 SetEnvIfNoCase Referer ~*xjlottery\.com spam_ref
 SetEnvIfNoCase Referer ~*xjrul\.com spam_ref
 SetEnvIfNoCase Referer ~*xkaz\.org spam_ref
+SetEnvIfNoCase Referer ~*x\-lime\.com spam_ref
 SetEnvIfNoCase Referer ~*x\-lime\.net spam_ref
 SetEnvIfNoCase Referer ~*xlolitka\.com spam_ref
 SetEnvIfNoCase Referer ~*xlovecam\.com spam_ref
