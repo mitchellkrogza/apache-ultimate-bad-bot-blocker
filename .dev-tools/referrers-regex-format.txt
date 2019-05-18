@@ -3290,6 +3290,7 @@ SetEnvIfNoCase Referer ~*life\.biz\.ua spam_ref
 SetEnvIfNoCase Referer ~*lifebyleese\.com spam_ref
 SetEnvIfNoCase Referer ~*lifehacĸer\.com spam_ref
 SetEnvIfNoCase Referer ~*life\-instyle\.com spam_ref
+SetEnvIfNoCase Referer ~*lifeinsurancekb\.com spam_ref
 SetEnvIfNoCase Referer ~*liffa\.ru spam_ref
 SetEnvIfNoCase Referer ~*light\.ifmo\.ru spam_ref
 SetEnvIfNoCase Referer ~*lightinghomes\.net spam_ref
@@ -4994,6 +4995,7 @@ SetEnvIfNoCase Referer ~*seolab\.top spam_ref
 SetEnvIfNoCase Referer ~*seomarketings\.online spam_ref
 SetEnvIfNoCase Referer ~*seonetwizard\.com spam_ref
 SetEnvIfNoCase Referer ~*seo\-platform\.com spam_ref
+SetEnvIfNoCase Referer ~*seo\-prof1\.xyz spam_ref
 SetEnvIfNoCase Referer ~*seoprofiler\.com spam_ref
 SetEnvIfNoCase Referer ~*seorank\.info spam_ref
 SetEnvIfNoCase Referer ~*seorankinglinks\.com spam_ref

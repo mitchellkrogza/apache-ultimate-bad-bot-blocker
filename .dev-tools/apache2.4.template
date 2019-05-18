@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.05.1110
-### Updated: Sat May 18 11:08:22 SAST 2019
-### Bad Referrer Count: 6651
+### Version: V3.2019.05.1111
+### Updated: Sat May 18 11:22:00 SAST 2019
+### Bad Referrer Count: 6653
 ### Bad Bot Count: 539
 ###################################################
 ### Version Information ##
@@ -4135,6 +4135,7 @@ SetEnvIfNoCase Referer ~*life\.biz\.ua spam_ref
 SetEnvIfNoCase Referer ~*lifebyleese\.com spam_ref
 SetEnvIfNoCase Referer ~*lifehacĸer\.com spam_ref
 SetEnvIfNoCase Referer ~*life\-instyle\.com spam_ref
+SetEnvIfNoCase Referer ~*lifeinsurancekb\.com spam_ref
 SetEnvIfNoCase Referer ~*liffa\.ru spam_ref
 SetEnvIfNoCase Referer ~*light\.ifmo\.ru spam_ref
 SetEnvIfNoCase Referer ~*lightinghomes\.net spam_ref
@@ -5839,6 +5840,7 @@ SetEnvIfNoCase Referer ~*seolab\.top spam_ref
 SetEnvIfNoCase Referer ~*seomarketings\.online spam_ref
 SetEnvIfNoCase Referer ~*seonetwizard\.com spam_ref
 SetEnvIfNoCase Referer ~*seo\-platform\.com spam_ref
+SetEnvIfNoCase Referer ~*seo\-prof1\.xyz spam_ref
 SetEnvIfNoCase Referer ~*seoprofiler\.com spam_ref
 SetEnvIfNoCase Referer ~*seorank\.info spam_ref
 SetEnvIfNoCase Referer ~*seorankinglinks\.com spam_ref
