@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.05.1109
-### Bad Referrer Count: 6648
+### Version: V3.2019.05.1110
+### Bad Referrer Count: 6651
 ### Bad Bot Count: 539
 ### Version Information ##
 
@@ -2291,6 +2291,7 @@ SetEnvIfNoCase Referer dyt\.net spambot=yes
 SetEnvIfNoCase Referer e\-avon\.ru spambot=yes
 SetEnvIfNoCase Referer e\-biznes\.info spambot=yes
 SetEnvIfNoCase Referer e\-buyeasy\.com spambot=yes
+SetEnvIfNoCase Referer e\-c\.al spambot=yes
 SetEnvIfNoCase Referer e\-collantes\.com spambot=yes
 SetEnvIfNoCase Referer e\-commerce\-seo\.com spambot=yes
 SetEnvIfNoCase Referer e\-commerce\-seo1\.com spambot=yes
@@ -3493,6 +3494,7 @@ SetEnvIfNoCase Referer izismile\.com spambot=yes
 SetEnvIfNoCase Referer izoll\.ru spambot=yes
 SetEnvIfNoCase Referer j\-times\.ru spambot=yes
 SetEnvIfNoCase Referer j33x\.com spambot=yes
+SetEnvIfNoCase Referer jabimgo\.pw spambot=yes
 SetEnvIfNoCase Referer jacago\.com spambot=yes
 SetEnvIfNoCase Referer jackpotchances\.com spambot=yes
 SetEnvIfNoCase Referer jackwolfskinoutlet\.online spambot=yes
@@ -3512,6 +3514,7 @@ SetEnvIfNoCase Referer javcoast\.com spambot=yes
 SetEnvIfNoCase Referer javitas\.info spambot=yes
 SetEnvIfNoCase Referer javrip\.net spambot=yes
 SetEnvIfNoCase Referer javstock\.com spambot=yes
+SetEnvIfNoCase Referer javxxx18\.com spambot=yes
 SetEnvIfNoCase Referer jaxcube\.info spambot=yes
 SetEnvIfNoCase Referer jbl\-charge\.info spambot=yes
 SetEnvIfNoCase Referer je7\.us spambot=yes

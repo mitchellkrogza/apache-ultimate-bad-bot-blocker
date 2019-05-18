@@ -1753,6 +1753,7 @@ SetEnvIfNoCase Referer ~*e\-avon\.ru spam_ref
 SetEnvIfNoCase Referer ~*e\-biznes\.info spam_ref
 SetEnvIfNoCase Referer ~*ebooknovel\.club spam_ref
 SetEnvIfNoCase Referer ~*e\-buyeasy\.com spam_ref
+SetEnvIfNoCase Referer ~*e\-c\.al spam_ref
 SetEnvIfNoCase Referer ~*ec\-file\.info spam_ref
 SetEnvIfNoCase Referer ~*e\-collantes\.com spam_ref
 SetEnvIfNoCase Referer ~*e\-commerce\-seo1\.com spam_ref
@@ -2938,6 +2939,7 @@ SetEnvIfNoCase Referer ~*izhevsk\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*izismile\.com spam_ref
 SetEnvIfNoCase Referer ~*izoll\.ru spam_ref
 SetEnvIfNoCase Referer ~*j33x\.com spam_ref
+SetEnvIfNoCase Referer ~*jabimgo\.pw spam_ref
 SetEnvIfNoCase Referer ~*jacago\.com spam_ref
 SetEnvIfNoCase Referer ~*jackpotchances\.com spam_ref
 SetEnvIfNoCase Referer ~*jackwolfskinoutlet\.online spam_ref
@@ -2957,6 +2959,7 @@ SetEnvIfNoCase Referer ~*javitas\.info spam_ref
 SetEnvIfNoCase Referer ~*javrip\.net spam_ref
 SetEnvIfNoCase Referer ~*javstock\.com spam_ref
 SetEnvIfNoCase Referer ~*jav\-way\.site spam_ref
+SetEnvIfNoCase Referer ~*javxxx18\.com spam_ref
 SetEnvIfNoCase Referer ~*jaxcube\.info spam_ref
 SetEnvIfNoCase Referer ~*jbl\-charge\.info spam_ref
 SetEnvIfNoCase Referer ~*je7\.us spam_ref
