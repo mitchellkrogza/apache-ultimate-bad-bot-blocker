@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.05.1111
-### Bad Referrer Count: 6653
+### Version: V3.2019.05.1112
+### Bad Referrer Count: 6654
 ### Bad Bot Count: 539
 ### Version Information ##
 
@@ -1787,6 +1787,7 @@ SetEnvIfNoCase Referer cialisovercounteratwalmartusa\.com spambot=yes
 SetEnvIfNoCase Referer cialiswithoutadoctor\.net spambot=yes
 SetEnvIfNoCase Referer cibpenonptib\.flu\.cc spambot=yes
 SetEnvIfNoCase Referer cicaki\.net spambot=yes
+SetEnvIfNoCase Referer ciceros\.co spambot=yes
 SetEnvIfNoCase Referer ciekawinki\.pl spambot=yes
 SetEnvIfNoCase Referer cienum\.fr spambot=yes
 SetEnvIfNoCase Referer cigarpass\.com spambot=yes

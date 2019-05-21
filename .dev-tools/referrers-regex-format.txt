@@ -1232,6 +1232,7 @@ SetEnvIfNoCase Referer ~*cialis\-samples\.com spam_ref
 SetEnvIfNoCase Referer ~*cialiswithoutadoctor\.net spam_ref
 SetEnvIfNoCase Referer ~*cibpenonptib\.flu\.cc spam_ref
 SetEnvIfNoCase Referer ~*cicaki\.net spam_ref
+SetEnvIfNoCase Referer ~*ciceros\.co spam_ref
 SetEnvIfNoCase Referer ~*ciekawinki\.pl spam_ref
 SetEnvIfNoCase Referer ~*cienum\.fr spam_ref
 SetEnvIfNoCase Referer ~*cigarpass\.com spam_ref
