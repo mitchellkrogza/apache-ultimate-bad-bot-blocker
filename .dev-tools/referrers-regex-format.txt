@@ -3796,6 +3796,7 @@ SetEnvIfNoCase Referer ~*muz\-tracker\.net spam_ref
 SetEnvIfNoCase Referer ~*mvpicton\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*mwtpludn\.review spam_ref
 SetEnvIfNoCase Referer ~*mxgetcode\.com spam_ref
+SetEnvIfNoCase Referer ~*my\-aladin\.com spam_ref
 SetEnvIfNoCase Referer ~*myanyone\.net spam_ref
 SetEnvIfNoCase Referer ~*my\-bc\.ru spam_ref
 SetEnvIfNoCase Referer ~*my\-big\-family\.com spam_ref
