@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1116
-### Bad Referrer Count: 6683
+### Version: V3.2019.06.1117
+### Bad Referrer Count: 6688
 ### Bad Bot Count: 539
 ### Version Information ##
 
@@ -2246,6 +2246,7 @@ SetEnvIfNoCase Referer dostavka\-v\-krym\.com spambot=yes
 SetEnvIfNoCase Referer dostavka\-v\-ukrainu\.ru spambot=yes
 SetEnvIfNoCase Referer dosug\-lux\.ru spambot=yes
 SetEnvIfNoCase Referer dosugrostov\.site spambot=yes
+SetEnvIfNoCase Referer dotmass\.top spambot=yes
 SetEnvIfNoCase Referer dotnetdotcom\.org spambot=yes
 SetEnvIfNoCase Referer doublepimp\.com spambot=yes
 SetEnvIfNoCase Referer download\-of\-the\-warez\.blogspot\.com spambot=yes
@@ -2418,6 +2419,7 @@ SetEnvIfNoCase Referer encodable\.com spambot=yes
 SetEnvIfNoCase Referer energy\-ua\.com spambot=yes
 SetEnvIfNoCase Referer energydiet\-info\.ru spambot=yes
 SetEnvIfNoCase Referer energydiet24\.ru spambot=yes
+SetEnvIfNoCase Referer enews\.tech spambot=yes
 SetEnvIfNoCase Referer eng\-lyrics\.com spambot=yes
 SetEnvIfNoCase Referer enge\-fotzen\.info spambot=yes
 SetEnvIfNoCase Referer enginebay\.ru spambot=yes
@@ -3506,6 +3508,7 @@ SetEnvIfNoCase Referer jabimgo\.pw spambot=yes
 SetEnvIfNoCase Referer jacago\.com spambot=yes
 SetEnvIfNoCase Referer jackpotchances\.com spambot=yes
 SetEnvIfNoCase Referer jackwolfskinoutlet\.online spambot=yes
+SetEnvIfNoCase Referer jagg\.info spambot=yes
 SetEnvIfNoCase Referer james13prix\.info spambot=yes
 SetEnvIfNoCase Referer jamiembrown\.com spambot=yes
 SetEnvIfNoCase Referer janavibekken\.no spambot=yes
@@ -4982,6 +4985,7 @@ SetEnvIfNoCase Referer pornoplen\.com spambot=yes
 SetEnvIfNoCase Referer pornoreino\.com spambot=yes
 SetEnvIfNoCase Referer pornosee\.info spambot=yes
 SetEnvIfNoCase Referer pornosemki\.info spambot=yes
+SetEnvIfNoCase Referer pornosexrolik\.com spambot=yes
 SetEnvIfNoCase Referer pornoslive\.net spambot=yes
 SetEnvIfNoCase Referer pornosmola\.info spambot=yes
 SetEnvIfNoCase Referer pornotubexxx\.name spambot=yes
@@ -5627,6 +5631,7 @@ SetEnvIfNoCase Referer sexpartygirls\.net spambot=yes
 SetEnvIfNoCase Referer sexphoto\.site spambot=yes
 SetEnvIfNoCase Referer sexpornotales\.com spambot=yes
 SetEnvIfNoCase Referer sexreliz\.com spambot=yes
+SetEnvIfNoCase Referer sexs\-foto\.top spambot=yes
 SetEnvIfNoCase Referer sexsaoy\.com spambot=yes
 SetEnvIfNoCase Referer sexsearch\.com spambot=yes
 SetEnvIfNoCase Referer sexspornotub\.com spambot=yes

@@ -1692,6 +1692,7 @@ SetEnvIfNoCase Referer ~*dostavka\-v\-krym\.com spam_ref
 SetEnvIfNoCase Referer ~*dostavka\-v\-ukrainu\.ru spam_ref
 SetEnvIfNoCase Referer ~*dosug\-lux\.ru spam_ref
 SetEnvIfNoCase Referer ~*dosugrostov\.site spam_ref
+SetEnvIfNoCase Referer ~*dotmass\.top spam_ref
 SetEnvIfNoCase Referer ~*dotnetdotcom\.org spam_ref
 SetEnvIfNoCase Referer ~*doublepimp\.com spam_ref
 SetEnvIfNoCase Referer ~*downloaddy\.net spam_ref
@@ -1862,6 +1863,7 @@ SetEnvIfNoCase Referer ~*encodable\.com spam_ref
 SetEnvIfNoCase Referer ~*energydiet24\.ru spam_ref
 SetEnvIfNoCase Referer ~*energydiet\-info\.ru spam_ref
 SetEnvIfNoCase Referer ~*energy\-ua\.com spam_ref
+SetEnvIfNoCase Referer ~*enews\.tech spam_ref
 SetEnvIfNoCase Referer ~*enge\-fotzen\.info spam_ref
 SetEnvIfNoCase Referer ~*enginebay\.ru spam_ref
 SetEnvIfNoCase Referer ~*engines\-usa\.com spam_ref
@@ -2951,6 +2953,7 @@ SetEnvIfNoCase Referer ~*jabimgo\.pw spam_ref
 SetEnvIfNoCase Referer ~*jacago\.com spam_ref
 SetEnvIfNoCase Referer ~*jackpotchances\.com spam_ref
 SetEnvIfNoCase Referer ~*jackwolfskinoutlet\.online spam_ref
+SetEnvIfNoCase Referer ~*jagg\.info spam_ref
 SetEnvIfNoCase Referer ~*james13prix\.info spam_ref
 SetEnvIfNoCase Referer ~*jamiembrown\.com spam_ref
 SetEnvIfNoCase Referer ~*janavibekken\.no spam_ref
@@ -4424,6 +4427,7 @@ SetEnvIfNoCase Referer ~*porno\-raskazy\.ru spam_ref
 SetEnvIfNoCase Referer ~*pornoreino\.com spam_ref
 SetEnvIfNoCase Referer ~*pornosee\.info spam_ref
 SetEnvIfNoCase Referer ~*pornosemki\.info spam_ref
+SetEnvIfNoCase Referer ~*pornosexrolik\.com spam_ref
 SetEnvIfNoCase Referer ~*porno\.simple\-image\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*pornoslive\.net spam_ref
 SetEnvIfNoCase Referer ~*pornosmola\.info spam_ref
@@ -5069,6 +5073,7 @@ SetEnvIfNoCase Referer ~*sexreliz\.com spam_ref
 SetEnvIfNoCase Referer ~*sexsaoy\.com spam_ref
 SetEnvIfNoCase Referer ~*sexsearch\.com spam_ref
 SetEnvIfNoCase Referer ~*sex\-sex\-sex5\.com spam_ref
+SetEnvIfNoCase Referer ~*sexs\-foto\.top spam_ref
 SetEnvIfNoCase Referer ~*sexspornotub\.com spam_ref
 SetEnvIfNoCase Referer ~*sexstream\.pl spam_ref
 SetEnvIfNoCase Referer ~*sextracker\.be spam_ref
