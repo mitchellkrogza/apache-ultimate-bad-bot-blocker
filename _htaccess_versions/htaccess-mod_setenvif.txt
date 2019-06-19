@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1118
+### Version: V3.2019.06.1119
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 543
+### Bad Bot Count: 548
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -100,6 +100,7 @@ SetEnvIfNoCase User-Agent \bcrawler\.feedback\b spambot=yes
 SetEnvIfNoCase User-Agent \bcrawl\.sogou\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrazyWebCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bCrescent\b spambot=yes
+SetEnvIfNoCase User-Agent \bCrunchBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCSHttp\b spambot=yes
 SetEnvIfNoCase User-Agent \bCurious\b spambot=yes
 SetEnvIfNoCase User-Agent \bCusto\b spambot=yes
@@ -147,6 +148,7 @@ SetEnvIfNoCase User-Agent \bExtractorPro\b spambot=yes
 SetEnvIfNoCase User-Agent \bExtreme\ Picture\ Finder\b spambot=yes
 SetEnvIfNoCase User-Agent \bEyeNetIE\b spambot=yes
 SetEnvIfNoCase User-Agent \bEzooms\b spambot=yes
+SetEnvIfNoCase User-Agent \bfacebookscraper\b spambot=yes
 SetEnvIfNoCase User-Agent \bFDM\b spambot=yes
 SetEnvIfNoCase User-Agent \bFemtosearchBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bFHscan\b spambot=yes
@@ -331,6 +333,7 @@ SetEnvIfNoCase User-Agent \bPage\ Analyzer\b spambot=yes
 SetEnvIfNoCase User-Agent \bPageGrabber\b spambot=yes
 SetEnvIfNoCase User-Agent \bpage\ scorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bPageScorer\b spambot=yes
+SetEnvIfNoCase User-Agent \bPandalytics\b spambot=yes
 SetEnvIfNoCase User-Agent \bPanscient\b spambot=yes
 SetEnvIfNoCase User-Agent \bPapa\ Foto\b spambot=yes
 SetEnvIfNoCase User-Agent \bPavuk\b spambot=yes
@@ -416,6 +419,7 @@ SetEnvIfNoCase User-Agent \bSnake\b spambot=yes
 SetEnvIfNoCase User-Agent \bSnapbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSnoopy\b spambot=yes
 SetEnvIfNoCase User-Agent \bSocialRankIOBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSociscraper\b spambot=yes
 SetEnvIfNoCase User-Agent \bsogouspider\b spambot=yes
 SetEnvIfNoCase User-Agent \bSogou\ web\ spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bSosospider\b spambot=yes
@@ -471,6 +475,7 @@ SetEnvIfNoCase User-Agent \bTwengaBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bTwice\b spambot=yes
 SetEnvIfNoCase User-Agent \bTyphoeus\b spambot=yes
 SetEnvIfNoCase User-Agent \bUnisterBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bUpflow\b spambot=yes
 SetEnvIfNoCase User-Agent \bURLy\ Warning\b spambot=yes
 SetEnvIfNoCase User-Agent \bURLy\.Warning\b spambot=yes
 SetEnvIfNoCase User-Agent \bVacuum\b spambot=yes

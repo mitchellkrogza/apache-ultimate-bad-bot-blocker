@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1118
+### Version: V3.2019.06.1119
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 543
+### Bad Bot Count: 548
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -100,6 +100,7 @@ RewriteCond %{HTTP_USER_AGENT} \bcrawler\.feedback\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcrawl\.sogou\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrazyWebCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCrescent\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bCrunchBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCSHttp\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCurious\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCusto\b [NC,OR]
@@ -147,6 +148,7 @@ RewriteCond %{HTTP_USER_AGENT} \bExtractorPro\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bExtreme\ Picture\ Finder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bEyeNetIE\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bEzooms\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bfacebookscraper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFDM\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFemtosearchBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFHscan\b [NC,OR]
@@ -331,6 +333,7 @@ RewriteCond %{HTTP_USER_AGENT} \bPage\ Analyzer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPageGrabber\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bpage\ scorer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPageScorer\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bPandalytics\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPanscient\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPapa\ Foto\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPavuk\b [NC,OR]
@@ -416,6 +419,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSnake\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSnapbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSnoopy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSocialRankIOBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSociscraper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bsogouspider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSogou\ web\ spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSosospider\b [NC,OR]
@@ -471,6 +475,7 @@ RewriteCond %{HTTP_USER_AGENT} \bTwengaBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTwice\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTyphoeus\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bUnisterBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bUpflow\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bURLy\ Warning\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bURLy\.Warning\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVacuum\b [NC,OR]
