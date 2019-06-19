@@ -1,5 +1,4 @@
 # Fail2Ban Blacklist for Repeat Offenders of Apache (action.d)
-### If this helps you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
 
 ### Author: Mitchell Krog <mitchellkrog@gmail.com>
 ### Version: 1.1
@@ -13,6 +12,10 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
 ## Also follow me on twitter @ubuntu101za for update notifications
+
+## Help Support This Project 
+
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
 
 ##### Tested On: Fail2Ban 0.9.3 > 0.10.2
 ##### Server: Ubuntu 16.04.2 / Ubuntu 18.04.2
@@ -105,7 +108,9 @@ findtime = 604800   ; 1 week
 maxretry = 20
 ```
 
-### If this helped you [why not buy me a beer](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=TNCNMH8QVM78J):beer:
+## Help Support This Project 
+
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
