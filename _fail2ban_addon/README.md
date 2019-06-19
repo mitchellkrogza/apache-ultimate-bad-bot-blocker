@@ -30,11 +30,11 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 `chmod +x /etc/fail2ban/apache.repeatoffender`
 
-#### Drawbacks: 
+## Drawbacks: 
 Only works with IPTables
 
 :exclamation::exclamation::exclamation:
-#### Important Configuration Notes:
+## Important Configuration Notes:
 
 **You MUST have your file paths and default status for "enabled" declared by means of the recommended include in your [INCLUDES] section of your jail.conf or jail.local otherwise fail2ban will fail reloading when it cannot find the location `apache_access_log` or `nginx_access_log` you can also hard code log locations in your jail settings but this NOT a recommended or good practice. Your jail.local or jail.conf should have the includes as below.**
 
@@ -69,7 +69,7 @@ Once you have the error message or have fixed your error you just restart Fail2B
 
 `sudo service fail2ban restart`
 
-#### DOES NOT WORK - MY FAIL2BAN WON'T RESTART???
+## DOES NOT WORK - MY FAIL2BAN WON'T RESTART???
 
 **Yes it does work**, if you followed the instructions that is. It works and has been tested on almost every version of Fail2Ban.
 The most IMPORTANT steps of DEBUGGING Fail2Ban and why it fails reloading are posted just above this message. 
