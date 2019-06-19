@@ -2799,6 +2799,7 @@ SetEnvIfNoCase Referer ~*imagui\.eu spam_ref
 SetEnvIfNoCase Referer ~*imediadesk\.com spam_ref
 SetEnvIfNoCase Referer ~*imfamous\.info spam_ref
 SetEnvIfNoCase Referer ~*imgarcade\.com spam_ref
+SetEnvIfNoCase Referer ~*imgarit\.pw spam_ref
 SetEnvIfNoCase Referer ~*imgata\.com spam_ref
 SetEnvIfNoCase Referer ~*imguramx\.pw spam_ref
 SetEnvIfNoCase Referer ~*img\.wallpaperstock\.net spam_ref
@@ -3343,6 +3344,7 @@ SetEnvIfNoCase Referer ~*littlecity\.ch spam_ref
 SetEnvIfNoCase Referer ~*littlesunraiser\.com spam_ref
 SetEnvIfNoCase Referer ~*liumimgx\.pw spam_ref
 SetEnvIfNoCase Referer ~*liupis\.com spam_ref
+SetEnvIfNoCase Referer ~*live\-cam6\.info spam_ref
 SetEnvIfNoCase Referer ~*livefixer\.com spam_ref
 SetEnvIfNoCase Referer ~*liveinternet\.ro spam_ref
 SetEnvIfNoCase Referer ~*liveinternet\.ru spam_ref
@@ -3543,6 +3545,7 @@ SetEnvIfNoCase Referer ~*mecash\.ru spam_ref
 SetEnvIfNoCase Referer ~*meccadumps\.net spam_ref
 SetEnvIfNoCase Referer ~*medanestesia\.ru spam_ref
 SetEnvIfNoCase Referer ~*meddesk\.ru spam_ref
+SetEnvIfNoCase Referer ~*mediafresh\.online spam_ref
 SetEnvIfNoCase Referer ~*mediaoffers\.click spam_ref
 SetEnvIfNoCase Referer ~*mediawhirl\.net spam_ref
 SetEnvIfNoCase Referer ~*medicinacom\.ru spam_ref
@@ -5035,6 +5038,7 @@ SetEnvIfNoCase Referer ~*seo\-traffic\-ranking\.info spam_ref
 SetEnvIfNoCase Referer ~*serdcenebolit\.com spam_ref
 SetEnvIfNoCase Referer ~*sergiorossistore\.online spam_ref
 SetEnvIfNoCase Referer ~*serialsway\.ucoz\.ru spam_ref
+SetEnvIfNoCase Referer ~*serpstat\.com spam_ref
 SetEnvIfNoCase Referer ~*serptehnika\.ru spam_ref
 SetEnvIfNoCase Referer ~*servethis\.com spam_ref
 SetEnvIfNoCase Referer ~*service\.adtech\.fr spam_ref
@@ -6046,6 +6050,7 @@ SetEnvIfNoCase Referer ~*viagroid\.ru spam_ref
 SetEnvIfNoCase Referer ~*viandpet\.com spam_ref
 SetEnvIfNoCase Referer ~*viberdownload10\.com spam_ref
 SetEnvIfNoCase Referer ~*viddyoze\.com spam_ref
+SetEnvIfNoCase Referer ~*video\-camer\.com spam_ref
 SetEnvIfNoCase Referer ~*videochat\.bz spam_ref
 SetEnvIfNoCase Referer ~*videochat\.cafe spam_ref
 SetEnvIfNoCase Referer ~*video\-chat\.cn spam_ref

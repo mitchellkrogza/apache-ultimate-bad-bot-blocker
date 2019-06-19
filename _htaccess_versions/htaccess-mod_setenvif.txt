@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1117
-### Bad Referrer Count: 6688
-### Bad Bot Count: 539
+### Version: V3.2019.06.1118
+### Bad Referrer Count: 6693
+### Bad Bot Count: 543
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -236,7 +236,6 @@ SetEnvIfNoCase User-Agent \bLibWeb\b spambot=yes
 SetEnvIfNoCase User-Agent \bLibwhisker\b spambot=yes
 SetEnvIfNoCase User-Agent \bLightspeedsystems\b spambot=yes
 SetEnvIfNoCase User-Agent \bLikse\b spambot=yes
-SetEnvIfNoCase User-Agent \bLinguee\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkextractorPro\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkpadBot\b spambot=yes
@@ -247,6 +246,7 @@ SetEnvIfNoCase User-Agent \bLinqiaMetadataDownloaderBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinqiaRSSBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinqiaScrapeBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLipperhey\b spambot=yes
+SetEnvIfNoCase User-Agent \bLipperhey\ Spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bLitemage\_walker\b spambot=yes
 SetEnvIfNoCase User-Agent \bLmspider\b spambot=yes
 SetEnvIfNoCase User-Agent \bLNSpiderguy\b spambot=yes
@@ -265,7 +265,9 @@ SetEnvIfNoCase User-Agent \bMasscan\b spambot=yes
 SetEnvIfNoCase User-Agent \bMass\ Downloader\b spambot=yes
 SetEnvIfNoCase User-Agent \bMata\ Hari\b spambot=yes
 SetEnvIfNoCase User-Agent \bMauiBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bmeanpathbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bMeanpathbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bMeanPath\ Bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bMediatoolkitbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bmediawords\b spambot=yes
 SetEnvIfNoCase User-Agent \bMegaIndex\.ru\b spambot=yes
@@ -386,12 +388,14 @@ SetEnvIfNoCase User-Agent \bSearchmetricsBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrush\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrushBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOkicks\b spambot=yes
+SetEnvIfNoCase User-Agent \bSEOkicks\-Robot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOlyticsCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeomoz\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOprofiler\b spambot=yes
 SetEnvIfNoCase User-Agent \bseoscanners\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOstats\b spambot=yes
+SetEnvIfNoCase User-Agent \bserpstatbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bsexsearcher\b spambot=yes
 SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiphon\b spambot=yes
@@ -420,9 +424,11 @@ SetEnvIfNoCase User-Agent \bSpaceBison\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpammen\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpankBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpanner\b spambot=yes
+SetEnvIfNoCase User-Agent \bsp\_auditbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpinn3r\b spambot=yes
 SetEnvIfNoCase User-Agent \bSputnikBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bspyfu\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqlmap\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqlworm\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqworm\b spambot=yes
@@ -539,7 +545,6 @@ SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXenu\b spambot=yes
 SetEnvIfNoCase User-Agent \bxpymep1\.exe\b spambot=yes
-SetEnvIfNoCase User-Agent \bYandexBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bYoudaoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZade\b spambot=yes
 SetEnvIfNoCase User-Agent \bZauba\b spambot=yes
@@ -549,7 +554,6 @@ SetEnvIfNoCase User-Agent \bZeus\b spambot=yes
 SetEnvIfNoCase User-Agent \bzgrab\b spambot=yes
 SetEnvIfNoCase User-Agent \bZitebot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZmEu\b spambot=yes
-SetEnvIfNoCase User-Agent \bZoominfoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZumBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZyBorg\b spambot=yes
 SetEnvIfNoCase Referer 000free\.us spambot=yes
@@ -3356,6 +3360,7 @@ SetEnvIfNoCase Referer imediadesk\.com spambot=yes
 SetEnvIfNoCase Referer imfamous\.info spambot=yes
 SetEnvIfNoCase Referer img\.wallpaperstock\.net spambot=yes
 SetEnvIfNoCase Referer imgarcade\.com spambot=yes
+SetEnvIfNoCase Referer imgarit\.pw spambot=yes
 SetEnvIfNoCase Referer imgata\.com spambot=yes
 SetEnvIfNoCase Referer imguramx\.pw spambot=yes
 SetEnvIfNoCase Referer imicrovision\.com spambot=yes
@@ -3897,6 +3902,7 @@ SetEnvIfNoCase Referer littlecity\.ch spambot=yes
 SetEnvIfNoCase Referer littlesunraiser\.com spambot=yes
 SetEnvIfNoCase Referer liumimgx\.pw spambot=yes
 SetEnvIfNoCase Referer liupis\.com spambot=yes
+SetEnvIfNoCase Referer live\-cam6\.info spambot=yes
 SetEnvIfNoCase Referer live\-sexcam\.tk spambot=yes
 SetEnvIfNoCase Referer live\-sexchat\.ru spambot=yes
 SetEnvIfNoCase Referer livefixer\.com spambot=yes
@@ -4101,6 +4107,7 @@ SetEnvIfNoCase Referer med\-zdorovie\.com\.ua spambot=yes
 SetEnvIfNoCase Referer medanestesia\.ru spambot=yes
 SetEnvIfNoCase Referer meddesk\.ru spambot=yes
 SetEnvIfNoCase Referer medi\-fitt\.hu spambot=yes
+SetEnvIfNoCase Referer mediafresh\.online spambot=yes
 SetEnvIfNoCase Referer mediaoffers\.click spambot=yes
 SetEnvIfNoCase Referer mediawhirl\.net spambot=yes
 SetEnvIfNoCase Referer medicinacom\.ru spambot=yes
@@ -5593,6 +5600,7 @@ SetEnvIfNoCase Referer seotoolsagency\.com spambot=yes
 SetEnvIfNoCase Referer serdcenebolit\.com spambot=yes
 SetEnvIfNoCase Referer sergiorossistore\.online spambot=yes
 SetEnvIfNoCase Referer serialsway\.ucoz\.ru spambot=yes
+SetEnvIfNoCase Referer serpstat\.com spambot=yes
 SetEnvIfNoCase Referer serptehnika\.ru spambot=yes
 SetEnvIfNoCase Referer servethis\.com spambot=yes
 SetEnvIfNoCase Referer service\-core\.ru spambot=yes
@@ -6601,6 +6609,7 @@ SetEnvIfNoCase Referer viandpet\.com spambot=yes
 SetEnvIfNoCase Referer viberdownload10\.com spambot=yes
 SetEnvIfNoCase Referer viddyoze\.com spambot=yes
 SetEnvIfNoCase Referer video\-\-production\.com spambot=yes
+SetEnvIfNoCase Referer video\-camer\.com spambot=yes
 SetEnvIfNoCase Referer video\-chat\.cn spambot=yes
 SetEnvIfNoCase Referer video\-chat\.in spambot=yes
 SetEnvIfNoCase Referer video\-chat\.love spambot=yes
