@@ -1,15 +1,25 @@
 # Fail2Ban Blacklist for Repeat Offenders of Apache (action.d)
 
-### Author: Mitchell Krog <mitchellkrog@gmail.com>
-### Version: 1.1
-
+************************************************
 # Add on for Apache Ultimate Bad Bot and Spam Referrer Blocker
 GitHub: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+************************************************
+
+************************************************
+- Created by: https://github.com/mitchellkrogza for use on Nginx Web Server https://www.nginx.com/
+- Copyright Mitchell Krog <mitchellkrog@gmail.com>
+
+************************************************
+- Tested On: Fail2Ban 0.9.3 > 0.10.2
+- Server: Ubuntu 16.04.2 / Ubuntu 18.04.2
+- Firewall: IPTables
+************************************************
 
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
+************************************************
 
 ## Also follow me on twitter @ubuntu101za for update notifications
 
@@ -17,22 +27,24 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 [<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
 
-##### Tested On: Fail2Ban 0.9.3 > 0.10.2
-##### Server: Ubuntu 16.04.2 / Ubuntu 18.04.2
-##### Firewall: IPTables
-
-### Dependancies: 
+************************************************
+## Dependancies: 
 ##### requires apacherepeatoffender.conf in /etc/fail2ban/filter.d folder
 ##### requires apacherepeatoffender.conf in /etc/fail2ban/action.d folder
 ##### requires jail settings called [apacherepeatoffender]
 ##### requires apache.repeatoffender file in /etc/fail2ban
-`create with sudo touch /etc/fail2ban/apache.repeatoffender`
 
-`chmod +x /etc/fail2ban/apache.repeatoffender`
+Create With:
 
+`sudo touch /etc/fail2ban/apache.repeatoffender`
+
+`sudo chmod +x /etc/fail2ban/apache.repeatoffender`
+
+************************************************
 ## Drawbacks: 
 Only works with IPTables
 
+************************************************
 :exclamation::exclamation::exclamation:
 ## Important Configuration Notes:
 
@@ -69,6 +81,7 @@ Once you have the error message or have fixed your error you just restart Fail2B
 
 `sudo service fail2ban restart`
 
+************************************************
 ## DOES NOT WORK - MY FAIL2BAN WON'T RESTART???
 
 **Yes it does work**, if you followed the instructions that is. It works and has been tested on almost every version of Fail2Ban.
@@ -82,7 +95,8 @@ For your convenience I will post them again as they are extremely important step
 `sudo fail2ban-client -vvv -x start`
 
 
-#### Based on: 
+************************************************
+## Based on: 
 The Recidive Jail from Fail2Ban
 
 This custom filter and action for Fail2Ban will monitor your Apache logs and perma-ban
@@ -108,13 +122,45 @@ findtime = 604800   ; 1 week
 maxretry = 20
 ```
 
+************************************************
 ## Help Support This Project 
 
 [<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
 
+************************************************
 ## Update Notification System
 Please subscribe your email address to the mailing list at **https://groups.google.com/forum/#!forum/apache-ultimate-bad-bot-blocker**
 or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@googlegroups.com** to subscribe.
 **Please make sure you are subscribed to notifications** to be notified when the blocker is updated and also to be notified when any important or mission critical changes take place.
 
-## Also follow me on twitter @ubuntu101za for update notifications
+### Writing Code like this takes lots of time !!
+
+## Help Support This Project 
+
+[<img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
+
+<img src="https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/.assets/zuko.png"/>
+
+************************************************
+# MIT License
+
+## Copyright (c) 2017 Mitchell Krog - mitchellkrog@gmail.com
+## https://github.com/mitchellkrogza
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+SOFTWARE.
