@@ -14,8 +14,8 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 ## Also follow me on twitter @ubuntu101za for update notifications
 
-##### Tested On: Fail2Ban 0.9.3
-##### Server: Ubuntu 16.04
+##### Tested On: Fail2Ban 0.9.3 > 0.10.2
+##### Server: Ubuntu 16.04.2 / Ubuntu 18.04.2
 ##### Firewall: IPTables
 
 ### Dependancies: 
@@ -29,6 +29,49 @@ or simply send a blank email to **apache-ultimate-bad-bot-blocker+subscribe@goog
 
 #### Drawbacks: 
 Only works with IPTables
+
+:exclamation::exclamation::exclamation:
+#### Important Configuration Notes:
+
+- You MUST have your file paths and default status for "enabled" declared by means of the recommended include in your [INCLUDES] section of your jail.conf or jail.local otherwise fail2ban will fail reloading when it cannot find the location `apache_access_log` or `nginx_access_log` you can also hard code log locations in your jail settings but this NOT a recommended or good practice. Your jail.local or jail.conf should have the includes as below.
+
+```
+[INCLUDES]
+before = paths-common.conf
+enabled - false
+```
+or
+```
+[INCLUDES]
+before = paths-debian.conf
+enabled - false
+```
+
+Please Note: 
+Above we have the recommended default of "enabled = false" this is recommended good practice. 
+It disables all jails until you enable each one manually. 
+
+- To DEBUG Fail2Ban when it will not reload PLEASE follow the following commands in this exact order. Then post your error messages in a NEW ISSUE. ONLY post the last 3-4 lines where the error starts NOT the whole log message.
+
+`sudo service fail2ban stop`
+`sudo fail2ban-client -vvv -x stop`
+`sudo fail2ban-client -vvv -x start`
+
+The 3rd step runs fail2ban in verbose client mode and will point you to the exact location where Fail2Ban stopped loading. Once you have this error message copy ONLY the last 3-4 lines and post them in a new ISSUE although if you read the message you shold quickly understand why you broke Fail2Ban and why it is not loading.
+
+Once you have the error message or have fixed your error you just restart Fail2Ban as follows:
+
+`sudo service fail2ban restart`
+
+#### DOES NOT WORK - MY FAIL2BAN WON'T RESTART???
+
+Yes it does work, if you followed the instructions that is. It works and has been tested on almost every version of Fail2Ban.
+The most IMPORTANT steps of DEBUGGING Fail2Ban and why it fails reloading are posted just above this message. 
+For your convenience I will post them again as they are extremely important steps for debugging Fail2Ban not only for this jail but any jail.
+
+`sudo service fail2ban stop`
+`sudo fail2ban-client -vvv -x stop`
+`sudo fail2ban-client -vvv -x start`
 
 
 #### Based on: 
