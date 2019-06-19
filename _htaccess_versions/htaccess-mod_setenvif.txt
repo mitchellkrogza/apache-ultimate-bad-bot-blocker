@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1119
+### Version: V3.2019.06.1120
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 548
+### Bad Bot Count: 553
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -19,6 +19,7 @@ SetEnvIfNoCase User-Agent \b404enemy\b spambot=yes
 SetEnvIfNoCase User-Agent \b80legs\b spambot=yes
 SetEnvIfNoCase User-Agent \bAbonti\b spambot=yes
 SetEnvIfNoCase User-Agent \bAboundex\b spambot=yes
+SetEnvIfNoCase User-Agent \bAboundexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAcunetix\b spambot=yes
 SetEnvIfNoCase User-Agent \bADmantX\b spambot=yes
 SetEnvIfNoCase User-Agent \bAfD\-Verbotsverfahren\b spambot=yes
@@ -128,6 +129,7 @@ SetEnvIfNoCase User-Agent \bDotbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDownload\ Wonder\b spambot=yes
 SetEnvIfNoCase User-Agent \bDragonfly\b spambot=yes
 SetEnvIfNoCase User-Agent \bDrip\b spambot=yes
+SetEnvIfNoCase User-Agent \bDSearch\b spambot=yes
 SetEnvIfNoCase User-Agent \bDTS\ Agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bEasyDL\b spambot=yes
 SetEnvIfNoCase User-Agent \bEbingbong\b spambot=yes
@@ -261,6 +263,8 @@ SetEnvIfNoCase User-Agent \bMag\-Net\b spambot=yes
 SetEnvIfNoCase User-Agent \bmagpie\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bMail\.RU\_Bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bMajestic12\b spambot=yes
+SetEnvIfNoCase User-Agent \bMajestic\ SEO\b spambot=yes
+SetEnvIfNoCase User-Agent \bMajestic\-SEO\b spambot=yes
 SetEnvIfNoCase User-Agent \bMarkMonitor\b spambot=yes
 SetEnvIfNoCase User-Agent \bMarkWatch\b spambot=yes
 SetEnvIfNoCase User-Agent \bMasscan\b spambot=yes
@@ -383,6 +387,7 @@ SetEnvIfNoCase User-Agent \bSBIder\b spambot=yes
 SetEnvIfNoCase User-Agent \bScanAlert\b spambot=yes
 SetEnvIfNoCase User-Agent \bScanbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bscan\.lol\b spambot=yes
+SetEnvIfNoCase User-Agent \bScoutJet\b spambot=yes
 SetEnvIfNoCase User-Agent \bScrapy\b spambot=yes
 SetEnvIfNoCase User-Agent \bScreaming\b spambot=yes
 SetEnvIfNoCase User-Agent \bScreenerBot\b spambot=yes

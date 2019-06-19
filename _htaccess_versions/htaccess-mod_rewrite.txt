@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1119
+### Version: V3.2019.06.1120
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 548
+### Bad Bot Count: 553
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -19,6 +19,7 @@ RewriteCond %{HTTP_USER_AGENT} \b404enemy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b80legs\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAbonti\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAboundex\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAboundexbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAcunetix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bADmantX\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAfD\-Verbotsverfahren\b [NC,OR]
@@ -128,6 +129,7 @@ RewriteCond %{HTTP_USER_AGENT} \bDotbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDownload\ Wonder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDragonfly\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDrip\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bDSearch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDTS\ Agent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bEasyDL\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bEbingbong\b [NC,OR]
@@ -261,6 +263,8 @@ RewriteCond %{HTTP_USER_AGENT} \bMag\-Net\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bmagpie\-crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMail\.RU\_Bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMajestic12\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bMajestic\ SEO\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bMajestic\-SEO\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMarkMonitor\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMarkWatch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMasscan\b [NC,OR]
@@ -383,6 +387,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSBIder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScanAlert\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScanbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bscan\.lol\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bScoutJet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScrapy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScreaming\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScreenerBot\b [NC,OR]
