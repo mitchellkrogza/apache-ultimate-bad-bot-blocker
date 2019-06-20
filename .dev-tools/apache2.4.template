@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.06.1120
-### Updated: Wed Jun 19 10:21:07 SAST 2019
+### Version: V3.2019.06.1121
+### Updated: Thu Jun 20 09:12:26 SAST 2019
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 554
+### Bad Bot Count: 556
 ###################################################
 ### Version Information ##
 
@@ -269,6 +269,7 @@ BrowserMatchNoCase "^(.*?)(\bDirbuster\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDisco\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDiscobot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDiscoverybot\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bDispatch\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDittoSpyder\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDnyzBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bDomainAppender\b)(.*)$" bad_bot
@@ -371,6 +372,7 @@ BrowserMatchNoCase "^(.*?)(\bJamesBOT\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJbrofuzz\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJennyBot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJetCar\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bJetty\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJikeSpider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJOC\ Web\ Spider\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bJoomla\b)(.*)$" bad_bot
@@ -466,6 +468,7 @@ BrowserMatchNoCase "^(.*?)(\bNICErsPRO\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNiki-bot\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNikto\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNimbleCrawler\b)(.*)$" bad_bot
+BrowserMatchNoCase "^(.*?)(\bNimbostratus\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNinja\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNmap\b)(.*)$" bad_bot
 BrowserMatchNoCase "^(.*?)(\bNPbot\b)(.*)$" bad_bot

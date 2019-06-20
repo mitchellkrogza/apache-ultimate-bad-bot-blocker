@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1120
+### Version: V3.2019.06.1121
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 553
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -119,6 +119,7 @@ RewriteCond %{HTTP_USER_AGENT} \bDirbuster\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDisco\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDiscobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDiscoverybot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bDispatch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDittoSpyder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDnyzBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDomainAppender\b [NC,OR]
@@ -221,6 +222,7 @@ RewriteCond %{HTTP_USER_AGENT} \bJamesBOT\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJbrofuzz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJennyBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJetCar\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bJetty\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJikeSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJOC\ Web\ Spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJoomla\b [NC,OR]
@@ -316,6 +318,7 @@ RewriteCond %{HTTP_USER_AGENT} \bNICErsPRO\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNiki\-bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNikto\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNimbleCrawler\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bNimbostratus\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNinja\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNmap\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bNPbot\b [NC,OR]

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1120
+### Version: V3.2019.06.1121
 ### Bad Referrer Count: 6693
-### Bad Bot Count: 553
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -119,6 +119,7 @@ SetEnvIfNoCase User-Agent \bDirbuster\b spambot=yes
 SetEnvIfNoCase User-Agent \bDisco\b spambot=yes
 SetEnvIfNoCase User-Agent \bDiscobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDiscoverybot\b spambot=yes
+SetEnvIfNoCase User-Agent \bDispatch\b spambot=yes
 SetEnvIfNoCase User-Agent \bDittoSpyder\b spambot=yes
 SetEnvIfNoCase User-Agent \bDnyzBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDomainAppender\b spambot=yes
@@ -221,6 +222,7 @@ SetEnvIfNoCase User-Agent \bJamesBOT\b spambot=yes
 SetEnvIfNoCase User-Agent \bJbrofuzz\b spambot=yes
 SetEnvIfNoCase User-Agent \bJennyBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bJetCar\b spambot=yes
+SetEnvIfNoCase User-Agent \bJetty\b spambot=yes
 SetEnvIfNoCase User-Agent \bJikeSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bJOC\ Web\ Spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bJoomla\b spambot=yes
@@ -316,6 +318,7 @@ SetEnvIfNoCase User-Agent \bNICErsPRO\b spambot=yes
 SetEnvIfNoCase User-Agent \bNiki\-bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bNikto\b spambot=yes
 SetEnvIfNoCase User-Agent \bNimbleCrawler\b spambot=yes
+SetEnvIfNoCase User-Agent \bNimbostratus\b spambot=yes
 SetEnvIfNoCase User-Agent \bNinja\b spambot=yes
 SetEnvIfNoCase User-Agent \bNmap\b spambot=yes
 SetEnvIfNoCase User-Agent \bNPbot\b spambot=yes
