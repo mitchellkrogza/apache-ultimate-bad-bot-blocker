@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1123
-### Bad Referrer Count: 6712
-### Bad Bot Count: 557
+### Version: V3.2019.06.1124
+### Bad Referrer Count: 6713
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -66,7 +66,6 @@ SetEnvIfNoCase User-Agent \bBolt\b spambot=yes
 SetEnvIfNoCase User-Agent \bBotALot\b spambot=yes
 SetEnvIfNoCase User-Agent \bBrandprotect\b spambot=yes
 SetEnvIfNoCase User-Agent \bBrandwatch\b spambot=yes
-SetEnvIfNoCase User-Agent \bBubing\b spambot=yes
 SetEnvIfNoCase User-Agent \bBuddy\b spambot=yes
 SetEnvIfNoCase User-Agent \bBuiltBotTough\b spambot=yes
 SetEnvIfNoCase User-Agent \bBuiltWith\b spambot=yes
@@ -420,7 +419,6 @@ SetEnvIfNoCase User-Agent \bSiteSnagger\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteSucker\b spambot=yes
 SetEnvIfNoCase User-Agent \bSite\ Sucker\b spambot=yes
 SetEnvIfNoCase User-Agent \bSitevigil\b spambot=yes
-SetEnvIfNoCase User-Agent \bSlackbot\-LinkExpanding\b spambot=yes
 SetEnvIfNoCase User-Agent \bSlySearch\b spambot=yes
 SetEnvIfNoCase User-Agent \bSmartDownload\b spambot=yes
 SetEnvIfNoCase User-Agent \bSMTBot\b spambot=yes
@@ -467,6 +465,7 @@ SetEnvIfNoCase User-Agent \bTelesphoreo\b spambot=yes
 SetEnvIfNoCase User-Agent \bTelesphorep\b spambot=yes
 SetEnvIfNoCase User-Agent \bThe\ Intraformant\b spambot=yes
 SetEnvIfNoCase User-Agent \bTheNomad\b spambot=yes
+SetEnvIfNoCase User-Agent \bThumbor\b spambot=yes
 SetEnvIfNoCase User-Agent \bTightTwatBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bTitan\b spambot=yes
 SetEnvIfNoCase User-Agent \bToata\b spambot=yes
@@ -925,6 +924,7 @@ SetEnvIfNoCase Referer alldezservice\.kz spambot=yes
 SetEnvIfNoCase Referer alldownload\.pw spambot=yes
 SetEnvIfNoCase Referer alldubai\.biz spambot=yes
 SetEnvIfNoCase Referer allesohnegirls\.net spambot=yes
+SetEnvIfNoCase Referer allfinweb\.com spambot=yes
 SetEnvIfNoCase Referer allforminecraft\.ru spambot=yes
 SetEnvIfNoCase Referer allknow\.info spambot=yes
 SetEnvIfNoCase Referer allkrim\.com spambot=yes
@@ -2216,6 +2216,7 @@ SetEnvIfNoCase Referer djstools\.com spambot=yes
 SetEnvIfNoCase Referer dktr\.ru spambot=yes
 SetEnvIfNoCase Referer dkvorota\.ru spambot=yes
 SetEnvIfNoCase Referer dlya\-android\.org spambot=yes
+SetEnvIfNoCase Referer dmmspy\.com spambot=yes
 SetEnvIfNoCase Referer dms\-sw\.ru spambot=yes
 SetEnvIfNoCase Referer dnepr\-avtospar\.com\.ua spambot=yes
 SetEnvIfNoCase Referer dnepropetrovsk\.mistr\-x\.org spambot=yes
@@ -3675,7 +3676,6 @@ SetEnvIfNoCase Referer kichenaid\.ru spambot=yes
 SetEnvIfNoCase Referer kicknights\.gq spambot=yes
 SetEnvIfNoCase Referer kidd\.reunionwatch\.com spambot=yes
 SetEnvIfNoCase Referer kidskunst\.info spambot=yes
-SetEnvIfNoCase Referer kiev\.ua spambot=yes
 SetEnvIfNoCase Referer kihi\.gdn spambot=yes
 SetEnvIfNoCase Referer kiinomaniak\.pl spambot=yes
 SetEnvIfNoCase Referer kimcurlrvsms\.com spambot=yes

@@ -350,6 +350,7 @@ SetEnvIfNoCase Referer ~*alldezservice\.kz spam_ref
 SetEnvIfNoCase Referer ~*alldownload\.pw spam_ref
 SetEnvIfNoCase Referer ~*alldubai\.biz spam_ref
 SetEnvIfNoCase Referer ~*allesohnegirls\.net spam_ref
+SetEnvIfNoCase Referer ~*allfinweb\.com spam_ref
 SetEnvIfNoCase Referer ~*allforminecraft\.ru spam_ref
 SetEnvIfNoCase Referer ~*allknow\.info spam_ref
 SetEnvIfNoCase Referer ~*allkrim\.com spam_ref
@@ -1644,6 +1645,7 @@ SetEnvIfNoCase Referer ~*djstools\.com spam_ref
 SetEnvIfNoCase Referer ~*dktr\.ru spam_ref
 SetEnvIfNoCase Referer ~*dkvorota\.ru spam_ref
 SetEnvIfNoCase Referer ~*dlya\-android\.org spam_ref
+SetEnvIfNoCase Referer ~*dmmspy\.com spam_ref
 SetEnvIfNoCase Referer ~*dms\-sw\.ru spam_ref
 SetEnvIfNoCase Referer ~*dnepr\-avtospar\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*dnepropetrovsk\.mistr\-x\.org spam_ref
@@ -3103,7 +3105,6 @@ SetEnvIfNoCase Referer ~*kichenaid\.ru spam_ref
 SetEnvIfNoCase Referer ~*kicknights\.gq spam_ref
 SetEnvIfNoCase Referer ~*kidd\.reunionwatch\.com spam_ref
 SetEnvIfNoCase Referer ~*kidskunst\.info spam_ref
-SetEnvIfNoCase Referer ~*kiev\.ua spam_ref
 SetEnvIfNoCase Referer ~*kihi\.gdn spam_ref
 SetEnvIfNoCase Referer ~*kiinomaniak\.pl spam_ref
 SetEnvIfNoCase Referer ~*kimcurlrvsms\.com spam_ref

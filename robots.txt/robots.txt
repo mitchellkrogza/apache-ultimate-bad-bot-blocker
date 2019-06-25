@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.06.1123
-### Updated: Mon Jun 24 10:08:01 SAST 2019
-### Bad Bot Count: 557
+### Version: V3.2019.06.1124
+### Updated: Tue Jun 25 16:15:09 SAST 2019
+### Bad Bot Count: 556
 ###################################################
 ### Version Information ##
 
@@ -120,8 +120,6 @@ Disallow:/
 User-agent: Brandprotect
 Disallow:/
 User-agent: Brandwatch
-Disallow:/
-User-agent: Bubing
 Disallow:/
 User-agent: Buddy
 Disallow:/
@@ -829,8 +827,6 @@ User-agent: Site Sucker
 Disallow:/
 User-agent: Sitevigil
 Disallow:/
-User-agent: Slackbot-LinkExpanding
-Disallow:/
 User-agent: SlySearch
 Disallow:/
 User-agent: SmartDownload
@@ -922,6 +918,8 @@ Disallow:/
 User-agent: The Intraformant
 Disallow:/
 User-agent: TheNomad
+Disallow:/
+User-agent: Thumbor
 Disallow:/
 User-agent: TightTwatBot
 Disallow:/

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1123
-### Bad Referrer Count: 6712
-### Bad Bot Count: 557
+### Version: V3.2019.06.1124
+### Bad Referrer Count: 6713
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -66,7 +66,6 @@ RewriteCond %{HTTP_USER_AGENT} \bBolt\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBotALot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBrandprotect\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBrandwatch\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bBubing\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBuddy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBuiltBotTough\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBuiltWith\b [NC,OR]
@@ -420,7 +419,6 @@ RewriteCond %{HTTP_USER_AGENT} \bSiteSnagger\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteSucker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSite\ Sucker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSitevigil\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bSlackbot\-LinkExpanding\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSlySearch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSmartDownload\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSMTBot\b [NC,OR]
@@ -467,6 +465,7 @@ RewriteCond %{HTTP_USER_AGENT} \bTelesphoreo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTelesphorep\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bThe\ Intraformant\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTheNomad\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bThumbor\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTightTwatBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTitan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bToata\b [NC,OR]
@@ -925,6 +924,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*alldezservice\.kz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*alldownload\.pw.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*alldubai\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*allesohnegirls\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*allfinweb\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*allforminecraft\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*allknow\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*allkrim\.com.*$ [NC,OR]
@@ -2216,6 +2216,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*djstools\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dktr\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dkvorota\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dlya\-android\.org.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dmmspy\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dms\-sw\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dnepr\-avtospar\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*dnepropetrovsk\.mistr\-x\.org.*$ [NC,OR]
@@ -3675,7 +3676,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kichenaid\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kicknights\.gq.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kidd\.reunionwatch\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kidskunst\.info.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kiev\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kihi\.gdn.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kiinomaniak\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*kimcurlrvsms\.com.*$ [NC,OR]
