@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.06.1124
-### Bad Referrer Count: 6713
+### Version: V3.2019.07.1125
+### Bad Referrer Count: 6719
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -1810,6 +1810,7 @@ SetEnvIfNoCase Referer cialis\-samples\.com spambot=yes
 SetEnvIfNoCase Referer cialischmrx\.com spambot=yes
 SetEnvIfNoCase Referer cialischsrx\.com spambot=yes
 SetEnvIfNoCase Referer cialischstgerts\.com spambot=yes
+SetEnvIfNoCase Referer cialisndbrx\.com spambot=yes
 SetEnvIfNoCase Referer cialisovercounteratwalmartusa\.com spambot=yes
 SetEnvIfNoCase Referer cialiswithoutadoctor\.net spambot=yes
 SetEnvIfNoCase Referer cibpenonptib\.flu\.cc spambot=yes
@@ -3427,6 +3428,7 @@ SetEnvIfNoCase Referer infokonkurs\.ru spambot=yes
 SetEnvIfNoCase Referer informatiecentro\.be spambot=yes
 SetEnvIfNoCase Referer infospot\.pt spambot=yes
 SetEnvIfNoCase Referer infostatsvc\.com spambot=yes
+SetEnvIfNoCase Referer infoupdate\.org spambot=yes
 SetEnvIfNoCase Referer infowarcraft\.ru spambot=yes
 SetEnvIfNoCase Referer inmate\-locator\.us spambot=yes
 SetEnvIfNoCase Referer innodgfdriverhm\.aircus\.com spambot=yes
@@ -4471,6 +4473,7 @@ SetEnvIfNoCase Referer nastroyke\.net spambot=yes
 SetEnvIfNoCase Referer nastydollars\.com spambot=yes
 SetEnvIfNoCase Referer natali\-forex\.com spambot=yes
 SetEnvIfNoCase Referer nate\.com spambot=yes
+SetEnvIfNoCase Referer national\-today\-winning\-winner\.club spambot=yes
 SetEnvIfNoCase Referer nationalbreakdown\.com spambot=yes
 SetEnvIfNoCase Referer naturalbreakthroughsresearch\.com spambot=yes
 SetEnvIfNoCase Referer naturalpharm\.com\.ua spambot=yes
@@ -5341,6 +5344,7 @@ SetEnvIfNoCase Referer rezeptiblud\.ru spambot=yes
 SetEnvIfNoCase Referer rfd\-split\.hr spambot=yes
 SetEnvIfNoCase Referer rff\-cfal\.info spambot=yes
 SetEnvIfNoCase Referer rfid\-locker\.co spambot=yes
+SetEnvIfNoCase Referer rfserial\.net spambot=yes
 SetEnvIfNoCase Referer rialp\.getenjoyment\.net spambot=yes
 SetEnvIfNoCase Referer ribieiendom\.no spambot=yes
 SetEnvIfNoCase Referer ric\.info spambot=yes
@@ -5906,6 +5910,7 @@ SetEnvIfNoCase Referer sophang8\.com spambot=yes
 SetEnvIfNoCase Referer sortthemesitesby\.com spambot=yes
 SetEnvIfNoCase Referer sosdepotdebilan\.com spambot=yes
 SetEnvIfNoCase Referer soserfis\.com spambot=yes
+SetEnvIfNoCase Referer sotechco\.co spambot=yes
 SetEnvIfNoCase Referer sotkal\.lark\.ru spambot=yes
 SetEnvIfNoCase Referer soundfrost\.org spambot=yes
 SetEnvIfNoCase Referer souvenir\.cc spambot=yes
@@ -6380,6 +6385,7 @@ SetEnvIfNoCase Referer tradedeals\.biz spambot=yes
 SetEnvIfNoCase Referer traderzplanet\.in spambot=yes
 SetEnvIfNoCase Referer tradgardspartner\.se spambot=yes
 SetEnvIfNoCase Referer trafaret74\.ru spambot=yes
+SetEnvIfNoCase Referer traffic\-club\.info spambot=yes
 SetEnvIfNoCase Referer traffic100\.com spambot=yes
 SetEnvIfNoCase Referer traffic2cash\.org spambot=yes
 SetEnvIfNoCase Referer traffic2money\.com spambot=yes

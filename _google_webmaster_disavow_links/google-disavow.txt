@@ -1239,6 +1239,7 @@ domain:cialis-samples.com
 domain:cialischmrx.com
 domain:cialischsrx.com
 domain:cialischstgerts.com
+domain:cialisndbrx.com
 domain:cialisovercounteratwalmartusa.com
 domain:cialiswithoutadoctor.net
 domain:cibpenonptib.flu.cc
@@ -2856,6 +2857,7 @@ domain:infokonkurs.ru
 domain:informatiecentro.be
 domain:infospot.pt
 domain:infostatsvc.com
+domain:infoupdate.org
 domain:infowarcraft.ru
 domain:inmate-locator.us
 domain:innodgfdriverhm.aircus.com
@@ -3900,6 +3902,7 @@ domain:nastroyke.net
 domain:nastydollars.com
 domain:natali-forex.com
 domain:nate.com
+domain:national-today-winning-winner.club
 domain:nationalbreakdown.com
 domain:naturalbreakthroughsresearch.com
 domain:naturalpharm.com.ua
@@ -4770,6 +4773,7 @@ domain:rezeptiblud.ru
 domain:rfd-split.hr
 domain:rff-cfal.info
 domain:rfid-locker.co
+domain:rfserial.net
 domain:rialp.getenjoyment.net
 domain:ribieiendom.no
 domain:ric.info
@@ -5335,6 +5339,7 @@ domain:sophang8.com
 domain:sortthemesitesby.com
 domain:sosdepotdebilan.com
 domain:soserfis.com
+domain:sotechco.co
 domain:sotkal.lark.ru
 domain:soundfrost.org
 domain:souvenir.cc
@@ -5809,6 +5814,7 @@ domain:tradedeals.biz
 domain:traderzplanet.in
 domain:tradgardspartner.se
 domain:trafaret74.ru
+domain:traffic-club.info
 domain:traffic100.com
 domain:traffic2cash.org
 domain:traffic2money.com

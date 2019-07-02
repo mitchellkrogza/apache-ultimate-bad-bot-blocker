@@ -1237,6 +1237,7 @@ SetEnvIfNoCase Referer ~*cialgenisrx\.com spam_ref
 SetEnvIfNoCase Referer ~*cialischmrx\.com spam_ref
 SetEnvIfNoCase Referer ~*cialischsrx\.com spam_ref
 SetEnvIfNoCase Referer ~*cialischstgerts\.com spam_ref
+SetEnvIfNoCase Referer ~*cialisndbrx\.com spam_ref
 SetEnvIfNoCase Referer ~*cialisovercounteratwalmartusa\.com spam_ref
 SetEnvIfNoCase Referer ~*cialis\-samples\.com spam_ref
 SetEnvIfNoCase Referer ~*cialiswithoutadoctor\.net spam_ref
@@ -2854,6 +2855,7 @@ SetEnvIfNoCase Referer ~*infokonkurs\.ru spam_ref
 SetEnvIfNoCase Referer ~*informatiecentro\.be spam_ref
 SetEnvIfNoCase Referer ~*infospot\.pt spam_ref
 SetEnvIfNoCase Referer ~*infostatsvc\.com spam_ref
+SetEnvIfNoCase Referer ~*infoupdate\.org spam_ref
 SetEnvIfNoCase Referer ~*infowarcraft\.ru spam_ref
 SetEnvIfNoCase Referer ~*inmate\-locator\.us spam_ref
 SetEnvIfNoCase Referer ~*innodgfdriverhm\.aircus\.com spam_ref
@@ -3901,6 +3903,7 @@ SetEnvIfNoCase Referer ~*natali\-forex\.com spam_ref
 SetEnvIfNoCase Referer ~*nate\.com spam_ref
 SetEnvIfNoCase Referer ~*na\-telefon\.biz spam_ref
 SetEnvIfNoCase Referer ~*nationalbreakdown\.com spam_ref
+SetEnvIfNoCase Referer ~*national\-today\-winning\-winner\.club spam_ref
 SetEnvIfNoCase Referer ~*naturalbreakthroughsresearch\.com spam_ref
 SetEnvIfNoCase Referer ~*naturalpharm\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*naturalshair\.site spam_ref
@@ -4770,6 +4773,7 @@ SetEnvIfNoCase Referer ~*rezeptiblud\.ru spam_ref
 SetEnvIfNoCase Referer ~*rfd\-split\.hr spam_ref
 SetEnvIfNoCase Referer ~*rff\-cfal\.info spam_ref
 SetEnvIfNoCase Referer ~*rfid\-locker\.co spam_ref
+SetEnvIfNoCase Referer ~*rfserial\.net spam_ref
 SetEnvIfNoCase Referer ~*rialp\.getenjoyment\.net spam_ref
 SetEnvIfNoCase Referer ~*ribieiendom\.no spam_ref
 SetEnvIfNoCase Referer ~*richinvestmonitor\.com spam_ref
@@ -5335,6 +5339,7 @@ SetEnvIfNoCase Referer ~*sophang8\.com spam_ref
 SetEnvIfNoCase Referer ~*sortthemesitesby\.com spam_ref
 SetEnvIfNoCase Referer ~*sosdepotdebilan\.com spam_ref
 SetEnvIfNoCase Referer ~*soserfis\.com spam_ref
+SetEnvIfNoCase Referer ~*sotechco\.co spam_ref
 SetEnvIfNoCase Referer ~*sotkal\.lark\.ru spam_ref
 SetEnvIfNoCase Referer ~*soundfrost\.org spam_ref
 SetEnvIfNoCase Referer ~*souvenir\.cc spam_ref
@@ -5812,6 +5817,7 @@ SetEnvIfNoCase Referer ~*trafaret74\.ru spam_ref
 SetEnvIfNoCase Referer ~*traffic100\.com spam_ref
 SetEnvIfNoCase Referer ~*traffic2cash\.org spam_ref
 SetEnvIfNoCase Referer ~*traffic2money\.com spam_ref
+SetEnvIfNoCase Referer ~*traffic\-club\.info spam_ref
 SetEnvIfNoCase Referer ~*trafficfactory\.biz spam_ref
 SetEnvIfNoCase Referer ~*trafficgenius\.xyz spam_ref
 SetEnvIfNoCase Referer ~*trafficjunky\.com spam_ref
