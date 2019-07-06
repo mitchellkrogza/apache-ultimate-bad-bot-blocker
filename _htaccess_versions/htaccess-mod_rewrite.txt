@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.07.1125
-### Bad Referrer Count: 6719
+### Version: V3.2019.07.1126
+### Bad Referrer Count: 6720
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -4662,6 +4662,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*oneminutesite\.it.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onescreen\.cc.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*oneshotdate\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onetravelguides\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onko\-24\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onlainbesplatno\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*onlinadverts\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*online\-hd\.pl.*$ [NC,OR]

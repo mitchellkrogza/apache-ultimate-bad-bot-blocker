@@ -4086,6 +4086,7 @@ SetEnvIfNoCase Referer ~*oneminutesite\.it spam_ref
 SetEnvIfNoCase Referer ~*onescreen\.cc spam_ref
 SetEnvIfNoCase Referer ~*oneshotdate\.com spam_ref
 SetEnvIfNoCase Referer ~*onetravelguides\.com spam_ref
+SetEnvIfNoCase Referer ~*onko\-24\.com spam_ref
 SetEnvIfNoCase Referer ~*onlainbesplatno\.ru spam_ref
 SetEnvIfNoCase Referer ~*onlinadverts\.com spam_ref
 SetEnvIfNoCase Referer ~*online247\.ml spam_ref
