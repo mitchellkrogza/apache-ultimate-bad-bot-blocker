@@ -2655,6 +2655,7 @@ SetEnvIfNoCase Referer ~*historichometeam\.com spam_ref
 SetEnvIfNoCase Referer ~*hitcpm\.com spam_ref
 SetEnvIfNoCase Referer ~*hit\-kino\.ru spam_ref
 SetEnvIfNoCase Referer ~*hit\-men\.men spam_ref
+SetEnvIfNoCase Referer ~*hitmuzik\.ru spam_ref
 SetEnvIfNoCase Referer ~*hitsbox\.info spam_ref
 SetEnvIfNoCase Referer ~*hiwibyh\.bugs3\.com spam_ref
 SetEnvIfNoCase Referer ~*hjaoopoa\.top spam_ref

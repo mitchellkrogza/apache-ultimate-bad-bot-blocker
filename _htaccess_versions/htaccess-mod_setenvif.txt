@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.07.1127
-### Bad Referrer Count: 6731
+### Version: V3.2019.07.1128
+### Bad Referrer Count: 6732
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -3226,6 +3226,7 @@ SetEnvIfNoCase Referer historichometeam\.com spambot=yes
 SetEnvIfNoCase Referer hit\-kino\.ru spambot=yes
 SetEnvIfNoCase Referer hit\-men\.men spambot=yes
 SetEnvIfNoCase Referer hitcpm\.com spambot=yes
+SetEnvIfNoCase Referer hitmuzik\.ru spambot=yes
 SetEnvIfNoCase Referer hitsbox\.info spambot=yes
 SetEnvIfNoCase Referer hiwibyh\.bugs3\.com spambot=yes
 SetEnvIfNoCase Referer hjaoopoa\.top spambot=yes

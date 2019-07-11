@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.07.1127
-### Bad Referrer Count: 6731
+### Version: V3.2019.07.1128
+### Bad Referrer Count: 6732
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -3226,6 +3226,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*historichometeam\.com.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hit\-kino\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hit\-men\.men.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hitcpm\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hitmuzik\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hitsbox\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hiwibyh\.bugs3\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*hjaoopoa\.top.*$ [NC,OR]
