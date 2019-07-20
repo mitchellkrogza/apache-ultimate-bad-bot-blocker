@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.07.1128
-### Updated: Thu Jul 11 16:37:41 SAST 2019
-### Bad Referrer Count: 6732
+### Version: V3.2019.07.1129
+### Updated: Sat Jul 20 11:18:04 SAST 2019
+### Bad Referrer Count: 6737
 ### Bad Bot Count: 556
 ###################################################
 ### Version Information ##
@@ -1941,6 +1941,7 @@ SetEnvIfNoCase Referer ~*candycrushshop\.com spam_ref
 SetEnvIfNoCase Referer ~*candy\-glam\-hp\.com spam_ref
 SetEnvIfNoCase Referer ~*candypeople\.se spam_ref
 SetEnvIfNoCase Referer ~*candytiner\.com spam_ref
+SetEnvIfNoCase Referer ~*cannibalcheerleader\.com spam_ref
 SetEnvIfNoCase Referer ~*canoncdriverq3\.pen\.io spam_ref
 SetEnvIfNoCase Referer ~*canrioloadm\.gq spam_ref
 SetEnvIfNoCase Referer ~*canrole\.com spam_ref
@@ -2978,6 +2979,7 @@ SetEnvIfNoCase Referer ~*find1friend\.com spam_ref
 SetEnvIfNoCase Referer ~*findacheaplawyers\.com spam_ref
 SetEnvIfNoCase Referer ~*findanysex\.com spam_ref
 SetEnvIfNoCase Referer ~*findclan\.org spam_ref
+SetEnvIfNoCase Referer ~*findpics\.pw spam_ref
 SetEnvIfNoCase Referer ~*findpik\.com spam_ref
 SetEnvIfNoCase Referer ~*findsexguide\.com spam_ref
 SetEnvIfNoCase Referer ~*findthe\.pet spam_ref
@@ -6911,6 +6913,7 @@ SetEnvIfNoCase Referer ~*vashsvet\.com spam_ref
 SetEnvIfNoCase Referer ~*vasileostrovsky\-rayon\.ru spam_ref
 SetEnvIfNoCase Referer ~*vavilone\.com spam_ref
 SetEnvIfNoCase Referer ~*vbabule\.net spam_ref
+SetEnvIfNoCase Referer ~*vbtracker\.net spam_ref
 SetEnvIfNoCase Referer ~*vchulkax\.com spam_ref
 SetEnvIfNoCase Referer ~*vclicks\.net spam_ref
 SetEnvIfNoCase Referer ~*v\-doc\.co spam_ref
@@ -7063,6 +7066,7 @@ SetEnvIfNoCase Referer ~*vykup\-avto\-krasnodar\.ru spam_ref
 SetEnvIfNoCase Referer ~*vykupavto\-krasnodar\.ru spam_ref
 SetEnvIfNoCase Referer ~*vysigy\.su spam_ref
 SetEnvIfNoCase Referer ~*vzglyadriv\.kg spam_ref
+SetEnvIfNoCase Referer ~*vzlomfb\.com spam_ref
 SetEnvIfNoCase Referer ~*vzlom\-na\-zakaz\.com spam_ref
 SetEnvIfNoCase Referer ~*vzubah\.com spam_ref
 SetEnvIfNoCase Referer ~*vzube\.com spam_ref
@@ -7091,6 +7095,7 @@ SetEnvIfNoCase Referer ~*watchmyfb\.pl spam_ref
 SetEnvIfNoCase Referer ~*watchmygf\.net spam_ref
 SetEnvIfNoCase Referer ~*waterefficiency\.co spam_ref
 SetEnvIfNoCase Referer ~*waterpurifier\.club spam_ref
+SetEnvIfNoCase Referer ~*watracker\.net spam_ref
 SetEnvIfNoCase Referer ~*watsonrealtycorp\.com spam_ref
 SetEnvIfNoCase Referer ~*waycash\.net spam_ref
 SetEnvIfNoCase Referer ~*waysbetter\.cn spam_ref

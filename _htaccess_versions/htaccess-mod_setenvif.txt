@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.07.1128
-### Bad Referrer Count: 6732
+### Version: V3.2019.07.1129
+### Bad Referrer Count: 6737
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -1652,6 +1652,7 @@ SetEnvIfNoCase Referer candy\-glam\-hp\.com spambot=yes
 SetEnvIfNoCase Referer candycrushshop\.com spambot=yes
 SetEnvIfNoCase Referer candypeople\.se spambot=yes
 SetEnvIfNoCase Referer candytiner\.com spambot=yes
+SetEnvIfNoCase Referer cannibalcheerleader\.com spambot=yes
 SetEnvIfNoCase Referer canoncdriverq3\.pen\.io spambot=yes
 SetEnvIfNoCase Referer canrioloadm\.gq spambot=yes
 SetEnvIfNoCase Referer canrole\.com spambot=yes
@@ -2689,6 +2690,7 @@ SetEnvIfNoCase Referer find1friend\.com spambot=yes
 SetEnvIfNoCase Referer findacheaplawyers\.com spambot=yes
 SetEnvIfNoCase Referer findanysex\.com spambot=yes
 SetEnvIfNoCase Referer findclan\.org spambot=yes
+SetEnvIfNoCase Referer findpics\.pw spambot=yes
 SetEnvIfNoCase Referer findpik\.com spambot=yes
 SetEnvIfNoCase Referer findsexguide\.com spambot=yes
 SetEnvIfNoCase Referer findthe\.pet spambot=yes
@@ -6621,6 +6623,7 @@ SetEnvIfNoCase Referer vashsvet\.com spambot=yes
 SetEnvIfNoCase Referer vasileostrovsky\-rayon\.ru spambot=yes
 SetEnvIfNoCase Referer vavilone\.com spambot=yes
 SetEnvIfNoCase Referer vbabule\.net spambot=yes
+SetEnvIfNoCase Referer vbtracker\.net spambot=yes
 SetEnvIfNoCase Referer vchulkax\.com spambot=yes
 SetEnvIfNoCase Referer vclicks\.net spambot=yes
 SetEnvIfNoCase Referer vduplo\.ru spambot=yes
@@ -6773,6 +6776,7 @@ SetEnvIfNoCase Referer vykupavto\-krasnodar\.ru spambot=yes
 SetEnvIfNoCase Referer vysigy\.su spambot=yes
 SetEnvIfNoCase Referer vzglyadriv\.kg spambot=yes
 SetEnvIfNoCase Referer vzlom\-na\-zakaz\.com spambot=yes
+SetEnvIfNoCase Referer vzlomfb\.com spambot=yes
 SetEnvIfNoCase Referer vzubah\.com spambot=yes
 SetEnvIfNoCase Referer vzube\.com spambot=yes
 SetEnvIfNoCase Referer w\-journal\.ru spambot=yes
@@ -6801,6 +6805,7 @@ SetEnvIfNoCase Referer watchmyfb\.pl spambot=yes
 SetEnvIfNoCase Referer watchmygf\.net spambot=yes
 SetEnvIfNoCase Referer waterefficiency\.co spambot=yes
 SetEnvIfNoCase Referer waterpurifier\.club spambot=yes
+SetEnvIfNoCase Referer watracker\.net spambot=yes
 SetEnvIfNoCase Referer watsonrealtycorp\.com spambot=yes
 SetEnvIfNoCase Referer waycash\.net spambot=yes
 SetEnvIfNoCase Referer waysbetter\.cn spambot=yes
