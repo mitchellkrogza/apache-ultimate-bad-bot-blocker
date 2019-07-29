@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.07.1129
-### Bad Referrer Count: 6737
+### Version: V3.2019.07.1130
+### Bad Referrer Count: 6740
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -1996,6 +1996,7 @@ SetEnvIfNoCase Referer corta\.co spambot=yes
 SetEnvIfNoCase Referer coslab\.club spambot=yes
 SetEnvIfNoCase Referer cosmetic\.donna7753191\.ru spambot=yes
 SetEnvIfNoCase Referer cosmeticswomens\-womensports\.rhcloud\.com spambot=yes
+SetEnvIfNoCase Referer costablue\.xyz spambot=yes
 SetEnvIfNoCase Referer cottageofgrace\.com spambot=yes
 SetEnvIfNoCase Referer cougfan\.info spambot=yes
 SetEnvIfNoCase Referer counciltally\.com spambot=yes
@@ -2419,6 +2420,7 @@ SetEnvIfNoCase Referer elektrozigaretten1\.postbit\.com spambot=yes
 SetEnvIfNoCase Referer elektrozigaretten1\.tumblr\.com spambot=yes
 SetEnvIfNoCase Referer elektrozigaretten1\.webs\.com spambot=yes
 SetEnvIfNoCase Referer elektrozigaretten2\.yn\.lt spambot=yes
+SetEnvIfNoCase Referer elexies\.info spambot=yes
 SetEnvIfNoCase Referer elidelcream\.weebly\.com spambot=yes
 SetEnvIfNoCase Referer elite\-sex\-finders\.com spambot=yes
 SetEnvIfNoCase Referer elitedollars\.com spambot=yes
@@ -3888,6 +3890,7 @@ SetEnvIfNoCase Referer letsrepair\.in spambot=yes
 SetEnvIfNoCase Referer letto\.by spambot=yes
 SetEnvIfNoCase Referer levaquin750mg\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer lexaprogeneric\.link spambot=yes
+SetEnvIfNoCase Referer lexixxx\.com spambot=yes
 SetEnvIfNoCase Referer lezbiyanki\.net spambot=yes
 SetEnvIfNoCase Referer lflash\.ru spambot=yes
 SetEnvIfNoCase Referer li\-er\.ru spambot=yes
