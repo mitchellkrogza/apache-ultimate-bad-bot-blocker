@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.08.1132
-### Updated: Sat Aug 10 10:51:23 SAST 2019
+### Version: V3.2019.08.1133
+### Updated: Sat Aug 10 11:11:28 SAST 2019
 ### Bad Referrer Count: 6747
 ### Bad Bot Count: 557
 ###################################################
@@ -7607,7 +7607,7 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 # END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###
 
