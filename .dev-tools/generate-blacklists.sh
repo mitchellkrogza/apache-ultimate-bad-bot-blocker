@@ -440,7 +440,7 @@ rm ${inputdb10}
 printf '%s\n' "${start13}" >> ${tmpapache13}
 while IFS= read -r LINE
 do
-printf '%s%s\n' "Deny from " "${LINE}" >> ${tmpapache13}
+printf '%s%s\n' "deny from " "${LINE}" >> ${tmpapache13}
 done < ${input13}
 printf '%s\n' "${end13}"  >> ${tmpapache13}
 mv ${tmpapache13} ${inputdb13}
