@@ -761,6 +761,7 @@ SetEnvIfNoCase Referer ~*bestkfiledxd\.cf spam_ref
 SetEnvIfNoCase Referer ~*best\-mam\.ru spam_ref
 SetEnvIfNoCase Referer ~*bestmarriages\.com spam_ref
 SetEnvIfNoCase Referer ~*bestmobilityscooterstoday\.com spam_ref
+SetEnvIfNoCase Referer ~*bestmouthwash\.club spam_ref
 SetEnvIfNoCase Referer ~*bestofferswalkmydogouteveryday\.gq spam_ref
 SetEnvIfNoCase Referer ~*bestofpicture\.com spam_ref
 SetEnvIfNoCase Referer ~*bestofupload\.info spam_ref
@@ -2510,6 +2511,7 @@ SetEnvIfNoCase Referer ~*graphid\.com spam_ref
 SetEnvIfNoCase Referer ~*gratis\-sexkontakte\.com spam_ref
 SetEnvIfNoCase Referer ~*gratuitbaise\.com spam_ref
 SetEnvIfNoCase Referer ~*gratuitxblcodes\.com spam_ref
+SetEnvIfNoCase Referer ~*greamimgo\.pw spam_ref
 SetEnvIfNoCase Referer ~*greatdealshop\.com spam_ref
 SetEnvIfNoCase Referer ~*greatfind\-a\.akamaihd\.net spam_ref
 SetEnvIfNoCase Referer ~*greatgrace\.ru spam_ref
@@ -5251,6 +5253,7 @@ SetEnvIfNoCase Referer ~*skuteczna\-dieta\.co\.pl spam_ref
 SetEnvIfNoCase Referer ~*skutecznetabletkinaporostwlosow\.pl spam_ref
 SetEnvIfNoCase Referer ~*skylta\.com spam_ref
 SetEnvIfNoCase Referer ~*sky\-mine\.ru spam_ref
+SetEnvIfNoCase Referer ~*skypasss\.com spam_ref
 SetEnvIfNoCase Referer ~*skytraf\.xyz spam_ref
 SetEnvIfNoCase Referer ~*skyway24\.ru spam_ref
 SetEnvIfNoCase Referer ~*sladkoevideo\.com spam_ref
@@ -6209,6 +6212,8 @@ SetEnvIfNoCase Referer ~*vysigy\.su spam_ref
 SetEnvIfNoCase Referer ~*vzglyadriv\.kg spam_ref
 SetEnvIfNoCase Referer ~*vzlomfb\.com spam_ref
 SetEnvIfNoCase Referer ~*vzlom\-na\-zakaz\.com spam_ref
+SetEnvIfNoCase Referer ~*vzlomsn\.org spam_ref
+SetEnvIfNoCase Referer ~*vzlomtw\.com spam_ref
 SetEnvIfNoCase Referer ~*vzubah\.com spam_ref
 SetEnvIfNoCase Referer ~*vzube\.com spam_ref
 SetEnvIfNoCase Referer ~*w3data\.co spam_ref
@@ -6519,6 +6524,7 @@ SetEnvIfNoCase Referer ~*xn\-\-l1aengat\.xn\-\-p1ai spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-lifehacer\-1rb\.com spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-oogle\-wmc\.com spam_ref
 SetEnvIfNoCase Referer ~*xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai spam_ref
+SetEnvIfNoCase Referer ~*xnxx699\.com spam_ref
 SetEnvIfNoCase Referer ~*xnxxandxvideos\.com spam_ref
 SetEnvIfNoCase Referer ~*xnxx\-n\.com spam_ref
 SetEnvIfNoCase Referer ~*xolodremont\.ru spam_ref
@@ -6738,4 +6744,5 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref

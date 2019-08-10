@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.08.1131
-### Bad Referrer Count: 6740
+### Version: V3.2019.08.1132
+### Bad Referrer Count: 6747
 ### Bad Bot Count: 557
 ### Version Information ##
 
@@ -1338,6 +1338,7 @@ SetEnvIfNoCase Referer bestimagecoollibrary\.com spambot=yes
 SetEnvIfNoCase Referer bestkfiledxd\.cf spambot=yes
 SetEnvIfNoCase Referer bestmarriages\.com spambot=yes
 SetEnvIfNoCase Referer bestmobilityscooterstoday\.com spambot=yes
+SetEnvIfNoCase Referer bestmouthwash\.club spambot=yes
 SetEnvIfNoCase Referer bestofferswalkmydogouteveryday\.gq spambot=yes
 SetEnvIfNoCase Referer bestofpicture\.com spambot=yes
 SetEnvIfNoCase Referer bestofupload\.info spambot=yes
@@ -3083,6 +3084,7 @@ SetEnvIfNoCase Referer graphid\.com spambot=yes
 SetEnvIfNoCase Referer gratis\-sexkontakte\.com spambot=yes
 SetEnvIfNoCase Referer gratuitbaise\.com spambot=yes
 SetEnvIfNoCase Referer gratuitxblcodes\.com spambot=yes
+SetEnvIfNoCase Referer greamimgo\.pw spambot=yes
 SetEnvIfNoCase Referer greatdealshop\.com spambot=yes
 SetEnvIfNoCase Referer greatfind\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer greatgrace\.ru spambot=yes
@@ -5824,6 +5826,7 @@ SetEnvIfNoCase Referer skuteczna\-dieta\.co\.pl spambot=yes
 SetEnvIfNoCase Referer skutecznetabletkinaporostwlosow\.pl spambot=yes
 SetEnvIfNoCase Referer sky\-mine\.ru spambot=yes
 SetEnvIfNoCase Referer skylta\.com spambot=yes
+SetEnvIfNoCase Referer skypasss\.com spambot=yes
 SetEnvIfNoCase Referer skytraf\.xyz spambot=yes
 SetEnvIfNoCase Referer skyway24\.ru spambot=yes
 SetEnvIfNoCase Referer sladkoevideo\.com spambot=yes
@@ -6781,6 +6784,8 @@ SetEnvIfNoCase Referer vysigy\.su spambot=yes
 SetEnvIfNoCase Referer vzglyadriv\.kg spambot=yes
 SetEnvIfNoCase Referer vzlom\-na\-zakaz\.com spambot=yes
 SetEnvIfNoCase Referer vzlomfb\.com spambot=yes
+SetEnvIfNoCase Referer vzlomsn\.org spambot=yes
+SetEnvIfNoCase Referer vzlomtw\.com spambot=yes
 SetEnvIfNoCase Referer vzubah\.com spambot=yes
 SetEnvIfNoCase Referer vzube\.com spambot=yes
 SetEnvIfNoCase Referer w\-journal\.ru spambot=yes
@@ -7096,6 +7101,7 @@ SetEnvIfNoCase Referer xn\-\-lifehacer\-1rb\.com spambot=yes
 SetEnvIfNoCase Referer xn\-\-oogle\-wmc\.com spambot=yes
 SetEnvIfNoCase Referer xn\-\-q1a\.xn\-\-b1aube0e\.xn\-\-c1acygb\.xn\-\-p1ai spambot=yes
 SetEnvIfNoCase Referer xnxx\-n\.com spambot=yes
+SetEnvIfNoCase Referer xnxx699\.com spambot=yes
 SetEnvIfNoCase Referer xnxxandxvideos\.com spambot=yes
 SetEnvIfNoCase Referer xolodremont\.ru spambot=yes
 SetEnvIfNoCase Referer xportvusbdriver8i\.snack\.ws spambot=yes
@@ -7311,6 +7317,7 @@ SetEnvIfNoCase Referer zynax\.ua spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 SetEnvIfNoCase Referer zzlgxh\.com spambot=yes
+SetEnvIfNoCase Referer zzlgxh\.com000free\.us spambot=yes
 </IfModule>
 
 
