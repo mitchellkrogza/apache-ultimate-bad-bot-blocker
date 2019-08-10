@@ -7702,6 +7702,16 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 54.242.250.203
 	# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###
 
+	# ---------------------
+    # BLOCK FAKE GOOGLEBOTS 
+	# ---------------------
+
+	# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###
+
+	# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###
+
+
+
 	# *************************************************
 	# Blacklist IP addresses and IP Ranges Customizable
 	# *************************************************
