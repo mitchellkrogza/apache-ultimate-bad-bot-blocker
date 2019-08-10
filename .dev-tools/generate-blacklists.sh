@@ -61,6 +61,7 @@ input9=${TRAVIS_BUILD_DIR}/_generator_lists/nibbler-seo.list
 input10=${TRAVIS_BUILD_DIR}/_generator_lists/cloudflare-ip-ranges.list
 input11=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
 input12=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents-fail2ban-additional.list
+input13=${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
 
 # *******************************************************
 # Declare temporary database files used during generation
@@ -77,6 +78,7 @@ inputdb7=/tmp/bing-ip-ranges.db
 inputdb8=/tmp/wordpress-theme-detectors.db
 inputdb9=/tmp/nibbler-seo.db
 inputdb10=/tmp/cloudflare-ip-ranges.db
+inputdb13=/tmp/fake-googlebots.db
 
 
 # ******************************************
@@ -99,6 +101,7 @@ tmpapache7=tmpapache7
 tmpapache8=tmpapache8
 tmpapache9=tmpapache9
 tmpapache10=tmpapache10
+tmpapache13=tmpapache13
 
 # ***********************************************
 # Sort lists alphabetically and remove duplicates
@@ -115,6 +118,7 @@ sort -u ${input8} -o ${input8}
 sort -u ${input9} -o ${input9}
 sort -u ${input10} -o ${input10}
 sort -u ${input12} -o ${input12}
+sort -u ${input13} -o ${input13}
 
 # ***************************************************************
 # Start and End Strings to Search for to do inserts into template
@@ -140,6 +144,8 @@ start9="# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###"
 end9="# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###"
 start10="# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###"
 end10="# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###"
+start13="# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###"
+end13="# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###"
 startmarker="### Version Information #"
 endmarker="### Version Information ##"
 
@@ -426,6 +432,32 @@ q
 IN
 rm ${inputdb10}
 
+
+# ***********************************
+# FAKE GOOGLEBOTS - Create and Insert
+# ***********************************
+
+printf '%s\n' "${start13}" >> ${tmpapache13}
+while IFS= read -r LINE
+do
+printf '%s%s\n' "Deny from " "${LINE}" >> ${tmpapache13}
+done < ${input13}
+printf '%s\n' "${end13}"  >> ${tmpapache13}
+mv ${tmpapache13} ${inputdb13}
+ed -s ${inputdb13}<<\IN
+1,/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
+/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
+.t.
+.,/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+q
+IN
+rm ${inputdb13}
+
+
 # Copy files to correct folders
 # **********************************************
 sudo cp ${apache} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
@@ -704,6 +736,32 @@ w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/a
 q
 IN
 rm ${inputdb10}
+
+# ***********************************
+# FAKE GOOGLEBOTS - Create and Insert
+# ***********************************
+
+printf '%s\n' "${start13}" >> ${tmpapache13}
+while IFS= read -r LINE
+do
+printf '\t%s%s\n' "Require not ip " "${LINE}" >> ${tmpapache13}
+done < ${input13}
+printf '%s\n' "${end13}"  >> ${tmpapache13}
+mv ${tmpapache13} ${inputdb13}
+ed -s ${inputdb13}<<\IN
+1,/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
+/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
+,d
+.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
+.t.
+.,/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
+w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+q
+IN
+rm ${inputdb13}
+
+
 
 # Copy file to correct folder
 # **********************************************
