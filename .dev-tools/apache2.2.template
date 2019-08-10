@@ -7778,6 +7778,12 @@ deny from 54.242.239.179
 deny from 54.242.250.203
 # END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###
 
+
+# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###
+
+# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###
+
+
 	# ****************************
 	# Known Bad IP's and IP Ranges
 	# *************************************************
