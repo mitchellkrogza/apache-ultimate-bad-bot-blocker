@@ -48,6 +48,7 @@ monthtag=$(date +%m)
 my_git_tag=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
 bad_referrers=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list)
 bad_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list)
+fake_google_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list)
 
 # **********************************
 # Temporary database files we create
@@ -69,7 +70,7 @@ endmarker2="### Version Information ##"
 # PRINT VERSION INFORMATION INTO README.md
 # ****************************************
 
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "[${bad_referrers}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)" "#### Bad Bot Count: " "[${bad_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)" "#### Fake Googlebots: " "[${fake_google_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)" "${endmarker}" >> "${tmpapacheA}"
 mv ${tmpapacheA} ${inputdbA}
 ed -s ${inputdbA}<<\IN
 1,/_______________/d
@@ -88,7 +89,8 @@ rm ${inputdbA}
 # PRINT VERSION INFORMATION INTO CONFIGURATION.md
 # ******************************************************
 
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "[${bad_referrers}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)" "#### Bad Bot Count: " "[${bad_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)" "#### Fake Googlebots: " "[${fake_google_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)" "${endmarker}" >> "${tmpapacheA}"
+
 mv ${tmpapacheA} ${inputdbA}
 ed -s ${inputdbA}<<\IN
 1,/_______________/d
@@ -165,7 +167,7 @@ rm ${inputdbA}
 # PRINT VERSION INFORMATION INTO CPanel Instructions
 # ********************************************************
 
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "[${bad_referrers}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)" "#### Bad Bot Count: " "[${bad_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)" "#### Fake Googlebots: " "[${fake_google_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)" "${endmarker}" >> "${tmpapacheA}"
 mv ${tmpapacheA} ${inputdbA}
 ed -s ${inputdbA}<<\IN
 1,/_______________/d
@@ -184,7 +186,7 @@ rm ${inputdbA}
 # PRINT VERSION INFORMATION Google Ghost Spam README
 # ********************************************************
 
-printf '%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "${bad_referrers}" "#### Bad Bot Count: " "${bad_bots}" "${endmarker}" >> "${tmpapacheA}"
+printf '%s\n%s%s\n%s%s\n%s%s\n%s%s\n%s' "${startmarker}" "#### Version: " "${my_git_tag}" "#### Bad Referrer Count: " "[${bad_referrers}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)" "#### Bad Bot Count: " "[${bad_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)" "#### Fake Googlebots: " "[${fake_google_bots}](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)" "${endmarker}" >> "${tmpapacheA}"
 mv ${tmpapacheA} ${inputdbA}
 ed -s ${inputdbA}<<\IN
 1,/_______________/d
