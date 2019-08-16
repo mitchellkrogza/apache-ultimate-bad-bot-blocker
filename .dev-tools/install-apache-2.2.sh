@@ -58,24 +58,17 @@ defaultcolor=$(tput setaf default)
 # ---------
 
 spinner() {
-  mypid=$!
-  loadingText=$1
-
-  echo -ne "$loadingText\r"
-
-  while kill -0 $mypid 2>/dev/null; do
-    echo -ne "$loadingText.\r"
-    sleep 0.5
-    echo -ne "$loadingText..\r"
-    sleep 0.5
-    echo -ne "$loadingText...\r"
-    sleep 0.5
-    echo -ne "\r\033[K"
-    echo -ne "$loadingText\r"
-    sleep 0.5
-  done
-
-  echo "$loadingText...FINISHED"
+    local pid=$!
+    local delay=0.1
+    local spinstr='|/-\'
+    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+        local temp=${spinstr#?}
+        printf " [%c]  " "$spinstr"
+        local spinstr=$temp${spinstr%"$temp"}
+        sleep $delay
+        printf "\b\b\b\b\b\b"
+    done
+    printf "    \b\b\b\b"
 }
 
 
@@ -107,11 +100,11 @@ cd zlib-1.2.11/
 echo "${bold}${green}Building zlib"
 printf '\n'
 make &> zlib.log &
-spinner "Building zlib"
+spinner
 echo "${bold}${green}Installing zlib"
 printf '\n'
 sudo make -s install &> zlib.log &
-spinner "Installing zlib"
+spinner
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
@@ -120,11 +113,11 @@ cd httpd-2.2.25/
 echo "${bold}${green}Building Apache 2.2.25"
 printf '\n'
 make &> apache2build.log &
-spinner "Building Apache"
+spinner
 echo "${bold}${green}Installing Apache 2.2.25"
 printf '\n'
 sudo make -s install &> apache2build.log &
-spinner "Installing Apache"
+spinner
 
 ${defaultcolor}
 sudo /usr/local/apache2/bin/apachectl start
