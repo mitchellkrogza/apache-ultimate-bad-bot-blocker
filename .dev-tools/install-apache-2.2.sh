@@ -61,7 +61,7 @@ runwithdots () {
 "$@" &
 
 while kill -0 $!; do
-    echo '${bold}${green}.' > /dev/tty
+    echo "${bold}${green}." > /dev/tty
     sleep 1
 done
 
