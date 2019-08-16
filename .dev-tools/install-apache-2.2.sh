@@ -60,7 +60,9 @@ defaultcolor=$(tput setaf default)
 spinner() {
     local pid=$!
     local delay=0.1
-    local spinstr='*'
+    #local spinstr='*'
+    local spinstr="▓"
+    #printf  "▓"
     while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
         local temp=${spinstr#?}
         printf "${bold}${green}%c" "$spinstr"
@@ -114,10 +116,12 @@ wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/maste
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http >/dev/null
+printf '\n'
 echo "${bold}${green}Building Apache 2.2.25"
 printf '\n'
 make &> apache2build.log &
 spinner
+printf '\n'
 echo "${bold}${green}Installing Apache 2.2.25"
 printf '\n'
 sudo make -s install &> apache2build.log &
