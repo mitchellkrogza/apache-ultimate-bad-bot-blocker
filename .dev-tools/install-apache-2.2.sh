@@ -60,7 +60,7 @@ defaultcolor=$(tput setaf default)
 spinner() {
     local pid=$!
     local delay=0.1
-    local spinstr='▓'
+    local spinstr='*'
     while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
         local temp=${spinstr#?}
         printf "${bold}${green}%c" "$spinstr"
