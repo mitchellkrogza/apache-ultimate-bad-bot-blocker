@@ -66,18 +66,33 @@ while kill -0 $!; do
 done
 }
 
+spinner () {
+    local pid=$!
+    local delay=0.75
+    local spinstr='|/-\'
+    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
+        local temp=${spinstr#?}
+        printf " [%c]  " "$spinstr"
+        local spinstr=$temp${spinstr%"$temp"}
+        sleep $delay
+        printf "\b\b\b\b\b\b"
+    done
+    printf "    \b\b\b\b"
+}
 
 # **************************************
 # Make sure no other Apache is Installed
 # **************************************
 
-sudo apt-get remove --purge apache2
+sudo apt-get remove --purge apache2 &
+spinner
 
 # *************************************************************
 # Make sure We Have Build Essentials for Building apache 2.2.25
 # *************************************************************
 
-sudo apt-get install build-essential
+sudo apt-get install build-essential &
+spinner
 
 # ************************
 # Lets Build Apache 2.2.25
