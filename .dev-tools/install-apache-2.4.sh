@@ -182,11 +182,12 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/old-
 # Download and test the updater
 # *****************************
 
-echo "${bold}${yellow}Test update-apacheblocker.sh"
+echo "${bold}${yellow}Download update-apacheblocker.sh"
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
 sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+echo "${bold}${yellow}Test update-apacheblocker.sh"
 sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
-sudo ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+sudo bash ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
 
 # ***********************************************************************************
 # Put Latest Generated globalblacklist.conf into place for correct testing of changes
