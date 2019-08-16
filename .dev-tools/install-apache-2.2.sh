@@ -53,6 +53,21 @@ cyan=$(tput setaf 6)
 white=$(tput setaf 7)
 defaultcolor=$(tput setaf default)
 
+# ---------
+# FUNCTIONS
+# ---------
+
+runwithdots () {
+"$@" &
+
+while kill -0 $!; do
+    printf '.' > /dev/tty
+    sleep 1
+done
+
+printf '\n' > /dev/tty
+}
+
 
 # **************************************
 # Make sure no other Apache is Installed
@@ -80,7 +95,7 @@ tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local >/dev/null
 echo "${bold}${green}Building zlib"
-make &> zlib.log
+runwithdots make &> zlib.log
 echo "${bold}${green}Installing zlib"
 sudo make -s install &> zlib.log
 

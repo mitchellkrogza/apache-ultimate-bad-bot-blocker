@@ -53,6 +53,21 @@ cyan=$(tput setaf 6)
 white=$(tput setaf 7)
 defaultcolor=$(tput setaf default)
 
+# ---------
+# FUNCTIONS
+# ---------
+
+runwithdots () {
+"$@" &
+
+while kill -0 $!; do
+    printf '.' > /dev/tty
+    sleep 2
+done
+
+printf '\n' > /dev/tty
+}
+
 
 # ******************
 # Stop Apache 2.2.25
