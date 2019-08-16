@@ -291,7 +291,7 @@ run_curltest5
 run_curltest6
 run_curltest7
 run_curltest8
-run_curltest9
+#run_curltest9
 run_curltest10
 run_curltest11
 run_curltest12
