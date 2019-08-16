@@ -80,19 +80,33 @@ spinner () {
     printf "    \b\b\b\b"
 }
 
+progress_bar () {
+spin[0]="-"
+spin[1]="\\"
+spin[2]="|"
+spin[3]="/"
+pid=$!
+while kill -0 $pid 2> /dev/null; do
+for i in "${spin[@]}"
+do
+    echo -ne "${bold}${red}\b$i"
+    sleep 0.1
+done
+done
+}
+
+
 # **************************************
 # Make sure no other Apache is Installed
 # **************************************
 
-sudo apt-get remove --purge apache2 &
-spinner
+sudo apt-get remove --purge apache2
 
 # *************************************************************
 # Make sure We Have Build Essentials for Building apache 2.2.25
 # *************************************************************
 
-sudo apt-get install build-essential &
-spinner
+sudo apt-get install build-essential
 
 # ************************
 # Lets Build Apache 2.2.25
@@ -110,11 +124,11 @@ cd zlib-1.2.11/
 echo "${bold}${green}Building zlib"
 printf '\n'
 make &> zlib.log &
-spinner
+progress_bar
 echo "${bold}${green}Installing zlib"
 printf '\n'
 sudo make -s install &> zlib.log &
-spinner
+progress_bar
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
@@ -123,11 +137,11 @@ cd httpd-2.2.25/
 echo "${bold}${green}Building Apache 2.2.25"
 printf '\n'
 make &> apache2build.log &
-spinner
+progress_bar
 echo "${bold}${green}Installing Apache 2.2.25"
 printf '\n'
 sudo make -s install &> apache2build.log &
-spinner
+progress_bar
 
 sudo /usr/local/apache2/bin/apachectl start
 
