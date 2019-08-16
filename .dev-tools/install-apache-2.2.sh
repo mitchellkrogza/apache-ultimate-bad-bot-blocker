@@ -109,10 +109,12 @@ cd zlib-1.2.11/
 ./configure --prefix=/usr/local >/dev/null
 echo "${bold}${green}Building zlib"
 printf '\n'
-make &> zlib.log
+make &> zlib.log &
+spinner
 echo "${bold}${green}Installing zlib"
 printf '\n'
-sudo make -s install &> zlib.log
+sudo make -s install &> zlib.log &
+spinner
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
@@ -120,10 +122,12 @@ cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http >/dev/null
 echo "${bold}${green}Building Apache 2.2.25"
 printf '\n'
-make &> apache2build.log
+make &> apache2build.log &
+spinner
 echo "${bold}${green}Installing Apache 2.2.25"
 printf '\n'
-sudo make -s install &> apache2build.log
+sudo make -s install &> apache2build.log &
+spinner
 
 sudo /usr/local/apache2/bin/apachectl start
 
