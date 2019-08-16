@@ -39,14 +39,31 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+# ------------------------
+# Set Terminal Font Colors
+# ------------------------
+
+bold=$(tput bold)
+red=$(tput setaf 1)
+green=$(tput setaf 2)
+yellow=$(tput setaf 3)
+blue=$(tput setaf 4)
+magenta=$(tput setaf 5)
+cyan=$(tput setaf 6)
+white=$(tput setaf 7)
+defaultcolor=$(tput setaf default)
+
+
 # **************************************
 # Make sure no other Apache is Installed
 # **************************************
+
 sudo apt-get remove --purge apache2
 
 # *************************************************************
 # Make sure We Have Build Essentials for Building apache 2.2.25
 # *************************************************************
+
 sudo apt-get install build-essential
 
 # ************************
@@ -62,18 +79,18 @@ wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local >/dev/null
-echo "make zlib"
+echo "${bold}${green}Building zlib"
 make &> zlib.log
-echo "make install zlib"
+echo "${bold}${green}Installing zlib"
 sudo make -s install &> zlib.log
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http >/dev/null
-echo "make apache 2.2.25"
+echo "${bold}${green}Building Apache 2.2.25"
 make &> apache2build.log
-echo "make install apache 2.2.25"
+echo "${bold}${green}Installing Apache 2.2.25"
 sudo make -s install &> apache2build.log
 
 sudo /usr/local/apache2/bin/apachectl start
@@ -100,26 +117,28 @@ sudo chown -R www-data:www-data /var/www/
 # Show Loaded apache Modules
 # **************************
 
-printf '%s\n%s\n%s\n\n' "#################################" "Show Loaded Apache Modules" "#################################"
+echo "${bold}${green}Show Loaded Apache Modules"
 sudo /usr/local/apache2/bin/apachectl -M
 
 # **************************
 # Show Apache Version
 # **************************
 
-printf '%s\n%s\n%s\n\n' "#####################################" "Show Apache Version Information" "#####################################"
+echo "${bold}${green}Show Apache Version Information"
 sudo /usr/local/apache2/bin/apachectl -V
 
 # *****************************
 # Put new httpd.conf into place
 # *****************************
-echo "Copy httpd.conf"
+
+echo "${bold}${yellow}Copy httpd.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
 
 # ************************************
 # Put new httpd-vhosts.conf into place
 # ************************************
-echo "Copy httpd-vhosts.conf"
+
+echo "${bold}${yellow}Copy httpd-vhosts.conf"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
 
 # *************************************
@@ -138,14 +157,14 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 # Test the Apache Config
 # **********************
 
-printf '%s\n%s\n%s\n\n' "#################################" "Run Apache 2.2 Config Test" "#################################"
+echo "${bold}${green}Run Apache 2.2 Config Test"
 sudo /usr/local/apache2/bin/apachectl configtest
 
 # *********************
 # Restart Apache 2.2.25
 # *********************
 
-echo "Restarting Apache 2.2"
+echo "${bold}${yellow}Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
 
 # ******************
@@ -184,7 +203,7 @@ sudo ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-
 # ***********************************************************************************
 
 sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
-echo "Restarting Apache 2.2"
+echo "${bold}${yellow}Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
 
 # *****************************************
