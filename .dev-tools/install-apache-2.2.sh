@@ -93,7 +93,7 @@ sudo apt-get install build-essential
 
 cd /tmp
 
-tput setaf default
+tput setaf 7
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
@@ -109,7 +109,8 @@ printf '\n'
 sudo make -s install &> zlib.log &
 spinner
 
-tput setaf default
+printf '\n'
+tput setaf 7
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
@@ -125,7 +126,8 @@ printf '\n'
 sudo make -s install &> apache2build.log &
 spinner
 
-tput setaf default
+printf '\n'
+tput setaf 7
 sudo /usr/local/apache2/bin/apachectl start
 
 wget -qO- http://localhost | grep "It works!"
