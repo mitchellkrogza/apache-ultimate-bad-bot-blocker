@@ -63,15 +63,19 @@ tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local
 #make -s
+echo "make zlib"
 make >/dev/null || make
-sudo make -s install
+echo "make install zlib"
+make >/dev/null || sudo make -s install
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
-make -s
-sudo make -s install
+echo "make apache 2.2.25"
+make >/dev/null || make
+echo "make install apache 2.2.25"
+make >/dev/null || sudo make -s install
 
 sudo /usr/local/apache2/bin/apachectl start
 
