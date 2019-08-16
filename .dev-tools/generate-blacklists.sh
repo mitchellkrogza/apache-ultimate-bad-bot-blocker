@@ -197,7 +197,7 @@ rm ${inputdbA}
 printf '%s\n' "${start1}" >> ${tmpapache1}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache1}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache1}
 done < ${input1}
 printf '%s\n' "${end1}"  >> ${tmpapache1}
 mv ${tmpapache1} ${inputdb1}
@@ -223,7 +223,7 @@ rm ${inputdb1}
 printf '%s\n' "${start2}" >> ${tmpapache2}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache2}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache2}
 done < ${input2}
 printf '%s\n' "${end2}"  >> ${tmpapache2}
 mv ${tmpapache2} ${inputdb2}
@@ -247,7 +247,7 @@ rm ${inputdb2}
 printf '%s\n' "${start3}" >> ${tmpapache3}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache3}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache3}
 done < ${input3}
 printf '%s\n' "${end3}"  >> ${tmpapache3}
 mv ${tmpapache3} ${inputdb3}
@@ -271,7 +271,7 @@ rm ${inputdb3}
 printf '%s\n' "${start4}" >> ${tmpapache4}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action2}" >> ${tmpapache4}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action2}" >> ${tmpapache4}
 done < ${input4}
 printf '%s\n' "${end4}"  >> ${tmpapache4}
 mv ${tmpapache4} ${inputdb4}
@@ -502,7 +502,7 @@ rm ${inputdbA}
 printf '%s\n' "${start1}" >> ${tmpapache1}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache1}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache1}
 done < ${input1}
 printf '%s\n' "${end1}"  >> ${tmpapache1}
 mv ${tmpapache1} ${inputdb1}
@@ -528,7 +528,7 @@ rm ${inputdb1}
 printf '%s\n' "${start2}" >> ${tmpapache2}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache2}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache2}
 done < ${input2}
 printf '%s\n' "${end2}"  >> ${tmpapache2}
 mv ${tmpapache2} ${inputdb2}
@@ -552,7 +552,7 @@ rm ${inputdb2}
 printf '%s\n' "${start3}" >> ${tmpapache3}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action1}" >> ${tmpapache3}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action1}" >> ${tmpapache3}
 done < ${input3}
 printf '%s\n' "${end3}"  >> ${tmpapache3}
 mv ${tmpapache3} ${inputdb3}
@@ -576,7 +576,7 @@ rm ${inputdb3}
 printf '%s\n' "${start4}" >> ${tmpapache4}
 while IFS= read -r LINE
 do
-printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "^(.*?)(\b" "${LINE}" "\b)(.*)$" "${action2}" >> ${tmpapache4}
+printf '%s"%s%s%s" %s\n' "BrowserMatchNoCase " "(?:\b)" "${LINE}" "(?:\b)" "${action2}" >> ${tmpapache4}
 done < ${input4}
 printf '%s\n' "${end4}"  >> ${tmpapache4}
 mv ${tmpapache4} ${inputdb4}
