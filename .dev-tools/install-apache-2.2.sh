@@ -60,10 +60,10 @@ defaultcolor=$(tput setaf default)
 spinner() {
     local pid=$!
     local delay=0.1
-    local spinstr='.'
+    local spinstr='▓'
     while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
         local temp=${spinstr#?}
-        printf "${bold}${red}%c" "$spinstr"
+        printf "${bold}${green}%c" "$spinstr"
         local spinstr=$temp${spinstr%"$temp"}
         sleep $delay
         printf "\b\b\b\b\b\b"
@@ -93,6 +93,7 @@ sudo apt-get install build-essential
 
 cd /tmp
 
+${defaultcolor}
 wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
@@ -106,6 +107,7 @@ printf '\n'
 sudo make -s install &> zlib.log &
 spinner
 
+${defaultcolor}
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
