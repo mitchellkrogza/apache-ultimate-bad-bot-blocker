@@ -62,7 +62,8 @@ wget http://www.zlib.net/zlib-1.2.11.tar.gz
 tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local
-make -s
+#make -s
+make >/dev/null || make
 sudo make -s install
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
