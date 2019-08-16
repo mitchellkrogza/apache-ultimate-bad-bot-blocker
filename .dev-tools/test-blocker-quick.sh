@@ -135,7 +135,7 @@ if curl -A "Googlebot/Nutch-1.7" http://local.dev:80/index.html 2>&1 | grep -i '
    echo "${bold}${green}PASSED - ${red}Googlebot/Nutch-1.7 BAD BOT DETECTED"
 else
    echo "${bold}${red}FAILED - ${red}Googlebot/Nutch-1.7 BAD BOT NOT DETECTED"
-   exit 0
+   #exit 1
 fi
 }
 
