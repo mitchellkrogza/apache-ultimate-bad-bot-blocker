@@ -64,8 +64,6 @@ while kill -0 $!; do
     echo "${bold}${green}." > /dev/tty
     sleep 1
 done
-
-printf '\n' > /dev/tty
 }
 
 
@@ -95,18 +93,22 @@ tar -xvf zlib-1.2.11.tar.gz > /dev/null
 cd zlib-1.2.11/
 ./configure --prefix=/usr/local >/dev/null
 echo "${bold}${green}Building zlib"
-runwithdots make &> zlib.log
+printf '\n'
+make &> zlib.log
 echo "${bold}${green}Installing zlib"
-runwithdots sudo make -s install &> zlib.log
+printf '\n'
+sudo make -s install &> zlib.log
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
 cd httpd-2.2.25/
 ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http >/dev/null
 echo "${bold}${green}Building Apache 2.2.25"
-runwithdots make &> apache2build.log
+printf '\n'
+make &> apache2build.log
 echo "${bold}${green}Installing Apache 2.2.25"
-runwithdots sudo make -s install &> apache2build.log
+printf '\n'
+sudo make -s install &> apache2build.log
 
 sudo /usr/local/apache2/bin/apachectl start
 
