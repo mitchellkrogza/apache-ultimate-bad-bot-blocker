@@ -195,34 +195,6 @@ sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache
 sudo service apache2 reload
 sudo service apache2 restart
 
-# *************************************************
-# Curl Test 1 - Check for Bad Bot "80legs"
-# *************************************************
-
-printf "\n\nTEST FOR 80legs User-Agent\n\n"
-curl -A "80legs" http://local.dev:80/index.html
-
-# ******************************************************************
-# Curl Test 2 - Check for Bad Referrer "000free.us"
-# ******************************************************************
-
-printf "\n\nTEST FOR 000free.us Referrer\n\n"
-curl -I http://local.dev:80/index.html -e http://000free.us
-
-# *************************************************
-# Curl Test 3 - Check for Good Bot "Googlebot"
-# *************************************************
-
-printf "\n\nTEST FOR GoogleBot User-Agent\n\n"
-curl -A "Googlebot" http://local.dev:80/index.html
-
-# ******************************************************************
-# Curl Test 4 - Check for Good Referrer "google.com"
-# ******************************************************************
-
-printf "\n\nTEST FOR google.com Referrer\n\n"
-curl -I http://local.dev:80/index.html -e http://google.com
-
 # *****************************************
 # Get a copy of all conf files for checking
 # *****************************************
