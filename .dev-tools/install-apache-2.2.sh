@@ -145,6 +145,7 @@ sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/http
 # Get files from Repo Apache_2.2
 # *************************************
 
+echo "${bold}${yellow}Get blocker files from repo"
 sudo mkdir /usr/local/apache2/custom.d
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /usr/local/apache2/custom.d/globalblacklist.conf
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /usr/local/apache2/custom.d/whitelist-ips.conf
@@ -171,30 +172,27 @@ sudo /usr/local/apache2/bin/apachectl restart
 # Test Apache 2 Curl
 # ******************
 
+echo "${bold}${yellow}Test wget"
 wget -qO- http://local.dev
 
 # ********************************************************************
 # Place an older globalblacklist.conf into place to test update script
 # ********************************************************************
 
+echo "${bold}${yellow}Install old version of blacklist to test updater"
 sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/old-globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
 
 # *****************************
 # Download and test the updater
 # *****************************
 
+echo "${bold}${yellow}Test update-apacheblocker.sh"
 sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 sed -n "s/2\.4/2\.2/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 sed -n "s/\/etc\/apache2\/custom.d/\/usr\/local\/apache2\/custom.d/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 sed -n "s/apachectl/\/usr\/local\/apache2\/bin\/apachectl/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 cat ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
-
 sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
 sudo ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
 
@@ -202,6 +200,7 @@ sudo ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.2.25/update-
 # Put Latest Generated globalblacklist.conf into place for correct testing of changes
 # ***********************************************************************************
 
+echo "${bold}${yellow}Place latest generated version of globalblacklist.conf into place"
 sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
 echo "${bold}${yellow}Restarting Apache 2.2"
 sudo /usr/local/apache2/bin/apachectl restart
@@ -210,6 +209,7 @@ sudo /usr/local/apache2/bin/apachectl restart
 # Get a copy of all conf files for checking
 # *****************************************
 
+echo "${bold}${yellow}Backup Config Files"
 sudo cp /usr/local/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/
 sudo cp /usr/local/apache2/conf/httpd.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/httpd.conf
 sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.2/
