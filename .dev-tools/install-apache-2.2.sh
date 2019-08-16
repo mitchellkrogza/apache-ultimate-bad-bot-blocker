@@ -57,42 +57,14 @@ defaultcolor=$(tput setaf default)
 # FUNCTIONS
 # ---------
 
-runwithdots () {
-"$@" &
-
-while kill -0 $!; do
-    echo "${bold}${green}." > /dev/tty
+spinner () {
+echo "THIS MAY TAKE A WHILE, PLEASE BE PATIENT ..."
+printf "["
+while kill -0 $PID 2> /dev/null; do
+    printf  "${yellow}▓"
     sleep 1
 done
-}
-
-spinner () {
-    local pid=$!
-    local delay=0.75
-    local spinstr='|/-\'
-    while [ "$(ps a | awk '{print $1}' | grep $pid)" ]; do
-        local temp=${spinstr#?}
-        printf " [%c]  " "$spinstr"
-        local spinstr=$temp${spinstr%"$temp"}
-        sleep $delay
-        printf "\b\b\b\b\b\b"
-    done
-    printf "    \b\b\b\b"
-}
-
-progress_bar () {
-spin[0]="-"
-spin[1]="\\"
-spin[2]="|"
-spin[3]="/"
-pid=$!
-while kill -0 $pid 2> /dev/null; do
-for i in "${spin[@]}"
-do
-    echo -ne "${bold}${red}\b$i"
-    sleep 0.1
-done
-done
+printf "] done!"
 }
 
 
@@ -124,11 +96,11 @@ cd zlib-1.2.11/
 echo "${bold}${green}Building zlib"
 printf '\n'
 make &> zlib.log &
-progress_bar
+spinner
 echo "${bold}${green}Installing zlib"
 printf '\n'
 sudo make -s install &> zlib.log &
-progress_bar
+spinner
 
 wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/httpd-2.2.25.tar.gz
 tar -xvf httpd-2.2.25.tar.gz > /dev/null
@@ -137,12 +109,13 @@ cd httpd-2.2.25/
 echo "${bold}${green}Building Apache 2.2.25"
 printf '\n'
 make &> apache2build.log &
-progress_bar
+spinner
 echo "${bold}${green}Installing Apache 2.2.25"
 printf '\n'
 sudo make -s install &> apache2build.log &
-progress_bar
+spinner
 
+${defaultcolor}
 sudo /usr/local/apache2/bin/apachectl start
 
 wget -qO- http://localhost | grep "It works!"
