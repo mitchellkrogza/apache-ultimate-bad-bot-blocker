@@ -3146,6 +3146,7 @@ SetEnvIfNoCase Referer ~*kino\-rating\.ru spam_ref
 SetEnvIfNoCase Referer ~*kinosed\.net spam_ref
 SetEnvIfNoCase Referer ~*kinostorm\.net spam_ref
 SetEnvIfNoCase Referer ~*kinotorka\.ru spam_ref
+SetEnvIfNoCase Referer ~*kinozapas\.com spam_ref
 SetEnvIfNoCase Referer ~*kiprinform\.com spam_ref
 SetEnvIfNoCase Referer ~*kirov\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*kiskinhouse\.com spam_ref
@@ -5340,6 +5341,7 @@ SetEnvIfNoCase Referer ~*soft\-terminal\.ru spam_ref
 SetEnvIfNoCase Referer ~*softtor\.com spam_ref
 SetEnvIfNoCase Referer ~*softwaretrend\.net spam_ref
 SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
+SetEnvIfNoCase Referer ~*sogimlecal\.tk spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
 SetEnvIfNoCase Referer ~*solicita\.info spam_ref
@@ -5562,6 +5564,7 @@ SetEnvIfNoCase Referer ~*tabakur77\.com spam_ref
 SetEnvIfNoCase Referer ~*tabletkinaodchudzanie\.com\.pl spam_ref
 SetEnvIfNoCase Referer ~*taboola\.com spam_ref
 SetEnvIfNoCase Referer ~*tacbelarus\.ru spam_ref
+SetEnvIfNoCase Referer ~*tacbibirfa\.tk spam_ref
 SetEnvIfNoCase Referer ~*tackletarts\.co spam_ref
 SetEnvIfNoCase Referer ~*tagil\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*taihouse\.ru spam_ref
@@ -6201,6 +6204,7 @@ SetEnvIfNoCase Referer ~*vseigru\.one spam_ref
 SetEnvIfNoCase Referer ~*vsesubwaysurfers\.com spam_ref
 SetEnvIfNoCase Referer ~*vseuznaem\.com spam_ref
 SetEnvIfNoCase Referer ~*vsexkontakte\.net spam_ref
+SetEnvIfNoCase Referer ~*vtcdns\.com spam_ref
 SetEnvIfNoCase Referer ~*vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*vucms\.com spam_ref
 SetEnvIfNoCase Referer ~*vut\.com\.ru spam_ref
@@ -6744,5 +6748,5 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref

@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.08.1135
-### Updated: Sat Aug 10 14:51:34 SAST 2019
-### Bad Referrer Count: 6747
+### Version: V3.2019.08.1137
+### Updated: Fri Aug 16 12:08:50 SAST 2019
+### Bad Referrer Count: 6751
 ### Bad Bot Count: 557
 ###################################################
 ### Version Information ##
@@ -4013,6 +4013,7 @@ SetEnvIfNoCase Referer ~*kino\-rating\.ru spam_ref
 SetEnvIfNoCase Referer ~*kinosed\.net spam_ref
 SetEnvIfNoCase Referer ~*kinostorm\.net spam_ref
 SetEnvIfNoCase Referer ~*kinotorka\.ru spam_ref
+SetEnvIfNoCase Referer ~*kinozapas\.com spam_ref
 SetEnvIfNoCase Referer ~*kiprinform\.com spam_ref
 SetEnvIfNoCase Referer ~*kirov\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*kiskinhouse\.com spam_ref
@@ -6207,6 +6208,7 @@ SetEnvIfNoCase Referer ~*soft\-terminal\.ru spam_ref
 SetEnvIfNoCase Referer ~*softtor\.com spam_ref
 SetEnvIfNoCase Referer ~*softwaretrend\.net spam_ref
 SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
+SetEnvIfNoCase Referer ~*sogimlecal\.tk spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
 SetEnvIfNoCase Referer ~*solicita\.info spam_ref
@@ -6429,6 +6431,7 @@ SetEnvIfNoCase Referer ~*tabakur77\.com spam_ref
 SetEnvIfNoCase Referer ~*tabletkinaodchudzanie\.com\.pl spam_ref
 SetEnvIfNoCase Referer ~*taboola\.com spam_ref
 SetEnvIfNoCase Referer ~*tacbelarus\.ru spam_ref
+SetEnvIfNoCase Referer ~*tacbibirfa\.tk spam_ref
 SetEnvIfNoCase Referer ~*tackletarts\.co spam_ref
 SetEnvIfNoCase Referer ~*tagil\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*taihouse\.ru spam_ref
@@ -7068,6 +7071,7 @@ SetEnvIfNoCase Referer ~*vseigru\.one spam_ref
 SetEnvIfNoCase Referer ~*vsesubwaysurfers\.com spam_ref
 SetEnvIfNoCase Referer ~*vseuznaem\.com spam_ref
 SetEnvIfNoCase Referer ~*vsexkontakte\.net spam_ref
+SetEnvIfNoCase Referer ~*vtcdns\.com spam_ref
 SetEnvIfNoCase Referer ~*vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*vucms\.com spam_ref
 SetEnvIfNoCase Referer ~*vut\.com\.ru spam_ref
@@ -7611,7 +7615,7 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 # END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###
 
@@ -7846,6 +7850,7 @@ deny from 173.212.221.48
 deny from 173.212.222.76
 deny from 173.212.245.25
 deny from 176.105.211.163
+deny from 176.115.92.193
 deny from 176.226.247.90
 deny from 176.65.112.118
 deny from 177.17.0.197
@@ -7876,12 +7881,15 @@ deny from 188.165.243.162
 deny from 188.243.253.154
 deny from 190.2.142.93
 deny from 190.85.136.34
+deny from 192.154.101.130
 deny from 192.3.93.32
 deny from 192.99.175.109
+deny from 193.151.27.50
 deny from 194.114.129.131
 deny from 194.58.70.120
 deny from 195.154.251.86
 deny from 195.162.24.218
+deny from 195.69.237.162
 deny from 198.245.62.136
 deny from 199.249.230.111
 deny from 200.25.255.26
@@ -7896,6 +7904,7 @@ deny from 212.100.94.86
 deny from 212.24.99.35
 deny from 212.33.228.161
 deny from 212.55.100.21
+deny from 213.152.162.84
 deny from 213.166.69.172
 deny from 217.146.82.232
 deny from 23.229.58.49
@@ -7935,6 +7944,7 @@ deny from 47.90.243.113
 deny from 49.254.241.119
 deny from 49.35.104.214
 deny from 5.143.13.93
+deny from 5.149.211.218
 deny from 5.157.24.58
 deny from 5.164.146.133
 deny from 51.68.152.26
@@ -7948,6 +7958,7 @@ deny from 5.28.23.240
 deny from 52.87.213.12
 deny from 54.37.1.12
 deny from 54.38.123.235
+deny from 5.44.170.66
 deny from 5.45.64.76
 deny from 5.45.76.244
 deny from 5.79.161.252
@@ -7991,6 +8002,7 @@ deny from 94.228.252.85
 deny from 94.23.0.85
 deny from 94.23.37.191
 deny from 95.105.254.219
+deny from 95.216.249.71
 deny from 95.47.10.142
 deny from 95.72.130.47
 deny from 95.72.4.19

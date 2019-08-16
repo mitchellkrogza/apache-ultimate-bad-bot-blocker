@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.08.1135
-### Updated: Sat Aug 10 14:51:34 SAST 2019
-### Bad Referrer Count: 6747
+### Version: V3.2019.08.1137
+### Updated: Fri Aug 16 12:08:50 SAST 2019
+### Bad Referrer Count: 6751
 ### Bad Bot Count: 557
 ###################################################
 ### Version Information ##
@@ -4009,6 +4009,7 @@ SetEnvIfNoCase Referer ~*kino\-rating\.ru spam_ref
 SetEnvIfNoCase Referer ~*kinosed\.net spam_ref
 SetEnvIfNoCase Referer ~*kinostorm\.net spam_ref
 SetEnvIfNoCase Referer ~*kinotorka\.ru spam_ref
+SetEnvIfNoCase Referer ~*kinozapas\.com spam_ref
 SetEnvIfNoCase Referer ~*kiprinform\.com spam_ref
 SetEnvIfNoCase Referer ~*kirov\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*kiskinhouse\.com spam_ref
@@ -6203,6 +6204,7 @@ SetEnvIfNoCase Referer ~*soft\-terminal\.ru spam_ref
 SetEnvIfNoCase Referer ~*softtor\.com spam_ref
 SetEnvIfNoCase Referer ~*softwaretrend\.net spam_ref
 SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
+SetEnvIfNoCase Referer ~*sogimlecal\.tk spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
 SetEnvIfNoCase Referer ~*solicita\.info spam_ref
@@ -6425,6 +6427,7 @@ SetEnvIfNoCase Referer ~*tabakur77\.com spam_ref
 SetEnvIfNoCase Referer ~*tabletkinaodchudzanie\.com\.pl spam_ref
 SetEnvIfNoCase Referer ~*taboola\.com spam_ref
 SetEnvIfNoCase Referer ~*tacbelarus\.ru spam_ref
+SetEnvIfNoCase Referer ~*tacbibirfa\.tk spam_ref
 SetEnvIfNoCase Referer ~*tackletarts\.co spam_ref
 SetEnvIfNoCase Referer ~*tagil\.zrus\.org spam_ref
 SetEnvIfNoCase Referer ~*taihouse\.ru spam_ref
@@ -7064,6 +7067,7 @@ SetEnvIfNoCase Referer ~*vseigru\.one spam_ref
 SetEnvIfNoCase Referer ~*vsesubwaysurfers\.com spam_ref
 SetEnvIfNoCase Referer ~*vseuznaem\.com spam_ref
 SetEnvIfNoCase Referer ~*vsexkontakte\.net spam_ref
+SetEnvIfNoCase Referer ~*vtcdns\.com spam_ref
 SetEnvIfNoCase Referer ~*vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*vucms\.com spam_ref
 SetEnvIfNoCase Referer ~*vut\.com\.ru spam_ref
@@ -7607,7 +7611,7 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 # END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###
 
@@ -7769,6 +7773,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 173.212.222.76
 	Require not ip 173.212.245.25
 	Require not ip 176.105.211.163
+	Require not ip 176.115.92.193
 	Require not ip 176.226.247.90
 	Require not ip 176.65.112.118
 	Require not ip 177.17.0.197
@@ -7799,12 +7804,15 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 188.243.253.154
 	Require not ip 190.2.142.93
 	Require not ip 190.85.136.34
+	Require not ip 192.154.101.130
 	Require not ip 192.3.93.32
 	Require not ip 192.99.175.109
+	Require not ip 193.151.27.50
 	Require not ip 194.114.129.131
 	Require not ip 194.58.70.120
 	Require not ip 195.154.251.86
 	Require not ip 195.162.24.218
+	Require not ip 195.69.237.162
 	Require not ip 198.245.62.136
 	Require not ip 199.249.230.111
 	Require not ip 200.25.255.26
@@ -7819,6 +7827,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 212.24.99.35
 	Require not ip 212.33.228.161
 	Require not ip 212.55.100.21
+	Require not ip 213.152.162.84
 	Require not ip 213.166.69.172
 	Require not ip 217.146.82.232
 	Require not ip 23.229.58.49
@@ -7858,6 +7867,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 49.254.241.119
 	Require not ip 49.35.104.214
 	Require not ip 5.143.13.93
+	Require not ip 5.149.211.218
 	Require not ip 5.157.24.58
 	Require not ip 5.164.146.133
 	Require not ip 51.68.152.26
@@ -7871,6 +7881,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 52.87.213.12
 	Require not ip 54.37.1.12
 	Require not ip 54.38.123.235
+	Require not ip 5.44.170.66
 	Require not ip 5.45.64.76
 	Require not ip 5.45.76.244
 	Require not ip 5.79.161.252
@@ -7914,6 +7925,7 @@ SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 	Require not ip 94.23.0.85
 	Require not ip 94.23.37.191
 	Require not ip 95.105.254.219
+	Require not ip 95.216.249.71
 	Require not ip 95.47.10.142
 	Require not ip 95.72.130.47
 	Require not ip 95.72.4.19

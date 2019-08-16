@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.08.1135
-### Bad Referrer Count: 6747
+### Version: V3.2019.08.1137
+### Bad Referrer Count: 6751
 ### Bad Bot Count: 557
 ### Version Information ##
 
@@ -3718,6 +3718,7 @@ SetEnvIfNoCase Referer kinopolet\.net spambot=yes
 SetEnvIfNoCase Referer kinosed\.net spambot=yes
 SetEnvIfNoCase Referer kinostorm\.net spambot=yes
 SetEnvIfNoCase Referer kinotorka\.ru spambot=yes
+SetEnvIfNoCase Referer kinozapas\.com spambot=yes
 SetEnvIfNoCase Referer kiprinform\.com spambot=yes
 SetEnvIfNoCase Referer kirov\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer kiskinhouse\.com spambot=yes
@@ -5912,6 +5913,7 @@ SetEnvIfNoCase Referer softonicads\.com spambot=yes
 SetEnvIfNoCase Referer softtor\.com spambot=yes
 SetEnvIfNoCase Referer softwaretrend\.net spambot=yes
 SetEnvIfNoCase Referer softxaker\.ru spambot=yes
+SetEnvIfNoCase Referer sogimlecal\.tk spambot=yes
 SetEnvIfNoCase Referer soheavyblog\.com spambot=yes
 SetEnvIfNoCase Referer sohoindia\.net spambot=yes
 SetEnvIfNoCase Referer solicita\.info spambot=yes
@@ -6135,6 +6137,7 @@ SetEnvIfNoCase Referer tabakur77\.com spambot=yes
 SetEnvIfNoCase Referer tabletkinaodchudzanie\.com\.pl spambot=yes
 SetEnvIfNoCase Referer taboola\.com spambot=yes
 SetEnvIfNoCase Referer tacbelarus\.ru spambot=yes
+SetEnvIfNoCase Referer tacbibirfa\.tk spambot=yes
 SetEnvIfNoCase Referer tackletarts\.co spambot=yes
 SetEnvIfNoCase Referer tagil\.zrus\.org spambot=yes
 SetEnvIfNoCase Referer taihouse\.ru spambot=yes
@@ -6774,6 +6777,7 @@ SetEnvIfNoCase Referer vsesubwaysurfers\.com spambot=yes
 SetEnvIfNoCase Referer vseuznaem\.com spambot=yes
 SetEnvIfNoCase Referer vsexkontakte\.net spambot=yes
 SetEnvIfNoCase Referer vtc\.pw spambot=yes
+SetEnvIfNoCase Referer vtcdns\.com spambot=yes
 SetEnvIfNoCase Referer vucms\.com spambot=yes
 SetEnvIfNoCase Referer vut\.com\.ru spambot=yes
 SetEnvIfNoCase Referer vvon\.co\.uk spambot=yes
@@ -7317,7 +7321,7 @@ SetEnvIfNoCase Referer zynax\.ua spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 SetEnvIfNoCase Referer zzlgxh\.com spambot=yes
-SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us spambot=yes
+SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
 </IfModule>
 
 
