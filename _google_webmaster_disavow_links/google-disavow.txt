@@ -6748,4 +6748,3 @@ domain:zx6.ru
 domain:zynax.ua
 domain:zytpirwai.net
 domain:zzbroya.com.ua
-domain:zzlgxh.com

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.08.1152
-### Bad Referrer Count: 6751
-### Bad Bot Count: 557
+### Version: V3.2019.08.1155
+### Bad Referrer Count: 6750
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -292,7 +292,6 @@ RewriteCond %{HTTP_USER_AGENT} \bMr\.4x3\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMSFrontPage\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMSIECrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMsrabot\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bMS\ Web\ Services\ Client\ Protocol\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bmuhstik\-scan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMusobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bName\ Intelligence\b [NC,OR]
@@ -7320,8 +7319,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zx6\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zynax\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zytpirwai\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzbroya\.com\.ua.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 </IfModule>
 

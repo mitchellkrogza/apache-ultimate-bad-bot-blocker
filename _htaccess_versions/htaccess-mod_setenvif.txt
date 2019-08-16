@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.08.1152
-### Bad Referrer Count: 6751
-### Bad Bot Count: 557
+### Version: V3.2019.08.1155
+### Bad Referrer Count: 6750
+### Bad Bot Count: 556
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -292,7 +292,6 @@ SetEnvIfNoCase User-Agent \bMr\.4x3\b spambot=yes
 SetEnvIfNoCase User-Agent \bMSFrontPage\b spambot=yes
 SetEnvIfNoCase User-Agent \bMSIECrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bMsrabot\b spambot=yes
-SetEnvIfNoCase User-Agent \bMS\ Web\ Services\ Client\ Protocol\b spambot=yes
 SetEnvIfNoCase User-Agent \bmuhstik\-scan\b spambot=yes
 SetEnvIfNoCase User-Agent \bMusobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bName\ Intelligence\b spambot=yes
@@ -7321,7 +7320,6 @@ SetEnvIfNoCase Referer zynax\.ua spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 SetEnvIfNoCase Referer zzlgxh\.com spambot=yes
-SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
 </IfModule>
 
 
