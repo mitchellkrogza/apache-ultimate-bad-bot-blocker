@@ -146,7 +146,9 @@ sudo wget -qO- http://local.dev
 # *****************************
 
 echo "${bold}${yellow}Disable mod access_compat"
-sudo a2dismod access_compat
+#sudo a2dismod access_compat
+echo "${bold}${red}mod access_compat NOT DISABLED"
+sudo apache2ctl -M
 
 # *************
 # Reload Apache
