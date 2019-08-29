@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.08.1171
-### Bad Referrer Count: 6751
+### Version: V3.2019.08.1172
+### Bad Referrer Count: 6755
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -1062,6 +1062,7 @@ SetEnvIfNoCase Referer apple\.com\-webbrowsing\-security\.science spambot=yes
 SetEnvIfNoCase Referer appleid\-verification\.com spambot=yes
 SetEnvIfNoCase Referer applicationg29\.com spambot=yes
 SetEnvIfNoCase Referer applyneedy\.xyz spambot=yes
+SetEnvIfNoCase Referer appmsr\.org spambot=yes
 SetEnvIfNoCase Referer approved\.su spambot=yes
 SetEnvIfNoCase Referer approvedlocal\.co\.za spambot=yes
 SetEnvIfNoCase Referer apps\-analytics\.net spambot=yes
@@ -2611,6 +2612,7 @@ SetEnvIfNoCase Referer fanoboi\.com spambot=yes
 SetEnvIfNoCase Referer fanpagerobot\.com spambot=yes
 SetEnvIfNoCase Referer fanrto\.com spambot=yes
 SetEnvIfNoCase Referer fantasticpixcool\.com spambot=yes
+SetEnvIfNoCase Referer fapgon\.com spambot=yes
 SetEnvIfNoCase Referer faptitans\.com spambot=yes
 SetEnvIfNoCase Referer faracontrol\.ir spambot=yes
 SetEnvIfNoCase Referer farm26\.ru spambot=yes
@@ -3941,6 +3943,7 @@ SetEnvIfNoCase Referer lirunet\.ru spambot=yes
 SetEnvIfNoCase Referer lisque\.batcave\.net spambot=yes
 SetEnvIfNoCase Referer littleberry\.ru spambot=yes
 SetEnvIfNoCase Referer littlecity\.ch spambot=yes
+SetEnvIfNoCase Referer littlesexdolls\.com spambot=yes
 SetEnvIfNoCase Referer littlesunraiser\.com spambot=yes
 SetEnvIfNoCase Referer liumimgx\.pw spambot=yes
 SetEnvIfNoCase Referer liupis\.com spambot=yes
@@ -4667,6 +4670,7 @@ SetEnvIfNoCase Referer olvanto\.ru spambot=yes
 SetEnvIfNoCase Referer olympescort\.com spambot=yes
 SetEnvIfNoCase Referer omoikiri\-japan\.ru spambot=yes
 SetEnvIfNoCase Referer omsk\.xrus\.org spambot=yes
+SetEnvIfNoCase Referer onblastblog\.online spambot=yes
 SetEnvIfNoCase Referer onclickpredictiv\.com spambot=yes
 SetEnvIfNoCase Referer onclkads\.com spambot=yes
 SetEnvIfNoCase Referer one\-gear\.com spambot=yes
@@ -7320,7 +7324,7 @@ SetEnvIfNoCase Referer zynax\.ua spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 SetEnvIfNoCase Referer zzlgxh\.com spambot=yes
-SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
+SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
 </IfModule>
 
 

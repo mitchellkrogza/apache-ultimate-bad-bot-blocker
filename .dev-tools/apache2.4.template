@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.08.1171
-### Updated: Thu Aug 22 16:56:39 SAST 2019
-### Bad Referrer Count: 6751
+### Version: V3.2019.08.1172
+### Updated: Thu Aug 29 13:37:13 SAST 2019
+### Bad Referrer Count: 6755
 ### Bad Bot Count: 556
 ###################################################
 ### Version Information ##
@@ -1350,6 +1350,7 @@ SetEnvIfNoCase Referer ~*apple\.com\-webbrowsing\-security\.science spam_ref
 SetEnvIfNoCase Referer ~*appleid\-verification\.com spam_ref
 SetEnvIfNoCase Referer ~*applicationg29\.com spam_ref
 SetEnvIfNoCase Referer ~*applyneedy\.xyz spam_ref
+SetEnvIfNoCase Referer ~*appmsr\.org spam_ref
 SetEnvIfNoCase Referer ~*app\-ready\.xyz spam_ref
 SetEnvIfNoCase Referer ~*approvedlocal\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*approved\.su spam_ref
@@ -2900,6 +2901,7 @@ SetEnvIfNoCase Referer ~*fanoboi\.com spam_ref
 SetEnvIfNoCase Referer ~*fanpagerobot\.com spam_ref
 SetEnvIfNoCase Referer ~*fanrto\.com spam_ref
 SetEnvIfNoCase Referer ~*fantasticpixcool\.com spam_ref
+SetEnvIfNoCase Referer ~*fapgon\.com spam_ref
 SetEnvIfNoCase Referer ~*faptitans\.com spam_ref
 SetEnvIfNoCase Referer ~*faracontrol\.ir spam_ref
 SetEnvIfNoCase Referer ~*farm26\.ru spam_ref
@@ -4232,6 +4234,7 @@ SetEnvIfNoCase Referer ~*lirunet\.ru spam_ref
 SetEnvIfNoCase Referer ~*lisque\.batcave\.net spam_ref
 SetEnvIfNoCase Referer ~*littleberry\.ru spam_ref
 SetEnvIfNoCase Referer ~*littlecity\.ch spam_ref
+SetEnvIfNoCase Referer ~*littlesexdolls\.com spam_ref
 SetEnvIfNoCase Referer ~*littlesunraiser\.com spam_ref
 SetEnvIfNoCase Referer ~*liumimgx\.pw spam_ref
 SetEnvIfNoCase Referer ~*liupis\.com spam_ref
@@ -4953,6 +4956,7 @@ SetEnvIfNoCase Referer ~*olvanto\.ru spam_ref
 SetEnvIfNoCase Referer ~*olympescort\.com spam_ref
 SetEnvIfNoCase Referer ~*omoikiri\-japan\.ru spam_ref
 SetEnvIfNoCase Referer ~*omsk\.xrus\.org spam_ref
+SetEnvIfNoCase Referer ~*onblastblog\.online spam_ref
 SetEnvIfNoCase Referer ~*onclickpredictiv\.com spam_ref
 SetEnvIfNoCase Referer ~*onclkads\.com spam_ref
 SetEnvIfNoCase Referer ~*oneclickfiles\.com spam_ref
@@ -7610,7 +7614,7 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 # END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###
 
