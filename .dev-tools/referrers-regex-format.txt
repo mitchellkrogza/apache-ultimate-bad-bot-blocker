@@ -5348,6 +5348,7 @@ SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
 SetEnvIfNoCase Referer ~*sogimlecal\.tk spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
+SetEnvIfNoCase Referer ~*soietvousmaime\.fr spam_ref
 SetEnvIfNoCase Referer ~*solicita\.info spam_ref
 SetEnvIfNoCase Referer ~*solinf\.co spam_ref
 SetEnvIfNoCase Referer ~*solitaire\-game\.ru spam_ref
@@ -6752,5 +6753,5 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref

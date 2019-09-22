@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2019.09.1174
-### Updated: Sat Sep  7 12:23:23 SAST 2019
-### Bad Referrer Count: 6755
+### Version: V3.2019.09.1175
+### Updated: Sun Sep 22 16:54:32 SAST 2019
+### Bad Referrer Count: 6756
 ### Bad Bot Count: 556
 ###################################################
 ### Version Information ##
@@ -6210,6 +6210,7 @@ SetEnvIfNoCase Referer ~*softxaker\.ru spam_ref
 SetEnvIfNoCase Referer ~*sogimlecal\.tk spam_ref
 SetEnvIfNoCase Referer ~*soheavyblog\.com spam_ref
 SetEnvIfNoCase Referer ~*sohoindia\.net spam_ref
+SetEnvIfNoCase Referer ~*soietvousmaime\.fr spam_ref
 SetEnvIfNoCase Referer ~*solicita\.info spam_ref
 SetEnvIfNoCase Referer ~*solinf\.co spam_ref
 SetEnvIfNoCase Referer ~*solitaire\-game\.ru spam_ref
@@ -7614,7 +7615,7 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
+SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
 # END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###
 

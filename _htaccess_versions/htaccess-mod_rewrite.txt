@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.09.1174
-### Bad Referrer Count: 6755
+### Version: V3.2019.09.1175
+### Bad Referrer Count: 6756
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -5919,6 +5919,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*softxaker\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sogimlecal\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*soheavyblog\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sohoindia\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*soietvousmaime\.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*solicita\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*solinf\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*solitaire\-game\.ru.*$ [NC,OR]
@@ -7324,7 +7325,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zynax\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zytpirwai\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzbroya\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us.*$ [NC]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us.*$ [NC]
 RewriteRule ^(.*)$ – [F,L]
 </IfModule>
 

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.09.1174
-### Bad Referrer Count: 6755
+### Version: V3.2019.09.1175
+### Bad Referrer Count: 6756
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -5919,6 +5919,7 @@ SetEnvIfNoCase Referer softxaker\.ru spambot=yes
 SetEnvIfNoCase Referer sogimlecal\.tk spambot=yes
 SetEnvIfNoCase Referer soheavyblog\.com spambot=yes
 SetEnvIfNoCase Referer sohoindia\.net spambot=yes
+SetEnvIfNoCase Referer soietvousmaime\.fr spambot=yes
 SetEnvIfNoCase Referer solicita\.info spambot=yes
 SetEnvIfNoCase Referer solinf\.co spambot=yes
 SetEnvIfNoCase Referer solitaire\-game\.ru spambot=yes
@@ -7324,7 +7325,7 @@ SetEnvIfNoCase Referer zynax\.ua spambot=yes
 SetEnvIfNoCase Referer zytpirwai\.net spambot=yes
 SetEnvIfNoCase Referer zzbroya\.com\.ua spambot=yes
 SetEnvIfNoCase Referer zzlgxh\.com spambot=yes
-SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
+SetEnvIfNoCase Referer zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spambot=yes
 </IfModule>
 
 
