@@ -3,8 +3,8 @@
 ## DO NOT use this on any of your sites if you are running the Bad Bot and Spam Referrer Blocker (not needed)
 
 _______________
-#### Version: V3.2019.09.1175
-#### Bad Referrer Count: 6756
+#### Version: V3.2019.09.1176
+#### Bad Referrer Count: 6772
 #### Bad Bot Count: 556
 ____________________
 
