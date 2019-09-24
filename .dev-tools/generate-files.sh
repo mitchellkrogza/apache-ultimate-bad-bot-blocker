@@ -44,15 +44,15 @@ cd ${TRAVIS_BUILD_DIR}
 
 # Fetch Latest Lists from Nginx REPO and Merge / Sort
 # Merge and Sort Bad-Referrers
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list -O ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx
-cat ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx >> ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list
-sort -u ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list -o ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list
-sudo rm ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx
+#sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list -O ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx
+#cat ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx >> ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list
+#sort -u ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list -o ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list
+#sudo rm ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.nginx
 # Merge and Sort Fake GoogleBots
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list -O ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx
-cat ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx >> ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
-sort -u ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list -o ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
-sudo rm ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx
+#sudo wget https://raw.githubusercontent.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list -O ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx
+#cat ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx >> ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
+#sort -u ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list -o ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
+#sudo rm ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.nginx
 
 # *****************************************************
 # Generate our files with build and version information
