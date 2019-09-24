@@ -1818,8 +1818,6 @@ SetEnvIfNoCase Referer ~*ekspertmed\.com spam_ref
 SetEnvIfNoCase Referer ~*ekspresihati\.info spam_ref
 SetEnvIfNoCase Referer ~*ekto\.ee spam_ref
 SetEnvIfNoCase Referer ~*e\-kwiaciarz\.pl spam_ref
-SetEnvIfNoCase Referer ~*eladkarako\.com spam_ref
-SetEnvIfNoCase Referer ~*eladkarako\.github\.io spam_ref
 SetEnvIfNoCase Referer ~*eldiariodeguadalajara\.com spam_ref
 SetEnvIfNoCase Referer ~*election\.interferencer\.ru spam_ref
 SetEnvIfNoCase Referer ~*electricwheelchairsarea\.com spam_ref
@@ -6769,5 +6767,4 @@ SetEnvIfNoCase Referer ~*zx6\.ru spam_ref
 SetEnvIfNoCase Referer ~*zynax\.ua spam_ref
 SetEnvIfNoCase Referer ~*zytpirwai\.net spam_ref
 SetEnvIfNoCase Referer ~*zzbroya\.com\.ua spam_ref
-SetEnvIfNoCase Referer ~*zzlgxh\.com000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us000free\.us spam_ref
 SetEnvIfNoCase Referer ~*zzlgxh\.com spam_ref
