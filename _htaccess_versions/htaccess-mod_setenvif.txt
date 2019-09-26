@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.09.1178
-### Bad Referrer Count: 6769
+### Version: V3.2019.09.1179
+### Bad Referrer Count: 6774
 ### Bad Bot Count: 556
 ### Version Information ##
 
@@ -2099,6 +2099,7 @@ SetEnvIfNoCase Referer darodar\.com spambot=yes
 SetEnvIfNoCase Referer data\-mining\.tk spambot=yes
 SetEnvIfNoCase Referer data\.vtc\.pw spambot=yes
 SetEnvIfNoCase Referer data1\.scopich\.com spambot=yes
+SetEnvIfNoCase Referer datadepths\.com spambot=yes
 SetEnvIfNoCase Referer dataloading\.net spambot=yes
 SetEnvIfNoCase Referer date\-withme\.com spambot=yes
 SetEnvIfNoCase Referer dating\-app\.ru spambot=yes
@@ -2843,6 +2844,7 @@ SetEnvIfNoCase Referer freshmac\.space spambot=yes
 SetEnvIfNoCase Referer freshsuperbloop\.com spambot=yes
 SetEnvIfNoCase Referer freshwallpapers\.info spambot=yes
 SetEnvIfNoCase Referer freza\-sverlo\.ru spambot=yes
+SetEnvIfNoCase Referer friendflnder\.com spambot=yes
 SetEnvIfNoCase Referer frighteningremain\.cf spambot=yes
 SetEnvIfNoCase Referer frivgame250\.com spambot=yes
 SetEnvIfNoCase Referer froggytube\.com spambot=yes
@@ -3998,6 +4000,7 @@ SetEnvIfNoCase Referer lombia\.com spambot=yes
 SetEnvIfNoCase Referer lomza\.info spambot=yes
 SetEnvIfNoCase Referer lonely\-mature\.com spambot=yes
 SetEnvIfNoCase Referer lonerangergames\.com spambot=yes
+SetEnvIfNoCase Referer lonfon\.xyz spambot=yes
 SetEnvIfNoCase Referer long\-beach\-air\-conditioning\.com spambot=yes
 SetEnvIfNoCase Referer longadventure\.com spambot=yes
 SetEnvIfNoCase Referer longgreen\.info spambot=yes
@@ -5405,6 +5408,7 @@ SetEnvIfNoCase Referer rockprogblog\.com spambot=yes
 SetEnvIfNoCase Referer rogervivierforsale\.com spambot=yes
 SetEnvIfNoCase Referer roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer roll123\.com spambot=yes
+SetEnvIfNoCase Referer rollercoin\.com spambot=yes
 SetEnvIfNoCase Referer roma\-kukareku\.livejournal\.com spambot=yes
 SetEnvIfNoCase Referer rome2rio\.com spambot=yes
 SetEnvIfNoCase Referer romhacking\.ru spambot=yes
@@ -5972,6 +5976,7 @@ SetEnvIfNoCase Referer spbchampionat\.ru spambot=yes
 SetEnvIfNoCase Referer special\-porn\.com spambot=yes
 SetEnvIfNoCase Referer specialfinanceoffers\.com spambot=yes
 SetEnvIfNoCase Referer speechfoodie\.com spambot=yes
+SetEnvIfNoCase Referer speeddream\.xyz spambot=yes
 SetEnvIfNoCase Referer speedup\-my\.site spambot=yes
 SetEnvIfNoCase Referer spidtest\.org spambot=yes
 SetEnvIfNoCase Referer spidtest\.space spambot=yes
