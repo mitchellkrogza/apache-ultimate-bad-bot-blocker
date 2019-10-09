@@ -1411,6 +1411,7 @@ SetEnvIfNoCase Referer ~*coolbar\.pro spam_ref
 SetEnvIfNoCase Referer ~*coolgamechannel\.com spam_ref
 SetEnvIfNoCase Referer ~*coolgramgoods\.com spam_ref
 SetEnvIfNoCase Referer ~*coolingoods\.com spam_ref
+SetEnvIfNoCase Referer ~*coolwallpapers4k\.info spam_ref
 SetEnvIfNoCase Referer ~*coolwallpapers\-hd\.com spam_ref
 SetEnvIfNoCase Referer ~*cool\-wedding\.net spam_ref
 SetEnvIfNoCase Referer ~*coolyarddecorations\.com spam_ref
@@ -4676,6 +4677,7 @@ SetEnvIfNoCase Referer ~*quick\-seeker\.com spam_ref
 SetEnvIfNoCase Referer ~*quit\-smoking\.ga spam_ref
 SetEnvIfNoCase Referer ~*quizzitch\.net spam_ref
 SetEnvIfNoCase Referer ~*qwarckoine\.com spam_ref
+SetEnvIfNoCase Referer ~*qwertty\.net spam_ref
 SetEnvIfNoCase Referer ~*qwesa\.ru spam_ref
 SetEnvIfNoCase Referer ~*raavidesigns\.com spam_ref
 SetEnvIfNoCase Referer ~*rabotaetvse\.ru spam_ref
