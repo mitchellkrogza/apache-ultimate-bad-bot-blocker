@@ -527,6 +527,7 @@ SetEnvIfNoCase Referer ~*arkartex\.ru spam_ref
 SetEnvIfNoCase Referer ~*arkkivoltti\.net spam_ref
 SetEnvIfNoCase Referer ~*arpelsreplica\.xyz spam_ref
 SetEnvIfNoCase Referer ~*arquapetrarca\.info spam_ref
+SetEnvIfNoCase Referer ~*arquivo\.pt spam_ref
 SetEnvIfNoCase Referer ~*arraty\.altervista\.org spam_ref
 SetEnvIfNoCase Referer ~*artavenuegardenstudios\.com spam_ref
 SetEnvIfNoCase Referer ~*artdeko\.info spam_ref
@@ -4550,6 +4551,7 @@ SetEnvIfNoCase Referer ~*printingpeach\.com spam_ref
 SetEnvIfNoCase Referer ~*priora\-2\.com spam_ref
 SetEnvIfNoCase Referer ~*priscilarodrigues\.com\.br spam_ref
 SetEnvIfNoCase Referer ~*privacyassistant\.net spam_ref
+SetEnvIfNoCase Referer ~*privacylocationforloc\.com spam_ref
 SetEnvIfNoCase Referer ~*privatamateure\.com spam_ref
 SetEnvIfNoCase Referer ~*privatbank46\.ru spam_ref
 SetEnvIfNoCase Referer ~*privatefx\.all4invest\.info spam_ref

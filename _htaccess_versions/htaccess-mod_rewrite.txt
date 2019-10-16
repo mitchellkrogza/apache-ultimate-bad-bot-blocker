@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.10.1181
-### Bad Referrer Count: 6776
-### Bad Bot Count: 556
+### Version: V3.2019.10.1182
+### Bad Referrer Count: 6778
+### Bad Bot Count: 562
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -34,10 +34,14 @@ RewriteCond %{HTTP_USER_AGENT} \bAlphaBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAnarchie\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bApexoo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \barquivo\.pt\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bASPSeek\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAsterias\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAttach\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bautoemailspider\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAwarioRssBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAwarioSmartBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBackDoorBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBacklink\-Ceck\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bbacklink\-check\b [NC,OR]
@@ -188,6 +192,7 @@ RewriteCond %{HTTP_USER_AGENT} \bHaosouSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHarvest\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHavij\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHEADMasterSEO\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bheritrix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHeritrix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHloader\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bHMView\b [NC,OR]
@@ -287,6 +292,7 @@ RewriteCond %{HTTP_USER_AGENT} \bMIIxpc\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMister\ PiX\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMJ12bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMojeek\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bMojolicious\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMorfeus\ Fucking\ Scanner\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMr\.4x3\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMSFrontPage\b [NC,OR]
@@ -1098,6 +1104,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arkartex\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arkkivoltti\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arpelsreplica\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arquapetrarca\.info.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arquivo\.pt.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*arraty\.altervista\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artavenuegardenstudios\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*artdeko\.info.*$ [NC,OR]
@@ -5122,6 +5129,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*printingpeach\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*priora\-2\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*priscilarodrigues\.com\.br.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privacyassistant\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privacylocationforloc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privat\-girl\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privatamateure\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*privatbank46\.ru.*$ [NC,OR]

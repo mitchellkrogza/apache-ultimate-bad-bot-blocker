@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.10.1181
-### Bad Referrer Count: 6776
-### Bad Bot Count: 556
+### Version: V3.2019.10.1182
+### Bad Referrer Count: 6778
+### Bad Bot Count: 562
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -34,10 +34,14 @@ SetEnvIfNoCase User-Agent \bAlphaBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAnarchie\b spambot=yes
 SetEnvIfNoCase User-Agent \bApexoo\b spambot=yes
 SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
+SetEnvIfNoCase User-Agent \barquivo\.pt\b spambot=yes
+SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bASPSeek\b spambot=yes
 SetEnvIfNoCase User-Agent \bAsterias\b spambot=yes
 SetEnvIfNoCase User-Agent \bAttach\b spambot=yes
 SetEnvIfNoCase User-Agent \bautoemailspider\b spambot=yes
+SetEnvIfNoCase User-Agent \bAwarioRssBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bAwarioSmartBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bBackDoorBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bBacklink\-Ceck\b spambot=yes
 SetEnvIfNoCase User-Agent \bbacklink\-check\b spambot=yes
@@ -188,6 +192,7 @@ SetEnvIfNoCase User-Agent \bHaosouSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bHarvest\b spambot=yes
 SetEnvIfNoCase User-Agent \bHavij\b spambot=yes
 SetEnvIfNoCase User-Agent \bHEADMasterSEO\b spambot=yes
+SetEnvIfNoCase User-Agent \bheritrix\b spambot=yes
 SetEnvIfNoCase User-Agent \bHeritrix\b spambot=yes
 SetEnvIfNoCase User-Agent \bHloader\b spambot=yes
 SetEnvIfNoCase User-Agent \bHMView\b spambot=yes
@@ -287,6 +292,7 @@ SetEnvIfNoCase User-Agent \bMIIxpc\b spambot=yes
 SetEnvIfNoCase User-Agent \bMister\ PiX\b spambot=yes
 SetEnvIfNoCase User-Agent \bMJ12bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bMojeek\b spambot=yes
+SetEnvIfNoCase User-Agent \bMojolicious\b spambot=yes
 SetEnvIfNoCase User-Agent \bMorfeus\ Fucking\ Scanner\b spambot=yes
 SetEnvIfNoCase User-Agent \bMr\.4x3\b spambot=yes
 SetEnvIfNoCase User-Agent \bMSFrontPage\b spambot=yes
@@ -1098,6 +1104,7 @@ SetEnvIfNoCase Referer arkartex\.ru spambot=yes
 SetEnvIfNoCase Referer arkkivoltti\.net spambot=yes
 SetEnvIfNoCase Referer arpelsreplica\.xyz spambot=yes
 SetEnvIfNoCase Referer arquapetrarca\.info spambot=yes
+SetEnvIfNoCase Referer arquivo\.pt spambot=yes
 SetEnvIfNoCase Referer arraty\.altervista\.org spambot=yes
 SetEnvIfNoCase Referer artavenuegardenstudios\.com spambot=yes
 SetEnvIfNoCase Referer artdeko\.info spambot=yes
@@ -5122,6 +5129,7 @@ SetEnvIfNoCase Referer printingpeach\.com spambot=yes
 SetEnvIfNoCase Referer priora\-2\.com spambot=yes
 SetEnvIfNoCase Referer priscilarodrigues\.com\.br spambot=yes
 SetEnvIfNoCase Referer privacyassistant\.net spambot=yes
+SetEnvIfNoCase Referer privacylocationforloc\.com spambot=yes
 SetEnvIfNoCase Referer privat\-girl\.net spambot=yes
 SetEnvIfNoCase Referer privatamateure\.com spambot=yes
 SetEnvIfNoCase Referer privatbank46\.ru spambot=yes
