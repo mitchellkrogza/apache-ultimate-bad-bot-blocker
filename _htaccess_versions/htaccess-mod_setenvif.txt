@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2019.10.1183
-### Bad Referrer Count: 6778
+### Version: V3.2019.10.1184
+### Bad Referrer Count: 6782
 ### Bad Bot Count: 562
 ### Version Information ##
 
@@ -3841,6 +3841,7 @@ SetEnvIfNoCase Referer lacasamorett\.com spambot=yes
 SetEnvIfNoCase Referer lacave\.ntic\.fr spambot=yes
 SetEnvIfNoCase Referer lacloop\.info spambot=yes
 SetEnvIfNoCase Referer ladov\.ru spambot=yes
+SetEnvIfNoCase Referer ladsup\.com spambot=yes
 SetEnvIfNoCase Referer laexotic\.com spambot=yes
 SetEnvIfNoCase Referer lafourmiliaire\.com spambot=yes
 SetEnvIfNoCase Referer lafriore\.ru spambot=yes
@@ -5289,6 +5290,7 @@ SetEnvIfNoCase Referer rapevideosmovies\.com spambot=yes
 SetEnvIfNoCase Referer rapidgator\-porn\.ga spambot=yes
 SetEnvIfNoCase Referer rapidokbrain\.com spambot=yes
 SetEnvIfNoCase Referer rapidsites\.pro spambot=yes
+SetEnvIfNoCase Referer rarbg\.to spambot=yes
 SetEnvIfNoCase Referer raschtextil\.com\.ua spambot=yes
 SetEnvIfNoCase Referer rasteniya\-vs\-zombi\.ru spambot=yes
 SetEnvIfNoCase Referer ratemodels\.net spambot=yes
@@ -5732,6 +5734,7 @@ SetEnvIfNoCase Referer sextracker\.de spambot=yes
 SetEnvIfNoCase Referer sexuria\.net spambot=yes
 SetEnvIfNoCase Referer sexvideo\-sex\.com spambot=yes
 SetEnvIfNoCase Referer sexvporno\.ru spambot=yes
+SetEnvIfNoCase Referer sexxdate\.net spambot=yes
 SetEnvIfNoCase Referer sexy\-pings\.com spambot=yes
 SetEnvIfNoCase Referer sexy\-screen\-savers\.com spambot=yes
 SetEnvIfNoCase Referer sexy\.babes\.frontend\-stack\.top spambot=yes
@@ -7181,6 +7184,7 @@ SetEnvIfNoCase Referer yebocasino\.com spambot=yes
 SetEnvIfNoCase Referer yellocloud\.be spambot=yes
 SetEnvIfNoCase Referer yellowads\.men spambot=yes
 SetEnvIfNoCase Referer yellowfootprints\.com spambot=yes
+SetEnvIfNoCase Referer yellowproxy\.net spambot=yes
 SetEnvIfNoCase Referer yellowstonesafaritours\.com spambot=yes
 SetEnvIfNoCase Referer yellowstonevisitortours\.com spambot=yes
 SetEnvIfNoCase Referer yes\-com\.com spambot=yes

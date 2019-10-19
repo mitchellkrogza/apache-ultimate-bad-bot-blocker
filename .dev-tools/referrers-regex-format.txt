@@ -3263,6 +3263,7 @@ SetEnvIfNoCase Referer ~*lacasamorett\.com spam_ref
 SetEnvIfNoCase Referer ~*lacave\.ntic\.fr spam_ref
 SetEnvIfNoCase Referer ~*lacloop\.info spam_ref
 SetEnvIfNoCase Referer ~*ladov\.ru spam_ref
+SetEnvIfNoCase Referer ~*ladsup\.com spam_ref
 SetEnvIfNoCase Referer ~*laexotic\.com spam_ref
 SetEnvIfNoCase Referer ~*la\-fa\.ru spam_ref
 SetEnvIfNoCase Referer ~*lafourmiliaire\.com spam_ref
@@ -4710,6 +4711,7 @@ SetEnvIfNoCase Referer ~*rapevideosmovies\.com spam_ref
 SetEnvIfNoCase Referer ~*rapidgator\-porn\.ga spam_ref
 SetEnvIfNoCase Referer ~*rapidokbrain\.com spam_ref
 SetEnvIfNoCase Referer ~*rapidsites\.pro spam_ref
+SetEnvIfNoCase Referer ~*rarbg\.to spam_ref
 SetEnvIfNoCase Referer ~*raschtextil\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*rasteniya\-vs\-zombi\.ru spam_ref
 SetEnvIfNoCase Referer ~*ratemodels\.net spam_ref
@@ -5152,6 +5154,7 @@ SetEnvIfNoCase Referer ~*sexuria\.net spam_ref
 SetEnvIfNoCase Referer ~*sexvideo\-sex\.com spam_ref
 SetEnvIfNoCase Referer ~*sexvporno\.ru spam_ref
 SetEnvIfNoCase Referer ~*sex\-watch\.com spam_ref
+SetEnvIfNoCase Referer ~*sexxdate\.net spam_ref
 SetEnvIfNoCase Referer ~*sexyali\.com spam_ref
 SetEnvIfNoCase Referer ~*sexy\.babes\.frontend\-stack\.top spam_ref
 SetEnvIfNoCase Referer ~*sexy\-pings\.com spam_ref
@@ -6604,6 +6607,7 @@ SetEnvIfNoCase Referer ~*yebocasino\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*yellocloud\.be spam_ref
 SetEnvIfNoCase Referer ~*yellowads\.men spam_ref
 SetEnvIfNoCase Referer ~*yellowfootprints\.com spam_ref
+SetEnvIfNoCase Referer ~*yellowproxy\.net spam_ref
 SetEnvIfNoCase Referer ~*yellowstonesafaritours\.com spam_ref
 SetEnvIfNoCase Referer ~*yellowstonevisitortours\.com spam_ref
 SetEnvIfNoCase Referer ~*yes\-com\.com spam_ref
