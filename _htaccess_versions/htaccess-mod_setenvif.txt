@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.03.1188
+### Version: V3.2020.04.1190
 ### Bad Referrer Count: 6831
 ### Bad Bot Count: 573
 ### Version Information ##
@@ -37,7 +37,7 @@ SetEnvIfNoCase User-Agent \bApexoo\b spambot=yes
 SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\.pt\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
-SetEnvIfNoCase User-Agent \bAspeigel\b spambot=yes
+SetEnvIfNoCase User-Agent \bAspiegel\b spambot=yes
 SetEnvIfNoCase User-Agent \bASPSeek\b spambot=yes
 SetEnvIfNoCase User-Agent \bAsterias\b spambot=yes
 SetEnvIfNoCase User-Agent \bAttach\b spambot=yes

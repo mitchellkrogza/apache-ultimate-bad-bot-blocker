@@ -6,8 +6,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2020.03.1188
-### Updated: Thu Mar 12 16:27:45 SAST 2020
+### Version: V3.2020.04.1190
+### Updated: Wed Apr 15 12:12:15 SAST 2020
 ### Bad Bot Count: 573
 ###################################################
 ### Version Information ##
@@ -63,7 +63,7 @@ User-agent: arquivo.pt
 Disallow:/
 User-agent: arquivo-web-crawler
 Disallow:/
-User-agent: Aspeigel
+User-agent: Aspiegel
 Disallow:/
 User-agent: ASPSeek
 Disallow:/

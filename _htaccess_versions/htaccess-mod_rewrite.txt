@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.03.1188
+### Version: V3.2020.04.1190
 ### Bad Referrer Count: 6831
 ### Bad Bot Count: 573
 ### Version Information ##
@@ -37,7 +37,7 @@ RewriteCond %{HTTP_USER_AGENT} \bApexoo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\.pt\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bAspeigel\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAspiegel\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bASPSeek\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAsterias\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAttach\b [NC,OR]
