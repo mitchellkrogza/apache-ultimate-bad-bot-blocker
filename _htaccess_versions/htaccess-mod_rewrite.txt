@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.04.1190
+### Version: V3.2020.05.1191
 ### Bad Referrer Count: 6831
 ### Bad Bot Count: 573
 ### Version Information ##
@@ -130,6 +130,8 @@ RewriteCond %{HTTP_USER_AGENT} \bDnyzBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDomainAppender\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDomainCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDomainSigmaCrawler\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bDomains\ Project\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bdomainsproject\.org\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDomainStatsBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDotbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bDownload\ Wonder\b [NC,OR]
@@ -580,8 +582,6 @@ RewriteCond %{HTTP_USER_AGENT} \bzauba\.io\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZermelo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZeus\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bzgrab\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bzh\_CN\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bzh\-CN\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZitebot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZmEu\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZumBot\b [NC,OR]

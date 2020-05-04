@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.04.1190
+### Version: V3.2020.05.1191
 ### Bad Referrer Count: 6831
 ### Bad Bot Count: 573
 ### Version Information ##
@@ -130,6 +130,8 @@ SetEnvIfNoCase User-Agent \bDnyzBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDomainAppender\b spambot=yes
 SetEnvIfNoCase User-Agent \bDomainCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bDomainSigmaCrawler\b spambot=yes
+SetEnvIfNoCase User-Agent \bDomains\ Project\b spambot=yes
+SetEnvIfNoCase User-Agent \bdomainsproject\.org\b spambot=yes
 SetEnvIfNoCase User-Agent \bDomainStatsBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDotbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bDownload\ Wonder\b spambot=yes
@@ -580,8 +582,6 @@ SetEnvIfNoCase User-Agent \bzauba\.io\b spambot=yes
 SetEnvIfNoCase User-Agent \bZermelo\b spambot=yes
 SetEnvIfNoCase User-Agent \bZeus\b spambot=yes
 SetEnvIfNoCase User-Agent \bzgrab\b spambot=yes
-SetEnvIfNoCase User-Agent \bzh\_CN\b spambot=yes
-SetEnvIfNoCase User-Agent \bzh\-CN\b spambot=yes
 SetEnvIfNoCase User-Agent \bZitebot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZmEu\b spambot=yes
 SetEnvIfNoCase User-Agent \bZumBot\b spambot=yes
