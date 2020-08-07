@@ -2963,6 +2963,7 @@ SetEnvIfNoCase Referer ~*iscblog\.info spam_ref
 SetEnvIfNoCase Referer ~*i\-service\.kz spam_ref
 SetEnvIfNoCase Referer ~*isistaylorporn\.info spam_ref
 SetEnvIfNoCase Referer ~*isitpaleo\.info spam_ref
+SetEnvIfNoCase Referer ~*isitwp\.com spam_ref
 SetEnvIfNoCase Referer ~*iskalko\.ru spam_ref
 SetEnvIfNoCase Referer ~*islamtoday\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*islandminingsupply\.wordpress\.com spam_ref
@@ -4975,6 +4976,7 @@ SetEnvIfNoCase Referer ~*sarf3omlat\.com spam_ref
 SetEnvIfNoCase Referer ~*sarm\.tk spam_ref
 SetEnvIfNoCase Referer ~*sashagreyblog\.ga spam_ref
 SetEnvIfNoCase Referer ~*satellite\.maps\.ilovevitaly\.com spam_ref
+SetEnvIfNoCase Referer ~*satoristudio\.net spam_ref
 SetEnvIfNoCase Referer ~*saugatuck\.com spam_ref
 SetEnvIfNoCase Referer ~*savefrom\.com spam_ref
 SetEnvIfNoCase Referer ~*saveindex\.xyz spam_ref
@@ -5283,6 +5285,7 @@ SetEnvIfNoCase Referer ~*siteaero\.com spam_ref
 SetEnvIfNoCase Referer ~*site\-analyzer\.com spam_ref
 SetEnvIfNoCase Referer ~*site\-auditor\.online spam_ref
 SetEnvIfNoCase Referer ~*sitebeam\.net spam_ref
+SetEnvIfNoCase Referer ~*sitechecker\.pro spam_ref
 SetEnvIfNoCase Referer ~*siteexpress\.co\.il spam_ref
 SetEnvIfNoCase Referer ~*siteheart\.net spam_ref
 SetEnvIfNoCase Referer ~*siteimprove\.com spam_ref

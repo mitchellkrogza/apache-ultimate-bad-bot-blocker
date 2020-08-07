@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.05.1191
-### Bad Referrer Count: 6831
-### Bad Bot Count: 573
+### Version: V3.2020.08.1192
+### Bad Referrer Count: 6834
+### Bad Bot Count: 578
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -224,6 +224,7 @@ RewriteCond %{HTTP_USER_AGENT} \binternetVista\ monitor\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bips\-agent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIria\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIRLbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bisitwp\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIskanie\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIstellaBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bJamesBOT\b [NC,OR]
@@ -302,6 +303,7 @@ RewriteCond %{HTTP_USER_AGENT} \bMJ12bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMojeek\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMojolicious\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMorfeus\ Fucking\ Scanner\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bMozlila\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMQQBrowser\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMr\.4x3\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bMSFrontPage\b [NC,OR]
@@ -403,6 +405,7 @@ RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRSSingBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bs1z\.ru\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSalesIntelligent\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bsatoristudio\.net\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSBIder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScanAlert\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScanbot\b [NC,OR]
@@ -429,6 +432,8 @@ RewriteCond %{HTTP_USER_AGENT} \bShodan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiphon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSISTRIX\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSitebeam\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSiteCheckerBotCrawler\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bsitechecker\.pro\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteExplorer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteimprove\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteLockSpider\b [NC,OR]
@@ -3551,6 +3556,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*irunfar\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*iscblog\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*isistaylorporn\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*isitpaleo\.info.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*isitwp\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*iskalko\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*islamtoday\.co\.za.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*islandminingsupply\.wordpress\.com.*$ [NC,OR]
@@ -5566,6 +5572,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sarf3omlat\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sarm\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sashagreyblog\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*satellite\.maps\.ilovevitaly\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*satoristudio\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*saugatuck\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*savefrom\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*saveindex\.xyz.*$ [NC,OR]
@@ -5877,6 +5884,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*site3\.free\-share\-buttons\.co
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*site5\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*siteaero\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sitebeam\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sitechecker\.pro.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*siteexpress\.co\.il.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*siteheart\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*siteimprove\.com.*$ [NC,OR]

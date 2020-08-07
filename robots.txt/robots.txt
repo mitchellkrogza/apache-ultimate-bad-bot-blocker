@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2020.05.1191
-### Updated: Mon May  4 15:19:28 SAST 2020
-### Bad Bot Count: 573
+### Version: V3.2020.08.1192
+### Updated: Fri Aug  7 15:09:48 SAST 2020
+### Bad Bot Count: 578
 ###################################################
 ### Version Information ##
 
@@ -437,6 +437,8 @@ User-agent: Iria
 Disallow:/
 User-agent: IRLbot
 Disallow:/
+User-agent: isitwp.com
+Disallow:/
 User-agent: Iskanie
 Disallow:/
 User-agent: IstellaBot
@@ -592,6 +594,8 @@ Disallow:/
 User-agent: Mojolicious
 Disallow:/
 User-agent: Morfeus Fucking Scanner
+Disallow:/
+User-agent: Mozlila
 Disallow:/
 User-agent: MQQBrowser
 Disallow:/
@@ -795,6 +799,8 @@ User-agent: s1z.ru
 Disallow:/
 User-agent: SalesIntelligent
 Disallow:/
+User-agent: satoristudio.net
+Disallow:/
 User-agent: SBIder
 Disallow:/
 User-agent: ScanAlert
@@ -846,6 +852,10 @@ Disallow:/
 User-agent: SISTRIX
 Disallow:/
 User-agent: Sitebeam
+Disallow:/
+User-agent: SiteCheckerBotCrawler
+Disallow:/
+User-agent: sitechecker.pro
 Disallow:/
 User-agent: SiteExplorer
 Disallow:/

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2020.05.1191
-### Bad Referrer Count: 6831
-### Bad Bot Count: 573
+### Version: V3.2020.08.1192
+### Bad Referrer Count: 6834
+### Bad Bot Count: 578
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -224,6 +224,7 @@ SetEnvIfNoCase User-Agent \binternetVista\ monitor\b spambot=yes
 SetEnvIfNoCase User-Agent \bips\-agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bIria\b spambot=yes
 SetEnvIfNoCase User-Agent \bIRLbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bisitwp\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bIskanie\b spambot=yes
 SetEnvIfNoCase User-Agent \bIstellaBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bJamesBOT\b spambot=yes
@@ -302,6 +303,7 @@ SetEnvIfNoCase User-Agent \bMJ12bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bMojeek\b spambot=yes
 SetEnvIfNoCase User-Agent \bMojolicious\b spambot=yes
 SetEnvIfNoCase User-Agent \bMorfeus\ Fucking\ Scanner\b spambot=yes
+SetEnvIfNoCase User-Agent \bMozlila\b spambot=yes
 SetEnvIfNoCase User-Agent \bMQQBrowser\b spambot=yes
 SetEnvIfNoCase User-Agent \bMr\.4x3\b spambot=yes
 SetEnvIfNoCase User-Agent \bMSFrontPage\b spambot=yes
@@ -403,6 +405,7 @@ SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bRSSingBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bs1z\.ru\b spambot=yes
 SetEnvIfNoCase User-Agent \bSalesIntelligent\b spambot=yes
+SetEnvIfNoCase User-Agent \bsatoristudio\.net\b spambot=yes
 SetEnvIfNoCase User-Agent \bSBIder\b spambot=yes
 SetEnvIfNoCase User-Agent \bScanAlert\b spambot=yes
 SetEnvIfNoCase User-Agent \bScanbot\b spambot=yes
@@ -429,6 +432,8 @@ SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiphon\b spambot=yes
 SetEnvIfNoCase User-Agent \bSISTRIX\b spambot=yes
 SetEnvIfNoCase User-Agent \bSitebeam\b spambot=yes
+SetEnvIfNoCase User-Agent \bSiteCheckerBotCrawler\b spambot=yes
+SetEnvIfNoCase User-Agent \bsitechecker\.pro\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteExplorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteimprove\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteLockSpider\b spambot=yes
@@ -3551,6 +3556,7 @@ SetEnvIfNoCase Referer irunfar\.com spambot=yes
 SetEnvIfNoCase Referer iscblog\.info spambot=yes
 SetEnvIfNoCase Referer isistaylorporn\.info spambot=yes
 SetEnvIfNoCase Referer isitpaleo\.info spambot=yes
+SetEnvIfNoCase Referer isitwp\.com spambot=yes
 SetEnvIfNoCase Referer iskalko\.ru spambot=yes
 SetEnvIfNoCase Referer islamtoday\.co\.za spambot=yes
 SetEnvIfNoCase Referer islandminingsupply\.wordpress\.com spambot=yes
@@ -5566,6 +5572,7 @@ SetEnvIfNoCase Referer sarf3omlat\.com spambot=yes
 SetEnvIfNoCase Referer sarm\.tk spambot=yes
 SetEnvIfNoCase Referer sashagreyblog\.ga spambot=yes
 SetEnvIfNoCase Referer satellite\.maps\.ilovevitaly\.com spambot=yes
+SetEnvIfNoCase Referer satoristudio\.net spambot=yes
 SetEnvIfNoCase Referer saugatuck\.com spambot=yes
 SetEnvIfNoCase Referer savefrom\.com spambot=yes
 SetEnvIfNoCase Referer saveindex\.xyz spambot=yes
@@ -5877,6 +5884,7 @@ SetEnvIfNoCase Referer site3\.free\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer site5\.com spambot=yes
 SetEnvIfNoCase Referer siteaero\.com spambot=yes
 SetEnvIfNoCase Referer sitebeam\.net spambot=yes
+SetEnvIfNoCase Referer sitechecker\.pro spambot=yes
 SetEnvIfNoCase Referer siteexpress\.co\.il spambot=yes
 SetEnvIfNoCase Referer siteheart\.net spambot=yes
 SetEnvIfNoCase Referer siteimprove\.com spambot=yes
