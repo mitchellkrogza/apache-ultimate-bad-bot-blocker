@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2020.12.1193
-### Updated: Mon Dec 28 09:34:25 SAST 2020
-### Bad Bot Count: 583
+### Version: V3.2021.01.1194
+### Updated: Thu Jan  7 14:16:13 SAST 2021
+### Bad Bot Count: 592
 ###################################################
 ### Version Information ##
 
@@ -135,6 +135,8 @@ User-agent: Brandprotect
 Disallow:/
 User-agent: Brandwatch
 Disallow:/
+User-agent: Buck
+Disallow:/
 User-agent: Buddy
 Disallow:/
 User-agent: BuiltBotTough
@@ -157,6 +159,8 @@ User-agent: CCBot
 Disallow:/
 User-agent: Cegbfeieh
 Disallow:/
+User-agent: CensysInspect
+Disallow:/
 User-agent: check1.exe
 Disallow:/
 User-agent: CheeseBot
@@ -176,6 +180,8 @@ Disallow:/
 User-agent: Cloud mapping
 Disallow:/
 User-agent: coccocbot-web
+Disallow:/
+User-agent: Cocolyzebot
 Disallow:/
 User-agent: CODE87
 Disallow:/
@@ -505,6 +511,8 @@ User-agent: Lightspeedsystems
 Disallow:/
 User-agent: Likse
 Disallow:/
+User-agent: Linkbot
+Disallow:/
 User-agent: Linkdexbot
 Disallow:/
 User-agent: LinkextractorPro
@@ -727,6 +735,8 @@ User-agent: PECL::HTTP
 Disallow:/
 User-agent: PeoplePal
 Disallow:/
+User-agent: Petalbot
+Disallow:/
 User-agent: PHPCrawl
 Disallow:/
 User-agent: Picscout
@@ -834,6 +844,8 @@ Disallow:/
 User-agent: Semrush
 Disallow:/
 User-agent: SemrushBot
+Disallow:/
+User-agent: SentiBot
 Disallow:/
 User-agent: SEOkicks
 Disallow:/
@@ -1023,6 +1035,8 @@ User-agent: VB Project
 Disallow:/
 User-agent: VCI
 Disallow:/
+User-agent: VelenPublicWebCrawler
+Disallow:/
 User-agent: VeriCiteCrawler
 Disallow:/
 User-agent: VidibleScraper
@@ -1176,6 +1190,10 @@ Disallow:/
 User-agent: Zitebot
 Disallow:/
 User-agent: ZmEu
+Disallow:/
+User-agent: ZoomBot
+Disallow:/
+User-agent: ZoominfoBot
 Disallow:/
 User-agent: ZumBot
 Disallow:/
