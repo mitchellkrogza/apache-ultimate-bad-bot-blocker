@@ -723,6 +723,7 @@ domain:battle.net
 domain:battlecarnival.su
 domain:battleforupdating.site
 domain:bausparen.bz.it
+domain:bavsac.com
 domain:bayareaaeroclub.org
 domain:bazaronline24.ru
 domain:bbsoldes.fr
@@ -1700,6 +1701,7 @@ domain:dogclothing.store
 domain:dogoimage.com
 domain:dogsrun.net
 domain:dojki-hd.com
+domain:dojki365.online
 domain:dokfilms.net
 domain:doktoronline.no
 domain:dokumentalkino.net
@@ -3100,6 +3102,7 @@ domain:justdating.online
 domain:justkillingti.me
 domain:justprofit.xyz
 domain:justucalling32211123456789.tk
+domain:jwcialislrt.com
 domain:jwss.cc
 domain:jyrxd.com
 domain:jyvopys.com
@@ -3363,6 +3366,7 @@ domain:legalrc.biz
 domain:legionalpha.com
 domain:lego4x4.ru
 domain:lennatin.info
+domain:lenpipet.ru
 domain:lenvred.org
 domain:lernur.net
 domain:lerporn.info
@@ -4391,6 +4395,7 @@ domain:photosaga.info
 domain:photostudiolightings.com
 domain:php-market.ru
 domain:phpdevops.com
+domain:phrcialiled.com
 domain:phuketscreen.com
 domain:physfunc.ru
 domain:pic2fly.com
@@ -4792,6 +4797,7 @@ domain:ratemodels.net
 domain:razamicroelectronics.com
 domain:razleton.com
 domain:razorweb-a.akamaihd.net
+domain:razvratnoe.org
 domain:razyboard.com
 domain:rcb101.ru
 domain:rcpmda.ikan1080.xyz
@@ -4935,6 +4941,7 @@ domain:royalvegascasino.com
 domain:rozalli.com
 domain:roznica.com.ua
 domain:rp9.ru
+domain:rrutw.com
 domain:ru-dety.ru
 domain:rubanners.com
 domain:rubbed.us
@@ -5147,6 +5154,7 @@ domain:seminarykansas904.ml
 domain:semp.net
 domain:semprofile.com
 domain:semrush.com
+domain:semxiu.com
 domain:sendearnings.com
 domain:senger.atspace.co.uk
 domain:seo-2-0.com
@@ -5205,6 +5213,7 @@ domain:sex-sex-sex5.com
 domain:sex-tracker.com
 domain:sex-tracker.de
 domain:sex-watch.com
+domain:sex-znakomstva.online
 domain:sex.hotblog.top
 domain:sexad.net
 domain:sexblog.pw
@@ -5253,6 +5262,7 @@ domain:sharebutton.org
 domain:sharebutton.to
 domain:shariki-zuma-lines.ru
 domain:sharpchallenge.com
+domain:sheerseo.com
 domain:shell-pmr.ru
 domain:shemale-sex.net
 domain:shemalegalls.blogporn.in
@@ -5433,6 +5443,7 @@ domain:socialseet.ru
 domain:socialsignals24.com
 domain:socialtrade.biz
 domain:sockshare.net
+domain:sockshares.tv
 domain:soda.media
 domain:sodexo.com
 domain:sofit-dmd.ru
@@ -5721,6 +5732,7 @@ domain:tecspb.ru
 domain:tedxrj.com
 domain:tedy.su
 domain:teenbbw.yopoint.in
+domain:teencastingporn.com
 domain:teenfuck.tv
 domain:teenporn18.net
 domain:teesdaleflyballclub.co.uk
@@ -6168,6 +6180,7 @@ domain:v24s.net
 domain:v720hd.ru
 domain:vabasa.inwtrade.com
 domain:vacances-voyages.info
+domain:vacuumcleanerguru.com
 domain:vacuumscleaner.com
 domain:vadimkravtcov.ru
 domain:validccseller.com
@@ -6689,6 +6702,7 @@ domain:xolodremont.ru
 domain:xportvusbdriver8i.snack.ws
 domain:xpresscare.ru
 domain:xrus.org
+domain:xsfetish.org
 domain:xsion.net
 domain:xtraffic.plus
 domain:xtrafficplus.com
@@ -6890,6 +6904,7 @@ domain:zootoplist.com
 domain:zootravel.com
 domain:zophim.me
 domain:zrelaya.pw
+domain:zreloeporno.tv
 domain:zrizvtrnpale.tk
 domain:zrus.org
 domain:zryydi.com
