@@ -4,9 +4,9 @@
 ## Copyright - https://github.com/mitchellkrogza
 
 _______________
-#### Version: V3.2021.02.1195
-#### Bad Referrer Count: 6925
-#### Bad Bot Count: 594
+#### Version: V3.2021.02.1196
+#### Bad Referrer Count: 6929
+#### Bad Bot Count: 600
 ____________________
 
 ### for mod_rewrite.c and mod_setenvif.c modules

@@ -414,6 +414,7 @@ SetEnvIfNoCase Referer ~*anabolics\.shop spam_ref
 SetEnvIfNoCase Referer ~*anaksma\.info spam_ref
 SetEnvIfNoCase Referer ~*anal\-acrobats\.com spam_ref
 SetEnvIfNoCase Referer ~*anal\-acrobats\.hol\.es spam_ref
+SetEnvIfNoCase Referer ~*analnoeporno\.tv spam_ref
 SetEnvIfNoCase Referer ~*analytics\-ads\.xyz spam_ref
 SetEnvIfNoCase Referer ~*ananumous\.ru spam_ref
 SetEnvIfNoCase Referer ~*anapa\-inns\.ru spam_ref
@@ -4125,6 +4126,7 @@ SetEnvIfNoCase Referer ~*oballergiya\.ru spam_ref
 SetEnvIfNoCase Referer ~*obesidadealgarve\.com spam_ref
 SetEnvIfNoCase Referer ~*obiavo\.by spam_ref
 SetEnvIfNoCase Referer ~*obiavo\.com spam_ref
+SetEnvIfNoCase Referer ~*obiavo\.in spam_ref
 SetEnvIfNoCase Referer ~*obiavo\.net spam_ref
 SetEnvIfNoCase Referer ~*obiavo\.ru spam_ref
 SetEnvIfNoCase Referer ~*obiavo\.su spam_ref
@@ -4141,6 +4143,7 @@ SetEnvIfNoCase Referer ~*odesproperty\.com spam_ref
 SetEnvIfNoCase Referer ~*odoratus\.net spam_ref
 SetEnvIfNoCase Referer ~*odywpjtw\.bloger\.index\.hr spam_ref
 SetEnvIfNoCase Referer ~*oecnhs\.info spam_ref
+SetEnvIfNoCase Referer ~*ofanda\.com spam_ref
 SetEnvIfNoCase Referer ~*offer\.camp spam_ref
 SetEnvIfNoCase Referer ~*offergroup\.info spam_ref
 SetEnvIfNoCase Referer ~*offers\.bycontext\.com spam_ref
@@ -6273,6 +6276,7 @@ SetEnvIfNoCase Referer ~*videospornogratisx\.net spam_ref
 SetEnvIfNoCase Referer ~*videotuber\.ru spam_ref
 SetEnvIfNoCase Referer ~*video\-woman\.com spam_ref
 SetEnvIfNoCase Referer ~*videtubs\.pl spam_ref
+SetEnvIfNoCase Referer ~*vids18\.site spam_ref
 SetEnvIfNoCase Referer ~*vielporno\.net spam_ref
 SetEnvIfNoCase Referer ~*viel\.su spam_ref
 SetEnvIfNoCase Referer ~*vietimgy\.pw spam_ref
