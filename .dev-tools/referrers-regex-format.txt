@@ -5749,6 +5749,7 @@ SetEnvIfNoCase Referer ~*telegraf\.by spam_ref
 SetEnvIfNoCase Referer ~*telegramdownload10\.com spam_ref
 SetEnvIfNoCase Referer ~*telemetryverification\.net spam_ref
 SetEnvIfNoCase Referer ~*telesvoboda\.ru spam_ref
+SetEnvIfNoCase Referer ~*teletype\.in spam_ref
 SetEnvIfNoCase Referer ~*telsis\.com spam_ref
 SetEnvIfNoCase Referer ~*template\-kid\.com spam_ref
 SetEnvIfNoCase Referer ~*templates\.franklinfire\.co spam_ref

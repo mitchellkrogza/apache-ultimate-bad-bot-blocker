@@ -5,14 +5,15 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.02.1196
-### Bad Referrer Count: 6929
-### Bad Bot Count: 600
+### Version: V3.2021.02.1197
+### Bad Referrer Count: 6930
+### Bad Bot Count: 604
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
 
 SetEnvIfNoCase User-Agent ^\W spambot=yes
+SetEnvIfNoCase User-Agent \b01h4x\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \b360Spider\b spambot=yes
 SetEnvIfNoCase User-Agent \b404checker\b spambot=yes
 SetEnvIfNoCase User-Agent \b404enemy\b spambot=yes
@@ -191,6 +192,7 @@ SetEnvIfNoCase User-Agent \bGigablast\b spambot=yes
 SetEnvIfNoCase User-Agent \bGigabot\b spambot=yes
 SetEnvIfNoCase User-Agent \bG\-i\-g\-a\-b\-o\-t\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\-Ahead\-Got\-It\b spambot=yes
+SetEnvIfNoCase User-Agent \bgopher\b spambot=yes
 SetEnvIfNoCase User-Agent \bGotit\b spambot=yes
 SetEnvIfNoCase User-Agent \bGoZilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\!Zilla\b spambot=yes
@@ -397,6 +399,7 @@ SetEnvIfNoCase User-Agent \bProbethenet\b spambot=yes
 SetEnvIfNoCase User-Agent \bProPowerBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bProWebWalker\b spambot=yes
 SetEnvIfNoCase User-Agent \bPsbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bPu\_iN\b spambot=yes
 SetEnvIfNoCase User-Agent \bPump\b spambot=yes
 SetEnvIfNoCase User-Agent \bPxBroker\b spambot=yes
 SetEnvIfNoCase User-Agent \bPyCurl\b spambot=yes
@@ -416,6 +419,7 @@ SetEnvIfNoCase User-Agent \bRecorder\b spambot=yes
 SetEnvIfNoCase User-Agent \bRedesScrapy\b spambot=yes
 SetEnvIfNoCase User-Agent \bReGet\b spambot=yes
 SetEnvIfNoCase User-Agent \bRepoMonkey\b spambot=yes
+SetEnvIfNoCase User-Agent \bRe\-re\b spambot=yes
 SetEnvIfNoCase User-Agent \bRipper\b spambot=yes
 SetEnvIfNoCase User-Agent \bRocketCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
@@ -6364,6 +6368,7 @@ SetEnvIfNoCase Referer telegraf\.by spambot=yes
 SetEnvIfNoCase Referer telegramdownload10\.com spambot=yes
 SetEnvIfNoCase Referer telemetryverification\.net spambot=yes
 SetEnvIfNoCase Referer telesvoboda\.ru spambot=yes
+SetEnvIfNoCase Referer teletype\.in spambot=yes
 SetEnvIfNoCase Referer telsis\.com spambot=yes
 SetEnvIfNoCase Referer template\-kid\.com spambot=yes
 SetEnvIfNoCase Referer templates\.franklinfire\.co spambot=yes

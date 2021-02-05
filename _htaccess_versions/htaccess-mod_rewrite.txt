@@ -5,14 +5,15 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.02.1196
-### Bad Referrer Count: 6929
-### Bad Bot Count: 600
+### Version: V3.2021.02.1197
+### Bad Referrer Count: 6930
+### Bad Bot Count: 604
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} ^\W [OR]
+RewriteCond %{HTTP_USER_AGENT} \b01h4x\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b360Spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404checker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404enemy\b [NC,OR]
@@ -191,6 +192,7 @@ RewriteCond %{HTTP_USER_AGENT} \bGigablast\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGigabot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bG\-i\-g\-a\-b\-o\-t\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGo\-Ahead\-Got\-It\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bgopher\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGotit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGoZilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGo\!Zilla\b [NC,OR]
@@ -397,6 +399,7 @@ RewriteCond %{HTTP_USER_AGENT} \bProbethenet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bProPowerBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bProWebWalker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPsbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bPu\_iN\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPump\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPxBroker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPyCurl\b [NC,OR]
@@ -416,6 +419,7 @@ RewriteCond %{HTTP_USER_AGENT} \bRecorder\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRedesScrapy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bReGet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRepoMonkey\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bRe\-re\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRipper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRocketCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]
@@ -6364,6 +6368,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*telegraf\.by.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*telegramdownload10\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*telemetryverification\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*telesvoboda\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*teletype\.in.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*telsis\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*template\-kid\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*templates\.franklinfire\.co.*$ [NC,OR]
