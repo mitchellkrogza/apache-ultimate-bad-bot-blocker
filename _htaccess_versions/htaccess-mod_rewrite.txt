@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.02.1197
-### Bad Referrer Count: 6930
-### Bad Bot Count: 604
+### Version: V3.2021.02.1198
+### Bad Referrer Count: 6932
+### Bad Bot Count: 608
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -387,6 +387,7 @@ RewriteCond %{HTTP_USER_AGENT} \bPHPCrawl\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPicscout\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPicsearch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPictureFinder\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bPiepmatz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPimonster\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPi\-Monster\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPixray\b [NC,OR]
@@ -395,6 +396,7 @@ RewriteCond %{HTTP_USER_AGENT} \bplumanalytics\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPockey\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bPOE\-Component\-Client\-HTTP\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bpolaris\ version\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bprobe\-image\-size\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bProbethenet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bProPowerBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bProWebWalker\b [NC,OR]
@@ -421,6 +423,7 @@ RewriteCond %{HTTP_USER_AGENT} \bReGet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRepoMonkey\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRe\-re\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRipper\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bripz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRocketCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRSSingBot\b [NC,OR]
@@ -460,6 +463,7 @@ RewriteCond %{HTTP_USER_AGENT} \bsitechecker\.pro\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteExplorer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteimprove\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteLockSpider\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bsiteripz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteSnagger\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteSucker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSite\ Sucker\b [NC,OR]
@@ -2678,6 +2682,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fable\.in\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*face\.hostingx\.eu.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*facebook\-mobile\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*facecup\.top.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*facialporntube\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*factorynightclub\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*failingmarriege\.blogspot\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*fakehandbags\.xyz.*$ [NC,OR]
@@ -5162,6 +5167,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pornhubforum\.tk.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pornmania\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-chaman\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-dojki\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-home365\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-play\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-raskazy\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*porno\-transsexuals\.ru.*$ [NC,OR]

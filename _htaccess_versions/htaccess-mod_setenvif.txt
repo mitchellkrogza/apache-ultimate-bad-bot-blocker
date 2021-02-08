@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.02.1197
-### Bad Referrer Count: 6930
-### Bad Bot Count: 604
+### Version: V3.2021.02.1198
+### Bad Referrer Count: 6932
+### Bad Bot Count: 608
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -387,6 +387,7 @@ SetEnvIfNoCase User-Agent \bPHPCrawl\b spambot=yes
 SetEnvIfNoCase User-Agent \bPicscout\b spambot=yes
 SetEnvIfNoCase User-Agent \bPicsearch\b spambot=yes
 SetEnvIfNoCase User-Agent \bPictureFinder\b spambot=yes
+SetEnvIfNoCase User-Agent \bPiepmatz\b spambot=yes
 SetEnvIfNoCase User-Agent \bPimonster\b spambot=yes
 SetEnvIfNoCase User-Agent \bPi\-Monster\b spambot=yes
 SetEnvIfNoCase User-Agent \bPixray\b spambot=yes
@@ -395,6 +396,7 @@ SetEnvIfNoCase User-Agent \bplumanalytics\b spambot=yes
 SetEnvIfNoCase User-Agent \bPockey\b spambot=yes
 SetEnvIfNoCase User-Agent \bPOE\-Component\-Client\-HTTP\b spambot=yes
 SetEnvIfNoCase User-Agent \bpolaris\ version\b spambot=yes
+SetEnvIfNoCase User-Agent \bprobe\-image\-size\b spambot=yes
 SetEnvIfNoCase User-Agent \bProbethenet\b spambot=yes
 SetEnvIfNoCase User-Agent \bProPowerBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bProWebWalker\b spambot=yes
@@ -421,6 +423,7 @@ SetEnvIfNoCase User-Agent \bReGet\b spambot=yes
 SetEnvIfNoCase User-Agent \bRepoMonkey\b spambot=yes
 SetEnvIfNoCase User-Agent \bRe\-re\b spambot=yes
 SetEnvIfNoCase User-Agent \bRipper\b spambot=yes
+SetEnvIfNoCase User-Agent \bripz\b spambot=yes
 SetEnvIfNoCase User-Agent \bRocketCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bRSSingBot\b spambot=yes
@@ -460,6 +463,7 @@ SetEnvIfNoCase User-Agent \bsitechecker\.pro\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteExplorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteimprove\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteLockSpider\b spambot=yes
+SetEnvIfNoCase User-Agent \bsiteripz\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteSnagger\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteSucker\b spambot=yes
 SetEnvIfNoCase User-Agent \bSite\ Sucker\b spambot=yes
@@ -2678,6 +2682,7 @@ SetEnvIfNoCase Referer fable\.in\.ua spambot=yes
 SetEnvIfNoCase Referer face\.hostingx\.eu spambot=yes
 SetEnvIfNoCase Referer facebook\-mobile\.xyz spambot=yes
 SetEnvIfNoCase Referer facecup\.top spambot=yes
+SetEnvIfNoCase Referer facialporntube\.com spambot=yes
 SetEnvIfNoCase Referer factorynightclub\.com spambot=yes
 SetEnvIfNoCase Referer failingmarriege\.blogspot\.com spambot=yes
 SetEnvIfNoCase Referer fakehandbags\.xyz spambot=yes
@@ -5162,6 +5167,7 @@ SetEnvIfNoCase Referer pornhubforum\.tk spambot=yes
 SetEnvIfNoCase Referer pornmania\.pl spambot=yes
 SetEnvIfNoCase Referer porno\-chaman\.info spambot=yes
 SetEnvIfNoCase Referer porno\-dojki\.net spambot=yes
+SetEnvIfNoCase Referer porno\-home365\.com spambot=yes
 SetEnvIfNoCase Referer porno\-play\.net spambot=yes
 SetEnvIfNoCase Referer porno\-raskazy\.ru spambot=yes
 SetEnvIfNoCase Referer porno\-transsexuals\.ru spambot=yes

@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.02.1197
-### Updated: Fri Feb  5 11:08:41 SAST 2021
-### Bad Bot Count: 604
+### Version: V3.2021.02.1198
+### Updated: Mon Feb  8 12:39:28 SAST 2021
+### Bad Bot Count: 608
 ###################################################
 ### Version Information ##
 
@@ -763,6 +763,8 @@ User-agent: Picsearch
 Disallow:/
 User-agent: PictureFinder
 Disallow:/
+User-agent: Piepmatz
+Disallow:/
 User-agent: Pimonster
 Disallow:/
 User-agent: Pi-Monster
@@ -778,6 +780,8 @@ Disallow:/
 User-agent: POE-Component-Client-HTTP
 Disallow:/
 User-agent: polaris version
+Disallow:/
+User-agent: probe-image-size
 Disallow:/
 User-agent: Probethenet
 Disallow:/
@@ -830,6 +834,8 @@ Disallow:/
 User-agent: Re-re
 Disallow:/
 User-agent: Ripper
+Disallow:/
+User-agent: ripz
 Disallow:/
 User-agent: RocketCrawler
 Disallow:/
@@ -908,6 +914,8 @@ Disallow:/
 User-agent: Siteimprove
 Disallow:/
 User-agent: SiteLockSpider
+Disallow:/
+User-agent: siteripz
 Disallow:/
 User-agent: SiteSnagger
 Disallow:/

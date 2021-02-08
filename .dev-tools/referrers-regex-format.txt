@@ -2057,6 +2057,7 @@ SetEnvIfNoCase Referer ~*fable\.in\.ua spam_ref
 SetEnvIfNoCase Referer ~*facebook\-mobile\.xyz spam_ref
 SetEnvIfNoCase Referer ~*facecup\.top spam_ref
 SetEnvIfNoCase Referer ~*face\.hostingx\.eu spam_ref
+SetEnvIfNoCase Referer ~*facialporntube\.com spam_ref
 SetEnvIfNoCase Referer ~*factorynightclub\.com spam_ref
 SetEnvIfNoCase Referer ~*failingmarriege\.blogspot\.com spam_ref
 SetEnvIfNoCase Referer ~*fakehandbags\.xyz spam_ref
@@ -4553,6 +4554,7 @@ SetEnvIfNoCase Referer ~*pornogad\.com spam_ref
 SetEnvIfNoCase Referer ~*pornogig\.com spam_ref
 SetEnvIfNoCase Referer ~*pornogratisdiario\.com spam_ref
 SetEnvIfNoCase Referer ~*pornohd1080\.online spam_ref
+SetEnvIfNoCase Referer ~*porno\-home365\.com spam_ref
 SetEnvIfNoCase Referer ~*pornokajf\.com spam_ref
 SetEnvIfNoCase Referer ~*pornoklad\.net spam_ref
 SetEnvIfNoCase Referer ~*pornoklad\.ru spam_ref
