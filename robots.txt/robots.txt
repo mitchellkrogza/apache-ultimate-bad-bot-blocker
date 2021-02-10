@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.02.1198
-### Updated: Mon Feb  8 12:39:28 SAST 2021
-### Bad Bot Count: 608
+### Version: V3.2021.02.1199
+### Updated: Wed Feb 10 06:04:15 SAST 2021
+### Bad Bot Count: 607
 ###################################################
 ### Version Information ##
 
@@ -690,8 +690,6 @@ Disallow:/
 User-agent: Ninja
 Disallow:/
 User-agent: Nmap
-Disallow:/
-User-agent: node-fetch
 Disallow:/
 User-agent: NPbot
 Disallow:/
