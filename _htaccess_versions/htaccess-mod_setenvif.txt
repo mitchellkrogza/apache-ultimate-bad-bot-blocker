@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.02.1199
-### Bad Referrer Count: 6932
+### Version: V3.2021.02.1200
+### Bad Referrer Count: 6937
 ### Bad Bot Count: 607
 ### Version Information ##
 
@@ -2354,6 +2354,7 @@ SetEnvIfNoCase Referer domznaniy\.ru spambot=yes
 SetEnvIfNoCase Referer donna7753191\.ru spambot=yes
 SetEnvIfNoCase Referer donvito\.unas\.cz spambot=yes
 SetEnvIfNoCase Referer dood\.live spambot=yes
+SetEnvIfNoCase Referer doreenblog\.online spambot=yes
 SetEnvIfNoCase Referer dorratex\.tn spambot=yes
 SetEnvIfNoCase Referer doska\-vsem\.ru spambot=yes
 SetEnvIfNoCase Referer dostavimvdom\.ru spambot=yes
@@ -2563,6 +2564,7 @@ SetEnvIfNoCase Referer eropho\.com spambot=yes
 SetEnvIfNoCase Referer eropho\.net spambot=yes
 SetEnvIfNoCase Referer eropornosex\.ru spambot=yes
 SetEnvIfNoCase Referer erot\.co spambot=yes
+SetEnvIfNoCase Referer erotag\.com spambot=yes
 SetEnvIfNoCase Referer erotik\-kostenlos\.net spambot=yes
 SetEnvIfNoCase Referer erotik0049\.com spambot=yes
 SetEnvIfNoCase Referer erotikchat\-24\.com spambot=yes
@@ -4757,6 +4759,7 @@ SetEnvIfNoCase Referer obesidadealgarve\.com spambot=yes
 SetEnvIfNoCase Referer obiavo\.by spambot=yes
 SetEnvIfNoCase Referer obiavo\.com spambot=yes
 SetEnvIfNoCase Referer obiavo\.in spambot=yes
+SetEnvIfNoCase Referer obiavo\.kz spambot=yes
 SetEnvIfNoCase Referer obiavo\.net spambot=yes
 SetEnvIfNoCase Referer obiavo\.ru spambot=yes
 SetEnvIfNoCase Referer obiavo\.su spambot=yes
@@ -5052,6 +5055,7 @@ SetEnvIfNoCase Referer pila\.pl spambot=yes
 SetEnvIfNoCase Referer pills24h\.com spambot=yes
 SetEnvIfNoCase Referer pillscheap24h\.com spambot=yes
 SetEnvIfNoCase Referer piluli\.info spambot=yes
+SetEnvIfNoCase Referer pinapchik\.com spambot=yes
 SetEnvIfNoCase Referer pinkduck\.ga spambot=yes
 SetEnvIfNoCase Referer pinsdaddy\.com spambot=yes
 SetEnvIfNoCase Referer pinstake\.com spambot=yes
@@ -5952,6 +5956,7 @@ SetEnvIfNoCase Referer simon3\.ru spambot=yes
 SetEnvIfNoCase Referer simple\-image\.com\.ua spambot=yes
 SetEnvIfNoCase Referer simple\-share\-buttons\.com spambot=yes
 SetEnvIfNoCase Referer simplepooltips\.com spambot=yes
+SetEnvIfNoCase Referer simplesite\.com spambot=yes
 SetEnvIfNoCase Referer simply\.net spambot=yes
 SetEnvIfNoCase Referer simpoed\.ufop\.br spambot=yes
 SetEnvIfNoCase Referer sims\-sims\.ru spambot=yes
