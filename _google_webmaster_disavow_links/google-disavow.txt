@@ -299,6 +299,7 @@ domain:aghanyna.com
 domain:agreda.pluto.ro
 domain:agroeconom.kz
 domain:agysya.ru
+domain:ahhjf.com
 domain:ahmedabadwebs.com
 domain:ahrefs.com
 domain:ahrntal.verymes.xyz
@@ -848,6 +849,7 @@ domain:bio-market.kz
 domain:bio-optomarket.ru
 domain:bio.trade-jp.net
 domain:bioca.org
+domain:biocn.dx.am
 domain:biographiya.com
 domain:bioinnovate.co
 domain:bioscorp.ru
@@ -1838,6 +1840,7 @@ domain:eduinfosite.com
 domain:eduserver.net
 domain:edwinkonijn.com.au
 domain:ee77ee.com
+domain:eets.net
 domain:efkt.jp
 domain:efnor-ac.com
 domain:ege-essay.ru
@@ -2143,6 +2146,7 @@ domain:filesvine.com
 domain:filkhbr.com
 domain:fillmewithhappiness.com
 domain:film-one.ru
+domain:filmania-x.ru
 domain:filmbokep69.com
 domain:filmci.pro
 domain:filmetricsasia.com
@@ -2167,6 +2171,7 @@ domain:findsexguide.com
 domain:findthe.pet
 domain:finejewelryshop.ru
 domain:finemanteam.com
+domain:fingerprintjs.com
 domain:finstroy.net
 domain:finteks.ru
 domain:finuse.com
@@ -3995,7 +4000,6 @@ domain:nash-krym.info
 domain:nastroyke.net
 domain:nastydollars.com
 domain:natali-forex.com
-domain:nate.com
 domain:national-today-winning-winner.club
 domain:nationalbreakdown.com
 domain:naturalbreakthroughsresearch.com
@@ -4438,6 +4442,7 @@ domain:pinkduck.ga
 domain:pinsdaddy.com
 domain:pinstake.com
 domain:pintattoos.com
+domain:pinup-casino1.ru
 domain:pinwallpaper.top
 domain:pinwallpaper.xyz
 domain:pio.polytopesexempt.com
@@ -4579,6 +4584,7 @@ domain:pornosemki.info
 domain:pornosexrolik.com
 domain:pornoslive.net
 domain:pornosmola.info
+domain:pornoted.com
 domain:pornotubexxx.name
 domain:pornotubs.com
 domain:pornowarp.info
@@ -4803,6 +4809,7 @@ domain:rarbg.to
 domain:raschtextil.com.ua
 domain:rasteniya-vs-zombi.ru
 domain:ratemodels.net
+domain:rating-bestcasino.com
 domain:razamicroelectronics.com
 domain:razleton.com
 domain:razorweb-a.akamaihd.net
@@ -5172,6 +5179,7 @@ domain:seo-prof1.xyz
 domain:seo-smm.kz
 domain:seo-tools-optimizing.com
 domain:seo-traffic-ranking.info
+domain:seo18.su
 domain:seoanalyses.com
 domain:seoboxes.com
 domain:seocdvig.ru
@@ -5269,6 +5277,7 @@ domain:share-buttons-for-free.com
 domain:sharebutton.net
 domain:sharebutton.org
 domain:sharebutton.to
+domain:shareyards.com
 domain:shariki-zuma-lines.ru
 domain:sharpchallenge.com
 domain:sheerseo.com
@@ -5934,6 +5943,7 @@ domain:topanasex.com
 domain:topappspro.com
 domain:topbestgames.com
 domain:topcar-krasnodar.ru
+domain:topcasinoratings.ru
 domain:topclickguru.com
 domain:topdownloads.ru
 domain:topkarkas.com
@@ -6735,6 +6745,7 @@ domain:xxxdatinglocal.us
 domain:xxxguitars.com
 domain:xxxhdvideo.site
 domain:xxxkaz.org
+domain:xxxmania.top
 domain:xxxnatelefon.ru
 domain:xxxrus.org
 domain:xxxsiterips.xyz
