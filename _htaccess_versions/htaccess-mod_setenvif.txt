@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.03.1201
-### Bad Referrer Count: 6948
+### Version: V3.2021.03.1202
+### Bad Referrer Count: 6952
 ### Bad Bot Count: 608
 ### Version Information ##
 
@@ -2374,6 +2374,7 @@ SetEnvIfNoCase Referer downloaddy\.net spambot=yes
 SetEnvIfNoCase Referer downloadeer\.net spambot=yes
 SetEnvIfNoCase Referer downloader12\.ru spambot=yes
 SetEnvIfNoCase Referer downloadkakaotalk\.com spambot=yes
+SetEnvIfNoCase Referer downloadme\.life spambot=yes
 SetEnvIfNoCase Referer downloadmefiranaratb1972\.xpg\.com\.br spambot=yes
 SetEnvIfNoCase Referer downloads\-whatsapp\.com spambot=yes
 SetEnvIfNoCase Referer downtuptv\.gq spambot=yes
@@ -2690,6 +2691,7 @@ SetEnvIfNoCase Referer facecup\.top spambot=yes
 SetEnvIfNoCase Referer facialporntube\.com spambot=yes
 SetEnvIfNoCase Referer factorynightclub\.com spambot=yes
 SetEnvIfNoCase Referer failingmarriege\.blogspot\.com spambot=yes
+SetEnvIfNoCase Referer faithe\.top spambot=yes
 SetEnvIfNoCase Referer fakehandbags\.xyz spambot=yes
 SetEnvIfNoCase Referer falcoware\.com spambot=yes
 SetEnvIfNoCase Referer falllow\.gq spambot=yes
@@ -3623,6 +3625,7 @@ SetEnvIfNoCase Referer islamtoday\.co\.za spambot=yes
 SetEnvIfNoCase Referer islandminingsupply\.wordpress\.com spambot=yes
 SetEnvIfNoCase Referer isotoner\.com spambot=yes
 SetEnvIfNoCase Referer isoveti\.ru spambot=yes
+SetEnvIfNoCase Referer ispac\.org spambot=yes
 SetEnvIfNoCase Referer ispaniya\-costa\-blanca\.ru spambot=yes
 SetEnvIfNoCase Referer istanbulit\.com spambot=yes
 SetEnvIfNoCase Referer istizanidineacontrolledsubstance\.blogspot\.com spambot=yes
@@ -3814,6 +3817,7 @@ SetEnvIfNoCase Referer kino\-filmi\.com spambot=yes
 SetEnvIfNoCase Referer kino\-fun\.ru spambot=yes
 SetEnvIfNoCase Referer kino\-key\.info spambot=yes
 SetEnvIfNoCase Referer kino\-rating\.ru spambot=yes
+SetEnvIfNoCase Referer kino\-rf\.ru spambot=yes
 SetEnvIfNoCase Referer kino2018\.cc spambot=yes
 SetEnvIfNoCase Referer kino2018\.club spambot=yes
 SetEnvIfNoCase Referer kinobaks\.com spambot=yes

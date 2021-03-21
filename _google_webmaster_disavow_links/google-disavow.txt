@@ -1751,6 +1751,7 @@ domain:downloaddy.net
 domain:downloadeer.net
 domain:downloader12.ru
 domain:downloadkakaotalk.com
+domain:downloadme.life
 domain:downloadmefiranaratb1972.xpg.com.br
 domain:downloads-whatsapp.com
 domain:downtuptv.gq
@@ -2067,6 +2068,7 @@ domain:facecup.top
 domain:facialporntube.com
 domain:factorynightclub.com
 domain:failingmarriege.blogspot.com
+domain:faithe.top
 domain:fakehandbags.xyz
 domain:falcoware.com
 domain:falllow.gq
@@ -3000,6 +3002,7 @@ domain:islamtoday.co.za
 domain:islandminingsupply.wordpress.com
 domain:isotoner.com
 domain:isoveti.ru
+domain:ispac.org
 domain:ispaniya-costa-blanca.ru
 domain:istanbulit.com
 domain:istizanidineacontrolledsubstance.blogspot.com
@@ -3191,6 +3194,7 @@ domain:kino-filmi.com
 domain:kino-fun.ru
 domain:kino-key.info
 domain:kino-rating.ru
+domain:kino-rf.ru
 domain:kino2018.cc
 domain:kino2018.club
 domain:kinobaks.com

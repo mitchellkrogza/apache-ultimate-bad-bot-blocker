@@ -1750,6 +1750,7 @@ SetEnvIfNoCase Referer ~*downloadeer\.net spam_ref
 SetEnvIfNoCase Referer ~*downloader12\.ru spam_ref
 SetEnvIfNoCase Referer ~*downloadkakaotalk\.com spam_ref
 SetEnvIfNoCase Referer ~*downloadmefiranaratb1972\.xpg\.com\.br spam_ref
+SetEnvIfNoCase Referer ~*downloadme\.life spam_ref
 SetEnvIfNoCase Referer ~*download\-of\-the\-warez\.blogspot\.com spam_ref
 SetEnvIfNoCase Referer ~*downloads\-whatsapp\.com spam_ref
 SetEnvIfNoCase Referer ~*download\-wallpaper\.net spam_ref
@@ -2065,6 +2066,7 @@ SetEnvIfNoCase Referer ~*face\.hostingx\.eu spam_ref
 SetEnvIfNoCase Referer ~*facialporntube\.com spam_ref
 SetEnvIfNoCase Referer ~*factorynightclub\.com spam_ref
 SetEnvIfNoCase Referer ~*failingmarriege\.blogspot\.com spam_ref
+SetEnvIfNoCase Referer ~*faithe\.top spam_ref
 SetEnvIfNoCase Referer ~*fakehandbags\.xyz spam_ref
 SetEnvIfNoCase Referer ~*falcoware\.com spam_ref
 SetEnvIfNoCase Referer ~*falllow\.gq spam_ref
@@ -3000,6 +3002,7 @@ SetEnvIfNoCase Referer ~*islamtoday\.co\.za spam_ref
 SetEnvIfNoCase Referer ~*islandminingsupply\.wordpress\.com spam_ref
 SetEnvIfNoCase Referer ~*isotoner\.com spam_ref
 SetEnvIfNoCase Referer ~*isoveti\.ru spam_ref
+SetEnvIfNoCase Referer ~*ispac\.org spam_ref
 SetEnvIfNoCase Referer ~*ispaniya\-costa\-blanca\.ru spam_ref
 SetEnvIfNoCase Referer ~*istanbulit\.com spam_ref
 SetEnvIfNoCase Referer ~*istizanidineacontrolledsubstance\.blogspot\.com spam_ref
@@ -3206,6 +3209,7 @@ SetEnvIfNoCase Referer ~*kinomaniatv\.pl spam_ref
 SetEnvIfNoCase Referer ~*kinoplen\.ru spam_ref
 SetEnvIfNoCase Referer ~*kinopolet\.net spam_ref
 SetEnvIfNoCase Referer ~*kino\-rating\.ru spam_ref
+SetEnvIfNoCase Referer ~*kino\-rf\.ru spam_ref
 SetEnvIfNoCase Referer ~*kinosed\.net spam_ref
 SetEnvIfNoCase Referer ~*kinostorm\.net spam_ref
 SetEnvIfNoCase Referer ~*kinotorka\.ru spam_ref
