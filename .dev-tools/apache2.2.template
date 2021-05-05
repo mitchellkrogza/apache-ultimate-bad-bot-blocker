@@ -789,7 +789,7 @@ BrowserMatchNoCase "(?:\b)ZyBorg(?:\b)" bad_bot
 Include custom.d/blacklist-user-agents.conf
 
 	# ************************************
-	# GOOD REFERERS - Spared from Checking 
+	# GOOD REFERERS - Spared from Checking
 	# ************************************
 
 	# Add all your own web site domain names and server names in this section
@@ -808,7 +808,7 @@ Include custom.d/whitelist-domains.conf
 
 	# Add here all referrer words and URL's that are to blocked.
 	# Referers are often used to spam or make your site appear to be spam
-	# They can be very bad for your SEO if not monitored -- DID I mention you need to 
+	# They can be very bad for your SEO if not monitored -- DID I mention you need to
 	# be monitoring your logs frequently so that you know who is trying to do what
 	# Referers can also result in high bounce rates on your sites by sending fake traffic
 	#
@@ -854,7 +854,7 @@ Include custom.d/whitelist-domains.conf
 	# you will generate a 403 error.
 
 	# curl --referer http://www.mysite.com/blog/photo-of-girl/ http://www.mysite.com/
- 
+
 	# So please be careful with these and think carefully before you add new words.
 	# Remember we are trying to keep out the general riff-raff not kill your web sites.
 
@@ -868,7 +868,7 @@ Include custom.d/whitelist-domains.conf
   		# customized list of bad referrer words are automatically now included for you
   		# Read Comments inside bad-referrer-words.conf for customization tips.
   		# Updating the main globalblacklist.conf file will not touch your custom include files
-  
+
 Include custom.d/bad-referrer-words.conf
 
 	# ************************
@@ -882,7 +882,7 @@ Include custom.d/bad-referrer-words.conf
 	# **********************
 	# Blocking of SEO company Semalt.com (now merged into this one section)
 	# MIRAI Botnet Domains Used for Mass Attacks
-	# Other known bad SEO companies and Ad Hijacking Sites  
+	# Other known bad SEO companies and Ad Hijacking Sites
 	# Sites linked to malware, adware and ransomware
 
 	# *****************
@@ -894,9 +894,9 @@ Include custom.d/bad-referrer-words.conf
 	# curl -I http://www.yourdomain.com -e http://8gold.com
 
 	# This uses curl to send the referer string to your site and you should see an immediate
-	# 403 Forbidden Error 
+	# 403 Forbidden Error
 
-	# Because of case-insensitive matching any combination of capitilization 
+	# Because of case-insensitive matching any combination of capitilization
 	# will all produce a positive hit - make sure you always test.
 
 	# curl -I http://www.yourdomain.com -e http://NOT-8gold.com
@@ -7891,7 +7891,7 @@ Allow from env=good_ref
   	# whitelisted IP addresses are automatically now included for you.
   	# Read Comments inside whitelist-ips.conf for customization tips.
   	# Updating the main globalblacklist.conf file will not touch your custom include files
-  
+
 Include custom.d/whitelist-ips.conf
 
 	# ***********
@@ -7961,7 +7961,8 @@ Allow from 40.96.0.0/12
 Allow from 103.21.244.0/22
 Allow from 103.22.200.0/22
 Allow from 103.31.4.0/22
-Allow from 104.16.0.0/12
+Allow from 104.16.0.0/13
+Allow from 104.24.0.0/14
 Allow from 108.162.192.0/18
 Allow from 131.0.72.0/22
 Allow from 141.101.64.0/18
@@ -8030,7 +8031,7 @@ deny from 89.36.223.188
 
 	# ****************************************
 	# NIBBLER - SEO testing and reporting tool
-	# ****************************************  
+	# ****************************************
 	# See - http://nibbler.silktide.com/
 
 # START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###
@@ -8045,7 +8046,7 @@ deny from 54.242.250.203
 
 
 	# ---------------------
-    # BLOCK FAKE GOOGLEBOTS 
+    # BLOCK FAKE GOOGLEBOTS
 	# ---------------------
 
 # START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###
