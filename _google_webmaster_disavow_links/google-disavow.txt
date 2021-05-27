@@ -812,6 +812,7 @@ domain:bet-prognoz.com
 domain:bet365.com
 domain:beta.hotkeys.com
 domain:betonka.pro
+domain:betshuckclean.com
 domain:betterhdporn.com
 domain:betteroffers.review
 domain:betterscooter.com
@@ -877,6 +878,7 @@ domain:biznesluxe.ru
 domain:biznesrealnost.ru
 domain:biznesschat.net
 domain:bizru.info
+domain:bizzliving.com
 domain:bjanshee.ru
 domain:bjetjt.com
 domain:bjgugu.net.ua
@@ -2092,6 +2094,7 @@ domain:factorynightclub.com
 domain:failingmarriege.blogspot.com
 domain:faithe.top
 domain:fakehandbags.xyz
+domain:falcon-images.blogspot.com
 domain:falcoware.com
 domain:falllow.gq
 domain:falopicm.pw
@@ -2275,6 +2278,7 @@ domain:forum69.info
 domain:forumprofi.de
 domain:forums.d2jsp.org
 domain:forums.toucharcade.com
+domain:forzeronly.com
 domain:foto-basa.com
 domain:foto-sisek.porngalleries.top
 domain:foto-telok.net
@@ -4020,6 +4024,7 @@ domain:myphotopipe.com
 domain:myplaycity.com
 domain:mypornfree.ru
 domain:myprintscreen.com
+domain:myra.top
 domain:myseoconsultant.com
 domain:mysex21.com
 domain:mysexpics.ru
@@ -4364,6 +4369,7 @@ domain:paclitor.com
 domain:page2rss.com
 domain:pagesense.com
 domain:paidonlinesites.com
+domain:paighambot.com
 domain:painting-planet.com
 domain:paintingplanet.ru
 domain:paleohub.info
@@ -4647,6 +4653,7 @@ domain:pornosemki.info
 domain:pornosexrolik.com
 domain:pornoslive.net
 domain:pornosmola.info
+domain:pornosok.ru
 domain:pornoted.com
 domain:pornotubexxx.name
 domain:pornotubs.com
@@ -5252,6 +5259,7 @@ domain:seo-tools-optimizing.com
 domain:seo-traffic-ranking.info
 domain:seo18.su
 domain:seoanalyses.com
+domain:seobility.net
 domain:seoboxes.com
 domain:seocdvig.ru
 domain:seocheckupx.com
@@ -5475,6 +5483,7 @@ domain:slimcdn.com
 domain:slkrm.ru
 domain:slomm.ru
 domain:slonechka.ru
+domain:sloopyjoes.com
 domain:slowmac.tech
 domain:slowmacfaster.trade
 domain:sluganarodu.ru
@@ -5725,6 +5734,7 @@ domain:sukirgenk.dvrlists.com
 domain:summerlinhomes411.info
 domain:sumo.com
 domain:sundrugstore.com
+domain:sunflowerdrawingpaintings.blogspot.com
 domain:superfish.com
 domain:superiends.org
 domain:superinterstitial.com
@@ -6022,6 +6032,7 @@ domain:topcar-krasnodar.ru
 domain:topcasinoratings.ru
 domain:topclickguru.com
 domain:topdownloads.ru
+domain:topflownews.com
 domain:topkarkas.com
 domain:topmira.com
 domain:topquality.cf
@@ -6118,6 +6129,7 @@ domain:trustedhealthtips.com
 domain:trustedmaccleaner.com
 domain:trustl.life
 domain:try-rx.com
+domain:tryrating.com
 domain:tsan.net
 domain:tsstcorpcddvdwshbbdriverfb.aircus.com
 domain:tsyndicate.com
@@ -6460,6 +6472,7 @@ domain:vseuznaem.com
 domain:vsexkontakte.net
 domain:vtc.pw
 domain:vtcdns.com
+domain:vuclip.com
 domain:vucms.com
 domain:vut.com.ru
 domain:vvon.co.uk
@@ -6489,6 +6502,7 @@ domain:wallpaperstock.net
 domain:walpaperlist.com
 domain:wanker.us
 domain:wapsite.me
+domain:wardreapptokone.tk
 domain:wareseeker.com
 domain:warezaccess.com
 domain:warezkeeper.com
@@ -6517,6 +6531,7 @@ domain:webads.co.nz
 domain:webadvance.club
 domain:webalan.ru
 domain:webcamdevochka.com
+domain:webcamtalk.net
 domain:webenlace.com.ar
 domain:webextract.profound.net
 domain:webinstantservice.com
@@ -6786,6 +6801,7 @@ domain:xn--80ajbshivpvn2i.xn--p1ai
 domain:xn--80ajjbdhgmudixfjc8c5a9df8b.xn--p1ai
 domain:xn--80ak6aa92e.com
 domain:xn--80aodinpgi.xn--p1ai
+domain:xn--80atua3d.xn--p1ai
 domain:xn--90acenikpebbdd4f6d.xn--p1ai
 domain:xn--b1adccaf1bzj.xn--p1ai
 domain:xn--b1addnj3cah.xn--p1ai

@@ -5,9 +5,9 @@
 # CPANEL user instructions for the Apache Ultimate Bad Bot, User-Agent and Spam Referrer  Blocker
 
 _______________
-#### Version: V3.2021.05.1207
-#### Bad Referrer Count: [7035](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
-#### Bad Bot Count: [608](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
+#### Version: V3.2021.05.1208
+#### Bad Referrer Count: [7051](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
+#### Bad Bot Count: [610](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
 #### Fake Googlebots: [217](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)
 ____________________
 

@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.05.1207
-### Updated: Mon May 10 12:35:11 SAST 2021
-### Bad Bot Count: 608
+### Version: V3.2021.05.1208
+### Updated: Thu May 27 09:39:16 SAST 2021
+### Bad Bot Count: 610
 ###################################################
 ### Version Information ##
 
@@ -876,6 +876,10 @@ Disallow:/
 User-agent: SemrushBot
 Disallow:/
 User-agent: SentiBot
+Disallow:/
+User-agent: seobility
+Disallow:/
+User-agent: SeobilityBot
 Disallow:/
 User-agent: SEOkicks
 Disallow:/
