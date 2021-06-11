@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.05.1208
-### Bad Referrer Count: 7051
-### Bad Bot Count: 610
+### Version: V3.2021.06.1209
+### Bad Referrer Count: 7059
+### Bad Bot Count: 612
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -315,6 +315,7 @@ SetEnvIfNoCase User-Agent \bMIDown\ tool\b spambot=yes
 SetEnvIfNoCase User-Agent \bMIIxpc\b spambot=yes
 SetEnvIfNoCase User-Agent \bMister\ PiX\b spambot=yes
 SetEnvIfNoCase User-Agent \bMJ12bot\b spambot=yes
+SetEnvIfNoCase User-Agent \bMoblie\ Safari\b spambot=yes
 SetEnvIfNoCase User-Agent \bMojeek\b spambot=yes
 SetEnvIfNoCase User-Agent \bMojolicious\b spambot=yes
 SetEnvIfNoCase User-Agent \bMorfeus\ Fucking\ Scanner\b spambot=yes
@@ -453,6 +454,7 @@ SetEnvIfNoCase User-Agent \bSeomoz\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOprofiler\b spambot=yes
 SetEnvIfNoCase User-Agent \bseoscanners\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
+SetEnvIfNoCase User-Agent \bseostar\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOstats\b spambot=yes
 SetEnvIfNoCase User-Agent \bserpstatbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bsexsearcher\b spambot=yes
@@ -2160,6 +2162,7 @@ SetEnvIfNoCase Referer customerguru\.in spambot=yes
 SetEnvIfNoCase Referer customerpromos\-a\.akamaihd\.net spambot=yes
 SetEnvIfNoCase Referer customsua\.com\.ua spambot=yes
 SetEnvIfNoCase Referer cutalltheshit\.com spambot=yes
+SetEnvIfNoCase Referer cutt\.us spambot=yes
 SetEnvIfNoCase Referer cv\.wallhade\.co spambot=yes
 SetEnvIfNoCase Referer cvety24\.by spambot=yes
 SetEnvIfNoCase Referer cwetochki\.ru spambot=yes
@@ -3423,6 +3426,7 @@ SetEnvIfNoCase Referer hostsshop\.ru spambot=yes
 SetEnvIfNoCase Referer hotblog\.top spambot=yes
 SetEnvIfNoCase Referer hotblognetwork\.com spambot=yes
 SetEnvIfNoCase Referer hotchatdate\.com spambot=yes
+SetEnvIfNoCase Referer hotcore\.info spambot=yes
 SetEnvIfNoCase Referer hotdl\.in spambot=yes
 SetEnvIfNoCase Referer hotel\-mkad\.ru spambot=yes
 SetEnvIfNoCase Referer hotelcrocenzi\.sm spambot=yes
@@ -4193,6 +4197,7 @@ SetEnvIfNoCase Referer lovelycraftyhome\.com spambot=yes
 SetEnvIfNoCase Referer lovi\-moment\.com\.ua spambot=yes
 SetEnvIfNoCase Referer low\-format\.ru spambot=yes
 SetEnvIfNoCase Referer lowephotos\.info spambot=yes
+SetEnvIfNoCase Referer lrac\.info spambot=yes
 SetEnvIfNoCase Referer lsex\.xyz spambot=yes
 SetEnvIfNoCase Referer lsp\-awak\-perikanan\.com spambot=yes
 SetEnvIfNoCase Referer ltvperf\.com spambot=yes
@@ -4363,6 +4368,7 @@ SetEnvIfNoCase Referer mega\-bony\-2017\.pl spambot=yes
 SetEnvIfNoCase Referer mega\-bony2017\.pl spambot=yes
 SetEnvIfNoCase Referer mega\-polis\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer megaapteka\.ru spambot=yes
+SetEnvIfNoCase Referer megagrabber\.ru spambot=yes
 SetEnvIfNoCase Referer megahdporno\.net spambot=yes
 SetEnvIfNoCase Referer megaindex\.ru spambot=yes
 SetEnvIfNoCase Referer megakino\.net spambot=yes
@@ -4668,6 +4674,7 @@ SetEnvIfNoCase Referer nailsimg\.com spambot=yes
 SetEnvIfNoCase Referer naj\-filmy24\.pl spambot=yes
 SetEnvIfNoCase Referer najaden\.no spambot=yes
 SetEnvIfNoCase Referer nakozhe\.com spambot=yes
+SetEnvIfNoCase Referer nakrutka\.cc spambot=yes
 SetEnvIfNoCase Referer nalogovyy\-kodeks\.ru spambot=yes
 SetEnvIfNoCase Referer nalogovyykodeks\.ru spambot=yes
 SetEnvIfNoCase Referer namecrumilchlet\.tk spambot=yes
@@ -5264,6 +5271,7 @@ SetEnvIfNoCase Referer pornogad\.com spambot=yes
 SetEnvIfNoCase Referer pornogig\.com spambot=yes
 SetEnvIfNoCase Referer pornogratisdiario\.com spambot=yes
 SetEnvIfNoCase Referer pornohd1080\.online spambot=yes
+SetEnvIfNoCase Referer pornohub\.me spambot=yes
 SetEnvIfNoCase Referer pornokajf\.com spambot=yes
 SetEnvIfNoCase Referer pornoklad\.net spambot=yes
 SetEnvIfNoCase Referer pornoklad\.ru spambot=yes
@@ -5946,6 +5954,7 @@ SetEnvIfNoCase Referer sexiporno\.net spambot=yes
 SetEnvIfNoCase Referer sexkontakte\-seite\.com spambot=yes
 SetEnvIfNoCase Referer sexkontakteao\.info spambot=yes
 SetEnvIfNoCase Referer sexkrasivo\.net spambot=yes
+SetEnvIfNoCase Referer sexkvartal\.com spambot=yes
 SetEnvIfNoCase Referer sexobzor\.info spambot=yes
 SetEnvIfNoCase Referer sexpartygirls\.net spambot=yes
 SetEnvIfNoCase Referer sexphoto\.site spambot=yes
@@ -6910,6 +6919,7 @@ SetEnvIfNoCase Referer utiblog\.fr spambot=yes
 SetEnvIfNoCase Referer utrolive\.ru spambot=yes
 SetEnvIfNoCase Referer uvozdeckych\.info spambot=yes
 SetEnvIfNoCase Referer uytmaster\.ru spambot=yes
+SetEnvIfNoCase Referer uzporno\.mobi spambot=yes
 SetEnvIfNoCase Referer uzungil\.com spambot=yes
 SetEnvIfNoCase Referer v\-doc\.co spambot=yes
 SetEnvIfNoCase Referer v24s\.net spambot=yes

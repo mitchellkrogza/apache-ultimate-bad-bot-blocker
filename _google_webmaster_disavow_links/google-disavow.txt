@@ -1535,6 +1535,7 @@ domain:customerguru.in
 domain:customerpromos-a.akamaihd.net
 domain:customsua.com.ua
 domain:cutalltheshit.com
+domain:cutt.us
 domain:cv.wallhade.co
 domain:cvety24.by
 domain:cwetochki.ru
@@ -2798,6 +2799,7 @@ domain:hostsshop.ru
 domain:hotblog.top
 domain:hotblognetwork.com
 domain:hotchatdate.com
+domain:hotcore.info
 domain:hotdl.in
 domain:hotel-mkad.ru
 domain:hotelcrocenzi.sm
@@ -3568,6 +3570,7 @@ domain:lovelycraftyhome.com
 domain:lovi-moment.com.ua
 domain:low-format.ru
 domain:lowephotos.info
+domain:lrac.info
 domain:lsex.xyz
 domain:lsp-awak-perikanan.com
 domain:ltvperf.com
@@ -3738,6 +3741,7 @@ domain:mega-bony-2017.pl
 domain:mega-bony2017.pl
 domain:mega-polis.biz.ua
 domain:megaapteka.ru
+domain:megagrabber.ru
 domain:megahdporno.net
 domain:megaindex.ru
 domain:megakino.net
@@ -4043,6 +4047,7 @@ domain:nailsimg.com
 domain:naj-filmy24.pl
 domain:najaden.no
 domain:nakozhe.com
+domain:nakrutka.cc
 domain:nalogovyy-kodeks.ru
 domain:nalogovyykodeks.ru
 domain:namecrumilchlet.tk
@@ -4639,6 +4644,7 @@ domain:pornogad.com
 domain:pornogig.com
 domain:pornogratisdiario.com
 domain:pornohd1080.online
+domain:pornohub.me
 domain:pornokajf.com
 domain:pornoklad.net
 domain:pornoklad.ru
@@ -5321,6 +5327,7 @@ domain:sexiporno.net
 domain:sexkontakte-seite.com
 domain:sexkontakteao.info
 domain:sexkrasivo.net
+domain:sexkvartal.com
 domain:sexobzor.info
 domain:sexpartygirls.net
 domain:sexphoto.site
@@ -6285,6 +6292,7 @@ domain:utiblog.fr
 domain:utrolive.ru
 domain:uvozdeckych.info
 domain:uytmaster.ru
+domain:uzporno.mobi
 domain:uzungil.com
 domain:v-doc.co
 domain:v24s.net
