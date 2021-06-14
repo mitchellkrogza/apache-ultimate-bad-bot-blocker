@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.06.1209
-### Bad Referrer Count: 7059
-### Bad Bot Count: 612
+### Version: V3.2021.06.1210
+### Bad Referrer Count: 7060
+### Bad Bot Count: 615
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -440,6 +440,7 @@ RewriteCond %{HTTP_USER_AGENT} \bScoutJet\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScrapy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScreaming\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScreenerBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bScrepyBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSearchestate\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSearchmetricsBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSemrush\b [NC,OR]
@@ -541,6 +542,7 @@ RewriteCond %{HTTP_USER_AGENT} \bURLy\ Warning\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bURLy\.Warning\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVacuum\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVagabondo\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bV\-BOT\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVB\ Project\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVCI\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVelenPublicWebCrawler\b [NC,OR]
@@ -550,6 +552,7 @@ RewriteCond %{HTTP_USER_AGENT} \bVirusdie\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVoidEYE\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVoil\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bVoltron\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bvoyagerx\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWallpapers\/3\.0\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWallpapersHD\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bWASALive\-Bot\b [NC,OR]
@@ -5825,6 +5828,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scottbywater\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scrapinghub\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scrapy\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*screentoolkit\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*screpy\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scripted\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*scrnet\.biz\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*sdelai\-prosto\.ru.*$ [NC,OR]

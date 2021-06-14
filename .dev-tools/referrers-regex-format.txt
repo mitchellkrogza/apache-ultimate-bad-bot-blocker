@@ -5194,6 +5194,7 @@ SetEnvIfNoCase Referer ~*scottbywater\.com spam_ref
 SetEnvIfNoCase Referer ~*scrapinghub\.com spam_ref
 SetEnvIfNoCase Referer ~*scrapy\.org spam_ref
 SetEnvIfNoCase Referer ~*screentoolkit\.com spam_ref
+SetEnvIfNoCase Referer ~*screpy\.com spam_ref
 SetEnvIfNoCase Referer ~*scripted\.com spam_ref
 SetEnvIfNoCase Referer ~*scrnet\.biz\.ua spam_ref
 SetEnvIfNoCase Referer ~*sc\-specialhost\.com spam_ref

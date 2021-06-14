@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.06.1209
-### Bad Referrer Count: 7059
-### Bad Bot Count: 612
+### Version: V3.2021.06.1210
+### Bad Referrer Count: 7060
+### Bad Bot Count: 615
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -440,6 +440,7 @@ SetEnvIfNoCase User-Agent \bScoutJet\b spambot=yes
 SetEnvIfNoCase User-Agent \bScrapy\b spambot=yes
 SetEnvIfNoCase User-Agent \bScreaming\b spambot=yes
 SetEnvIfNoCase User-Agent \bScreenerBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bScrepyBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSearchestate\b spambot=yes
 SetEnvIfNoCase User-Agent \bSearchmetricsBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrush\b spambot=yes
@@ -541,6 +542,7 @@ SetEnvIfNoCase User-Agent \bURLy\ Warning\b spambot=yes
 SetEnvIfNoCase User-Agent \bURLy\.Warning\b spambot=yes
 SetEnvIfNoCase User-Agent \bVacuum\b spambot=yes
 SetEnvIfNoCase User-Agent \bVagabondo\b spambot=yes
+SetEnvIfNoCase User-Agent \bV\-BOT\b spambot=yes
 SetEnvIfNoCase User-Agent \bVB\ Project\b spambot=yes
 SetEnvIfNoCase User-Agent \bVCI\b spambot=yes
 SetEnvIfNoCase User-Agent \bVelenPublicWebCrawler\b spambot=yes
@@ -550,6 +552,7 @@ SetEnvIfNoCase User-Agent \bVirusdie\b spambot=yes
 SetEnvIfNoCase User-Agent \bVoidEYE\b spambot=yes
 SetEnvIfNoCase User-Agent \bVoil\b spambot=yes
 SetEnvIfNoCase User-Agent \bVoltron\b spambot=yes
+SetEnvIfNoCase User-Agent \bvoyagerx\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bWallpapers\/3\.0\b spambot=yes
 SetEnvIfNoCase User-Agent \bWallpapersHD\b spambot=yes
 SetEnvIfNoCase User-Agent \bWASALive\-Bot\b spambot=yes
@@ -5825,6 +5828,7 @@ SetEnvIfNoCase Referer scottbywater\.com spambot=yes
 SetEnvIfNoCase Referer scrapinghub\.com spambot=yes
 SetEnvIfNoCase Referer scrapy\.org spambot=yes
 SetEnvIfNoCase Referer screentoolkit\.com spambot=yes
+SetEnvIfNoCase Referer screpy\.com spambot=yes
 SetEnvIfNoCase Referer scripted\.com spambot=yes
 SetEnvIfNoCase Referer scrnet\.biz\.ua spambot=yes
 SetEnvIfNoCase Referer sdelai\-prosto\.ru spambot=yes
