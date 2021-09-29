@@ -1,6 +1,7 @@
 #########################################
 ## Apache Bad Bot & Referrer Spam Blocker 
 ## .htaccess version for OpenLitespeed
+## https://openlitespeed.org/
 #########################################
 
 ##########################################################################
@@ -8,7 +9,8 @@
 ### Graceful restart the server for the rules to take effect
 ### Do not overwrite your whole .htaccess with this only place at the end
 ##########################################################################
-# https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+## REPO: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
+## MIT Licence: Mitchell Krog - mitchellkrog@gmail.com
 ##########################################################################
 
 
