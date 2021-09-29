@@ -22,6 +22,42 @@
 ###
 
 <IfModule LiteSpeed>
+
+###########################################################################
+### CUSTOM RULES
+### ADD ANY CUSTOM RULES HERE
+### COMMENTED OUT BUT YOU CAN USE THESE IF YOU KNOW YOU WANT TO BLOCK THEM
+### RULES MUST FOLLOW PROPER REGEX FORMATTING & ESCAPING 
+### 1 BADLY FORMATTED RULE WILL BREAK THE WHOLE CHAIN !!!
+###########################################################################
+#RewriteCond %{HTTP_USER_AGENT} \bArchiveTeam\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bFirefox\/20\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bFirefox\/21\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bFirefox\/22\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bMozilla\/4\.76\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bRSSingBot\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bMoblie\ Safari\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bPython\-urllib\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bPython\-asks\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bHeadlessChrome\/7\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bHeadlessChrome\/8\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bHeadlessChrome\/9\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bHeadlessChrome\/10\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bHeadlessChrome\/11\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bGuzzleHttp\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bseostar\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bPandalytics\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \be\.ventures\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bJava\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bApache\-HttpClient\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bpage\-preview\-tool\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \bYaK\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \blinkfluence\.com\b [NC,OR]
+#RewriteCond %{HTTP_USER_AGENT} \blinkfluence\b [NC,OR]
+### END CUSTOM RULES
+###########################################################################
+
+
 RewriteCond %{HTTP_USER_AGENT} \b01h4x\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b360Spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404checker\b [NC,OR]
