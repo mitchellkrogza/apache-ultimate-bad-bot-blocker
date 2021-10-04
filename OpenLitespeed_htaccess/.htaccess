@@ -22,7 +22,7 @@
 ###
 
 <IfModule LiteSpeed>
-
+RewriteEngine On
 ###########################################################################
 ### CUSTOM RULES
 ### ADD ANY CUSTOM RULES HERE
@@ -7734,5 +7734,5 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zynax\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zytpirwai\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzbroya\.com\.ua.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*zzlgxh\.com.*$ [NC]
-RewriteRule /.* – [F,L]
+RewriteRule .* – [F,L]
 </IfModule>
