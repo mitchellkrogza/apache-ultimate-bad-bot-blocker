@@ -26,4 +26,5 @@ jobs:
       - name: Install Software
         run: |
           sudo apt -y install dos2unix
+          sudo apt-cache showpkg apache2
 
