@@ -25,6 +25,7 @@ jobs:
 
       - name: Install Software
         run: |
+          sudo apt -y remove --purge apache2 
           sudo apt -y install dos2unix
           echo "Install ZLib"
           sudo apt-get install build-essential
