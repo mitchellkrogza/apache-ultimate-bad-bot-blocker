@@ -25,7 +25,11 @@ jobs:
 
       - name: Install Software
         run: |
-          sudo apt -y remove --purge apache2 
+          echo "Remove Apache 2.4"
+          sudo service apache2 stop
+          sudo apt purge apache2 apache2-utils
+          sudo apt autoremove
+          sudo apache2 -v
           sudo apt -y install dos2unix
           echo "Install ZLib"
           sudo apt-get install build-essential
