@@ -26,5 +26,13 @@ jobs:
       - name: Install Software
         run: |
           sudo apt -y install dos2unix
-          sudo apt-cache showpkg apache2
+          echo "Install Apache 2.2"
+          sudo apt-get install build-essential
+          wget http://www-eu.apache.org/dist/httpd/httpd-2.2.32.tar.gz
+          tar -xvf httpd-2.2.32.tar.gz
+          cd httpd-2.2.32/
+          ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
+          make
+          sudo make install
+          apache2 -v
 
