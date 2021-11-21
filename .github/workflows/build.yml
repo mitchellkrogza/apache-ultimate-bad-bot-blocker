@@ -14,7 +14,6 @@ on:
       - master
   schedule:
       - cron: '0 10 * * *'
-      - cron: '0 22 * * *'
 
 jobs:
   build:
@@ -78,8 +77,6 @@ jobs:
           sudo /usr/local/apache2/bin/apachectl configtest
           echo "Restarting Apache 2.2"
           sudo /usr/local/apache2/bin/apachectl restart
-          #echo "Test wget"
-          #wget -qO- http://local.dev
           echo "Install old version of blacklist to test updater"
           sudo cp ./dev-tools/_conf_files_for_testing/apache2.2.25/old-globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
           echo "Download update-apacheblocker.sh"
