@@ -45,10 +45,10 @@
 # Set Input Files
 # ***************
 
-input1=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
+input1=./_generator_lists/bad-user-agents.list
 tmprobots=/tmp/robots.txt
-inputtmp=${TRAVIS_BUILD_DIR}/.dev-tools/_robots_generator_files/robots.tmp
-output=${TRAVIS_BUILD_DIR}/.dev-tools/_robots_generator_files/robots.list
+inputtmp=./dev-tools/_robots_generator_files/robots.tmp
+output=./dev-tools/_robots_generator_files/robots.list
 
 # ***********************
 # Truncate our input file
@@ -69,9 +69,10 @@ sort -u ${output} -o ${output}
 
 yeartag=$(date +"%Y")
 monthtag=$(date +"%m")
-my_git_tag=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
-bad_referrers=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list)
-bad_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list)
+daytag=$(date +"%d")
+my_git_tag=V3.${yeartag}.${monthtag}.${daytag}
+bad_referrers=$(wc -l < ./_generator_lists/bad-referrers.list)
+bad_bots=$(wc -l < ./_generator_lists/bad-user-agents.list)
 now="$(date)"
 
 # *************************
@@ -95,7 +96,7 @@ do
 printf 'User-agent: %s\n%s\n' "${LINE}" "Disallow:/" >> "${tmprobots}"
 done < ${output}
 printf '\n' >> "${tmprobots}"
-sudo cp ${tmprobots} ${TRAVIS_BUILD_DIR}/robots.txt/robots.txt
+sudo cp ${tmprobots} ./robots.txt/robots.txt
 
 # **********************
 # Exit With Error Number
