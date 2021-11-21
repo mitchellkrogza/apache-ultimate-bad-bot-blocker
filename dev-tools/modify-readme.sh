@@ -43,10 +43,12 @@
 # Set Some Variables
 # ******************
 
-yeartag=$(date +%Y)
-monthtag=$(date +%m)
-daytag=$(date +%d)
-my_git_tag=V3.${yeartag}.${monthtag}.${daytag}
+yeartag=$(date +"%Y")
+monthtag=$(date +"%m")
+lastbuild=$(cat ./dev-tools/buildnumber)
+thisbuild=$((lastbuild + 1))
+my_git_tag=V3.${yeartag}.${monthtag}.${thisbuild}
+
 bad_referrers=$(wc -l < ./_generator_lists/bad-referrers.list)
 bad_bots=$(wc -l < ./_generator_lists/bad-user-agents.list)
 fake_google_bots=$(wc -l < ./_generator_lists/fake-googlebots.list)
