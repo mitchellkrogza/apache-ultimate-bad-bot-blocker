@@ -163,3 +163,6 @@ jobs:
           sudo cp /etc/apache2/apache2.conf ./dev-tools/_test_results/_conf_files_2.4/apache2.conf
           sudo cp /etc/apache2/sites-available/* ./dev-tools/_test_results/_conf_files_2.4/
           
+      - name: Debug
+        run: |
+          sudo systemctl status apache2.service
