@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.11.1222
-### Updated: Sun Nov 21 13:28:59 UTC 2021
+### Version: V3.2021.11.1223
+### Updated: Sun Nov 21 13:55:07 UTC 2021
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 627
+### Bad Bot Count: 630
 ###################################################
 ### Version Information ##
 
@@ -202,6 +202,7 @@ BrowserMatchNoCase "(?:\b)Anthill(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Apexoo(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Aspiegel(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Asterias(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Atomseobot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Attach(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AwarioRssBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AwarioSmartBot(?:\b)" bad_bot
@@ -571,6 +572,7 @@ BrowserMatchNoCase "(?:\b)ScreenerBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ScrepyBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Searchestate(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SearchmetricsBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Seekport Crawler(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemanticJuice(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Semrush(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemrushBot(?:\b)" bad_bot
@@ -578,6 +580,7 @@ BrowserMatchNoCase "(?:\b)SentiBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeoSiteCheckup(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeobilityBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Seomoz(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SeznamBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Shodan(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Siphon(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SiteCheckerBotCrawler(?:\b)" bad_bot

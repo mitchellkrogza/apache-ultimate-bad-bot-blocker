@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.11.1222
+### Version: V3.2021.11.1223
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 627
+### Bad Bot Count: 630
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -42,6 +42,7 @@ SetEnvIfNoCase User-Agent \bAnthill\b spambot=yes
 SetEnvIfNoCase User-Agent \bApexoo\b spambot=yes
 SetEnvIfNoCase User-Agent \bAspiegel\b spambot=yes
 SetEnvIfNoCase User-Agent \bAsterias\b spambot=yes
+SetEnvIfNoCase User-Agent \bAtomseobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAttach\b spambot=yes
 SetEnvIfNoCase User-Agent \bAwarioRssBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAwarioSmartBot\b spambot=yes
@@ -411,6 +412,7 @@ SetEnvIfNoCase User-Agent \bScreenerBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bScrepyBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSearchestate\b spambot=yes
 SetEnvIfNoCase User-Agent \bSearchmetricsBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeekport\ Crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemanticJuice\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrush\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrushBot\b spambot=yes
@@ -418,6 +420,7 @@ SetEnvIfNoCase User-Agent \bSentiBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeobilityBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeomoz\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeznamBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiphon\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteCheckerBotCrawler\b spambot=yes

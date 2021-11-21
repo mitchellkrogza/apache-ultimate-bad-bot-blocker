@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.11.1222
+### Version: V3.2021.11.1223
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 627
+### Bad Bot Count: 630
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -42,6 +42,7 @@ RewriteCond %{HTTP_USER_AGENT} \bAnthill\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bApexoo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAspiegel\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAsterias\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAtomseobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAttach\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAwarioRssBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAwarioSmartBot\b [NC,OR]
@@ -411,6 +412,7 @@ RewriteCond %{HTTP_USER_AGENT} \bScreenerBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bScrepyBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSearchestate\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSearchmetricsBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSeekport\ Crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSemanticJuice\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSemrush\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSemrushBot\b [NC,OR]
@@ -418,6 +420,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSentiBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSeoSiteCheckup\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSeobilityBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSeomoz\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSeznamBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bShodan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiphon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSiteCheckerBotCrawler\b [NC,OR]

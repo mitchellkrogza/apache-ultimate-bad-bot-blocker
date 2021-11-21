@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.11.1222
-### Updated: Sun Nov 21 13:28:59 UTC 2021
-### Bad Bot Count: 627
+### Version: V3.2021.11.1223
+### Updated: Sun Nov 21 13:55:06 UTC 2021
+### Bad Bot Count: 630
 ###################################################
 ### Version Information ##
 
@@ -72,6 +72,8 @@ Disallow:/
 User-agent: Aspiegel
 Disallow:/
 User-agent: Asterias
+Disallow:/
+User-agent: Atomseobot
 Disallow:/
 User-agent: Attach
 Disallow:/
@@ -811,6 +813,8 @@ User-agent: Searchestate
 Disallow:/
 User-agent: SearchmetricsBot
 Disallow:/
+User-agent: Seekport Crawler
+Disallow:/
 User-agent: SemanticJuice
 Disallow:/
 User-agent: Semrush
@@ -824,6 +828,8 @@ Disallow:/
 User-agent: SeobilityBot
 Disallow:/
 User-agent: Seomoz
+Disallow:/
+User-agent: SeznamBot
 Disallow:/
 User-agent: Shodan
 Disallow:/
