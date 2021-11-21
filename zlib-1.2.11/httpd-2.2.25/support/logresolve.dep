@@ -1,9 +1,0 @@
-# Microsoft Developer Studio Generated Dependency File, included by logresolve.mak
-
-..\build\win32\httpd.rc : \
-	"..\include\ap_release.h"\
-	
-
-.\logresolve.c : \
-	"..\srclib\apr\include\apr_lib.h"\
-	
