@@ -75,9 +75,7 @@ ls -la /tmp
 # Install latest Apache from Repo: ppa:ondrej/apache2
 # ***************************************************
 
-sudo add-apt-repository ppa:ondrej/apache2 -y
-sudo apt-get update
-sudo apt-get install -y apache2 apache2-utils
+sudo install -y apache2 apache2-utils
 
 # **************************
 # Show Loaded apache Modules
@@ -98,7 +96,7 @@ sudo apache2ctl -V
 # ***********************
 
 echo "${bold}${yellow}Set Apache ServerName"
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
+sudo cp ./dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
 sudo a2enconf servername
 
 # ****************************************
@@ -108,7 +106,7 @@ sudo a2enconf servername
 echo "${bold}${yellow}Enable Apache VHost"
 sudo rm /etc/apache2/sites-available/*
 sudo rm /etc/apache2/sites-enabled/*
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
+sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
 sudo a2ensite testsite.conf
 
 echo "${bold}${yellow}Reloading Apache"
@@ -134,21 +132,12 @@ sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-b
 echo "${bold}${green}Run Apache 2.4 Config Test"
 sudo apache2ctl configtest
 
-# ******************
-# Test Apache 2 Curl
-# ******************
-
-echo "${bold}${yellow}Test wget"
-sudo wget -qO- http://local.dev
-
 # *****************************
 # Now Disable mod_access_compat
 # *****************************
 
 echo "${bold}${yellow}Disable mod access_compat"
 sudo a2dismod access_compat
-#echo "${bold}${red}mod access_compat NOT DISABLED"
-#sudo apache2ctl -M
 
 # *************
 # Reload Apache
@@ -163,7 +152,7 @@ sudo service apache2 restart
 # *******************************
 
 echo "${bold}${yellow}Test Modified apache2.conf"
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf /etc/apache2/
+sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf /etc/apache2/
 
 # *************
 # Reload Apache
@@ -178,25 +167,25 @@ sudo service apache2 restart
 # ********************************************************************
 
 echo "${bold}${yellow}Install old version of blacklist to test updater"
-sudo cp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/old-globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/old-globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 
 # *****************************
 # Download and test the updater
 # *****************************
 
 echo "${bold}${yellow}Download update-apacheblocker.sh"
-sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
-sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh > ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp && sudo mv ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
 echo "${bold}${yellow}Test update-apacheblocker.sh"
-sudo chmod +x ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
-sudo bash ${TRAVIS_BUILD_DIR}/.dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+sudo chmod +x ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+sudo bash ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
 
 # ***********************************************************************************
 # Put Latest Generated globalblacklist.conf into place for correct testing of changes
 # ***********************************************************************************
 
 echo "${bold}${yellow}Place latest generated version of globalblacklist.conf into place"
-sudo cp /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+sudo cp ./Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
 
 # *************
 # Reload Apache
@@ -211,9 +200,9 @@ sudo service apache2 restart
 # *****************************************
 
 echo "${bold}${yellow}Backup Config Files"
-sudo cp /etc/apache2/custom.d/*.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
-sudo cp /etc/apache2/apache2.conf ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/apache2.conf
-sudo cp /etc/apache2/sites-available/* ${TRAVIS_BUILD_DIR}/.dev-tools/_test_results/_conf_files_2.4/
+sudo cp /etc/apache2/custom.d/*.conf ./dev-tools/_test_results/_conf_files_2.4/
+sudo cp /etc/apache2/apache2.conf ./dev-tools/_test_results/_conf_files_2.4/apache2.conf
+sudo cp /etc/apache2/sites-available/* ./dev-tools/_test_results/_conf_files_2.4/
 
 
 # **********************
