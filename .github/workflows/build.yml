@@ -99,3 +99,5 @@ jobs:
           echo "export TERM=xterm" >> ~/.bashrc
           source ~/.bashrc
           ./dev-tools/test-blocker-quick.sh
+          ./dev-tools/install-apache-2.4.sh
+          
