@@ -43,16 +43,16 @@
 # Specify input list for the generator
 # ************************************
 
-input1=${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list
+input1=./_generator_lists/bad-referrers.list
 
 # **************************
 # Create Google Disavow File
 # **************************
 
-sudo truncate -s 0 ${TRAVIS_BUILD_DIR}/_google_webmaster_disavow_links/google-disavow.txt
+sudo truncate -s 0 ./_google_webmaster_disavow_links/google-disavow.txt
 while IFS= read -r LINE
 do
-printf '%s%s\n' "domain:" "${LINE}" >> ${TRAVIS_BUILD_DIR}/_google_webmaster_disavow_links/google-disavow.txt
+printf '%s%s\n' "domain:" "${LINE}" >> ./_google_webmaster_disavow_links/google-disavow.txt
 done < ${input1}
 
 # **********************
