@@ -124,11 +124,7 @@ jobs:
           cat /etc/apache2/sites-available/000-default.conf
           sudo rm /etc/apache2/sites-available/*
           sudo rm /etc/apache2/sites-enabled/*
-          sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
-          sudo a2ensite testsite.conf
-          echo "${bold}${yellow}Reloading Apache"
-          sudo systemctl reload apache2
-          echo "${bold}${green}Download Blocker Files from Repo"
+          sudo cat ./dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf > /etc/apache2/sites-available/
           sudo mkdir /etc/apache2/custom.d
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
@@ -136,6 +132,9 @@ jobs:
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+          echo "${bold}${yellow}Reloading Apache"
+          sudo systemctl reload apache2
+          echo "${bold}${green}Download Blocker Files from Repo"
           echo "${bold}${green}Run Apache 2.4 Config Test"
           sudo apache2ctl configtest
           echo "${bold}${yellow}Disable mod access_compat"
