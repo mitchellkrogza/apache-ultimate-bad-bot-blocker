@@ -167,7 +167,7 @@ fi
 }
 
 testBadUserAgents () {
-shuf -n 10 ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list > ./dev-tools/test_units/random-bots-for-test-quick.tmp
+shuf -n 10 ./_generator_lists/bad-user-agents.list > ./dev-tools/test_units/random-bots-for-test-quick.tmp
 sed 's/\\//g' ./dev-tools/test_units/random-bots-for-test-quick.tmp > ./dev-tools/test_units/random-bots-for-test-quick.list
 sudo rm ./dev-tools/test_units/random-bots-for-test-quick.tmp
 sort -u ./dev-tools/test_units/random-bots-for-test-quick.list -o ./dev-tools/test_units/random-bots-for-test-quick.list
@@ -191,7 +191,7 @@ IFS=""
 }
 
 testGoodUserAgents () {
-sed 's/\\//g' ${TRAVIS_BUILD_DIR}/_generator_lists/good-user-agents.list > ./dev-tools/test_units/good-bots-for-test.list
+sed 's/\\//g' ./_generator_lists/good-user-agents.list > ./dev-tools/test_units/good-bots-for-test.list
 printf "\n"
 echo "${bold}${magenta}---------------------"
 echo "${bold}${magenta}Testing All Good Bots"
@@ -212,7 +212,7 @@ IFS=""
 }
 
 testAllowedUserAgents () {
-sed 's/\\//g' ${TRAVIS_BUILD_DIR}/_generator_lists/allowed-user-agents.list > ./dev-tools/test_units/allowed-bots-for-test.list
+sed 's/\\//g' ./_generator_lists/allowed-user-agents.list > ./dev-tools/test_units/allowed-bots-for-test.list
 printf "\n"
 echo "${bold}${magenta}------------------------"
 echo "${bold}${magenta}Testing All Allowed Bots"
@@ -233,7 +233,7 @@ IFS=""
 }
 
 testRandomReferrers () {
-shuf -n 10 ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list > ./dev-tools/test_units/random-referrers-for-test-quick.list
+shuf -n 10 ./_generator_lists/bad-referrers.list > ./dev-tools/test_units/random-referrers-for-test-quick.list
 sort -u ./dev-tools/test_units/random-referrers-for-test-quick.list -o ./dev-tools/test_units/random-referrers-for-test-quick.list
 printf "\n"
 echo "${bold}${magenta}---------------------------------"
