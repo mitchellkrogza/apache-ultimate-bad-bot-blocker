@@ -116,13 +116,15 @@ jobs:
           echo "${bold}${yellow}Set Apache ServerName"
           sudo cp ./dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
           sudo a2enconf servername
+          sudo systemctl reload apache2
           echo "${bold}${yellow}Enable Apache VHost"
           sudo rm /etc/apache2/sites-available/*
           sudo rm /etc/apache2/sites-enabled/*
           sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
           sudo a2ensite testsite.conf
+          sudo systemctl reload apache2
           echo "${bold}${yellow}Reloading Apache"
-          sudo service apache2 reload
+          sudo systemctl reload apache2
           echo "${bold}${green}Download Blocker Files from Repo"
           sudo mkdir /etc/apache2/custom.d
           sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
