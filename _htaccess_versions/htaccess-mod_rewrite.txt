@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2021.11.1219
+### Version: V3.2021.11.1220
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 627
+### Bad Bot Count: 628
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -638,6 +638,7 @@ RewriteCond %{HTTP_USER_AGENT} \bwebprosbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx09Mozilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bx22Mozilla\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bxpymep1\.exe\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bxxxxxxxxxx\-test\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bzauba\.io\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bzgrab\b [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*000free\.us.*$ [NC,OR]
