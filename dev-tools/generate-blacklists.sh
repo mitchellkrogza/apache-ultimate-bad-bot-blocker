@@ -43,6 +43,8 @@
 # Set Some Variables
 # ******************
 
+yeartag=$(date +"%Y")
+monthtag=$(date +"%m")
 lastbuild=$(cat ./dev-tools/buildnumber)
 thisbuild=$((lastbuild + 1))
 my_git_tag=V3.${yeartag}.${monthtag}.${thisbuild}
