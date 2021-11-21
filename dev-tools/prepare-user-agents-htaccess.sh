@@ -20,9 +20,9 @@
 # Specify Input and Output Files
 # ******************************
 
-input=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
-inputtmp=${TRAVIS_BUILD_DIR}/.dev-tools/_htaccess_generator_files/bad-user-agents.tmp
-output=${TRAVIS_BUILD_DIR}/.dev-tools/_htaccess_generator_files/bad-user-agents.list
+input=./_generator_lists/bad-user-agents.list
+inputtmp=./dev-tools/_htaccess_generator_files/bad-user-agents.tmp
+output=./dev-tools/_htaccess_generator_files/bad-user-agents.list
 
 # ***********************
 # Truncate our input file
