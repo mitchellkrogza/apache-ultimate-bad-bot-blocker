@@ -54,9 +54,9 @@ monthtag=$(date +"%m")
 # Gzip Our Latest Release So We can Include it the Travis Release
 # ***************************************************************
 
-#cd ./.latest_release/
-#tar -czf Apache_2.2.tar.gz -C ./Apache_2.2/ .
-#tar -czf Apache_2.4.tar.gz -C ./Apache_2.4/ .
+cd ./latest_release/
+tar -czf Apache_2.2.tar.gz -C ./Apache_2.2/ .
+tar -czf Apache_2.4.tar.gz -C ./Apache_2.4/ .
 
 # *************************************
 # Add all the modified files and commit
