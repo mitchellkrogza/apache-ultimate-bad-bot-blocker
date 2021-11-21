@@ -1,0 +1,11 @@
+# Microsoft Developer Studio Generated Dependency File, included by rotatelogs.mak
+
+..\build\win32\httpd.rc : \
+	"..\include\ap_release.h"\
+	
+
+.\rotatelogs.c : \
+	"..\srclib\apr\include\apr_getopt.h"\
+	"..\srclib\apr\include\apr_lib.h"\
+	"..\srclib\apr\include\apr_strings.h"\
+	

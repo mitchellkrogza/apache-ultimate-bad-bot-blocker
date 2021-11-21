@@ -1,0 +1,20 @@
+#! /bin/sh
+#
+# Created by configure
+
+"/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.11/httpd-2.2.25/srclib/apr-util/configure" \
+"--disable-option-checking" \
+"--enable-mods-shared=all" \
+"--enable-deflate" \
+"--enable-proxy" \
+"--enable-proxy-balancer" \
+"--enable-proxy-http" \
+"--cache-file=/dev/null" \
+"--srcdir=/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.11/httpd-2.2.25/srclib/apr-util" \
+"--with-apr=../apr" \
+"--prefix=/usr/local/apache2" \
+"--exec-prefix=/usr/local/apache2" \
+"--libdir=/usr/local/apache2/lib" \
+"--includedir=/usr/local/apache2/include" \
+"--bindir=/usr/local/apache2/bin" \
+"$@"
