@@ -23,7 +23,7 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: Install Software
+      - name: Install Apache 2.2
         run: |
           echo "Remove Apache 2.4"
           sudo service apache2 stop
@@ -93,11 +93,17 @@ jobs:
           sudo cp /usr/local/apache2/conf/httpd.conf ./dev-tools/_test_results/_conf_files_2.2/httpd.conf
           sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ./dev-tools/_test_results/_conf_files_2.2/
           
-      - name: Run Scripts
+      - name: Test Blocker
         shell: bash
         run: |
           echo "export TERM=xterm" >> ~/.bashrc
           source ~/.bashrc
           ./dev-tools/test-blocker-quick.sh
-          sudo ./dev-tools/install-apache-2.4.sh
+
+      - name: Install Apache 2.4
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          sudo /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/dev-tools/install-apache-2.4.sh
           
