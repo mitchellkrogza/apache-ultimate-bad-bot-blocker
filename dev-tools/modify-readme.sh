@@ -45,10 +45,11 @@
 
 yeartag=$(date +%Y)
 monthtag=$(date +%m)
-my_git_tag=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
-bad_referrers=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list)
-bad_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list)
-fake_google_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list)
+daytag=$(date +%d)
+my_git_tag=V3.${yeartag}.${monthtag}.${daytag}
+bad_referrers=$(wc -l < ./_generator_lists/bad-referrers.list)
+bad_bots=$(wc -l < ./_generator_lists/bad-user-agents.list)
+fake_google_bots=$(wc -l < ./_generator_lists/fake-googlebots.list)
 
 # **********************************
 # Temporary database files we create
@@ -76,11 +77,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/README.md
+.r ./README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/README.md
+w ./README.md
 q
 IN
 rm ${inputdbA}
@@ -96,11 +97,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CONFIGURATION.md
+.r ./CONFIGURATION.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/CONFIGURATION.md
+w ./CONFIGURATION.md
 q
 IN
 rm ${inputdbA}
@@ -115,11 +116,11 @@ ed -s ${inputdbA}<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
+.r ./_htaccess_versions/htaccess-mod_rewrite.txt
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_rewrite.txt
+w ./_htaccess_versions/htaccess-mod_rewrite.txt
 q
 IN
 rm ${inputdbA}
@@ -134,11 +135,11 @@ ed -s ${inputdbA}<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
+.r ./_htaccess_versions/htaccess-mod_setenvif.txt
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt
+w ./_htaccess_versions/htaccess-mod_setenvif.txt
 q
 IN
 rm ${inputdbA}
@@ -153,11 +154,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
+.r ./_htaccess_versions/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/README.md
+w ./_htaccess_versions/README.md
 q
 IN
 rm ${inputdbA}
@@ -173,11 +174,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
+.r ./_CPanel_Instructions/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_CPanel_Instructions/README.md
+w ./_CPanel_Instructions/README.md
 q
 IN
 rm ${inputdbA}
@@ -192,11 +193,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_google_analytics_ghost_spam/README.md
+.r ./_google_analytics_ghost_spam/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_google_analytics_ghost_spam/README.md
+w ./_google_analytics_ghost_spam/README.md
 q
 IN
 rm ${inputdbA}
@@ -211,11 +212,11 @@ ed -s ${inputdbA}<<\IN
 1,/_______________/d
 /____________________/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/robots.txt/README.md
+.r ./robots.txt/README.md
 /_______________/x
 .t.
 .,/____________________/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/robots.txt/README.md
+w ./robots.txt/README.md
 q
 IN
 rm ${inputdbA}
