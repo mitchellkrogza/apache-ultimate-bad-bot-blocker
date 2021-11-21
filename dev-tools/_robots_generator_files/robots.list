@@ -5,6 +5,7 @@
 80legs
 ADmantX
 AIBOT
+ALittle Client
 ASPSeek
 Abonti
 Aboundex
@@ -87,6 +88,7 @@ CopyRightCheck
 Copyscape
 Cosmos
 Craftbot
+Crawling at Home Project
 CrazyWebCrawler
 Crescent
 CrunchBot
@@ -110,6 +112,7 @@ Discobot
 Discoverybot
 Dispatch
 DittoSpyder
+DnBCrawler-Analytics
 DnyzBot
 DomCopBot
 DomainAppender
@@ -159,7 +162,6 @@ GermCrawler
 GetRight
 GetWeb
 Getintent
-Gigablast
 Gigabot
 Go!Zilla
 Go-Ahead-Got-It
@@ -222,6 +224,7 @@ LNSpiderguy
 LWP::Simple
 Lanshanbot
 Larbin
+Leap
 LeechFTP
 LeechGet
 LexiBot
@@ -393,6 +396,7 @@ ScreenerBot
 ScrepyBot
 Searchestate
 SearchmetricsBot
+SemanticJuice
 Semrush
 SemrushBot
 SentiBot
@@ -490,6 +494,7 @@ WWW-Collector-E
 WWW-Mechanize
 WWW::Mechanize
 WWWOFFLE
+Wallpapers
 Wallpapers/3.0
 WallpapersHD
 WeSEE
@@ -550,18 +555,22 @@ ZoomBot
 ZoominfoBot
 ZumBot
 ZyBorg
+adscanner
 archive.org_bot
 arquivo-web-crawler
 arquivo.pt
 autoemailspider
 backlink-check
+cah.io.community
 check1.exe
+clark-crawler
 coccocbot-web
 cognitiveseo
 com.plumanalytics
 crawl.sogou.com
 crawler.feedback
 crawler4j
+dataforseo.com
 demandbase-bot
 domainsproject.org
 eCatch
@@ -592,6 +601,7 @@ satoristudio.net
 scalaj-http
 scan.lol
 seobility
+seocompany.store
 seoscanners
 seostar
 serpstatbot
@@ -605,8 +615,11 @@ sysscan
 tAkeOut
 trendiction.com
 trendiction.de
+ubermetrics-technologies.com
 voyagerx.com
 webmeup-crawler
+webpros.com
+webprosbot
 x09Mozilla
 x22Mozilla
 xpymep1.exe
