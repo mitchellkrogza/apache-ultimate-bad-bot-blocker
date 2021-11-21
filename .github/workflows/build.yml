@@ -92,3 +92,10 @@ jobs:
           sudo cp /usr/local/apache2/custom.d/*.conf ./dev-tools/_test_results/_conf_files_2.2/
           sudo cp /usr/local/apache2/conf/httpd.conf ./dev-tools/_test_results/_conf_files_2.2/httpd.conf
           sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ./dev-tools/_test_results/_conf_files_2.2/
+          
+      - name: Run Scripts
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/test-blocker-quick.sh
