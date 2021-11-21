@@ -29,7 +29,7 @@ class Generator
      */
     public function domainWorker()
     {
-        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_generator_lists/bad-referrers.list";
+        $domainsFile = "./_generator_lists/bad-referrers.list";
 
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
@@ -70,7 +70,7 @@ class Generator
      */
     public function domainWorker2()
     {
-        $domainsFile = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/_htaccess_generator_files/bad-user-agents.list";
+        $domainsFile = "./dev-tools/_htaccess_generator_files/bad-user-agents.list";
         
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
@@ -113,7 +113,7 @@ class Generator
      */
     public function createApache1($date, array $lines, array $lines2)
     {    
-        $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions//htaccess-mod_rewrite.txt";
+        $file = "./_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteCond %{HTTP_USER_AGENT} ^\W [OR]\n";
         foreach ($lines2 as $line) {
@@ -139,7 +139,7 @@ class Generator
      */
     public function createApache2($date, array $lines, array $lines2)
     {
-        $file = "/home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/_htaccess_versions/htaccess-mod_setenvif.txt";
+        $file = "./_htaccess_versions/htaccess-mod_setenvif.txt";
         $data = "##Apache Spam Referer Blocker .htaccess version for mod_senenvif.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n";
         $data .= "<IfModule mod_setenvif.c>\n\nSetEnvIfNoCase User-Agent ^\W spambot=yes\n";
         foreach ($lines2 as $line) {
