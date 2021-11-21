@@ -80,6 +80,12 @@ updatebuildnumber () {
 echo ${thisbuild} > ./dev-tools/buildnumber
 }
 
+#cleanup
+sudo rm -rf ./zlib-1.2.11
+sudo rm zlib-*.tar.gz
+sudo rm zlib-*.tar.gz*
+
+
 commitBuildChanges () {
           updatebuildnumber
           git config --global user.name "mitchellkrogza"
