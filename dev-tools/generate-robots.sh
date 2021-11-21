@@ -69,8 +69,10 @@ sort -u ${output} -o ${output}
 
 yeartag=$(date +"%Y")
 monthtag=$(date +"%m")
-daytag=$(date +"%d")
-my_git_tag=V3.${yeartag}.${monthtag}.${daytag}
+lastbuild=$(cat ./dev-tools/buildnumber)
+thisbuild=$((lastbuild + 1))
+my_git_tag=V3.${yeartag}.${monthtag}.${thisbuild}
+
 bad_referrers=$(wc -l < ./_generator_lists/bad-referrers.list)
 bad_bots=$(wc -l < ./_generator_lists/bad-user-agents.list)
 now="$(date)"
