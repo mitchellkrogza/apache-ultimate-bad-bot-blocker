@@ -71,7 +71,7 @@ lastbuild=$(cat ./dev-tools/buildnumber)
 thisbuild=$((lastbuild + 1))
 
 releaseNewVersion () {
-latestbuild=V3.${YEAR}.${MONTH}.${thisbuild}
+latestbuild=V3.${yeartag}.${monthtag}.${thisbuild}
 echo ${latestbuild}
 echo "${bold}${magenta}Releasing ${latestbuild}"
 }
