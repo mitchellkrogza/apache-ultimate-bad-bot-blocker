@@ -179,7 +179,10 @@ jobs:
           source ~/.bashrc
           ./dev-tools/test-blocker-quick.sh
 
-          
-      - name: Debug
+      - name: Commit
+        shell: bash
         run: |
-          sudo systemctl status apache2.service
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/modify-files-and-commit.sh
+
