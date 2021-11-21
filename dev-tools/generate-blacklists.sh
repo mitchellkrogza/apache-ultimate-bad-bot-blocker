@@ -45,23 +45,24 @@
 
 yeartag=$(date +"%Y")
 monthtag=$(date +"%m")
+daytag=$(date +"%d")
 now="$(date)"
-my_git_tag=V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER}
-bad_referrers=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-referrers.list)
-bad_bots=$(wc -l < ${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list)
-input1=${TRAVIS_BUILD_DIR}/_generator_lists/good-user-agents.list
-input2=${TRAVIS_BUILD_DIR}/_generator_lists/allowed-user-agents.list
-input3=${TRAVIS_BUILD_DIR}/_generator_lists/limited-user-agents.list
-input4=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
-input5=${TRAVIS_BUILD_DIR}/.dev-tools/referrers-regex-format.txt
-input6=${TRAVIS_BUILD_DIR}/_generator_lists/google-ip-ranges.list
-input7=${TRAVIS_BUILD_DIR}/_generator_lists/bing-ip-ranges.list
-input8=${TRAVIS_BUILD_DIR}/_generator_lists/wordpress-theme-detectors-apache.list
-input9=${TRAVIS_BUILD_DIR}/_generator_lists/nibbler-seo.list
-input10=${TRAVIS_BUILD_DIR}/_generator_lists/cloudflare-ip-ranges.list
-input11=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents.list
-input12=${TRAVIS_BUILD_DIR}/_generator_lists/bad-user-agents-fail2ban-additional.list
-input13=${TRAVIS_BUILD_DIR}/_generator_lists/fake-googlebots.list
+my_git_tag=V3.${yeartag}.${monthtag}.${daytag}
+bad_referrers=$(wc -l < ./_generator_lists/bad-referrers.list)
+bad_bots=$(wc -l < ./_generator_lists/bad-user-agents.list)
+input1=./_generator_lists/good-user-agents.list
+input2=./_generator_lists/allowed-user-agents.list
+input3=./_generator_lists/limited-user-agents.list
+input4=./_generator_lists/bad-user-agents.list
+input5=./.dev-tools/referrers-regex-format.txt
+input6=./_generator_lists/google-ip-ranges.list
+input7=./_generator_lists/bing-ip-ranges.list
+input8=./_generator_lists/wordpress-theme-detectors-apache.list
+input9=./_generator_lists/nibbler-seo.list
+input10=./_generator_lists/cloudflare-ip-ranges.list
+input11=./_generator_lists/bad-user-agents.list
+input12=./_generator_lists/bad-user-agents-fail2ban-additional.list
+input13=./_generator_lists/fake-googlebots.list
 
 # *******************************************************
 # Declare temporary database files used during generation
@@ -85,10 +86,10 @@ inputdb13=/tmp/fake-googlebots.db
 # Declare Apache template and temp variables
 # ******************************************
 
-apache=${TRAVIS_BUILD_DIR}/.dev-tools/apache2.2.template
-apache2=${TRAVIS_BUILD_DIR}/.dev-tools/apache2.4.template
-apache3=${TRAVIS_BUILD_DIR}/.dev-tools/centos6.template
-apache4=${TRAVIS_BUILD_DIR}/.dev-tools/centos7.template
+apache=./dev-tools/apache2.2.template
+apache2=./dev-tools/apache2.4.template
+apache3=./dev-tools/centos6.template
+apache4=./dev-tools/centos7.template
 tmpapacheA=tmpapacheA
 tmpapacheB=tmpapacheB
 tmpapache1=tmpapache1
@@ -179,13 +180,13 @@ ed -s ${inputdbA}<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdbA}
@@ -205,13 +206,13 @@ ed -s ${inputdb1}<<\IN
 1,/# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb1}
@@ -231,11 +232,11 @@ ed -s ${inputdb2}<<\IN
 1,/# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb2}
@@ -255,11 +256,11 @@ ed -s ${inputdb3}<<\IN
 1,/# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb3}
@@ -279,11 +280,11 @@ ed -s ${inputdb4}<<\IN
 1,/# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb4}
@@ -303,11 +304,11 @@ ed -s ${inputdb5}<<\IN
 1,/# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb5}
@@ -327,11 +328,11 @@ ed -s ${inputdb6}<<\IN
 1,/# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb6}
@@ -351,11 +352,11 @@ ed -s ${inputdb7}<<\IN
 1,/# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb7}
@@ -375,11 +376,11 @@ ed -s ${inputdb8}<<\IN
 1,/# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb8}
@@ -399,11 +400,11 @@ ed -s ${inputdb9}<<\IN
 1,/# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb9}
@@ -423,11 +424,11 @@ ed -s ${inputdb10}<<\IN
 1,/# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb10}
@@ -448,11 +449,11 @@ ed -s ${inputdb13}<<\IN
 1,/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+.r ./dev-tools/apache2.2.template
 /# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.2.template
+w ./dev-tools/apache2.2.template
 q
 IN
 rm ${inputdb13}
@@ -460,7 +461,7 @@ rm ${inputdb13}
 
 # Copy files to correct folders
 # **********************************************
-sudo cp ${apache} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.2/custom.d/globalblacklist.conf
+sudo cp ${apache} ./Apache_2.2/custom.d/globalblacklist.conf
 
 # *****************************************************************************************************************
 # *****************************************************************************************************************
@@ -484,13 +485,13 @@ ed -s ${inputdbA}<<\IN
 1,/### Version Information #/d
 /### Version Information ##/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /### Version Information #/x
 .t.
 .,/### Version Information ##/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdbA}
@@ -510,13 +511,13 @@ ed -s ${inputdb1}<<\IN
 1,/# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
 #,p
 #,p used to print output replaced with w below to write
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb1}
@@ -536,11 +537,11 @@ ed -s ${inputdb2}<<\IN
 1,/# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END ALLOWED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb2}
@@ -560,11 +561,11 @@ ed -s ${inputdb3}<<\IN
 1,/# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END LIMITED BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb3}
@@ -584,11 +585,11 @@ ed -s ${inputdb4}<<\IN
 1,/# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb4}
@@ -608,11 +609,11 @@ ed -s ${inputdb5}<<\IN
 1,/# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BAD REFERERS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb5}
@@ -632,11 +633,11 @@ ed -s ${inputdb6}<<\IN
 1,/# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb6}
@@ -656,11 +657,11 @@ ed -s ${inputdb7}<<\IN
 1,/# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb7}
@@ -680,11 +681,11 @@ ed -s ${inputdb8}<<\IN
 1,/# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END WP THEME DETECTORS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb8}
@@ -704,11 +705,11 @@ ed -s ${inputdb9}<<\IN
 1,/# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END NIBBLER ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb9}
@@ -728,11 +729,11 @@ ed -s ${inputdb10}<<\IN
 1,/# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END CLOUDFLARE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb10}
@@ -752,11 +753,11 @@ ed -s ${inputdb13}<<\IN
 1,/# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/d
 /# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/,$d
 ,d
-.r /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+.r ./dev-tools/apache2.4.template
 /# START FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/x
 .t.
 .,/# END FAKE GOOGLEBOTS ### DO NOT EDIT THIS LINE AT ALL ###/-d
-w /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/.dev-tools/apache2.4.template
+w ./dev-tools/apache2.4.template
 q
 IN
 rm ${inputdb13}
@@ -765,7 +766,7 @@ rm ${inputdb13}
 
 # Copy file to correct folder
 # **********************************************
-sudo cp ${apache2} /home/travis/build/mitchellkrogza/apache-ultimate-bad-bot-blocker/Apache_2.4/custom.d/globalblacklist.conf
+sudo cp ${apache2} ./Apache_2.4/custom.d/globalblacklist.conf
 
 
 
