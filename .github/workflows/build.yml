@@ -109,7 +109,7 @@ jobs:
           sudo rm -rf /tmp/zlib-1.2.11/
           sudo rm -rf /tmp/httpd-2.2.25/
           ls -la /tmp
-          sudo install -y apache2 apache2-utils
+          sudo install apache2 apache2-utils
           echo "${bold}${green}Show Loaded Apache Modules"
           sudo apache2ctl -M
           echo "${bold}${green}Show Apache Version Information"
