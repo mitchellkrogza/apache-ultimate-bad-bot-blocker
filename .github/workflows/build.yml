@@ -121,6 +121,7 @@ jobs:
           ls -la /etc/apache2/
           ls -la /etc/apache2/sites-available/
           ls -la /etc/apache2/sites-enabled/
+          cat /etc/apache2/sites-available/000-default.conf
           sudo rm /etc/apache2/sites-available/*
           sudo rm /etc/apache2/sites-enabled/*
           sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/testsite.conf /etc/apache2/sites-available/
