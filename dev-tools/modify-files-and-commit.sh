@@ -39,6 +39,9 @@
 # OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 # SOFTWARE.
 
+#set -e
+#set -o pipefail
+export TERM=xterm
 
 # ******************
 # Set Some Variables
@@ -46,57 +49,68 @@
 
 yeartag=$(date +"%Y")
 monthtag=$(date +"%m")
-cd ${TRAVIS_BUILD_DIR}
-
-# *******************************
-# Remove Remote Added by TravisCI
-# *******************************
-
-git remote rm origin
-
-# **************************
-# Add Remote with Secure Key
-# **************************
-
-git remote add origin https://${GH_TOKEN}@github.com/${TRAVIS_REPO_SLUG}.git
-
-# **********************************************************************************
-# List Remotes ONLY DURING testing - do not do this on live repo / possible key leak
-# git remote -v
-# ***********************************************************************************
-
-# *********************
-# Set Our Git Variables
-# *********************
-
-git config --global user.email "${GIT_EMAIL}"
-git config --global user.name "${GIT_NAME}"
-git config --global push.default simple
-
-# *******************************************
-# Make sure we have checked out master branch
-# *******************************************
-
-git checkout master
 
 # ***************************************************************
 # Gzip Our Latest Release So We can Include it the Travis Release
 # ***************************************************************
 
-cd ${TRAVIS_BUILD_DIR}/.latest_release/
-tar -czf Apache_2.2.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.2/ .
-tar -czf Apache_2.4.tar.gz -C ${TRAVIS_BUILD_DIR}/Apache_2.4/ .
+#cd ./.latest_release/
+#tar -czf Apache_2.2.tar.gz -C ./Apache_2.2/ .
+#tar -czf Apache_2.4.tar.gz -C ./Apache_2.4/ .
 
 # *************************************
 # Add all the modified files and commit
 # *************************************
 
-git add -A
-git commit -am "V3.${yeartag}.${monthtag}.${TRAVIS_BUILD_NUMBER} [ci skip]"
+# ---------
+# FUNCTIONS
+# ---------
 
-# *************************************************************
-# Travis now moves to the before_deploy: section of .travis.yml
-# *************************************************************
+touch ./dev-tools/buildnumber
+lastbuild=$(cat ./dev-tools/buildnumber)
+thisbuild=$((lastbuild + 1))
+
+releaseNewVersion () {
+latestbuild=V3.${YEAR}.${MONTH}.${thisbuild}
+echo ${latestbuild}
+echo "${bold}${magenta}Releasing ${latestbuild}"
+}
+
+updatebuildnumber () {
+echo ${thisbuild} > ./dev-tools/buildnumber
+}
+
+commitBuildChanges () {
+          updatebuildnumber
+          git config --global user.name "mitchellkrogza"
+          git config --global user.email "mitchellkrog@gmail.com"
+          git add -A
+          git commit -m "${latestbuild} [ci skip]"
+          git push
+}
+
+deployPackage () {
+printf "\n"
+echo "${bold}${green}DEPLOYING ${latestbuild}"
+printf "\n"
+          git config --global user.name "mitchellkrogza"
+          git config --global user.email "mitchellkrog@gmail.com"
+          export GIT_TAG=${latestbuild}
+          git tag ${GIT_TAG} -a -m "${latestbuild}"
+          sudo git push origin master && git push origin master --tags
+echo "${bold}${green}-------------------------------"
+echo "${bold}${green}Deploying ${latestbuild}"
+echo "${bold}${green}-------------------------------"
+printf "\n\n"
+}
+
+# -------------
+# Run Functions
+# -------------
+
+releaseNewVersion
+commitBuildChanges
+deployPackage
 
 # **********************
 # Exit With Error Number
