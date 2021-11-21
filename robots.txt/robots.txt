@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.11.1220
-### Updated: Sun Nov 21 12:59:13 UTC 2021
-### Bad Bot Count: 628
+### Version: V3.2021.11.1221
+### Updated: Sun Nov 21 13:18:14 UTC 2021
+### Bad Bot Count: 627
 ###################################################
 ### Version Information ##
 
@@ -1264,8 +1264,6 @@ Disallow:/
 User-agent: x22Mozilla
 Disallow:/
 User-agent: xpymep1.exe
-Disallow:/
-User-agent: xxxxxxxxxx-test
 Disallow:/
 User-agent: zauba.io
 Disallow:/
