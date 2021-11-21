@@ -164,6 +164,14 @@ jobs:
           sudo cp /etc/apache2/custom.d/*.conf ./dev-tools/_test_results/_conf_files_2.4/
           sudo cp /etc/apache2/apache2.conf ./dev-tools/_test_results/_conf_files_2.4/apache2.conf
           sudo cp /etc/apache2/sites-available/* ./dev-tools/_test_results/_conf_files_2.4/
+
+      - name: Test Blocker
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/test-blocker-quick.sh
+
           
       - name: Debug
         run: |
