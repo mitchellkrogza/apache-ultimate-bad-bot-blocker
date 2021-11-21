@@ -23,6 +23,13 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
+      - name: Generate Files
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          sudo ./dev-tools/generate-files.sh
+
       - name: Install Apache 2.2
         run: |
           echo "Remove Apache 2.4"
