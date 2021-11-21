@@ -1,0 +1,185 @@
+# Build Script for Apache Ultimate Bad Bot Blocker using GHA
+name: CI
+
+defaults:
+  run:
+    shell: bash
+
+on:
+  push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - master
+  schedule:
+      - cron: '0 10 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: Generate Files
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          sudo ./dev-tools/generate-files.sh
+
+      - name: Install Apache 2.2
+        run: |
+          echo "Remove Apache 2.4"
+          sudo service apache2 stop
+          sudo apt purge apache2 apache2-utils
+          sudo apt autoremove
+          sudo apt -y install dos2unix
+          echo "Install ZLib"
+          sudo apt-get install build-essential
+          sudo wget http://www.zlib.net/zlib-1.2.11.tar.gz
+          tar -xvf zlib-1.2.11.tar.gz
+          cd zlib-1.2.11/
+          ./configure --prefix=/usr/local
+          make
+          sudo make install
+          echo "Install Apache 2.2"
+          sudo wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/dev-tools/_apache_builds/httpd-2.2.25.tar.gz
+          tar -xvf httpd-2.2.25.tar.gz
+          cd httpd-2.2.25/
+          ./configure --prefix=/usr/local/apache2 --enable-mods-shared=all --enable-deflate --enable-proxy --enable-proxy-balancer --enable-proxy-http
+          make
+          sudo make -s install
+          sudo /usr/local/apache2/bin/apachectl start
+          wget -qO- http://localhost | grep "It works!"
+          cd /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/
+          pwd
+          sudo cp ./dev-tools/index.html /var/www/html/index.html
+          sudo chown -R www-data:www-data /var/www/
+          echo "Show Loaded Apache Modules"
+          sudo /usr/local/apache2/bin/apachectl -M
+          echo "Show Apache Version Information"
+          sudo /usr/local/apache2/bin/apachectl -V
+          echo "Copy httpd.conf"
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.2.25/httpd.conf /usr/local/apache2/conf/httpd.conf
+          echo "Copy httpd-vhosts.conf"
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.2.25/httpd-vhosts.conf /usr/local/apache2/conf/extra/httpd-vhosts.conf
+          echo "Get blocker files from repo"
+          sudo mkdir /usr/local/apache2/custom.d
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/globalblacklist.conf -O /usr/local/apache2/custom.d/globalblacklist.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-ips.conf -O /usr/local/apache2/custom.d/whitelist-ips.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/whitelist-domains.conf -O /usr/local/apache2/custom.d/whitelist-domains.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-ips.conf -O /usr/local/apache2/custom.d/blacklist-ips.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/bad-referrer-words.conf -O /usr/local/apache2/custom.d/bad-referrer-words.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.2/custom.d/blacklist-user-agents.conf -O /usr/local/apache2/custom.d/blacklist-user-agents.conf
+          echo "Run Apache 2.2 Config Test"
+          sudo /usr/local/apache2/bin/apachectl configtest
+          echo "Restarting Apache 2.2"
+          sudo /usr/local/apache2/bin/apachectl restart
+          echo "Install old version of blacklist to test updater"
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.2.25/old-globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
+          echo "Download update-apacheblocker.sh"
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          sed -n "s/2\.4/2\.2/g" ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          sed -n "s/\/etc\/apache2\/custom.d/\/usr\/local\/apache2\/custom.d/g" ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          sed -n "s/apachectl/\/usr\/local\/apache2\/bin\/apachectl/g" ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          echo "Test update-apacheblocker.sh"
+          sudo chmod +x ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          sudo bash ./dev-tools/_conf_files_for_testing/apache2.2.25/update-apacheblocker.sh
+          echo "Place latest generated version of globalblacklist.conf into place"
+          sudo cp ./Apache_2.2/custom.d/globalblacklist.conf /usr/local/apache2/custom.d/globalblacklist.conf
+          echo "Restarting Apache 2.2"
+          sudo /usr/local/apache2/bin/apachectl restart
+          echo "Backup Config Files"
+          sudo cp /usr/local/apache2/custom.d/*.conf ./dev-tools/_test_results/_conf_files_2.2/
+          sudo cp /usr/local/apache2/conf/httpd.conf ./dev-tools/_test_results/_conf_files_2.2/httpd.conf
+          sudo cp /usr/local/apache2/conf/extra/httpd-vhosts.conf ./dev-tools/_test_results/_conf_files_2.2/
+          
+      - name: Test Blocker
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/test-blocker-quick.sh
+
+      - name: Install Apache 2.4
+        run: |
+          echo "Stopping Apache 2.2"
+          sudo /usr/local/apache2/bin/apachectl stop
+          sudo rm -rf /usr/local/apache2/
+          ls -la /usr/local
+          sudo rm -rf /tmp/zlib-1.2.11/
+          sudo rm -rf /tmp/httpd-2.2.25/
+          sudo apt install apache2 apache2-utils
+          echo "${bold}${green}Show Loaded Apache Modules"
+          sudo apache2ctl -M
+          echo "${bold}${green}Show Apache Version Information"
+          sudo apache2ctl -V
+          echo "${bold}${yellow}Set Apache ServerName"
+          sudo cp ./dev-tools/servername.conf /etc/apache2/conf-available/servername.conf
+          sudo a2enconf servername
+          sudo systemctl reload apache2
+          echo "${bold}${yellow}Enable Apache VHost"
+          ls -la /etc/apache2/
+          ls -la /etc/apache2/sites-available/
+          ls -la /etc/apache2/sites-enabled/
+          sudo cat /etc/apache2/sites-available/000-default.conf
+          sudo rm /etc/apache2/sites-available/default-ssl.conf
+          sudo rm /etc/apache2/sites-available/000-default.conf
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/000-default.conf /etc/apache2/sites-available/
+          sudo mkdir /etc/apache2/custom.d
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/globalblacklist.conf -O /etc/apache2/custom.d/globalblacklist.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-ips.conf -O /etc/apache2/custom.d/whitelist-ips.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-ips.conf -O /etc/apache2/custom.d/blacklist-ips.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/bad-referrer-words.conf -O /etc/apache2/custom.d/bad-referrer-words.conf
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/blacklist-user-agents.conf -O /etc/apache2/custom.d/blacklist-user-agents.conf
+          echo "${bold}${yellow}Reloading Apache"
+          sudo systemctl reload apache2
+          echo "${bold}${green}Download Blocker Files from Repo"
+          echo "${bold}${green}Run Apache 2.4 Config Test"
+          sudo apache2ctl configtest
+          echo "${bold}${yellow}Disable mod access_compat"
+          sudo a2dismod access_compat
+          echo "${bold}${yellow}Restarting Apache"
+          sudo service apache2 reload
+          sudo service apache2 restart
+          echo "${bold}${yellow}Test Modified apache2.conf"
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/apache2.conf /etc/apache2/
+          echo "${bold}${yellow}Restarting Apache"
+          sudo service apache2 reload
+          sudo service apache2 restart
+          echo "${bold}${yellow}Install old version of blacklist to test updater"
+          sudo cp ./dev-tools/_conf_files_for_testing/apache2.4.34/old-globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+          echo "${bold}${yellow}Download update-apacheblocker.sh"
+          sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/update-apacheblocker.sh -O ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+          sed -n "s/email@example.com/mitchellkrog@gmail.com/g" ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh > ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp && sudo mv ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.tmp ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+          echo "${bold}${yellow}Test update-apacheblocker.sh"
+          sudo chmod +x ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+          sudo bash ./dev-tools/_conf_files_for_testing/apache2.4.34/update-apacheblocker.sh
+          echo "${bold}${yellow}Place latest generated version of globalblacklist.conf into place"
+          sudo cp ./Apache_2.4/custom.d/globalblacklist.conf /etc/apache2/custom.d/globalblacklist.conf
+          echo "${bold}${yellow}Restarting Apache"
+          sudo service apache2 reload
+          sudo service apache2 restart
+          echo "${bold}${yellow}Backup Config Files"
+          sudo cp /etc/apache2/custom.d/*.conf ./dev-tools/_test_results/_conf_files_2.4/
+          sudo cp /etc/apache2/apache2.conf ./dev-tools/_test_results/_conf_files_2.4/apache2.conf
+          sudo cp /etc/apache2/sites-available/* ./dev-tools/_test_results/_conf_files_2.4/
+
+      - name: Test Blocker
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/test-blocker-quick.sh
+
+      - name: Commit
+        shell: bash
+        run: |
+          echo "export TERM=xterm" >> ~/.bashrc
+          source ~/.bashrc
+          ./dev-tools/modify-files-and-commit.sh
+

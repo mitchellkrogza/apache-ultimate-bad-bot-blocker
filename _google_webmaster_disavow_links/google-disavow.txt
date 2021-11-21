@@ -345,7 +345,6 @@ domain:alibestsale.com
 domain:alice.it
 domain:alienwheel.es
 domain:alienwheels.de
-domain:aliexpress.com
 domain:aliexpresscashback.club
 domain:alif-ba-ta.com
 domain:alive-ua.com
@@ -451,6 +450,7 @@ domain:anmysite.com
 domain:anniemation.com
 domain:anonymizeme.pro
 domain:anonymous-redirect.com
+domain:anonymousfox.co
 domain:anti-virus-removal.info
 domain:anticrawler.org
 domain:antons-transporte.de
@@ -1090,6 +1090,7 @@ domain:c1.onedmp.com
 domain:cablecar.us
 domain:cacheimages.com
 domain:cactussoft.biz
+domain:cah.io.community
 domain:cakemediahq.com.au
 domain:cakesplus.com.au
 domain:calc-for-credit.ru
@@ -1378,6 +1379,7 @@ domain:com-supportcenter.website
 domain:comeondog.info
 domain:cometorussia.net
 domain:comissionka.net
+domain:commoncrawl.org
 domain:communisave.co.za
 domain:community.allhiphop.com
 domain:companies-catalog.com
@@ -1853,7 +1855,6 @@ domain:econom.co
 domain:ecookna.com.ua
 domain:ecxtracking.com
 domain:ed-shop01.ru
-domain:edelstahlschornstein-123.de
 domain:edge.sharethis.com
 domain:editmedios.com
 domain:editors.choice6912650.hulfingtonpost.com
@@ -2499,7 +2500,6 @@ domain:gheus.altervista.org
 domain:ghostvisitor.com
 domain:gidonline.one
 domain:gifspics.com
-domain:gigablast.com
 domain:gigapeta.com
 domain:gigixo.com
 domain:gilbertbanda.net
@@ -3386,6 +3386,7 @@ domain:landinez.co
 domain:landmania.ru
 domain:landoftracking.com
 domain:landreferat.ru
+domain:landscapebackgrounds.blogspot.com
 domain:landscaping.center
 domain:languagecode.com
 domain:lankarns.com
@@ -3428,6 +3429,7 @@ domain:leftofcentrist.com
 domain:legalrc.biz
 domain:legionalpha.com
 domain:lego4x4.ru
+domain:lemon-ade.site
 domain:lennatin.info
 domain:lenpipet.ru
 domain:lenvred.org
@@ -3491,6 +3493,7 @@ domain:lion.conboy.us
 domain:lion.misba.us
 domain:lion.playtap.us
 domain:lion.snapmap.us
+domain:lionking-1994.blogspot.com
 domain:liquimondo.com
 domain:liran-locks.com
 domain:lirunet.ru
@@ -3936,6 +3939,7 @@ domain:mp3downloadhq.com
 domain:mp3films.ru
 domain:mp3ringtone.info
 domain:mp3ritm.top
+domain:mp3s.club
 domain:mrbitsandbytes.com
 domain:mrbojikobi4.biz
 domain:mrcsa.com.au
@@ -3968,6 +3972,7 @@ domain:music7s.me
 domain:musicas.baixar-musicas-gratis.com
 domain:musicdaddy.net
 domain:musicktab.com
+domain:musicpro.monster
 domain:musicspire.online
 domain:musicstock.me
 domain:musicvidz.ru
@@ -3990,6 +3995,7 @@ domain:my-big-family.com
 domain:my-cash-bot.co
 domain:my-floor.in.ua
 domain:myanyone.net
+domain:mybackgroundlandscape.blogspot.com
 domain:mybinaryoptionsrobot.com
 domain:myblogregistercm.tk
 domain:mycaf.it
@@ -4135,6 +4141,7 @@ domain:niki-mlt.ru
 domain:nikitabuch.com
 domain:nikitsyringedrivelg.pen.io
 domain:nikkiewart.ru
+domain:nina.az
 domain:ningessaybe.me
 domain:nippon-bearings.ru
 domain:niroo.info
@@ -4452,6 +4459,7 @@ domain:pepperstyle.ru
 domain:percin.biz.ly
 domain:perederni.net
 domain:perfection-pleasure.ru
+domain:perfectplanned.com
 domain:perfectpracticeweb.com
 domain:perl.dp.ua
 domain:perm-profnastil.ru
@@ -4483,6 +4491,7 @@ domain:phpdevops.com
 domain:phrcialiled.com
 domain:phuketscreen.com
 domain:physfunc.ru
+domain:pic-re.blogspot.com
 domain:pic2fly.com
 domain:piccdata.com
 domain:piccshare.com
@@ -4548,6 +4557,7 @@ domain:pl-top.pl
 domain:pl-vouchers.com
 domain:pl.aasoldes.fr
 domain:pl.id-forex.com
+domain:placid-rounded-coast.glitch.me
 domain:pladform.ru
 domain:plaff-go.ru
 domain:plastgran.com
@@ -4589,6 +4599,7 @@ domain:pokemon-go-play.online
 domain:pokemongooo.ml
 domain:pokerniydom.ru
 domain:polcin.de
+domain:poligon.com
 domain:polimga.pw
 domain:polska-poezja.com
 domain:polybuild.ru
@@ -4645,6 +4656,7 @@ domain:pornogig.com
 domain:pornogratisdiario.com
 domain:pornohd1080.online
 domain:pornohub.me
+domain:pornoinn.com
 domain:pornokajf.com
 domain:pornoklad.net
 domain:pornoklad.ru
@@ -4894,6 +4906,7 @@ domain:razvratnoe.org
 domain:razyboard.com
 domain:rcb101.ru
 domain:rcpmda.ikan1080.xyz
+domain:rczhan.com
 domain:real-time-analytics.com
 domain:realitykings.com
 domain:realizmobi.com
@@ -5069,6 +5082,7 @@ domain:russintv.fr
 domain:russkie-gorki.ru
 domain:russkoe-zdorovie.ru
 domain:rustic-quiver.win
+domain:rusvideos.su
 domain:rutor.group
 domain:rutor.vip
 domain:rvi.biz
@@ -6057,6 +6071,7 @@ domain:torrentgamer.net
 domain:torrentred.games
 domain:torrents-tracker.com
 domain:torrents.cd
+domain:torrents.life
 domain:torrnada.ru
 domain:torture.ml
 domain:totu.info
@@ -6075,6 +6090,7 @@ domain:tozup.com
 domain:tpu.ru
 domain:tracfone.com
 domain:track-rankings.online
+domain:track.deriv.com
 domain:track112.site
 domain:track2.shop
 domain:tracklead.net
@@ -6762,6 +6778,7 @@ domain:xlolitka.com
 domain:xlovecam.com
 domain:xmladserver.com
 domain:xmlinde.com
+domain:xmnb.net
 domain:xmronta.com
 domain:xn------7cdbapdecfd4ak1bn0amjffj7afu3y.xn--p1ai
 domain:xn-----6kcaabbafhu7cskl7akvongwpo7hvjj.xn--p1ai

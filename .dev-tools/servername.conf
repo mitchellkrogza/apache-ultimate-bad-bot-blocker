@@ -1,1 +1,0 @@
-ServerName local.dev

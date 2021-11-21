@@ -7,9 +7,9 @@
 ##### Copyright Mitchell Krog <mitchellkrog@gmail.com>
 
 _______________
-#### Version: V3.2021.06.1210
-#### Bad Referrer Count: [7060](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
-#### Bad Bot Count: [615](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
+#### Version: V3.2021.11.1222
+#### Bad Referrer Count: [7077](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
+#### Bad Bot Count: [627](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
 #### Fake Googlebots: [217](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)
 ____________________
 
