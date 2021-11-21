@@ -47,7 +47,7 @@ jobs:
           sudo make -s install
           sudo /usr/local/apache2/bin/apachectl start
           wget -qO- http://localhost | grep "It works!"
-          sudo cp .dev-tools/index.html /var/www/html/index.html
+          sudo cp ./dev-tools/index.html /var/www/html/index.html
           sudo chown -R www-data:www-data /var/www/
           echo "Show Loaded Apache Modules"
           sudo /usr/local/apache2/bin/apachectl -M
