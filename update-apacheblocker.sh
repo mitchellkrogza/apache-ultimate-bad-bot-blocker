@@ -89,14 +89,14 @@ else
         CURL_RESPONSE_BAD=$(curl --location -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         CURL_RESPONSE_GOOD=$(curl --location -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         if [ $CURL_RESPONSE_BAD != "403" ] || [ $CURL_RESPONSE_GOOD != "200" ] ; then
-          echo -e "Subject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t ${EMAIL};
+          echo -e "To: ${EMAIL}\\nSubject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t;
           exit 1;
         fi
       fi
-      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t;
       exit 0;
     else
-      echo -e "Subject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | sendmail -t;
       exit 1;
     fi
   fi
