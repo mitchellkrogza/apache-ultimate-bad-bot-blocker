@@ -1,11 +1,11 @@
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/apache-ultimate-bad-bot-referrer-blocker-script.png" alt="Apache Ultimate Bad Bot, User-Agent and Spam Referrer Blocker - Apache Block Bad Bots, User-Agents, Vulnerability Scanners, Malware, Adware, Ransomware, Malicious Sites, Spam Referrers, Bad Referrers, Spam Blocker, Porn Blocker, Gambling Blocker,  Wordpress Theme Detector Blocking and Fail2Ban Jail for Repeat Offenders"/>
 
-| REPO | INFO |
+| REPO | BECOME A SPONSOR |
 | :--: | :--: |
-| [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/LICENSE.md) | [![GitHub release](https://img.shields.io/github/release/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg)](https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/releases/latest) |
-| [![Build Status](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker.svg?branch=master)](https://travis-ci.org/mitchellkrogza/apache-ultimate-bad-bot-blocker) | [![GitHub Stats](https://img.shields.io/badge/github-stats-ff5500.svg)](http://githubstats.com/mitchellkrogza/apache-ultimate-bad-bot-blocker) |
+| [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/LICENSE.md) | Your logo and link to your domain will appear here if you become a sponsor. Simply email me on mitchellkrog@gmail.com if you would like to sponsor this project as South Africa is not supported yet under the Github sponsor program. |
+<a href='https://twitter.com/ArchIsTheBest'><img src='https://img.shields.io/twitter/follow/ArchIsTheBest.svg?style=social&label=Follow' alt='Follow @ArchIsTheBest'></a> | Help Support Me at https://ko-fi.com/mitchellkrog |
 
-<a href='https://twitter.com/ubuntu101za'><img src='https://img.shields.io/twitter/follow/ubuntu101za.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
+<a href='https://twitter.com/ArchIsTheBest'><img src='https://img.shields.io/twitter/follow/ArchIsTheBest.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
 
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ##### The Ultimate Apache (2.2 > 2.4+) Bad Bot, User-Agent, Spam Referrer Blocker, Adware, Malware and Ransomware Blocker, Clickjacking Blocker, Click Re-Directing Blocker, SEO Companies and Bad IP Blocker with Anti DDOS System, Nginx Rate Limiting and Wordpress Theme Detector Blocking. Stop and Block all kinds of bad internet traffic from ever reaching your web sites. [PLEASE SEE: Definition of Bad Bots](#define-bad-bots)
