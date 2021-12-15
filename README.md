@@ -5,8 +5,6 @@
 | [![DUB](https://img.shields.io/dub/l/vibe-d.svg)](https://github.com/mitchellkrogza/nginx-ultimate-bad-bot-blocker/blob/master/LICENSE.md) | Your logo and link to your domain will appear here if you become a sponsor. Simply email me on mitchellkrog@gmail.com if you would like to sponsor this project as South Africa is not supported yet under the Github sponsor program. |
 <a href='https://twitter.com/ArchIsTheBest'><img src='https://img.shields.io/twitter/follow/ArchIsTheBest.svg?style=social&label=Follow' alt='Follow @ArchIsTheBest'></a> | Help Support Me at https://ko-fi.com/mitchellkrog |
 
-<a href='https://twitter.com/ArchIsTheBest'><img src='https://img.shields.io/twitter/follow/ArchIsTheBest.svg?style=social&label=Follow' alt='Follow @ubuntu101za'></a>
-
 # Apache Bad Bot and User-Agent Blocker, Spam Referrer Blocker, Bad IP Blocker and Wordpress Theme Detector Blocker
 ##### The Ultimate Apache (2.2 > 2.4+) Bad Bot, User-Agent, Spam Referrer Blocker, Adware, Malware and Ransomware Blocker, Clickjacking Blocker, Click Re-Directing Blocker, SEO Companies and Bad IP Blocker with Anti DDOS System, Nginx Rate Limiting and Wordpress Theme Detector Blocking. Stop and Block all kinds of bad internet traffic from ever reaching your web sites. [PLEASE SEE: Definition of Bad Bots](#define-bad-bots)
 
