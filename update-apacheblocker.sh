@@ -81,7 +81,7 @@ else
       exit 1;
     fi
     if [ ${TEST_BEFORE_RELOAD} = true ] ; then
-      apachectl configtest || TESTFAIL=true;
+      apachectl configtest &>/dev/null || TESTFAIL=true;
     fi
     if [ -z ${TESTFAIL} ] ; then
       apachectl graceful;
