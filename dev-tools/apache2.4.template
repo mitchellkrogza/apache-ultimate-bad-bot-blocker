@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2021.12.1258
-### Updated: Fri Dec 24 10:10:14 UTC 2021
+### Version: V3.2021.12.1259
+### Updated: Fri Dec 24 17:32:40 UTC 2021
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 630
+### Bad Bot Count: 632
 ###################################################
 ### Version Information ##
 
@@ -451,6 +451,7 @@ BrowserMatchNoCase "(?:\b)Mister\ PiX(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Moblie Safari(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Mojeek(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Mojolicious(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)MolokaiBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Morfeus\ Fucking\ Scanner(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Mozlila(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Mr.4x3(?:\b)" bad_bot
@@ -775,6 +776,7 @@ BrowserMatchNoCase "(?:\b)seobility(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)seocompany.store(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)seoscanners(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)seostar(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)seostar.co(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)serpstatbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)sexsearcher(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)sitechecker.pro(?:\b)" bad_bot
