@@ -58,7 +58,7 @@ Please make sure you are subscribed to Github Notifications to be notified when 
 
 ## Help Support This Project 
 
-[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://www.buymeacoffee.com/mitchellkrog)
 
 ****************************************************************
 
@@ -522,7 +522,7 @@ Version 2.2017.03 introduced .htaccess versions of the spam referrer for those u
 ************************************************
 ## Help Support This Project 
 
-[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://www.buymeacoffee.com/mitchellkrog)
 
 Bots attempt to make themselves look like other software or web sites by disguising their user agent. 
 Their user agent names may look harmless, perfectly legitimate even. 
@@ -746,7 +746,7 @@ See the Fail2Ban folder for instructions on configuring this great add on for th
 
 ## Help Support This Project 
 
-[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://www.buymeacoffee.com/mitchellkrog)
 
 ************************************************
 ### Also Checkout The Big List of Hacked Malware Web Sites
@@ -806,7 +806,7 @@ Come drop by and visit me at [mitchellkrog.com](https://mitchellkrog.com) or [Fa
 ************************************************
 ## Help Support This Project 
 
-[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://ko-fi.com/mitchellkrog)
+[<img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/kofi4.png" alt="Buy me Coffee" width="300"/>](https://www.buymeacoffee.com/mitchellkrog)
 
 <img src="https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/.assets/zuko.png"/>
 
