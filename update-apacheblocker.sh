@@ -59,7 +59,7 @@ DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
 if [ ! -f ${APACHE_CONF}/globalblacklist.conf ] ; then
   #Aborting update
-  echo -e "Subject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | sendmail -t ${EMAIL};
+  echo -e "To: ${EMAIL}\\nSubject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | sendmail -t;
   exit 1;
 else
   diff <(wget -q -O - ${BLACKLIST_URL}) ${APACHE_CONF}/globalblacklist.conf;
@@ -76,7 +76,7 @@ else
     fi
     wget -q ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
     if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
-      echo -e "Subject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t;
       rm -f ${APACHE_CONF}/globalblacklist.tmp;
       exit 1;
     fi
