@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.01.1274
-### Updated: Fri Jan  7 10:10:22 UTC 2022
-### Bad Bot Count: 632
+### Version: V3.2022.01.1275
+### Updated: Thu Jan 13 10:09:58 UTC 2022
+### Bad Bot Count: 633
 ###################################################
 ### Version Information ##
 
@@ -388,6 +388,8 @@ Disallow:/
 User-agent: Heritrix
 Disallow:/
 User-agent: Hloader
+Disallow:/
+User-agent: HonoluluBot
 Disallow:/
 User-agent: Humanlinks
 Disallow:/

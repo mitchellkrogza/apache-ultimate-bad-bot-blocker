@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.01.1274
-### Updated: Fri Jan  7 10:10:22 UTC 2022
+### Version: V3.2022.01.1275
+### Updated: Thu Jan 13 10:09:58 UTC 2022
 ### Bad Referrer Count: 7077
-### Bad Bot Count: 632
+### Bad Bot Count: 633
 ###################################################
 ### Version Information ##
 
@@ -360,6 +360,7 @@ BrowserMatchNoCase "(?:\b)Harvest(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Havij(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Heritrix(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Hloader(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)HonoluluBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Humanlinks(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)HybridBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)IDBTE4M(?:\b)" bad_bot
