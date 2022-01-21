@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.01.1282
-### Updated: Thu Jan 20 10:08:58 UTC 2022
-### Bad Bot Count: 633
+### Version: V3.2022.01.1283
+### Updated: Fri Jan 21 08:35:20 UTC 2022
+### Bad Bot Count: 636
 ###################################################
 ### Version Information ##
 
@@ -174,6 +174,8 @@ Disallow:/
 User-agent: ChinaClaw
 Disallow:/
 User-agent: Chlooe
+Disallow:/
+User-agent: Citoid
 Disallow:/
 User-agent: Claritybot
 Disallow:/
@@ -579,6 +581,8 @@ User-agent: Microsoft Data Access
 Disallow:/
 User-agent: Microsoft URL Control
 Disallow:/
+User-agent: Minefield
+Disallow:/
 User-agent: Mister PiX
 Disallow:/
 User-agent: Moblie Safari
@@ -648,6 +652,8 @@ Disallow:/
 User-agent: Ninja
 Disallow:/
 User-agent: Nmap
+Disallow:/
+User-agent: Not
 Disallow:/
 User-agent: Nuclei
 Disallow:/
@@ -817,7 +823,7 @@ User-agent: Searchestate
 Disallow:/
 User-agent: SearchmetricsBot
 Disallow:/
-User-agent: Seekport Crawler
+User-agent: Seekport
 Disallow:/
 User-agent: SemanticJuice
 Disallow:/
@@ -832,8 +838,6 @@ Disallow:/
 User-agent: SeobilityBot
 Disallow:/
 User-agent: Seomoz
-Disallow:/
-User-agent: SeznamBot
 Disallow:/
 User-agent: Shodan
 Disallow:/
@@ -1193,6 +1197,8 @@ User-agent: ips-agent
 Disallow:/
 User-agent: isitwp.com
 Disallow:/
+User-agent: iubenda-radar
+Disallow:/
 User-agent: lwp-request
 Disallow:/
 User-agent: lwp-trivial
@@ -1237,8 +1243,6 @@ User-agent: seoscanners
 Disallow:/
 User-agent: seostar
 Disallow:/
-User-agent: seostar.co
-Disallow:/
 User-agent: serpstatbot
 Disallow:/
 User-agent: sexsearcher
@@ -1264,6 +1268,8 @@ Disallow:/
 User-agent: ubermetrics-technologies.com
 Disallow:/
 User-agent: voyagerx.com
+Disallow:/
+User-agent: webgains-bot
 Disallow:/
 User-agent: webmeup-crawler
 Disallow:/
