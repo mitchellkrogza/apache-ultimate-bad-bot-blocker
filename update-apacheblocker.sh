@@ -84,7 +84,7 @@ else
       apachectl configtest &>/dev/null || TESTFAIL=true;
     fi
     if [ -z ${TESTFAIL} ] ; then
-      apachectl graceful;
+      apachectl graceful &>/dev/null;
       if [ ${CURL_TEST_AFTER_RELOAD} = true ] ; then
         CURL_RESPONSE_BAD=$(curl --location -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         CURL_RESPONSE_GOOD=$(curl --location -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
