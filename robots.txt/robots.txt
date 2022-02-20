@@ -6,8 +6,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.02.1312
-### Updated: Sun Feb 20 10:09:14 UTC 2022
+### Version: V3.2022.02.1313
+### Updated: Sun Feb 20 10:46:53 UTC 2022
 ### Bad Bot Count: 636
 ###################################################
 ### Version Information ##
@@ -1161,7 +1161,7 @@ User-agent: check1.exe
 Disallow:/
 User-agent: clark-crawler
 Disallow:/
-User-agent: coccocbot-web
+User-agent: coccocbot
 Disallow:/
 User-agent: cognitiveseo
 Disallow:/

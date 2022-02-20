@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2022.02.1312
-### Bad Referrer Count: 7087
+### Version: V3.2022.02.1313
+### Bad Referrer Count: 7091
 ### Bad Bot Count: 636
 ### Version Information ##
 
@@ -586,7 +586,7 @@ SetEnvIfNoCase User-Agent \bbacklink\-check\b spambot=yes
 SetEnvIfNoCase User-Agent \bcah\.io\.community\b spambot=yes
 SetEnvIfNoCase User-Agent \bcheck1\.exe\b spambot=yes
 SetEnvIfNoCase User-Agent \bclark\-crawler\b spambot=yes
-SetEnvIfNoCase User-Agent \bcoccocbot\-web\b spambot=yes
+SetEnvIfNoCase User-Agent \bcoccocbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bcognitiveseo\b spambot=yes
 SetEnvIfNoCase User-Agent \bcom\.plumanalytics\b spambot=yes
 SetEnvIfNoCase User-Agent \bcrawl\.sogou\.com\b spambot=yes
@@ -2009,6 +2009,7 @@ SetEnvIfNoCase Referer cntravelre\.com spambot=yes
 SetEnvIfNoCase Referer co\.lumb\.co spambot=yes
 SetEnvIfNoCase Referer coaching\-netz\.info spambot=yes
 SetEnvIfNoCase Referer cobaltpro\.ru spambot=yes
+SetEnvIfNoCase Referer coccoc\.com spambot=yes
 SetEnvIfNoCase Referer cocolyze\.com spambot=yes
 SetEnvIfNoCase Referer cocyq\.inwtrade\.com spambot=yes
 SetEnvIfNoCase Referer coderstate\.com spambot=yes
@@ -2486,6 +2487,7 @@ SetEnvIfNoCase Referer e2click\.com spambot=yes
 SetEnvIfNoCase Referer e705\.net spambot=yes
 SetEnvIfNoCase Referer e90post\.com spambot=yes
 SetEnvIfNoCase Referer eachdayisagift\.review spambot=yes
+SetEnvIfNoCase Referer eager\-nash\.188\-93\-233\-196\.plesk\.page spambot=yes
 SetEnvIfNoCase Referer eandsgallery\.com spambot=yes
 SetEnvIfNoCase Referer eaplay\.ru spambot=yes
 SetEnvIfNoCase Referer earl\-brown\.info spambot=yes
@@ -4420,6 +4422,7 @@ SetEnvIfNoCase Referer mesbuta\.info spambot=yes
 SetEnvIfNoCase Referer message\-warning\.net spambot=yes
 SetEnvIfNoCase Referer mesto\-x\.com spambot=yes
 SetEnvIfNoCase Referer metabar\.ru spambot=yes
+SetEnvIfNoCase Referer metafilter\.com spambot=yes
 SetEnvIfNoCase Referer metallosajding\.ru spambot=yes
 SetEnvIfNoCase Referer metalonly\.info spambot=yes
 SetEnvIfNoCase Referer metarip\.ru spambot=yes
@@ -5100,6 +5103,7 @@ SetEnvIfNoCase Referer pcboa\.se spambot=yes
 SetEnvIfNoCase Referer pcgroup\.com\.uy spambot=yes
 SetEnvIfNoCase Referer pcimforum\.com spambot=yes
 SetEnvIfNoCase Referer pdamods\.ru spambot=yes
+SetEnvIfNoCase Referer pdfprof\.com spambot=yes
 SetEnvIfNoCase Referer pdn\-4\.com spambot=yes
 SetEnvIfNoCase Referer pdns\.cz spambot=yes
 SetEnvIfNoCase Referer pdns\.download spambot=yes

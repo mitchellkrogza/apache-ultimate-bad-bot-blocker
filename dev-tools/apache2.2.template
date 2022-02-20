@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.02.1312
-### Updated: Sun Feb 20 10:09:14 UTC 2022
-### Bad Referrer Count: 7087
+### Version: V3.2022.02.1313
+### Updated: Sun Feb 20 10:46:53 UTC 2022
+### Bad Referrer Count: 7091
 ### Bad Bot Count: 636
 ###################################################
 ### Version Information ##
@@ -748,7 +748,7 @@ BrowserMatchNoCase "(?:\b)backlink-check(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)cah.io.community(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)check1.exe(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)clark-crawler(?:\b)" bad_bot
-BrowserMatchNoCase "(?:\b)coccocbot-web(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)coccocbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)cognitiveseo(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)com.plumanalytics(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)crawl.sogou.com(?:\b)" bad_bot
@@ -2309,6 +2309,7 @@ SetEnvIfNoCase Referer ~*cntravelre\.com spam_ref
 SetEnvIfNoCase Referer ~*co\.lumb\.co spam_ref
 SetEnvIfNoCase Referer ~*coaching\-netz\.info spam_ref
 SetEnvIfNoCase Referer ~*cobaltpro\.ru spam_ref
+SetEnvIfNoCase Referer ~*coccoc\.com spam_ref
 SetEnvIfNoCase Referer ~*cocolyze\.com spam_ref
 SetEnvIfNoCase Referer ~*cocyq\.inwtrade\.com spam_ref
 SetEnvIfNoCase Referer ~*coderstate\.com spam_ref
@@ -2786,6 +2787,7 @@ SetEnvIfNoCase Referer ~*e\-commerce\-seo\.com spam_ref
 SetEnvIfNoCase Referer ~*e\-kwiaciarz\.pl spam_ref
 SetEnvIfNoCase Referer ~*e\-poker\-2005\.com spam_ref
 SetEnvIfNoCase Referer ~*eachdayisagift\.review spam_ref
+SetEnvIfNoCase Referer ~*eager\-nash\.188\-93\-233\-196\.plesk\.page spam_ref
 SetEnvIfNoCase Referer ~*eandsgallery\.com spam_ref
 SetEnvIfNoCase Referer ~*eaplay\.ru spam_ref
 SetEnvIfNoCase Referer ~*earl\-brown\.info spam_ref
@@ -4720,6 +4722,7 @@ SetEnvIfNoCase Referer ~*mesbuta\.info spam_ref
 SetEnvIfNoCase Referer ~*message\-warning\.net spam_ref
 SetEnvIfNoCase Referer ~*mesto\-x\.com spam_ref
 SetEnvIfNoCase Referer ~*metabar\.ru spam_ref
+SetEnvIfNoCase Referer ~*metafilter\.com spam_ref
 SetEnvIfNoCase Referer ~*metallosajding\.ru spam_ref
 SetEnvIfNoCase Referer ~*metalonly\.info spam_ref
 SetEnvIfNoCase Referer ~*metarip\.ru spam_ref
@@ -5400,6 +5403,7 @@ SetEnvIfNoCase Referer ~*pcboa\.se spam_ref
 SetEnvIfNoCase Referer ~*pcgroup\.com\.uy spam_ref
 SetEnvIfNoCase Referer ~*pcimforum\.com spam_ref
 SetEnvIfNoCase Referer ~*pdamods\.ru spam_ref
+SetEnvIfNoCase Referer ~*pdfprof\.com spam_ref
 SetEnvIfNoCase Referer ~*pdn\-4\.com spam_ref
 SetEnvIfNoCase Referer ~*pdns\.cz spam_ref
 SetEnvIfNoCase Referer ~*pdns\.download spam_ref

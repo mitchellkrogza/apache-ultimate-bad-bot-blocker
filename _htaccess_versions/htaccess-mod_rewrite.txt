@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2022.02.1312
-### Bad Referrer Count: 7087
+### Version: V3.2022.02.1313
+### Bad Referrer Count: 7091
 ### Bad Bot Count: 636
 ### Version Information ##
 
@@ -586,7 +586,7 @@ RewriteCond %{HTTP_USER_AGENT} \bbacklink\-check\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcah\.io\.community\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcheck1\.exe\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bclark\-crawler\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \bcoccocbot\-web\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bcoccocbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcognitiveseo\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcom\.plumanalytics\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcrawl\.sogou\.com\b [NC,OR]
@@ -2009,6 +2009,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cntravelre\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*co\.lumb\.co.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*coaching\-netz\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cobaltpro\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*coccoc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cocolyze\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*cocyq\.inwtrade\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*coderstate\.com.*$ [NC,OR]
@@ -2486,6 +2487,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e2click\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e705\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*e90post\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eachdayisagift\.review.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eager\-nash\.188\-93\-233\-196\.plesk\.page.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eandsgallery\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*eaplay\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*earl\-brown\.info.*$ [NC,OR]
@@ -4420,6 +4422,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mesbuta\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*message\-warning\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*mesto\-x\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*metabar\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*metafilter\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*metallosajding\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*metalonly\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*metarip\.ru.*$ [NC,OR]
@@ -5100,6 +5103,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pcboa\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pcgroup\.com\.uy.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pcimforum\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pdamods\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pdfprof\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pdn\-4\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pdns\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*pdns\.download.*$ [NC,OR]
