@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2022.02.1313
-### Bad Referrer Count: 7091
+### Version: V3.2022.02.1314
+### Bad Referrer Count: 7092
 ### Bad Bot Count: 636
 ### Version Information ##
 
@@ -6772,6 +6772,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic\-club\.info.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic100\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic2cash\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*traffic2money\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*trafficcentr\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*trafficfactory\.biz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*trafficgenius\.xyz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*trafficjunky\.com.*$ [NC,OR]

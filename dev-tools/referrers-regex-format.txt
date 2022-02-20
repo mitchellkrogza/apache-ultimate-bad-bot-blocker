@@ -6121,6 +6121,7 @@ SetEnvIfNoCase Referer ~*traffic100\.com spam_ref
 SetEnvIfNoCase Referer ~*traffic2cash\.org spam_ref
 SetEnvIfNoCase Referer ~*traffic2money\.com spam_ref
 SetEnvIfNoCase Referer ~*traffic\-club\.info spam_ref
+SetEnvIfNoCase Referer ~*trafficcentr\.xyz spam_ref
 SetEnvIfNoCase Referer ~*trafficfactory\.biz spam_ref
 SetEnvIfNoCase Referer ~*trafficgenius\.xyz spam_ref
 SetEnvIfNoCase Referer ~*trafficjunky\.com spam_ref
