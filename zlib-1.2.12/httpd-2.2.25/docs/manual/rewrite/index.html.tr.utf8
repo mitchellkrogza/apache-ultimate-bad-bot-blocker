@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>Apache mod_rewrite - Apache HTTP Sunucusu</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body id="manual-page"><div id="page-header">
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p>
+<p class="apache">Apache HTTP Sunucusu Sürüm 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="../"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP Sunucusu</a> &gt; <a href="http://httpd.apache.org/docs/">Belgeleme</a> &gt; <a href="../">Sürüm 2.2</a></div><div id="page-content"><div id="preamble"><h1>Apache mod_rewrite</h1>
+<div class="toplang">
+<p><span>Mevcut Diller: </span><a href="../en/rewrite/" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/rewrite/" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../tr/rewrite/" title="Türkçe">&nbsp;tr&nbsp;</a> |
+<a href="../zh-cn/rewrite/" hreflang="zh-cn" rel="alternate" title="Simplified Chinese">&nbsp;zh-cn&nbsp;</a></p>
+</div>
+
+    <blockquote>
+        <p><code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> gelen URL isteklerini
+        <a href="intro.html#regex">düzenli ifade</a> kurallarına dayanarak
+        devingen olarak dönüştürmek için bir yöntem sağlar. Böylece keyfi URL'leri
+        kendi URL yapınızla istediğiniz şekilde eşleştirmeniz mümkün olur.</p>
+    </blockquote>
+
+    <p>Gerçekten esnek ve güçlü bir URL kurgulama
+      mekanizması oluşturmak için sınısız sayıda kural ve her kural için de
+      sınırsız sayıda koşul destekler. URL değişiklikleri çeşitli sınamalara
+      bağlı olabilir: sunucu değişkenleri, HTTP başlıkları, ortam değişkenleri,
+      zaman damgaları, çeşitli biçimlerde harici veritabanı sorguları. Ayrıca,
+      harici birtakım uygulamalar da bu amaçla kullanılabilir.</p>
+
+    <p>Bu modül URL’lerin tamamında (path-info kısmı dahil), sunucu
+      bağlamında (<code>httpd.conf</code>), sanal konaklar bağlamında (<code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümleri), dizin
+      bağlamında (<code>.htaccess</code> dosyaları ve
+      <code>&lt;Directory&gt;</code> bölümleri) çalışır. Kurallara eklediğiniz
+      <a href="flags.html">seçeneklere</a> bağlı olarak, yeniden yazılan URL
+      sonuçta dahili işlemlerde, harici yönlendirmelerde ve hatta dahili vekalet
+      işlemlerinde kullanılabilir.</p>
+
+    <p><code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> çok güçlü bir araç olduğundan oldukça
+      karmaşık görünebilir. Bu belge
+      <a href="../mod/mod_rewrite.html">mod_rewrite başvuru kılavuzunun</a>
+      tamamlayıcısı olup bu karmaşıklığı biraz hafifletmeyi amaçlar ve
+      <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> ile elde edilebilen kullanışlı ve oldukça
+      açıklamalı senaryo örnekleri içerir. Ayrıca,
+      <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code>'ı hangi durumlarda kullanmamanız gerektiğini
+      ve bunun yerine standart Apache özelliklerinin kullanımını göstermeye,
+      böylece gereksiz karmaşıklıktan sizi kurtarmayı amaçladık. </p>
+
+  <ul>
+    <li><a href="intro.html">mod_rewrite ve düzenli ifadelere giriş</a></li>
+    <li><a href="remapping.html">URL'lerin yeniden eşlenmesi ve yönlendirilmesi
+      için mod_rewrite kullanımı</a></li>
+    <li><a href="access.html">Erişim denetimi için mod_rewrite
+      kullanımı</a></li>
+    <li><a href="vhosts.html">mod_rewrite ile devingen sanal konaklar</a></li>
+    <li><a href="proxy.html">mod_rewrite ile devingen vekil kullanımı</a></li>
+    <li><a href="rewritemap.html">RewriteMap kullanımı</a></li>
+    <li><a href="advanced.html">Gelişkin teknikler ve püfler</a></li>
+    <li><a href="avoid.html">mod_rewrite ne zaman
+      kullanıl<strong>MAZ</strong></a></li>
+    <li><a href="flags.html">RewriteRule Seçenekleri</a></li>
+    <li><a href="tech.html">Teknik ayrıntılar</a></li>
+  </ul>
+
+</div>
+<div id="quickview"><h3>Ayrıca bakınız:</h3><ul class="seealso"><li><a href="../mod/mod_rewrite.html">mod_rewrite Başvuru Kılavuzu</a>
+</li><li><a href="../urlmapping.html">URL’lerin Dosya Sistemine Eşlenmesi</a>
+</li><li><a href="http://wiki.apache.org/httpd/Rewrite">mod_rewrite wiki</a>
+</li><li><a href="../glossary.html">Terimler</a></li></ul></div>
+</div>
+<div class="bottomlang">
+<p><span>Mevcut Diller: </span><a href="../en/rewrite/" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/rewrite/" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../tr/rewrite/" title="Türkçe">&nbsp;tr&nbsp;</a> |
+<a href="../zh-cn/rewrite/" hreflang="zh-cn" rel="alternate" title="Simplified Chinese">&nbsp;zh-cn&nbsp;</a></p>
+</div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br /><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a> altında lisanslıdır.</p>
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>

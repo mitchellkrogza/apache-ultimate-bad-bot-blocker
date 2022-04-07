@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.03.1341
-### Updated: Fri Mar 18 10:10:27 UTC 2022
+### Version: V3.2022.04.1342
+### Updated: Thu Apr  7 07:33:14 UTC 2022
 ### Bad Referrer Count: 7092
 ### Bad Bot Count: 637
 ###################################################
@@ -418,7 +418,6 @@ BrowserMatchNoCase "(?:\b)Likse(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)LinkScan(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)LinkWalker(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Linkbot(?:\b)" bad_bot
-BrowserMatchNoCase "(?:\b)Linkdexbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)LinkextractorPro(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)LinkpadBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)LinksManager(?:\b)" bad_bot
@@ -768,6 +767,7 @@ BrowserMatchNoCase "(?:\b)internetVista\ monitor(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ips-agent(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)isitwp.com(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)iubenda-radar(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)linkdexbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)lwp-request(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)lwp-trivial(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)magpie-crawler(?:\b)" bad_bot

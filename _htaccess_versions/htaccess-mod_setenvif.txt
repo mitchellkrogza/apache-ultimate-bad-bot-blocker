@@ -5,7 +5,7 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2022.03.1341
+### Version: V3.2022.04.1342
 ### Bad Referrer Count: 7092
 ### Bad Bot Count: 637
 ### Version Information ##
@@ -256,7 +256,6 @@ SetEnvIfNoCase User-Agent \bLikse\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkScan\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkWalker\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkbot\b spambot=yes
-SetEnvIfNoCase User-Agent \bLinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkextractorPro\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinkpadBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bLinksManager\b spambot=yes
@@ -606,6 +605,7 @@ SetEnvIfNoCase User-Agent \binternetVista\ monitor\b spambot=yes
 SetEnvIfNoCase User-Agent \bips\-agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bisitwp\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \biubenda\-radar\b spambot=yes
+SetEnvIfNoCase User-Agent \blinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-request\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-trivial\b spambot=yes
 SetEnvIfNoCase User-Agent \bmagpie\-crawler\b spambot=yes

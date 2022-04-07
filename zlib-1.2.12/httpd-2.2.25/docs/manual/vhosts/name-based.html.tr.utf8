@@ -1,0 +1,268 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>İsme Dayalı Sanal Konaklar - Apache HTTP Sunucusu</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body id="manual-page"><div id="page-header">
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p>
+<p class="apache">Apache HTTP Sunucusu Sürüm 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="./"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP Sunucusu</a> &gt; <a href="http://httpd.apache.org/docs/">Belgeleme</a> &gt; <a href="../">Sürüm 2.2</a> &gt; <a href="./">Sanal Konaklar</a></div><div id="page-content"><div id="preamble"><h1>İsme Dayalı Sanal Konaklar</h1>
+<div class="toplang">
+<p><span>Mevcut Diller: </span><a href="../de/vhosts/name-based.html" hreflang="de" rel="alternate" title="Deutsch">&nbsp;de&nbsp;</a> |
+<a href="../en/vhosts/name-based.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/vhosts/name-based.html" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../ja/vhosts/name-based.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/vhosts/name-based.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/vhosts/name-based.html" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div>
+
+    <p>Bu belgede isme dayalı sanal konakların ne zaman, nasıl kullanılacakları
+      açıklanmıştır.</p>
+</div>
+<div id="quickview"><ul id="toc"><li><img alt="" src="../images/down.gif" /> <a href="#namevip">İsme dayalı ve IP’ye dayalı Sanal Konaklar</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#using">İsme Dayalı Sanal Konakların Kullanımı</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#compat">Artık Tarihe Karışmış Tarayıcılarla Uyumluluk</a></li>
+</ul><h3>Ayrıca bakınız:</h3><ul class="seealso"><li><a href="ip-based.html">IP Adresine Dayalı Sanal Konaklar</a></li><li><a href="details.html">Konak Eşlemenin Derinliğine İncelenmesi</a>
+</li><li><a href="mass.html">Devingen olarak Yapılandırılan Kütlesel Sanal
+Barındırma</a></li><li><a href="examples.html">Çok kullanılan sanal konak yapılandırma
+örnekleri</a></li><li><a href="examples.html#serverpath">ServerPath yapılandırma örneği</a>
+</li></ul><ul class="seealso"><li><a href="#comments_section">Yorum</a></li></ul></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="namevip" id="namevip">İsme dayalı ve IP’ye dayalı Sanal Konaklar</a></h2>
+
+    <p>IP’ye dayalı sanal konaklarda sunulacak sanal konağı doğru tespit
+      edebilmek için bağlantının yapıldığı IP adresine bakılır. Bu bakımdan her
+      konak için ayrı bir IP adresine gereksinim vardır. İsme dayalı sanal
+      konaklarda ise sunucu, istemcinin HTTP başlığının bir parçası olarak
+      gönderdiği konak adını kullanır. Bu teknikte aynı IP adresini çok sayıda
+      farklı konak kullanabilir.</p>
+
+    <p>İsme dayalı sanal barındırma nispeten daha kolaydır, çünkü her konak
+      ismini doğru IP adresiyle eşlemek için DNS sunucunuzu yapılandırdıktan
+      sonra Apache HTTP sunucusunu farklı konak isimlerini tanıyacak şekilde
+      yapılandırmanız yeterli olur. İsme dayalı sanal barındırma ayrıca zaten
+      kıt olan IP adreslerine talebi de azaltır. Bu nedenle, açıkça IP’ye dayalı
+      sanal konakları talep eden donanım kullanmadıkça isme dayalı sanal konaklar
+      kullanmalısınız. SNI desteksiz bir <code class="module"><a href="../mod/mod_ssl.html">mod_ssl</a></code> sürümü
+      (Apache'nin 2.2.12 sürümüne kadar standart) kullanmıyorsanız, istemci
+      desteğine bağlı IP’ye dayalı sanal konaklar için geçerli tarihsel sebepler,
+      genel amaçlı bir HTTP sunucusu için artık uygulanabilir değildir.</p>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="using" id="using">İsme Dayalı Sanal Konakların Kullanımı</a></h2>
+
+<table class="related"><tr><th>İlgili Modüller</th><th>İlgili Yönergeler</th></tr><tr><td><ul><li><code class="module"><a href="../mod/core.html">core</a></code></li></ul></td><td><ul><li><code class="directive"><a href="../mod/core.html#documentroot">DocumentRoot</a></code></li><li><code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code></li><li><code class="directive"><a href="../mod/core.html#serveralias">ServerAlias</a></code></li><li><code class="directive"><a href="../mod/core.html#servername">ServerName</a></code></li><li><code class="directive"><a href="../mod/core.html#serverpath">ServerPath</a></code></li><li><code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code></li></ul></td></tr></table>
+
+    <p>İsme dayalı sanal konakları kullanmak için, bu konaklar için istekleri
+      kabul edecek sunucuya IP adresini (ve muhtemelen portu da)
+      belirtmelisiniz. Bu işlem <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> yönergesiyle yapılır. Normal
+      şartlar altında sunucu üzerinde bütün IP adreslerinin kullanılması
+      gerekir; bunun için <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code>
+      yönergesine argüman olarak <code>*</code> belirtebilirsiniz. Çok sayıda
+      port kullanmayı planlıyorsanız (SSL çalıştırmak gibi), argümana
+      <code>*:80</code> şeklinde port ekleyebilirsiniz. Yalnız, <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> yönergesinde bir IP adresi
+      belirtmiş olmakla sunucunun kendiliğinden o IP adresini dinlemeyeceğine
+      dikkat ediniz. Bu konuda ayrıntılı bilgi edinmek için <a href="../bind.html">Apache’nin kullanacağı adreslerin ve portların
+      ayarlanması</a> belgesine bakınız. Ayrıca, sunucuda, burada belirttiğiniz
+      IP adresine sahip bir ağ arabirimi olmalıdır.</p>
+
+    <p>Sonraki adım sunacağınız her konak için ayrı bir <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümü oluşturmaktır.
+      <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code>
+      yönergesinin argümanı ile eşleşen bir <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> yönergesi tanımlanmış olmalıdır
+      (değer normalde "*:80" olacaktır). Her <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümü içinde sunulan konağı
+      belirtmek üzere en azından bir adet <code class="directive"><a href="../mod/core.html#servername">ServerName</a></code> yönergesine ve konak içeriğinin dosya
+      sisteminde bulunduğu yeri gösteren bir <code class="directive"><a href="../mod/core.html#documentroot">DocumentRoot</a></code> yönergesine
+      ihtiyacınız olacaktır.</p>
+
+    <div class="note"><h3>Ana konağı unutmayın</h3>
+        <p>Mevcut sitenize sanal konaklar eklerseniz, mevcut siteniz için de bir
+          <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümü
+          oluşturmalısınız. Bu sanal konak bölümü içinde kullanacağınız
+          <code class="directive"><a href="../mod/core.html#servername">ServerName</a></code> ve <code class="directive"><a href="../mod/core.html#documentroot">DocumentRoot</a></code> yönergelerinin argümanları, bu
+          yönergelerin  sunucu geneli için belirttiğiniz değerlerini
+          içermelidir. Bu sanal konağı yapılandırma dosyanızdaki ilk sanal konak
+          yapın ki, öntanımlı konak olsun.</p>
+    </div>
+
+    <p>Örnek olarak, <code>www.biralan.tld</code> adresinden sitenizi sunmakta
+      olduğunuzu ve bunun yanına aynı IP adresini kullanan
+      <code>www.digeralan.tld</code> sanal konağını eklemek istediğinizi
+      varsayalım. Bunun için <code>httpd.conf</code> dosyanıza basitçe şu
+      satırları ekleyebilirsiniz:</p>
+
+    <div class="example"><p><code>
+        NameVirtualHost *:80<br />
+        <br />
+        &lt;VirtualHost *:80&gt;<br />
+        <span class="indent">
+            ServerName www.biralan.tld<br />
+            ServerAlias biralan.tld *.biralan.tld<br />
+            DocumentRoot /siteler/biralan<br />
+        </span>
+        &lt;/VirtualHost&gt;<br />
+        <br />
+        &lt;VirtualHost *:80&gt;<br />
+        <span class="indent">ServerName www.digeralan.tld<br />
+            DocumentRoot /siteler/digeralan<br />
+        </span>
+        &lt;/VirtualHost&gt;<br />
+    </code></p></div>
+
+    <p>İsterseniz, <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> ve
+      <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code>
+      yönergelerinde argüman olarak <code>*</code> yerine doğrudan bir IP adresi
+      belirtebilirsiniz. Hatta, daha sonra, isme dayalı sanal konakları bir IP
+      adresinden ve IP’ye dayalı olanları veya isme dayalı diğer bir sanal konak
+      grubunu diğer IP adreslerinden sunmak isteyebilirsiniz.</p>
+
+    <p>Çoğu sunucunun birden fazla isim ile erişilebilir olması istenir. Bu,
+      <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümü
+      içine bir <code class="directive"><a href="../mod/core.html#serveralias">ServerAlias</a></code> yönergesi
+      yerleştirmek suretiyle mümkün olur. Örneğin yukarıdaki örnekte,
+      kullanıcıların aynı siteye farklı isimlerle erişmelerini mümkün kılmak
+      için bölüm içine şu satırı ekleyebilirsiniz:</p>
+
+    <div class="example"><p><code>
+        ServerAlias biralan.tld *.biralan.tld
+    </code></p></div>
+
+    <p>Böylece <code>biralan.tld</code> alanındaki tüm konaklar için gelen
+      isteklere <code>www.biralan.tld</code> sanal konağından hizmet sunulmuş
+      olur. Konak isimleriyle eşleşmek üzere dosya ismi kalıp karakterleri
+      <code>*</code> ve <code>?</code> kullanılabilir. Şüphesiz bu isimleri sırf
+      <code class="directive"><a href="../mod/core.html#servername">ServerName</a></code> veya
+      <code>ServerAlias</code> yönergesinde belirtmiş olmakla bu isimleri
+      erişilebilir kılamazsınız. Öncelikle, bu isimleri sunucunuzdaki IP
+      adresleriyle eşlemek üzere yapılandıracağınız bir DNS sunucunuz
+      olmalıdır.</p>
+
+    <p><code>VirtualHost</code> içindeki isimlerin tamamı (jokersiz) bir
+      <code>ServerAlias</code> gibi ele alınır (fakat başka bir
+      <code>ServerAlias</code> ile geçersiz kılınmazlar).</p>
+
+    <p>Son olarak, sanal konak yapılandırmanıza, <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümlerinin içine başka yönergeler
+      yerleştirerek ince ayar çekebilirsiniz. Çoğu yönerge bu bölümlere
+      yerleştirilebilir ve sadece o sanal konakla ilgili yapılandırmayı
+      değiştirmek için kullanılabilir. Belli bir yönergenin sanal konak
+      bölümlerinde kullanılıp kullanılmayacağını yönergenin açıklamasında <a href="../mod/directive-dict.html#Context">Bağlam</a> satırına bakarak
+      öğrenebilirsiniz. <em>Ana sunucu bağlamındaki</em> (<code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümleri dışındaki)
+      yapılandırma yönergelerinden sadece sanal konak bölümlerinde geçersiz
+      kılınmamış olanlar kullanılacaktır.</p>
+
+    <p>Sunucuya bir istek geldiğinde, sunucu önce IP adresiyle eşleşmesi olası
+      <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> bölümleri var mı diye
+      bakar. Varsa, IP adresini eşleştirmek için <code class="directive"><a href="../mod/core.html#namevirtualhost">NameVirtualHost</a></code> bölümlerine tek tek bakar ve
+      istenen konak ismi ile eşleşen bir <code class="directive"><a href="../mod/core.html#servername">ServerName</a></code> veya <code>ServerAlias</code> yönergesi bulmaya
+      çalışır. Bir tane bulduğunda, sunucu için onun yapılandırmasını kullanır.
+      İsimle eşleşen bir sanal konak bulamazsa IP adresiyle eşleşen <strong>ilk
+      sanal konağın</strong> yapılandırmasını kullanır.</p>
+
+    <p>Bir önkabul olarak yapılandırma dosyasında rastlanan ilk sanal konak
+      <em>öntanımlı</em> sanal konaktır. IP adresi bir sanal konakla eşleştiği
+      takdirde <em>ana sunucunun</em> <code class="directive"><a href="../mod/core.html#documentroot">DocumentRoot</a></code> değeri <strong>asla</strong> kullanılmayacaktır.
+      Sanal konaklardan hiçbiriyle eşleşmeyen istekler için özel bir
+      yapılandırmanız olsun isterseniz, bu yapılandırmayı yapılandırma
+      dosyanızdaki ilk <code class="directive"><a href="../mod/core.html#virtualhost">&lt;VirtualHost&gt;</a></code> bölümüne yerleştirmeniz
+      yetecektir.</p>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="compat" id="compat">Artık Tarihe Karışmış Tarayıcılarla Uyumluluk</a></h2>
+
+    <p>Evvelce de bahsedildiği gibi, isme dayalı sanal konakların gerektiği gibi
+      çalışması için gerekli veriyi göndermeyen bazı istemciler vardır. Bu
+      istemcilere daima o IP adresinin yapılandırma dosyasındaki ilk sanal
+      konağının (isme dayalı <cite>başat</cite> sanal konak) sayfaları
+      gönderilir.</p>
+
+    <div class="note"><h3>Ne kadar eski?</h3>
+    <p>Lütfen dikkat edin, eski deyince gerçekten de antika demek istiyoruz.
+      Günümüzde bu tür tarayıcılara rastlamanız neredeyse imkansızdır. Günümüz
+      tarayıcılarının hepsi isme dayalı sanal konakların gerektirdiği
+      <code>Host</code> başlığını gönderirler.</p>
+    </div>
+
+    <p>Olayı fazla germeden <code class="directive"><a href="../mod/core.html#serverpath">ServerPath</a></code>
+      yönergesini kullanarak sorunun çevresinden dolanmak mümkündür:</p>
+
+    <p>Örnek yapılandırma:</p>
+
+    <div class="example"><p><code>
+        NameVirtualHost 111.22.33.44<br />
+        <br />
+        &lt;VirtualHost 111.22.33.44&gt;<br />
+        <span class="indent">
+            ServerName www.biralan.tld<br />
+            ServerPath /biralan<br />
+            DocumentRoot /siteler/biralan<br />
+        </span>
+        &lt;/VirtualHost&gt;<br />
+    </code></p></div>
+
+    <p>Bu ne anlama geliyor? Anlamı, "<code>/biralan</code>" ile başlayan her
+      URI isteği <code>www.biralan.tld</code> sanal konağı tarafından sunulacak,
+      demektir. Yani, tüm istemcilerin
+      <code>http://www.biralan.tld/biralan/</code> olarak eriştiği yere
+      <code>Host:</code> başlığı gönderen istemciler
+      <code>http://www.biralan.tld/</code> olarak erişirler.</p>
+
+    <p>Bunu gerçekleştirebilmek için başat sanal konağın baş sayfasına
+      <code>http://www.biralan.tld/biralan/</code> için bir bağ koyduktan sonra
+      sanal konağın sayfalarında ya tamamen göreli bağlar
+      ("<code>dosya.html</code>", "<code>../simgeler/resim.png</code>" gibi)
+      veya <code>/biralan/</code> ile öncelenmiş bağlar
+      ("<code>http://www.biralan.tld/biralan/muht/dosya.html</code>" veya
+      "<code>/biralan/muht/dosya.html</code>" gibi) kullanın.</p>
+
+    <p>Bu işlem biraz disiplin gerektirse de bu yazılanlara sıkı sıkıya bağlı
+      kalarak hem eski hem de yeni tarayıcıların sayfalarınızı doğru
+      görüntülemesini sağlamış olursunuz.</p>
+
+</div></div>
+<div class="bottomlang">
+<p><span>Mevcut Diller: </span><a href="../de/vhosts/name-based.html" hreflang="de" rel="alternate" title="Deutsch">&nbsp;de&nbsp;</a> |
+<a href="../en/vhosts/name-based.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/vhosts/name-based.html" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../ja/vhosts/name-based.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/vhosts/name-based.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/vhosts/name-based.html" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div><div class="top"><a href="#page-header"><img src="../images/up.gif" alt="top" /></a></div><div class="section"><h2><a id="comments_section" name="comments_section">Yorum</a></h2><div class="warning"><strong>Notice:</strong><br />This is not a Q&amp;A section. Comments placed here should be pointed towards suggestions on improving the documentation or server, and may be removed again by our moderators if they are either implemented or considered invalid/off-topic. Questions on how to manage the Apache HTTP Server should be directed at either our IRC channel, #httpd, on Freenode, or sent to our <a href="http://httpd.apache.org/lists.html">mailing lists</a>.</div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var comments_shortname = 'httpd';
+var comments_identifier = 'http://httpd.apache.org/docs/2.2/vhosts/name-based.html';
+(function(w, d) {
+    if (w.location.hostname.toLowerCase() == "httpd.apache.org") {
+        d.write('<div id="comments_thread"><\/div>');
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://comments.apache.org/show_comments.lua?site=' + comments_shortname + '&page=' + comments_identifier;
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+    }
+    else { 
+        d.write('<div id="comments_thread">Comments are disabled for this page at the moment.<\/div>');
+    }
+})(window, document);
+//--><!]]></script></div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br /><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a> altında lisanslıdır.</p>
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>

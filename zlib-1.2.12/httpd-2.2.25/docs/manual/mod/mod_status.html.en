@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>mod_status - Apache HTTP Server</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body>
+<div id="page-header">
+<p class="menu"><a href="../mod/">Modules</a> | <a href="../mod/directives.html">Directives</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">Glossary</a> | <a href="../sitemap.html">Sitemap</a></p>
+<p class="apache">Apache HTTP Server Version 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="./"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP Server</a> &gt; <a href="http://httpd.apache.org/docs/">Documentation</a> &gt; <a href="../">Version 2.2</a> &gt; <a href="./">Modules</a></div>
+<div id="page-content">
+<div id="preamble"><h1>Apache Module mod_status</h1>
+<div class="toplang">
+<p><span>Available Languages: </span><a href="../en/mod/mod_status.html" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_status.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/mod/mod_status.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/mod/mod_status.html" hreflang="tr" rel="alternate" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div>
+<table class="module"><tr><th><a href="module-dict.html#Description">Description:</a></th><td>Provides information on server activity and
+performance</td></tr>
+<tr><th><a href="module-dict.html#Status">Status:</a></th><td>Base</td></tr>
+<tr><th><a href="module-dict.html#ModuleIdentifier">Module Identifier:</a></th><td>status_module</td></tr>
+<tr><th><a href="module-dict.html#SourceFile">Source File:</a></th><td>mod_status.c</td></tr></table>
+<h3>Summary</h3>
+
+    <p>The Status module allows a server administrator to find out
+    how well their server is performing. A HTML page is presented
+    that gives the current server statistics in an easily readable
+    form. If required this page can be made to automatically
+    refresh (given a compatible browser). Another page gives a
+    simple machine-readable list of the current server state.</p>
+
+    <p>The details given are:</p>
+
+    <ul>
+      <li>The number of worker serving requests</li>
+
+      <li>The number of idle worker</li>
+
+      <li>The status of each worker, the number of requests that
+      worker has performed and the total number of bytes served by
+      the worker (*)</li>
+
+      <li>A total number of accesses and byte count served (*)</li>
+
+      <li>The time the server was started/restarted and the time it
+      has been running for</li>
+
+      <li>Averages giving the number of requests per second, the
+      number of bytes served per second and the average number of
+      bytes per request (*)</li>
+
+      <li>The current percentage CPU used by each worker and in
+      total by Apache (*)</li>
+
+      <li>The current hosts and requests being processed (*)</li>
+    </ul>
+
+    <p>The lines marked "(*)" are only available if 
+    <code class="directive"><a href="#extendedstatus">ExtendedStatus</a></code> 
+    is <code>On</code>.</p>
+</div>
+<div id="quickview"><h3 class="directives">Directives</h3>
+<ul id="toc">
+<li><img alt="" src="../images/down.gif" /> <a href="#extendedstatus">ExtendedStatus</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#seerequesttail">SeeRequestTail</a></li>
+</ul>
+<h3>Topics</h3>
+<ul id="topics">
+<li><img alt="" src="../images/down.gif" /> <a href="#enable">Enabling Status Support</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#autoupdate">Automatic Updates</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#machinereadable">Machine Readable Status File</a></li>
+</ul><ul class="seealso"><li><a href="#comments_section">Comments</a></li></ul></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="enable" id="enable">Enabling Status Support</a></h2>
+    
+
+    <p>To enable status reports only for browsers from the example.com
+    domain add this code to your <code>httpd.conf</code>
+    configuration file</p>
+<div class="example"><p><code>
+    &lt;Location /server-status&gt;<br />
+    SetHandler server-status<br />
+<br />
+    Order Deny,Allow<br />
+    Deny from all<br />
+    Allow from .example.com<br />
+    &lt;/Location&gt;
+</code></p></div>
+
+    <p>You can now access server statistics by using a Web browser
+    to access the page
+    <code>http://your.server.name/server-status</code></p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="autoupdate" id="autoupdate">Automatic Updates</a></h2>
+
+    
+    <p>You can get the status page to update itself automatically if
+    you have a browser that supports "refresh". Access the page
+    <code>http://your.server.name/server-status?refresh=N</code> to
+    refresh the page every N seconds.</p>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="machinereadable" id="machinereadable">Machine Readable Status File</a></h2>
+
+    
+    <p>A machine-readable version of the status file is available by
+    accessing the page
+    <code>http://your.server.name/server-status?auto</code>. This
+    is useful when automatically run, see the Perl program in the
+    <code>/support</code> directory of Apache,
+    <code>log_server_status</code>.</p>
+
+    <div class="note">
+      <strong>It should be noted that if <code class="module"><a href="../mod/mod_status.html">mod_status</a></code> is
+      compiled into the server, its handler capability is available
+      in <em>all</em> configuration files, including
+      <em>per</em>-directory files (<em>e.g.</em>,
+      <code>.htaccess</code>). This may have security-related
+      ramifications for your site.</strong>
+    </div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ExtendedStatus" id="ExtendedStatus">ExtendedStatus</a> <a name="extendedstatus" id="extendedstatus">Directive</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Description:</a></th><td>Keep track of extended status information for each 
+request</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Syntax:</a></th><td><code>ExtendedStatus On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Default:</a></th><td><code>ExtendedStatus Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Context:</a></th><td>server config</td></tr>
+<tr><th><a href="directive-dict.html#Status">Status:</a></th><td>Base</td></tr>
+<tr><th><a href="directive-dict.html#Module">Module:</a></th><td>mod_status</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibility:</a></th><td>ExtendedStatus is only available in Apache 1.3.2 and 
+later.</td></tr>
+</table>
+    <p>This setting applies to the entire server, and cannot be
+    enabled or disabled on a virtualhost-by-virtualhost basis.
+    The collection of extended status information can slow down
+    the server.</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="SeeRequestTail" id="SeeRequestTail">SeeRequestTail</a> <a name="seerequesttail" id="seerequesttail">Directive</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Description:</a></th><td>Determine if mod_status displays the first 63 characters
+of a request or the last 63, assuming the request itself is greater than
+63 chars.</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Syntax:</a></th><td><code>SeeRequestTail On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Default:</a></th><td><code>SeeRequestTail Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Context:</a></th><td>server config</td></tr>
+<tr><th><a href="directive-dict.html#Status">Status:</a></th><td>Base</td></tr>
+<tr><th><a href="directive-dict.html#Module">Module:</a></th><td>mod_status</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Compatibility:</a></th><td>Available in Apache 2.2.7 and later.</td></tr>
+</table>
+    <p>mod_status with <code>ExtendedStatus On</code>
+    displays the actual request being handled. 
+    For historical purposes, only 63 characters of the request
+    are actually stored for display purposes. This directive
+    controls whether the 1st 63 characters are stored (the previous
+    behavior and the default) or if the last 63 characters are. This
+    is only applicable, of course, if the length of the request is
+    64 characters or greater.</p>
+
+    <p>If Apache is handling <code>GET&nbsp;/disk1/storage/apache/htdocs/images/imagestore1/food/apples.jpg&nbsp;HTTP/1.1</code> mod_status displays as follows:
+    </p>
+
+    <table class="bordered">
+      <tr>
+        <th>Off (default)</th>
+        <td>GET&nbsp;/disk1/storage/apache/htdocs/images/imagestore1/food/apples</td>
+      </tr>
+      <tr>
+        <th>On</th>
+        <td>orage/apache/htdocs/images/imagestore1/food/apples.jpg&nbsp;HTTP/1.1</td>
+      </tr>
+    </table>
+
+
+</div>
+</div>
+<div class="bottomlang">
+<p><span>Available Languages: </span><a href="../en/mod/mod_status.html" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_status.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/mod/mod_status.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/mod/mod_status.html" hreflang="tr" rel="alternate" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div><div class="top"><a href="#page-header"><img src="../images/up.gif" alt="top" /></a></div><div class="section"><h2><a id="comments_section" name="comments_section">Comments</a></h2><div class="warning"><strong>Notice:</strong><br />This is not a Q&amp;A section. Comments placed here should be pointed towards suggestions on improving the documentation or server, and may be removed again by our moderators if they are either implemented or considered invalid/off-topic. Questions on how to manage the Apache HTTP Server should be directed at either our IRC channel, #httpd, on Freenode, or sent to our <a href="http://httpd.apache.org/lists.html">mailing lists</a>.</div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var comments_shortname = 'httpd';
+var comments_identifier = 'http://httpd.apache.org/docs/2.2/mod/mod_status.html';
+(function(w, d) {
+    if (w.location.hostname.toLowerCase() == "httpd.apache.org") {
+        d.write('<div id="comments_thread"><\/div>');
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://comments.apache.org/show_comments.lua?site=' + comments_shortname + '&page=' + comments_identifier;
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+    }
+    else { 
+        d.write('<div id="comments_thread">Comments are disabled for this page at the moment.<\/div>');
+    }
+})(window, document);
+//--><!]]></script></div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br />Licensed under the <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a>.</p>
+<p class="menu"><a href="../mod/">Modules</a> | <a href="../mod/directives.html">Directives</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">Glossary</a> | <a href="../sitemap.html">Sitemap</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>
