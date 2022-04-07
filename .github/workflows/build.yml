@@ -38,9 +38,9 @@ jobs:
           sudo apt -y install dos2unix
           echo "Install ZLib"
           sudo apt-get install build-essential
-          sudo wget http://www.zlib.net/zlib-1.2.11.tar.gz
-          tar -xvf zlib-1.2.11.tar.gz
-          cd zlib-1.2.11/
+          sudo wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/blob/master/dev-tools/_apache_builds/zlib-1.2.12.tar.gz?raw=true -O zlib-1.2.12.tar.gz
+          tar -xvf zlib-1.2.12.tar.gz
+          cd zlib-1.2.12/
           ./configure --prefix=/usr/local
           make
           sudo make install
