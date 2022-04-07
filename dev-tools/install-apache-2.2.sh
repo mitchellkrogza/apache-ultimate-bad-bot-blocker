@@ -94,9 +94,9 @@ sudo apt-get install build-essential
 cd /tmp
 
 tput setaf 7
-wget http://www.zlib.net/zlib-1.2.11.tar.gz
-tar -xvf zlib-1.2.11.tar.gz > /dev/null
-cd zlib-1.2.11/
+wget https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/raw/master/.dev-tools/_apache_builds/zlib-1.2.12.tar.gz
+tar -xvf zlib-1.2.12.tar.gz > /dev/null
+cd zlib-1.2.12/
 ./configure --prefix=/usr/local >/dev/null
 printf '\n'
 echo "${bold}${green}Building zlib"
