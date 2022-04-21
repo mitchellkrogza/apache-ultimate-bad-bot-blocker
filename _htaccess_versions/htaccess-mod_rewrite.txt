@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2022.04.1357
-### Bad Referrer Count: 7092
+### Version: V3.2022.04.1358
+### Bad Referrer Count: 7091
 ### Bad Bot Count: 637
 ### Version Information ##
 
@@ -1245,7 +1245,6 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ausmepa\.org\.au.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*auspolice\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*aussie\-prizes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*australia\-opening\-times\.com.*$ [NC,OR]
-RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*auto\-moto\-elektronika\.cz.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*auto\-zapchasti\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*auto\.rusvile\.lt.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*auto4style\.ru.*$ [NC,OR]

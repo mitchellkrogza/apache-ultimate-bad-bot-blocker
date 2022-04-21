@@ -594,7 +594,6 @@ SetEnvIfNoCase Referer ~*auspolice\.com spam_ref
 SetEnvIfNoCase Referer ~*aussie\-prizes\.com spam_ref
 SetEnvIfNoCase Referer ~*australia\-opening\-times\.com spam_ref
 SetEnvIfNoCase Referer ~*auto4style\.ru spam_ref
-SetEnvIfNoCase Referer ~*auto\-moto\-elektronika\.cz spam_ref
 SetEnvIfNoCase Referer ~*auto\-zapchasti\.org spam_ref
 SetEnvIfNoCase Referer ~*auto\.rusvile\.lt spam_ref
 SetEnvIfNoCase Referer ~*autoblogger24\.info spam_ref

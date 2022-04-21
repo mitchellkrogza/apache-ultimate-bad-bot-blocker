@@ -593,7 +593,6 @@ domain:ausmepa.org.au
 domain:auspolice.com
 domain:aussie-prizes.com
 domain:australia-opening-times.com
-domain:auto-moto-elektronika.cz
 domain:auto-zapchasti.org
 domain:auto.rusvile.lt
 domain:auto4style.ru
