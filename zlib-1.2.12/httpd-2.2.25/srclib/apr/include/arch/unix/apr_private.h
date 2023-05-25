@@ -123,7 +123,7 @@
 
 /* Define to 1 if you have the declaration of `sys_siglist', and to 0 if you
    don't. */
-#define HAVE_DECL_SYS_SIGLIST 1
+#define HAVE_DECL_SYS_SIGLIST 0
 
 /* Define to 1 if you have the <dirent.h> header file. */
 #define HAVE_DIRENT_H 1
@@ -369,7 +369,7 @@
 #define HAVE_PTHREAD_RWLOCK_INIT 1
 
 /* Define to 1 if you have the `pthread_yield' function. */
-#define HAVE_PTHREAD_YIELD 1
+/* #undef HAVE_PTHREAD_YIELD */
 
 /* Define to 1 if you have the `putenv' function. */
 #define HAVE_PUTENV 1
@@ -381,10 +381,10 @@
 /* #undef HAVE_READDIR64_R */
 
 /* Define to 1 if you have the <sched.h> header file. */
-/* #undef HAVE_SCHED_H */
+#define HAVE_SCHED_H 1
 
 /* Define to 1 if you have the `sched_yield' function. */
-/* #undef HAVE_SCHED_YIELD */
+#define HAVE_SCHED_YIELD 1
 
 /* Define to 1 if you have the <semaphore.h> header file. */
 #define HAVE_SEMAPHORE_H 1
@@ -612,7 +612,7 @@
 #define HAVE_SYS_STAT_H 1
 
 /* Define to 1 if you have the <sys/sysctl.h> header file. */
-#define HAVE_SYS_SYSCTL_H 1
+/* #undef HAVE_SYS_SYSCTL_H */
 
 /* Define to 1 if you have the <sys/syslimits.h> header file. */
 /* #undef HAVE_SYS_SYSLIMITS_H */

@@ -29,7 +29,7 @@ CLEAN_TARGETS = manyfile.bin testfile.txt data/sqlite*.db
 
 # bring in rules.mk for standard functionality
 include /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/build/rules.mk
-APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lrt -lcrypt -lpthread -ldl
+APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lcrypt -lpthread
 APRUTIL_LDFLAGS = $(ALL_LDFLAGS) -no-install 
 
 # link programs using -no-install to get real executables not

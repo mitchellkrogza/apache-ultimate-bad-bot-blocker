@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.11.1567
-### Updated: Wed Nov 30 10:10:55 UTC 2022
-### Bad Bot Count: 637
+### Version: V3.2023.05.1568
+### Updated: Thu May 25 07:25:14 UTC 2023
+### Bad Bot Count: 641
 ###################################################
 ### Version Information ##
 
@@ -40,6 +40,8 @@ Disallow:/
 User-agent: Aboundexbot
 Disallow:/
 User-agent: Acunetix
+Disallow:/
+User-agent: AdsTxtCrawlerTP
 Disallow:/
 User-agent: AfD-Verbotsverfahren
 Disallow:/
@@ -653,8 +655,6 @@ User-agent: Ninja
 Disallow:/
 User-agent: Nmap
 Disallow:/
-User-agent: Not
-Disallow:/
 User-agent: Nuclei
 Disallow:/
 User-agent: Nutch
@@ -734,6 +734,8 @@ Disallow:/
 User-agent: ProWebWalker
 Disallow:/
 User-agent: Probethenet
+Disallow:/
+User-agent: Proximic
 Disallow:/
 User-agent: Psbot
 Disallow:/
@@ -825,6 +827,8 @@ User-agent: SearchmetricsBot
 Disallow:/
 User-agent: Seekport
 Disallow:/
+User-agent: SeekportBot
+Disallow:/
 User-agent: SemanticJuice
 Disallow:/
 User-agent: Semrush
@@ -832,6 +836,8 @@ Disallow:/
 User-agent: SemrushBot
 Disallow:/
 User-agent: SentiBot
+Disallow:/
+User-agent: SenutoBot
 Disallow:/
 User-agent: SeoSiteCheckup
 Disallow:/
@@ -1174,6 +1180,8 @@ Disallow:/
 User-agent: crawler4j
 Disallow:/
 User-agent: dataforseo.com
+Disallow:/
+User-agent: dataforseobot
 Disallow:/
 User-agent: demandbase-bot
 Disallow:/

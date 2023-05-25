@@ -50,10 +50,10 @@ DEFS=-DHAVE_CONFIG_H
 # anything added to the standard flags by configure is moved to EXTRA_*
 # at the end of the process.
 #
-EXTRA_CFLAGS=-g -O2 -pthread
+EXTRA_CFLAGS=-g -O2
 EXTRA_CPPFLAGS=-DLINUX -D_REENTRANT -D_GNU_SOURCE
 EXTRA_LDFLAGS=
-EXTRA_LIBS=-luuid -lrt -lcrypt  -lpthread -ldl
+EXTRA_LIBS=-luuid -lcrypt  -lpthread
 EXTRA_INCLUDES=
 
 # NOTEST_* are flags and libraries that can be added by the user without

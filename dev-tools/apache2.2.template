@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2022.11.1567
-### Updated: Wed Nov 30 10:10:55 UTC 2022
-### Bad Referrer Count: 7091
-### Bad Bot Count: 637
+### Version: V3.2023.05.1568
+### Updated: Thu May 25 07:25:14 UTC 2023
+### Bad Referrer Count: 7104
+### Bad Bot Count: 641
 ###################################################
 ### Version Information ##
 
@@ -154,7 +154,6 @@ BrowserMatchNoCase "(?:\b)BUbiNG(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)Baidu(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)FlipboardProxy(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)MSIE\ 7.0(?:\b)" good_bot
-BrowserMatchNoCase "(?:\b)Proximic(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)R6_CommentReader(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)R6_FeedFetcher(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)RED/1(?:\b)" good_bot
@@ -188,6 +187,7 @@ BrowserMatchNoCase "(?:\b)Abonti(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Aboundex(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Aboundexbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Acunetix(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)AdsTxtCrawlerTP(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AfD-Verbotsverfahren(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AhrefsBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AiHitBot(?:\b)" bad_bot
@@ -494,7 +494,6 @@ BrowserMatchNoCase "(?:\b)NimbleCrawler(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nimbostratus(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Ninja(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nmap(?:\b)" bad_bot
-BrowserMatchNoCase "(?:\b)Not(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nuclei(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nutch(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Octopus(?:\b)" bad_bot
@@ -535,6 +534,7 @@ BrowserMatchNoCase "(?:\b)Pockey(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ProPowerBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ProWebWalker(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Probethenet(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Proximic(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Psbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Pu_iN(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Pump(?:\b)" bad_bot
@@ -580,10 +580,12 @@ BrowserMatchNoCase "(?:\b)ScrepyBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Searchestate(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SearchmetricsBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Seekport(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SeekportBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemanticJuice(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Semrush(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemrushBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SentiBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SenutoBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeoSiteCheckup(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeobilityBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Seomoz(?:\b)" bad_bot
@@ -755,6 +757,7 @@ BrowserMatchNoCase "(?:\b)crawl.sogou.com(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)crawler.feedback(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)crawler4j(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)dataforseo.com(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)dataforseobot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)demandbase-bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)domainsproject.org(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)eCatch(?:\b)" bad_bot
@@ -1546,6 +1549,7 @@ SetEnvIfNoCase Referer ~*auspolice\.com spam_ref
 SetEnvIfNoCase Referer ~*aussie\-prizes\.com spam_ref
 SetEnvIfNoCase Referer ~*australia\-opening\-times\.com spam_ref
 SetEnvIfNoCase Referer ~*auto4style\.ru spam_ref
+SetEnvIfNoCase Referer ~*auto\-moto\-elektronika\.cz spam_ref
 SetEnvIfNoCase Referer ~*auto\-zapchasti\.org spam_ref
 SetEnvIfNoCase Referer ~*auto\.rusvile\.lt spam_ref
 SetEnvIfNoCase Referer ~*autoblogger24\.info spam_ref
@@ -1872,6 +1876,7 @@ SetEnvIfNoCase Referer ~*bloke\.com spam_ref
 SetEnvIfNoCase Referer ~*blpmovies\.com spam_ref
 SetEnvIfNoCase Referer ~*blue\-square\.biz spam_ref
 SetEnvIfNoCase Referer ~*bluejays\-jerseys\.us spam_ref
+SetEnvIfNoCase Referer ~*bluelabelsky\.com spam_ref
 SetEnvIfNoCase Referer ~*bluerobot\.info spam_ref
 SetEnvIfNoCase Referer ~*bluesalt\.co spam_ref
 SetEnvIfNoCase Referer ~*bluesman\.nu spam_ref
@@ -2530,6 +2535,7 @@ SetEnvIfNoCase Referer ~*darmebel\.com\.ua spam_ref
 SetEnvIfNoCase Referer ~*darodar\.com spam_ref
 SetEnvIfNoCase Referer ~*data1\.scopich\.com spam_ref
 SetEnvIfNoCase Referer ~*data\-mining\.tk spam_ref
+SetEnvIfNoCase Referer ~*data\-ox\.com spam_ref
 SetEnvIfNoCase Referer ~*data\.vtc\.pw spam_ref
 SetEnvIfNoCase Referer ~*datadepths\.com spam_ref
 SetEnvIfNoCase Referer ~*dataloading\.net spam_ref
@@ -2834,6 +2840,7 @@ SetEnvIfNoCase Referer ~*ekobata\.ru spam_ref
 SetEnvIfNoCase Referer ~*ekosmetyki\.net\.pl spam_ref
 SetEnvIfNoCase Referer ~*ekspertmed\.com spam_ref
 SetEnvIfNoCase Referer ~*ekspresihati\.info spam_ref
+SetEnvIfNoCase Referer ~*eksprognoz\.ru spam_ref
 SetEnvIfNoCase Referer ~*ekto\.ee spam_ref
 SetEnvIfNoCase Referer ~*el\-nation\.com spam_ref
 SetEnvIfNoCase Referer ~*eldiariodeguadalajara\.com spam_ref
@@ -2922,6 +2929,7 @@ SetEnvIfNoCase Referer ~*erectile\.bid spam_ref
 SetEnvIfNoCase Referer ~*eredijovon\.com spam_ref
 SetEnvIfNoCase Referer ~*ereko\.ru spam_ref
 SetEnvIfNoCase Referer ~*ero\-advertising\.com spam_ref
+SetEnvIfNoCase Referer ~*erolate\.com spam_ref
 SetEnvIfNoCase Referer ~*eropho\.com spam_ref
 SetEnvIfNoCase Referer ~*eropho\.net spam_ref
 SetEnvIfNoCase Referer ~*eropornosex\.ru spam_ref
@@ -3192,6 +3200,7 @@ SetEnvIfNoCase Referer ~*floridahuntingfishingadventures\.com spam_ref
 SetEnvIfNoCase Referer ~*floridamhca\.org spam_ref
 SetEnvIfNoCase Referer ~*floridamobilebillboards\.com spam_ref
 SetEnvIfNoCase Referer ~*flowersbazar\.com spam_ref
+SetEnvIfNoCase Referer ~*flowersforsunshine\.com spam_ref
 SetEnvIfNoCase Referer ~*flowwwers\.com spam_ref
 SetEnvIfNoCase Referer ~*flprog\.com spam_ref
 SetEnvIfNoCase Referer ~*flytourisme\.org spam_ref
@@ -5454,6 +5463,7 @@ SetEnvIfNoCase Referer ~*phuketscreen\.com spam_ref
 SetEnvIfNoCase Referer ~*physfunc\.ru spam_ref
 SetEnvIfNoCase Referer ~*pic2fly\.com spam_ref
 SetEnvIfNoCase Referer ~*pic\-re\.blogspot\.com spam_ref
+SetEnvIfNoCase Referer ~*picanalyzer\.data\-ox\.com spam_ref
 SetEnvIfNoCase Referer ~*piccdata\.com spam_ref
 SetEnvIfNoCase Referer ~*piccshare\.com spam_ref
 SetEnvIfNoCase Referer ~*picmoonco\.pw spam_ref
@@ -5767,6 +5777,7 @@ SetEnvIfNoCase Referer ~*proxyelite\.biz spam_ref
 SetEnvIfNoCase Referer ~*proxyradar\.com spam_ref
 SetEnvIfNoCase Referer ~*prpops\.com spam_ref
 SetEnvIfNoCase Referer ~*psa48\.ru spam_ref
+SetEnvIfNoCase Referer ~*psbosexunlmed\.com spam_ref
 SetEnvIfNoCase Referer ~*pshare\.biz spam_ref
 SetEnvIfNoCase Referer ~*pskcijdc\.bloger\.index\.hr spam_ref
 SetEnvIfNoCase Referer ~*psoriasis\-file\.trade spam_ref
@@ -6416,6 +6427,7 @@ SetEnvIfNoCase Referer ~*simul\.co spam_ref
 SetEnvIfNoCase Referer ~*sindragosa\.comxa\.com spam_ref
 SetEnvIfNoCase Referer ~*sinel\.info spam_ref
 SetEnvIfNoCase Referer ~*sinestesia\.host\.sk spam_ref
+SetEnvIfNoCase Referer ~*singularwebs\.net spam_ref
 SetEnvIfNoCase Referer ~*sirpornogratis\.xxx spam_ref
 SetEnvIfNoCase Referer ~*sisi\-go\.ru spam_ref
 SetEnvIfNoCase Referer ~*sisiynas\.ru spam_ref
@@ -6578,6 +6590,7 @@ SetEnvIfNoCase Referer ~*space\-worry\.ml spam_ref
 SetEnvIfNoCase Referer ~*spaceshipad\.com spam_ref
 SetEnvIfNoCase Referer ~*spammen\.de spam_ref
 SetEnvIfNoCase Referer ~*spamnuker\.com spam_ref
+SetEnvIfNoCase Referer ~*spanking\.to spam_ref
 SetEnvIfNoCase Referer ~*spasswelt\.net spam_ref
 SetEnvIfNoCase Referer ~*spasswelt\.xyz spam_ref
 SetEnvIfNoCase Referer ~*spb\-plitka\.ru spam_ref
@@ -6772,6 +6785,7 @@ SetEnvIfNoCase Referer ~*symphonyintegratedhealthcare\.com spam_ref
 SetEnvIfNoCase Referer ~*syndicate\.fun spam_ref
 SetEnvIfNoCase Referer ~*syvertsen\-da\.no spam_ref
 SetEnvIfNoCase Referer ~*szamponrevita\.pl spam_ref
+SetEnvIfNoCase Referer ~*szqxvo\.com spam_ref
 SetEnvIfNoCase Referer ~*szucs\.ru spam_ref
 SetEnvIfNoCase Referer ~*t3chtonic\.com spam_ref
 SetEnvIfNoCase Referer ~*t\-bygg\.com spam_ref
@@ -7075,6 +7089,7 @@ SetEnvIfNoCase Referer ~*traffic\-club\.info spam_ref
 SetEnvIfNoCase Referer ~*trafficcentr\.xyz spam_ref
 SetEnvIfNoCase Referer ~*trafficfactory\.biz spam_ref
 SetEnvIfNoCase Referer ~*trafficgenius\.xyz spam_ref
+SetEnvIfNoCase Referer ~*trafficinstantly\.co spam_ref
 SetEnvIfNoCase Referer ~*trafficjunky\.com spam_ref
 SetEnvIfNoCase Referer ~*trafficjunky\.net spam_ref
 SetEnvIfNoCase Referer ~*trafficmania\.com spam_ref
@@ -7393,6 +7408,7 @@ SetEnvIfNoCase Referer ~*vip\-dom\.in spam_ref
 SetEnvIfNoCase Referer ~*vip\-file\.com spam_ref
 SetEnvIfNoCase Referer ~*vip\-parfumeria\.ru spam_ref
 SetEnvIfNoCase Referer ~*vip\.51\.la spam_ref
+SetEnvIfNoCase Referer ~*vipcallsgirls\.com spam_ref
 SetEnvIfNoCase Referer ~*vipms\.ru spam_ref
 SetEnvIfNoCase Referer ~*vipps\.com\.my spam_ref
 SetEnvIfNoCase Referer ~*vipromoffers\.com spam_ref
@@ -8073,29 +8089,194 @@ Include custom.d/whitelist-ips.conf
 	# anything lower down that you mistakenly picked up as a bad bot.
 
 # START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
-Allow from 108.177.0.0/17
-Allow from 172.217.0.0/16
-Allow from 173.194.0.0/16
-Allow from 2001:4860:4000::/36
-Allow from 203.208.60.0/24
-Allow from 207.126.144.0/20
-Allow from 209.85.128.0/17
-Allow from 216.239.32.0/19
-Allow from 216.58.192.0/19
-Allow from 2404:6800:4000::/36
-Allow from 2607:f8b0:4000::/36
-Allow from 2800:3f0:4000::/36
-Allow from 2a00:1450:4000::/36
-Allow from 2c0f:fb50:4000::/36
-Allow from 35.192.0.0/12
-Allow from 64.18.0.0/20
-Allow from 64.233.160.0/19
-Allow from 64.68.80.0/21
-Allow from 65.52.0.0/14
-Allow from 66.102.0.0/20
-Allow from 66.249.64.0/19
-Allow from 72.14.192.0/18
-Allow from 74.125.0.0/16
+Allow from 2001:4860:4801:10::/64
+Allow from 2001:4860:4801:11::/64
+Allow from 2001:4860:4801:12::/64
+Allow from 2001:4860:4801:13::/64
+Allow from 2001:4860:4801:14::/64
+Allow from 2001:4860:4801:15::/64
+Allow from 2001:4860:4801:16::/64
+Allow from 2001:4860:4801:17::/64
+Allow from 2001:4860:4801:18::/64
+Allow from 2001:4860:4801:19::/64
+Allow from 2001:4860:4801:1a::/64
+Allow from 2001:4860:4801:1b::/64
+Allow from 2001:4860:4801:20::/64
+Allow from 2001:4860:4801:21::/64
+Allow from 2001:4860:4801:22::/64
+Allow from 2001:4860:4801:23::/64
+Allow from 2001:4860:4801:24::/64
+Allow from 2001:4860:4801:25::/64
+Allow from 2001:4860:4801:26::/64
+Allow from 2001:4860:4801:27::/64
+Allow from 2001:4860:4801:28::/64
+Allow from 2001:4860:4801:29::/64
+Allow from 2001:4860:4801:2::/64
+Allow from 2001:4860:4801:2a::/64
+Allow from 2001:4860:4801:2b::/64
+Allow from 2001:4860:4801:2c::/64
+Allow from 2001:4860:4801:2d::/64
+Allow from 2001:4860:4801:2e::/64
+Allow from 2001:4860:4801:2f::/64
+Allow from 2001:4860:4801:30::/64
+Allow from 2001:4860:4801:31::/64
+Allow from 2001:4860:4801:32::/64
+Allow from 2001:4860:4801:33::/64
+Allow from 2001:4860:4801:34::/64
+Allow from 2001:4860:4801:35::/64
+Allow from 2001:4860:4801:36::/64
+Allow from 2001:4860:4801:37::/64
+Allow from 2001:4860:4801:38::/64
+Allow from 2001:4860:4801:39::/64
+Allow from 2001:4860:4801:3::/64
+Allow from 2001:4860:4801:3a::/64
+Allow from 2001:4860:4801:3b::/64
+Allow from 2001:4860:4801:3c::/64
+Allow from 2001:4860:4801:40::/64
+Allow from 2001:4860:4801:41::/64
+Allow from 2001:4860:4801:42::/64
+Allow from 2001:4860:4801:43::/64
+Allow from 2001:4860:4801:44::/64
+Allow from 2001:4860:4801:45::/64
+Allow from 2001:4860:4801:46::/64
+Allow from 2001:4860:4801:47::/64
+Allow from 2001:4860:4801:48::/64
+Allow from 2001:4860:4801:49::/64
+Allow from 2001:4860:4801:4a::/64
+Allow from 2001:4860:4801:50::/64
+Allow from 2001:4860:4801:51::/64
+Allow from 2001:4860:4801:53::/64
+Allow from 2001:4860:4801:60::/64
+Allow from 2001:4860:4801:61::/64
+Allow from 2001:4860:4801:62::/64
+Allow from 2001:4860:4801:63::/64
+Allow from 2001:4860:4801:64::/64
+Allow from 2001:4860:4801:65::/64
+Allow from 2001:4860:4801:66::/64
+Allow from 2001:4860:4801:67::/64
+Allow from 2001:4860:4801:68::/64
+Allow from 2001:4860:4801:69::/64
+Allow from 2001:4860:4801:6a::/64
+Allow from 2001:4860:4801:6b::/64
+Allow from 2001:4860:4801:6c::/64
+Allow from 2001:4860:4801:6d::/64
+Allow from 2001:4860:4801:6e::/64
+Allow from 2001:4860:4801:6f::/64
+Allow from 2001:4860:4801:70::/64
+Allow from 2001:4860:4801:71::/64
+Allow from 2001:4860:4801:72::/64
+Allow from 2001:4860:4801:73::/64
+Allow from 2001:4860:4801:74::/64
+Allow from 2001:4860:4801:75::/64
+Allow from 2001:4860:4801:76::/64
+Allow from 2001:4860:4801:77::/64
+Allow from 2001:4860:4801:80::/64
+Allow from 2001:4860:4801:81::/64
+Allow from 2001:4860:4801:82::/64
+Allow from 2001:4860:4801:83::/64
+Allow from 2001:4860:4801:84::/64
+Allow from 2001:4860:4801:85::/64
+Allow from 2001:4860:4801:86::/64
+Allow from 2001:4860:4801:90::/64
+Allow from 2001:4860:4801:91::/64
+Allow from 2001:4860:4801:92::/64
+Allow from 2001:4860:4801::/64
+Allow from 2001:4860:4801:c::/64
+Allow from 2001:4860:4801:f::/64
+Allow from 66.249.64.0/27
+Allow from 66.249.64.128/27
+Allow from 66.249.64.160/27
+Allow from 66.249.64.192/27
+Allow from 66.249.64.224/27
+Allow from 66.249.64.32/27
+Allow from 66.249.64.64/27
+Allow from 66.249.64.96/27
+Allow from 66.249.65.0/27
+Allow from 66.249.65.128/27
+Allow from 66.249.65.160/27
+Allow from 66.249.65.192/27
+Allow from 66.249.65.224/27
+Allow from 66.249.65.32/27
+Allow from 66.249.65.64/27
+Allow from 66.249.65.96/27
+Allow from 66.249.66.0/27
+Allow from 66.249.66.128/27
+Allow from 66.249.66.192/27
+Allow from 66.249.66.32/27
+Allow from 66.249.66.64/27
+Allow from 66.249.68.0/27
+Allow from 66.249.68.32/27
+Allow from 66.249.68.64/27
+Allow from 66.249.69.0/27
+Allow from 66.249.69.128/27
+Allow from 66.249.69.160/27
+Allow from 66.249.69.192/27
+Allow from 66.249.69.224/27
+Allow from 66.249.69.32/27
+Allow from 66.249.69.64/27
+Allow from 66.249.69.96/27
+Allow from 66.249.70.0/27
+Allow from 66.249.70.128/27
+Allow from 66.249.70.160/27
+Allow from 66.249.70.32/27
+Allow from 66.249.70.64/27
+Allow from 66.249.70.96/27
+Allow from 66.249.71.0/27
+Allow from 66.249.71.128/27
+Allow from 66.249.71.160/27
+Allow from 66.249.71.192/27
+Allow from 66.249.71.32/27
+Allow from 66.249.71.64/27
+Allow from 66.249.71.96/27
+Allow from 66.249.72.0/27
+Allow from 66.249.72.128/27
+Allow from 66.249.72.160/27
+Allow from 66.249.72.192/27
+Allow from 66.249.72.224/27
+Allow from 66.249.72.32/27
+Allow from 66.249.72.64/27
+Allow from 66.249.72.96/27
+Allow from 66.249.73.0/27
+Allow from 66.249.73.128/27
+Allow from 66.249.73.160/27
+Allow from 66.249.73.192/27
+Allow from 66.249.73.224/27
+Allow from 66.249.73.32/27
+Allow from 66.249.73.64/27
+Allow from 66.249.73.96/27
+Allow from 66.249.74.0/27
+Allow from 66.249.74.32/27
+Allow from 66.249.74.64/27
+Allow from 66.249.74.96/27
+Allow from 66.249.75.0/27
+Allow from 66.249.75.128/27
+Allow from 66.249.75.160/27
+Allow from 66.249.75.192/27
+Allow from 66.249.75.224/27
+Allow from 66.249.75.32/27
+Allow from 66.249.75.64/27
+Allow from 66.249.75.96/27
+Allow from 66.249.76.0/27
+Allow from 66.249.76.128/27
+Allow from 66.249.76.160/27
+Allow from 66.249.76.192/27
+Allow from 66.249.76.224/27
+Allow from 66.249.76.32/27
+Allow from 66.249.76.64/27
+Allow from 66.249.76.96/27
+Allow from 66.249.77.0/27
+Allow from 66.249.77.128/27
+Allow from 66.249.77.32/27
+Allow from 66.249.77.64/27
+Allow from 66.249.77.96/27
+Allow from 66.249.79.0/27
+Allow from 66.249.79.128/27
+Allow from 66.249.79.160/27
+Allow from 66.249.79.192/27
+Allow from 66.249.79.224/27
+Allow from 66.249.79.32/27
+Allow from 66.249.79.64/27
+Allow from 66.249.79.96/27
 # END GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
 
 	# *********

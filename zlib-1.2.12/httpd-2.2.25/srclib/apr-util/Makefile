@@ -12,7 +12,7 @@ srcdir = .
 
 INCLUDES = -I/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/include -I/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/include/private -I/usr/include/postgresql  -I/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/include  
 APRUTIL_LDFLAGS = 
-APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lrt -lcrypt -lpthread -ldl
+APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lcrypt -lpthread
 
 TARGET_LIB = libaprutil-${APRUTIL_MAJOR_VERSION}.la
 INSTALL_SUBDIRS =  

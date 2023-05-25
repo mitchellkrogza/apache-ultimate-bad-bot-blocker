@@ -14,7 +14,7 @@ library_names='libaprutil-1.so.0.5.2 libaprutil-1.so.0 libaprutil-1.so'
 old_library='libaprutil-1.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lexpat /usr/local/apache2/lib/libapr-1.la -luuid -lrt -lcrypt -lpthread -ldl'
+dependency_libs=' -lexpat /usr/local/apache2/lib/libapr-1.la -luuid -lcrypt -lpthread'
 
 # Version information for libaprutil-1.
 current=5
