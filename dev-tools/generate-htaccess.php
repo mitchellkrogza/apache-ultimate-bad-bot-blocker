@@ -22,6 +22,7 @@ class Generator
         $lines2 = $this->domainWorker2();
         $this->createApache1($date, $lines, $lines2);
         $this->createApache2($date, $lines, $lines2);
+        $this->createOLS($date, $lines, $lines2);
     }
 
     /**
