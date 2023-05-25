@@ -71,7 +71,7 @@ class Generator
     public function domainWorker2()
     {
         $domainsFile = "./dev-tools/_htaccess_generator_files/bad-user-agents.list";
-        
+
         $handle = fopen($domainsFile, "r");
         if (!$handle) {
             throw new \RuntimeException('Error opening file ' . $domainsFile);
@@ -112,7 +112,7 @@ class Generator
      * @param array $lines
      */
     public function createApache1($date, array $lines, array $lines2)
-    {    
+    {
         $file = "./_htaccess_versions//htaccess-mod_rewrite.txt";
         $data = "## Apache Spam Referer Blocker .htaccess version for mod_rewrite.c\n##################################################################\n## Rename this file to .htaccess\n##################################################################\n# " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
             "<IfModule mod_rewrite.c>\nRewriteEngine On\nRewriteCond %{HTTP_USER_AGENT} ^\W [OR]\n";
@@ -154,6 +154,31 @@ class Generator
             "\n\t\tRequire all granted\n\t\tRequire not env spambot\n\t</RequireAll>\n</IfModule>";
       $this->writeToFile($file, $data);
     }
+
+    /**
+     * @param string $date
+     * @param array $lines
+     */
+    public function createOLS($date, array $lines, array $lines2)
+    {
+        $file = "./OpenLitespeed_htaccess/.htaccess";
+        $data = "## Bad Bot and Spam Referer Blocker .htaccess version for OpenLiteSpeed \n##################################################################\n### ADD this section to the TOP of your .htaccess file on OpenLitespeed\n### Graceful restart the server for the rules to take effect\n### Do not overwrite your whole .htaccess with this only place at the beginning\n##########################################################################\n## REPO: https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker\n## MIT Licence: Mitchell Krog - mitchellkrog@gmail.com\n########################################################################## " . $this->projectUrl . "\n\n### Version Information #\n### Version Information ##\n\n" .
+            "<IfModule LiteSpeed>\nRewriteEngine On\n";
+        foreach ($lines2 as $line) {
+            $data .= "RewriteCond %{HTTP_USER_AGENT} \b" . $line . "\b [NC,OR]\n";
+        }
+        foreach ($lines as $line) {
+            if ($line === end($lines)) {
+                $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC]\n";
+                break;
+            }
+
+            $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
+        }
+        $data .= "RewriteRule ^(.*)$ – [F,L]\n</IfModule>";
+      $this->writeToFile($file, $data);
+    }
+
 
 }
 $generator = new Generator();
