@@ -11,6 +11,7 @@ Abonti
 Aboundex
 Aboundexbot
 Acunetix
+AdsTxtCrawlerTP
 AfD-Verbotsverfahren
 AhrefsBot
 AiHitBot
@@ -317,7 +318,6 @@ NimbleCrawler
 Nimbostratus
 Ninja
 Nmap
-Not
 Nuclei
 Nutch
 Octopus
@@ -358,6 +358,7 @@ Pockey
 ProPowerBot
 ProWebWalker
 Probethenet
+Proximic
 Psbot
 Pu_iN
 Pump
@@ -403,10 +404,12 @@ ScrepyBot
 Searchestate
 SearchmetricsBot
 Seekport
+SeekportBot
 SemanticJuice
 Semrush
 SemrushBot
 SentiBot
+SenutoBot
 SeoSiteCheckup
 SeobilityBot
 Seomoz
@@ -578,6 +581,7 @@ crawl.sogou.com
 crawler.feedback
 crawler4j
 dataforseo.com
+dataforseobot
 demandbase-bot
 domainsproject.org
 eCatch
