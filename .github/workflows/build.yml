@@ -30,6 +30,7 @@ jobs:
           sudo ./dev-tools/generate-files.sh
 
       - name: Install Apache 2.2
+        continue-on-error: true
         run: |
           echo "Remove Apache 2.4"
           sudo service apache2 stop
