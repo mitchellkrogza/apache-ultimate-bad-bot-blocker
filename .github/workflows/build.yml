@@ -108,13 +108,13 @@ jobs:
 
       - name: Install Apache 2.4
         run: |
-          echo "Stopping Apache 2.2"
-          sudo /usr/local/apache2/bin/apachectl stop
-          sudo rm -rf /usr/local/apache2/
-          ls -la /usr/local
-          sudo rm -rf /tmp/zlib-1.2.11/
-          sudo rm -rf /tmp/httpd-2.2.25/
-          sudo apt install apache2 apache2-utils
+          #echo "Stopping Apache 2.2"
+          #sudo /usr/local/apache2/bin/apachectl stop
+          #sudo rm -rf /usr/local/apache2/
+          #ls -la /usr/local
+          #sudo rm -rf /tmp/zlib-1.2.11/
+          #sudo rm -rf /tmp/httpd-2.2.25/
+          #sudo apt install apache2 apache2-utils
           echo "${bold}${green}Show Loaded Apache Modules"
           sudo apache2ctl -M
           echo "${bold}${green}Show Apache Version Information"
