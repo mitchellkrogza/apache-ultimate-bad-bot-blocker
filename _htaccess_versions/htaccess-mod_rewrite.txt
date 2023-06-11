@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2023.06.1587
+### Version: V3.2023.06.1588
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 641
+### Bad Bot Count: 642
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -81,6 +81,7 @@ RewriteCond %{HTTP_USER_AGENT} \bBuiltWith\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBullseye\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBunnySlippers\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBuzzSumo\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bBytespider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCATExplorador\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCCBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCODE87\b [NC,OR]
