@@ -14,7 +14,7 @@ library_names='apr_dbd_sqlite3-1.so apr_dbd_sqlite3-1.so apr_dbd_sqlite3.so'
 old_library='apr_dbd_sqlite3.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/lib/x86_64-linux-gnu/libsqlite3.la'
+dependency_libs=' -lsqlite3'
 
 # Version information for apr_dbd_sqlite3.
 current=0
