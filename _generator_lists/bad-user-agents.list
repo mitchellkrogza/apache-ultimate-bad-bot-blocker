@@ -1,5 +1,4 @@
 01h4x.com
-360Spider
 404checker
 404enemy
 80legs
@@ -63,7 +62,6 @@ Buck
 Buddy
 BuiltBotTough
 BuiltWith
-Bullseye
 BunnySlippers
 BuzzSumo
 Bytespider
@@ -137,7 +135,6 @@ Ecxi
 EirGrabber
 EroCrawler
 Evil
-Exabot
 Express\ WebPictures
 ExtLinksBot
 Extractor
@@ -183,7 +180,6 @@ HTMLparser
 HTTP::Lite
 HTTrack
 Haansoft
-HaosouSpider
 Harvest
 Havij
 Heritrix
@@ -227,10 +223,8 @@ Keyword\ Density
 Kinza
 Kozmosbot
 LNSpiderguy
-LWP::Simple
 Lanshanbot
 Larbin
-Leap
 LeechFTP
 LeechGet
 LexiBot
@@ -280,13 +274,11 @@ Meanpathbot
 Mediatoolkitbot
 MegaIndex.ru
 Metauri
-MicroMessenger
 Microsoft\ Data\ Access
 Microsoft\ URL\ Control
 Minefield
 Mister\ PiX
 Moblie Safari
-Mojeek
 Mojolicious
 MolokaiBot
 Morfeus\ Fucking\ Scanner
@@ -308,7 +300,6 @@ NetMechanic
 NetSpider
 NetZIP
 Net\ Vampire
-Netcraft
 Nettrack
 Netvibes
 NextGenSearchBot
@@ -317,7 +308,6 @@ Niki-bot
 Nikto
 NimbleCrawler
 Nimbostratus
-Ninja
 Nmap
 Nuclei
 Nutch
@@ -364,7 +354,6 @@ Psbot
 Pu_iN
 Pump
 PxBroker
-PyCurl
 QueryN\ Metasearch
 Quick-Crawler
 RSSingBot
@@ -414,7 +403,6 @@ SenutoBot
 SeoSiteCheckup
 SeobilityBot
 Seomoz
-Shodan
 Siphon
 SiteCheckerBotCrawler
 SiteExplorer
@@ -423,7 +411,6 @@ SiteSnagger
 SiteSucker
 Site\ Sucker
 Sitebeam
-Siteimprove
 Sitevigil
 SlySearch
 SmartDownload
@@ -432,7 +419,6 @@ Snapbot
 Snoopy
 SocialRankIOBot
 Sociscraper
-Sogou\ web\ spider
 Sosospider
 Sottopop
 SpaceBison
@@ -498,7 +484,6 @@ Voil
 Voltron
 WASALive-Bot
 WBSearchBot
-WEBDAV
 WISENutbot
 WPScan
 WWW-Collector-E
@@ -567,7 +552,6 @@ ZoominfoBot
 ZumBot
 ZyBorg
 adscanner
-archive.org_bot
 arquivo-web-crawler
 arquivo.pt
 autoemailspider
@@ -578,7 +562,6 @@ clark-crawler
 coccocbot
 cognitiveseo
 com.plumanalytics
-crawl.sogou.com
 crawler.feedback
 crawler4j
 dataforseo.com
@@ -596,14 +579,11 @@ ips-agent
 isitwp.com
 iubenda-radar
 linkdexbot
-lwp-request
-lwp-trivial
 magpie-crawler
 meanpathbot
 mediawords
 muhstik-scan
 netEstate\ NE\ Crawler
-oBot
 page\ scorer
 pcBrowser
 plumanalytics
@@ -622,7 +602,6 @@ serpstatbot
 sexsearcher
 sitechecker.pro
 siteripz
-sogouspider
 sp_auditbot
 spyfu
 sysscan
