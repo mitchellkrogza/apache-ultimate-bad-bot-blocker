@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2023.09.1665
+### Version: V3.2023.09.1666
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 642
+### Bad Bot Count: 645
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -173,6 +173,7 @@ RewriteCond %{HTTP_USER_AGENT} \bFrontPage\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFuzz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFyberSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bFyrebot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bGPTBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGT\:\:WWW\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bG\-i\-g\-a\-b\-o\-t\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bGalaxyBot\b [NC,OR]
@@ -619,6 +620,8 @@ RewriteCond %{HTTP_USER_AGENT} \bmediawords\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bmuhstik\-scan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bnetEstate\ NE\ Crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \boBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bopenai\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bopenai\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bpage\ scorer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bpcBrowser\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bplumanalytics\b [NC,OR]

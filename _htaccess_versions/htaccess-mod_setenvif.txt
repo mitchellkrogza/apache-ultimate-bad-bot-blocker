@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2023.09.1665
+### Version: V3.2023.09.1666
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 642
+### Bad Bot Count: 645
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -173,6 +173,7 @@ SetEnvIfNoCase User-Agent \bFrontPage\b spambot=yes
 SetEnvIfNoCase User-Agent \bFuzz\b spambot=yes
 SetEnvIfNoCase User-Agent \bFyberSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bFyrebot\b spambot=yes
+SetEnvIfNoCase User-Agent \bGPTBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGT\:\:WWW\b spambot=yes
 SetEnvIfNoCase User-Agent \bG\-i\-g\-a\-b\-o\-t\b spambot=yes
 SetEnvIfNoCase User-Agent \bGalaxyBot\b spambot=yes
@@ -619,6 +620,8 @@ SetEnvIfNoCase User-Agent \bmediawords\b spambot=yes
 SetEnvIfNoCase User-Agent \bmuhstik\-scan\b spambot=yes
 SetEnvIfNoCase User-Agent \bnetEstate\ NE\ Crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \boBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bopenai\b spambot=yes
+SetEnvIfNoCase User-Agent \bopenai\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bpage\ scorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bpcBrowser\b spambot=yes
 SetEnvIfNoCase User-Agent \bplumanalytics\b spambot=yes
