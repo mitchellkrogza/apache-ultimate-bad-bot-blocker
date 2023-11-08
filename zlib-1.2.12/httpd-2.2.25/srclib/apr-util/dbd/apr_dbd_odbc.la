@@ -14,7 +14,7 @@ library_names='apr_dbd_odbc-1.so apr_dbd_odbc-1.so apr_dbd_odbc.so'
 old_library='apr_dbd_odbc.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' /usr/lib/x86_64-linux-gnu/libodbc.la -ldl -lpthread'
+dependency_libs=' -lodbc'
 
 # Version information for apr_dbd_odbc.
 current=0
