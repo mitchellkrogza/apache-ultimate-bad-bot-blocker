@@ -3703,6 +3703,7 @@ SetEnvIfNoCase Referer ~*matpre\.top spam_ref
 SetEnvIfNoCase Referer ~*matrixalchemy\.com spam_ref
 SetEnvIfNoCase Referer ~*matsdale\.com spam_ref
 SetEnvIfNoCase Referer ~*mature\.free\-websites\.com spam_ref
+SetEnvIfNoCase Referer ~*mavink\.com spam_ref
 SetEnvIfNoCase Referer ~*max\-eclat\.men spam_ref
 SetEnvIfNoCase Referer ~*max\-p\.men spam_ref
 SetEnvIfNoCase Referer ~*maximilitary\.ru spam_ref

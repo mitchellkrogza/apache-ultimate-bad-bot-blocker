@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2024.03.1834
-### Bad Referrer Count: 7104
-### Bad Bot Count: 645
+### Version: V3.2024.03.1835
+### Bad Referrer Count: 7105
+### Bad Bot Count: 656
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -90,6 +90,7 @@ SetEnvIfNoCase User-Agent \bCalculon\b spambot=yes
 SetEnvIfNoCase User-Agent \bCazoodleBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCegbfeieh\b spambot=yes
 SetEnvIfNoCase User-Agent \bCensysInspect\b spambot=yes
+SetEnvIfNoCase User-Agent \bChatGPT\-User\b spambot=yes
 SetEnvIfNoCase User-Agent \bCheTeam\b spambot=yes
 SetEnvIfNoCase User-Agent \bCheeseBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCherryPicker\b spambot=yes
@@ -162,6 +163,7 @@ SetEnvIfNoCase User-Agent \bEyeNetIE\b spambot=yes
 SetEnvIfNoCase User-Agent \bEzooms\b spambot=yes
 SetEnvIfNoCase User-Agent \bFDM\b spambot=yes
 SetEnvIfNoCase User-Agent \bFHscan\b spambot=yes
+SetEnvIfNoCase User-Agent \bFacebookBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bFemtosearchBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bFimap\b spambot=yes
 SetEnvIfNoCase User-Agent \bFirefox\/7\.0\b spambot=yes
@@ -186,6 +188,7 @@ SetEnvIfNoCase User-Agent \bGigabot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGoZilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\!Zilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\-Ahead\-Got\-It\b spambot=yes
+SetEnvIfNoCase User-Agent \bGoogle\-Extended\b spambot=yes
 SetEnvIfNoCase User-Agent \bGotit\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabNet\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabber\b spambot=yes
@@ -215,6 +218,7 @@ SetEnvIfNoCase User-Agent \bId\-search\b spambot=yes
 SetEnvIfNoCase User-Agent \bIlseBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bImage\ Fetch\b spambot=yes
 SetEnvIfNoCase User-Agent \bImage\ Sucker\b spambot=yes
+SetEnvIfNoCase User-Agent \bImagesiftBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bIndeedBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bIndy\ Library\b spambot=yes
 SetEnvIfNoCase User-Agent \bInfoNaviRobot\b spambot=yes
@@ -384,6 +388,7 @@ SetEnvIfNoCase User-Agent \bPyCurl\b spambot=yes
 SetEnvIfNoCase User-Agent \bQueryN\ Metasearch\b spambot=yes
 SetEnvIfNoCase User-Agent \bQuick\-Crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRSSingBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bRainbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bRankActive\b spambot=yes
 SetEnvIfNoCase User-Agent \bRankActiveLinkBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bRankFlex\b spambot=yes
@@ -483,6 +488,7 @@ SetEnvIfNoCase User-Agent \bTheNomad\b spambot=yes
 SetEnvIfNoCase User-Agent \bThe\ Intraformant\b spambot=yes
 SetEnvIfNoCase User-Agent \bThumbor\b spambot=yes
 SetEnvIfNoCase User-Agent \bTightTwatBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bTinyTestBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bTitan\b spambot=yes
 SetEnvIfNoCase User-Agent \bToata\b spambot=yes
 SetEnvIfNoCase User-Agent \bToweyabot\b spambot=yes
@@ -583,16 +589,19 @@ SetEnvIfNoCase User-Agent \bZoominfoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZumBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZyBorg\b spambot=yes
 SetEnvIfNoCase User-Agent \badscanner\b spambot=yes
+SetEnvIfNoCase User-Agent \banthropic\-ai\b spambot=yes
 SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\.pt\b spambot=yes
 SetEnvIfNoCase User-Agent \bautoemailspider\b spambot=yes
+SetEnvIfNoCase User-Agent \baxios\b spambot=yes
 SetEnvIfNoCase User-Agent \bbacklink\-check\b spambot=yes
 SetEnvIfNoCase User-Agent \bcah\.io\.community\b spambot=yes
 SetEnvIfNoCase User-Agent \bcheck1\.exe\b spambot=yes
 SetEnvIfNoCase User-Agent \bclark\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bcoccocbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bcognitiveseo\b spambot=yes
+SetEnvIfNoCase User-Agent \bcohere\-ai\b spambot=yes
 SetEnvIfNoCase User-Agent \bcom\.plumanalytics\b spambot=yes
 SetEnvIfNoCase User-Agent \bcrawl\.sogou\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bcrawler4j\b spambot=yes
@@ -606,6 +615,7 @@ SetEnvIfNoCase User-Agent \bevc\-batch\b spambot=yes
 SetEnvIfNoCase User-Agent \bfacebookscraper\b spambot=yes
 SetEnvIfNoCase User-Agent \bgopher\b spambot=yes
 SetEnvIfNoCase User-Agent \bheritrix\b spambot=yes
+SetEnvIfNoCase User-Agent \bimagesift\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \binstabid\b spambot=yes
 SetEnvIfNoCase User-Agent \binternetVista\ monitor\b spambot=yes
 SetEnvIfNoCase User-Agent \bips\-agent\b spambot=yes
@@ -620,6 +630,7 @@ SetEnvIfNoCase User-Agent \bmediawords\b spambot=yes
 SetEnvIfNoCase User-Agent \bmuhstik\-scan\b spambot=yes
 SetEnvIfNoCase User-Agent \bnetEstate\ NE\ Crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \boBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bomgili\b spambot=yes
 SetEnvIfNoCase User-Agent \bopenai\b spambot=yes
 SetEnvIfNoCase User-Agent \bopenai\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bpage\ scorer\b spambot=yes
@@ -4363,6 +4374,7 @@ SetEnvIfNoCase Referer matpre\.top spambot=yes
 SetEnvIfNoCase Referer matrixalchemy\.com spambot=yes
 SetEnvIfNoCase Referer matsdale\.com spambot=yes
 SetEnvIfNoCase Referer mature\.free\-websites\.com spambot=yes
+SetEnvIfNoCase Referer mavink\.com spambot=yes
 SetEnvIfNoCase Referer max\-eclat\.men spambot=yes
 SetEnvIfNoCase Referer max\-p\.men spambot=yes
 SetEnvIfNoCase Referer maximilitary\.ru spambot=yes

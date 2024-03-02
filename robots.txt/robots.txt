@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.03.1834
-### Updated: Fri Mar  1 10:09:39 UTC 2024
-### Bad Bot Count: 645
+### Version: V3.2024.03.1835
+### Updated: Sat Mar  2 05:29:09 UTC 2024
+### Bad Bot Count: 656
 ###################################################
 ### Version Information ##
 
@@ -169,6 +169,8 @@ User-agent: Cegbfeieh
 Disallow:/
 User-agent: CensysInspect
 Disallow:/
+User-agent: ChatGPT-User
+Disallow:/
 User-agent: CheTeam
 Disallow:/
 User-agent: CheeseBot
@@ -313,6 +315,8 @@ User-agent: FDM
 Disallow:/
 User-agent: FHscan
 Disallow:/
+User-agent: FacebookBot
+Disallow:/
 User-agent: FemtosearchBot
 Disallow:/
 User-agent: Fimap
@@ -360,6 +364,8 @@ Disallow:/
 User-agent: Go-Ahead-Got-It
 Disallow:/
 User-agent: GoZilla
+Disallow:/
+User-agent: Google-Extended
 Disallow:/
 User-agent: Gotit
 Disallow:/
@@ -418,6 +424,8 @@ Disallow:/
 User-agent: Image Fetch
 Disallow:/
 User-agent: Image Sucker
+Disallow:/
+User-agent: ImagesiftBot
 Disallow:/
 User-agent: IndeedBot
 Disallow:/
@@ -757,6 +765,8 @@ User-agent: Quick-Crawler
 Disallow:/
 User-agent: RSSingBot
 Disallow:/
+User-agent: Rainbot
+Disallow:/
 User-agent: RankActive
 Disallow:/
 User-agent: RankActiveLinkBot
@@ -954,6 +964,8 @@ Disallow:/
 User-agent: Thumbor
 Disallow:/
 User-agent: TightTwatBot
+Disallow:/
+User-agent: TinyTestBot
 Disallow:/
 User-agent: Titan
 Disallow:/
@@ -1155,6 +1167,8 @@ User-agent: ZyBorg
 Disallow:/
 User-agent: adscanner
 Disallow:/
+User-agent: anthropic-ai
+Disallow:/
 User-agent: archive.org_bot
 Disallow:/
 User-agent: arquivo-web-crawler
@@ -1162,6 +1176,8 @@ Disallow:/
 User-agent: arquivo.pt
 Disallow:/
 User-agent: autoemailspider
+Disallow:/
+User-agent: axios
 Disallow:/
 User-agent: backlink-check
 Disallow:/
@@ -1174,6 +1190,8 @@ Disallow:/
 User-agent: coccocbot
 Disallow:/
 User-agent: cognitiveseo
+Disallow:/
+User-agent: cohere-ai
 Disallow:/
 User-agent: com.plumanalytics
 Disallow:/
@@ -1200,6 +1218,8 @@ Disallow:/
 User-agent: gopher
 Disallow:/
 User-agent: heritrix
+Disallow:/
+User-agent: imagesift.com
 Disallow:/
 User-agent: instabid
 Disallow:/
@@ -1228,6 +1248,8 @@ Disallow:/
 User-agent: netEstate NE Crawler
 Disallow:/
 User-agent: oBot
+Disallow:/
+User-agent: omgili
 Disallow:/
 User-agent: openai
 Disallow:/
