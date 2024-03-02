@@ -5949,7 +5949,6 @@ SetEnvIfNoCase Referer ~*thenetinfo\.com spam_ref
 SetEnvIfNoCase Referer ~*thenews\-today\.info spam_ref
 SetEnvIfNoCase Referer ~*thepantonpractice\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*theplacetoupdating\.pw spam_ref
-SetEnvIfNoCase Referer ~*thepokertimer\.com spam_ref
 SetEnvIfNoCase Referer ~*theporndude\.com spam_ref
 SetEnvIfNoCase Referer ~*thepornsex\.org spam_ref
 SetEnvIfNoCase Referer ~*theprofitsmaker\.net spam_ref

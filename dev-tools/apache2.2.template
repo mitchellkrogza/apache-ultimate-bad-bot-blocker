@@ -16,9 +16,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.03.1835
-### Updated: Sat Mar  2 05:29:10 UTC 2024
-### Bad Referrer Count: 7105
+### Version: V3.2024.03.1836
+### Updated: Sat Mar  2 05:57:04 UTC 2024
+### Bad Referrer Count: 7104
 ### Bad Bot Count: 656
 ###################################################
 ### Version Information ##
@@ -6919,7 +6919,6 @@ SetEnvIfNoCase Referer ~*thenetinfo\.com spam_ref
 SetEnvIfNoCase Referer ~*thenews\-today\.info spam_ref
 SetEnvIfNoCase Referer ~*thepantonpractice\.co\.uk spam_ref
 SetEnvIfNoCase Referer ~*theplacetoupdating\.pw spam_ref
-SetEnvIfNoCase Referer ~*thepokertimer\.com spam_ref
 SetEnvIfNoCase Referer ~*theporndude\.com spam_ref
 SetEnvIfNoCase Referer ~*thepornsex\.org spam_ref
 SetEnvIfNoCase Referer ~*theprofitsmaker\.net spam_ref
