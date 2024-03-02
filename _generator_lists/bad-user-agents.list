@@ -75,6 +75,7 @@ Calculon
 CazoodleBot
 Cegbfeieh
 CensysInspect
+ChatGPT-User
 CheTeam
 CheeseBot
 CherryPicker
@@ -147,6 +148,7 @@ EyeNetIE
 Ezooms
 FDM
 FHscan
+FacebookBot
 FemtosearchBot
 Fimap
 Firefox/7.0
@@ -171,6 +173,7 @@ Gigabot
 Go!Zilla
 Go-Ahead-Got-It
 GoZilla
+Google-Extended
 Gotit
 GrabNet
 Grabber
@@ -200,6 +203,7 @@ Id-search
 IlseBot
 Image\ Fetch
 Image\ Sucker
+ImagesiftBot
 IndeedBot
 Indy\ Library
 InfoNaviRobot
@@ -286,7 +290,7 @@ Microsoft\ Data\ Access
 Microsoft\ URL\ Control
 Minefield
 Mister\ PiX
-Moblie Safari
+Moblie\ Safari
 Mojeek
 Mojolicious
 MolokaiBot
@@ -369,6 +373,7 @@ PyCurl
 QueryN\ Metasearch
 Quick-Crawler
 RSSingBot
+Rainbot
 RankActive
 RankActiveLinkBot
 RankFlex
@@ -468,6 +473,7 @@ TheNomad
 The\ Intraformant
 Thumbor
 TightTwatBot
+TinyTestBot
 Titan
 Toata
 Toweyabot
@@ -568,16 +574,19 @@ ZoominfoBot
 ZumBot
 ZyBorg
 adscanner
+anthropic-ai
 archive.org_bot
 arquivo-web-crawler
 arquivo.pt
 autoemailspider
+axios
 backlink-check
 cah.io.community
 check1.exe
 clark-crawler
 coccocbot
 cognitiveseo
+cohere-ai
 com.plumanalytics
 crawl.sogou.com
 crawler.feedback
@@ -591,6 +600,7 @@ evc-batch
 facebookscraper
 gopher
 heritrix
+imagesift.com
 instabid
 internetVista\ monitor
 ips-agent
@@ -605,6 +615,7 @@ mediawords
 muhstik-scan
 netEstate\ NE\ Crawler
 oBot
+omgili
 openai
 openai.com
 page\ scorer
