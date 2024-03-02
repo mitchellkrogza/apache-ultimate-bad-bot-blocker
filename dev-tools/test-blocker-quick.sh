@@ -166,6 +166,24 @@ else
 fi
 }
 
+run_curltest13 () {
+if curl -A "axios" http://localhost:80/index.html 2>&1 | grep -i 'Forbidden'; then
+   echo "${bold}${green}PASSED - ${red}AXIOS BAD BOT DETECTED"
+else
+   echo "${bold}${red}FAILED - ${red}AXIOS BAD BOT NOT DETECTED"
+   exit 1
+fi
+}
+
+run_curltest14 () {
+if curl -A "axios/1.6.7" http://localhost:80/index.html 2>&1 | grep -i 'Forbidden'; then
+   echo "${bold}${green}PASSED - ${red}AXIOS BAD BOT DETECTED"
+else
+   echo "${bold}${red}FAILED - ${red}AXIOS BAD BOT NOT DETECTED"
+   exit 1
+fi
+}
+
 testBadUserAgents () {
 shuf -n 10 ./_generator_lists/bad-user-agents.list > ./dev-tools/test_units/random-bots-for-test-quick.tmp
 sed 's/\\//g' ./dev-tools/test_units/random-bots-for-test-quick.tmp > ./dev-tools/test_units/random-bots-for-test-quick.list
@@ -295,6 +313,8 @@ run_curltest8
 run_curltest10
 run_curltest11
 run_curltest12
+run_curltest13
+run_curltest14
 testBadUserAgents
 testGoodUserAgents
 testAllowedUserAgents
