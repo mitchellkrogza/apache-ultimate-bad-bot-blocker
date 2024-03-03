@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2024.03.1838
+### Version: V3.2024.03.1839
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 656
+### Bad Bot Count: 655
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -594,7 +594,6 @@ RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\.pt\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bautoemailspider\b [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} \baxios\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bbacklink\-check\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcah\.io\.community\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcheck1\.exe\b [NC,OR]

@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.03.1838
-### Updated: Sat Mar  2 10:08:01 UTC 2024
-### Bad Bot Count: 656
+### Version: V3.2024.03.1839
+### Updated: Sun Mar  3 05:27:00 UTC 2024
+### Bad Bot Count: 655
 ###################################################
 ### Version Information ##
 
@@ -1176,8 +1176,6 @@ Disallow:/
 User-agent: arquivo.pt
 Disallow:/
 User-agent: autoemailspider
-Disallow:/
-User-agent: axios
 Disallow:/
 User-agent: backlink-check
 Disallow:/

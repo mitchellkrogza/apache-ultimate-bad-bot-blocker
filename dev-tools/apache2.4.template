@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.03.1838
-### Updated: Sat Mar  2 10:08:01 UTC 2024
+### Version: V3.2024.03.1839
+### Updated: Sun Mar  3 05:27:00 UTC 2024
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 656
+### Bad Bot Count: 655
 ###################################################
 ### Version Information ##
 
@@ -748,7 +748,6 @@ BrowserMatchNoCase "(?:\b)archive.org_bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)arquivo-web-crawler(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)arquivo.pt(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)autoemailspider(?:\b)" bad_bot
-BrowserMatchNoCase "(?:\b)axios(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)backlink-check(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)cah.io.community(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)check1.exe(?:\b)" bad_bot
