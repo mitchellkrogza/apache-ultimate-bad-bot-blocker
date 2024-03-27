@@ -16,8 +16,8 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.03.1864
-### Updated: Wed Mar 27 10:09:40 UTC 2024
+### Version: V3.2024.03.1865
+### Updated: Wed Mar 27 10:46:24 UTC 2024
 ### Bad Referrer Count: 7104
 ### Bad Bot Count: 655
 ###################################################
@@ -119,6 +119,7 @@ BrowserMatchNoCase "(?:\b)facebookplatform(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)gsa-crawler(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)msnbot(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)msnbot-media(?:\b)" good_bot
+BrowserMatchNoCase "(?:\b)oBot(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)slurp(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)teoma(?:\b)" good_bot
 BrowserMatchNoCase "(?:\b)yahoo(?:\b)" good_bot
@@ -8103,6 +8104,7 @@ Include custom.d/whitelist-ips.conf
 	# anything lower down that you mistakenly picked up as a bad bot.
 
 # START GOOGLE IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
+Allow from 192.178.5.0/27
 Allow from 2001:4860:4801:10::/64
 Allow from 2001:4860:4801:11::/64
 Allow from 2001:4860:4801:12::/64
@@ -8115,6 +8117,9 @@ Allow from 2001:4860:4801:18::/64
 Allow from 2001:4860:4801:19::/64
 Allow from 2001:4860:4801:1a::/64
 Allow from 2001:4860:4801:1b::/64
+Allow from 2001:4860:4801:1c::/64
+Allow from 2001:4860:4801:1d::/64
+Allow from 2001:4860:4801:1e::/64
 Allow from 2001:4860:4801:20::/64
 Allow from 2001:4860:4801:21::/64
 Allow from 2001:4860:4801:22::/64
@@ -8146,6 +8151,8 @@ Allow from 2001:4860:4801:3::/64
 Allow from 2001:4860:4801:3a::/64
 Allow from 2001:4860:4801:3b::/64
 Allow from 2001:4860:4801:3c::/64
+Allow from 2001:4860:4801:3d::/64
+Allow from 2001:4860:4801:3e::/64
 Allow from 2001:4860:4801:40::/64
 Allow from 2001:4860:4801:41::/64
 Allow from 2001:4860:4801:42::/64
@@ -8160,6 +8167,8 @@ Allow from 2001:4860:4801:4a::/64
 Allow from 2001:4860:4801:50::/64
 Allow from 2001:4860:4801:51::/64
 Allow from 2001:4860:4801:53::/64
+Allow from 2001:4860:4801:54::/64
+Allow from 2001:4860:4801:55::/64
 Allow from 2001:4860:4801:60::/64
 Allow from 2001:4860:4801:61::/64
 Allow from 2001:4860:4801:62::/64
@@ -8184,6 +8193,8 @@ Allow from 2001:4860:4801:74::/64
 Allow from 2001:4860:4801:75::/64
 Allow from 2001:4860:4801:76::/64
 Allow from 2001:4860:4801:77::/64
+Allow from 2001:4860:4801:78::/64
+Allow from 2001:4860:4801:79::/64
 Allow from 2001:4860:4801:80::/64
 Allow from 2001:4860:4801:81::/64
 Allow from 2001:4860:4801:82::/64
@@ -8191,12 +8202,37 @@ Allow from 2001:4860:4801:83::/64
 Allow from 2001:4860:4801:84::/64
 Allow from 2001:4860:4801:85::/64
 Allow from 2001:4860:4801:86::/64
+Allow from 2001:4860:4801:87::/64
+Allow from 2001:4860:4801:88::/64
 Allow from 2001:4860:4801:90::/64
 Allow from 2001:4860:4801:91::/64
 Allow from 2001:4860:4801:92::/64
-Allow from 2001:4860:4801::/64
+Allow from 2001:4860:4801:93::/64
 Allow from 2001:4860:4801:c::/64
 Allow from 2001:4860:4801:f::/64
+Allow from 34.100.182.96/28
+Allow from 34.101.50.144/28
+Allow from 34.118.254.0/28
+Allow from 34.118.66.0/28
+Allow from 34.126.178.96/28
+Allow from 34.146.150.144/28
+Allow from 34.147.110.144/28
+Allow from 34.151.74.144/28
+Allow from 34.152.50.64/28
+Allow from 34.154.114.144/28
+Allow from 34.155.98.32/28
+Allow from 34.165.18.176/28
+Allow from 34.175.160.64/28
+Allow from 34.176.130.16/28
+Allow from 34.22.85.0/27
+Allow from 34.64.82.64/28
+Allow from 34.65.242.112/28
+Allow from 34.80.50.80/28
+Allow from 34.88.194.0/28
+Allow from 34.89.10.80/28
+Allow from 34.89.198.80/28
+Allow from 34.96.162.48/28
+Allow from 35.247.243.240/28
 Allow from 66.249.64.0/27
 Allow from 66.249.64.128/27
 Allow from 66.249.64.160/27
@@ -8206,7 +8242,6 @@ Allow from 66.249.64.32/27
 Allow from 66.249.64.64/27
 Allow from 66.249.64.96/27
 Allow from 66.249.65.0/27
-Allow from 66.249.65.128/27
 Allow from 66.249.65.160/27
 Allow from 66.249.65.192/27
 Allow from 66.249.65.224/27
@@ -8215,9 +8250,11 @@ Allow from 66.249.65.64/27
 Allow from 66.249.65.96/27
 Allow from 66.249.66.0/27
 Allow from 66.249.66.128/27
+Allow from 66.249.66.160/27
 Allow from 66.249.66.192/27
 Allow from 66.249.66.32/27
 Allow from 66.249.66.64/27
+Allow from 66.249.66.96/27
 Allow from 66.249.68.0/27
 Allow from 66.249.68.32/27
 Allow from 66.249.68.64/27
@@ -8232,6 +8269,8 @@ Allow from 66.249.69.96/27
 Allow from 66.249.70.0/27
 Allow from 66.249.70.128/27
 Allow from 66.249.70.160/27
+Allow from 66.249.70.192/27
+Allow from 66.249.70.224/27
 Allow from 66.249.70.32/27
 Allow from 66.249.70.64/27
 Allow from 66.249.70.96/27
@@ -8239,6 +8278,7 @@ Allow from 66.249.71.0/27
 Allow from 66.249.71.128/27
 Allow from 66.249.71.160/27
 Allow from 66.249.71.192/27
+Allow from 66.249.71.224/27
 Allow from 66.249.71.32/27
 Allow from 66.249.71.64/27
 Allow from 66.249.71.96/27
@@ -8259,6 +8299,7 @@ Allow from 66.249.73.32/27
 Allow from 66.249.73.64/27
 Allow from 66.249.73.96/27
 Allow from 66.249.74.0/27
+Allow from 66.249.74.128/27
 Allow from 66.249.74.32/27
 Allow from 66.249.74.64/27
 Allow from 66.249.74.96/27
@@ -8280,9 +8321,14 @@ Allow from 66.249.76.64/27
 Allow from 66.249.76.96/27
 Allow from 66.249.77.0/27
 Allow from 66.249.77.128/27
+Allow from 66.249.77.160/27
+Allow from 66.249.77.192/27
+Allow from 66.249.77.224/27
 Allow from 66.249.77.32/27
 Allow from 66.249.77.64/27
 Allow from 66.249.77.96/27
+Allow from 66.249.78.0/27
+Allow from 66.249.78.32/27
 Allow from 66.249.79.0/27
 Allow from 66.249.79.128/27
 Allow from 66.249.79.160/27
@@ -8298,25 +8344,34 @@ Allow from 66.249.79.96/27
 	# *********
 
 # START BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
-Allow from 131.253.21.0/24
-Allow from 131.253.22.0/23
-Allow from 131.253.24.0/21
-Allow from 131.253.24.0/22
-Allow from 131.253.32.0/20
-Allow from 157.54.0.0/15
-Allow from 157.56.0.0/14
-Allow from 157.60.0.0/16
-Allow from 199.30.16.0/24
-Allow from 199.30.27.0/24
-Allow from 207.46.0.0/16
-Allow from 40.112.0.0/13
-Allow from 40.120.0.0/14
-Allow from 40.124.0.0/16
-Allow from 40.125.0.0/17
-Allow from 40.74.0.0/15
-Allow from 40.76.0.0/14
-Allow from 40.80.0.0/12
-Allow from 40.96.0.0/12
+Allow from 13.66.139.0/24
+Allow from 13.66.144.0/24
+Allow from 13.67.10.16/28
+Allow from 13.69.66.240/28
+Allow from 13.71.172.224/28
+Allow from 139.217.52.0/28
+Allow from 157.55.39.0/24
+Allow from 191.233.204.224/28
+Allow from 199.30.24.0/23
+Allow from 20.125.163.80/28
+Allow from 20.15.133.160/27
+Allow from 20.36.108.32/28
+Allow from 20.43.120.16/28
+Allow from 20.74.197.0/28
+Allow from 20.79.107.240/28
+Allow from 207.46.13.0/24
+Allow from 40.77.139.0/25
+Allow from 40.77.167.0/24
+Allow from 40.77.177.0/24
+Allow from 40.77.178.0/23
+Allow from 40.77.188.0/22
+Allow from 40.77.202.0/24
+Allow from 40.79.131.208/28
+Allow from 40.79.186.176/28
+Allow from 51.105.67.0/28
+Allow from 52.167.144.0/24
+Allow from 52.231.148.0/28
+Allow from 65.55.210.0/24
 # END BING IP RANGES ### DO NOT EDIT THIS LINE AT ALL ###
 
 	# ********************
