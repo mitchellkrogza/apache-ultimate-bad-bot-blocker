@@ -177,18 +177,18 @@ fi
 
 run_curltest14 () {
 if curl -A "UptimeRobot" http://localhost:80/index.html 2>&1 | grep -i 'Welcome'; then
-   echo "${bold}${green}PASSED - ${green}oBot GOOD BOT ALLOWED THROUGH"
+   echo "${bold}${green}PASSED - ${green}UptimeRobot GOOD BOT ALLOWED THROUGH"
 else
-   echo "${bold}${red}FAILED - ${red}oBot GOOD BOT NOT ALLOWED THROUGH"
+   echo "${bold}${red}FAILED - ${red}UptimeRobot GOOD BOT NOT ALLOWED THROUGH"
    exit 1
 fi
 }
 
 run_curltest15 () {
 if curl -A "UptimeRobot/2.0" http://localhost:80/index.html 2>&1 | grep -i 'Welcome'; then
-   echo "${bold}${green}PASSED - ${green}oBot GOOD BOT ALLOWED THROUGH"
+   echo "${bold}${green}PASSED - ${green}UptimeRobot/2.0 GOOD BOT ALLOWED THROUGH"
 else
-   echo "${bold}${red}FAILED - ${red}oBot GOOD BOT NOT ALLOWED THROUGH"
+   echo "${bold}${red}FAILED - ${red}UptimeRobot/2.0 GOOD BOT NOT ALLOWED THROUGH"
    exit 1
 fi
 }
