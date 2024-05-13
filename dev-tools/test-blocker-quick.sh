@@ -175,6 +175,24 @@ else
 fi
 }
 
+run_curltest14 () {
+if curl -A "UptimeRobot" http://localhost:80/index.html 2>&1 | grep -i 'Welcome'; then
+   echo "${bold}${green}PASSED - ${green}oBot GOOD BOT ALLOWED THROUGH"
+else
+   echo "${bold}${red}FAILED - ${red}oBot GOOD BOT NOT ALLOWED THROUGH"
+   exit 1
+fi
+}
+
+run_curltest15 () {
+if curl -A "UptimeRobot/2.0" http://localhost:80/index.html 2>&1 | grep -i 'Welcome'; then
+   echo "${bold}${green}PASSED - ${green}oBot GOOD BOT ALLOWED THROUGH"
+else
+   echo "${bold}${red}FAILED - ${red}oBot GOOD BOT NOT ALLOWED THROUGH"
+   exit 1
+fi
+}
+
 testBadUserAgents () {
 shuf -n 10 ./_generator_lists/bad-user-agents.list > ./dev-tools/test_units/random-bots-for-test-quick.tmp
 sed 's/\\//g' ./dev-tools/test_units/random-bots-for-test-quick.tmp > ./dev-tools/test_units/random-bots-for-test-quick.list
@@ -305,6 +323,8 @@ run_curltest10
 run_curltest11
 run_curltest12
 run_curltest13
+run_curltest14
+run_curltest15
 testBadUserAgents
 testGoodUserAgents
 testAllowedUserAgents
