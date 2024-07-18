@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2024.07.1968
-### Updated: Tue Jul  9 10:11:05 UTC 2024
-### Bad Bot Count: 655
+### Version: V3.2024.07.1969
+### Updated: Thu Jul 18 10:05:42 UTC 2024
+### Bad Bot Count: 663
 ###################################################
 ### Version Information ##
 
@@ -78,6 +78,8 @@ Disallow:/
 User-agent: Atomseobot
 Disallow:/
 User-agent: Attach
+Disallow:/
+User-agent: AwarioBot
 Disallow:/
 User-agent: AwarioRssBot
 Disallow:/
@@ -184,6 +186,8 @@ Disallow:/
 User-agent: Citoid
 Disallow:/
 User-agent: Claritybot
+Disallow:/
+User-agent: ClaudeBot
 Disallow:/
 User-agent: Cliqzbot
 Disallow:/
@@ -435,11 +439,17 @@ User-agent: InfoNaviRobot
 Disallow:/
 User-agent: InfoTekies
 Disallow:/
+User-agent: Information Security Team InfraSec Scanner
+Disallow:/
+User-agent: InfraSec Scanner
+Disallow:/
 User-agent: Intelliseek
 Disallow:/
 User-agent: InterGET
 Disallow:/
 User-agent: Internet Ninja
+Disallow:/
+User-agent: InternetMeasurement
 Disallow:/
 User-agent: InternetSeer
 Disallow:/
@@ -1143,6 +1153,8 @@ User-agent: Xaldon_WebSpider
 Disallow:/
 User-agent: Xenu
 Disallow:/
+User-agent: YaK
+Disallow:/
 User-agent: YoudaoBot
 Disallow:/
 User-agent: Zade
@@ -1176,6 +1188,8 @@ Disallow:/
 User-agent: arquivo.pt
 Disallow:/
 User-agent: autoemailspider
+Disallow:/
+User-agent: awario.com
 Disallow:/
 User-agent: backlink-check
 Disallow:/
@@ -1230,6 +1244,8 @@ Disallow:/
 User-agent: iubenda-radar
 Disallow:/
 User-agent: linkdexbot
+Disallow:/
+User-agent: linkfluence
 Disallow:/
 User-agent: lwp-request
 Disallow:/

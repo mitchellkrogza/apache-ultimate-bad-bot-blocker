@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2024.07.1968
+### Version: V3.2024.07.1969
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 655
+### Bad Bot Count: 663
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -45,6 +45,7 @@ RewriteCond %{HTTP_USER_AGENT} \bAspiegel\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAsterias\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAtomseobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAttach\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAwarioBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAwarioRssBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAwarioSmartBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bBBBike\b [NC,OR]
@@ -98,6 +99,7 @@ RewriteCond %{HTTP_USER_AGENT} \bChinaClaw\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bChlooe\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCitoid\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bClaritybot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bClaudeBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCliqzbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCloud\ mapping\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bCocolyzebot\b [NC,OR]
@@ -223,8 +225,11 @@ RewriteCond %{HTTP_USER_AGENT} \bIndeedBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIndy\ Library\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bInfoNaviRobot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bInfoTekies\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bInformation\ Security\ Team\ InfraSec\ Scanner\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bInfraSec\ Scanner\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIntelliseek\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bInterGET\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bInternetMeasurement\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bInternetSeer\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bInternet\ Ninja\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bIria\b [NC,OR]
@@ -577,6 +582,7 @@ RewriteCond %{HTTP_USER_AGENT} \bWprecon\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\ WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXaldon\_WebSpider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bXenu\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bYaK\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bYoudaoBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZade\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZauba\b [NC,OR]
@@ -594,6 +600,7 @@ RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\.pt\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bautoemailspider\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bawario\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bbacklink\-check\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcah\.io\.community\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcheck1\.exe\b [NC,OR]
@@ -621,6 +628,7 @@ RewriteCond %{HTTP_USER_AGENT} \bips\-agent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bisitwp\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \biubenda\-radar\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blinkdexbot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \blinkfluence\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blwp\-request\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blwp\-trivial\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bmagpie\-crawler\b [NC,OR]

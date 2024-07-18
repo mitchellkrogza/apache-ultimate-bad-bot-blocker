@@ -30,6 +30,7 @@ Aspiegel
 Asterias
 Atomseobot
 Attach
+AwarioBot
 AwarioRssBot
 AwarioSmartBot
 BBBike
@@ -83,6 +84,7 @@ ChinaClaw
 Chlooe
 Citoid
 Claritybot
+ClaudeBot
 Cliqzbot
 Cloud\ mapping
 Cocolyzebot
@@ -208,8 +210,11 @@ IndeedBot
 Indy\ Library
 InfoNaviRobot
 InfoTekies
+Information\ Security\ Team\ InfraSec\ Scanner
+InfraSec\ Scanner
 Intelliseek
 InterGET
+InternetMeasurement
 InternetSeer
 Internet\ Ninja
 Iria
@@ -562,6 +567,7 @@ Wprecon
 Xaldon\ WebSpider
 Xaldon\_WebSpider
 Xenu
+YaK
 YoudaoBot
 Zade
 Zauba
@@ -579,6 +585,7 @@ archive\.org\_bot
 arquivo\-web\-crawler
 arquivo\.pt
 autoemailspider
+awario\.com
 backlink\-check
 cah\.io\.community
 check1\.exe
@@ -606,6 +613,7 @@ ips\-agent
 isitwp\.com
 iubenda\-radar
 linkdexbot
+linkfluence
 lwp\-request
 lwp\-trivial
 magpie\-crawler

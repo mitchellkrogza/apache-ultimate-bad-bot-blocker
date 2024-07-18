@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2024.07.1968
+### Version: V3.2024.07.1969
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 655
+### Bad Bot Count: 663
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -45,6 +45,7 @@ SetEnvIfNoCase User-Agent \bAspiegel\b spambot=yes
 SetEnvIfNoCase User-Agent \bAsterias\b spambot=yes
 SetEnvIfNoCase User-Agent \bAtomseobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAttach\b spambot=yes
+SetEnvIfNoCase User-Agent \bAwarioBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAwarioRssBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAwarioSmartBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bBBBike\b spambot=yes
@@ -98,6 +99,7 @@ SetEnvIfNoCase User-Agent \bChinaClaw\b spambot=yes
 SetEnvIfNoCase User-Agent \bChlooe\b spambot=yes
 SetEnvIfNoCase User-Agent \bCitoid\b spambot=yes
 SetEnvIfNoCase User-Agent \bClaritybot\b spambot=yes
+SetEnvIfNoCase User-Agent \bClaudeBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCliqzbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bCloud\ mapping\b spambot=yes
 SetEnvIfNoCase User-Agent \bCocolyzebot\b spambot=yes
@@ -223,8 +225,11 @@ SetEnvIfNoCase User-Agent \bIndeedBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bIndy\ Library\b spambot=yes
 SetEnvIfNoCase User-Agent \bInfoNaviRobot\b spambot=yes
 SetEnvIfNoCase User-Agent \bInfoTekies\b spambot=yes
+SetEnvIfNoCase User-Agent \bInformation\ Security\ Team\ InfraSec\ Scanner\b spambot=yes
+SetEnvIfNoCase User-Agent \bInfraSec\ Scanner\b spambot=yes
 SetEnvIfNoCase User-Agent \bIntelliseek\b spambot=yes
 SetEnvIfNoCase User-Agent \bInterGET\b spambot=yes
+SetEnvIfNoCase User-Agent \bInternetMeasurement\b spambot=yes
 SetEnvIfNoCase User-Agent \bInternetSeer\b spambot=yes
 SetEnvIfNoCase User-Agent \bInternet\ Ninja\b spambot=yes
 SetEnvIfNoCase User-Agent \bIria\b spambot=yes
@@ -577,6 +582,7 @@ SetEnvIfNoCase User-Agent \bWprecon\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\ WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXaldon\_WebSpider\b spambot=yes
 SetEnvIfNoCase User-Agent \bXenu\b spambot=yes
+SetEnvIfNoCase User-Agent \bYaK\b spambot=yes
 SetEnvIfNoCase User-Agent \bYoudaoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZade\b spambot=yes
 SetEnvIfNoCase User-Agent \bZauba\b spambot=yes
@@ -594,6 +600,7 @@ SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\.pt\b spambot=yes
 SetEnvIfNoCase User-Agent \bautoemailspider\b spambot=yes
+SetEnvIfNoCase User-Agent \bawario\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bbacklink\-check\b spambot=yes
 SetEnvIfNoCase User-Agent \bcah\.io\.community\b spambot=yes
 SetEnvIfNoCase User-Agent \bcheck1\.exe\b spambot=yes
@@ -621,6 +628,7 @@ SetEnvIfNoCase User-Agent \bips\-agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bisitwp\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \biubenda\-radar\b spambot=yes
 SetEnvIfNoCase User-Agent \blinkdexbot\b spambot=yes
+SetEnvIfNoCase User-Agent \blinkfluence\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-request\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-trivial\b spambot=yes
 SetEnvIfNoCase User-Agent \bmagpie\-crawler\b spambot=yes
