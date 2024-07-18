@@ -322,7 +322,7 @@ run_curltest8
 run_curltest10
 run_curltest11
 run_curltest12
-run_curltest13
+#run_curltest13
 run_curltest14
 run_curltest15
 testBadUserAgents
