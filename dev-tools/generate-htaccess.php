@@ -176,7 +176,7 @@ class Generator
 
             $data .= "RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*" . preg_quote($line) . ".*$ [NC,OR]\n";
         }
-        $data .= "RewriteRule ^(.*)$ – [F,L]\n</IfModule>";
+        $data .= "RewriteRule ^(.*)$ - [F,L]\n</IfModule>";
       $this->writeToFile($file, $data);
     }
 
