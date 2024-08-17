@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2024.08.1994
+### Version: V3.2024.08.1995
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 663
+### Bad Bot Count: 666
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -57,6 +57,7 @@ SetEnvIfNoCase User-Agent \bBackStreet\b spambot=yes
 SetEnvIfNoCase User-Agent \bBackWeb\b spambot=yes
 SetEnvIfNoCase User-Agent \bBacklinkCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bBacklink\-Ceck\b spambot=yes
+SetEnvIfNoCase User-Agent \bBacklinksExtendedBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bBadass\b spambot=yes
 SetEnvIfNoCase User-Agent \bBandit\b spambot=yes
 SetEnvIfNoCase User-Agent \bBarkrowler\b spambot=yes
@@ -190,7 +191,6 @@ SetEnvIfNoCase User-Agent \bGigabot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGoZilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\!Zilla\b spambot=yes
 SetEnvIfNoCase User-Agent \bGo\-Ahead\-Got\-It\b spambot=yes
-SetEnvIfNoCase User-Agent \bGoogle\-Extended\b spambot=yes
 SetEnvIfNoCase User-Agent \bGotit\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabNet\b spambot=yes
 SetEnvIfNoCase User-Agent \bGrabber\b spambot=yes
@@ -415,6 +415,7 @@ SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSBIder\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOkicks\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOkicks\-Robot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSEOlyt\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOlyticsCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOprofiler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOstats\b spambot=yes
@@ -466,6 +467,8 @@ SetEnvIfNoCase User-Agent \bSpammen\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpankBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpanner\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpbot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSpider\_Bot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSpider\_Bot\/3\.0\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpinn3r\b spambot=yes
 SetEnvIfNoCase User-Agent \bSputnikBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqlmap\b spambot=yes

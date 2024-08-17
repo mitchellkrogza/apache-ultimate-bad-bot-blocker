@@ -42,6 +42,7 @@ BackStreet
 BackWeb
 BacklinkCrawler
 Backlink\-Ceck
+BacklinksExtendedBot
 Badass
 Bandit
 Barkrowler
@@ -175,7 +176,6 @@ Gigabot
 GoZilla
 Go\!Zilla
 Go\-Ahead\-Got\-It
-Google\-Extended
 Gotit
 GrabNet
 Grabber
@@ -400,6 +400,7 @@ Rogerbot
 SBIder
 SEOkicks
 SEOkicks\-Robot
+SEOlyt
 SEOlyticsCrawler
 SEOprofiler
 SEOstats
@@ -451,6 +452,8 @@ Spammen
 SpankBot
 Spanner
 Spbot
+Spider\_Bot
+Spider\_Bot\/3\.0
 Spinn3r
 SputnikBot
 Sqlmap
