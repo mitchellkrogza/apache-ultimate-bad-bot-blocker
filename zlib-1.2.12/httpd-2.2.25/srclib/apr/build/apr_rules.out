@@ -53,7 +53,7 @@ DEFS=-DHAVE_CONFIG_H
 EXTRA_CFLAGS=-g -O2
 EXTRA_CPPFLAGS=-DLINUX -D_REENTRANT -D_GNU_SOURCE
 EXTRA_LDFLAGS=
-EXTRA_LIBS=-luuid -lcrypt  -lpthread
+EXTRA_LIBS=-lcrypt  -lpthread
 EXTRA_INCLUDES=
 
 # NOTEST_* are flags and libraries that can be added by the user without

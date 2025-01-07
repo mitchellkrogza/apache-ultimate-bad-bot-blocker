@@ -256,7 +256,6 @@ apr_os_exp_time_put
 apr_os_shm_put
 apr_os_dso_handle_put
 apr_os_dso_handle_get
-apr_os_uuid_get
 apr_os_default_encoding
 apr_os_locale_encoding
 apr_proc_mutex_create

@@ -7,5 +7,5 @@ includedir=/usr/local/apache2/include
 Name: APR
 Description: The Apache Portable Runtime library
 Version: 1.4.8
-Libs: -L${libdir} -lapr-${APR_MAJOR_VERSION} -luuid -lcrypt  -lpthread
+Libs: -L${libdir} -lapr-${APR_MAJOR_VERSION} -lcrypt  -lpthread
 Cflags: -DLINUX -D_REENTRANT -D_GNU_SOURCE -g -O2 -I${includedir}

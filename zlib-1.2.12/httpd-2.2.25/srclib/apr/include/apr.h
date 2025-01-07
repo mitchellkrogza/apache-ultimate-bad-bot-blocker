@@ -278,7 +278,7 @@ extern "C" {
 #define APR_HAS_USER              1
 #define APR_HAS_LARGE_FILES       0
 #define APR_HAS_XTHREAD_FILES     0
-#define APR_HAS_OS_UUID           1
+#define APR_HAS_OS_UUID           0
 
 #define APR_PROCATTR_USER_SET_REQUIRES_PASSWORD 0
 

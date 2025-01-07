@@ -29,7 +29,7 @@ CLEAN_TARGETS = manyfile.bin testfile.txt data/sqlite*.db
 
 # bring in rules.mk for standard functionality
 include /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/build/rules.mk
-APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lcrypt -lpthread
+APRUTIL_LIBS = -lexpat /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -lcrypt -lpthread
 APRUTIL_LDFLAGS = $(ALL_LDFLAGS) -no-install 
 
 # link programs using -no-install to get real executables not
@@ -61,7 +61,7 @@ check: $(TESTALL_COMPONENTS) $(STDTEST_PORTABLE) $(STDTEST_NONPORTABLE)
 	progfailed=""; \
 	for prog in $(STDTEST_NONPORTABLE) $(STDTEST_PORTABLE); do \
 	        if test "$$prog" = 'dbd'; then \
-			for driver in none  pgsql sqlite3 odbc; do \
+			for driver in none  pgsql; do \
 				if test "$$driver" != 'none'; then \
 					LD_LIBRARY_PATH="`echo "../crypto/.libs:../dbm/.libs:../dbd/.libs:../ldap/.libs:$$LD_LIBRARY_PATH" | sed -e 's/::*$$//'`" \
 					./$$prog $$driver; \

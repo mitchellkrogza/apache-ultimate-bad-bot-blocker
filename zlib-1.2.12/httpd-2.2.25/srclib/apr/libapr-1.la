@@ -14,7 +14,7 @@ library_names='libapr-1.so.0.4.8 libapr-1.so.0 libapr-1.so'
 old_library='libapr-1.a'
 
 # Libraries that this one depends upon.
-dependency_libs=' -luuid -lcrypt -lpthread'
+dependency_libs=' -lcrypt -lpthread'
 
 # Version information for libapr-1.
 current=4

@@ -718,7 +718,7 @@ S["AP_CLEAN_SRCLIB_DIRS"]="apr-util  apr pcre"
 S["AP_BUILD_SRCLIB_DIRS"]="apr  apr-util pcre"
 S["AP_LIBS"]="/home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/pcre/libpcre.la  /home/runner/work"\
 "/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/libaprutil-1.la     -lexpat  /home/runner/"\
-"work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -luuid -lcrypt  -lpthread"
+"work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr/libapr-1.la -lcrypt  -lpthread"
 S["shared_build"]="shared-build"
 S["POST_SHARED_CMDS"]="echo \"\""
 S["PRE_SHARED_CMDS"]="echo \"\""
