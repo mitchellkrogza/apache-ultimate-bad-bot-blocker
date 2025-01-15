@@ -111,7 +111,7 @@
 /* #undef HAVE_PRERROR_H */
 
 /* Define to 1 if you have the <sqlite3.h> header file. */
-/* #undef HAVE_SQLITE3_H */
+#define HAVE_SQLITE3_H 1
 
 /* Define to 1 if you have the <sqlite.h> header file. */
 /* #undef HAVE_SQLITE_H */
