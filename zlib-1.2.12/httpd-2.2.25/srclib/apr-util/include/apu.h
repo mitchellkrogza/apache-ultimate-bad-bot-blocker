@@ -110,7 +110,7 @@
 
 #define APU_HAVE_PGSQL         1
 #define APU_HAVE_MYSQL         0
-#define APU_HAVE_SQLITE3       1
+#define APU_HAVE_SQLITE3       0
 #define APU_HAVE_SQLITE2       0
 #define APU_HAVE_ORACLE        0
 #define APU_HAVE_FREETDS       0

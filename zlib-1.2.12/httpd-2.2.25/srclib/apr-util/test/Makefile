@@ -61,7 +61,7 @@ check: $(TESTALL_COMPONENTS) $(STDTEST_PORTABLE) $(STDTEST_NONPORTABLE)
 	progfailed=""; \
 	for prog in $(STDTEST_NONPORTABLE) $(STDTEST_PORTABLE); do \
 	        if test "$$prog" = 'dbd'; then \
-			for driver in none  pgsql sqlite3; do \
+			for driver in none  pgsql; do \
 				if test "$$driver" != 'none'; then \
 					LD_LIBRARY_PATH="`echo "../crypto/.libs:../dbm/.libs:../dbd/.libs:../ldap/.libs:$$LD_LIBRARY_PATH" | sed -e 's/::*$$//'`" \
 					./$$prog $$driver; \
