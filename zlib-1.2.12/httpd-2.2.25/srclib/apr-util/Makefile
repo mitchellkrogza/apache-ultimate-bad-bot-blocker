@@ -22,7 +22,7 @@ APU_CONFIG = apu-$(APRUTIL_MAJOR_VERSION)-config
 INSTALL = /usr/bin/install -c
 INSTALL_DATA = ${INSTALL} -m 644
 
-APU_MODULES =   dbd/apr_dbd_pgsql.la
+APU_MODULES =   dbd/apr_dbd_pgsql.la dbd/apr_dbd_sqlite3.la
 LINK_MODULE = $(LIBTOOL) $(LTFLAGS) --mode=link $(CC) $(LT_LDFLAGS) $(ALL_CFLAGS) $(ALL_LDFLAGS) $(APRUTIL_LDFLAGS) -release $(APRUTIL_MAJOR_VERSION) -module -rpath $(APU_DSO_LIBDIR)
 APU_DSO_LIBDIR = ${libdir}/apr-util-1
 
@@ -33,7 +33,7 @@ EXTRA_OBJECTS =
 LDADD_dbd_pgsql = -L/usr/lib/x86_64-linux-gnu -lpq 
 LDADD_dbd_oracle = 
 LDADD_dbd_sqlite2 = 
-LDADD_dbd_sqlite3 = 
+LDADD_dbd_sqlite3 =  -lsqlite3
 LDADD_dbd_mysql = 
 LDADD_dbd_freetds = 
 LDADD_dbd_odbc = 
