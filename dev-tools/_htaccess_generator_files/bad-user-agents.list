@@ -167,6 +167,7 @@ GPTBot
 GT\:\:WWW
 G\-i\-g\-a\-b\-o\-t
 GalaxyBot
+GeedoProductSearch
 Genieo
 GermCrawler
 GetRight
@@ -421,13 +422,20 @@ SeekportBot
 SemanticJuice
 Semrush
 SemrushBot
+SemrushBot\-BA
+SemrushBot\-FT
+SemrushBot\-OCOB
+SemrushBot\-SI
+SemrushBot\-SWA
 SentiBot
 SenutoBot
+SeoCherryBot
 SeoSiteCheckup
 SeobilityBot
 Seomoz
 Shodan
 Siphon
+SiteAuditBot
 SiteCheckerBotCrawler
 SiteExplorer
 SiteLockSpider
@@ -455,6 +463,7 @@ Spbot
 Spider\_Bot
 Spider\_Bot\/3\.0
 Spinn3r
+SplitSignalBot
 SputnikBot
 Sqlmap
 Sqlworm
@@ -606,6 +615,7 @@ demandbase\-bot
 domainsproject\.org
 eCatch
 evc\-batch
+everyfeed\-spider
 facebookscraper
 gopher
 heritrix

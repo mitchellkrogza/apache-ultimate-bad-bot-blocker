@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2025.06.2300
+### Version: V3.2025.06.2301
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 666
+### Bad Bot Count: 676
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -182,6 +182,7 @@ SetEnvIfNoCase User-Agent \bGPTBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bGT\:\:WWW\b spambot=yes
 SetEnvIfNoCase User-Agent \bG\-i\-g\-a\-b\-o\-t\b spambot=yes
 SetEnvIfNoCase User-Agent \bGalaxyBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bGeedoProductSearch\b spambot=yes
 SetEnvIfNoCase User-Agent \bGenieo\b spambot=yes
 SetEnvIfNoCase User-Agent \bGermCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bGetRight\b spambot=yes
@@ -436,13 +437,20 @@ SetEnvIfNoCase User-Agent \bSeekportBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemanticJuice\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrush\b spambot=yes
 SetEnvIfNoCase User-Agent \bSemrushBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSemrushBot\-BA\b spambot=yes
+SetEnvIfNoCase User-Agent \bSemrushBot\-FT\b spambot=yes
+SetEnvIfNoCase User-Agent \bSemrushBot\-OCOB\b spambot=yes
+SetEnvIfNoCase User-Agent \bSemrushBot\-SI\b spambot=yes
+SetEnvIfNoCase User-Agent \bSemrushBot\-SWA\b spambot=yes
 SetEnvIfNoCase User-Agent \bSentiBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSenutoBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bSeoCherryBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeoSiteCheckup\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeobilityBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSeomoz\b spambot=yes
 SetEnvIfNoCase User-Agent \bShodan\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiphon\b spambot=yes
+SetEnvIfNoCase User-Agent \bSiteAuditBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteCheckerBotCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteExplorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bSiteLockSpider\b spambot=yes
@@ -470,6 +478,7 @@ SetEnvIfNoCase User-Agent \bSpbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpider\_Bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpider\_Bot\/3\.0\b spambot=yes
 SetEnvIfNoCase User-Agent \bSpinn3r\b spambot=yes
+SetEnvIfNoCase User-Agent \bSplitSignalBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSputnikBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqlmap\b spambot=yes
 SetEnvIfNoCase User-Agent \bSqlworm\b spambot=yes
@@ -621,6 +630,7 @@ SetEnvIfNoCase User-Agent \bdemandbase\-bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bdomainsproject\.org\b spambot=yes
 SetEnvIfNoCase User-Agent \beCatch\b spambot=yes
 SetEnvIfNoCase User-Agent \bevc\-batch\b spambot=yes
+SetEnvIfNoCase User-Agent \beveryfeed\-spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bfacebookscraper\b spambot=yes
 SetEnvIfNoCase User-Agent \bgopher\b spambot=yes
 SetEnvIfNoCase User-Agent \bheritrix\b spambot=yes

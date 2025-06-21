@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2025.06.2300
-### Updated: Fri Jun 20 10:14:19 UTC 2025
-### Bad Bot Count: 666
+### Version: V3.2025.06.2301
+### Updated: Sat Jun 21 06:14:35 UTC 2025
+### Bad Bot Count: 676
 ###################################################
 ### Version Information ##
 
@@ -352,6 +352,8 @@ Disallow:/
 User-agent: GT::WWW
 Disallow:/
 User-agent: GalaxyBot
+Disallow:/
+User-agent: GeedoProductSearch
 Disallow:/
 User-agent: Genieo
 Disallow:/
@@ -861,9 +863,21 @@ User-agent: Semrush
 Disallow:/
 User-agent: SemrushBot
 Disallow:/
+User-agent: SemrushBot-BA
+Disallow:/
+User-agent: SemrushBot-FT
+Disallow:/
+User-agent: SemrushBot-OCOB
+Disallow:/
+User-agent: SemrushBot-SI
+Disallow:/
+User-agent: SemrushBot-SWA
+Disallow:/
 User-agent: SentiBot
 Disallow:/
 User-agent: SenutoBot
+Disallow:/
+User-agent: SeoCherryBot
 Disallow:/
 User-agent: SeoSiteCheckup
 Disallow:/
@@ -876,6 +890,8 @@ Disallow:/
 User-agent: Siphon
 Disallow:/
 User-agent: Site Sucker
+Disallow:/
+User-agent: SiteAuditBot
 Disallow:/
 User-agent: SiteCheckerBotCrawler
 Disallow:/
@@ -928,6 +944,8 @@ Disallow:/
 User-agent: Spider_Bot/3.0
 Disallow:/
 User-agent: Spinn3r
+Disallow:/
+User-agent: SplitSignalBot
 Disallow:/
 User-agent: SputnikBot
 Disallow:/
@@ -1230,6 +1248,8 @@ Disallow:/
 User-agent: eCatch
 Disallow:/
 User-agent: evc-batch
+Disallow:/
+User-agent: everyfeed-spider
 Disallow:/
 User-agent: facebookscraper
 Disallow:/

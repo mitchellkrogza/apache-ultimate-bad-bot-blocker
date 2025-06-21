@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2025.06.2300
-### Updated: Fri Jun 20 10:14:19 UTC 2025
+### Version: V3.2025.06.2301
+### Updated: Sat Jun 21 06:14:35 UTC 2025
 ### Bad Referrer Count: 7104
-### Bad Bot Count: 666
+### Bad Bot Count: 676
 ###################################################
 ### Version Information ##
 
@@ -343,6 +343,7 @@ BrowserMatchNoCase "(?:\b)G-i-g-a-b-o-t(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)GPTBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)GT::WWW(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)GalaxyBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)GeedoProductSearch(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Genieo(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)GermCrawler(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)GetRight(?:\b)" bad_bot
@@ -597,13 +598,20 @@ BrowserMatchNoCase "(?:\b)SeekportBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemanticJuice(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Semrush(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SemrushBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SemrushBot-BA(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SemrushBot-FT(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SemrushBot-OCOB(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SemrushBot-SI(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SemrushBot-SWA(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SentiBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SenutoBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SeoCherryBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeoSiteCheckup(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SeobilityBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Seomoz(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Shodan(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Siphon(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SiteAuditBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SiteCheckerBotCrawler(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SiteExplorer(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SiteLockSpider(?:\b)" bad_bot
@@ -631,6 +639,7 @@ BrowserMatchNoCase "(?:\b)Spbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Spider_Bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Spider_Bot/3.0(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Spinn3r(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)SplitSignalBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)SputnikBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Sqlmap(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Sqlworm(?:\b)" bad_bot
@@ -782,6 +791,7 @@ BrowserMatchNoCase "(?:\b)demandbase-bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)domainsproject.org(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)eCatch(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)evc-batch(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)everyfeed-spider(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)facebookscraper(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)gopher(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)heritrix(?:\b)" bad_bot
