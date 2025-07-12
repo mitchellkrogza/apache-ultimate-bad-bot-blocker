@@ -43,7 +43,11 @@ Whitelist all your own domain names and IP addresses. **Please note important ch
 
 `sudo wget https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/Apache_2.4/custom.d/whitelist-domains.conf -O /etc/apache2/custom.d/whitelist-domains.conf`
 
-Use nano, vim or any other text editor to edit both whitelist-ips.conf and whitelist-domains.conf to include all your own domain names and IP addresses that you want to specifically whitelist from the blocker script. 
+Use nano, vim or any other text editor to edit both whitelist-ips.conf and whitelist-domains.conf to include all your own domain names and IP addresses that you want to specifically whitelist from the blocker script.
+
+To automatically add all currently configured domains to the whitelist run
+
+`sudo apache2ctl -S | grep -o -E 'alias (.*)|(namevhost|server) (.*)\s' | cut -d ' ' -f 2 | grep -v '*' | sed -E 's/([.\-])/\\\1/g' | sed -E 's/(.+)/SetEnvIfNoCase Referer ~*\1 good_ref/g' | sort | uniq | sudo tee -a /etc/apache2/custom.d/whitelist-domains.conf`
 
 When pulling any future updates now you can simply pull the latest globalblacklist.conf file and it will automatically include your whitelisted domains and IP addresses. No more remembering having to do this yourself.
 
