@@ -749,7 +749,7 @@ configure:23933: checking whether APR has DSO support
 configure:23958: result: yes
 configure:24043: checking for library containing crypt
 configure:24074: gcc -o conftest -g -O2  -DLINUX -D_REENTRANT -D_GNU_SOURCE  conftest.c  >&5
-/usr/bin/ld: /tmp/ccHtsKjd.o: in function `main':
+/usr/bin/ld: /tmp/ccR70cwG.o: in function `main':
 /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/srclib/apr-util/conftest.c:38:(.text.startup+0xb): undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 configure:24074: $? = 1
