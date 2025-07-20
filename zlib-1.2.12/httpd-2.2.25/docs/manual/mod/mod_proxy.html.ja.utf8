@@ -1,0 +1,1707 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>mod_proxy - Apache HTTP サーバ</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body>
+<div id="page-header">
+<p class="menu"><a href="../mod/">モジュール</a> | <a href="../mod/directives.html">ディレクティブ</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">用語</a> | <a href="../sitemap.html">サイトマップ</a></p>
+<p class="apache">Apache HTTP サーバ バージョン 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="./"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP サーバ</a> &gt; <a href="http://httpd.apache.org/docs/">ドキュメンテーション</a> &gt; <a href="../">バージョン 2.2</a> &gt; <a href="./">モジュール</a></div>
+<div id="page-content">
+<div id="preamble"><h1>Apache モジュール mod_proxy</h1>
+<div class="toplang">
+<p><span>翻訳済み言語: </span><a href="../en/mod/mod_proxy.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/mod/mod_proxy.html" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../ja/mod/mod_proxy.html" title="Japanese">&nbsp;ja&nbsp;</a></p>
+</div>
+<div class="outofdate">この日本語訳はすでに古くなっている
+            可能性があります。
+            最近更新された内容を見るには英語版をご覧下さい。
+        </div>
+<table class="module"><tr><th><a href="module-dict.html#Description">説明:</a></th><td>HTTP/1.1 プロキシ/ゲートウェイサーバ</td></tr>
+<tr><th><a href="module-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="module-dict.html#ModuleIdentifier">モジュール識別子:</a></th><td>proxy_module</td></tr>
+<tr><th><a href="module-dict.html#SourceFile">ソースファイル:</a></th><td>mod_proxy.c</td></tr></table>
+<h3>概要</h3>
+
+    <div class="warning"><h3>警告</h3>
+      <p><a href="#access">サーバを安全にする</a>まで <code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> は有効にしないでください。
+      オープンプロキシサーバはあなた自身のネットワークにとっても、
+      インターネット全体にとっても危険です。</p>
+    </div>
+
+    <p>このモジュールは Apache のプロキシ/ゲートウェイ機能を実装しています。
+    <code>AJP13</code> (Apache JServe Protocol version 1.3),
+    <code>FTP</code>, <code>CONNECT</code> (SSL 用),
+    <code>HTTP/0.9</code>, <code>HTTP/1.0</code>, <code>HTTP/1.1</code>
+    のプロキシ機能を実装しています。これらのプロトコルやその他のプロトコル用の
+    プロキシ機能を持った、他のモジュールに接続するようにも設定できます。</p>
+
+    <p>Apache のプロキシ機能は <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> の他に、
+    いくつかのモジュールに分割されています:
+    <code class="module"><a href="../mod/mod_proxy_http.html">mod_proxy_http</a></code>, <code class="module"><a href="../mod/mod_proxy_ftp.html">mod_proxy_ftp</a></code>,
+    <code class="module"><a href="../mod/mod_proxy_ajp.html">mod_proxy_ajp</a></code>, <code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code>,
+    <code class="module"><a href="../mod/mod_proxy_connect.html">mod_proxy_connect</a></code> です。ですから、
+    特定のプロキシの機能を使いたい場合は、<code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> <em>と</em>
+    該当するモジュールをサーバに (コンパイル時に静的に行なうか
+    <code class="directive"><a href="../mod/mod_so.html#loadmodule">LoadModule</a></code> で動的に読み込むかして)
+    組み込む必要があります。</p>
+
+    <p>これに加えて、他のモジュールによって拡張機能が提供されています。
+    キャッシュは <code class="module"><a href="../mod/mod_cache.html">mod_cache</a></code> と関連モジュールで
+    提供されています。SSL/TLS で遠隔サーバに接続する機能は
+    <code class="module"><a href="../mod/mod_ssl.html">mod_ssl</a></code> の <code>SSLProxy*</code> ディレクティブで
+    提供されています。これらの機能を利用するためには、該当するモジュールを
+    組み込んで設定しなければなりません。</p>
+</div>
+<div id="quickview"><h3 class="directives">ディレクティブ</h3>
+<ul id="toc">
+<li><img alt="" src="../images/down.gif" /> <a href="#allowconnect">AllowCONNECT</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#balancermember">BalancerMember</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#noproxy">NoProxy</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxy">&lt;Proxy&gt;</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxybadheader">ProxyBadHeader</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyblock">ProxyBlock</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxydomain">ProxyDomain</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyerroroverride">ProxyErrorOverride</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyftpdircharset">ProxyFtpDirCharset</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyiobuffersize">ProxyIOBufferSize</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxymatch">&lt;ProxyMatch&gt;</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxymaxforwards">ProxyMaxForwards</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypass">ProxyPass</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypassinterpolateenv">ProxyPassInterpolateEnv</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypassmatch">ProxyPassMatch</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypassreverse">ProxyPassReverse</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypassreversecookiedomain">ProxyPassReverseCookieDomain</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypassreversecookiepath">ProxyPassReverseCookiePath</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxypreservehost">ProxyPreserveHost</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyreceivebuffersize">ProxyReceiveBufferSize</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyremote">ProxyRemote</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyremotematch">ProxyRemoteMatch</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyrequests">ProxyRequests</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyset">ProxySet</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxystatus">ProxyStatus</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxytimeout">ProxyTimeout</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#proxyvia">ProxyVia</a></li>
+</ul>
+<h3>トピック</h3>
+<ul id="topics">
+<li><img alt="" src="../images/down.gif" /> <a href="#forwardreverse">フォワードプロキシとリバースプロキシ/ゲートウェイ</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#examples">基本の例</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#workers">ワーカー</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#access">プロキシへのアクセス制御</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#startup">遅い起動</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#intranet">イントラネットプロキシ</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#envsettings">プロトコルの調整</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#request-bodies">リクエストボディ</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#x-headers">リバースプロキシのリクエストヘッダ</a></li>
+</ul><h3>参照</h3>
+<ul class="seealso">
+<li><code class="module"><a href="../mod/mod_cache.html">mod_cache</a></code></li>
+<li><code class="module"><a href="../mod/mod_proxy_http.html">mod_proxy_http</a></code></li>
+<li><code class="module"><a href="../mod/mod_proxy_ftp.html">mod_proxy_ftp</a></code></li>
+<li><code class="module"><a href="../mod/mod_proxy_connect.html">mod_proxy_connect</a></code></li>
+<li><code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code></li>
+<li><code class="module"><a href="../mod/mod_ssl.html">mod_ssl</a></code></li>
+</ul><ul class="seealso"><li><a href="#comments_section">コメント</a></li></ul></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="forwardreverse" id="forwardreverse">フォワードプロキシとリバースプロキシ/ゲートウェイ</a></h2>
+      <p>Apache は <dfn>フォワード</dfn> プロキシとしても、
+      <dfn>リバース</dfn> プロキシ (別名 <dfn>ゲートウェイ</dfn>) としても設定できます。</p>
+
+      <p>通常の <dfn>フォワードプロキシ</dfn> はクライアントと
+      <em>オリジンサーバ</em> <span class="transnote">(<em>訳注:</em> コンテンツ生成元のサーバ)</span>
+      の間に位置する中間サーバです。
+      オリジンサーバからコンテンツを取得するために、クライアントは
+      行き先をオリジンサーバに指定したリクエストをプロキシに送ります。
+      プロキシはオリジンサーバからコンテンツを受け取り、
+      取得したコンテンツをクライアントに返します。
+      クライアントがフォワードプロキシ経由で他のサイトにアクセスするには、
+      特別にそのための設定をしなければなりません。</p>
+
+      <p>フォワードプロキシの一般的な使用方法は、ファイアウォールによって
+      制限されている内部のクライアントに、インターネットへのアクセスを
+      提供するものです。フォワードプロキシはネットワークの使用量を
+      減らすために (<code class="module"><a href="../mod/mod_cache.html">mod_cache</a></code> で提供されている)
+      キャッシュ機能を用いることもできます。</p>
+
+      <p>フォワードプロキシは <code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> ディレクティブで
+      有効になります。フォワードプロキシを使うと、クライアントは本当の身元を
+      隠して任意のサイトにアクセスできるようになります。このため、フォワードプロキシを
+      有効にする前に、承認されたクライアントのみがプロキシにアクセスできるように
+      <a href="#access">サーバを安全にする</a>ことが重要です。</p>
+
+      <p>一方 <dfn>リバースプロキシ</dfn> (<dfn>ゲートウェイ</dfn>) は、
+      クライアントから普通のウェブサーバのように見えます。
+      クライアント側に特別な設定は必要ありません。
+      クライアントはリバースプロキシの名前空間内のコンテンツに対して通常どおりの
+      リクエストを行ないます。リバースプロキシはリクエストをどこに送れば良いかを判定し、
+      あたかも自分自身がオリジンサーバであったかのようにクライアントに
+      コンテンツを返します。</p>
+
+      <p>リバースプロキシのよくある利用方法は、インターネットユーザに
+      ファイアウォールの中にあるサーバにアクセスさせる場合です。
+      リバースプロキシは複数のバックエンドサーバへ負荷分散をするために
+      使ったり、遅いバックエンドエンドサーバのためにキャッシュ機能を提供したり
+      するためにも使えます。また、リバースプロキシは複数のサーバを
+      同じ URL 空間にまとめるために使うこともできます。</p>
+
+      <p>リバースプロキシは <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブや
+      <code class="directive"><a href="../mod/mod_rewrite.html#rewriterule">RewriteRule</a></code> ディレクティブの
+      <code>[P]</code> フラグを使うことで有効になります。リバースプロキシの
+      設定のために <code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> を設定する必要は
+      <em>ありません</em>。</p>
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="examples" id="examples">基本の例</a></h2>
+
+    <p>以下の例は手始めの簡単な例です。個々のディレクティブの意味は
+    それぞれの説明をお読みください。</p>
+
+    <p>またキャッシュ機能を有効にしたい場合は、<code class="module"><a href="../mod/mod_cache.html">mod_cache</a></code>
+    の説明を読んでください。</p>
+
+    <div class="example"><h3>リバースプロキシ</h3><p><code>
+    ProxyPass /foo http://foo.example.com/bar<br />
+    ProxyPassReverse /foo http://foo.example.com/bar
+    </code></p></div>
+
+    <div class="example"><h3>フォワードプロキシ</h3><p><code>
+    ProxyRequests On<br />
+    ProxyVia On<br />
+    <br />
+    &lt;Proxy *&gt;<br />
+    <span class="indent">
+      Order deny,allow<br />
+      Deny from all<br />
+      Allow from internal.example.com<br />
+    </span>
+    &lt;/Proxy&gt;
+    </code></p></div>
+
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="workers" id="workers">ワーカー</a></h2>
+      <p>プロキシは <dfn>ワーカー</dfn> と呼ばれるオブジェクトで
+      オリジンサーバとの通信パラメータの設定を管理します。
+      ふたつの組み込みワーカーが存在します。デフォルトのフォワードプロキシワーカーと
+      デフォルトのリバースプロキシワーカーです。
+      追加のワーカーを明示的に設定可能です。</p>
+
+      <p>ふたつのデフォルトワーカーは固定の設定を持ちます。
+      リクエストが他のワーカーにマッチしない場合に使われます。
+      これらは HTTP のキープアライブもコネクションプーリングも使いません。
+      オリジンサーバへの TCP 接続はリクエストのたびに接続と切断をします。</p>
+
+      <p>明示的に設定するワーカーは、URL で識別されます。
+      通常、<code class="directive"><a href="#proxypass">ProxyPass</a></code>
+      または <code class="directive"><a href="#proxypassmatch">ProxyPassMatch</a></code>
+      をリバースプロキシ設定に使うことで、これらのワーカーを生成および設定します:</p>
+
+      <div class="example"><p><code>
+          ProxyPass /example http://backend.example.com connectiontimeout=5 timeout=30
+      </code></p></div>
+
+      <p>上記はオリジンサーバの <code>http://backend.example.com</code>
+      の URL に関連するワーカーを生成します。ワーカーは指定したタイムアウト値を持ちます。
+      フォワードプロキシで使われる時、ワーカーは一般に
+      <code class="directive"><a href="#proxyset">ProxySet</a></code> ディレクティブで
+      定義します:</p>
+
+      <div class="example"><p><code>
+          ProxySet http://backend.example.com connectiontimeout=5 timeout=30
+      </code></p></div>
+
+      <p>または、別の方法として <code class="directive"><a href="#proxy">Proxy</a></code>
+      と <code class="directive"><a href="#proxyset">ProxySet</a></code>でも定義できます:</p>
+
+      <div class="example"><p><code>
+        &lt;Proxy http://backend.example.com&gt;<br />
+        <span class="indent">
+          ProxySet connectiontimeout=5 timeout=30
+        </span>
+        &lt;/Proxy&gt;
+      </code></p></div>
+
+      <p>フォワードモードで明示的に設定したワーカーを使うのは、あまり一般的ではありません。
+      なぜなら、通常フォワードプロキシは多くの異なるオリジンサーバと通信するからです。
+      もし一部のオリジンサーバを頻繁に利用するなら、それらに対して
+      明示的にワーカーを生成するのは有用です。明示的に設定したワーカーは、
+      それ自体はフォワードプロキシかリバースプロキシかのコンセプトを持ちません。
+      それらはオリジンサーバと通信する共通のコンセプトを抱えています。
+      リバースプロキシで使うために <code class="directive"><a href="#proxypass">ProxyPass</a></code>
+      で生成したワーカーは、オリジンサーバへの URL がワーカーの URL にマッチすれば
+      いつでもフォワードプロキシとして使えます。これは、逆も成り立ちます。</p>
+
+      <p>ワーカーを識別する URL はそのオリジンサーバの URL です。
+      URL は指定したパス部分も含みます:</p>
+
+      <div class="example"><p><code>
+          ProxyPass /examples http://backend.example.com/examples<br />
+          ProxyPass /docs http://backend.example.com/docs
+      </code></p></div>
+
+      <p>この例はふたつの異なるワーカーを定義しています。
+      それぞれ別のコネクションプールと設定を使います。</p>
+
+      <div class="warning"><h3>ワーカーの共有</h3>
+        <p>もしワーカーの URL に重なりがあれば、ワーカーの共有が起きます。
+        重なりとは、ワーカーの URL が、設定ファイル内で後から定義した
+        別のワーカーの URL の先頭文字列と部分一致することです。
+        次の例で</p>
+
+        <div class="example"><p><code>
+            ProxyPass /apps http://backend.example.com/ timeout=60<br />
+            ProxyPass /examples http://backend.example.com/examples timeout=10
+        </code></p></div>
+
+        <p>ふたつめのワーカーは実際には生成されません。
+        その代わり、ひとつめのワーカーを使います。この利点は、ただひとつの
+        コネクションプールで済む点です。このため、コネクションをより頻繁に再利用できます。
+        後ろのワーカーに明示的に書いた設定のすべてのパラメータと一部の設定のデフォルト値は、
+        最初のワーカーに書いた設定を上書きするのを注意してください。
+        これは警告としてログに残ります。上記の例で言えば、<code>/apps</code>
+        の URL に対するタイムアウト値は、結果として <code>60</code> ではなく
+        <code>10</code>になるのです。</p>
+
+        <p>もしワーカーの共有を避けたければ、ワーカーの定義を URL の長さでソートしてください。
+        そして、長い URL から並べてください。もしワーカーの共有を最大限にしたいなら、
+        逆順に並べます。<code class="directive"><a href="#proxypass">ProxyPass</a></code>
+        ディレクティブの並びについて、関連する警告も見てください。</p>
+
+      </div> 
+
+      <p>明示的に設定するワーカーにはふたつの種類があります:
+      <dfn>直接のワーカー</dfn> と <dfn>バランサー (負荷分散) ワーカー</dfn> です。
+      これらは後ほど <code class="directive"><a href="#proxypass">ProxyPass</a></code>
+      ディレクティブの中で説明する重要な設定パラメータを数多くサポートします。
+      同じパラメータは <code class="directive"><a href="#proxyset">ProxySet</a></code>
+      を使っても設定可能です。</p>
+
+      <p>直接のワーカーで利用できるパラメータはプロトコルに依存します。
+      プロトコルはオリジンサーバの URL で指定されます。
+      利用可能なプロトコルは <code>ajp</code>,
+      <code>ftp</code>, <code>http</code>, <code>scgi</code> です。</p>
+
+      <p>バランサーワーカーは仮想ワーカーです。直接のワーカーを
+      リクエストを実際に処理するメンバーとして使います。
+      それぞれのバランサーは複数のメンバーを持ちえます。
+      リクエストを処理する時、設定した負荷分散のアルゴリズムにもとづき
+      メンバーのひとつを選択します。</p>
+
+      <p>ワーカーの URL のプロトコルスキームに <code>balancer</code>
+      を使うと、バランサワーカーが生成されます。
+      バランサーの URL が、バランサワーカーを一意に識別します。
+      <code class="directive"><a href="#balancermember">BalancerMember</a></code>
+      を使って、バランサーにメンバーを追加します。</p>
+
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="access" id="access">プロキシへのアクセス制御</a></h2>
+      <p>プロキシへのアクセスは以下のように <code class="directive"><a href="#proxy">&lt;Proxy&gt;</a></code> コンテナの中に
+      ディレクティブを書くことで制御できます:</p>
+
+      <div class="example"><p><code>
+        &lt;Proxy *&gt;<br />
+        <span class="indent">
+          Order Deny,Allow<br />
+          Deny from all<br />
+          Allow from 192.168.0<br />
+        </span>
+        &lt;/Proxy&gt;
+      </code></p></div>
+
+      <p>アクセス制御のためのディレクティブのより詳しい情報は
+      <code class="module"><a href="../mod/mod_authz_host.html">mod_authz_host</a></code> をお読みください。</p>
+
+      <p>(<code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> ディレクティブを
+      使って) フォワードプロキシを設定している場合は、厳しくアクセス
+      制限を行なうことが非常に大切です。そうしないと、任意のクライアントが
+      身元を明かすことなく任意のホストにアクセスするためにプロキシサーバを使うことが
+      できてしまいます。これはあなた自身のネットワークにとっても、インターネット
+      全体にとっても危険なことです。(<code>ProxyRequests Off</code> にして
+      <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブを使って)
+      リバースプロキシを使っている場合には、クライアントはあなたが明示的に
+      設定したホストにしかアクセスできないため、フォワードプロキシのとき
+      ほどアクセス制御に力を注がなくても大丈夫です。</p>
+
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="startup" id="startup">遅い起動</a></h2>
+      <p><code class="directive"><a href="#proxyblock">ProxyBlock</a></code> ディレクティブを使っている場合、
+      後に行うマッチ判定のため、起動時にホストの名前解決をして
+      IP アドレスをキャッシュします。ホスト名の名前解決の
+      速さによっては、数秒 (かそれ以上) かかるかもしれません。</p>
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="intranet" id="intranet">イントラネットプロキシ</a></h2>
+      <p>イントラネットにある Apache プロキシサーバは外部へのリクエストを
+      会社のファイアウォールを通して送らなければなりません。(このためには
+      個々の <var>scheme</var> についてそれぞれ、ファイアウォールの
+      プロキシにフォワードされるように
+      <code class="directive"><a href="#proxyremote">ProxyRemote</a></code> ディレクティブを
+      設定してください)。しかしイントラネット内のリソースにアクセスするときは、
+      ファイアウォールを通さないでもアクセスできます。
+      どのホストがイントラネットに属し、直接アクセスすべきかを指定するには、
+      <code class="directive"><a href="#noproxy">NoProxy</a></code> ディレクティブが
+      役に立ちます。</p>
+
+      <p>イントラネット内のユーザは WWW のリクエストでローカルドメインを
+      省略することがよくあります。<code>http://somehost.example.com/</code>
+      というリクエストの代わりに "http://somehost/" をリクエストしたりします。
+      このようなリクエストを受け付け、サーバに設定されているローカルドメインが
+      暗黙のうちに使われていると解釈して、単純にリクエストを処理するものも
+      商用プロキシサーバの中にはあります。
+      サーバが <a href="#proxyrequests">プロキシのサービス用に設定されていて</a>
+      <code class="directive"><a href="#proxydomain">ProxyDomain</a></code> ディレクティブが
+      使用された場合には、Apache はクライアントにリダイレクト応答を送って、
+      正しい、完全な <span class="transnote">(<em>訳注:</em> fully qualified)</span>
+      サーバのアドレスに送ることができます。このように
+      リダイレクトすると、ユーザのブックマークが正しい完全なホスト名を含む
+      ことにもなるため、より好ましい方法と言えるでしょう。</p>
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="envsettings" id="envsettings">プロトコルの調整</a></h2>
+      <p>Keepalive や HTTP/1.1 を適切に実装していないオリジンサーバに対して
+      <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> がリクエストを送信する場合、
+      HTTP/1.0 を使って keepalive を無しにしてリクエストを送るようにする <a href="../env.html">環境変数</a>が二つあります。これらは <code class="directive"><a href="../mod/mod_env.html#setenv">SetEnv</a></code> ディレクティブで設定します。</p>
+
+      <p><code>force-proxy-request-1.0</code> と <code>proxy-nokeepalive</code>
+      がその環境変数です。</p>
+
+      <div class="example"><p><code>
+        &lt;Location /buggyappserver/&gt;<br />
+        <span class="indent">
+          ProxyPass http://buggyappserver:7001/foo/<br />
+          SetEnv force-proxy-request-1.0 1<br />
+          SetEnv proxy-nokeepalive 1<br />
+        </span>
+        &lt;/Location&gt;
+      </code></p></div>
+
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="request-bodies" id="request-bodies">リクエストボディ</a></h2>
+
+    <p>POST メソッドなどのリクエストには、リクエストボディがあります。
+    HTTP プロトコル仕様によると、ボディのあるリクエストは chunked
+    転送を使うか、<code>Content-Length</code>
+    ヘッダを送信しなければなりません。
+    このようなリクエストをオリジンサーバに送信する場合、
+    <code class="module"><a href="../mod/mod_proxy_http.html">mod_proxy_http</a></code> は常に <code>Content-Length</code>
+    を送ろうと試みます。しかし、ボディが大きく、オリジナルのリクエストで
+    chunked 転送が使われている場合、上流へのリクエストに
+    chunked 転送も使われます。
+    この挙動は <a href="../env.html">環境変数</a>で制御できます。
+    <code>proxy-sendcl</code> を設定すると、
+    常に <code>Content-Length</code> を送り、最大限の互換性を確保します。
+    逆に <code>proxy-sendchunked</code> を設定すると、
+    chunked エンコードを使ってリソース消費を抑えます。</p>
+
+    </div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="x-headers" id="x-headers">リバースプロキシのリクエストヘッダ</a></h2>
+
+    <p>リバースプロキシとして振る舞う時 (例えば、<code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブを使う時) 、
+    <code class="module"><a href="../mod/mod_proxy_http.html">mod_proxy_http</a></code> は、オリジンサーバに情報を渡すために
+    いくつかのリクエストヘッダを追加します。これらのヘッダは以下になります。</p>
+
+    <dl>
+      <dt><code>X-Forwarded-For</code></dt>
+      <dd>クライアントの IP アドレス。</dd>
+      <dt><code>X-Forwarded-Host</code></dt>
+      <dd>オリジナルのホスト名。クライアントが <code>Host</code>
+      リクエストヘッダで渡す。</dd>
+      <dt><code>X-Forwarded-Server</code></dt>
+      <dd>プロキシサーバのホスト名。</dd>
+    </dl>
+
+    <p>オリジンサーバ上でこれらのヘッダを扱う時は注意してください。
+    と言うのも、オリジナルのリクエストが既に同じヘッダを持っていると、
+    ヘッダが一つ以上の値 (コンマで区切られます) を持つ可能性があるからです。
+    例えば、 オリジンサーバ上でオリジナルのクライアントのIPアドレスをログに
+    記録するため、ログフォーマットに <code>%{X-Forwarded-For}i</code> を
+    指定したとします。この時、リクエストが複数のプロキシを経由していると、
+    複数のアドレスがログに載る可能性があります。</p>
+
+    <p><code class="directive"><a href="#proxypreservehost">ProxyPreserveHost</a></code> と
+    <code class="directive"><a href="#proxyvia">ProxyVia</a></code> ディレクティブ
+    も参照してください。これらは他のリクエストヘッダに影響を与えます。</p>
+
+   </div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="AllowCONNECT" id="AllowCONNECT">AllowCONNECT</a> <a name="allowconnect" id="allowconnect">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシを経由して、どのポートに <code>CONNECT</code>
+できるかを指定する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>AllowCONNECT <var>port</var> [<var>port</var>] ...</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>AllowCONNECT 443 563</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">AllowCONNECT</code> はプロキシの <code>CONNECT</code>
+    メソッドが接続を許可するポート番号のリストを指定します。
+    今日のブラウザは、<code>https</code> コネクションが要求されていて、
+    HTTP 上でのプロキシによるトンネリングができるときに、
+    このメソッドを使います。</p>
+
+    <p>デフォルトの設定では、https のデフォルトポート (<code>443</code>) と
+    デフォルトの snews ポート (<code>563</code>) が有効になっています。
+    このデフォルトを上書きして、リストに記載したポートにのみ接続を許可したい場合、
+    <code class="directive">AllowCONNECT</code> ディレクティブを使用します。</p>
+
+    <p><code>CONNECT</code> を使用するには、<code class="module"><a href="../mod/mod_proxy_connect.html">mod_proxy_connect</a></code>
+    がサーバに組み込まれていなければならないことに注意してください。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="BalancerMember" id="BalancerMember">BalancerMember</a> <a name="balancermember" id="balancermember">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>ロードバランサのグループにメンバーを追加</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>BalancerMember [<var>balancerurl</var>] <var>url</var> [<var>key=value [key=value ...]]</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>BalancerMember は Apache 2.2 以降でのみ使用可能</td></tr>
+</table>
+    <p>このディレクティブでロードバランサのグループにメンバを追加します。
+    <code>&lt;Proxy <var>balancer://</var>...&gt;</code> ディレクティブのコンテナ
+    内で使われることが多く、<code class="directive"><a href="#proxypass">ProxyPass</a></code>
+    ディレクティブと共通のキーバリューペアのパラメータを取ります。</p>
+    <p><code>&lt;Proxy <var>balancer://</var>...&gt;</code> ディレクティブの
+    コンテナ内に書かない場合のみ、 balancerurl 引数が必要です。 これは
+    <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブで
+    バランサを定義した時の URL と同じ働きをします。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="NoProxy" id="NoProxy">NoProxy</a> <a name="noproxy" id="noproxy">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>直接接続する ホスト、ドメイン、ネットワーク</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>NoProxy <var>host</var> [<var>host</var>] ...</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブはイントラネット中の Apache プロキシサーバにのみ
+    有用です。<code class="directive">NoProxy</code> ディレクティブは空白区切りで、
+    サブネット、IP アドレス、ホスト、ドメインのリストを指定します。
+    これらのどれかにマッチするホストへのリクエストは <code class="directive"><a href="#proxyremote">ProxyRemote</a></code> で設定されたプロキシサーバに
+    フォワードされず、直接処理されます。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      ProxyRemote  *  http://firewall.example.com:81<br />
+      NoProxy         .example.com 192.168.112.0/21
+    </code></p></div>
+
+    <p><code class="directive">NoProxy</code> ディレクティブの <var>host</var> 引数は
+    以下の種類のどれかです:</p>
+
+    <dl>
+    
+    <dt><var><a name="domain" id="domain">Domain</a></var></dt>
+    <dd>
+    <p><dfn>Domain</dfn> は先頭にピリオドを書いた部分 DNS ドメイン名です。
+    同一 DNS ドメイン及びゾーン (<em>すなわち</em>、ホスト名の末尾がすべて
+    <var>Domain</var> で終わっているということ) に属するホストのリストを
+    表します)。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      .com .apache.org.
+    </code></p></div>
+
+    <p><var>Domain</var> を <a href="#hostname">Hostname</a> と区別するために (意味的にも構文的にも。DNS ドメインも
+    DNS の A レコードを持つことができるのです!)、<var>Domain</var> は
+    常にピリオドで始まります。</p>
+
+    <div class="note"><h3>注</h3>
+      <p>ドメイン名の比較は大文字小文字を区別せずに行なわれ、<var>Domain</var>
+      は常に DNS ツリーのルートから始まるものとみなされます。ですから、
+      次の二つのドメイン <code>.ExAmple.com</code> と
+      <code>.example.com.</code> (最後のピリオドに注目) は同一であると
+      みなされます。ドメインの比較は DNS ルックアップなしで行なわれるため、
+      サブネットの比較よりもずっと効率的です。</p>
+    </div></dd>
+
+    
+    <dt><var><a name="subnet" id="subnet">SubNet</a></var></dt>
+    <dd>
+    <p><dfn>SubNet</dfn> は数値形式 (ドットで区切られた四つの数字) の
+    部分インターネットアドレスです。後にスラッシュと <var>Subnet</var>
+    の意味のあるビット数を指定するネットマスクとを続けることができます。
+    共通のネットワークインタフェースを使って到達することのできるサブネットを
+    表すために使われます。明示的にネットマスクを指定しない場合は
+    最後の省略された (もしくは値が 0 の) 数字がマスクを指定します。
+    (この場合は、ネットマスクは 8 ビット単位でしか指定できません。)
+    例:</p>
+
+    <dl>
+    <dt><code>192.168</code> もしくは <code>192.168.0.0</code></dt>
+    <dd>サブネット 192.168.0.0 と暗黙の 16 ビット有効なネットマスク
+    (<code>255.255.0.0</code> というネットマスクの形式で使われることも
+    あります)</dd>
+    <dt><code>192.168.112.0/21</code></dt>
+    <dd>サブネット<code>192.168.112.0/21</code> と 21 ビット有効な
+    ネットマスク (<code>255.255.248.0</code> という形式で使われることも
+    あります)</dd>
+    </dl>
+
+    <p>特別な場合に、32 ビット有効な <em>SubNet</em> は
+    <var><a href="#ipadr">IPAddr</a></var> と同等で、
+    0 ビット有効な <var>SubNet</var> (<em>例えば</em>、0.0.0.0/0) は
+    すべての IP アドレスにマッチする定数 <var>_Default_</var> と同じです。</p>
+    </dd>
+
+    
+    <dt><var><a name="ipaddr" id="ipaddr">IPAddr</a></var></dt>
+    <dd>
+    <p><dfn>IPAddr</dfn> は数値形式 (ドットで区切られた四つの数字) の
+    完全インターネットアドレスです。通常はこのアドレスはホストを
+    表しますが、必ずしもアドレスに対応する DNS ドメイン名があるわけでは
+    ありません。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      192.168.123.7
+    </code></p></div>
+
+    <div class="note"><h3>注</h3>
+      <p><var>IPAddr</var> は DNS システムにより解決される必要がないので、
+      apache の性能が向上するかもしれません。</p>
+    </div></dd>
+
+    
+    <dt><var><a name="hostname" id="hostname">Hostname</a></var></dt>
+    <dd>
+    <p><dfn>Hostname</dfn> は DNS ドメインサービスにより一つもしくは
+    複数の <var><a href="#ipaddr">IPAddr</a></var> に解決可能な
+    完全な DNS ドメイン名です。これは (<var><a href="#domain">Domain</a></var>
+    と違って、説明は上記を参照) 論理的なホストを表し、少くとも一つの
+    <var><a href="#ipaddr">IPAddr</a></var> (もしくは違う
+    <var><a href="#ipaddr">IPAddr</a></var> のホストのリスト) に解決
+    されなければなりません)。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      prep.ai.example.com<br />
+      www.apache.org
+    </code></p></div>
+
+    <div class="note"><h3>注</h3>
+      <p>多くの場合、<var>Hostname</var> の代わりに <var><a href="#ipaddr">IPAddr</a></var> を指定した方が、DNS ルックアップを
+      避けることができるため、効率が良くなります。Apache の名前解決は
+      ネームサーバへの接続が遅い PPP 上の場合などにかなり時間を取られる
+      ことがあります。</p>
+      <p><var>Hostname</var> の比較は大文字小文字を区別せずに行なわれ、
+      <var>Hostname</var> は常に DNS ツリーのルートから始まるものとみなされます。
+      ですから、二つのドメイン <code>WWW.ExAmple.com</code> と
+      <code>www.example.com.</code> (最後のピリオドに注目) は同一であると
+      みなされます。</p>
+     </div></dd>
+    </dl>
+
+<h3>参照</h3>
+<ul>
+<li><a href="../dns-caveats.html">DNS に関する問題</a></li>
+</ul>
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="Proxy" id="Proxy">&lt;Proxy&gt;</a> <a name="proxy" id="proxy">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされるリソースに適用されるコンテナ</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>&lt;Proxy <var>wildcard-url</var>&gt; ...&lt;/Proxy&gt;</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">&lt;Proxy&gt;</code> セクション中の
+    ディレクティブはマッチするプロキシされるコンテンツにのみ適用されます。
+    シェル形式のワイルドカードが使えます。</p>
+
+    <p>例えば、次の設定は <code>yournetwork.example.com</code> の
+    ホストにのみプロキシサーバを経由したアクセスを許可します:</p>
+
+    <div class="example"><p><code>
+      &lt;Proxy *&gt;<br />
+      <span class="indent">
+        Order Deny,Allow<br />
+        Deny from all<br />
+        Allow from yournetwork.example.com<br />
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+    <p>次の例は <code>example.com</code> の <code>foo</code> ディレクトリの
+    すべてのファイルに対して、プロキシサーバを通して送られたときには
+    <code>INCLUDES</code> フィルタを通して送るように設定します:</p>
+
+    <div class="example"><p><code>
+      &lt;Proxy http://example.com/foo/*&gt;<br />
+      <span class="indent">
+        SetOutputFilter INCLUDES<br />
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+
+<h3>参照</h3>
+<ul>
+<li><code class="directive"><a href="#proxymatch">&lt;ProxyMatch&gt;</a></code></li>
+</ul>
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyBadHeader" id="ProxyBadHeader">ProxyBadHeader</a> <a name="proxybadheader" id="proxybadheader">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>応答におかしなヘッダがある場合の扱い方を決める</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyBadHeader IsError|Ignore|StartBody</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyBadHeader IsError</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.0.44 以降で使用可能</td></tr>
+</table>
+    <p><code class="directive">ProxyBadHeader</code> ディレクティブは構文的に
+    間違ったレスポンスヘッダ (<em>つまり</em> コロンを含まないもの) を受け取ったときに
+    <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> がどう振る舞うかを決めます。以下の引数を
+    取ることができます:</p>
+
+    <dl>
+    <dt><code>IsError</code></dt>
+    <dd>リクエストを中止して 502 (Bad Gateway) 応答を返す。
+    これがデフォルトの動作です。</dd>
+
+    <dt><code>Ignore</code></dt>
+    <dd>間違ったヘッダ行をそもそも存在しなかったものとして扱う。</dd>
+
+    <dt><code>StartBody</code></dt>
+    <dd>間違ったヘッダ行を受け取ったら、ヘッダの読み込みを終了して、
+    それ以降の残りをボディとして扱う。これはヘッダとボディの間に空行を入れ忘れて
+    しまっているような、きちんと動作していないバックエンドサーバがあるときに、
+    問題を回避するのに役に立ちます。</dd>
+    </dl>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyBlock" id="ProxyBlock">ProxyBlock</a> <a name="proxyblock" id="proxyblock">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシ接続を禁止する語句、ホスト名、ドメインを指定する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyBlock *|<var>word</var>|<var>host</var>|<var>domain</var>
+[<var>word</var>|<var>host</var>|<var>domain</var>] ...</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">ProxyBlock</code> ディレクティブは空白で区切られた
+    語句、ホスト名、ドメインのリストを指定します。サイト名にその語句、ホスト名、
+    ドメインを含むサイトへの HTTP、HTTPS、FTP によるドキュメントのリクエストは
+    プロキシサーバにより <em>ブロックされます</em>。プロキシモジュールは
+    起動時にホスト名と思しき項目の IP アドレスを調べ、後のテストのために
+    キャッシュします。これにより、サーバの起動が少し遅くなるかもしれません。</p>
+
+    <div class="example"><h3>Example</h3><p><code>
+      ProxyBlock joes-garage.com some-host.co.uk rocky.wotsamattau.edu
+    </code></p></div>
+
+    <p><code>rocky.wotsamattau.edu</code> が IP アドレスで参照されたときでも
+    マッチします。</p>
+
+    <p><code>wotsamattau.edu</code> のマッチには <code>wotsamattau</code>
+    だけでも十分です。</p>
+
+    <div class="example"><p><code>
+      ProxyBlock *
+    </code></p></div>
+
+    <p>はすべてのサイトへの接続をブロックすることに注意してください。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyDomain" id="ProxyDomain">ProxyDomain</a> <a name="proxydomain" id="proxydomain">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされたリクエストのデフォルトのドメイン名</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyDomain <var>Domain</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブはイントラネット内の Apache プロキシサーバにのみ
+    有用です。<code class="directive">ProxyDomain</code> ディレクティブは
+    apache プロキシサーバが属するデフォルトのドメインを指定します。
+    ドメイン名の無いリクエストを受けた場合、設定された <var>Domain</var>
+    が追加された同じホストへのリダイレクト応答が返されます。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      ProxyRemote  *  http://firewall.example.com:81<br />
+      NoProxy         .example.com 192.168.112.0/21<br />
+      ProxyDomain     .example.com
+    </code></p></div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyErrorOverride" id="ProxyErrorOverride">ProxyErrorOverride</a> <a name="proxyerroroverride" id="proxyerroroverride">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされたコンテンツのエラーページを上書きする</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyErrorOverride On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyErrorOverride Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.0 以降で使用可能</td></tr>
+</table>
+    <p>このディレクティブはリバースプロキシを使用していて、
+    エンドユーザに送られるエラーページの外見を共通のものにしたいときに
+    有用です。このディレクティブは (<code class="module"><a href="../mod/mod_include.html">mod_include</a></code> の SSI によって)
+    インクルードされたファイルがエラーコードを取得して、正しく動作を
+    するようにもします (デフォルトの動作は、プロキシされたサーバの
+    エラーページの表示で、このディレクティブを有効にすると SSI のエラー
+    メッセージを表示します)。</p>
+
+    <p>このディレクティブは informational (1xx), 成功 (2xx),
+    リダイレクト (3xx) ステータスのレスポンス処理には影響しません。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyFtpDirCharset" id="ProxyFtpDirCharset">ProxyFtpDirCharset</a> <a name="proxyftpdircharset" id="proxyftpdircharset">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされた FTP (の一覧表示) のキャラクタセットを定義</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyFtpDirCharset <var>character set</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyFtpDirCharset ISO-8859-1</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.2.7 以降で使用可能</td></tr>
+</table>
+    <p><code class="directive">ProxyFtpDirCharset</code> ディレクティブは、
+    <code class="module"><a href="../mod/mod_proxy_ftp.html">mod_proxy_ftp</a></code> が HTML 形式で生成する FTP のディレクトリ一覧
+    画面のキャラクタセットを定義します。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyIOBufferSize" id="ProxyIOBufferSize">ProxyIOBufferSize</a> <a name="proxyiobuffersize" id="proxyiobuffersize">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>内部データスループットバッファのサイズを決定する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyIOBufferSize <var>bytes</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyIOBufferSize 8192</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">ProxyIOBufferSize</code> ディレクティブは入力と
+    出力用の一時メモリとして使われる内部バッファのサイズを調整します。
+    サイズは <code>8192</code> 以下でなければなりません。</p>
+
+    <p>ほとんどすべての場合、この値を変更する理由はありません。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyMatch" id="ProxyMatch">&lt;ProxyMatch&gt;</a> <a name="proxymatch" id="proxymatch">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>正規表現でのマッチによるプロキシリソース用のディレクティブコンテナ</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>&lt;ProxyMatch <var>regex</var>&gt; ...&lt;/ProxyMatch&gt;</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">&lt;ProxyMatch&gt;</code> は URL のマッチに
+    <a class="glossarylink" href="../glossary.html#regex" title="用語集を参照">正規表現</a> を用いることを除けば
+    <code class="directive">&lt;Proxy&gt;</code> ディレクティブと同じです。</p>
+
+<h3>参照</h3>
+<ul>
+<li><code class="directive"><a href="#proxy">&lt;Proxy&gt;</a></code></li>
+</ul>
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyMaxForwards" id="ProxyMaxForwards">ProxyMaxForwards</a> <a name="proxymaxforwards" id="proxymaxforwards">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リクエストがフォワードされるプロキシの最大数</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyMaxForwards <var>number</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyMaxForwards -1</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.0 以降で使用可能; Apache 2.2.7でデフォルト動作が変わりました</td></tr>
+</table>
+    <p><code class="directive">ProxyMaxForwards</code> ディレクティブは
+    リクエストに <code>Max-Forwards</code> ヘッダが指定されていない場合に
+    リクエストが通過可能なプロキシの最大数を設定します。これは
+    プロキシの無限ループや DoS 攻撃を防ぐために設定されるかもしれません。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      ProxyMaxForwards 15
+    </code></p></div>
+
+    <p><code class="directive">ProxyMaxForwards</code> の設定は、HTTP/1.1 (RFC2616)
+    に違反します。と言うのも、RFC2616 は、クライアントが <code>Max-Forwards</code>
+    ヘッダをセットしない時、プロキシが <code>Max-Forwards</code> ヘッダを
+    セットすることを禁じているからです。
+    Apache の初期バージョンは常にセットする可能性がありました。
+    <code class="directive">ProxyMaxForwards</code> に負数 (デフォルト値の -1 も含む)
+    を指定すると、HTTP/1.1 準拠の動作になります。しかし、これは無限ループの危険性を残します。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPass" id="ProxyPass">ProxyPass</a> <a name="proxypass" id="proxypass">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リモートサーバをローカルサーバの URL 空間にマップする</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPass [<var>path</var>] !|<var>url</var> [<var>key=value</var>
+<var>key=value</var> ...]] [nocanon] [interpolate]</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブはリモートサーバをローカルサーバの名前空間に
+    マップできるようにします。ローカルサーバは通常の意味でのプロキシと
+    しては動作せず、リモートサーバのミラーとして振る舞います。
+    ローカルサーバはしばしば <dfn>リバースプロキシ</dfn> や <dfn>ゲートウェイ</dfn>
+    と呼ばれます。
+    <var>path</var> はローカルの仮想パスの名前です。<var>url</var> は
+    リモートサーバの部分 URL になり、クエリー文字列を含むことはできません。</p>
+
+    <div class="warning"><code class="directive">ProxyPass</code> ディレクティブを
+    使っているときは <code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> ディレクティブは通常は
+    <strong>off</strong> に設定されているべきです。</div>
+
+    <p>ローカルサーバのアドレスが <code>http://example.com/</code> であると
+    します。すると、</p>
+
+    <div class="example"><p><code>
+      ProxyPass /mirror/foo/ http://backend.example.com/
+    </code></p></div>
+
+    <p>と設定すると <code>http://example.com/mirror/foo/bar</code> への
+    リクエストが内部的に <code>http://backend.example.com/bar</code> への
+    プロキシリクエストに変換されることになります。</p>
+
+    <div class="warning">
+    <p>もし第一引数が <strong>/</strong> で終端するならば、第二引数も
+       <strong>/</strong> で終端すべきです。逆もまた然りで、第一引数が終端しないならば、
+       第二引数も終端すべきではありません。
+       これに反すると、バックエンドサーバ向けに変換されたリクエストは
+       必要なスラッシュを欠く可能性があり、バックエンドサーバは期待する結果を返しません。
+    </p>
+    </div>
+
+    <p>サブディレクトリをリバースプロキシしたくないときに <code>!</code> は
+    役に立ちます。<em>例えば</em>、</p>
+
+    <div class="example"><p><code>
+      ProxyPass /mirror/foo/i !<br />
+      ProxyPass /mirror/foo http://backend.example.com
+    </code></p></div>
+
+    <p>は <code>/mirror/foo/i</code> を <em>除く</em>
+    <code>/mirror/foo</code> へのすべてのリクエストを
+    <code>backend.example.com</code> にプロキシします。</p>
+
+    <div class="warning"><h3>ProxyPass ディレクティブの順序</h3>
+      <p><code class="directive"><a href="#proxypass">ProxyPass</a></code> と
+      <code class="directive"><a href="#proxypassmatch">ProxyPassMatch</a></code> のルールの
+      設定は設定ファイル中の順序どおりにチェックされます。
+      最初にマッチしたルールが勝ちます。このため通常は、
+      マッチが重なる <code class="directive"><a href="#proxypass">ProxyPass</a></code>
+      ルールは、長い URL が先になるように並べるべきです。
+      そうしないと、後に書かれた長い URL にマッチするルールが、
+      先に書かれた短い URL の先頭の部分にマッチしたルールで隠される可能性があります。
+      ワーカーの共有とも多少の関係があることにも注意してください。</p>
+
+      <p>同じ理由で、否定処理も一般的な <code class="directive">ProxyPass</code>
+      ディレクティブの <em>前に</em> 書くべきです。</p>
+
+    </div> 
+
+    <p>Apache HTTP サーバ 2.1 以降、バックエンドサーバとの接続に
+    プールされたコネクションを使えるようになりました。
+    要求に応じて生成されたコネクションは将来の使用のためにプール内に維持されます。
+    プールサイズとその他の設定の制限は <code class="directive">ProxyPass</code>
+    ディレクティブに <code>key=value</code> パラメータで設定します。
+    パラメータは後述する表に示します。</p>
+
+    <p>デフォルトで、mod_proxy は Web サーバの子プロセスが同時に使いうる
+    最大数のコネクションを許し維持するようにします。
+    この数をデフォルトから減らすには <code>max</code> パラメータを使ってください。
+    生存期間を設定するには <code>ttl</code> パラメータを使ってください。
+    <code>ttl</code> 秒を越えて使われていないコネクションは切断されます。
+    バックエンドサーバのキープアライブがタイムアウトして、切断されようとしている
+    コネクションが使われることを防ぐために <code>ttl</code> を使えます。</p>
+
+    <p>コネクションプールは Web サーバの子プロセスごとに維持されます。
+    <code>max</code> やその他の設定は、すべての子プロセスの間で調整はされません。
+    ただし、設定により、ただひとつの子プロセスに設定を委ねた場合や
+    MPM 設計によってはこの限りではありません。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+        ProxyPass /example http://backend.example.com max=20 ttl=120 retry=300
+    </code></p></div>
+
+    <table>
+    <tr><th>パラメータ</th>
+        <th>デフォルト値</th>
+        <th>説明</th></tr>
+    <tr><td>min</td>
+        <td>0</td>
+        <td>コネクションプール内で実際の接続に関連していないエントリの最小数です。
+        デフォルト値から変更する必要があるのは、バックエンドとの接続に必要な
+        ヒープメモリを事前に割り当てるか維持しなければいけない特別な状況のみです。</td></tr>
+    <tr><td>max</td>
+        <td>1...n</td>
+        <td>バックエンドサーバとの接続数の最大値です。
+        デフォルト値は、使用している MPM のプロセスあたりのスレッド数になっています。
+        Prefork MPM では常に 1 で、他の MPM では <code class="directive">ThreadsPerChild</code>
+        ディレクティブで調節できます。</td></tr>
+    <tr><td>smax</td>
+        <td>max</td>
+        <td>もしコネクションプール内の接続中エントリが <code>ttl</code> パラメータ
+        で設定した生存期間より長く未使用のままであれば、
+        この指定値を越える分のエントリを解放します。
+        もしエントリが関連するコネクションを持てば、接続を閉じます。
+        デフォルト値から変更する必要があるとすれば、
+        コネクションが生存期間を越えてしまった時に、
+        コネクションプール内の該当エントリの解放とコネクションの切断を
+        より積極的に必要とする特別な場合のみです。</td></tr>
+    <tr><td>acquire</td>
+        <td>-</td>
+        <td>設定すると、コネクションプールからフリーのコネクションを取得するために
+        待機する待ち時間 (ミリ秒単位) の最大値になります。フリーのコネクションがプールになかった場合は、
+        <code>SERVER_BUSY</code> ステータスをクライアントに返します。
+    </td></tr>
+    <tr><td>connectiontimeout</td>
+        <td>timeout</td>
+        <td>接続タイムアウトを秒で指定します。
+        バックエンドに接続を完了するまでの Apache の待ち時間です。
+        値の最後に ms を書くと、タイムアウトの単位をミリ秒にできます。
+    </td></tr>
+    <tr><td>disablereuse</td>
+        <td>Off</td>
+        <td>使用後すぐに mod_proxy がバックエンドとの接続を切断してほしい時は、
+        このパラメータを有効にすべきです。そうすることで、バックエンドとの
+        永続的な接続とプーリングを無効にできます。
+        これはいくつかの状況下で役に立ちます。例えば、Apache とバックエンドサーバ
+        の間にファイアウォールが存在し (プロトコルは問わないとします)、黙って
+        接続を切られる場合や、あるいは、バックエンドサーバ自体が DNS で
+        ラウンドロビンされている場合などです。コネクションプーリングによる再利用を
+        無効にするには、このパラメータ値を <code>On</code> にしてください。
+    </td></tr>
+    <tr><td>flushpackets</td>
+        <td>off</td>
+        <td>プロキシモジュールが "chunk" ごとに出力データを自動的に強制送信(フラッシュ)
+        するかを指定します。 'off' は必要な時だけ強制送信します。
+        'on' はそれぞれの "chunk" データごとに強制送信します。 'auto' は、一定時間待機し、
+        'flushwait' で指定したミリ秒の間、入力データが無ければ強制送信します。
+        現在、このパラメータは AJP でのみ意味があります。
+    </td></tr>
+    <tr><td>flushwait</td>
+        <td>10</td>
+        <td>'flushpackets' パラメータの値が 'auto' の場合、出力データを強制送信する前に、
+        次の入力をどのぐらい待つかをミリ秒単位で指定します。
+    </td></tr>
+    <tr><td>keepalive</td>
+        <td>Off</td>
+        <td><p>バックエンドサーバと Apache の間にファイアーウォールがある場合には、
+        このパラメータを使ってください。ファイアウォールは往々にして、
+        非活動状態のコネクションを落とそうとします。
+        このフラグは OS に指示して、<code>KEEP_ALIVE</code> メッセージを非活動状態の
+        コネクションでも送るようにします。これによってファイアウォールによってコネクションが
+        落とされることを防げます。keepalive を有効にするには、このプロパティを
+        <code>On</code> にしてください。</p>
+    <p>初期およびその後の TCP キープアライブの間隔は OS のグローバル設定に依存しますが、
+    2 時間以上にしたほうがよいでしょう。有効性を考えると、
+    OS で設定した間隔はファイアウォールで使われる閾値より小さくあるべきです。</p>
+    </td></tr>
+    <tr><td>lbset</td>
+        <td>0</td>
+        <td>ワーカーが属するロードバランサのクラスタセットを設定します。
+        ロードバランサは、より小さい lbset 値を持つメンバーから使おうとします。
+    </td></tr>
+    <tr><td>ping</td>
+        <td>0</td>
+        <td>この設定により、Web サーバは ajp13 通信でリクエストを送信する前に
+        <code>CPING</code> を送るようになります。
+        パラメータ値は、<code>CPONG</code> リプライを待つ時間を秒単位で指定します。
+        この機能は、ハングしたり高負荷状態の Tomcat に起因する問題を回避するために
+        追加されました。 また、ajp13 側に ping/pong 機能のサポートが必要です。
+        Tomcat は 3.3.2 以降, 4.1.28 以降, 5.0.13 以降が ping/pong 機能を実装しています。
+        この機能は、通常利用でのネットワークトラフィックを増やす可能性があり、
+        問題になるかもしれません。しかし、クラスタを形成するノードの一部が
+        ダウンしたり高負荷になった時にはトラフィックを抑制できる可能性があります。
+        現在、この設定は AJP でのみ意味があります。
+        値の最後に ms を書くと、単位をミリ秒にできます。
+    </td></tr>
+    <tr><td>loadfactor</td>
+        <td>1</td>
+        <td>ワーカーあたりの負荷係数です。BalancerMember で使います。
+        1 から 100 までの数字でそのワーカーに対する正規化された負荷率を指定します。
+    </td></tr>
+    <tr><td>redirect</td>
+        <td>-</td>
+        <td>ワーカーのリダイレクション経路です。この値は通常は、
+        クラスタから安全にノードを取り除けるように動的にセットされます。
+        もし設定すると、セッション ID 無しの全てのリクエストは、
+        この値と同じルーティングパラメータを持つ
+        BalancerMember にリダイレクトされます。
+    </td></tr>
+    <tr><td>retry</td>
+        <td>60</td>
+        <td>コネクションをプーリングするための、リトライのタイムアウトを秒で
+        指定します。バックエンドサーバへのコネクションプーリングが失敗した場合は、
+        タイムアウトの期間が過ぎるまで、そのサーバにリクエストをフォワードしません。
+        この機能を使うと、バックエンドサーバをメンテナンスのためにシャットダウンし、
+        後でオンラインに復帰させるといったことができます。
+        0 を指定すると、失敗したワーカーへ、タイムアウト無しで常にリトライします。
+    </td></tr>
+    <tr><td>route</td>
+        <td>-</td>
+        <td>ロードバランサで使われた場合のワーカーのルート値。
+        ルート値はセッション ID に付加される値です。
+    </td></tr>
+    <tr><td>status</td>
+        <td>-</td>
+        <td>一文字でワーカーの初期状態を定義します: 'D' は無効 (disabled)、
+        'S' は停止 (stopped)、 'I' はエラー無視 (ignore-errors)、
+        'H' はホットスタンバイ (hot-standby)、 'E' はエラー状態 (error) です。
+        '+' を文字の前に書いて有効にするか (これがデフォルト動作です)、 あるいは
+        '-' を書いて無効にできます。つまり、 'S-E' の指定は、ワーカーを停止状態
+        かつ、エラー状態フラグのクリアを意味します。
+    </td></tr>
+    <tr><td>timeout</td>
+        <td><code class="directive"><a href="#proxytimeout">ProxyTimeout</a></code></td>
+        <td>コネクションタイムアウトを秒で指定します。
+        バックエンドからのデータ受信およびバックエンドへのデータ送信の
+        Apache の待ち時間です。
+    </td></tr>
+    <tr><td>ttl</td>
+        <td>-</td>
+        <td>非活動状態のコネクションと、関連するコネクションプール内のエントリの
+        生存時間を秒で指定します。いったんこの制限に達すると、
+        コネクションはふたたび使われることはありません。
+        つまり、コネクションは一定時間後に閉じられます。
+    </td></tr>
+
+    </table>
+
+    <p>もし <code class="directive">ProxyPass</code> ディレクティブのスキームが
+    <code>balancer://</code> で始まる場合 (例えば <code>balancer://cluster/</code>、
+    パス情報は無視されます)、バックエンドのサーバと実際には通信しない
+    仮想ワーカーが生成されます。通信しない代わりに、このワーカーは幾つかの
+    "本物の" ワーカーの管理をつかさどります。
+    この場合、いくつかの特殊パラメータを、この仮想ワーカーに対して設定できます。
+    ロードバランス動作のより詳しい情報は、<code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code>
+    を参照してください。
+    </p>
+    <table>
+    <tr><th>パラメータ</th>
+        <th>デフォルト値</th>
+        <th>説明</th></tr>
+    <tr><td>lbmethod</td>
+        <td>byrequests</td>
+        <td>Balancer のロードバランス方法。使用するロードバランスの
+        スケジューリング方法を選びます。処理したリクエストの数で重み付けする
+        <code>byrequests</code> か、転送量のバイト数で重み付けする
+        <code>bytraffic</code> か、待機中のリクエスト数で振り分ける
+        <code>bybusyness</code> を設定できます (Apache HTTP サーバ 2.2.10 以降)。
+        デフォルトは<code>byrequests</code> です。
+    </td></tr>
+    <tr><td>maxattempts</td>
+        <td>ワーカーの数よりひとつ少ない数。あるいはワーカーがひとつであれば1</td>
+        <td>フェイルオーバーを試みる最大の回数を指定します。
+    </td></tr>
+    <tr><td>nofailover</td>
+        <td>Off</td>
+        <td><code>On</code> になっていると、ワーカーがエラーを起こしたり
+        無効になっている場合にセッションが切れます。
+        バックエンドサーバがセッションレプリケーションをサポートしていない場合は、
+        On にしてください。
+    </td></tr>
+    <tr><td>stickysession</td>
+        <td>-</td>
+        <td>バランサーのスティッキーセッション名です。通常はこの値は <code>JSESSIONID</code>
+        や <code>PHPSESSIONID</code> といったものになりますが、この値は
+        セッションをサポートするバックエンドのアプリケーションサーバに依存します。
+        バックエンドのアプリケーションサーバが、クッキーやURLエンコードID
+        に異なるセッション名を使う場合(サーブレットコンテナのように)、
+        | 文字でふたつの名前を区切ってください。
+        最初の名前がクッキー用で、二番目がURLパス用です。
+    </td></tr>
+    <tr><td>scolonpathdelim</td>
+        <td>Off</td>
+        <td><code>On</code> にセットすると、セミコロン文字 ';' をスティッキーセッション
+        の別の区切り文字として使えるようになります。
+        これは主に mod_jk の動作に合わせるために使います。例えば、
+        <code>JSESSIONID=6736bcf34;foo=aabfa</code> のような指定です。
+    </td></tr>
+    <tr><td>timeout</td>
+        <td>0</td>
+        <td>バランサーのタイムアウトを秒で指定します。
+        この値を設定すると、フリーのワーカーを取得するまでの最大待機時間になります。
+        デフォルトでは待機しません。
+    </td></tr>
+    <tr><td>failonstatus</td>
+        <td>-</td>
+        <td>ひとつ、あるいはコンマ区切りの複数の HTTP ステータスコードです。
+        この値を設定すると、列挙したステータスコードのどれかをバックエンドが返した時、
+        そのワーカーをエラー状態にします。ワーカーのエラーからの回復は
+        他のワーカーエラーと同じように動作します。
+        Apache HTTP サーバ 2.2.17 以降で使用可能です。
+    </td></tr>
+
+    </table>
+    <p>バランサーの設定例</p>
+    <div class="example"><p><code>
+      ProxyPass /special-area http://special.example.com smax=5 max=10<br />
+      ProxyPass / balancer://mycluster/ stickysession=JSESSIONID|jsessionid nofailover=On<br />
+      &lt;Proxy balancer://mycluster&gt;<br />
+      <span class="indent">
+        BalancerMember ajp://1.2.3.4:8009<br />
+        BalancerMember ajp://1.2.3.5:8009 loadfactor=20<br />
+        # Less powerful server, don't send as many requests there,<br />
+        BalancerMember ajp://1.2.3.6:8009 loadfactor=5<br />
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+    <p>ホットスタンバイの設定例です。他のメンバーが利用できない場合のみ
+    使われます。</p>
+    <div class="example"><p><code>
+      ProxyPass / balancer://hotcluster/ <br />
+      &lt;Proxy balancer://hotcluster&gt;<br />
+      <span class="indent">
+        BalancerMember ajp://1.2.3.4:8009 loadfactor=1<br />
+        BalancerMember ajp://1.2.3.5:8009 loadfactor=2<br />
+        # The below is the hot standby<br />
+        BalancerMember ajp://1.2.3.6:8009 status=+H<br />
+        ProxySet lbmethod=bytraffic
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+    <p>通常、mod_proxy は ProxyPass した URL を正規化します。
+    しかし、これによりバックエンドの互換性に問題が生じることがあります。
+    特に、<var>PATH_INFO</var> を使っている場合に起きがちです。
+    <var>nocanon</var> オプションは正規化を抑制し、URL のパスをそのまま ("raw")
+    バックエンドに伝えます。これがバックエンドのセキュリティに影響を与える可能性に
+    注意してください。と言うのも、プロキシによって提供されていた、
+    URL ベースの攻撃への通常の一定の防御を無くすことになるからです。</p>
+
+    <p>オプショナルな <var>interpolate</var> キーワード (httpd 2.2.9 以降で利用可能)
+    を <code class="directive">ProxyPassInterpolateEnv</code> ディレクティブと
+    一緒に使うと、<var>${VARNAME}</var> 形式で、 ProxyPass 設定に環境変数を
+    使えるようになります。この時、標準的な CGI 由来の環境変数の多くは
+    置換に使えないことに注意してください。そのため、複雑なルールの記述のためには、
+    <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> に頼ることになるでしょう。</p>
+
+    <p><code class="directive"><a href="../mod/core.html#location">&lt;Location&gt;</a></code> セクションの中で使われた場合、最初の引数は
+    省略され、ローカルディレクトリは <code class="directive"><a href="../mod/core.html#location">&lt;Location&gt;</a></code> から取得されます。
+    同じことは <code class="directive"><a href="../mod/core.html#locationmatch">&lt;LocationMatch&gt;</a></code>
+    セクション内でも起きます。しかし、ProxyPass は正規表現を解釈しないので、
+    この状況では代わりに <code class="directive">ProxyPassMatch</code> を使う必要があります。</p>
+
+    <p>このディレクティブは <code class="directive"><a href="../mod/core.html#directory">&lt;Directory&gt;</a></code> や <code class="directive"><a href="../mod/core.html#files">&lt;Files&gt;</a></code> セクション内では使えません。</p>
+
+    <p>より柔軟なリバースプロキシの設定が必要な場合は、<code>[P]</code>
+    フラグ付きの <code class="directive"><a href="../mod/mod_rewrite.html#rewriterule">RewriteRule</a></code>
+    ディレクティブを参照してください。</p>
+
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPassInterpolateEnv" id="ProxyPassInterpolateEnv">ProxyPassInterpolateEnv</a> <a name="proxypassinterpolateenv" id="proxypassinterpolateenv">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リバースプロキシ設定内での環境変数の使用を有効にする</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPassInterpolateEnv On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyPassInterpolateEnv Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.2.9 以降で使用可能</td></tr>
+</table>
+    <p><code class="directive">ProxyPass</code>, <code class="directive">ProxyPassReverse</code>,
+    <code class="directive">ProxyPassReverseCookieDomain</code>,
+    <code class="directive">ProxyPassReverseCookiePath</code> の
+    <var>interpolate</var> 引数と一緒にこのディレクティブを使うと、
+    環境変数を使ってリバースプロキシを動的に設定できます。
+    <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> など他のモジュールで環境変数を設定する想定です。
+    <code class="directive">ProxyPass</code> ディレクティブ,
+    <code class="directive">ProxyPassReverse</code> ディレクティブ,
+    <code class="directive">ProxyPassReverseCookieDomain</code> ディレクティブ,
+    <code class="directive">ProxyPassReverseCookiePath</code> ディレクティブ
+    の動作に影響を与え、これらの設定ディレクティブ内の <code>${varname}</code> の文字列を
+    環境変数 <code>varname</code> の値で置き換えます。
+    (<var>interpolate</var> オプションがセットされていれば)</p>
+    <p>必要にならない限り、このディレクティブは無効にしてください。
+    (サーバのパフォーマンスのため) </p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPassMatch" id="ProxyPassMatch">ProxyPassMatch</a> <a name="proxypassmatch" id="proxypassmatch">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>正規表現を使ってリモートサーバをローカルサーバの URL 空間にマップする</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPassMatch [<var>regex</var>] !|<var>url</var> [<var>key=value</var>
+	<var>[key=value</var> ...]]</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.2.5 以降で使用可能</td></tr>
+</table>
+    <p>単純な文字列前方一致ではなく正規表現を用いることを除いて、このディレクティブは
+       <code class="directive"><a href="#proxypass">ProxyPass</a></code> と同じです。
+       指定した正規表現で <var>url</var> に対してマッチを試みます。
+       マッチすると、サーバはマッチした丸括弧部分を前方参照の置換に使い、新しい <var>url</var>
+       にします。</p>
+
+    <p>ローカルサーバのアドレスが <code>http://example.com/</code> だとします;
+    すると</p>
+
+    <div class="example"><p><code>
+      ProxyPassMatch ^(/.*\.gif)$ http://backend.example.com$1
+    </code></p></div>
+
+    <p>は、ローカルの <code>http://example.com/foo/bar.gif</code> へのリクエストを
+    内部的に <code>http://backend.example.com/foo/bar.gif</code> へのプロキシリクエスト
+    に変換します。</p>
+    <div class="note"><h3>注意</h3>
+      <p>URL 引数は正規表現による置換の <em>前</em> でも (当然、置換後でも)、
+      URL として解釈できなければいけません。これは使えるマッチに制約をもたらします。
+      例えば、上記の例で</p>
+      <div class="example"><p><code>
+        ProxyPassMatch ^(/.*\.gif)$ http://backend.example.com:8000$1
+      </code></p></div>
+      <p>と書いたとします。これはサーバ起動時にシンタックスエラーを起こすでしょう。
+      これはバグです (ASF bugzilla の PR 46665)。
+      回避策としてマッチ判定を書き換える必要があります:</p>
+      <div class="example"><p><code>
+        ProxyPassMatch ^/(.*\.gif)$ http://backend.example.com:8000/$1
+      </code></p></div>
+    </div>
+
+    <p>サブディレクトリをリバースプロキシしたくないときに <code>!</code> は
+    役に立ちます。</p>
+
+    <p><code class="directive"><a href="../mod/core.html#locationmatch">&lt;LocationMatch&gt;</a></code> セクションの中で使われた場合は、
+    最初の引数は省略され、正規表現は <code class="directive"><a href="../mod/core.html#locationmatch">&lt;LocationMatch&gt;</a></code> から取得されます。</p>
+
+    <p>より柔軟なリバースプロキシの設定が必要な場合は、<code>[P]</code>
+    フラグ付きの <code class="directive"><a href="../mod/mod_rewrite.html#rewriterule">RewriteRule</a></code>
+    ディレクティブを参照してください。</p>
+
+    <div class="warning">
+      <h3>セキュリティの警告</h3>
+      <p>ルールの対象 URL の生成には注意してください。あなたのサーバがプロキシ
+        として振る舞う可能性のある URL に対して、クライアントへの影響があります。
+        これによるセキュリティインパクトを考慮してください。URL のうち、スキームとホスト名
+        の部分をそれぞれ確実に固定してください。そうでないと、クライアントに不当な影響を
+        与えかねません。</p>
+    </div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPassReverse" id="ProxyPassReverse">ProxyPassReverse</a> <a name="proxypassreverse" id="proxypassreverse">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リバースプロキシされたサーバから送られた HTTP レスポンスヘッダの
+URL を調整する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPassReverse [<var>path</var>] <var>url</var>
+[<var>interpolate</var>]</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブは Apache に HTTP リダイレクト応答の
+    <code>Location</code>, <code>Content-Location</code>, <code>URI</code>
+    ヘッダの調整をさせます。これは、Apache がリバースプロキシ (ゲートウェイ)
+    として使われているときに、リバースプロキシを通らないアクセスを防止するのに重要です。
+    このようなアクセスは、リバースプロキシの背後にいるバックエンドサーバへの
+    HTTP リダイレクトが原因で起きます。</p>
+
+    <p>上記の特別なリダイレクト用の HTTP レスポンスヘッダのみが書き換えられます。
+    Apache は他のレスポンスヘッダを書き換えたり、HTML ページの中の URL 参照を
+    書き換えたりすることはありません。つまり、リバースプロキシされた HTML ページ内に
+    絶対 URL 参照が存在すると、プロキシを通さずにアクセスする可能性があります。
+    HTML の中を見て、URL 参照を書き換えるモジュールに Nick Kew さんの <a href="http://apache.webthing.com/mod_proxy_html/">mod_proxy_html</a> があります。</p>
+
+    <p><var>path</var> はローカル仮想パスの名前です。<var>url</var> は
+    リモートサーバの部分 URL です。これらは <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブと同様です。</p>
+
+    <p>例えば、ローカルサーバのアドレスが <code>http://example.com/</code>
+    だとします。すると</p>
+
+    <div class="example"><p><code>
+      ProxyPass         /mirror/foo/ http://backend.example.com/<br />
+      ProxyPassReverse  /mirror/foo/ http://backend.example.com/<br />
+      ProxyPassReverseCookieDomain  backend.example.com  public.example.com<br />
+      ProxyPassReverseCookiePath  /  /mirror/foo/
+    </code></p></div>
+
+    <p>という設定をすると、<code>http://example.com/mirror/foo/bar</code>
+    へのローカルリクエストが <code>http://backend.example.com/bar</code>
+    へのプロキシリクエストに内部で変換されるだけではありません
+    (これは <code>ProxyPass</code> の機能です)。<code>backend.example.com</code>
+    サーバが送るリダイレクトの面倒もみます。<code>http://backend.example.com/bar</code>
+    が <code>http://backend.example.com/quux</code> にリダイレクトされたとき、
+    Apache は HTTP リダイレクト応答をクライアントに送る前に、リダイレクト先を
+    <code>http://example.com/mirror/foo/quux</code> に変更します。
+    URL を構成するのに使われるホスト名は <code class="directive"><a href="../mod/core.html#usecanonicalname">UseCanonicalName</a></code> の設定に応じて選択されることに
+    注意してください。</p>
+
+    <p><code class="directive">ProxyPassReverse</code> ディレクティブは
+    対応する <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブと独立して利用できるので、
+    <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> のプロキシ通過機能
+    (<code>RewriteRule ...  [P]</code>) と併せて使用することもできます。</p>
+
+    <p>オプショナルな <var>interpolate</var> キーワード (httpd 2.2.9 以降で利用可能)
+    を <code class="directive">ProxyPassInterpolateEnv</code> ディレクティブと
+    一緒に使うと、<var>${VARNAME}</var> 形式で、 ProxyPassReverse 設定に環境変数を
+    使えるようになります。</p>
+
+    <p><code class="directive"><a href="../mod/core.html#location">&lt;Location&gt;</a></code> セクションの中で使われた場合は、
+    最初の引数は省略され、ローカルディレクトリは <code class="directive"><a href="../mod/core.html#location">&lt;Location&gt;</a></code> から取得されます。
+    同じことは <code class="directive"><a href="../mod/core.html#locationmatch">&lt;LocationMatch&gt;</a></code> セクション内でも起きますが、
+    おそらく意図どおりに動きません。と言うのも、ProxyPassReverse
+    が正規表現をそのまま文字列でパスとして解釈しようとするからです。
+    もしこのような状況で必要なら、セクションの外で ProxyPassReverse
+    を指定するか、あるいは別の <code class="directive"><a href="../mod/core.html#location">&lt;Location&gt;</a></code> セクション内で指定してください。</p>
+
+    <p>このディレクティブは <code class="directive"><a href="../mod/core.html#directory">&lt;Directory&gt;</a></code> や <code class="directive"><a href="../mod/core.html#files">&lt;Files&gt;</a></code> セクション内では使えません。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPassReverseCookieDomain" id="ProxyPassReverseCookieDomain">ProxyPassReverseCookieDomain</a> <a name="proxypassreversecookiedomain" id="proxypassreversecookiedomain">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リバースプロキシサーバからの Set-Cookie ヘッダの Domain 文字列を
+調整する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPassReverseCookieDomain <var>internal-domain</var>
+<var>public-domain</var> [<var>interpolate</var>]</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+<p>使用法は基本的に
+<code class="directive"><a href="#proxypassreverse">ProxyPassReverse</a></code> と同じですが、
+ヘッダの URL の代わりに <code>Set-Cookie</code> ヘッダ内の
+<code>domain</code> 文字列を書き換えます。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPassReverseCookiePath" id="ProxyPassReverseCookiePath">ProxyPassReverseCookiePath</a> <a name="proxypassreversecookiepath" id="proxypassreversecookiepath">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>リバースプロキシサーバからの Set-Cookie ヘッダの Path 文字列を
+調整する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPassReverseCookiePath <var>internal-path</var>
+<var>public-path</var> [<var>interpolate</var>]</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト, ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+<p>
+バックエンドの URL パスがリバースプロキシ上の公開パスにマップされる状況で、
+<code class="directive"><a href="#proxypassreverse">ProxyPassReverse</a></code> といっしょに
+役立ちます。このディレクティブは <code>Set-Cookie</code> ヘッダ内の
+<code>path</code> 文字列を書き換えます。もしクッキーのパスが
+<var>internal-path</var> に先頭マッチすれば、クッキーのパスは
+<var>public-path</var> に置換されます。
+</p><p>
+<code class="directive"><a href="#proxypassreverse">ProxyPassReverse</a></code>
+での例を使うと、ディレクティブ:</p>
+    <div class="example"><p><code>
+      ProxyPassReverseCookiePath  /  /mirror/foo/
+    </code></p></div>
+<p>は、バックエンドのパスが <code>/</code> (あるいは <code>/example</code>
+あるいは実際のところなんでも) のクッキーを <code>/mirror/foo/</code>
+に書き換えます。
+</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyPreserveHost" id="ProxyPreserveHost">ProxyPreserveHost</a> <a name="proxypreservehost" id="proxypreservehost">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシリクエストに、受け付けた Host HTTP ヘッダを使う</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyPreserveHost On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyPreserveHost Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.0.31 以降で使用可能</td></tr>
+</table>
+    <p>このオプションが有効になっている場合、<code class="directive">ProxyPass</code>
+    で指定したホスト名の代わりに、受け付けたリクエストの Host: 行を
+    プロキシ先のホストに送ります。</p>
+
+    <p>このオプションは通常は <code>Off</code> に設定してください。
+    ほとんどの場合、これは大量の名前ベースのバーチャルホスティングを行なっていて、
+    元々の Host ヘッダをバックエンドサーバが解釈する必要のあるときのような、
+    特別な設定が必要な場合にのみ有用です。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyReceiveBufferSize" id="ProxyReceiveBufferSize">ProxyReceiveBufferSize</a> <a name="proxyreceivebuffersize" id="proxyreceivebuffersize">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされる HTTP と FTP 接続のためのネットワークバッファサイズ</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyReceiveBufferSize <var>bytes</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyReceiveBufferSize 0</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">ProxyReceiveBufferSize</code> ディレクティブは
+    スループットを上げるために明示的に (TCP/IP) ネットワークバッファのサイズを
+    設定します。値は <code>512</code> 以上か、システムのデフォルトのバッファ
+    サイズを意味する <code>0</code> でなければなりません。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      ProxyReceiveBufferSize 2048
+    </code></p></div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyRemote" id="ProxyRemote">ProxyRemote</a> <a name="proxyremote" id="proxyremote">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>特定のリクエストを扱う時に使われるリモートプロキシを指定する</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyRemote <var>match</var> <var>remote-server</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブはこのプロキシに対するリモートプロキシを定義します。
+    <var>match</var> はリモートプロキシがサポートする URL スキーム、
+    あるいはリモートプロキシを使うべき URL の一部分、あるいはすべての
+    リクエストにリモートプロキシが使われることを示す <code>*</code> のどれかになります。
+    <var>remote-server</var> はリモートプロキシの部分 URL です。構文:</p>
+
+    <div class="example"><p><code>
+      <dfn>remote-server</dfn> =
+          <var>scheme</var>://<var>hostname</var>[:<var>port</var>]
+    </code></p></div>
+
+    <p><var>scheme</var> は実際上リモートサーバとの通信に使われるプロトコルを
+    決定します。このモジュールでは <code>http</code> と <code>https</code>
+    だけがサポートされています。
+    <code>https</code> が使われると、HTTP CONNECT メソッドを使って
+    リクエストはリモートプロキシに転送されます。</p>
+
+    <div class="example"><h3>例</h3><p><code>
+      ProxyRemote http://goodguys.example.com/ http://mirrorguys.example.com:8000<br />
+      ProxyRemote * http://cleverproxy.localdomain<br />
+      ProxyRemote ftp http://ftpproxy.mydomain:8080
+    </code></p></div>
+
+    <p>最後の例では、プロキシは FTP リクエストを別の HTTP リクエストで包んで
+    そのようなリクエストを扱える別のプロキシに転送します。</p>
+
+    <p>このオプションはリバースプロキシの設定もサポートします。
+    バックエンドウェブサーバが別のフォワードプロキシの後ろに隠されている場合でも
+    バックエンドウェブサーバをバーチャルホストの URL 空間に入れることが
+    できます。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyRemoteMatch" id="ProxyRemoteMatch">ProxyRemoteMatch</a> <a name="proxyremotematch" id="proxyremotematch">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>正規表現でのマッチによるリクエストを扱うリモートプロキシの指定</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyRemoteMatch <var>regex</var> <var>remote-server</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p><code class="directive">ProxyRemoteMatch</code> は最初の引数がリクエストされた
+    URL にマッチする<a class="glossarylink" href="../glossary.html#regex" title="用語集を参照">正規表現</a>であることを除けば <code class="directive"><a href="#proxyremote">ProxyRemote</a></code> ディレクティブと同じです。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyRequests" id="ProxyRequests">ProxyRequests</a> <a name="proxyrequests" id="proxyrequests">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>フォワード (標準の) プロキシリクエストを有効にする</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyRequests On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyRequests Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>これは Apache のフォワードプロキシサーバとしての動作を
+    有効もしくは無効にします。(ProxyRequests を <code>Off</code> に
+    設定しても、<code class="directive"><a href="#proxypass">ProxyPass</a></code>
+    の設定は無効になりません。)</p>
+
+    <p>通常のリバースプロキシ/ゲートウェイの設定では、このオプションは <code>Off</code>
+    に設定してください。</p>
+
+    <p>HTTP や FTP サイトへのプロキシの機能を有効にしたい場合は、
+    <code class="module"><a href="../mod/mod_proxy_http.html">mod_proxy_http</a></code> や <code class="module"><a href="../mod/mod_proxy_ftp.html">mod_proxy_ftp</a></code> が
+    サーバに組み込まれていなければなりません。</p>
+
+    <div class="warning"><h3>警告</h3>
+      <p><a href="#access">サーバを安全にする</a>まで <code class="directive"><a href="#proxyrequests">ProxyRequests</a></code> は有効にしないでください。
+      オープンプロキシサーバはあなた自身のネットワークにとっても、
+      インターネット全体にとっても危険です。</p>
+    </div>
+
+<h3>参照</h3>
+<ul>
+<li><a href="#forwardreverse">フォワードプロキシとリバースプロキシ/ゲートウェイ</a></li>
+</ul>
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxySet" id="ProxySet">ProxySet</a> <a name="proxyset" id="proxyset">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシのバランサやメンバのパラメータをセット</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxySet <var>url</var> <var>key=value [key=value ...]</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>ディレクトリ</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>ProxySet は Apache 2.2 以降でのみ使用可能</td></tr>
+</table>
+    <p>このディレクティブは、通常は <code class="directive"><a href="#proxypass">ProxyPass</a></code>
+    ディレクティブで行うプロキシのバランサやワーカーに対するパラメータを
+    別の方法で設定できるようにします。
+    <code>&lt;Proxy <var>balancer url|worker url</var>&gt;</code>
+    ディレクティブのコンテナ内で使う場合、<var>url</var> 引数は必要ありません。
+    副次的に、それぞれのバランサやワーカーが生成されます。
+    <code class="directive"><a href="#proxypass">ProxyPass</a></code> ディレクティブではなく、
+    <code class="directive"><a href="../mod/mod_rewrite.html#rewriterule">RewriteRule</a></code> でリバースプロキシ
+    設定をする時にこのディレクティブは有用です。</p>
+
+    <div class="example"><p><code>
+      &lt;Proxy balancer://hotcluster&gt;<br />
+      <span class="indent">
+        BalancerMember http://www2.example.com:8009 loadfactor=1<br />
+        BalancerMember http://www3.example.com:8009 loadfactor=2<br />
+        ProxySet lbmethod=bytraffic<br />
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+    <div class="example"><p><code>
+      &lt;Proxy http://backend&gt;<br />
+      <span class="indent">
+        ProxySet keepalive=On<br />
+      </span>
+      &lt;/Proxy&gt;
+    </code></p></div>
+
+    <div class="example"><p><code>
+        ProxySet balancer://foo lbmethod=bytraffic timeout=15
+    </code></p></div>
+
+    <div class="example"><p><code>
+        ProxySet ajp://backend:7001 timeout=15
+    </code></p></div>
+
+   <div class="warning"><h3>警告</h3>
+      <p>設定対象がバランサかワーカーかで、パラメータ名が同じでも意味が異なる可能性
+      に注意してください。例えば、タイムアウトに関連する上記ふたつの例がそうです。</p>
+   </div>
+
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyStatus" id="ProxyStatus">ProxyStatus</a> <a name="proxystatus" id="proxystatus">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>mod_status でプロキシのロードバランサの状態を表示</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyStatus Off|On|Full</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyStatus Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.2 以降で使用可能</td></tr>
+</table>
+    <p>このディレクティブは <code class="module"><a href="../mod/mod_status.html">mod_status</a></code> によるサーバステータスのページ
+    にプロキシのロードバランサの状態を表示するか否かを決めます。</p>
+    <div class="note"><h3>注意</h3>
+      <p><strong>Full</strong> は <strong>On</strong> の別名です。</p>
+    </div>
+
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyTimeout" id="ProxyTimeout">ProxyTimeout</a> <a name="proxytimeout" id="proxytimeout">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされたリクエストのネットワークタイムアウト</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyTimeout <var>seconds</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code><code class="directive"><a href="../mod/core.html#timeout">Timeout</a></code> の値</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">互換性:</a></th><td>Apache 2.0.31 以降で使用可能</td></tr>
+</table>
+    <p>このディレクティブはユーザがプロキシリクエストのタイムアウトを
+    指定できるようにします。これはハングしてしまうほど遅い、もしくは挙動の
+    怪しいサーバがあり、サーバがデータを返すまでひたすら待ち続けるよりも
+    タイムアウトを返してより緩やかに<span class="transnote">(<em>訳注:</em> graceful に)</span>
+    失敗させたい場合に役に立ちます。</p>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="ProxyVia" id="ProxyVia">ProxyVia</a> <a name="proxyvia" id="proxyvia">ディレクティブ</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">説明:</a></th><td>プロキシされたリクエストの <code>Via</code> HTTP レスポンスヘッダ
+により提供される情報</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">構文:</a></th><td><code>ProxyVia On|Off|Full|Block</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">デフォルト:</a></th><td><code>ProxyVia Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">コンテキスト:</a></th><td>サーバ設定ファイル, バーチャルホスト</td></tr>
+<tr><th><a href="directive-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="directive-dict.html#Module">モジュール:</a></th><td>mod_proxy</td></tr>
+</table>
+    <p>このディレクティブはプロキシの <code>Via:</code> HTTP ヘッダの使用を
+    制御します。想定されている使い方は、プロキシサーバがいくつも繋がっているときに
+    プロキシリクエストの流れを制御することです。<code>Via:</code> ヘッダ行の
+    説明は <a href="http://www.ietf.org/rfc/rfc2616.txt">RFC 2616</a> (HTTP/1.1)
+    の 14.45 節を読んでください。</p>
+
+    <ul>
+    <li>デフォルトの <code>Off</code> に設定されていると、特別な処理は
+    行なわれません。リクエストやリプライに <code>Via:</code> ヘッダがあれば、
+    変更されずにそのまま渡します。</li>
+
+    <li><code>On</code> に設定されていれば、各リクエストとリプライに
+    <code>Via:</code> 行が追加されます。</li>
+
+    <li><code>Full</code> に設定されていれば、<code>Via:</code> ヘッダは
+    コメント部分に Apache サーバのバージョンも含むようになります。</li>
+
+    <li><code>Block</code> に設定されていれば、すべてのプロキシリクエストから
+    <code>Via:</code> ヘッダが取り除かれます。新たに <code>Via:</code> が
+    生成されることはありません。</li>
+    </ul>
+
+</div>
+</div>
+<div class="bottomlang">
+<p><span>翻訳済み言語: </span><a href="../en/mod/mod_proxy.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../fr/mod/mod_proxy.html" hreflang="fr" rel="alternate" title="Français">&nbsp;fr&nbsp;</a> |
+<a href="../ja/mod/mod_proxy.html" title="Japanese">&nbsp;ja&nbsp;</a></p>
+</div><div class="top"><a href="#page-header"><img src="../images/up.gif" alt="top" /></a></div><div class="section"><h2><a id="comments_section" name="comments_section">コメント</a></h2><div class="warning"><strong>Notice:</strong><br />This is not a Q&amp;A section. Comments placed here should be pointed towards suggestions on improving the documentation or server, and may be removed again by our moderators if they are either implemented or considered invalid/off-topic. Questions on how to manage the Apache HTTP Server should be directed at either our IRC channel, #httpd, on Freenode, or sent to our <a href="http://httpd.apache.org/lists.html">mailing lists</a>.</div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var comments_shortname = 'httpd';
+var comments_identifier = 'http://httpd.apache.org/docs/2.2/mod/mod_proxy.html';
+(function(w, d) {
+    if (w.location.hostname.toLowerCase() == "httpd.apache.org") {
+        d.write('<div id="comments_thread"><\/div>');
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://comments.apache.org/show_comments.lua?site=' + comments_shortname + '&page=' + comments_identifier;
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+    }
+    else { 
+        d.write('<div id="comments_thread">Comments are disabled for this page at the moment.<\/div>');
+    }
+})(window, document);
+//--><!]]></script></div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br />この文書は <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a> のライセンスで提供されています。.</p>
+<p class="menu"><a href="../mod/">モジュール</a> | <a href="../mod/directives.html">ディレクティブ</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">用語</a> | <a href="../sitemap.html">サイトマップ</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>

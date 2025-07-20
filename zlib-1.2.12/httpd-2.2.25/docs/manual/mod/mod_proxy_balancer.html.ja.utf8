@@ -1,0 +1,572 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="ja" xml:lang="ja"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>mod_proxy_balancer - Apache HTTP サーバ</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body>
+<div id="page-header">
+<p class="menu"><a href="../mod/">モジュール</a> | <a href="../mod/directives.html">ディレクティブ</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">用語</a> | <a href="../sitemap.html">サイトマップ</a></p>
+<p class="apache">Apache HTTP サーバ バージョン 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="./"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP サーバ</a> &gt; <a href="http://httpd.apache.org/docs/">ドキュメンテーション</a> &gt; <a href="../">バージョン 2.2</a> &gt; <a href="./">モジュール</a></div>
+<div id="page-content">
+<div id="preamble"><h1>Apache モジュール mod_proxy_balancer</h1>
+<div class="toplang">
+<p><span>翻訳済み言語: </span><a href="../en/mod/mod_proxy_balancer.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_proxy_balancer.html" title="Japanese">&nbsp;ja&nbsp;</a></p>
+</div>
+<div class="outofdate">この日本語訳はすでに古くなっている
+            可能性があります。
+            最近更新された内容を見るには英語版をご覧下さい。
+        </div>
+<table class="module"><tr><th><a href="module-dict.html#Description">説明:</a></th><td>負荷分散のための <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> 拡張</td></tr>
+<tr><th><a href="module-dict.html#Status">ステータス:</a></th><td>Extension</td></tr>
+<tr><th><a href="module-dict.html#ModuleIdentifier">モジュール識別子:</a></th><td>proxy_balancer_module</td></tr>
+<tr><th><a href="module-dict.html#SourceFile">ソースファイル:</a></th><td>mod_proxy_balancer.c</td></tr>
+<tr><th><a href="module-dict.html#Compatibility">互換性:</a></th><td>Apache 2.1 以降で使用可能</td></tr></table>
+<h3>概要</h3>
+
+    <p>本モジュールには <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code> が<em>必要です</em>。
+    本モジュールは <code>HTTP</code> と <code>FTP</code> と <code>AJP13</code>
+    プロトコルのロードバランス機能を持っています。</p>
+
+    <p>ですから、 ロードバランスを有効にする場合 <code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code>
+    と <code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code> がサーバに組み込まれて
+    いなければいけません。</p>
+
+    <div class="warning"><h3>警告</h3>
+      <p><a href="mod_proxy.html#access">
+      安全なサーバにする</a>までプロキシ機能は有効にしないでください。
+      オープンプロキシサーバはあなた自身のネットワークにとっても、
+      インターネット全体にとっても危険です。</p>
+    </div>
+</div>
+<div id="quickview"><h3 class="directives">ディレクティブ</h3>
+<p>このモジュールにディレクティブはありません。</p>
+<h3>トピック</h3>
+<ul id="topics">
+<li><img alt="" src="../images/down.gif" /> <a href="#scheduler">ロードバランサのスケジューラのアルゴリズム</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#stickyness">ロードバランサのスティッキネス</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#example">ロードバランサの設定例</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#requests">Request Counting アルゴリズム</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#traffic">Weighted Traffic Counting アルゴリズム</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#busyness">Pending Request Counting アルゴリズム</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#environment">エクスポートされる環境変数</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#balancer_manager">バランサマネージャのサポートを有効にする</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#stickyness_implementation">ロードバランサのスティッキネスの詳細</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#stickyness_troubleshooting">ロードバランサのスティッキネスのトラブルシューティング</a></li>
+</ul><h3>参照</h3>
+<ul class="seealso">
+<li><code class="module"><a href="../mod/mod_proxy.html">mod_proxy</a></code></li>
+</ul><ul class="seealso"><li><a href="#comments_section">コメント</a></li></ul></div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="scheduler" id="scheduler">ロードバランサのスケジューラのアルゴリズム</a></h2>
+    
+    <p>現時点では 3 種類のロードバランサスケジューラアルゴリズムから選べます。
+    リクエスト回数によるもの <span class="transnote">(<em>訳注:</em> Request Counting)</span>
+    、トラフィック量によるもの <span class="transnote">(<em>訳注:</em> Weighted Traffic Counting)</span>
+    と、処理中リクエスト数によるもの <span class="transnote">(<em>訳注:</em> Pending Request Counting)</span>
+    とがあります。バランサの設定 <code>lbmethod</code> 値で、どれを使うか指定します。
+    詳細は <code class="directive"><a href="../mod/mod_proxy.html#proxypass">ProxyPass</a></code> ディレクティブを
+    参照してください。</p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="stickyness" id="stickyness">ロードバランサのスティッキネス</a></h2>
+    
+    <p>バランサはスティッキネスをサポートします。リクエストがあるバックエンドに
+    プロキシされた時、続く同じユーザからのリクエストは、すべてその同じバックエンドに
+    プロキシされるべきです。多くのロードバランサはこの機能をクライアントの
+    IP アドレスとバックエンドの対応表を持つことで実現します。
+    この方法はクライアントにもバックエンドにも透過に動作しますが、
+    次に挙げるいくつかの問題があります。
+    もしクライアント自身がプロキシの背後にいる場合、負荷分散が不均一になります。
+    もし動的な IP アドレスを持つクライアントのアドレスがセッション中に変わると
+    スティッキネスは期待どおりに動作しません。
+    もし対応表があふれると、スティッキネスが失われます。</p>
+    <p><code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code> はスティッキネスを
+    2 種類の別手法をもとに実装しています。クッキーと URL エンコーディングのふたつです。
+    クッキーはバックエンドもしくは Apache Web サーバ自身により提供されます。
+    URL エンコーディングは通常バックエンドにより行われます。</p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="example" id="example">ロードバランサの設定例</a></h2>
+    
+    <p>技術的な詳細に入る前に例を示します。以下は、2 台のバックエンドサーバを
+    ロードバランスするための <code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code> の使い方の一例です:
+    </p>
+
+    <div class="example"><p><code>
+    &lt;Proxy balancer://mycluster&gt;<br />
+	BalancerMember http://192.168.1.50:80<br />
+	BalancerMember http://192.168.1.51:80<br />
+    &lt;/Proxy&gt;<br />
+    ProxyPass /test balancer://mycluster
+    </code></p></div>
+
+    <p>別の例として、<code class="module"><a href="../mod/mod_headers.html">mod_headers</a></code> を使ってスティッキネス
+    を実現するロードバランサの設定例を示します。バックエンドのサーバが
+    適切なセッションクッキーをセットしなくても動作します。
+    </p>
+
+    <div class="example"><p><code>
+    Header add Set-Cookie "ROUTEID=.%{BALANCER_WORKER_ROUTE}e; path=/"
+           env=BALANCER_ROUTE_CHANGED<br />
+    &lt;Proxy balancer://mycluster&gt;<br />
+    BalancerMember http://192.168.1.50:80 route=1<br />
+    BalancerMember http://192.168.1.51:80 route=2<br />
+    ProxySet stickysession=ROUTEID<br />
+    &lt;/Proxy&gt;<br />
+    ProxyPass /test balancer://mycluster
+    </code></p></div>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="requests" id="requests">Request Counting アルゴリズム</a></h2>
+    
+    <p><code>lbmethod=byrequests</code> で有効になります。
+    このスケジューラの背景にある考え方は、様々なワーカーがそれぞれ、
+    設定されている分担リクエスト数をきちんと受け取れるように、
+    リクエストを扱うという考え方です。次のように動作します:</p>
+
+    <p><dfn>lbfactor</dfn> は、<em>どの程度ワーカーに仕事を振るか</em>
+    つまり<em>ワーカーのクオータ</em>を指します。この値は "分担" 
+    量を表す正規化された値です。</p>
+
+    <p><dfn>lbstatus</dfn> は、<em>ワーカーのクオータを満たすために
+    どのぐらい急ぎで働かなければならないか</em>を指します。</p>
+
+    <p><dfn>ワーカー</dfn>はロードバランサのメンバで、通常は、
+    サポートされるプロトコルのうちの一つを提供しているリモートホストです。
+    </p>
+
+    <p>まず個々のワーカーにワーカークオータを割り振り、どのワーカーが最も急ぎで
+    働かなければならないか (lbstatus が最大のもの) を調べます。
+    次に仕事をするようにこのワーカーを選択し、選択したワーカーの lbstatus 
+    から全ワーカーに割り振ったクオータの合計を引きます。ですから、lbstatus の総量は
+    結果的に変化しません(*)し、リクエストは期待通りに分散されます。</p>
+
+    <p>あるワーカーが無効になっても、他のものは正常にスケジュールされ続けます。
+    </p>
+
+    <div class="example"><pre><code>for each worker in workers
+    worker lbstatus += worker lbfactor
+    total factor    += worker lbfactor
+    if worker lbstatus &gt; candidate lbstatus
+        candidate = worker
+
+candidate lbstatus -= total factor</code></pre></div>
+
+    <p>バランサを次のように設定した場合:</p>
+    
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th>
+        <th class="data">d</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">25</td>
+        <td class="data">25</td>
+        <td class="data">25</td>
+        <td class="data">25</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">0</td>
+        <td class="data">0</td>
+        <td class="data">0</td>
+        <td class="data">0</td></tr>
+</table>
+
+    <p>そして <var>b</var> が無効になった場合、次のようなスケジュールが
+    行われます。</p>
+
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th>
+        <th class="data">d</th></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-50</em></td>
+        <td class="data">0</td>
+        <td class="data">25</td>
+        <td class="data">25</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">-25</td>
+        <td class="data">0</td>
+        <td class="data"><em>-25</em></td>
+        <td class="data">50</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">0</td>
+        <td class="data">0</td>
+        <td class="data">0</td>
+        <td class="data"><em>0</em></td></tr>
+<tr><td class="data" colspan="5">(repeat)</td></tr>
+</table>
+
+    <p>つまりこのようにスケジュールされます: <var>a</var> <var>c</var>
+    <var>d</var> <var>a</var> <var>c</var> <var>d</var> <var>a</var>
+    <var>c</var> <var>d</var> ... 次の点に注意してください:</p>
+
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th>
+        <th class="data">d</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">25</td>
+        <td class="data">25</td>
+        <td class="data">25</td>
+        <td class="data">25</td></tr>
+</table>
+
+    <p>この挙動は、次の設定と全く同じになります:</p>
+
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th>
+        <th class="data">d</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">1</td>
+        <td class="data">1</td>
+        <td class="data">1</td>
+        <td class="data">1</td></tr>
+</table>
+
+    <p>と言うのも、<dfn>lbfactor</dfn> の値は全て正規化されたもので、
+    他との相対値だからです。次の設定では:</p>
+
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">1</td>
+        <td class="data">4</td>
+        <td class="data">1</td></tr>
+</table>
+
+    <p>ワーカー <var>b</var> は、平均して、<var>a</var> と <var>c</var>
+    の 4 倍の数のリクエストを受け持つことになります。</p>
+
+    <p>次のような非対称な設定では、こうなると予想されるでしょう:</p>
+
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">70</td>
+        <td class="data">30</td></tr>
+<tr><td class="data" colspan="2">&nbsp;</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-30</em></td>
+        <td class="data">30</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">40</td>
+        <td class="data"><em>-40</em></td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>10</em></td>
+        <td class="data">-10</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-20</em></td>
+        <td class="data">20</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-50</em></td>
+        <td class="data">50</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">20</td>
+        <td class="data"><em>-20</em></td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-10</em></td>
+        <td class="data">10</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>-40</em></td>
+        <td class="data">40</td></tr>
+<tr><th>lbstatus</th>
+        <td class="data">30</td>
+        <td class="data"><em>-30</em></td></tr>
+<tr><th>lbstatus</th>
+        <td class="data"><em>0</em></td>
+        <td class="data">0</td></tr>
+<tr><td class="data" colspan="3">(repeat)</td></tr>
+</table>
+
+    <p>スケジュールは 10 スケジュール後に繰り返され、<var>a</var> 7 回と
+    <var>b</var> 3 回でまばらに選ばれます。</p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="traffic" id="traffic">Weighted Traffic Counting アルゴリズム</a></h2>
+    
+    <p><code>lbmethod=bytraffic</code> で有効になります。
+    このスケジューラの背景にある考え方は、Request Counting 
+    と非常に似ていますが、次の違いがあります:</p>
+
+    <p><dfn>lbfactor</dfn> は <em>どれだけのバイト数のトラフィック量を、
+    このワーカーに処理してもらいたいか</em> を表します。
+    この値も同様に正規化された値で、ワーカー全体のうちでの "分担"
+    量を表現しています。リクエスト数を単純に数える代わりに、
+    どれだけの転送量を処理したかを数えます。</p>
+
+    <p>次のようにバランサを設定した場合:</p>
+    
+    <table><tr><th>worker</th>
+        <th class="data">a</th>
+        <th class="data">b</th>
+        <th class="data">c</th></tr>
+<tr><th>lbfactor</th>
+        <td class="data">1</td>
+        <td class="data">2</td>
+        <td class="data">1</td></tr>
+</table>
+
+    <p><var>b</var> には <var>a</var> や <var>c</var> の 2 倍
+    処理してほしいということになります。
+    <var>b</var> は 2 倍の I/O を処理するという意味になり、
+    2 倍のリクエスト数を処理するということにはなりません。
+    ですからリクエストとレスポンスのサイズが、
+    重み付けと振り分けのアルゴリズムに効いています。</p>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="busyness" id="busyness">Pending Request Counting アルゴリズム</a></h2>
+
+    
+
+    <p><code>lbmethod=bybusyness</code> で有効になります。このスケジューラは
+    現在どのぐらいのリクエストが個々のワーカーにアサインされているかを把握しています。
+    新しいリクエストは、最も処理途中のリクエスト数が少ないワーカーに
+    自動的に割り振られます。これは、ワーカーが Apache と無関係に入力リクエストを
+    キューに溜め込む場合に有効で、キューの長さを同程度に維持しつつも、
+    最も早く処理できそうなワーカーに常にリクエストを割り振ります。</p>
+
+    <p>複数のワーカーが最少の処理中リクエスト数で並んだ場合、Request Counting
+    アルゴリズムと同じ統計情報（と重み付け）を使って順番を決めます。
+    時間が経つと、割り振りの割合は <code>byrequests</code> と似たような
+    傾向を示すようになるでしょう。</p>
+
+    <p>このアルゴリズムは Apache HTTP サーバ 2.2.10以降で利用可能です。</p>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="environment" id="environment">エクスポートされる環境変数</a></h2>
+    
+    <p>現在、6 つの環境変数がエクスポートされます:</p>
+
+    <dl>
+    
+    <dt><var><a name="balancer_session_sticky" id="balancer_session_sticky">BALANCER_SESSION_STICKY</a></var></dt>
+    <dd>
+    <p>現在のリクエストに使われる <var>stickysession</var> 値になります。
+    スティッキーセッションのためのクッキー名もしくはリクエストパラメータ名です。</p>
+    </dd>
+
+    
+    <dt><var><a name="balancer_session_route" id="balancer_session_route">BALANCER_SESSION_ROUTE</a></var></dt>
+    <dd>
+    <p>現在のリクエストをパースして得られる <var>route</var> 値です。</p>
+    </dd>
+
+    
+    <dt><var><a name="balancer_name" id="balancer_name">BALANCER_NAME</a></var></dt>
+    <dd>
+    <p>現在のリクエストが使うバランサ名です。<code>balancer://foo</code>
+    のような値です。</p>
+    </dd>
+
+    
+    <dt><var><a name="balancer_worker_name" id="balancer_worker_name">BALANCER_WORKER_NAME</a></var></dt>
+    <dd>
+    <p>現在のリクエストが使うワーカー名です。<code>http://hostA:1234</code>
+    のような値です。</p>
+    </dd>
+
+    
+    <dt><var><a name="balancer_worker_route" id="balancer_worker_route">BALANCER_WORKER_ROUTE</a></var></dt>
+    <dd>
+    <p>現在のリクエストが使うワーカーの <var>route</var> 値です。</p>
+    </dd>
+
+    
+    <dt><var><a name="balancer_route_changed" id="balancer_route_changed">BALANCER_ROUTE_CHANGED</a></var></dt>
+    <dd>
+    <p>セッションルートとワーカールートが一致しない時 (BALANCER_SESSION_ROUTE != BALANCER_WORKER_ROUTE) 
+    あるいは、セッションがまだルートを確立していない時、値が 1 になります。
+    スティッキーセッションを使う時、ルートの更新をクライアントに送る必要があるかを
+    判断するためにこの環境変数を使えます。</p>
+    </dd>
+    </dl>
+
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="balancer_manager" id="balancer_manager">バランサマネージャのサポートを有効にする</a></h2>
+    
+    <p>このモジュールは <code class="module"><a href="../mod/mod_status.html">mod_status</a></code> のサービスを
+    <em>必要とします</em>。
+    バランサマネージャを使うと、バランサのメンバーの動的な更新が
+    できます。バランサマネージャを使って、バランス係数 (lbfactor)
+    を変更したり、メンバーを変更したり、特定のメンバーを
+    オフラインモードにしたりできます。</p>
+
+    <p>ですから、ロードバランサ管理機能を使いたければ、
+    <code class="module"><a href="../mod/mod_status.html">mod_status</a></code> と <code class="module"><a href="../mod/mod_proxy_balancer.html">mod_proxy_balancer</a></code>
+    をサーバに組み込まなければなりません。</p>
+
+    <p>example.com ドメインのブラウザからロードバランサ管理機能を
+    使えるようにするには、次のようなコードを <code>httpd.conf</code>
+    に追加します。</p>
+<div class="example"><p><code>
+    &lt;Location /balancer-manager&gt;<br />
+    SetHandler balancer-manager<br />
+<br />
+    Order Deny,Allow<br />
+    Deny from all<br />
+    Allow from .example.com<br />
+    &lt;/Location&gt;
+</code></p></div>
+
+    <p>こうすると、<code>http://your.server.name/balancer-manager</code>
+    のページ経由で、ウェブブラウザからロードバランサマネージャに
+    アクセスできるようになります。</p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="stickyness_implementation" id="stickyness_implementation">ロードバランサのスティッキネスの詳細</a></h2>
+    
+    <p>クッキーをもとにスティッキネスを使う場合、どのバックエンドに割り振るべきか
+    を決めるクッキーの名前を指定する必要があります。
+    クッキー名は <code class="directive"><a href="../mod/mod_proxy.html#proxypass">ProxyPass</a></code> または
+    <code class="directive"><a href="../mod/mod_proxy.html#proxyset">ProxySet</a></code> のいずれか
+    に付与する <var>stickysession</var> 属性で設定します。
+    クッキー名は大文字小文字を区別します。
+    バランサはそのクッキーの値を取り出し、その値に一致する <var>route</var> 値の
+    ワーカーを探します。
+    <var>route</var> も <code class="directive"><a href="../mod/mod_proxy.html#proxypass">ProxyPass</a></code>
+    または <code class="directive"><a href="../mod/mod_proxy.html#proxyset">ProxySet</a></code>
+    のいずれかに設定しなければいけません。
+    クッキーはバックエンドによって設定されるか、あるいは
+    上記の <a href="#example">例</a> のように Apache Web サーバ自身
+    によって設定されます。</p>
+    <p>バックエンドの中の一部は少し異なる形式のスティッキネスクッキーを使います。
+    たとえば Apache Tomcat がそうです。Tomcat は自身のインスタンス名を
+    セッション ID のクッキーの最後に付け加えます。この時、セッション ID
+    との区切り文字にドット (<code>.</code>) を使います。
+    このため、Apache Web サーバがドットをスティッキネスクッキー値の中に見つけると、
+    route を探すためにドット以降の部分のみを使うようにします。
+    Tomcat 側で自身のインスタンス名を設定するには、Tomcat の設定ファイル
+    <code>conf/server.xml</code> の中の <code>jvmRoute</code> 属性に
+    指定する必要があります。値はそれぞれの Tomcat に接続するワーカーの
+    <var>route</var> 値と一致させます。
+    Tomcat およびサーブレットベースの Java Web アプリサーバが一般に使う
+    セッションクッキーの名前は <code>JSESSIONID</code> (すべて大文字) です。
+    この名前は設定により変更も可能です。</p>
+    <p>スティッキネスを実装するふたつめの手段は URL エンコーディングです。
+    Web サーバはリクエストの URL の中からクエリパラメータを探します。
+    探すパラメータ名は同じように <var>stickysession</var> 属性で指定します。
+    パラメータ値と一致する <var>route</var> 値のワーカーを探します。
+    レスポンスに含まれるすべての URL リンクを探しだし書き換えるのは簡単ではないので、
+    一般にそれぞれのリンクにクエリパラメータを付け加えるのは、
+    そのコンテンツを生成したバックエンドの仕事です。
+    時には、<code class="module"><a href="../mod/mod_substitute.html">mod_substitute</a></code> を使って Web サーバにこの書き換えを
+    させるのが可能な場合もあります。
+    ただし、パフォーマンスを落とす可能性があります。</p>
+    <p>Java 標準は URL エンコーディングを少し異なる形で実装します。
+    URL のパス情報をセミコロン (<code>;</code>) で区切って
+    セッション ID を付け加えます。
+    クッキーの場合と同じように、 Apache Tomcat はこのパス情報に
+    <code>jvmRoute</code> の設定値を含めます。
+    Apache にこの種のパス情報を見つけさせるには、
+    <code class="directive"><a href="../mod/mod_proxy.html#proxypass">ProxyPass</a></code> あるいは
+    <code class="directive"><a href="../mod/mod_proxy.html#proxyset">ProxySet</a></code> の
+    <code>scolonpathdelim</code> を <code>On</code> にします。</p>
+    <p>最後に、クッキーと URL エンコーディングの両方が指定できることを示します。
+    次の例のように、クッキー名と URL パラメータ名を垂直バー (<code>|</code>)
+    で区切って指定します:</p>
+    <div class="example"><p><code>
+    ProxyPass /test balancer://mycluster stickysession=JSESSIONID|jsessionid scolonpathdelim=On<br />
+    &lt;Proxy balancer://mycluster&gt;<br />
+    BalancerMember http://192.168.1.50:80 route=node1<br />
+    BalancerMember http://192.168.1.51:80 route=node2<br />
+    &lt;/Proxy&gt;<br />
+    </code></p></div>
+    <p>もし同じリクエストが、クッキーとリクエストパラメータの両方のルーティング情報を
+    提供した場合、リクエストパラメータのほうが使われます。</p>
+</div><div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="section">
+<h2><a name="stickyness_troubleshooting" id="stickyness_troubleshooting">ロードバランサのスティッキネスのトラブルシューティング</a></h2>
+    
+    <p>もしアプリのセッションが失われてユーザが再ログインしなければいけないなど
+    スティッキネス関連のエラーに遭遇したら、
+    この原因はバックエンドの応答に支障があったせいか、
+    あるいは設定ミスによるものかを最初に切り分けたいでしょう。
+    バックエンドの安定性に関して起きうる問題を見つけるには、
+    Apache のエラーログにプロキシエラーのメッセージがないか確認してください。</p>
+    <p>設定が正しいかを確認するには、最初にスティッキネスを
+    クッキーと URL エンコーディングのどちらで行っているかを確認してください。
+    次に、<code class="directive"><a href="../mod/mod_log_config.html#logformat">LogFormat</a></code> を変更して
+    アクセスログに適切なデータが残るようにするとよいでしょう。
+    次のフィールドが便利です:</p>
+    <dl>
+    <dt><code>%{MYCOOKIE}C</code></dt>
+    <dd><code>MYCOOKIE</code> という名前のクッキーの値。
+    この名前は <var>stickysession</var> 属性の指定値と同じはずです。</dd>
+    <dt><code>%{Set-Cookie}o</code></dt>
+    <dd>これによりバックエンドがセットするクッキーをログに出せます。
+    バックエンドが期待するセッションクッキーをセットしているかと、
+    どんな値がセットされているかを追跡できます。</dd>
+    <dt><code>%{BALANCER_SESSION_STICKY}e</code></dt>
+    <dd>ルーティング情報を決めるために使われたクッキー名もしくは
+    リクエストパラメータ名。</dd>
+    <dt><code>%{BALANCER_SESSION_ROUTE}e</code></dt>
+    <dd>リクエスト内に見つかった route 値の情報</dd>
+    <dt><code>%{BALANCER_WORKER_ROUTE}e</code></dt>
+    <dd>選択されたワーカーの route 値</dd>
+    <dt><code>%{BALANCER_ROUTE_CHANGED}e</code></dt>
+    <dd>リクエストの route 値がワーカーの route 値と異なる場合に
+    <code>1</code> になります。つまり、リクエストはスティッキーとして
+    処理されていません。</dd>
+    </dl>
+    <p>セッションが失われる原因でよくあるものは、セッションタイムアウトですが、
+    これは通常バックエンドのサーバで変更可能です。</p>
+    <p>ログレベルを <code>debug</code> 以上に設定すると、
+    バランサはスティッキネス動作の詳細な情報をエラーログに書き出します。
+    これはスティッキネスの問題のトラブルシューティングする簡単な手法ですが、
+    高負荷な本番サーバではログの分量が膨大になってしまうかもしれません。</p>
+</div>
+</div>
+<div class="bottomlang">
+<p><span>翻訳済み言語: </span><a href="../en/mod/mod_proxy_balancer.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_proxy_balancer.html" title="Japanese">&nbsp;ja&nbsp;</a></p>
+</div><div class="top"><a href="#page-header"><img src="../images/up.gif" alt="top" /></a></div><div class="section"><h2><a id="comments_section" name="comments_section">コメント</a></h2><div class="warning"><strong>Notice:</strong><br />This is not a Q&amp;A section. Comments placed here should be pointed towards suggestions on improving the documentation or server, and may be removed again by our moderators if they are either implemented or considered invalid/off-topic. Questions on how to manage the Apache HTTP Server should be directed at either our IRC channel, #httpd, on Freenode, or sent to our <a href="http://httpd.apache.org/lists.html">mailing lists</a>.</div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var comments_shortname = 'httpd';
+var comments_identifier = 'http://httpd.apache.org/docs/2.2/mod/mod_proxy_balancer.html';
+(function(w, d) {
+    if (w.location.hostname.toLowerCase() == "httpd.apache.org") {
+        d.write('<div id="comments_thread"><\/div>');
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://comments.apache.org/show_comments.lua?site=' + comments_shortname + '&page=' + comments_identifier;
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+    }
+    else { 
+        d.write('<div id="comments_thread">Comments are disabled for this page at the moment.<\/div>');
+    }
+})(window, document);
+//--><!]]></script></div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br />この文書は <a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a> のライセンスで提供されています。.</p>
+<p class="menu"><a href="../mod/">モジュール</a> | <a href="../mod/directives.html">ディレクティブ</a> | <a href="http://wiki.apache.org/httpd/FAQ">FAQ</a> | <a href="../glossary.html">用語</a> | <a href="../sitemap.html">サイトマップ</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>

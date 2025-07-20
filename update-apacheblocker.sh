@@ -59,7 +59,7 @@ DATE=$(date +%Y-%m-%d-%H-%M-%S)
 
 if [ ! -f ${APACHE_CONF}/globalblacklist.conf ] ; then
   #Aborting update
-  echo -e "Subject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | sendmail -t ${EMAIL};
+  echo -e "To: ${EMAIL}\\nSubject: Bad bot not installed properly \\n\\n ${CONF_ERROR}\\n" | sendmail -t;
   exit 1;
 else
   diff <(wget -q -O - ${BLACKLIST_URL}) ${APACHE_CONF}/globalblacklist.conf;
@@ -76,27 +76,27 @@ else
     fi
     wget -q ${BLACKLIST_URL} -O ${APACHE_CONF}/globalblacklist.tmp && mv ${APACHE_CONF}/globalblacklist.tmp ${APACHE_CONF}/globalblacklist.conf;
     if [ -f ${APACHE_CONF}/globalblacklist.tmp ] ; then
-      echo -e "Subject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot update WGET FAIL \\n\\n ${WGET_FAIL}\\n" | sendmail -t;
       rm -f ${APACHE_CONF}/globalblacklist.tmp;
       exit 1;
     fi
     if [ ${TEST_BEFORE_RELOAD} = true ] ; then
-      apachectl configtest || TESTFAIL=true;
+      apachectl configtest &>/dev/null || TESTFAIL=true;
     fi
     if [ -z ${TESTFAIL} ] ; then
-      apachectl graceful;
+      apachectl graceful &>/dev/null;
       if [ ${CURL_TEST_AFTER_RELOAD} = true ] ; then
         CURL_RESPONSE_BAD=$(curl --location -A "masscan" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         CURL_RESPONSE_GOOD=$(curl --location -A "googlebot" -Isk -o /dev/null -w %{http_code} ${CURL_TEST_PROTOCOL}://${CURL_TEST_URL_NAME} | tr -dc '[:alnum:]')
         if [ $CURL_RESPONSE_BAD != "403" ] || [ $CURL_RESPONSE_GOOD != "200" ] ; then
-          echo -e "Subject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t ${EMAIL};
+          echo -e "To: ${EMAIL}\\nSubject: Bad bot CURL FAIL \\n\\n ${CURL_FAIL}\\n" | sendmail -t;
           exit 1;
         fi
       fi
-      echo -e "Subject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot updated globalblacklist \\n\\n ${UPDATE_SUCCESS}\\n" | sendmail -t;
       exit 0;
     else
-      echo -e "Subject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | sendmail -t ${EMAIL};
+      echo -e "To: ${EMAIL}\\nSubject: Bad bot update FAIL \\n\\n ${UPDATE_FAIL}\\n" | sendmail -t;
       exit 1;
     fi
   fi

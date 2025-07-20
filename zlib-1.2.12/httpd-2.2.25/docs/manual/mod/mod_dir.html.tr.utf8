@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="tr" xml:lang="tr"><head><!--
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+              This file is generated from xml source: DO NOT EDIT
+        XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+      -->
+<title>mod_dir - Apache HTTP Sunucusu</title>
+<link href="../style/css/manual.css" rel="stylesheet" media="all" type="text/css" title="Main stylesheet" />
+<link href="../style/css/manual-loose-100pc.css" rel="alternate stylesheet" media="all" type="text/css" title="No Sidebar - Default font size" />
+<link href="../style/css/manual-print.css" rel="stylesheet" media="print" type="text/css" /><link rel="stylesheet" type="text/css" href="../style/css/prettify.css" />
+<script src="../style/scripts/prettify.js" type="text/javascript">
+</script>
+
+<link href="../images/favicon.ico" rel="shortcut icon" /></head>
+<body>
+<div id="page-header">
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p>
+<p class="apache">Apache HTTP Sunucusu Sürüm 2.2</p>
+<img alt="" src="../images/feather.gif" /></div>
+<div class="up"><a href="./"><img title="&lt;-" alt="&lt;-" src="../images/left.gif" /></a></div>
+<div id="path">
+<a href="http://www.apache.org/">Apache</a> &gt; <a href="http://httpd.apache.org/">HTTP Sunucusu</a> &gt; <a href="http://httpd.apache.org/docs/">Belgeleme</a> &gt; <a href="../">Sürüm 2.2</a> &gt; <a href="./">Modüller</a></div>
+<div id="page-content">
+<div id="preamble"><h1>Apache Modülü mod_dir</h1>
+<div class="toplang">
+<p><span>Mevcut Diller: </span><a href="../en/mod/mod_dir.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_dir.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/mod/mod_dir.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/mod/mod_dir.html" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div>
+<div class="outofdate">Bu çeviri güncel olmayabilir. Son değişiklikler için İngilizce sürüm geçerlidir.</div>
+<table class="module"><tr><th><a href="module-dict.html#Description">Açıklama:</a></th><td>Bölü çizgisiyle biten yönlendirmeleri yapar ve dizin içeriği dosyalarını sunar.</td></tr>
+<tr><th><a href="module-dict.html#Status">Durum:</a></th><td>Temel</td></tr>
+<tr><th><a href="module-dict.html#ModuleIdentifier">Modül Betimleyici:</a></th><td>dir_module</td></tr>
+<tr><th><a href="module-dict.html#SourceFile">Kaynak Dosyası:</a></th><td>mod_dir.c</td></tr></table>
+<h3>Özet</h3>
+
+    <p>Bir dizin içerik dosyası şu iki kaynaktan birinden gelebilir:</p>
+
+    <ul>
+      <li>Kullanıcı tarafından yazılmış ve ismi genellikle
+        <code>index.html</code> olan bir dosya. Dosya ismi <code class="directive"><a href="#directoryindex">DirectoryIndex</a></code> yönergesi ile belirlenir.
+        Bu, <code class="module"><a href="../mod/mod_dir.html">mod_dir</a></code> modülü tarafından denetlenir.</li>
+
+      <li>Aksi takdirde içerik listesi sunucu tarafından üretilir. Bu,
+        <code class="module"><a href="../mod/mod_autoindex.html">mod_autoindex</a></code> modülü tarafından sağlanır.</li>
+    </ul>
+    <p>Bu iki işlev tamamen birbirinden ayrıdır, dolayısıyla eğer isterseniz
+      kendiliğinden dizin içerik listesi üretimini tamamen iptal
+      edebilirsiniz.</p>
+
+    <p>Sunucu <code>http://sunucum/filanca/birdizin</code> şeklinde bir istek
+      aldığında <code>birdizin</code> bir dizinin ismiyse ‘bölü çizgisiyle
+      biten’ bir yönlendirme söz konusudur. Dizinler URL sonuna bir bölü
+      çizgisi eklenmesini gerektirir, bu bakımdan <code class="module"><a href="../mod/mod_dir.html">mod_dir</a></code>
+      modülü isteği <code>http://sunucum/filanca/birdizin/</code> şeklinde
+      yönlendirir.</p>
+</div>
+<div id="quickview"><h3 class="directives">Yönergeler</h3>
+<ul id="toc">
+<li><img alt="" src="../images/down.gif" /> <a href="#directoryindex">DirectoryIndex</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#directoryslash">DirectorySlash</a></li>
+<li><img alt="" src="../images/down.gif" /> <a href="#fallbackresource">FallbackResource</a></li>
+</ul>
+<ul class="seealso"><li><a href="#comments_section">Yorum</a></li></ul></div>
+
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="DirectoryIndex" id="DirectoryIndex">DirectoryIndex</a> <a name="directoryindex" id="directoryindex">Yönergesi</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Açıklama:</a></th><td>İstemci bir dizin istediğinde dizin içeriğini listeler.
+</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sözdizimi:</a></th><td><code>DirectoryIndex
+    <var>yerel-url</var> [<var>yerel-url</var>] ...</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Öntanımlı:</a></th><td><code>DirectoryIndex index.html</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Bağlam:</a></th><td>sunucu geneli, sanal konak, dizin, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Geçersizleştirme:</a></th><td>Indexes</td></tr>
+<tr><th><a href="directive-dict.html#Status">Durum:</a></th><td>Temel</td></tr>
+<tr><th><a href="directive-dict.html#Module">Modül:</a></th><td>mod_dir</td></tr>
+</table>
+    <p><code class="directive">DirectoryIndex</code> yönergesi, istemci, dizinin
+      sonuna bir bölü çizgisi ekleyerek dizin içeriğinin listelenmesini
+      istediğinde bakılmak üzere özkaynakları listeler.
+      <code><em>yerel-url</em></code>, sunucu üstünde istenen dizine göreli
+      bir belgenin URL’sidir; normal olarak dizin içindeki bir dosyanın
+      ismidir. Çeşitli URL’ler verilebilirse de sunucu daima ilk bulduğuyla
+      dönecektir. Eğer özkaynakların hiçbiri yoksa ve <code>Indexes</code>
+      seçeneği atanmışsa sunucu dizin içeriğinden bir liste üretecektir.</p>
+
+    <div class="example"><h3>Örnek:</h3><p><code>
+      DirectoryIndex index.html
+    </code></p></div>
+
+    <p>Bu yapılandırmadan sonra yapılan bir
+      <code>http://mesela.dom/belgeler/</code> isteğine karşılık, sunucu,
+      mevcutsa <code>http://mesela.dom/belgeler/index.html</code> dosyasını
+      döndürecek, değilse ürettiği dizin içerik listesini gönderecektir.</p>
+
+    <p>Belgelerin dizine göreli olmasının gerekmediğine dikkat ediniz.</p>
+
+    <div class="example"><p><code>
+      DirectoryIndex index.html index.txt  /cgi-bin/index.pl
+    </code></p></div>
+
+    <p>Bu örnekte ise dizin içinde <code>index.html</code> ne de
+      <code>index.txt</code> mevcut olduğunda <code>/cgi-bin/index.pl</code>
+      CGI betiği çalıştırılacaktır.</p>
+
+    <p><strong>Ek Bilgi:</strong> <a href="../sections.html"><em>Aynı
+      bağlam</em></a> içinde çok sayıda <code class="directive">DirectoryIndex</code>
+      yönergesi varsa bunlar bir öncekini geçersiz kılmayacak, listeye
+      eklenecektir:
+    </p>
+
+    <div class="example"><pre># Örnek A: İlk sayfa index.html olsun buna index.php de eklensin.
+&lt;Directory /foo&gt;
+    DirectoryIndex index.html
+    DirectoryIndex index.php
+&lt;/Directory&gt;
+
+# Örnek B: Tek bir yönerge ile yapılması dışında Örnek A ile aynıdır.
+&lt;Directory /foo&gt;
+    DirectoryIndex index.html index.php
+&lt;/Directory&gt;</pre></div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="DirectorySlash" id="DirectorySlash">DirectorySlash</a> <a name="directoryslash" id="directoryslash">Yönergesi</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Açıklama:</a></th><td>Bölü çizgisi ile biten yönlendirmeleri açar/kapar.</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sözdizimi:</a></th><td><code>DirectorySlash On|Off</code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Öntanımlı:</a></th><td><code>DirectorySlash On</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Bağlam:</a></th><td>sunucu geneli, sanal konak, dizin, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Geçersizleştirme:</a></th><td>Indexes</td></tr>
+<tr><th><a href="directive-dict.html#Status">Durum:</a></th><td>Temel</td></tr>
+<tr><th><a href="directive-dict.html#Module">Modül:</a></th><td>mod_dir</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Uyumluluk:</a></th><td>Apache 2.0.51 ve sonrasında mevcuttur.</td></tr>
+</table>
+    <p><code class="directive">DirectorySlash</code> yönergesi, bir dizin isteğinde
+      bulunan URL’lerin sonuna <code class="module"><a href="../mod/mod_dir.html">mod_dir</a></code> modülü tarafından bir
+      bölü çizgisi eklenip eklenmeyeceğini belirler.</p>
+
+    <p>Normalde, bir kullanıcı sona bir bölü çizgisi eklemeden bir dizin için
+      istekte bulunursa <code class="module"><a href="../mod/mod_dir.html">mod_dir</a></code> zaten onu aynı özkaynağa
+      yönlendirir, fakat isteğin sonuna bir bölü çizgisi eklenmesinin bazı iyi
+      sebepleri vardır:</p>
+
+    <ul>
+    <li>Kullanıcı bunun sonucunda meşru bir URL ile istekte bulunmuş olur.</li>
+    <li><code class="module"><a href="../mod/mod_autoindex.html">mod_autoindex</a></code> gerektiği gibi çalışır. Yoksa
+      bağlantıdaki yolu sunamayacağından yanlış yolu gösterirdi.</li>
+    <li><code class="directive"><a href="#directoryindex">DirectoryIndex</a></code> yönergesi
+      sadece bölü çizgisi ile biten dizin istekleri için değerlendirilir.</li>
+    <li>HTML sayfa içindeki göreli URL başvuruları gerektiği gibi
+      çalışacaktır.</li>
+    </ul>
+
+    <p>Siz yine de bu etkiyi istemezseniz ve yukarıdaki sebepler de size uygun
+      değilse yönlendirmeyi aşağıdaki gibi kapatabilirsiniz. Ancak, bunu yapmanın
+      olası bir güvenlik açığını da beraberinde getireceği dikkate
+      alınmalıdır.</p>
+
+    <div class="example"><p><code>
+        # Aşağıdaki güvenlik uyarısına bakınız!<br />
+        &lt;Location /bir/yol&gt;<br />
+        <span class="indent">
+            DirectorySlash Off<br />
+            SetHandler bir-eylemci<br />
+        </span>
+        &lt;/Location&gt;
+    </code></p></div>
+
+    <div class="warning"><h3>Güvenlik Uyarı</h3>
+    <p>Bölü çizgisi ile biten yönlendirmelerin kapatılması bir bilginin
+      istemeyek açığa çıkmasına sebep olabilir. <code class="module"><a href="../mod/mod_autoindex.html">mod_autoindex</a></code>
+      modülünün etkin olduğunu (<code>Options +Indexes</code>) ve <code class="directive"><a href="#directoryindex">DirectoryIndex</a></code> ile geçerli bir özkaynağın
+      (<code>index.html</code> olsun) atandığını ama bu URL için başka hiçbir
+      özel eylemci tanımlanmadığını varsayalım. Bu durumda bölü çizgisi ile
+      biten bir istek olduğunda <code>index.html</code> dosyası sunulurdu.
+      <strong>Fakat bölü çizgisi ile bitmeyen bir istek dizin içeriğinin
+      listelenmesi ile sonuçlanırdı.</strong></p>
+    </div>
+
+</div>
+<div class="top"><a href="#page-header"><img alt="top" src="../images/up.gif" /></a></div>
+<div class="directive-section"><h2><a name="FallbackResource" id="FallbackResource">FallbackResource</a> <a name="fallbackresource" id="fallbackresource">Yönergesi</a></h2>
+<table class="directive">
+<tr><th><a href="directive-dict.html#Description">Açıklama:</a></th><td>Bir dosyayla eşleşmeyen istekler için öntanımlı bir URL tanımlar
+</td></tr>
+<tr><th><a href="directive-dict.html#Syntax">Sözdizimi:</a></th><td><code>FallbackResource disabled | <var>yerel-url</var></code></td></tr>
+<tr><th><a href="directive-dict.html#Default">Öntanımlı:</a></th><td><code>None - httpd 404 döndürür (Bulunamadı)</code></td></tr>
+<tr><th><a href="directive-dict.html#Context">Bağlam:</a></th><td>sunucu geneli, sanal konak, dizin, .htaccess</td></tr>
+<tr><th><a href="directive-dict.html#Override">Geçersizleştirme:</a></th><td>Indexes</td></tr>
+<tr><th><a href="directive-dict.html#Status">Durum:</a></th><td>Temel</td></tr>
+<tr><th><a href="directive-dict.html#Module">Modül:</a></th><td>mod_dir</td></tr>
+<tr><th><a href="directive-dict.html#Compatibility">Uyumluluk:</a></th><td>Apache HTTP Server 2.2.16 ve sonrası - <code>disabled</code>
+değiştirgesi 2.2.24'ten itibaren desteklenmektedir.</td></tr>
+</table>
+    <p>Dosya sisteminizdeki hiçbir şey ile eşleşmeyen URL'ler için bir
+      eylemci atamak isterseniz bunı kullanın. Kullanmadığınız takdirde
+      httpd bir HTTP 404 (Bulunamadı) döndürecektir. Örneğin</p>
+    <div class="example"><p><code>
+        <code>FallbackResource /not-404.php</code>
+    </code></p></div>
+    <p>yönergesi ile varolmayan dosyalarla ilgili isteklere
+      <code>/not-404.php</code> sayfası gönderilirken varolanlar ile
+      ilgili istekler bundan etkilenmeyecektir.</p>
+    <p>Çoğunlukla, belli bir dizindeki mevcut dosya ve betiklere yapılan istekler
+      dışındaki tüm isteklere tek bir dosyanın veya belli bir kaynağın yanıt
+      vermesi istenir. Buna 'öndenetleyici' adı verilir.</p>
+    <p>httpd'nin eski sürümlerinde bunu sağlamak için
+      <code class="module"><a href="../mod/mod_rewrite.html">mod_rewrite</a></code> ve istenen dosya veya dizinin var olup
+      olmadığını sınamak için <code>-f</code> ve <code>-d</code> kullanımı
+      gerekirdi. Bu artık tek bir yapılandırma satırı ile
+      halledilebilmektedir.</p>
+    <div class="example"><p><code>
+        <code>FallbackResource /index.php</code>
+    </code></p></div>
+    <p>Resimler, css dosyaları gibi mevcut dosyalar normal olarak sunulmaya
+      devam edecektir.</p>
+    <p>Üst dizinden miras alınmasının istenmemesi özelliğini iptal etmek için
+      <code>disabled</code> değiştirgesini kullanın.</p>
+    <p><em>http://example.com/blog/</em> gibi bir alt-URI isteğinde bu alt-URI
+      bir <var>yerel-url</var> olarak sunulabilir:</p>
+    <div class="example"><p><code>
+         <code>
+             &lt;Directory /web/example.com/htdocs/blog&gt;<br />
+            <span class="indent">
+                  FallbackResource /blog/index.php<br />
+             </span>
+             &lt;/Directory&gt;
+             &lt;Directory /web/example.com/htdocs/blog/images&gt;<br />
+            <span class="indent">
+                  FallbackResource disabled<br />
+             </span>
+             &lt;/Directory&gt;
+         </code>
+    </code></p></div>
+
+</div>
+</div>
+<div class="bottomlang">
+<p><span>Mevcut Diller: </span><a href="../en/mod/mod_dir.html" hreflang="en" rel="alternate" title="English">&nbsp;en&nbsp;</a> |
+<a href="../ja/mod/mod_dir.html" hreflang="ja" rel="alternate" title="Japanese">&nbsp;ja&nbsp;</a> |
+<a href="../ko/mod/mod_dir.html" hreflang="ko" rel="alternate" title="Korean">&nbsp;ko&nbsp;</a> |
+<a href="../tr/mod/mod_dir.html" title="Türkçe">&nbsp;tr&nbsp;</a></p>
+</div><div class="top"><a href="#page-header"><img src="../images/up.gif" alt="top" /></a></div><div class="section"><h2><a id="comments_section" name="comments_section">Yorum</a></h2><div class="warning"><strong>Notice:</strong><br />This is not a Q&amp;A section. Comments placed here should be pointed towards suggestions on improving the documentation or server, and may be removed again by our moderators if they are either implemented or considered invalid/off-topic. Questions on how to manage the Apache HTTP Server should be directed at either our IRC channel, #httpd, on Freenode, or sent to our <a href="http://httpd.apache.org/lists.html">mailing lists</a>.</div>
+<script type="text/javascript"><!--//--><![CDATA[//><!--
+var comments_shortname = 'httpd';
+var comments_identifier = 'http://httpd.apache.org/docs/2.2/mod/mod_dir.html';
+(function(w, d) {
+    if (w.location.hostname.toLowerCase() == "httpd.apache.org") {
+        d.write('<div id="comments_thread"><\/div>');
+        var s = d.createElement('script');
+        s.type = 'text/javascript';
+        s.async = true;
+        s.src = 'https://comments.apache.org/show_comments.lua?site=' + comments_shortname + '&page=' + comments_identifier;
+        (d.getElementsByTagName('head')[0] || d.getElementsByTagName('body')[0]).appendChild(s);
+    }
+    else { 
+        d.write('<div id="comments_thread">Comments are disabled for this page at the moment.<\/div>');
+    }
+})(window, document);
+//--><!]]></script></div><div id="footer">
+<p class="apache">Copyright 2013 The Apache Software Foundation.<br /><a href="http://www.apache.org/licenses/LICENSE-2.0">Apache License, Version 2.0</a> altında lisanslıdır.</p>
+<p class="menu"><a href="../mod/">Modüller</a> | <a href="../mod/directives.html">Yönergeler</a> | <a href="http://wiki.apache.org/httpd/FAQ">SSS</a> | <a href="../glossary.html">Terimler</a> | <a href="../sitemap.html">Site Haritası</a></p></div><script type="text/javascript"><!--//--><![CDATA[//><!--
+if (typeof(prettyPrint) !== 'undefined') {
+    prettyPrint();
+}
+//--><!]]></script>
+</body></html>

@@ -1,0 +1,14 @@
+# Microsoft Developer Studio Generated Dependency File, included by htdbm.mak
+
+.\htdbm.c : \
+	"..\srclib\apr-util\include\apr_dbm.h"\
+	"..\srclib\apr-util\include\apr_md5.h"\
+	"..\srclib\apr-util\include\apr_sha1.h"\
+	"..\srclib\apr\include\apr_lib.h"\
+	"..\srclib\apr\include\apr_signal.h"\
+	"..\srclib\apr\include\apr_strings.h"\
+	
+
+..\build\win32\httpd.rc : \
+	"..\include\ap_release.h"\
+	

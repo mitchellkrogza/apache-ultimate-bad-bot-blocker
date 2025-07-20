@@ -1,0 +1,23 @@
+# Microsoft Developer Studio Generated Dependency File, included by mod_echo.mak
+
+..\..\build\win32\httpd.rc : \
+	"..\..\include\ap_release.h"\
+	
+
+.\mod_echo.c : \
+	"..\..\include\ap_config.h"\
+	"..\..\include\ap_mmn.h"\
+	"..\..\include\ap_regex.h"\
+	"..\..\include\ap_release.h"\
+	"..\..\include\http_config.h"\
+	"..\..\include\http_connection.h"\
+	"..\..\include\httpd.h"\
+	"..\..\include\os.h"\
+	"..\..\include\util_cfgtree.h"\
+	"..\..\include\util_filter.h"\
+	"..\..\srclib\apr-util\include\apr_hooks.h"\
+	"..\..\srclib\apr-util\include\apr_optional_hooks.h"\
+	"..\..\srclib\apr-util\include\apr_uri.h"\
+	"..\..\srclib\apr\include\apr_mmap.h"\
+	"..\..\srclib\apr\include\apr_poll.h"\
+	
