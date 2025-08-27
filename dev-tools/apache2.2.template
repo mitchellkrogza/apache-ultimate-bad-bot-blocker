@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2025.08.2358
-### Updated: Tue Aug 26 10:14:28 UTC 2025
-### Bad Referrer Count: 7104
-### Bad Bot Count: 676
+### Version: V3.2025.08.2359
+### Updated: Wed Aug 27 09:18:53 UTC 2025
+### Bad Referrer Count: 7105
+### Bad Bot Count: 681
 ###################################################
 ### Version Information ##
 
@@ -190,9 +190,12 @@ BrowserMatchNoCase "(?:\b)Acunetix(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AdsTxtCrawlerTP(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AfD-Verbotsverfahren(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AhrefsBot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Ai2Bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AiHitBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Aipbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Alexibot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Aliyun(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)AliyunSecBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AllSubmitter(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Alligator(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)AlphaBot(?:\b)" bad_bot
@@ -768,6 +771,7 @@ BrowserMatchNoCase "(?:\b)ZoominfoBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ZumBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)ZyBorg(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)adscanner(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)allenai.org(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)anthropic-ai(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)archive.org_bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)arquivo-web-crawler(?:\b)" bad_bot
@@ -787,6 +791,7 @@ BrowserMatchNoCase "(?:\b)crawler.feedback(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)crawler4j(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)dataforseo.com(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)dataforseobot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)dataprovider(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)demandbase-bot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)domainsproject.org(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)eCatch(?:\b)" bad_bot
@@ -1144,6 +1149,7 @@ SetEnvIfNoCase Referer ~*991mostfm\.co\.id spam_ref
 SetEnvIfNoCase Referer ~*999webdesign\.com spam_ref
 SetEnvIfNoCase Referer ~*9icmzvn6\.website spam_ref
 SetEnvIfNoCase Referer ~*9med\.net spam_ref
+SetEnvIfNoCase Referer ~*Dataprovider\.com spam_ref
 SetEnvIfNoCase Referer ~*DomainStatsBot spam_ref
 SetEnvIfNoCase Referer ~*a14download\.com spam_ref
 SetEnvIfNoCase Referer ~*a1security\.com\.ua spam_ref

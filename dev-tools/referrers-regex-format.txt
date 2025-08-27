@@ -154,6 +154,7 @@ SetEnvIfNoCase Referer ~*991mostfm\.co\.id spam_ref
 SetEnvIfNoCase Referer ~*999webdesign\.com spam_ref
 SetEnvIfNoCase Referer ~*9icmzvn6\.website spam_ref
 SetEnvIfNoCase Referer ~*9med\.net spam_ref
+SetEnvIfNoCase Referer ~*Dataprovider\.com spam_ref
 SetEnvIfNoCase Referer ~*DomainStatsBot spam_ref
 SetEnvIfNoCase Referer ~*a14download\.com spam_ref
 SetEnvIfNoCase Referer ~*a1security\.com\.ua spam_ref

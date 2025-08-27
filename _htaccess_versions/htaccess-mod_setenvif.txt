@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2025.08.2358
-### Bad Referrer Count: 7104
-### Bad Bot Count: 676
+### Version: V3.2025.08.2359
+### Bad Referrer Count: 7105
+### Bad Bot Count: 681
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -29,9 +29,12 @@ SetEnvIfNoCase User-Agent \bAcunetix\b spambot=yes
 SetEnvIfNoCase User-Agent \bAdsTxtCrawlerTP\b spambot=yes
 SetEnvIfNoCase User-Agent \bAfD\-Verbotsverfahren\b spambot=yes
 SetEnvIfNoCase User-Agent \bAhrefsBot\b spambot=yes
+SetEnvIfNoCase User-Agent \bAi2Bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAiHitBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAipbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAlexibot\b spambot=yes
+SetEnvIfNoCase User-Agent \bAliyun\b spambot=yes
+SetEnvIfNoCase User-Agent \bAliyunSecBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bAllSubmitter\b spambot=yes
 SetEnvIfNoCase User-Agent \bAlligator\b spambot=yes
 SetEnvIfNoCase User-Agent \bAlphaBot\b spambot=yes
@@ -607,6 +610,7 @@ SetEnvIfNoCase User-Agent \bZoominfoBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZumBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bZyBorg\b spambot=yes
 SetEnvIfNoCase User-Agent \badscanner\b spambot=yes
+SetEnvIfNoCase User-Agent \ballenai\.org\b spambot=yes
 SetEnvIfNoCase User-Agent \banthropic\-ai\b spambot=yes
 SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
@@ -626,6 +630,7 @@ SetEnvIfNoCase User-Agent \bcrawler4j\b spambot=yes
 SetEnvIfNoCase User-Agent \bcrawler\.feedback\b spambot=yes
 SetEnvIfNoCase User-Agent \bdataforseo\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \bdataforseobot\b spambot=yes
+SetEnvIfNoCase User-Agent \bdataprovider\b spambot=yes
 SetEnvIfNoCase User-Agent \bdemandbase\-bot\b spambot=yes
 SetEnvIfNoCase User-Agent \bdomainsproject\.org\b spambot=yes
 SetEnvIfNoCase User-Agent \beCatch\b spambot=yes
@@ -845,6 +850,7 @@ SetEnvIfNoCase Referer 991mostfm\.co\.id spambot=yes
 SetEnvIfNoCase Referer 999webdesign\.com spambot=yes
 SetEnvIfNoCase Referer 9icmzvn6\.website spambot=yes
 SetEnvIfNoCase Referer 9med\.net spambot=yes
+SetEnvIfNoCase Referer Dataprovider\.com spambot=yes
 SetEnvIfNoCase Referer DomainStatsBot spambot=yes
 SetEnvIfNoCase Referer a\.frcls\.fr spambot=yes
 SetEnvIfNoCase Referer a\.pr\-cy\.ru spambot=yes

@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2025.08.2358
-### Bad Referrer Count: 7104
-### Bad Bot Count: 676
+### Version: V3.2025.08.2359
+### Bad Referrer Count: 7105
+### Bad Bot Count: 681
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -29,9 +29,12 @@ RewriteCond %{HTTP_USER_AGENT} \bAcunetix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAdsTxtCrawlerTP\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAfD\-Verbotsverfahren\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAhrefsBot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAi2Bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAiHitBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAipbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAlexibot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAliyun\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAliyunSecBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAllSubmitter\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAlligator\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAlphaBot\b [NC,OR]
@@ -607,6 +610,7 @@ RewriteCond %{HTTP_USER_AGENT} \bZoominfoBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZumBot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bZyBorg\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \badscanner\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \ballenai\.org\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \banthropic\-ai\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
@@ -626,6 +630,7 @@ RewriteCond %{HTTP_USER_AGENT} \bcrawler4j\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bcrawler\.feedback\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bdataforseo\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bdataforseobot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bdataprovider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bdemandbase\-bot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bdomainsproject\.org\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \beCatch\b [NC,OR]
@@ -845,6 +850,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*991mostfm\.co\.id.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*999webdesign\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*9icmzvn6\.website.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*9med\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*Dataprovider\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*DomainStatsBot.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*a\.frcls\.fr.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*a\.pr\-cy\.ru.*$ [NC,OR]
