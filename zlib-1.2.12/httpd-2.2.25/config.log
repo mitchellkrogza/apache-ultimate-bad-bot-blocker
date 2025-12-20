@@ -521,7 +521,7 @@ conftest.c:42:6: warning: conflicting types for built-in function 'sqrt'; expect
       |      ^~~~
 conftest.c:1:1: note: 'sqrt' is declared in header '<math.h>'
     1 | /* confdefs.h */
-/usr/bin/ld: /tmp/ccaPtr6U.o: in function `main':
+/usr/bin/ld: /tmp/ccGddVDi.o: in function `main':
 /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/conftest.c:46:(.text.startup+0xb): undefined reference to `sqrt'
 collect2: error: ld returned 1 exit status
 configure:6807: $? = 1
@@ -585,7 +585,7 @@ configure:6807: $? = 0
 configure:6824: result: -lm
 configure:6835: checking for library containing crypt
 configure:6866: gcc -o conftest  -g -O2  -DLINUX -D_REENTRANT -D_GNU_SOURCE   conftest.c  >&5
-/usr/bin/ld: /tmp/ccjWe7Mb.o: in function `main':
+/usr/bin/ld: /tmp/cc7c9KK1.o: in function `main':
 /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/conftest.c:46:(.text.startup+0xb): undefined reference to `crypt'
 collect2: error: ld returned 1 exit status
 configure:6866: $? = 1
@@ -656,7 +656,7 @@ configure:6910: $? = 0
 configure:6910: result: yes
 configure:6910: checking for bindprocessor
 configure:6910: gcc -o conftest  -g -O2  -DLINUX -D_REENTRANT -D_GNU_SOURCE   conftest.c -lm  >&5
-/usr/bin/ld: /tmp/cc1dPXSd.o: in function `main':
+/usr/bin/ld: /tmp/ccKzX8gY.o: in function `main':
 /home/runner/work/apache-ultimate-bad-bot-blocker/apache-ultimate-bad-bot-blocker/zlib-1.2.12/httpd-2.2.25/conftest.c:72:(.text.startup+0xb): undefined reference to `bindprocessor'
 collect2: error: ld returned 1 exit status
 configure:6910: $? = 1
