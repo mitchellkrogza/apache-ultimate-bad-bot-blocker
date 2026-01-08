@@ -3430,6 +3430,8 @@ SetEnvIfNoCase Referer ~*ldrtrack\.com spam_ref
 SetEnvIfNoCase Referer ~*le\-clos\-des\-alouettes\.com spam_ref
 SetEnvIfNoCase Referer ~*leadn\.pl spam_ref
 SetEnvIfNoCase Referer ~*leadwayau\.com spam_ref
+SetEnvIfNoCase Referer ~*leakix\.net spam_ref
+SetEnvIfNoCase Referer ~*leakix\.org spam_ref
 SetEnvIfNoCase Referer ~*leboard\.ru spam_ref
 SetEnvIfNoCase Referer ~*lecbter\-relationships\.ga spam_ref
 SetEnvIfNoCase Referer ~*lechenie\-gemorroya\.com spam_ref
@@ -5048,6 +5050,7 @@ SetEnvIfNoCase Referer ~*rocketchange\.ru spam_ref
 SetEnvIfNoCase Referer ~*rockingclicks\.com spam_ref
 SetEnvIfNoCase Referer ~*rockma\.se spam_ref
 SetEnvIfNoCase Referer ~*rockprogblog\.com spam_ref
+SetEnvIfNoCase Referer ~*rockstargames\.com spam_ref
 SetEnvIfNoCase Referer ~*rogervivierforsale\.com spam_ref
 SetEnvIfNoCase Referer ~*roleforum\.ru spam_ref
 SetEnvIfNoCase Referer ~*roll123\.com spam_ref

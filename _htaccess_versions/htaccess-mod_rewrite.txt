@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.01.2493
-### Bad Referrer Count: 7105
-### Bad Bot Count: 681
+### Version: V3.2026.01.2494
+### Bad Referrer Count: 7108
+### Bad Bot Count: 683
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -645,6 +645,8 @@ RewriteCond %{HTTP_USER_AGENT} \binternetVista\ monitor\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bips\-agent\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bisitwp\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \biubenda\-radar\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bl9scan\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bleakix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blinkdexbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blinkfluence\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \blwp\-request\b [NC,OR]
@@ -4126,6 +4128,8 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ldrtrack\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*le\-clos\-des\-alouettes\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leadn\.pl.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leadwayau\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leakix\.net.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leakix\.org.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*leboard\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lecbter\-relationships\.ga.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*lechenie\-gemorroya\.com.*$ [NC,OR]
@@ -5744,6 +5748,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rocketchange\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rockingclicks\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rockma\.se.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rockprogblog\.com.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rockstargames\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*rogervivierforsale\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*roleforum\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*roll123\.com.*$ [NC,OR]

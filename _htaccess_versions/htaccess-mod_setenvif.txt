@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.01.2493
-### Bad Referrer Count: 7105
-### Bad Bot Count: 681
+### Version: V3.2026.01.2494
+### Bad Referrer Count: 7108
+### Bad Bot Count: 683
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -645,6 +645,8 @@ SetEnvIfNoCase User-Agent \binternetVista\ monitor\b spambot=yes
 SetEnvIfNoCase User-Agent \bips\-agent\b spambot=yes
 SetEnvIfNoCase User-Agent \bisitwp\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \biubenda\-radar\b spambot=yes
+SetEnvIfNoCase User-Agent \bl9scan\b spambot=yes
+SetEnvIfNoCase User-Agent \bleakix\b spambot=yes
 SetEnvIfNoCase User-Agent \blinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \blinkfluence\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-request\b spambot=yes
@@ -4126,6 +4128,8 @@ SetEnvIfNoCase Referer ldrtrack\.com spambot=yes
 SetEnvIfNoCase Referer le\-clos\-des\-alouettes\.com spambot=yes
 SetEnvIfNoCase Referer leadn\.pl spambot=yes
 SetEnvIfNoCase Referer leadwayau\.com spambot=yes
+SetEnvIfNoCase Referer leakix\.net spambot=yes
+SetEnvIfNoCase Referer leakix\.org spambot=yes
 SetEnvIfNoCase Referer leboard\.ru spambot=yes
 SetEnvIfNoCase Referer lecbter\-relationships\.ga spambot=yes
 SetEnvIfNoCase Referer lechenie\-gemorroya\.com spambot=yes
@@ -5744,6 +5748,7 @@ SetEnvIfNoCase Referer rocketchange\.ru spambot=yes
 SetEnvIfNoCase Referer rockingclicks\.com spambot=yes
 SetEnvIfNoCase Referer rockma\.se spambot=yes
 SetEnvIfNoCase Referer rockprogblog\.com spambot=yes
+SetEnvIfNoCase Referer rockstargames\.com spambot=yes
 SetEnvIfNoCase Referer rogervivierforsale\.com spambot=yes
 SetEnvIfNoCase Referer roleforum\.ru spambot=yes
 SetEnvIfNoCase Referer roll123\.com spambot=yes

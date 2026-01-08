@@ -3,9 +3,9 @@
 ## DO NOT use this on any of your sites if you are running the Bad Bot and Spam Referrer Blocker (not needed)
 
 _______________
-#### Version: V3.2026.01.2493
-#### Bad Referrer Count: 7105
-#### Bad Bot Count: 681
+#### Version: V3.2026.01.2494
+#### Bad Referrer Count: 7108
+#### Bad Bot Count: 683
 ____________________
 
 The robots.txt file residing in this directory can be used to ADD onto your existing robots.txt file by placing this after anything you already have in your robots.txt file.
