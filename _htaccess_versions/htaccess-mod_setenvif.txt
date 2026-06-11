@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.06.2628
+### Version: V3.2026.06.2629
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 686
+### Bad Bot Count: 692
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -20,6 +20,7 @@ SetEnvIfNoCase User-Agent \b404enemy\b spambot=yes
 SetEnvIfNoCase User-Agent \b80legs\b spambot=yes
 SetEnvIfNoCase User-Agent \bADmantX\b spambot=yes
 SetEnvIfNoCase User-Agent \bAIBOT\b spambot=yes
+SetEnvIfNoCase User-Agent \bAIWebIndex\b spambot=yes
 SetEnvIfNoCase User-Agent \bALittle\ Client\b spambot=yes
 SetEnvIfNoCase User-Agent \bASPSeek\b spambot=yes
 SetEnvIfNoCase User-Agent \bAbonti\b spambot=yes
@@ -417,6 +418,7 @@ SetEnvIfNoCase User-Agent \bRipper\b spambot=yes
 SetEnvIfNoCase User-Agent \bRocketCrawler\b spambot=yes
 SetEnvIfNoCase User-Agent \bRogerbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSBIder\b spambot=yes
+SetEnvIfNoCase User-Agent \bSEBot\-WA\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOkicks\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOkicks\-Robot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSEOlyt\b spambot=yes
@@ -500,6 +502,7 @@ SetEnvIfNoCase User-Agent \bSwiftbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSzukacz\b spambot=yes
 SetEnvIfNoCase User-Agent \bT0PHackTeam\b spambot=yes
 SetEnvIfNoCase User-Agent \bT8Abot\b spambot=yes
+SetEnvIfNoCase User-Agent \bTMP\b spambot=yes
 SetEnvIfNoCase User-Agent \bTeleport\b spambot=yes
 SetEnvIfNoCase User-Agent \bTeleportPro\b spambot=yes
 SetEnvIfNoCase User-Agent \bTelesoft\b spambot=yes
@@ -614,6 +617,7 @@ SetEnvIfNoCase User-Agent \badscanner\b spambot=yes
 SetEnvIfNoCase User-Agent \ballenai\.org\b spambot=yes
 SetEnvIfNoCase User-Agent \banthropic\-ai\b spambot=yes
 SetEnvIfNoCase User-Agent \barchive\.org\_bot\b spambot=yes
+SetEnvIfNoCase User-Agent \baria2\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\-web\-crawler\b spambot=yes
 SetEnvIfNoCase User-Agent \barquivo\.pt\b spambot=yes
 SetEnvIfNoCase User-Agent \bautoemailspider\b spambot=yes
@@ -638,6 +642,7 @@ SetEnvIfNoCase User-Agent \beCatch\b spambot=yes
 SetEnvIfNoCase User-Agent \bevc\-batch\b spambot=yes
 SetEnvIfNoCase User-Agent \beveryfeed\-spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bfacebookscraper\b spambot=yes
+SetEnvIfNoCase User-Agent \bfasthttp\b spambot=yes
 SetEnvIfNoCase User-Agent \bgopher\b spambot=yes
 SetEnvIfNoCase User-Agent \bheritrix\b spambot=yes
 SetEnvIfNoCase User-Agent \bimagesift\.com\b spambot=yes
@@ -686,6 +691,7 @@ SetEnvIfNoCase User-Agent \bspyfu\b spambot=yes
 SetEnvIfNoCase User-Agent \bsysscan\b spambot=yes
 SetEnvIfNoCase User-Agent \btAkeOut\b spambot=yes
 SetEnvIfNoCase User-Agent \bterrabot\-owned\-you\b spambot=yes
+SetEnvIfNoCase User-Agent \btrafilatura\b spambot=yes
 SetEnvIfNoCase User-Agent \btrendiction\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \btrendiction\.de\b spambot=yes
 SetEnvIfNoCase User-Agent \bubermetrics\-technologies\.com\b spambot=yes

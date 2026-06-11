@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.06.2628
+### Version: V3.2026.06.2629
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 686
+### Bad Bot Count: 692
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
@@ -20,6 +20,7 @@ RewriteCond %{HTTP_USER_AGENT} \b404enemy\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b80legs\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bADmantX\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAIBOT\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bAIWebIndex\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bALittle\ Client\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bASPSeek\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bAbonti\b [NC,OR]
@@ -417,6 +418,7 @@ RewriteCond %{HTTP_USER_AGENT} \bRipper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRocketCrawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bRogerbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSBIder\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bSEBot\-WA\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSEOkicks\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSEOkicks\-Robot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSEOlyt\b [NC,OR]
@@ -500,6 +502,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSwiftbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSzukacz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bT0PHackTeam\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bT8Abot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bTMP\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTeleport\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTeleportPro\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTelesoft\b [NC,OR]
@@ -614,6 +617,7 @@ RewriteCond %{HTTP_USER_AGENT} \badscanner\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \ballenai\.org\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \banthropic\-ai\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barchive\.org\_bot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \baria2\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\-web\-crawler\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \barquivo\.pt\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bautoemailspider\b [NC,OR]
@@ -638,6 +642,7 @@ RewriteCond %{HTTP_USER_AGENT} \beCatch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bevc\-batch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \beveryfeed\-spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bfacebookscraper\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bfasthttp\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bgopher\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bheritrix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bimagesift\.com\b [NC,OR]
@@ -686,6 +691,7 @@ RewriteCond %{HTTP_USER_AGENT} \bspyfu\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bsysscan\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \btAkeOut\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bterrabot\-owned\-you\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \btrafilatura\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \btrendiction\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \btrendiction\.de\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bubermetrics\-technologies\.com\b [NC,OR]
