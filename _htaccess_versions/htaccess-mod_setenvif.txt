@@ -5,15 +5,15 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.06.2641
+### Version: V3.2026.06.2642
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 692
+### Bad Bot Count: 694
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
 
 SetEnvIfNoCase User-Agent ^\W spambot=yes
-SetEnvIfNoCase User-Agent \b01h4x\.com\b spambot=yes
+SetEnvIfNoCase User-Agent \b1h4x\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \b360Spider\b spambot=yes
 SetEnvIfNoCase User-Agent \b404checker\b spambot=yes
 SetEnvIfNoCase User-Agent \b404enemy\b spambot=yes
@@ -502,6 +502,7 @@ SetEnvIfNoCase User-Agent \bSwiftbot\b spambot=yes
 SetEnvIfNoCase User-Agent \bSzukacz\b spambot=yes
 SetEnvIfNoCase User-Agent \bT0PHackTeam\b spambot=yes
 SetEnvIfNoCase User-Agent \bT8Abot\b spambot=yes
+SetEnvIfNoCase User-Agent \bTLM\-Audit\-Scanner\b spambot=yes
 SetEnvIfNoCase User-Agent \bTMP\b spambot=yes
 SetEnvIfNoCase User-Agent \bTeleport\b spambot=yes
 SetEnvIfNoCase User-Agent \bTeleportPro\b spambot=yes
@@ -643,6 +644,7 @@ SetEnvIfNoCase User-Agent \bevc\-batch\b spambot=yes
 SetEnvIfNoCase User-Agent \beveryfeed\-spider\b spambot=yes
 SetEnvIfNoCase User-Agent \bfacebookscraper\b spambot=yes
 SetEnvIfNoCase User-Agent \bfasthttp\b spambot=yes
+SetEnvIfNoCase User-Agent \bgit\b spambot=yes
 SetEnvIfNoCase User-Agent \bgopher\b spambot=yes
 SetEnvIfNoCase User-Agent \bheritrix\b spambot=yes
 SetEnvIfNoCase User-Agent \bimagesift\.com\b spambot=yes
