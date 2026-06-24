@@ -5,9 +5,9 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.06.2642
+### Version: V3.2026.06.2643
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 694
+### Bad Bot Count: 697
 ### Version Information ##
 
 <IfModule mod_setenvif.c>
@@ -352,6 +352,7 @@ SetEnvIfNoCase User-Agent \bNmap\b spambot=yes
 SetEnvIfNoCase User-Agent \bNuclei\b spambot=yes
 SetEnvIfNoCase User-Agent \bNutch\b spambot=yes
 SetEnvIfNoCase User-Agent \bOctopus\b spambot=yes
+SetEnvIfNoCase User-Agent \bOdin\b spambot=yes
 SetEnvIfNoCase User-Agent \bOffline\ Explorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bOffline\ Navigator\b spambot=yes
 SetEnvIfNoCase User-Agent \bOnCrawl\b spambot=yes
@@ -655,6 +656,7 @@ SetEnvIfNoCase User-Agent \bisitwp\.com\b spambot=yes
 SetEnvIfNoCase User-Agent \biubenda\-radar\b spambot=yes
 SetEnvIfNoCase User-Agent \bl9scan\b spambot=yes
 SetEnvIfNoCase User-Agent \bleakix\b spambot=yes
+SetEnvIfNoCase User-Agent \blibredtail\-http\b spambot=yes
 SetEnvIfNoCase User-Agent \blinkdexbot\b spambot=yes
 SetEnvIfNoCase User-Agent \blinkfluence\b spambot=yes
 SetEnvIfNoCase User-Agent \blwp\-request\b spambot=yes
@@ -668,6 +670,7 @@ SetEnvIfNoCase User-Agent \boBot\b spambot=yes
 SetEnvIfNoCase User-Agent \bomgili\b spambot=yes
 SetEnvIfNoCase User-Agent \bopenai\b spambot=yes
 SetEnvIfNoCase User-Agent \bopenai\.com\b spambot=yes
+SetEnvIfNoCase User-Agent \bopendirme\-credhunt\b spambot=yes
 SetEnvIfNoCase User-Agent \bpage\ scorer\b spambot=yes
 SetEnvIfNoCase User-Agent \bpcBrowser\b spambot=yes
 SetEnvIfNoCase User-Agent \bplumanalytics\b spambot=yes

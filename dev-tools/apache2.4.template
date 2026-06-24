@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2026.06.2642
-### Updated: Wed Jun 24 06:52:47 UTC 2026
+### Version: V3.2026.06.2643
+### Updated: Wed Jun 24 07:21:09 UTC 2026
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 694
+### Bad Bot Count: 697
 ###################################################
 ### Version Information ##
 
@@ -506,6 +506,7 @@ BrowserMatchNoCase "(?:\b)Nmap(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nuclei(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Nutch(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Octopus(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)Odin(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Offline\ Explorer(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Offline\ Navigator(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)OnCrawl(?:\b)" bad_bot
@@ -809,6 +810,7 @@ BrowserMatchNoCase "(?:\b)isitwp.com(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)iubenda-radar(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)l9scan(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)leakix(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)libredtail-http(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)linkdexbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)linkfluence(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)lwp-request(?:\b)" bad_bot
@@ -822,6 +824,7 @@ BrowserMatchNoCase "(?:\b)oBot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)omgili(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)openai(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)openai.com(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)opendirme-credhunt(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)page\ scorer(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)pcBrowser(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)plumanalytics(?:\b)" bad_bot
