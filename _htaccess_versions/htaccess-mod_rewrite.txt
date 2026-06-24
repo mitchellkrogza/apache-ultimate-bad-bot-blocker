@@ -5,15 +5,15 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.06.2641
+### Version: V3.2026.06.2642
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 692
+### Bad Bot Count: 694
 ### Version Information ##
 
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteCond %{HTTP_USER_AGENT} ^\W [OR]
-RewriteCond %{HTTP_USER_AGENT} \b01h4x\.com\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \b1h4x\.com\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b360Spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404checker\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \b404enemy\b [NC,OR]
@@ -502,6 +502,7 @@ RewriteCond %{HTTP_USER_AGENT} \bSwiftbot\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bSzukacz\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bT0PHackTeam\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bT8Abot\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bTLM\-Audit\-Scanner\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTMP\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTeleport\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bTeleportPro\b [NC,OR]
@@ -643,6 +644,7 @@ RewriteCond %{HTTP_USER_AGENT} \bevc\-batch\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \beveryfeed\-spider\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bfacebookscraper\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bfasthttp\b [NC,OR]
+RewriteCond %{HTTP_USER_AGENT} \bgit\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bgopher\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bheritrix\b [NC,OR]
 RewriteCond %{HTTP_USER_AGENT} \bimagesift\.com\b [NC,OR]

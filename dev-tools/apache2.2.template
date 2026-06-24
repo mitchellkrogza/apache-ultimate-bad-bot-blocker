@@ -16,10 +16,10 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2026.06.2641
-### Updated: Tue Jun 23 12:28:21 UTC 2026
+### Version: V3.2026.06.2642
+### Updated: Wed Jun 24 06:52:47 UTC 2026
 ### Bad Referrer Count: 7113
-### Bad Bot Count: 692
+### Bad Bot Count: 694
 ###################################################
 ### Version Information ##
 
@@ -174,7 +174,7 @@ BrowserMatchNoCase "(?:\b)sfFeedReader/0.9(?:\b)" good_bot
 	# Known Vulnerability Scanners (now merged into one section)
 
 # START BAD BOTS ### DO NOT EDIT THIS LINE AT ALL ###
-BrowserMatchNoCase "(?:\b)01h4x.com(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)1h4x.com(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)360Spider(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)404checker(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)404enemy(?:\b)" bad_bot
@@ -663,6 +663,7 @@ BrowserMatchNoCase "(?:\b)Swiftbot(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Szukacz(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)T0PHackTeam(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)T8Abot(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)TLM-Audit-Scanner(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)TMP(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)Teleport(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)TeleportPro(?:\b)" bad_bot
@@ -804,6 +805,7 @@ BrowserMatchNoCase "(?:\b)evc-batch(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)everyfeed-spider(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)facebookscraper(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)fasthttp(?:\b)" bad_bot
+BrowserMatchNoCase "(?:\b)git(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)gopher(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)heritrix(?:\b)" bad_bot
 BrowserMatchNoCase "(?:\b)imagesift.com(?:\b)" bad_bot
