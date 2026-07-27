@@ -6,9 +6,9 @@
 
 ### Version Information #
 ###################################################
-### Version: V3.2026.07.2671
-### Updated: Sun Jul 26 11:14:20 UTC 2026
-### Bad Bot Count: 697
+### Version: V3.2026.07.2672
+### Updated: Mon Jul 27 06:16:01 UTC 2026
+### Bad Bot Count: 699
 ###################################################
 ### Version Information ##
 
@@ -1305,6 +1305,8 @@ User-agent: linkdexbot
 Disallow:/
 User-agent: linkfluence
 Disallow:/
+User-agent: litellm-recon
+Disallow:/
 User-agent: lwp-request
 Disallow:/
 User-agent: lwp-trivial
@@ -1398,6 +1400,8 @@ Disallow:/
 User-agent: webpros\.com
 Disallow:/
 User-agent: webprosbot
+Disallow:/
+User-agent: wp2shell
 Disallow:/
 User-agent: x09Mozilla
 Disallow:/
