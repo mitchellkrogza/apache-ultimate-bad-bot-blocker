@@ -4370,6 +4370,7 @@ SetEnvIfNoCase Referer ~*ororodnik\.goodbb\.ru spam_ref
 SetEnvIfNoCase Referer ~*orsonet\.ru spam_ref
 SetEnvIfNoCase Referer ~*osagonline\.ru spam_ref
 SetEnvIfNoCase Referer ~*osb\.se11\.ru spam_ref
+SetEnvIfNoCase Referer ~*osdzc\.com spam_ref
 SetEnvIfNoCase Referer ~*osnova3\.ru spam_ref
 SetEnvIfNoCase Referer ~*osoznanie\-narkotikam\.net spam_ref
 SetEnvIfNoCase Referer ~*ossmalta\.com spam_ref

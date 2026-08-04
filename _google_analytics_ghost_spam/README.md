@@ -3,8 +3,8 @@
 # EASY CONFIGURATION INSTRUCTIONS FOR STOPPING GOOGLE ANALYTICS "GHOST" SPAM
 
 _______________
-#### Version: V3.2026.08.2680
-#### Bad Referrer Count: [7114](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
+#### Version: V3.2026.08.2681
+#### Bad Referrer Count: [7115](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-referrers.list)
 #### Bad Bot Count: [699](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/bad-user-agents.list)
 #### Fake Googlebots: [218](https://raw.githubusercontent.com/mitchellkrogza/apache-ultimate-bad-bot-blocker/master/_generator_lists/fake-googlebots.list)
 ____________________

@@ -5,8 +5,8 @@
 # https://github.com/mitchellkrogza/apache-ultimate-bad-bot-blocker
 
 ### Version Information #
-### Version: V3.2026.08.2680
-### Bad Referrer Count: 7114
+### Version: V3.2026.08.2681
+### Bad Referrer Count: 7115
 ### Bad Bot Count: 699
 ### Version Information ##
 
@@ -5084,6 +5084,7 @@ RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ororodnik\.goodbb\.ru.*$ [NC,OR
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*orsonet\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*osagonline\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*osb\.se11\.ru.*$ [NC,OR]
+RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*osdzc\.com.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*osnova3\.ru.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*osoznanie\-narkotikam\.net.*$ [NC,OR]
 RewriteCond %{HTTP_REFERER} ^http(s)?://(www.)?.*ossmalta\.com.*$ [NC,OR]
