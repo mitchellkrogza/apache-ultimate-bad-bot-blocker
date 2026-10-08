@@ -1,5 +1,6 @@
 AdsBot-Google
 Applebot
+Citoid/WMF
 DoCoMo
 Feedfetcher-Google
 Google-HTTP-Java-Client
@@ -19,6 +20,7 @@ Slackbot
 Slackbot-LinkExpanding
 TwitterBot
 Wordpress
+ZoteroTranslationServer/WMF
 adidxbot
 aolbuild
 bing
